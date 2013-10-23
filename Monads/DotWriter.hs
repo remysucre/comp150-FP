@@ -1,5 +1,5 @@
 {-# OPTIONS -Wall -Werror -fno-warn-name-shadowing #-}
-module DotWriter 
+module Monads.DotWriter 
 ( Node,
   createNode, equals,
   Color(..),

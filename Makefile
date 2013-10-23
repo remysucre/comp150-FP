@@ -1,10 +1,10 @@
-dot: monads/dot.hs monads/main.hs
+dot: monads/dot.hs 
 	@echo "Making the dot executable"
 	@echo "Cleaning temporary files from failed builds"
 	@rm -f monads/*.o
 	@rm -f monads/*.hi
 	@echo "Compiling files"
-	@ghc monads/dot.hs monads/main.hs
+	@ghc Monads/dot.hs 
 	@mv ./main ./bin
 	@echo "Executable in bin folder"
 	@echo "Cleaning object files"
@@ -21,5 +21,9 @@ clean-all:
 	@rm -f ./bin/*
 	@make clean
 
+main: Main.hs
+	@ghc --make -o ./bin/main Main 
+	@make clean
+
 all: 
-	@make dot
+	@make main
