@@ -11,6 +11,9 @@ instance Monad Rand where
                                in s g'
                         )
 
+escape :: Int -> Rand a -> (a, StdGen)
+escape seed (Rand r) = r $ mkStdGen seed
+
 -- 50/50 chance of holding true
 flip :: Rand Bool
 flip = Rand (\g -> let g' = fst $ split g
@@ -26,8 +29,32 @@ seven = return 7
 randRange :: (Int, Int) -> Rand Int
 randRange (start, end) = Rand (\g -> let
                                      -- inRange :: (Int, t) -> Bool
-                                        inRange (x, _) = x >= start && x <= end
+                                        inRange (x, _) = x > start && x < end
                                      -- nextSrc :: RandomGen b => (t, b) -> (Int, b)
-                                        nextSrc (_, g) = next g 
+                                        nextSrc (_, g) = (y, g')
+                                                         where
+                                                             (x, g') = next g 
+                                                             y = x `mod` end
                                      in until inRange nextSrc $ next $ fst $ split g 
                               )
+
+-- Zhe wants a Random Integer
+zhe :: Rand Int
+zhe = Rand (\g -> next g)
+
+-- choose a random element from the list
+choose :: [a] -> Rand a
+choose [] = error "No choice from empty"
+choose as = do
+              x <- randRange (0, length as)
+              return (as !! x)
+
+-- turns up True with probability chance up to 1
+weightedFlip :: Double -> Rand Bool
+weightedFlip chance = Rand (\g -> let (x, g') = next $ fst $ split g
+                                      x' = toInteger x
+                                      x'' = fromInteger $ x' `mod` 100
+                                      y = x'' / 100.0
+                                  in if y < chance then (True, g')
+                                                   else (False, g')
+                           )
