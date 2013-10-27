@@ -20,6 +20,10 @@
         For examples, see Color, Shape, and Style and their
         corresponding add functions.
 
+  Thanks to 
+      - Norman for explaining the concept after attempt #4
+      - Max, Andrew, Zhe for designing the Property datatype
+
   (c)2013 Diogenes A. Nunez
 -}            
 
@@ -36,6 +40,7 @@ module Monads.DotWriter
 
 import Data.List (nub)
 
+-- Internal Node representation for Dot structure
 type Node = String
 
 createNode :: String -> Node
@@ -44,14 +49,15 @@ createNode = id
 equals :: Node -> Node -> Bool
 equals = (==)
 
+{--- Node attributes for Graphviz ---}
 
--- Color property
+-- Color of the node
 data Color = Red | Black
 instance Show Color where
     show Red = "red"
     show Black = "black"
 
--- Shape property
+-- Shape of the node
 data Shape = None | Circle | Box | Ellipse
                   | DoubleCircle 
 instance Show Shape where
@@ -61,6 +67,7 @@ instance Show Shape where
     show Ellipse = "ellipse"
     show DoubleCircle = "doublecircle"
 
+-- Style of the node
 data Style = Empty | Filled | Bold | Rounded
 instance Show Style where
     show Empty = "empty"

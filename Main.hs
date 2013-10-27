@@ -57,7 +57,7 @@ getRandListLen strs = read $ head strs
 printRBTree :: StdGen -> Int -> IO ()
 printRBTree gen len = putStr $ DW.toString $ (heapToDot tree) >> addColorToTree tree
                       where 
-                          list = fst $ (Rand.escape $ replicateM len Rand.zhe) gen
+                          list = fst $ (Rand.eval $ replicateM len Rand.zhe) gen
                           tree = RB.rbify $ list
 
 -- main program 
