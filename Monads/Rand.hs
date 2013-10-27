@@ -1,15 +1,26 @@
 {-# OPTIONS -Wall -Werror -fno-warn-name-shadowing #-}
 
+{-
+    Rand: A module for randomness. Evaluation will require
+          a StdGen.
+
+    There are functions that are refined after speaking with Zhe.
+
+    Diogenes A. Nunez
+-}
+
 module Monads.Rand
-( escape
+( eval
   , zhe, randRange, flip'
   , choose, weightedFlip
 )
 where
+
 import System.Random
 
 newtype Rand a = Rand (StdGen -> (a, StdGen))
 
+-- Use of split comes from Zhe
 instance Monad Rand where
     return x = Rand (\g -> (x, g))
     Rand r >>= f = Rand (\g -> let (g', g'') = split g
@@ -18,18 +29,25 @@ instance Monad Rand where
                                in s g''
                         )
 
-escape :: Rand a -> (StdGen -> (a, StdGen))
-escape (Rand r) = r
+eval :: Rand a -> (StdGen -> (a, StdGen))
+eval (Rand r) = r
 
 -- 50/50 chance of holding true
 flip' :: Rand Bool
-flip' = Rand (\g -> let g' = fst $ split g
-                        (x, g'') = next g'
-                    in (even x, g'')
+flip' = Rand (\g -> let (x, g') = next g
+                    in (even x, g')
              )
 
+
 -- returns an integer in this range
+-- Implementation is Zhe's
 randRange :: (Int, Int) -> Rand Int
+randRange (start, end) = Rand (\g -> let (x, g') = next g
+                                         y = (x `mod` end) + start
+                                     in (y, g')
+                              )
+{-
+-- Remnants of a bad idea
 randRange (start, end) = Rand (\g -> let
                                      -- inRange :: (Int, t) -> Bool
                                         inRange (x, _) = x > start && x < end
@@ -38,10 +56,11 @@ randRange (start, end) = Rand (\g -> let
                                                          where
                                                              (x, g') = next g 
                                                              y = x `mod` end
-                                     in until inRange nextSrc $ next $ fst $ split g 
+                                     in until inRange nextSrc $ next g 
                               )
+-}
 
--- Zhe wants a Random Integer
+-- Zhe wants a Random integer
 zhe :: Rand Int
 zhe = Rand (\g -> next g)
 
@@ -54,7 +73,7 @@ choose as = do
 
 -- turns up True with probability chance up to 1
 weightedFlip :: Double -> Rand Bool
-weightedFlip chance = Rand (\g -> let (x, g') = next $ fst $ split g
+weightedFlip chance = Rand (\g -> let (x, g') = next g
                                       x' = toInteger x
                                       x'' = fromInteger $ x' `mod` 100
                                       y = x'' / 100.0
