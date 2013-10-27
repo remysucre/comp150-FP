@@ -1,6 +1,9 @@
 {-# OPTIONS -Wall -Werror -fno-warn-name-shadowing #-}
 
--- This is Nate's RB Tree.
+{-
+ This is Red Black Tree from Andew Gallant's GitHub.
+ The only code I added is the Heap instance.
+-}
 module Monads.RedBlack
 where
 
@@ -15,12 +18,6 @@ data RBTree a = Empty | Node Color (RBTree a) a (RBTree a) deriving
 instance Show Color where
     show Red = "Red"
     show Black = "Black"
-
-{-
-instance Ord a => Monoid (RBTree a) where
-    mempty = Empty
-    mappend = undefined
--}
 
 instance HP.Heap RBTree where
     left Empty = undefined

@@ -1,12 +1,26 @@
 {-# OPTIONS -Wall -Werror -fno-warn-name-shadowing #-}
 
 {-
-DotWriter: Monad used to help create a graph visualization by
-           creating a dot string.
+   DotWriter: Monad used to help create a graph visualization by
+              creating a dot string.
 
-           Alleviates the need for the user to create unique
-           names, but requires a String representation of their
-           values.
+              Alleviates the need for the user to create unique
+              names, but requires a String representation of their
+              values.
+
+  NOTE: To add a node property, you need to do the following
+        1) Define a datatype
+        2) Make it an instance of Show
+        3) Add it as a constructor to the Property datatype
+        4) Add cases to propertiesToString so your property is
+           correctly converted to an attribute
+        5) Create a function that returns Dot () that adds
+           the property to a Node
+ 
+        For examples, see Color, Shape, and Style and their
+        corresponding add functions.
+
+  (c)2013 Diogenes A. Nunez
 -}            
 
 module Monads.DotWriter 
@@ -30,12 +44,6 @@ createNode = id
 equals :: Node -> Node -> Bool
 equals = (==)
 
-data Dot a = Dot { 
-                   names       :: [(Node, String)],
-                   properties  :: [(Node, [Property])],
-                   edges       :: [(Node, Node, Maybe String)],
-                   value       :: a 
-                 } deriving (Show)
 
 -- Color property
 data Color = Red | Black
@@ -65,6 +73,14 @@ data Property = PColor Color
               | PStyle Style
               deriving (Show)
 
+-- The structure for the DotWriter
+data Dot a = Dot { 
+                   names       :: [(Node, String)],
+                   properties  :: [(Node, [Property])],
+                   edges       :: [(Node, Node, Maybe String)],
+                   value       :: a 
+                 } deriving (Show)
+
 instance Monad Dot where
     return x = Dot [] [] [] x
     dot >>= f = Dot names'' props'' edges'' y
@@ -75,6 +91,7 @@ instance Monad Dot where
                     edges'' = d_edges ++ edges'
                     -- contains :: Eq a => [a] -> a -> Bool
                     contains xs x = any (== x) xs 
+                    -- function to ensure all labels are unique
                     -- appendLabels :: [(Node, String)] -> [(Node, String)] -> [String] -> [(Node, String)]
                     appendLabels [] result _ = result
                     appendLabels (l:ls) result unique = let (node, label) = l
@@ -120,7 +137,7 @@ escape (Dot _ _ _ x) = x
 
 -- A way to get the Dot String out of the Dot monad
 toString :: Dot a -> String
-toString dot = "digraph G{\n" ++ getDotNodes nodes nodeNames nodeProps ++ getDotString nodeNames edges' ++ "}\n" 
+toString dot = "digraph G{\n" ++ getDotNodes nodes nodeNames nodeProps ++ getDotEdges nodeNames edges' ++ "}\n" 
                                          where
                                              nodes = map fst $ names dot
                                              nodeNames = names dot
@@ -159,22 +176,21 @@ propertiesToString (p:ps) = propertyString ++ propertiesToString ps
 getDotNodes :: [Node] -> [(Node, String)] -> [(Node, [Property])] -> String
 getDotNodes [] _ _ = ""
 getDotNodes (node:nodes) names props =  ("\t" ++ name ++ "[label=" ++ label ++ properties ++ "]\n") ++ (getDotNodes nodes names props)
-                                     where
-                                         label = node
-                                         name = getName node names
-                                         properties = propertiesToString $ getList node props
+                                        where
+                                            label = node
+                                            name = getName node names
+                                            properties = propertiesToString $ getList node props
 
--- Write out all edges                                
-getDotString :: [(Node, String)] -> [(Node, Node, Maybe String)] -> String
-getDotString [] _ = ""
-getDotString _ [] = ""
-getDotString names (e:es) = ("\t" ++ srcName ++ " -> " ++ snkName ++ edgeLabel ++ "\n") 
-                            ++ getDotString names es
-                               where
-                                   (src, snk, maybeLabel) = e
-                                   srcName = getName src names
-                                   snkName = getName snk names
-                                   edgeLabel = case maybeLabel of
-                                                    Nothing -> ""
-                                                    Just l  -> "[label=" ++ l ++ "]"
+-- Write out all edges with the unique node labels                               
+getDotEdges :: [(Node, String)] -> [(Node, Node, Maybe String)] -> String
+getDotEdges [] _ = ""
+getDotEdges _ [] = ""
+getDotEdges names (e:es) = ("\t" ++ srcName ++ " -> " ++ snkName ++ edgeLabel ++ "\n") ++ getDotEdges names es
+                           where
+                               (src, snk, maybeLabel) = e
+                               srcName = getName src names
+                               snkName = getName snk names
+                               edgeLabel = case maybeLabel of
+                                                Nothing -> ""
+                                                Just l  -> "[label=" ++ l ++ "]"
 
