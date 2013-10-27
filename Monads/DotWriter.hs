@@ -1,13 +1,23 @@
 {-# OPTIONS -Wall -Werror -fno-warn-name-shadowing #-}
+
+{-
+DotWriter: Monad used to help create a graph visualization by
+           creating a dot string.
+
+           Alleviates the need for the user to create unique
+           names, but requires a String representation of their
+           values.
+-}            
+
 module Monads.DotWriter 
-( Node,
-  createNode, equals,
-  Color(..),
-  Dot,
-  addNode, addEdge, addColor,
--- colorToProperty,
-  escape,
-  toString
+( Node
+  , createNode, equals
+  , Color(..), Shape(..), Style(..)
+  , Dot
+  , addNode, addEdge
+  , addColor, addShape, addStyle
+  , escape
+  , toString
 ) where
 
 import Data.List (nub)
@@ -22,12 +32,38 @@ equals = (==)
 
 data Dot a = Dot { 
                    names       :: [(Node, String)],
-                   properties  :: [(Node, [Color])],
+                   properties  :: [(Node, [Property])],
                    edges       :: [(Node, Node, Maybe String)],
                    value       :: a 
                  } deriving (Show)
 
-data Color = Red | Black deriving (Show)
+-- Color property
+data Color = Red | Black
+instance Show Color where
+    show Red = "red"
+    show Black = "black"
+
+-- Shape property
+data Shape = None | Circle | Box | Ellipse
+                  | DoubleCircle 
+instance Show Shape where
+    show None = "none"
+    show Circle = "circle"
+    show Box = "box"
+    show Ellipse = "ellipse"
+    show DoubleCircle = "doublecircle"
+
+data Style = Empty | Filled | Bold | Rounded
+instance Show Style where
+    show Empty = "empty"
+    show Filled = "filled"
+    show Bold = "bold"
+    show Rounded = "rounded"
+
+data Property = PColor Color
+              | PShape Shape
+              | PStyle Style
+              deriving (Show)
 
 instance Monad Dot where
     return x = Dot [] [] [] x
@@ -49,13 +85,13 @@ instance Monad Dot where
                                                            else appendLabels ls (result ++ [l]) (label:unique)
                     names'' = appendLabels (d_names ++ names') [] []
                     combinedPropLists = props ++ props'
-                    -- combinePropertiesHelper :: Node -> [(Node, [Color])] -> [Color]
+                    -- combinePropertiesHelper :: Node -> [(Node, [Property])] -> [Property]
                     combinePropertiesHelper _ [] = []
                     combinePropertiesHelper node (np:nps) = props' ++ combinePropertiesHelper node nps
                                                                   where
                                                                       (n, p) = np
                                                                       props' = if node == n then p else []
-                    -- combineProperties :: Node -> [Color]
+                    -- combineProperties :: Node -> [Property]
                     combineProperties n = combinePropertiesHelper n combinedPropLists
                     nodes = nub $ map fst combinedPropLists
                     listOfProperties = map combineProperties nodes
@@ -68,9 +104,17 @@ addNode n = Dot [(n, "__dot_0")] [] [] n
 addEdge :: Node -> Node -> Maybe String -> Dot ()
 addEdge src snk label = Dot [] [] [(src, snk, label)] ()
 
+-- Adding Properties to Nodes
 addColor :: Node -> Color -> Dot ()
-addColor n p = Dot [] [(n, [p])] [] ()
+addColor n col = Dot [] [(n, [PColor col])] [] ()
 
+addShape :: Node -> Shape -> Dot ()
+addShape n shp = Dot [] [(n, [PShape shp])] [] ()
+
+addStyle :: Node -> Style -> Dot ()
+addStyle n sty = Dot [] [(n, [PStyle sty])] [] ()
+
+-- Escaping the monad and grabbing the result
 escape :: Dot a -> a
 escape (Dot _ _ _ x) = x
 
@@ -92,25 +136,32 @@ getName search (n:ns) = if search == node then name else getName search ns
                          where
                              (node, name) = n
 
+-- Grab a list of items corresponding to a Node
 getList :: Node -> [(Node, [a])] -> [a]
 getList _      []     = []
 getList search (n:ns) = if search == node then name else getList search ns
                          where
                              (node, name) = n
 
-propertiesToString :: [Color] -> String
+-- Transform all properties into a single String
+propertiesToString :: [Property] -> String
 propertiesToString [] = ""
-propertiesToString (Red:ps) = ",color=red" ++ propertiesToString ps
-propertiesToString (Black:ps) = ",color=black" ++ propertiesToString ps
+propertiesToString (p:ps) = propertyString ++ propertiesToString ps
+                            where
+                                propertyString = case p of
+                                                      PColor c -> ",color=" ++ show c
+                                                      PShape None -> ",shape=plaintext"
+                                                      PShape shp -> ",shape=" ++ show shp
+                                                      PStyle Empty -> ""
+                                                      PStyle sty -> ",style=" ++ show sty
 
 -- Write out all nodes with user made labels
-getDotNodes :: [Node] -> [(Node, String)] -> [(Node, [Color])] -> String
+getDotNodes :: [Node] -> [(Node, String)] -> [(Node, [Property])] -> String
 getDotNodes [] _ _ = ""
 getDotNodes (node:nodes) names props =  ("\t" ++ name ++ "[label=" ++ label ++ properties ++ "]\n") ++ (getDotNodes nodes names props)
                                      where
                                          label = node
                                          name = getName node names
-                                         -- propertiesToString :: [Color] -> String
                                          properties = propertiesToString $ getList node props
 
 -- Write out all edges                                
