@@ -1,29 +1,32 @@
 {-# OPTIONS -Wall -Werror -fno-warn-name-shadowing #-}
 
+module Monads.Rand
+( escape
+  , zhe, randRange, flip'
+  , choose, weightedFlip
+)
+where
 import System.Random
 
 newtype Rand a = Rand (StdGen -> (a, StdGen))
 
 instance Monad Rand where
     return x = Rand (\g -> (x, g))
-    Rand r >>= f = Rand (\g -> let (x, g') = r g
+    Rand r >>= f = Rand (\g -> let (g', g'') = split g
+                                   (x, _) = r g'
                                    Rand s = (f x) 
-                               in s g'
+                               in s g''
                         )
 
-escape :: Int -> Rand a -> (a, StdGen)
-escape seed (Rand r) = r $ mkStdGen seed
+escape :: Rand a -> (StdGen -> (a, StdGen))
+escape (Rand r) = r
 
 -- 50/50 chance of holding true
-flip :: Rand Bool
-flip = Rand (\g -> let g' = fst $ split g
-                       (x, g'') = next g'
-                   in (even x, g'')
-            )
-
--- always has 7
-seven :: Rand Int
-seven = return 7
+flip' :: Rand Bool
+flip' = Rand (\g -> let g' = fst $ split g
+                        (x, g'') = next g'
+                    in (even x, g'')
+             )
 
 -- returns an integer in this range
 randRange :: (Int, Int) -> Rand Int
