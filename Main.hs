@@ -23,23 +23,29 @@ import Control.Monad (replicateM)
 import System.Random (StdGen, getStdGen)
 import System.Environment (getArgs)
 
+import Debug.Trace
+
 -- Convert a Heap to a dot string
-heapToDot :: (Show a, HP.Heap h) => h a -> DW.Dot ()
+heapToDot :: (Show a, HP.Heap h) => h a -> DW.Dot DW.Node
 heapToDot hp 
-           | HP.isEmpty hp = return ()
-           | otherwise =  nodeDot >> leftDot' >> rightDot'
+           | HP.isEmpty hp = return $ DW.createNode ""
+           | otherwise =  rightDot' >> return (DW.escape nodeDot)
                           where
                               (l, r) = (HP.left hp, HP.right hp)
                               nv = DW.createNode $ show $ HP.val hp
-                              nodeDot = DW.addNode nv
-                              leftDot = heapToDot l
-                              rightDot = heapToDot r
-                              addChild child childDot = if HP.isEmpty child 
-                                                        then childDot
-                                                        else childDot >> DW.addEdge nv (DW.createNode $ show $ HP.val child) Nothing
-                              leftDot' = addChild l leftDot
-                              rightDot' = addChild r rightDot
+                              nodeDot = DW.addNode (return ()) nv
+                              leftDot = nodeDot >> heapToDot l
+                              --rightDot = heapToDot r
+                              --nodeDot = trace ("kids: (" ++ (show $ DW.escape leftDot) ++ "," ++ (show $ DW.escape rightDot) ++ ")") $ rightDot >> DW.addNode rightDot nv
+                              addChild child childNode = if HP.isEmpty child 
+                                                        then return ()
+                                                        else DW.addEdge (DW.escape nodeDot) childNode Nothing
+                              leftDot' = leftDot >> trace ("intern at left: " ++ (show $ DW.escape leftDot)) addChild l (DW.escape leftDot)
+                              rightDot = leftDot' >> heapToDot r
+                              rightDot' = rightDot >> trace ("intern at right: " ++ (show $ DW.escape rightDot)) addChild r (DW.escape rightDot)
+                              --subDot = leftDot' >> rightDot'
              
+{-
 -- Crawl the tree and add colors to every Node in the Dot structure
 addColorToTree :: Show a => RB.RBTree a -> DW.Dot ()
 addColorToTree RB.Empty = return ()
@@ -47,6 +53,7 @@ addColorToTree (RB.Node RB.Red l v r) = addColorToTree l >> addColorToTree r >> 
                                         where nv = DW.createNode $ show v
 addColorToTree (RB.Node RB.Black l v r) = addColorToTree l >> addColorToTree r >> DW.addColor nv DW.Black
                                         where nv = DW.createNode $ show v
+-}
 
 -- Discern how many random numbers the user wants
 getRandListLen :: [String] -> Int
@@ -55,7 +62,7 @@ getRandListLen strs = read $ head strs
 
 -- Print the dot string to stdout
 printRBTree :: StdGen -> Int -> IO ()
-printRBTree gen len = putStr $ DW.toString $ (heapToDot tree) >> addColorToTree tree
+printRBTree gen len = putStr $ DW.toString $ (heapToDot tree) -- >> addColorToTree tree
                       where 
                           list = fst $ (Rand.eval $ replicateM len Rand.zhe) gen
                           tree = RB.rbify $ list

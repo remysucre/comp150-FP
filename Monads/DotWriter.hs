@@ -38,13 +38,14 @@ module Monads.DotWriter
   , toString
 ) where
 
+--import Debug.Trace
 import Data.List (nub)
 
 -- Internal Node representation for Dot structure
-type Node = String
+type Node = (String, String)
 
 createNode :: String -> Node
-createNode = id
+createNode str = (str, "__dot_0")
 
 equals :: Node -> Node -> Bool
 equals = (==)
@@ -82,7 +83,7 @@ data Property = PColor Color
 
 -- The structure for the DotWriter
 data Dot a = Dot { 
-                   names       :: [(Node, String)],
+                   names       :: [Node],
                    properties  :: [(Node, [Property])],
                    edges       :: [(Node, Node, Maybe String)],
                    value       :: a 
@@ -95,20 +96,40 @@ instance Monad Dot where
                     (d_names, props, d_edges, x) = (names dot, properties dot, edges dot, value dot)
                     dot' = f x
                     (names', props', edges', y) = (names dot', properties dot', edges dot', value dot')
-                    edges'' = d_edges ++ edges'
                     -- contains :: Eq a => [a] -> a -> Bool
                     contains xs x = any (== x) xs 
                     -- function to ensure all labels are unique
-                    -- appendLabels :: [(Node, String)] -> [(Node, String)] -> [String] -> [(Node, String)]
-                    appendLabels [] result _ = result
-                    appendLabels (l:ls) result unique = let (node, label) = l
-                                                            count = length unique
-                                                            newLabel = "__dot_" ++ show count
-                                                        in if contains unique label
-                                                           then appendLabels ls (result ++ [(node, newLabel)]) (newLabel:unique)
-                                                           else appendLabels ls (result ++ [l]) (label:unique)
-                    names'' = appendLabels (d_names ++ names') [] []
-                    combinedPropLists = props ++ props'
+                    -- appendLabels :: [Node] -> [String] -> [(Node, Node)]
+                    renameDict [] _ = []
+                    renameDict (l:ls) unique = let (label, name) = l
+                                                   count = length unique
+                                                   newName = "__dot_" ++ show count
+                                                   in if contains unique name
+                                                      then [(l, (label, newName))] ++ renameDict ls (newName:unique)
+                                                      else [(l, l)] ++ renameDict ls (name:unique)
+                    dict = renameDict (nub $ d_names ++ names') []
+                    names'' = (map snd dict)
+                    -- renameEdges :: [(Node, Node, Maybe String)] -> [(Node, Node)] -> [(Node, Node, Maybe String)]
+                    renameEdges [] _ = []
+                    renameEdges (e:es) nodes = [(src', snk', label)] ++ renameEdges es nodes
+                                               where
+                                                   (src, snk, label) = e
+                                                   src' = case lookup src nodes of
+                                                             Nothing -> error $ "No such node as src: " ++ show src ++ " " ++ show nodes
+                                                             Just s -> s
+                                                   snk' = case lookup snk nodes of
+                                                             Nothing -> error $ "No such node as snk: " ++ show snk ++ " " ++ show nodes
+                                                             Just s -> s
+                    edges'' = renameEdges (d_edges ++ edges') dict
+                    -- remapProps :: [(Node, Property)] -> [(Node, Node)] -> [(Node, Property)]
+                    remapProps [] _ = []
+                    remapProps (np:nps) nodes = [(node', prop)] ++ remapProps nps nodes
+                                                where
+                                                    (node, prop) = np
+                                                    node' = case lookup node nodes of
+                                                               Nothing -> error $ "No such node created: " ++ show node ++ " " ++ show nodes
+                                                               Just s -> s
+                    combinedPropLists = props ++ (remapProps props' dict)
                     -- combinePropertiesHelper :: Node -> [(Node, [Property])] -> [Property]
                     combinePropertiesHelper _ [] = []
                     combinePropertiesHelper node (np:nps) = props' ++ combinePropertiesHelper node nps
@@ -117,13 +138,16 @@ instance Monad Dot where
                                                                       props' = if node == n then p else []
                     -- combineProperties :: Node -> [Property]
                     combineProperties n = combinePropertiesHelper n combinedPropLists
-                    nodes = nub $ map fst combinedPropLists
-                    listOfProperties = map combineProperties nodes
-                    props'' = zip nodes listOfProperties
+                    listOfProperties = map combineProperties names''
+                    props'' = zip names'' listOfProperties
 
 -- Adding nodes and edges to the Dot string                    
-addNode :: Node -> Dot Node
-addNode n = Dot [(n, "__dot_0")] [] [] n
+addNode :: Dot a -> Node -> Dot Node
+addNode dot n = dot' >> return node
+                where
+                    addNode' n = Dot [n] [] [] n
+                    dot' = dot >> addNode' n >> return ()
+                    node = head . reverse $ names dot'
 
 addEdge :: Node -> Node -> Maybe String -> Dot ()
 addEdge src snk label = Dot [] [] [(src, snk, label)] ()
@@ -144,21 +168,13 @@ escape (Dot _ _ _ x) = x
 
 -- A way to get the Dot String out of the Dot monad
 toString :: Dot a -> String
-toString dot = "digraph G{\n" ++ getDotNodes nodes nodeNames nodeProps ++ getDotEdges nodeNames edges' ++ "}\n" 
+toString dot = "digraph G{\n" ++ getDotNodes nodes nodeProps ++ getDotEdges edges' ++ "}\n" 
                                          where
-                                             nodes = map fst $ names dot
-                                             nodeNames = names dot
+                                             nodes = names dot
                                              nodeProps = properties dot
                                              edges' = edges dot
 
 {-- Helper functions to create the string --}
-
--- Get the unique name of the node
-getName :: Node -> [(Node, a)] -> a
-getName _      []     = error "No such node"
-getName search (n:ns) = if search == node then name else getName search ns
-                         where
-                             (node, name) = n
 
 -- Grab a list of items corresponding to a Node
 getList :: Node -> [(Node, [a])] -> [a]
@@ -180,23 +196,21 @@ propertiesToString (p:ps) = propertyString ++ propertiesToString ps
                                                       PStyle sty -> ",style=" ++ show sty
 
 -- Write out all nodes with user made labels
-getDotNodes :: [Node] -> [(Node, String)] -> [(Node, [Property])] -> String
-getDotNodes [] _ _ = ""
-getDotNodes (node:nodes) names props =  ("\t" ++ name ++ "[label=" ++ label ++ properties ++ "]\n") ++ (getDotNodes nodes names props)
+getDotNodes :: [Node] -> [(Node, [Property])] -> String
+getDotNodes [] _ = ""
+getDotNodes (node:nodes) props =  ("\t" ++ name ++ "[label=" ++ label ++ properties ++ "]\n") ++ (getDotNodes nodes props)
                                         where
-                                            label = node
-                                            name = getName node names
+                                            (label, name) = node
                                             properties = propertiesToString $ getList node props
 
 -- Write out all edges with the unique node labels                               
-getDotEdges :: [(Node, String)] -> [(Node, Node, Maybe String)] -> String
-getDotEdges [] _ = ""
-getDotEdges _ [] = ""
-getDotEdges names (e:es) = ("\t" ++ srcName ++ " -> " ++ snkName ++ edgeLabel ++ "\n") ++ getDotEdges names es
+getDotEdges :: [(Node, Node, Maybe String)] -> String
+getDotEdges [] = ""
+getDotEdges (e:es) = ("\t" ++ srcName ++ " -> " ++ snkName ++ edgeLabel ++ "\n") ++ getDotEdges es
                            where
                                (src, snk, maybeLabel) = e
-                               srcName = getName src names
-                               snkName = getName snk names
+                               srcName = snd src
+                               snkName = snd snk
                                edgeLabel = case maybeLabel of
                                                 Nothing -> ""
                                                 Just l  -> "[label=" ++ l ++ "]"
