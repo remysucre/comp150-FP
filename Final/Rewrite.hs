@@ -1,6 +1,7 @@
 module Rewrite (
     flipBang
     , flipRandomBang
+    , placesToStrict
 ) where
 
 import System.Random
@@ -89,20 +90,27 @@ flipBangDecl x (d:ds) = case d of
 flipBang :: String -> String -> Int -> String
 flipBang filePath program num = program'
                        where
-                           bangPatternsExt = parseExtension "BangPatterns"
-                           mode = ParseMode filePath Haskell2010 [bangPatternsExt] True True Nothing
-                           mod = fromParseResult $ parseFileContentsWithMode mode program
+                           mod = getModule filePath program
                            decl' = flipBangDecl num $ getDecl mod
                            program' = prettyPrint $ setDecl mod decl'
 
 flipRandomBang :: String -> String -> (Int, String)
 flipRandomBang filePath program = (num + 1, flipBang filePath program num)
                                   where
+                                      range = (0, placesToStrict filePath program)
+                                      num = (unsafePerformIO $ getStdRandom (randomR range)) - 1
+
+placesToStrict :: String -> String -> Int
+placesToStrict filePath program = num
+                                  where
+                                      mod = getModule filePath program
+                                      num = countBangDecl $ getDecl mod
+
+getModule :: String -> String -> Module
+getModule filePath program = fromParseResult $ parseFileContentsWithMode mode program
+                             where
                                       bangPatternsExt = parseExtension "BangPatterns"
                                       mode = ParseMode filePath Haskell2010 [bangPatternsExt] True True Nothing
-                                      mod = fromParseResult $ parseFileContentsWithMode mode program
-                                      range = (0, countBangDecl $ getDecl mod)
-                                      num = (unsafePerformIO $ getStdRandom (randomR range)) - 1
 
 main :: IO ()
 main = writeFile tempPath $ snd $ flipRandomBang filePath fileContents
