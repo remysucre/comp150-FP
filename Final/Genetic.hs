@@ -13,6 +13,7 @@ import System.Time
 import Data.Bits
 import Data.List (sort)
 import System.Timeout
+import System.Random
 import Debug.Trace
 
 {------ General gene class for Genetic Algorithms ------}
@@ -228,6 +229,54 @@ epsilon = secToMicro 5
 
 {------ Main algorithm ------}
 
+{-
+   Take a list of genes and create a new list of genes
+   Return: List of genes that include the following
+           - all genes given as input
+           - if more than one gene is given, a set of children born at random
+           - mutaions of all genes given and children (if applicable)
+-}
+buildGeneration :: Gene d => [d] -> [d]
+buildGeneration dnas = gen'
+                       where
+                           gen = if (length dnas) > 1
+                                 then mergeRand dnas 5
+                                 else dnas
+                           gen' = concat $ map ((flip massMutate) 5) gen
+
+{-
+   Randomly choose 2 genes and merge them into a new gene and do so n times
+   Return: List of genes that are the given genes and all new children made
+-}
+mergeRand :: Gene d => [d] -> Int -> [d]
+mergeRand dnas 0 = dnas
+mergeRand dnas n = [merge (dnas !! i) (dnas !! j)] ++ mergeRand dnas (n-1)
+                   where
+                       range = (0, (length dnas) - 1)
+                       i = unsafePerformIO $ getStdRandom $ randomR range
+                       j = unsafePerformIO $ getStdRandom $ randomR range
+
+{-
+   Run fitness on an entire generation of DNA
+   Return: list of most fit DNARecords wrapped in the IO monad
+-}
+runGeneration :: [DNA] -> Int -> Int -> IO [DNARecord]
+runGeneration dnas time poolSize = do
+                                     sequence $ map (compile . path) dnas -- Compile all the programs
+                                     times <- sequence $ map (fitnessWithTimeout $ time + epsilon) dnas
+                                     records <- return $ sort $ map (uncurry createDNARecords) $ zip dnas times
+                                     return $ take poolSize records
+
+{-
+   Runs the genetic algorithm and returns a set of best DNA created
+   Return: list of most fit DNA after n generations wrapped in the IO Monad
+-}
+geneticAlg :: [DNA] -> Int -> Int -> Int -> IO [DNA]
+geneticAlg dnas 0 _    _        = return dnas
+geneticAlg dnas n time poolSize = do
+                                     records <- runGeneration (buildGeneration dnas) time poolSize
+                                     geneticAlg (map dna records) (n-1) time poolSize
+
 main :: IO ()
 main = do 
           program <- readFile filePath
@@ -236,12 +285,15 @@ main = do
           fitness $ def
           end <- getClockTime
           time <- return $ diffClockTimes end start
-          dnas <- return $ massMutate def numMutations
-          sequence $ map (compile . path) dnas -- Compile all the programs
-          times <- sequence $ map (fitnessWithTimeout $ (timeToInt time) + epsilon ) dnas
-          records <- return $ sort $ map (uncurry createDNARecords) $ zip dnas times
-          print $ records
-       where
+          ---dnas <- return $ buildGeneration [def]
+          --dnas <- return $ massMutate def numMutations
+          --sequence $ map (compile . path) dnas -- Compile all the programs
+          --times <- sequence $ map (fitnessWithTimeout $ (timeToInt time) + epsilon ) dnas
+          --records <- return $ sort $ map (uncurry createDNARecords) $ zip dnas times
+          ---records <- runGeneration dnas (timeToInt time) 6
+          dnas <- geneticAlg [def] 2 (timeToInt time) 6
+          print $ head dnas
+        where
            bits = 33 :: Integer
            moduleName = "Main"
            filePath = "Main" ++ ".hs"
