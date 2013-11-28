@@ -151,12 +151,12 @@ createDNA fp program = DNA fp program 0 $ placesToStrict fp program
 -}
 data DNARecord = DR { dna :: DNA, time :: TimeDiff } deriving Show
 
+
 instance Eq DNARecord where
    dr1 == dr2 = (time dr1) == time dr2
 
 instance Ord DNARecord where
    dr1 <= dr2 = (time dr1) <= time dr2
-
 {-
    Create a record based off of DNA and the result of fitness function
 -}
@@ -260,27 +260,87 @@ mergeRand dnas n = [merge (dnas !! i) (dnas !! j)] ++ mergeRand dnas (n-1)
    Run fitness on an entire generation of DNA
    Return: list of most fit DNARecords wrapped in the IO monad
 -}
+
 runGeneration :: [DNA] -> Int -> Int -> IO [DNARecord]
 runGeneration dnas time poolSize = do
                                      sequence $ map (compile . path) dnas -- Compile all the programs
-                                     times <- sequence $ map (fitnessWithTimeout $ time + epsilon) dnas
+                                     times <- sequence $ map (fitnessWithTimeout time) dnas
                                      records <- return $ sort $ map (uncurry createDNARecords) $ zip dnas times
                                      return $ take poolSize records
-
 {-
    Runs the genetic algorithm and returns a set of best DNA created
    Return: list of most fit DNA after n generations wrapped in the IO Monad
 -}
+
 geneticAlg :: [DNA] -> Int -> Int -> Int -> IO [DNA]
 geneticAlg dnas 0 _    _        = return dnas
 geneticAlg dnas n time poolSize = do
                                      records <- runGeneration (buildGeneration dnas) time poolSize
                                      geneticAlg (map dna records) (n-1) time poolSize
 
+data Genes = Genes { getDNA :: [DNA] } deriving Show
+
+mutateG :: Genes -> Genes
+mutateG g@(Genes ds) = Genes ds'
+                      where 
+                          index = unsafePerformIO $ getStdRandom (randomR (0, (length ds) - 1))
+                          (start, end) = splitAt index ds
+                          newDNA = mutate $ ds !! index
+                          ds' = start ++ [newDNA] ++ tail end
+
+mergeG :: Genes -> Genes -> Genes
+mergeG g1@(Genes ds) g2@(Genes ds') = Genes $ map (uncurry merge) $ zip ds ds'
+
+fitnessG :: Genes -> IO TimeDiff
+fitnessG (Genes ds) = fitness $ head ds
+
+instance Gene Genes where
+    mutate = mutateG
+    merge = mergeG
+    fitness = fitnessG
+
+data GeneRecord = GR { gene :: Genes, t :: TimeDiff } deriving Show
+
+instance Eq GeneRecord where
+   dr1 == dr2 = (t dr1) == t dr2
+
+instance Ord GeneRecord where
+   dr1 <= dr2 = (t dr1) <= t dr2
+
+createGeneRecords :: Genes -> TimeDiff -> GeneRecord
+createGeneRecords g t = GR g t
+
+runGenerationG :: [Genes] -> Int -> Int -> IO [GeneRecord]
+runGenerationG genes time poolSize = do
+                                       sequence $ map (compile . path) dnas -- Compile all the programs
+                                       times <- sequence $ map (fitnessWithTimeout time) genes
+                                       records <- return $ sort $ map (uncurry createGeneRecords) $ zip genes times
+                                       return $ take poolSize records
+                                     where
+                                         dnas = map (head . getDNA) genes
+
+geneticAlgG :: [Genes] -> Int -> Int -> Int -> IO [Genes]
+geneticAlgG genes 0 _    _        = return genes
+geneticAlgG genes n time poolSize = do
+                                     records <- runGenerationG (buildGeneration genes) time poolSize
+                                     geneticAlgG (map gene records) (n-1) time poolSize
+
+createGene :: [(String, String)] -> Genes
+createGene progs = Genes $ map (uncurry createDNA) progs
+
+createGeneFromFile :: FilePath -> IO Genes
+createGeneFromFile fp = do
+                          content <- trace "open" $ readFile fp
+                          filePaths <- trace "read" $ return $ lines content
+                          fileContents <- trace (show filePaths) $ sequence $ map readFile filePaths
+                          trace "creation" $ return $ createGene $ zip (map dropExtension filePaths) fileContents
+
 main :: IO ()
 main = do 
-          program <- readFile filePath
-          def <- return $ createDNA moduleName program
+          ----program <- readFile filePath
+          ----def <- return $ createDNA moduleName program
+          def <- createGeneFromFile filePath
+          compile $ path $ head $ getDNA def
           start <- getClockTime
           fitness $ def
           end <- getClockTime
@@ -291,10 +351,10 @@ main = do
           --times <- sequence $ map (fitnessWithTimeout $ (timeToInt time) + epsilon ) dnas
           --records <- return $ sort $ map (uncurry createDNARecords) $ zip dnas times
           ---records <- runGeneration dnas (timeToInt time) 6
-          dnas <- geneticAlg [def] 2 (timeToInt time) 6
+          dnas <- geneticAlgG [def] 2 (timeToInt time + epsilon) 6
           print $ head dnas
         where
            bits = 33 :: Integer
            moduleName = "Main"
-           filePath = "Main" ++ ".hs"
+           filePath = "files.txt"
            numMutations = 5
