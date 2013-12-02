@@ -27,5 +27,12 @@ main: Main.hs
 	@ghc --make -o ./bin/main Main 
 	@make clean
 
+final:
+	@cd Final/
+	@ghc -package haskell-src-exts -package temporary -outputdir tempo/ -o genetic GMain.hs
+	@mv genetic ../bin/
+	@rm -rf tempo
+	@cd ..
+
 all: 
 	@make main

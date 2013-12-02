@@ -15,6 +15,8 @@ import Data.List (sort)
 import System.Timeout
 import System.Random
 import Debug.Trace
+import System.IO.Temp
+import System.Directory
 
 {------ General gene class for Genetic Algorithms ------}
 
@@ -106,11 +108,13 @@ mergeDNA d1@(DNA fp program bits np) d2@(DNA fp' program' bits' np') = mutateDNA
 writeDNAToDisk :: DNA -> DNA
 writeDNAToDisk (DNA fp program bits numPlaces) = DNA fp' program bits numPlaces
                                                  where
-                                                     (name, handle) = unsafePerformIO $ openTempFile "files/" "Main.hs"
+                                                     --(name, handle) = unsafePerformIO $ openTempFile "files/" (fp ++ ".hs")
+                                                     (dir, name) = splitFileName fp
                                                      action = do
-                                                                hClose handle
-                                                                writeFile name program
-                                                                return name
+                                                                --hClose handle
+                                                                createDirectoryIfMissing True dir
+                                                                writeFile (fp ++ ".hs") program
+                                                                return fp
                                                      fp' = dropExtension $ unsafePerformIO action
 
 {-
@@ -118,8 +122,12 @@ writeDNAToDisk (DNA fp program bits numPlaces) = DNA fp' program bits numPlaces
 -}
 compile :: FilePath -> IO ExitCode
 compile fp = do
-               exit <- system $ "ghc -XBangPatterns -outputdir temp/ -o " ++ fp ++ " " ++ fp ++ ".hs"
-               system $ "rm temp/*"
+               oldDir <- getCurrentDirectory
+               (dir, name) <- return $ splitFileName fp
+               setCurrentDirectory dir
+               exit <- trace ("compile : " ++ show fp) $ system $ "ghc -XBangPatterns -outputdir temp/ -o " ++ name ++ " " ++ name ++ ".hs"
+               system $ "rm -rf temp"
+               setCurrentDirectory oldDir
                return exit
 
 {-
@@ -131,7 +139,7 @@ fitnessDNA :: DNA -> IO TimeDiff
 fitnessDNA (DNA fp program _ _) = do
                                     --staticExit <- compile fp
                                     time <- timeIO $ system $ "./" ++ fp
-                                    system $ "rm " ++ fp
+                                    --system $ "rm " ++ fp
                                     return time
                                     --case staticExit of
                                     --    ExitSuccess   -> return time
@@ -182,6 +190,14 @@ timeToInt time = (secToMicro $ minToSec $ hourToMin $ tdHour time) +
                  (secToMicro $ tdSec time) + 
                  (picoToMicro $ tdPicosec time)
 
+intToTime :: Int -> TimeDiff
+intToTime int = TimeDiff 0 0 0 hour min' sec' pico
+                where
+                    (sec, srem) = quotRem int 1000
+                    (min, sec') = quotRem sec 60
+                    (hour, min') = quotRem min 60
+                    pico = toInteger $ srem * 1000000
+
 {------ Functions to convert to Microseconds ------}
 secToMicro :: Int -> Int
 secToMicro sec = sec * 1000
@@ -195,6 +211,9 @@ minToSec minute = minute * 60
 hourToMin :: Int -> Int
 hourToMin hour = hour * 60
 
+microToPico :: Int -> Integer
+microToPico micro = toInteger $ micro * 1000000
+
 {- 
    Timeout the fitness function after "time" microseconds
    Return: infTime if the computation fails or times out
@@ -206,6 +225,25 @@ fitnessWithTimeout time gene = do
                                  case result of
                                      Nothing -> return infTime
                                      Just t  -> return t
+
+repeatFitness :: (Gene d) => Int -> Int -> d -> IO [TimeDiff]
+repeatFitness 0 time gene = return []
+repeatFitness n time gene = do 
+                              timeDiff <- fitnessWithTimeout time gene
+                              restTimeDiff <- repeatFitness (n-1) time gene
+                              return (timeDiff:restTimeDiff)
+
+avg :: [TimeDiff] -> TimeDiff
+avg [] = infTime
+avg diffs = if average == 0 then infTime else intToTime average
+            where
+                diffs' = filter ((/=) infTime) diffs
+                num = length diffs'
+                times = map timeToInt diffs'
+                sum = if num == 0 then 0
+                      else foldr (+) 0 times
+                average = if num == 0 then 0
+                          else sum `quot` num
 
 {-
    Takes an action with an exit code and times it
@@ -281,15 +319,20 @@ geneticAlg dnas n time poolSize = do
 data Genes = Genes { getDNA :: [DNA] } deriving Show
 
 mutateG :: Genes -> Genes
-mutateG g@(Genes ds) = Genes ds'
+mutateG g@(Genes ds) = Genes ds''
                       where 
                           index = unsafePerformIO $ getStdRandom (randomR (0, (length ds) - 1))
-                          (start, end) = splitAt index ds
-                          newDNA = mutate $ ds !! index
-                          ds' = start ++ [newDNA] ++ tail end
+                          ds' = getDNA $ writeGeneToDisk g
+                          (start, end) = splitAt index ds'
+                          newDNA = mutate $ ds' !! index
+                          ds'' = start ++ [newDNA] ++ tail end
 
 mergeG :: Genes -> Genes -> Genes
-mergeG g1@(Genes ds) g2@(Genes ds') = Genes $ map (uncurry merge) $ zip ds ds'
+mergeG g1 g2 = Genes $ map (uncurry merge) $ zip ds ds'
+               where
+                   g1' = writeGeneToDisk g1
+                   ds = getDNA g1'
+                   ds' = getDNA g2
 
 fitnessG :: Genes -> IO TimeDiff
 fitnessG (Genes ds) = fitness $ head ds
@@ -310,20 +353,23 @@ instance Ord GeneRecord where
 createGeneRecords :: Genes -> TimeDiff -> GeneRecord
 createGeneRecords g t = GR g t
 
-runGenerationG :: [Genes] -> Int -> Int -> IO [GeneRecord]
-runGenerationG genes time poolSize = do
-                                       sequence $ map (compile . path) dnas -- Compile all the programs
-                                       times <- sequence $ map (fitnessWithTimeout time) genes
+runGenerationG :: [Genes] -> Int -> Int -> Int -> IO [GeneRecord]
+runGenerationG genes time repeats poolSize = do
+                                       trace (show genes) $ sequence $ map (compile . path) dnas -- Compile all the programs
+                                       timesList <- sequence $ map (repeatFitness repeats time) genes
+                                       paths <- return $ map (((++) "rm ") . path. head . getDNA) genes
+                                       sequence $ map system paths
+                                       times <- return $ map avg timesList
                                        records <- return $ sort $ map (uncurry createGeneRecords) $ zip genes times
                                        return $ take poolSize records
                                      where
                                          dnas = map (head . getDNA) genes
 
-geneticAlgG :: [Genes] -> Int -> Int -> Int -> IO [Genes]
-geneticAlgG genes 0 _    _        = return genes
-geneticAlgG genes n time poolSize = do
-                                     records <- runGenerationG (buildGeneration genes) time poolSize
-                                     geneticAlgG (map gene records) (n-1) time poolSize
+geneticAlgG :: [Genes] -> Int -> Int -> Int -> Int -> IO [Genes]
+geneticAlgG genes 0 _    _       _        = return genes
+geneticAlgG genes n time repeats poolSize = do
+                                              records <- runGenerationG (buildGeneration genes) time repeats poolSize
+                                              geneticAlgG (map gene records) (n-1) time repeats poolSize
 
 createGene :: [(String, String)] -> Genes
 createGene progs = Genes $ map (uncurry createDNA) progs
@@ -335,26 +381,18 @@ createGeneFromFile fp = do
                           fileContents <- trace (show filePaths) $ sequence $ map readFile filePaths
                           trace "creation" $ return $ createGene $ zip (map dropExtension filePaths) fileContents
 
-main :: IO ()
-main = do 
-          ----program <- readFile filePath
-          ----def <- return $ createDNA moduleName program
-          def <- createGeneFromFile filePath
-          compile $ path $ head $ getDNA def
-          start <- getClockTime
-          fitness $ def
-          end <- getClockTime
-          time <- return $ diffClockTimes end start
-          ---dnas <- return $ buildGeneration [def]
-          --dnas <- return $ massMutate def numMutations
-          --sequence $ map (compile . path) dnas -- Compile all the programs
-          --times <- sequence $ map (fitnessWithTimeout $ (timeToInt time) + epsilon ) dnas
-          --records <- return $ sort $ map (uncurry createDNARecords) $ zip dnas times
-          ---records <- runGeneration dnas (timeToInt time) 6
-          dnas <- geneticAlgG [def] 2 (timeToInt time + epsilon) 6
-          print $ head dnas
-        where
-           bits = 33 :: Integer
-           moduleName = "Main"
-           filePath = "files.txt"
-           numMutations = 5
+writeGeneToDisk :: Genes -> Genes
+writeGeneToDisk g = Genes ds'
+                    where
+                        ds = getDNA g
+                        fp = unsafePerformIO $ createTempDirectory "files/" "tmp"
+                        ds' = map (writeDNAToDisk . addTemp fp) ds
+
+addTemp :: FilePath -> DNA -> DNA
+addTemp tempPath d@(DNA fp prog bits size) = trace (show fp') $ DNA fp' prog bits size
+                                             where
+                                                 fpList = splitPath fp
+                                                 fp' = case ("files/" `elem` fpList) of
+                                                            True  -> tempPath ++ "/" ++ (concat . tail $ tail fpList)
+                                                            False -> tempPath ++ "/" ++ fp
+
