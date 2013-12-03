@@ -229,7 +229,7 @@ fitnessWithTimeout time gene = do
 repeatFitness :: (Gene d) => Int -> Int -> d -> IO [TimeDiff]
 repeatFitness 0 time gene = return []
 repeatFitness n time gene = do 
-                              timeDiff <- fitnessWithTimeout time gene
+                              timeDiff <- trace (show n) $ fitnessWithTimeout time gene
                               restTimeDiff <- repeatFitness (n-1) time gene
                               return (timeDiff:restTimeDiff)
 
@@ -370,6 +370,15 @@ geneticAlgG genes 0 _    _       _        = return genes
 geneticAlgG genes n time repeats poolSize = do
                                               records <- runGenerationG (buildGeneration genes) time repeats poolSize
                                               geneticAlgG (map gene records) (n-1) time repeats poolSize
+
+geneticAlgG' :: [Genes] -> Int -> Int -> Int -> Int -> (TimeDiff, Int) -> IO [Genes]
+geneticAlgG' genes 0 _ _ _ _ = return genes
+geneticAlgG' genes n time repeats poolSize (diff, _) = do
+                                                         records <- runGenerationG (buildGeneration genes) time repeats poolSize
+                                                         fast <- return $ timeToInt . t $ head records
+                                                         diff' <- return $ timeToInt diff
+                                                         if (diff' - fast > 0) && (diff' - fast < 5000) then return $ map gene records
+                                                         else geneticAlgG' (map gene records) (n-1) time repeats poolSize (diff, 0)
 
 createGene :: [(String, String)] -> Genes
 createGene progs = Genes $ map (uncurry createDNA) progs
