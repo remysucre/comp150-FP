@@ -17,14 +17,13 @@ import System.Random
 import Debug.Trace
 import System.IO.Temp
 import System.Directory
-import Control.Applicative
-import System.CPUTime
+
 {------ General gene class for Genetic Algorithms ------}
 
 class Gene d where
    mutate :: d -> d
    merge :: d -> d -> d
-   fitness :: d -> IO Integer
+   fitness :: d -> IO TimeDiff
 
 {- 
    Mutate a gene a certain number of times
@@ -48,10 +47,7 @@ data DNA = DNA { path :: FilePath    -- filePath to program
                , vec  :: Integer     -- set of bits corresponding to places to insert strictness
                , n    :: Int         -- upper limit on size of the set of bits
                }
-        --   deriving Show
-
-instance Show DNA where
-   show d = "path: " ++ show (path d) ++ " vec: " ++ show (vec d)
+           deriving Show
 
 instance Gene DNA where
    mutate = mutateDNA
@@ -129,7 +125,7 @@ compile fp = do
                oldDir <- getCurrentDirectory
                (dir, name) <- return $ splitFileName fp
                setCurrentDirectory dir
-               exit <- system $ "ghc --make -threaded -rtsopts -XBangPatterns -outputdir temp/ -o " ++ name ++ " " ++ name ++ ".hs > /dev/null"
+               exit <- trace ("compile : " ++ show fp) $ system $ "ghc -XBangPatterns -outputdir temp/ -o " ++ name ++ " " ++ name ++ ".hs"
                system $ "rm -rf temp"
                setCurrentDirectory oldDir
                return exit
@@ -139,23 +135,16 @@ compile fp = do
    Returns: infTime if there are any errors
             run time of the executable otherwise
 -}
-fitnessDNA :: DNA -> IO Integer
+fitnessDNA :: DNA -> IO TimeDiff
 fitnessDNA (DNA fp program _ _) = do
                                     --staticExit <- compile fp
-                                    time <- timeIO $ system $ "./" ++ fp ++ " > /dev/null"
+                                    time <- timeIO $ system $ "./" ++ fp
                                     --system $ "rm " ++ fp
                                     return time
                                     --case staticExit of
                                     --    ExitSuccess   -> return time
                                     --    ExitFailure _ -> return infTime
 
-fitnessDNA' :: Int -> Float -> DNA -> IO [Float]
-fitnessDNA' reps base (DNA fp _ _ _) = do
-                                         print $ "Running " ++ (show base)
-                                         exit <- system $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show base) ++ "s " ++ "test.txt"
-                                         case exit of
-                                              ExitSuccess ->  do {contents <- readFile "test.txt"; return $ map (read) $ lines contents}
-                                              ExitFailure _ -> error "Failed"
 {-
    Create a new strand of DNA using a file path and a program
 -}
@@ -168,7 +157,7 @@ createDNA fp program = DNA fp program 0 $ placesToStrict fp program
 {- 
    A record for a given piece of DNA after fitness 
 -}
-data DNARecord = DR { dna :: DNA, time :: Integer } deriving Show
+data DNARecord = DR { dna :: DNA, time :: TimeDiff } deriving Show
 
 
 instance Eq DNARecord where
@@ -179,7 +168,7 @@ instance Ord DNARecord where
 {-
    Create a record based off of DNA and the result of fitness function
 -}
-createDNARecords :: DNA -> Integer -> DNARecord
+createDNARecords :: DNA -> TimeDiff -> DNARecord
 createDNARecords d time = DR d time
 
 {------ Functions for dealing with TimeDiffs ------}
@@ -230,40 +219,45 @@ microToPico micro = toInteger $ micro * 1000000
    Return: infTime if the computation fails or times out
            run time if the executable otherwise
 -}
-fitnessWithTimeout :: (Gene d) => Integer -> d -> IO Integer
+fitnessWithTimeout :: (Gene d) => Int -> d -> IO TimeDiff
 fitnessWithTimeout time gene = do
-                                 result <- timeout (fromInteger time) $ fitness gene
+                                 result <- timeout time $ fitness gene
                                  case result of
-                                     Nothing -> return $ -1
+                                     Nothing -> return infTime
                                      Just t  -> return t
 
-repeatFitness :: (Gene d) => Int -> Integer -> d -> IO [Integer]
-repeatFitness n time gene = sequence $ (take n $ repeat $ fitnessWithTimeout time) <*> [gene]
+repeatFitness :: (Gene d) => Int -> Int -> d -> IO [TimeDiff]
+repeatFitness 0 time gene = return []
+repeatFitness n time gene = do 
+                              timeDiff <- trace (show n) $ fitnessWithTimeout time gene
+                              restTimeDiff <- repeatFitness (n-1) time gene
+                              return (timeDiff:restTimeDiff)
 
-avg :: [Float] -> Float
-avg [] = -1
-avg diffs = if average == 0 then (-1.0) else average
+avg :: [TimeDiff] -> TimeDiff
+avg [] = infTime
+avg diffs = if average == 0 then infTime else intToTime average
             where
-                diffs' = trace (show diffs) $ filter ((/=) $ (-1.0)) diffs
+                diffs' = filter ((/=) infTime) diffs
                 num = length diffs'
-                --times = map timeToInt diffs'
-                sum = foldr (+) 0 diffs'
+                times = map timeToInt diffs'
+                sum = if num == 0 then 0
+                      else foldr (+) 0 times
                 average = if num == 0 then 0
-                          else sum / (fromInteger $ toInteger num)
+                          else sum `quot` num
 
 {-
    Takes an action with an exit code and times it
    Return: infTime if the computation fails
            run time of the action otherwise
 -}
-timeIO :: IO ExitCode -> IO Integer
+timeIO :: IO ExitCode -> IO TimeDiff
 timeIO action = do
-                  start <- getCPUTime
+                  start <- getClockTime
                   exit <- action
-                  end <- getCPUTime
+                  end <- getClockTime
                   case exit of
-                      ExitSuccess   -> return $ end - start
-                      ExitFailure _ -> return $ toInteger $ -1
+                      ExitSuccess   -> return $ diffClockTimes end start
+                      ExitFailure _ -> return infTime
 
 {- 
    Number to add to the base time for timeout (for compilation)
@@ -305,10 +299,10 @@ mergeRand dnas n = [merge (dnas !! i) (dnas !! j)] ++ mergeRand dnas (n-1)
    Return: list of most fit DNARecords wrapped in the IO monad
 -}
 
-runGeneration :: [DNA] -> Integer -> Int -> IO [DNARecord]
+runGeneration :: [DNA] -> Int -> Int -> IO [DNARecord]
 runGeneration dnas time poolSize = do
                                      sequence $ map (compile . path) dnas -- Compile all the programs
-                                     times <- sequence $ map (fitnessWithTimeout (fromInteger time)) dnas
+                                     times <- sequence $ map (fitnessWithTimeout time) dnas
                                      records <- return $ sort $ map (uncurry createDNARecords) $ zip dnas times
                                      return $ take poolSize records
 {-
@@ -316,7 +310,7 @@ runGeneration dnas time poolSize = do
    Return: list of most fit DNA after n generations wrapped in the IO Monad
 -}
 
-geneticAlg :: [DNA] -> Int -> Integer -> Int -> IO [DNA]
+geneticAlg :: [DNA] -> Int -> Int -> Int -> IO [DNA]
 geneticAlg dnas 0 _    _        = return dnas
 geneticAlg dnas n time poolSize = do
                                      records <- runGeneration (buildGeneration dnas) time poolSize
@@ -340,7 +334,7 @@ mergeG g1 g2 = Genes $ map (uncurry merge) $ zip ds ds'
                    ds = getDNA g1'
                    ds' = getDNA g2
 
-fitnessG :: Genes -> IO Integer
+fitnessG :: Genes -> IO TimeDiff
 fitnessG (Genes ds) = fitness $ head ds
 
 instance Gene Genes where
@@ -348,7 +342,7 @@ instance Gene Genes where
     merge = mergeG
     fitness = fitnessG
 
-data GeneRecord = GR { gene :: Genes, t :: Float } deriving Show
+data GeneRecord = GR { gene :: Genes, t :: TimeDiff } deriving Show
 
 instance Eq GeneRecord where
    dr1 == dr2 = (t dr1) == t dr2
@@ -356,71 +350,45 @@ instance Eq GeneRecord where
 instance Ord GeneRecord where
    dr1 <= dr2 = (t dr1) <= t dr2
 
-createGeneRecords :: Genes -> Float -> GeneRecord
+createGeneRecords :: Genes -> TimeDiff -> GeneRecord
 createGeneRecords g t = GR g t
 
-
-runTest :: Float -> Int -> (DNA, FilePath) -> IO ProcessHandle
-runTest time reps (d, temp) = runCommand $ "bash timer.sh " ++ (path d) ++ " " ++ (show reps) ++ " " ++ (show time) ++ "s " ++ temp
-
-getTimes :: FilePath -> IO [Float]
-getTimes fp = do
-                contents <- readFile fp
-                trace (show $ lines contents) $ return $ map read $ lines contents
-
-
-runGenerationG :: [Genes] -> Float -> Int -> Int -> IO [GeneRecord]
+runGenerationG :: [Genes] -> Int -> Int -> Int -> IO [GeneRecord]
 runGenerationG genes time repeats poolSize = do
-                                       print "Compiling all programs"
                                        trace (show genes) $ sequence $ map (compile . path) dnas -- Compile all the programs
-                                       print "Running fitness on all programs"
-                                       --timesList <- sequence $ map (repeatFitness repeats time) genes
-                                       timesList <- sequence $ map (fitnessDNA' repeats time . head . getDNA) genes
-                                       --handles <- sequence $ take (length genes) $ repeat $ openTempFile "times/" "test.txt"
-                                       --files <- return $ map fst handles
-                                       --sequence $ map hClose $ map snd handles
-                                       --tests <- sequence $ map (runTest time repeats) $ zip (map (head . getDNA) genes) files
-                                       --sequence $ map waitForProcess tests
-                                       --timesList <- sequence $ map getTimes files
+                                       timesList <- sequence $ map (repeatFitness repeats time) genes
                                        paths <- return $ map (((++) "rm ") . path. head . getDNA) genes
                                        sequence $ map system paths
-                                       print "Calculating scores"
                                        times <- return $ map avg timesList
                                        records <- return $ sort $ map (uncurry createGeneRecords) $ zip genes times
                                        return $ take poolSize records
                                      where
                                          dnas = map (head . getDNA) genes
 
-geneticAlgG :: [Genes] -> Int -> Float -> Int -> Int -> IO [Genes]
+geneticAlgG :: [Genes] -> Int -> Int -> Int -> Int -> IO [Genes]
 geneticAlgG genes 0 _    _       _        = return genes
 geneticAlgG genes n time repeats poolSize = do
                                               records <- runGenerationG (buildGeneration genes) time repeats poolSize
                                               geneticAlgG (map gene records) (n-1) time repeats poolSize
 
-geneticAlgG' :: [Genes] -> Int -> Float -> Int -> Int -> (GeneRecord, Int) -> IO [Genes]
+geneticAlgG' :: [Genes] -> Int -> Int -> Int -> Int -> (TimeDiff, Int) -> IO [Genes]
 geneticAlgG' genes 0 _ _ _ _ = return genes
-geneticAlgG' genes _ _ _ _ (gr, 3) = return $ [gene gr]
-geneticAlgG' genes n time repeats poolSize (gr, failCount) = do
-                                                         records' <- runGenerationG (buildGeneration genes) time repeats poolSize
-                                                         records <- return $ filter (\gr -> (t gr) /= (-1.0)) records'
-                                                         print $ map t records
-                                                         diff' <- return $ t gr
-                                                         fast <- if ((length records) == 0) then return $ diff' else return $ t $ head records
-                                                         print $ (show $ diff' - fast) ++ " sec faster"
-                                                         if ((length records) == 0) then trace ("All timeout") $ geneticAlgG' genes n time repeats poolSize (gr, failCount + 1)
-                                                         else if (diff' - fast < 0) then trace ("Made all slower") $ geneticAlgG' genes n time repeats poolSize (gr, failCount + 1)
-                                                         else if (diff' - fast < 5.0) then trace ("Not fast enough") $ geneticAlgG' (map gene records) (n-1) time repeats poolSize (head records, failCount + 1)
-                                                              else geneticAlgG' (map gene records) (n-1) time repeats poolSize (head records, 0)
+geneticAlgG' genes n time repeats poolSize (diff, _) = do
+                                                         records <- runGenerationG (buildGeneration genes) time repeats poolSize
+                                                         fast <- return $ timeToInt . t $ head records
+                                                         diff' <- return $ timeToInt diff
+                                                         if (diff' - fast > 0) && (diff' - fast < 5000) then return $ map gene records
+                                                         else geneticAlgG' (map gene records) (n-1) time repeats poolSize (diff, 0)
 
 createGene :: [(String, String)] -> Genes
 createGene progs = Genes $ map (uncurry createDNA) progs
 
 createGeneFromFile :: FilePath -> IO Genes
 createGeneFromFile fp = do
-                          content <- readFile fp
-                          filePaths <- return $ lines content
-                          fileContents <- sequence $ map readFile filePaths
-                          return $ createGene $ zip (map dropExtension filePaths) fileContents
+                          content <- trace "open" $ readFile fp
+                          filePaths <- trace "read" $ return $ lines content
+                          fileContents <- trace (show filePaths) $ sequence $ map readFile filePaths
+                          trace "creation" $ return $ createGene $ zip (map dropExtension filePaths) fileContents
 
 writeGeneToDisk :: Genes -> Genes
 writeGeneToDisk g = Genes ds'
@@ -430,7 +398,7 @@ writeGeneToDisk g = Genes ds'
                         ds' = map (writeDNAToDisk . addTemp fp) ds
 
 addTemp :: FilePath -> DNA -> DNA
-addTemp tempPath d@(DNA fp prog bits size) = DNA fp' prog bits size
+addTemp tempPath d@(DNA fp prog bits size) = trace (show fp') $ DNA fp' prog bits size
                                              where
                                                  fpList = splitPath fp
                                                  fp' = case ("files/" `elem` fpList) of
