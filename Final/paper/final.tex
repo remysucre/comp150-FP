@@ -1,0 +1,171 @@
+%-----------------------------------------------------------------------------
+%
+%               Template for sigplanconf LaTeX Class
+%
+% Name:         sigplanconf-template.tex
+%
+% Purpose:      A template for sigplanconf.cls, which is a LaTeX 2e class
+%               file for SIGPLAN conference proceedings.
+%
+% Guide:        Refer to "Author's Guide to the ACM SIGPLAN Class,"
+%               sigplanconf-guide.pdf
+%
+% Author:       Paul C. Anagnostopoulos
+%               Windfall Software
+%               978 371-2316
+%               paul@windfall.com
+%
+% Created:      15 February 2005
+%
+%-----------------------------------------------------------------------------
+
+
+\documentclass{sigplanconf}
+
+% The following \documentclass options may be useful:
+
+% preprint      Remove this option only once the paper is in final form.
+% 10pt          To set in 10-point type instead of 9-point.
+% 11pt          To set in 11-point type instead of 9-point.
+% authoryear    To obtain author/year citation style instead of numeric.
+
+\usepackage{amsmath}
+\usepackage{listings}
+
+\begin{document}
+
+\lstset{language=Haskell,basicstyle=\ttfamily}
+
+\special{papersize=8.5in,11in}
+\setlength{\pdfpageheight}{\paperheight}
+\setlength{\pdfpagewidth}{\paperwidth}
+
+%\conferenceinfo{CONF 'yy}{Month d--d, 20yy, City, ST, Country} 
+%\copyrightyear{20yy} 
+%\copyrightdata{978-1-nnnn-nnnn-n/yy/mm} 
+%\doi{nnnnnnn.nnnnnnn}
+
+% Uncomment one of the following two, if you are not going for the 
+% traditional copyright transfer agreement.
+
+%\exclusivelicense                % ACM gets exclusive license to publish, 
+                                  % you retain copyright
+
+%\permissiontopublish             % ACM gets nonexclusive license to publish
+                                  % (paid open-access papers, 
+                                  % short abstracts)
+
+%\titlebanner{banner above paper title}        % These are ignored unless
+%\preprintfooter{short description of paper}   % 'preprint' option specified.
+\toappear{Final paper for Comp150-05: Advanced Functional Programming}
+\title{Random Strictness at Source Level}
+%\subtitle{Subtitle Text, if any}
+
+\authorinfo{Diogenes Nunez}
+           {Tufts University}
+           {dan@cs.tufts.edu}
+%\authorinfo{Name2\and Name3}
+%           {Affiliation2/3}
+%           {Email2/3}
+
+\maketitle
+
+\begin{abstract}
+Haskell is a lazy language which can cause slowdown due to the creation of thunks. Strictness can force evaluation of expressions and avoid the cost of thunks. However, programmers adding it into source code for performance may not know where to start. This case worsens if it is code they did not write. We introduce a genetic algorithm with the purpose of developing a faster program through adding strictness to the source code.
+\end{abstract}
+
+%\category{CR-number}{subcategory}{third-level}
+
+% general terms are not compulsory anymore, 
+% you may leave them out
+%\terms
+%term1, term2
+
+%\keywords
+%keyword1, keyword2
+
+\section{Introduction}
+
+Haskell is lazy. Consider this function
+\begin{lstlisting}
+-- Create infinite list
+repeat :: a -> [a]
+
+replicate :: Int -> a -> [a]
+replicate n x = take n xs
+                where xs = repeat x
+\end{lstlisting}
+In an eager language, xs would be evaluated immediately. This results in a nonterminating function. However, a lazy language would only evaulate \lstinline!xs! when required. Even then, the expression only gets what it needs. Therefore, only \lstinline!n! items are required and processed.
+
+How does Haskell do this? To explain, consider this function
+\begin{lstlisting}
+f :: Int -> [Int]
+f n = replicate n n
+\end{lstlisting}
+Consider the application \lstinline!f (x+1)!. Haskell creates a closure on the heap that contains the unevaluated expression \lstinline!x+1! as show in ??. This is a thunk. The function \lstinline!f! then gets a pointer to that. When the value within is needed, Haskell traverses to the thunk and evaluates it, potentially writing something back to the heap. Note that an eager language would not have written the thunk in the first place, avoiding both the additional write and the read.
+
+How well does this scale? Suppose we had a large group of thunks. The larger the group, the more memory pressure applied to the application. This leads to more frequent garbage collections and overall slowdown. In some cases, we may have programs that crash due to a lack of memory. We might save some overall time and space by evaluating some of those thunks early. Haskell has notation to force eager evaluation, the bang.
+\begin{lstlisting}
+f :: Int -> [Int]
+f !n = replicate n n
+\end{lstlisting}
+
+Now, we force Haskell to evaluate \lstinline!n! and pass that value on to \lstinline!f!. In other words, \lstinline{n} is evaluated eagerly. We say that \lstinline!g! is strict in \lstinline!n! and the process of forcing eager evaluation is adding strictness to the program.
+\section{Background}
+\subsection{Strictness}
+\subsection{Strictness Analysis}
+\subsection{Related Work}
+
+\section{Architecture}
+\subsection{Overview}
+\subsection{Rewrite}
+\subsection{Genetic Algorithm}
+\subsubsection{Genes}
+\subsubsection{mutate}
+\subsubsection{merge}
+\subsubsection{fitness}
+\subsubsection{Overall algorithm}
+\subsubsection{Converging}
+
+\section{Experiment}
+\subsection{Hardware and Software}
+\subsection{binarytrees}
+\subsection{fannkuchredux}
+
+\section{Future Work}
+
+\section{Conclusion}
+
+%\appendix
+%\section{Appendix Title}
+%
+%This is the text of the appendix, if you need one.
+
+\acks
+
+Acknowledgments, if needed.
+
+% We recommend abbrvnat bibliography style.
+
+\bibliographystyle{abbrvnat}
+
+% The bibliography should be embedded for final submission.
+
+\begin{thebibliography}{}
+\softraggedright
+
+\bibitem[Smith et~al.(2009)Smith, Jones]{smith02}
+P. Q. Smith, and X. Y. Jones. ...reference text...
+
+\end{thebibliography}
+
+
+\end{document}
+
+%                       Revision History
+%                       -------- -------
+%  Date         Person  Ver.    Change
+%  ----         ------  ----    ------
+
+%  2013.06.29   TU      0.1--4  comments on permission/copyright notices
+
