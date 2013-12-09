@@ -29,12 +29,14 @@
 % 11pt          To set in 11-point type instead of 9-point.
 % authoryear    To obtain author/year citation style instead of numeric.
 
+\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{listings}
+\usepackage{caption}
 
 \begin{document}
 
-\lstset{language=Haskell,basicstyle=\ttfamily}
+\lstset{language=Haskell,basicstyle=\ttfamily,captionpos=b}
 
 \special{papersize=8.5in,11in}
 \setlength{\pdfpageheight}{\paperheight}
@@ -84,10 +86,10 @@ Haskell is a lazy language which can cause slowdown due to the creation of thunk
 %\keywords
 %keyword1, keyword2
 
-\section{Introduction}
+\section{Introduction}\label{sec:intro}
 
 Haskell is lazy. Consider this function
-\begin{lstlisting}
+\begin{lstlisting}[label={lst:repl}]
 -- Create infinite list
 repeat :: a -> [a]
 
@@ -95,46 +97,101 @@ replicate :: Int -> a -> [a]
 replicate n x = take n xs
                 where xs = repeat x
 \end{lstlisting}
-In an eager language, xs would be evaluated immediately. This results in a nonterminating function. However, a lazy language would only evaulate \lstinline!xs! when required. Even then, the expression only gets what it needs. Therefore, only \lstinline!n! items are required and processed.
+In an eager language, \lstinline!xs! would be evaluated immediately. This results in a nonterminating function. However, a lazy language would only evaulate \lstinline!xs! when required. Even then, the expression only gets what it needs. Therefore, only \lstinline!n! items are required and processed.
 
 How does Haskell do this? To explain, consider this function
-\begin{lstlisting}
+\begin{lstlisting}[label={lst:f}]
 f :: Int -> [Int]
 f n = replicate n n
 \end{lstlisting}
-Consider the application \lstinline!f (x+1)!. Haskell creates a closure on the heap that contains the unevaluated expression \lstinline!x+1! as show in ??. This is a thunk. The function \lstinline!f! then gets a pointer to that. When the value within is needed, Haskell traverses to the thunk and evaluates it, potentially writing something back to the heap. Note that an eager language would not have written the thunk in the first place, avoiding both the additional write and the read.
+\begin{figure}
+\label{fig:thunk}
+\end{figure}
+Consider the application \lstinline!f (x+1)!. Haskell creates a closure on the heap that contains the unevaluated expression \lstinline!x+1! as show in Figure~\ref{fig:thunk}. This is a thunk. The function \lstinline!f! then gets a pointer to that. When the value within is needed, Haskell traverses to the thunk and evaluates it, potentially writing something back to the heap. Note that an eager language would not have written the thunk in the first place, avoiding both the additional write and the read.
 
 How well does this scale? Suppose we had a large group of thunks. The larger the group, the more memory pressure applied to the application. This leads to more frequent garbage collections and overall slowdown. In some cases, we may have programs that crash due to a lack of memory. We might save some overall time and space by evaluating some of those thunks early. Haskell has notation to force eager evaluation, the bang.
-\begin{lstlisting}
+\begin{lstlisting}[label={lst:fstrict}]
 f :: Int -> [Int]
 f !n = replicate n n
 \end{lstlisting}
 
-Now, we force Haskell to evaluate \lstinline!n! and pass that value on to \lstinline!f!. In other words, \lstinline{n} is evaluated eagerly. We say that \lstinline!g! is strict in \lstinline!n! and the process of forcing eager evaluation is adding strictness to the program.
-\section{Background}
-\subsection{Strictness}
-\subsection{Strictness Analysis}
-\subsection{Related Work}
+Now, we force Haskell to evaluate \lstinline!n! and pass that value on to \lstinline!f!. \lstinline{n} is evaluated eagerly. Here, no thunk is created and if \lstinline{n} is no longer used in the program, the garbage collector can throw it away. We have saved some time and space. We say that \lstinline!f! is now strict in \lstinline!n! and the process of forcing eager evaluation is adding strictness to the program.
 
-\section{Architecture}
-\subsection{Overview}
+Now consider a far more complicated program, spreading across multiple files. We must ask ourselves two questions. First, where do we start adding strictness? Here we only had one function, so the process was simple. With many functions, some recursive, adding strictness could cause problems, like nontermination. Second, when do we stop? Adding too much strictness can cause excess memory pressure. This would be no different, or worse, than the completely lazy version. We need to find a balance between lazy and eager in order to improve the program.
+
+In this paper, we discuss a program that searches the space of strict programs using a genetic algorithm to find a faster version of a given program. Section~\ref{sec:back} covers the background of strictness analysis and related work. Section~\ref{sec:arch} covers the program. Section~\ref{sec:expr} discusses some experiments. Section~\ref{sec:conc} concludes the paper.
+
+\section{Background}\label{sec:back}
+Strictness analysis looks at a function with $n$ arguments and asks whether the $i^{\text{th}}$ argument can be made strict. Programmers and compilers use the results of such an analysis to make their programs strict. The problem itself is hard. Part of strictness analysis is asking whether the program will terminate, also known as the halting problem. Work in the field focuses on approximating the analysis.
+
+Peyton Jones\cite{pjones}
+
+Jensen\cite{jensen}
+
+Mycroft\cite{mycroft}
+
+\section{Architecture}\label{sec:arch}
+\begin{figure}
+\label{fig:arch}
+\end{figure}
+The program has three components, as shown in Figure~\ref{fig:arch}. The Rewrite module deals with adding strictness to the source code itself. The Genetic module is the core of the program, deciding when and where to add the strictness. The rest of this section discusses the modules in more detail.
 \subsection{Rewrite}
+This module takes in the sugared Haskell source code, creates an abstract syntax tree, transforms it, and prints it back as sugared Haskell code without comments. We use the \lstinline!haskell-src-exts! package to get the abstract syntax tree and print it back to readable source~\cite{hsrcext}. It exposes three functions, \lstinline!flipBang!, \lstinline!flipRandomBang!, \lstinline!placesToStrict!.
+
+\lstinline!flipBang! takes in a \lstinline!FilePath! to the file, a \lstinline!String! containing the whole program, and an \lstinline!Int! that denotes which declaration in the program to add or remove strictness. If the program was entered with strictness at that location, it will leave without it and vice-versa. \lstinline!flipRandomBang! does the same, but in at a random location in the program. Finally, \lstinline!placesToStrict! gets the file path and program as input and returns the number of places one can place strictness.
+
+All three functions perform the same steps and traversal. To begin, they retrieve the module the program given describes. We use \lstinline!parseFileContentsWithMode! to extract the abstract syntax tree of the module while enabling the compiler flag \lstinline!-XBangPatterns! and the Haskell 2010 language. 
+
+From there, we can get a list of declarations. This includes all functions declared in the file. The package labels them as \lstinline!FunBind!s. Each one contains a list of parameters, typed \lstinline!Match!. Each of those contains contains \lstinline!Pat!, or patterns. \lstinline!Pat! contains multiple datatypes, but two concern us in this implementation. One is \lstinline!PVar!, a parameter or variable declaration in a \lstinline!where! clause. The other is \lstinline!PBangPat!, something with strictness applied to it. \lstinline!flipBang! and \lstinline!flipRandomBang! will either replace a \lstinline!PVar! with a \lstinline!PBangPat! or vice-versa. \lstinline!placesToStrict! increments its counter.
+
 \subsection{Genetic Algorithm}
-\subsubsection{Genes}
-\subsubsection{mutate}
-\subsubsection{merge}
-\subsubsection{fitness}
-\subsubsection{Overall algorithm}
+This module is the driving force behind the program. Its purpose is to run the genetic algorithm, exploring the space of programs, choosing some, and running them to determine the best. The rest of this subsection describes the module.
+\subsubsection{Datatypes and Operations}
+\begin{lstlisting}[caption=Datatypes and operations in Genetic module,label={lst:genetic}]
+data Strand = {  path    :: FilePath
+               , program :: String
+               , vec     :: Integer
+               , size    :: Int
+              }
+
+data Genes = { strands :: [Strand] }
+
+mutate :: Genes -> Genes
+merge :: Genes -> Genes -> Genes
+fitness :: Int -> Float -> Genes -> 
+           IO Float
+\end{lstlisting}
+
+\begin{lstlisting}[caption=Example program,label={lst:example}]
+replicate' :: Int -> a -> [a]
+replicate' !n x = take n xs
+                  where xs = repeat x
+\end{lstlisting}
+
+
+Listing~\ref{lst:genetic} lists the important datatypes and operations used in the module. \lstinline!Strand! is used to describe a single file. It contains the path to the file, the program in a \lstinline!String!, a bit vector represented by an \lstinline!Integer!, and an \lstinline!Int! recording the size of that bit vector. Each bit in the vector, starting from the least significant, corresponds to a location in the program where the Rewrite module can place strictness. $0$ means there is no strictness. $1$ means there is. This allows us to keep track of the status of the file without digging into the program itself. For example the vector in Listing~\ref{lst:example} is $001$. We record the size of the vector since \lstinline!bitSize! of an \lstinline!Integer! is undefined in \lstinline!Data.Bits!.
+
+The datatype \lstinline!Genes! contains a list of these \lstinline!Strands! and all our main operations are on these. We start with \lstinline!mutate!. This function takes in a \lstinline!Genes!. First, we write the \lstinline!Genes! to a new unique directory on disk. Following this, we choose a random \lstinline!Strand! from the \lstinline!Genes! and generate a random bit vector. Then, we run through the \lstinline!Strand!, flipping the state of strictness throughout the program to match the vector. Finally, we write the changed program to disk in that unique directory.
+
+\lstinline!merge! takes two \lstinline!Genes! as parents. We write one of them to disk in a new unique directory. Then we go through each pair of \lstinline!Strand!s, one from each parent, and compute the bitwise-or of their bit vectors. Just like \lstinline!mutate!, we then change one of the programs to reflect this new vector and write that to disk in the same directory. This, combined with \lstinline!mutate!, is how we explore the space of strict programs.
+
+Finally, there is \lstinline!fitness!, which must determine how well a \lstinline!Genes! does. We do so by timing the executable. While the Rewrite module ensures the change is statically correct, we cannot confirm it terminates. As mentioned before, truly figuring this out is hard. However, we don't need the exact answer. We wish to consider programs that are faster than the original, which a non-terminating program is not. If we assume the original program does terminate, then we can time that to get a base. This base can then be used to timeout programs that run too long. It is in this way we can avoid non-termination.
+
+The function \lstinline!fitness! takes in the number of times to time the program, a base time in seconds for the timeout, and a \lstinline!Genes! to time. We compile the program to an executable and use a bash script to time it and write those results to a file. Every run that times out or fails to run writes $-1.0$ to the file. We continue by reading that file, producing \lstinline![Float]!. We take the average of that after removing $-1.0$ from the list to produce an average. If the list is all $-1.0$, then the average is also $-1.0$.
+\subsubsection{Overall Algorithm}
+
 \subsubsection{Converging}
 
-\section{Experiment}
-\subsection{Hardware and Software}
+\section{Experiment}\label{sec:expr}
+We decided to run the algorithm on two programs from the benchmarks game~\ref{bgame}. One is \lstinline!binarytrees.ghc-1!, which allocates one large binary tree for memory pressure and allocates many small ones as it runs. The other is \lstinline!fannkuchredux.ghc-5!, which takes in an integer and calculates the maximum number of flips needed for any permutation of size $n$ to get $1$ to the front.
+
+These experiments were run on an Intel Xeon E31245, an 8 core CPU clocked at 3.30 GHz on 64-bit Ubuntu 12.04 LTS and 3.8 GB of memory. The code was compiled using the Glasgow Haskell Compiler version 7.4.1.
 \subsection{binarytrees}
 \subsection{fannkuchredux}
 
-\section{Future Work}
+\section{Future Work}\label{sec:futr}
 
-\section{Conclusion}
+\section{Conclusion}\label{sec:conc}
 
 %\appendix
 %\section{Appendix Title}
@@ -154,9 +211,18 @@ Acknowledgments, if needed.
 \begin{thebibliography}{}
 \softraggedright
 
-\bibitem[Smith et~al.(2009)Smith, Jones]{smith02}
-P. Q. Smith, and X. Y. Jones. ...reference text...
-
+\bibitem{pjones}
+Peyton Jones ... simple strictness ...
+\bibitem{jensen}
+Jensen ... more complex analysis
+\bibitem{mycroft}
+Mycroft ... effects and data flow
+\bibitem{bgames}
+benchmark games ...
+\bibitem{hsrcext}
+https://github.com/haskell-suite/haskell-src-exts
+% benchmark games
+% haskell-src-ext
 \end{thebibliography}
 
 
