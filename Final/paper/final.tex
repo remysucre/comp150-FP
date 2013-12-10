@@ -147,7 +147,7 @@ From there, we can get a list of declarations. This includes all functions decla
 \subsection{Genetic Algorithm}
 This module is the driving force behind the program. Its purpose is to run the genetic algorithm, exploring the space of programs, choosing some, and running them to determine the best. The rest of this subsection describes the module.
 \subsubsection{Datatypes and Operations}
-\begin{lstlisting}[caption=Datatypes and operations in Genetic module,label={lst:genetic}]
+\begin{lstlisting}[float,caption=Datatypes and operations in Genetic module,label={lst:genetic},frame=single]
 data Strand = {  path    :: FilePath
                , program :: String
                , vec     :: Integer
@@ -161,15 +161,14 @@ merge :: Genes -> Genes -> Genes
 fitness :: Int -> Float -> Genes -> 
            IO Float
 \end{lstlisting}
-
-\begin{lstlisting}[caption=Example program,label={lst:example}]
+\begin{lstlisting}[float,caption=Example program,label={lst:example},frame=single]
 replicate' :: Int -> a -> [a]
 replicate' !n x = take n xs
                   where xs = repeat x
 \end{lstlisting}
 
 
-Listing~\ref{lst:genetic} lists the important datatypes and operations used in the module. \lstinline!Strand! is used to describe a single file. It contains the path to the file, the program in a \lstinline!String!, a bit vector represented by an \lstinline!Integer!, and an \lstinline!Int! recording the size of that bit vector. Each bit in the vector, starting from the least significant, corresponds to a location in the program where the Rewrite module can place strictness. $0$ means there is no strictness. $1$ means there is. This allows us to keep track of the status of the file without digging into the program itself. For example the vector in Listing~\ref{lst:example} is $001$. We record the size of the vector since \lstinline!bitSize! of an \lstinline!Integer! is undefined in \lstinline!Data.Bits!.
+Listing~\ref{lst:genetic} lists the important datatypes and operations used in the module. \lstinline!Strand! is used to describe a single file. It contains the path to the file, the program in a \lstinline!String!, a bit vector represented by an \lstinline!Integer!, and an \lstinline!Int! recording the size of that bit vector. Each bit in the vector, starting from the least significant, corresponds to a location in the program where the Rewrite module can place strictness. $0$ means there is no strictness. $1$ means there is. This allows us to keep track of the status of the file without digging into the program itself. For example the vector for the program in Listing~\ref{lst:example} is $001$. We record the size of the vector since \lstinline!bitSize! of an \lstinline!Integer! is undefined in \lstinline!Data.Bits!.
 
 The datatype \lstinline!Genes! contains a list of these \lstinline!Strands! and all our main operations are on these. We start with \lstinline!mutate!. This function takes in a \lstinline!Genes!. First, we write the \lstinline!Genes! to a new unique directory on disk. Following this, we choose a random \lstinline!Strand! from the \lstinline!Genes! and generate a random bit vector. Then, we run through the \lstinline!Strand!, flipping the state of strictness throughout the program to match the vector. Finally, we write the changed program to disk in that unique directory.
 
@@ -183,12 +182,69 @@ The function \lstinline!fitness! takes in the number of times to time the progra
 \subsubsection{Converging}
 
 \section{Experiment}\label{sec:expr}
-We decided to run the algorithm on two programs from the benchmarks game~\ref{bgame}. One is \lstinline!binarytrees.ghc-1!, which allocates one large binary tree for memory pressure and allocates many small ones as it runs. The other is \lstinline!fannkuchredux.ghc-5!, which takes in an integer and calculates the maximum number of flips needed for any permutation of size $n$ to get $1$ to the front.
+We decided to run the algorithm on two programs from the benchmarks game~\cite{bgames}. One is \lstinline!binarytrees.ghc-1!, which allocates one large binary tree for memory pressure and allocates many small ones as it runs. The other is \lstinline!fannkuchredux.ghc-5!, which takes in an integer $n$ and calculates the maximum number of flips needed for any permutation of size $n$ to get $1$ to the front.
 
 These experiments were run on an Intel Xeon E31245, an 8 core CPU clocked at 3.30 GHz on 64-bit Ubuntu 12.04 LTS and 3.8 GB of memory. The code was compiled using the Glasgow Haskell Compiler version 7.4.1.
+\begin{table}[t]
+\label{tab:expr}
+\begin{tabular}{| l | l | l | l | l |}
+\hline
+ & \multicolumn{2}{|c|}{User CPU Time} & \multicolumn{2}{|c|}{Clock Time}\\
+\hline
+Program Name & Before & After & Before & After\\
+\hline
+binarytrees & 116.358 & 76.61 & 75.667 & 63.782\\
+\hline
+fannkuchredux & 0.0 & 0.0 & 0.0 & 0.0\\
+\hline
+\end{tabular}
+\caption{Times for experiments in seconds, both before and after transformation}
+\end{table}
 \subsection{binarytrees}
-\subsection{fannkuchredux}
+We removed all the strictness in the original program and sent it through the algorithm. Table~\ref{tab:expr} shows us the program sped up. We cut the CPU time by about 40 seconds while reducing the clock time by 12 seconds. Looking at the resulting code, we see that the algorithm added exactly one strictness annotation, listed below.
+\begin{lstlisting}
+sumT :: Int -> Int -> Int -> Int
+sumT d 0 t = t
+sumT d i !t = sumT d (i-1) (t + a + b)
+  where a = check (make i    d)
+        b = check (make (-i) d)
 
+-- traverse the tree, counting up the nodes
+check :: Tree -> Int
+
+...
+
+-- build a tree
+make :: Int -> Int -> Tree
+
+...
+\end{lstlisting}
+The strictness is on the third integer \lstinline!t!. How can this decrease the time? Suppose \lstinline!i!$ > 1$ and we run \lstinline!sumT d i t!. Then we have 
+\begin{lstlisting}
+sumT d i t == sumT d (i-1) (t + a + b)
+\end{lstlisting}
+Since \lstinline!i!$ > 1$, we will evaluate the recursive case once more. We will say the call is \lstinline!sumT d i' t'!. Since \lstinline!sumT! is strict on \lstinline!t'! in this call, we must evaluate it. However,
+\begin{lstlisting}
+t' == (t + a + b)
+\end{lstlisting}
+This implies we must calculate \lstinline!t!, \lstinline!a!, and \lstinline!b!. Note the definition of \lstinline!a! and \lstinline!b!. Both call \lstinline!make! which creates trees. In the lazy version, these trees will be created only when some other function needs the value of a call to \lstinline!sumT!. At that point, all trees will be created at once, leading to excess memory pressure and more thunks to evaluate. The strict version simply creates the trees, saving the operations for thunks and thusly time. Looking back at the original program, we found this annotation was not there. 
+
+We later realized that removing the strictness from the program removed the memory pressure needed for \lstinline!binarytrees! to run as intended. Therefore, we timed two more versions of the program, the original program with the strictness for memory pressure, and another that also added the strictness in \lstinline!sumT!. The times are reported in Table~\ref{tab:btree}. We see that the additional strictness from the algorithm still gives us the decrease in runtime.
+\begin{table}[t]
+\label{tab:btree}
+\begin{tabular}{| l | l | l |}
+\hline
+Program Name & User CPU Time & Clock Time\\
+\hline
+binarytrees & 124.397 & 71.335\\
+\hline
+edited binarytrees & 67.426 & 55.853\\
+\hline
+\end{tabular}
+\caption{Times for orignal and edited \lstinline!binarytrees! in seconds}
+\end{table}
+\subsection{fannkuchredux}
+In this experiment, we did not change the program at all. Instead, we just gave it to the algorithm. Since the algorithm only assumes the program terminates and has the ability to add and remove strictness, this required no changes.
 \section{Future Work}\label{sec:futr}
 
 \section{Conclusion}\label{sec:conc}
@@ -218,7 +274,7 @@ Jensen ... more complex analysis
 \bibitem{mycroft}
 Mycroft ... effects and data flow
 \bibitem{bgames}
-benchmark games ...
+benchmarksgame.alioth.debian.org
 \bibitem{hsrcext}
 https://github.com/haskell-suite/haskell-src-exts
 % benchmark games
