@@ -124,11 +124,13 @@ In this paper, we discuss a program that searches the space of strict programs u
 \section{Background}\label{sec:back}
 Strictness analysis looks at a function with $n$ arguments and asks whether the $i^{\text{th}}$ argument can be made strict. Programmers and compilers use the results of such an analysis to make their programs strict. The problem itself is hard. Part of strictness analysis is asking whether the program will terminate, also known as the halting problem. Work in the field focuses on approximating the analysis.
 
-Peyton Jones\cite{pjones}
+Peyton Jones and Partain created a simple strictness analyzer that would run on GHC Core.\cite{pjones} The analysis was an approximation of finding fixpoints of functions. They used a ``widening'' operator on functions, removing some constraints and finding those fixpoints. As a static analysis, it will flag some functions as non-terminating when made strict on some arguments. Furthermore, they note their analyzer does not deal with non-flat structures and recursive functions. The work presented here does not ignore these two items. As long as the algorithm knows strictness can be annotated, it has a chance of doing so.
 
-Jensen\cite{jensen}
+Schrijvers and Mycroft worked on a type inference algorithm that kept track of the effects of functions, both deterministic and non-deterministic \cite{mycroft, wadler}. They use this to bring data flow to strictness analysis. Just like Peyton Jones and Partain, they consider flat data. Again, we do not ignore data so long as the algorithm knows it can make the data strict.
 
-Mycroft\cite{mycroft}
+Jensen et. al. moved to an analyzer on GHC Core that handled higher-order functions and polymorphism \cite{jensen}. They also approximate fixpoints. However, they make no note in their paper on using the results on functions. Their work incorporated the theoretic foundations from Wadler (CITATION) to do this. Our work differentiates itself from both Peyton Jones and Jensen by working closer to sugared source code than GHC Core. This allows us to output code for a Haskell user that they can learn from, rather than giving GHC Core back or just compiling straight to machine code.
+
+
 
 \section{Architecture}\label{sec:arch}
 \begin{figure}
@@ -256,7 +258,7 @@ In this experiment, we did not change the program at all. Instead, we just gave 
 
 \acks
 
-Acknowledgments, if needed.
+Thank you Norman for bringing this class to this semester. Also would like to thank Nathan for bringing up the idea in a research group meeting as well as everyone in the workshop for the suggestions made to improve the algorithm.
 
 % We recommend abbrvnat bibliography style.
 
@@ -268,17 +270,17 @@ Acknowledgments, if needed.
 \softraggedright
 
 \bibitem{pjones}
-Peyton Jones ... simple strictness ...
+S. Peyton Jones and W. Partain. Measuring the Effectiveness of a Simple Stricntess Analyzer. 1993 In \emph{Functional Programming 1993}, pages 201-220. 1993.
 \bibitem{jensen}
-Jensen ... more complex analysis
+K. D. Jensen, P. Hjaeresen, and M. Rosendahl. Efficient Strictness Analysis of Haskell. In \emph{Static Analysis}, B. Le Charlier, Springer, Berlin, Heidelberg, 346-362. 1994.
 \bibitem{mycroft}
-Mycroft ... effects and data flow
+T. Schrijvers and A. Mycroft. Strictness Meets Data Flow. In \emph{Proceedings of the 17th International Conference on Static Analysis}, Radhia Cousot and Matthieu Martel (Eds.). Springer-Verlag, Berlin, Heidelberg, 439-454. 2010.
+\bibitem{wadler}
+P. L. Wadler. Strictness analysis on non-flat domains (by abstract interpretation over finite domains). In \emph{Abstract Interpretation of Declarative Languages}, S. Abramsky and C. Hankin, editors, Ellis Horwood. 1987.
 \bibitem{bgames}
 benchmarksgame.alioth.debian.org
 \bibitem{hsrcext}
 https://github.com/haskell-suite/haskell-src-exts
-% benchmark games
-% haskell-src-ext
 \end{thebibliography}
 
 
