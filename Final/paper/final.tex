@@ -33,7 +33,9 @@
 \usepackage{amsmath}
 \usepackage{listings}
 \usepackage{caption}
-
+\usepackage{algorithm}
+%\usepackage{algorithmicx}
+\usepackage{algpseudocode}
 \begin{document}
 
 \lstset{language=Haskell,basicstyle=\ttfamily,captionpos=b}
@@ -169,18 +171,105 @@ replicate' !n x = take n xs
                   where xs = repeat x
 \end{lstlisting}
 
-
 Listing~\ref{lst:genetic} lists the important datatypes and operations used in the module. \lstinline!Strand! is used to describe a single file. It contains the path to the file, the program in a \lstinline!String!, a bit vector represented by an \lstinline!Integer!, and an \lstinline!Int! recording the size of that bit vector. Each bit in the vector, starting from the least significant, corresponds to a location in the program where the Rewrite module can place strictness. $0$ means there is no strictness. $1$ means there is. This allows us to keep track of the status of the file without digging into the program itself. For example the vector for the program in Listing~\ref{lst:example} is $001$. We record the size of the vector since \lstinline!bitSize! of an \lstinline!Integer! is undefined in \lstinline!Data.Bits!.
+
+\begin{figure}[t]
+\begin{algorithmic}
+\Function{mutateSet}{\lstinline!Strand! s, \lstinline!Integer! newBits, \lstinline!Int! index}
+\State n $\gets$ \lstinline!size! s
+\State bits $\gets$ \lstinline!vec! s
+\If {index $ == $ n}
+    \Return \lstinline!writeToDisk! s
+\ElsIf {bits \lstinline{!!} index $ != $ newBits \lstinline{!!} index}
+    \State fp $\gets$ \lstinline{path} s
+    \State prog $\gets$ \lstinline{program} s
+    \State prog' $\gets$ \Call{flipBang} {fp prog index}
+    \State \Return \Call{mutateSet} {(\lstinline!Strand! fp prog' bits n) newBits (index + 1)}
+\Else 
+\State\Return\Call{mutateSet} {s newBits (index + 1)}
+\EndIf
+\EndFunction\\
+
+\Function{mutateStrand}{\lstinline!Strand! s}
+\State n $\gets$ \lstinline!size! s
+\State bits $\gets$ \lstinline!random! $(0, 2^n)$
+\State\Return\Call{mutateSet} {s bits 0}
+\EndFunction\\
+
+\Function{mutate}{\lstinline!Genes! g}
+\State g' $\gets$ \lstinline!writeToDisk! g
+\State strands $\gets$ \lstinline!getStrands! g'
+\State\Return \lstinline!Genes! (\lstinline!map! \Call{mutateStrand}{} strands)
+\EndFunction
+\end{algorithmic}
+\caption{Mutation algorithm}
+\label{alg:mutate}
+\end{figure}
 
 The datatype \lstinline!Genes! contains a list of these \lstinline!Strands! and all our main operations are on these. We start with \lstinline!mutate!. This function takes in a \lstinline!Genes!. First, we write the \lstinline!Genes! to a new unique directory on disk. Following this, we choose a random \lstinline!Strand! from the \lstinline!Genes! and generate a random bit vector. Then, we run through the \lstinline!Strand!, flipping the state of strictness throughout the program to match the vector. Finally, we write the changed program to disk in that unique directory.
 
+\begin{figure}[t]
+\begin{algorithmic}
+
+\Function{mergeStrands}{\lstinline!Strand! s1, \lstinline!Strand! s2}
+\State bits1 $\gets$ \lstinline!vec! s1
+\State bits2 $\gets$ \lstinline!vec! s2
+\State newBits $\gets$ bits1 | bits2
+\State\Return\Call{mutateSet}{s1 newBits 0}
+\EndFunction\\
+
+\Function{merge}{\lstinline!Genes! g1, \lstinline!Genes! g2}
+\State g1' $\gets$ \lstinline !writeToDisk! g1
+\State strands $\gets$ \lstinline!zip! (\lstinline!getStrands! g1') (\lstinline!getStrands! g2)
+\State\Return\lstinline!Genes! (\lstinline!map! (\lstinline!uncurry! \Call{merge}{}) strands)
+\EndFunction
+\end{algorithmic}
+\caption{Merging algorithm}
+\label{alg:merge}
+\end{figure}
+
 \lstinline!merge! takes two \lstinline!Genes! as parents. We write one of them to disk in a new unique directory. Then we go through each pair of \lstinline!Strand!s, one from each parent, and compute the bitwise-or of their bit vectors. Just like \lstinline!mutate!, we then change one of the programs to reflect this new vector and write that to disk in the same directory. This, combined with \lstinline!mutate!, is how we explore the space of strict programs.
+
+\begin{figure}[t]
+\begin{algorithmic}
+
+\Function{fitness}{\lstinline!Int! reps, \lstinline!Float! base, \lstinline!Genes! g}
+\State exec $\gets$ \lstinline!path . head . getStrands! g
+\State\Call{compile}{g}
+\State\lstinline!system! ``bash timer.sh '' + exec + `` '' + base + ``s '' + reps
+\State times $\gets$ \lstinline!read! ``times.txt''
+\State\Return\Call{avg}{times}
+\EndFunction
+
+\end{algorithmic}
+
+\caption{Fitness algorithm}
+\label{alg:fitness}
+\end{figure}
 
 Finally, there is \lstinline!fitness!, which must determine how well a \lstinline!Genes! does. We do so by timing the executable. While the Rewrite module ensures the change is statically correct, we cannot confirm it terminates. As mentioned before, truly figuring this out is hard. However, we don't need the exact answer. We wish to consider programs that are faster than the original, which a non-terminating program is not. If we assume the original program does terminate, then we can time that to get a base. This base can then be used to timeout programs that run too long. It is in this way we can avoid non-termination.
 
 The function \lstinline!fitness! takes in the number of times to time the program, a base time in seconds for the timeout, and a \lstinline!Genes! to time. We compile the program to an executable and use a bash script to time it and write those results to a file. Every run that times out or fails to run writes $-1.0$ to the file. We continue by reading that file, producing \lstinline![Float]!. We take the average of that after removing $-1.0$ from the list to produce an average. If the list is all $-1.0$, then the average is also $-1.0$.
 \subsubsection{Overall Algorithm}
+\begin{figure}[t]
+\begin{algorithmic}
 
+\Function{alg}{\lstinline![Genes]! g, \lstinline!Int! reps, \lstinline!Int! runs, \lstinline!Float! base}
+\If {runs $ == $ 0} \State\Return g
+\EndIf
+\State g' $\gets$ \Call{buildGeneration}{g}
+\State times $\gets$ \lstinline!map! (\Call{fitness} {reps, base}) g'
+\State results $\gets$ \lstinline!sort! (\lstinline!zip! times g')
+\State fastTime $\gets$ \lstinline!fst . head! results
+\State nextGen $\gets$ \lstinline!take! n (\lstinline!map snd! results)
+\State\Return\Call{alg} {nextGen, reps, (runs - 1), fastTime}
+\EndFunction
+
+\end{algorithmic}
+
+\caption{Genetic algorithm}
+\label{alg:overall}
+\end{figure}
 \subsubsection{Converging}
 
 \section{Experiment}\label{sec:expr}
