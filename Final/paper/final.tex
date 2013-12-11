@@ -36,11 +36,6 @@
 \usepackage{algorithm}
 %\usepackage{algorithmicx}
 \usepackage{algpseudocode}
-%\usepackage{fancyhdr}
-
-%\pagestyle{fancy}
-%\fancyhf{}
-%\cfoot{\thepage}
 
 \begin{document}
 
@@ -269,8 +264,7 @@ The function \lstinline!fitness! takes in the number of times to time the progra
 
 Figure~\ref{alg:overall} shows the genetic algorithm. We take a \lstinline!Genes! and build a new generation based off them. This involves merging those in the original set and mutating the entire group. Then we measure the fitness of every gene using the given base time for timeouts. We sort the genes based off the fitness scores and record the fastest time. Finally, we take the $n$ best and pass them through the algorithm again.
 \subsubsection{Converging}
-\begin{figure}[t]
-\begin{lstlisting}
+\begin{lstlisting}[float,frame=single,caption=Datatypes for improved genetic algorithm,label=lst:improved]
 data GeneRecord = GR {  gene :: Genes
                       , t :: Float
                      }
@@ -286,6 +280,7 @@ addGeneRecord :: GeneDict -> GeneRecord ->
 findTimeForGene :: GeneDict -> Genes -> 
                    Maybe Float
 \end{lstlisting}
+\begin{figure}[t]
 \begin{algorithmic}
 
 \Function{fitness'}{\lstinline!GeneDict! dict, \lstinline!Int! reps, \lstinline!Float! base, \lstinline!Genes! g}
@@ -305,8 +300,14 @@ findTimeForGene :: GeneDict -> Genes ->
 \State times $\gets$ \lstinline!map! (\Call{fitness'} {reps, base, dict}) g'
 \State results $\gets$ \lstinline!sort! (\lstinline!zip! times g')
 \State fastTime $\gets$ \lstinline!fst . head! results
-\State nextGen $\gets$ \lstinline!take! n (\lstinline!map snd! results)
+%\State results' $\gets$ \lstinline!filter! ($\backslash$(\_, time) \lstinline!->! time /= -1.0) results
+\State results' $\gets$ $[$(gr, time) $\in$ results $\mid$ time $\not=$ -1.0$]$
+\State records $\gets$ \lstinline!map! (\lstinline!uncurry createGeneRecord!) results'
 \State dict' $\gets$ \lstinline!foldl! addGeneRecord dict records
+\State nextGen $\gets$ \lstinline!take! n (\lstinline!map snd! results')
+\If {\lstinline!length! records $ == $ 0}
+\State\Return\Call{alg'}{g, reps, (runs - 1), base, (gr, failCount + 1), dict'}
+\EndIf
 \State fastest $\gets$ t gr
 \State diff $\gets$ fastest $-$ fastTime
 \If {diff $< 0.0$} \State\Return\Call{alg'} {nextGen, reps, (runs - 1), base, (gr, failCount + 1), dict'}
@@ -316,7 +317,7 @@ findTimeForGene :: GeneDict -> Genes ->
 
 \EndFunction
 \end{algorithmic}
-\caption{Genetic algorithm with datatypes, caching, and failure count}
+\caption{Genetic algorithm with caching and failure count}
 \label{alg:converge}
 \end{figure}
 The base algorithm will run a specified number of times before terminating, regardless of the results. We wish to terminate if we are not making any progress. This means that any of the following occurs
@@ -327,7 +328,7 @@ The base algorithm will run a specified number of times before terminating, rega
 \end{itemize}
 We need to keep track of how many times any of these events occured. After a certain threshold, we terminate the program sooner than the specified number of runs. To measure our progress, we must also keep track of the current fastest program and its time.
 
-Since \lstinline!mutate! and \lstinline!merge! are random, there are occasions we create programs that we previously encountered. Instead of running them again, we created a dictionary cache. All of these are reflected in Figure~\ref{alg:converge}.
+Since \lstinline!mutate! and \lstinline!merge! are random, there are occasions we create programs that we previously encountered. Instead of running them again, we created a dictionary cache. Listings~\ref{lst:improved} shows the new datatypes for these changes. Figure~\ref{alg:converge} shows the improved algorithm.
 \section{Experiment}\label{sec:expr}
 We decided to run the algorithm on two programs from the benchmarks game~\cite{bgames} and an additional one created by Nathan Ricci. One is \lstinline!binarytrees.ghc-1!, which allocates one large binary tree for memory pressure and allocates many small ones as it runs. The other is \lstinline!fannkuchredux.ghc-5!, which takes in an integer $n$ and calculates the maximum number of flips needed for any permutation of size $n$ to get $1$ to the front. The third, \lstinline!gcGenSim!, simulates a generational garbage collector using a trace from a java program. We ran this one with a scaladoc trace, provided by Nathan.
 
@@ -353,8 +354,8 @@ gcGenSim & 20.228 & 19.556 & 20.383 & 19.637\\
 \caption{Times for experiments in seconds, both before and after transformation}
 \end{table}
 \subsection{binarytrees}
-We removed all the strictness in the original program and sent it through the algorithm. We compiled all versions with \lstinline!-threaded!, \lstinline!-rtsopts!, \lstinline!-XBangPatterns! options enabled and ran with \lstinline!-N4! and \lstinline!-K128M! RTS options enabled. Table~\ref{tab:expr} shows us the program sped up. We cut the CPU time by about 40 seconds while reducing the clock time by 12 seconds. Looking at the resulting code, we see that the algorithm added exactly one strictness annotation, listed below.
-\begin{lstlisting}
+We removed all the strictness in the original program and sent it through the algorithm. We compiled all versions with \lstinline!-threaded!, \lstinline!-rtsopts!, \lstinline!-XBangPatterns! options enabled and ran with \lstinline!-N4! and \lstinline!-K128M! RTS options enabled. Table~\ref{tab:expr} shows us the program sped up. We cut the CPU time by about 40 seconds while reducing the clock time by 12 seconds. Looking at the resulting code in Listing~\ref{lst:btree}, we see that the algorithm added exactly one strictness annotation.
+\begin{lstlisting}[float,frame=single,caption=Changes in \lstinline!binarytrees! after applying the genetic algorithm,label=lst:btree]
 sumT :: Int -> Int -> Int -> Int
 sumT d 0 t = t
 sumT d i !t = sumT d (i-1) (t + a + b)
@@ -371,7 +372,7 @@ make :: Int -> Int -> Tree
 
 ...
 \end{lstlisting}
-The strictness is on the third integer \lstinline!t!. How can this decrease the time? Suppose \lstinline!i!$ > 1$ and we run \lstinline!sumT d i t!. Since \lstinline!i!$ > 1$, we will evaluate the recursive case once more. We will say the recursive call is \lstinline!sumT d i' t'!. Then we have 
+The strictness is on the third integer \lstinline!t!. How can this decrease the time? Suppose \lstinline!i! $ > 1$ and we run \lstinline!sumT d i t!. Since \lstinline!i! $ > 1$, we will evaluate the recursive case once more. Let the recursive call be \lstinline!sumT d i' t'!. Then we have 
 \begin{lstlisting}
 sumT d i t == sumT d i' t'
 \end{lstlisting}
