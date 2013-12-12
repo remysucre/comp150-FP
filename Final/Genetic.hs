@@ -1,17 +1,22 @@
+{-# OPTIONS -Wall -Werror -fno-warn-name-shadowing #-}
+
+{--
+    Genetic - Everything regarding the genetic algorithm
+--}
+    
 module Genetic
 where
 
-import Rewrite (flipBang, flipRandomBang, placesToStrict)
+import Rewrite (flipBang, placesToStrict)
 import System.Process (system)
 import System.Exit (ExitCode(..))
 import System.FilePath.Posix (splitPath, splitFileName, dropExtension)
 import System.IO.Unsafe (unsafePerformIO)
-import Data.Bits (complementBit, testBit, (.|.))
+import Data.Bits (testBit, (.|.))
 import Data.List (sort, find)
 import System.Random (getStdRandom, randomR)
 import System.IO.Temp (createTempDirectory)
 import System.Directory (createDirectoryIfMissing, getCurrentDirectory, setCurrentDirectory)
-import Control.Applicative ((<*>))
 import Data.Foldable(foldl', foldr')
 
 import Debug.Trace
@@ -39,6 +44,8 @@ massMutate g i = [g] ++ (take i $ map mutate $ repeat g)
 
 {------ Gene for this Genetic Algorithm ------}
 
+{- Component of the main Gene for the algorithm  -}
+
 data Strand = Strand { path :: FilePath    -- filePath to program
                , prog :: String      -- program itself
                , vec  :: Integer     -- set of bits corresponding to places to insert strictness
@@ -53,12 +60,17 @@ instance Gene Strand where
    fitness = fitnessStrand
    merge = mergeStrand
 
+{- 
+   Two strands are equal iff 
+     1) the paths to the files are equal up to temporary directory names
+     2) the programs are equal
+     3) the bit vectors are equal
+-}
 instance Eq Strand where
-   d1@(Strand fp1 program1 bits1 _) == d2@(Strand fp2 program2 bits2 _) = (fp1' == fp2') && 
+   (Strand fp1 program1 bits1 _) == (Strand fp2 program2 bits2 _) = (fp1' == fp2') && 
                                                                     (program1 == program2) &&
                                                                     (bits1 == bits2)
                                where
-                                   -- removeFront :: FilePath -> FilePath
                                    removeFront p = let fpList = splitPath p
                                                    in case ("files/" `elem` fpList) of
                                                         True  -> (concat . tail $ tail fpList)
@@ -72,7 +84,7 @@ instance Eq Strand where
 -}
 
 mutateStrand :: Strand -> Strand
-mutateStrand d@(Strand fp program bits numPlaces) = mutateStrandWithSet bits' size d
+mutateStrand d@(Strand fp program _ _) = mutateStrandWithSet bits' size d
                                              where
                                                  size = placesToStrict fp program
                                                  range = (0, toInteger size)
@@ -102,7 +114,7 @@ mutateStrandWithSetH d@(Strand fp prog oldBits np) !bits numPlaces i = if i == (
    Return: new piece of Strand that results from both parents
 -}
 mergeStrand :: Strand -> Strand -> Strand
-mergeStrand d1@(Strand fp program bits np) d2@(Strand fp' program' bits' np') = mutateStrandWithSet bits'' np'' d'
+mergeStrand (Strand fp program bits np) (Strand _ _ bits' np') = mutateStrandWithSet bits'' np'' d'
                                                                        where
                                                                            bits'' = bits .|. bits'
                                                                            np'' = max np np'
@@ -113,9 +125,9 @@ mergeStrand d1@(Strand fp program bits np) d2@(Strand fp' program' bits' np') = 
    Return: Strand updated to point to file just written on disk
 -}
 writeStrandToDisk :: Strand -> Strand
-writeStrandToDisk !d@(Strand fp program bits numPlaces) = Strand fp' program bits numPlaces
+writeStrandToDisk !(Strand fp program bits numPlaces) = Strand fp' program bits numPlaces
                                                  where
-                                                     (dir, name) = splitFileName fp
+                                                     (dir, _) = splitFileName fp
                                                      action = do
                                                                 createDirectoryIfMissing True dir
                                                                 writeFile (fp ++ ".hs") program
@@ -131,7 +143,7 @@ compile fp = do
                (dir, name) <- return $ splitFileName fp
                setCurrentDirectory dir
                exit <- system $ "ghc --make -XBangPatterns -funbox-strict-fields -outputdir temp/ -o " ++ name ++ " " ++ name ++ ".hs > /dev/null"
-               system $ "rm -rf temp"
+               _ <- system $ "rm -rf temp"
                setCurrentDirectory oldDir
                return exit
 
@@ -143,11 +155,24 @@ compile fp = do
 
 fitnessStrand :: Int -> Float -> Strand -> IO Float
 fitnessStrand reps base (Strand fp _ _ _) = do
-                                         compile fp -- Compile all the programs
+                                         _ <- compile fp -- Compile all the programs
                                          exit <- system $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show base) ++ "s " ++ "test.txt"
                                          case exit of
-                                              ExitSuccess ->  do {contents <- readFile "test.txt"; times <- return $ map (read) $ lines contents; return $ avg times}
-                                              ExitFailure _ -> error "Failed"
+                                              ExitSuccess ->  do {contents <- readFile "test.txt";
+                                                                  times <- return $ map (read) $ lines contents;
+                                                                  return $ avg times}
+                                              ExitFailure _ -> error $ "Failed to run" ++ fp
+                                              
+avg :: [Float] -> Float
+avg [] = -1
+avg !diffs = if average == 0 then (-1.0) else average
+            where
+                diffs' = filter ((/=) $ (-1.0)) diffs
+                num = length diffs'
+                sum = foldr' (+) 0 diffs'
+                average = if num == 0 then 0
+                          else sum / (fromInteger $ toInteger num)
+
 {-
    Create a new strand of Strand using a file path and a program
 -}
@@ -155,45 +180,23 @@ fitnessStrand reps base (Strand fp _ _ _) = do
 createStrand :: String -> String -> Strand
 createStrand fp program = Strand fp program 0 $ placesToStrict fp program
 
-
-avg :: [Float] -> Float
-avg [] = -1
-avg !diffs = if average == 0 then (-1.0) else average
-            where
-                diffs' = filter ((/=) $ (-1.0)) diffs
-                num = length diffs'
-                --times = map timeToInt diffs'
-                sum = foldr' (+) 0 diffs'
-                average = if num == 0 then 0
-                          else sum / (fromInteger $ toInteger num)
-
-{------ Main algorithm ------}
-
-
 {-
-   Randomly choose 2 genes and merge them into a new gene and do so n times
-   Return: List of genes that are the given genes and all new children made
+   The main item manipulated in the algorithm. Represents multiple file programs.
 -}
-mergeRand :: Gene d => [d] -> Int -> [d]
-mergeRand dnas 0 = dnas
-mergeRand dnas n = [merge (dnas !! i) (dnas !! j)] ++ mergeRand dnas (n-1)
-                   where
-                       range = (0, (length dnas) - 1)
-                       i = unsafePerformIO $ getStdRandom $ randomR range
-                       j = unsafePerformIO $ getStdRandom $ randomR range
-
 data Genes = Genes { getStrand :: [Strand] } deriving Show
 
+{-
+   Mutate a program
+-}
 mutateG :: Genes -> Genes
-mutateG g@(Genes ds) = Genes ds''
+mutateG g = Genes ds''
                       where 
-                          --index = unsafePerformIO $ getStdRandom (randomR (0, (length ds) - 1))
                           !ds' = getStrand $ writeGeneToDisk g
-                          --(start, end) = splitAt index ds'
-                          --newStrand = mutate $ ds' !! index
-                          --ds'' = start ++ [newStrand] ++ tail end
                           ds'' = map mutate ds'
 
+{-
+   Merge two programs together
+-}
 mergeG :: Genes -> Genes -> Genes
 mergeG g1 g2 = Genes $ map (uncurry merge) $ zip ds ds'
                where
@@ -201,13 +204,11 @@ mergeG g1 g2 = Genes $ map (uncurry merge) $ zip ds ds'
                    ds = getStrand g1'
                    ds' = getStrand g2
 
+{-
+   Measure the fitness fo a program
+-}
 fitnessG :: Int -> Float -> Genes -> IO Float
-fitnessG reps base g@(Genes ds) = fitness reps (base + base * 1) $ head ds
-
-fitnessWrap :: GeneDict -> Int -> Float -> Genes -> IO Float
-fitnessWrap dict reps base g = case findTimeForGene dict g of
-                                    Nothing -> fitness reps base g
-                                    Just time -> print ("Found in cache with time: " ++ (show time)) >> return time
+fitnessG reps base (Genes ds) = fitness reps (base + base * 1) $ head ds
 
 instance Gene Genes where
     mutate = mutateG
@@ -216,89 +217,6 @@ instance Gene Genes where
 
 instance Eq Genes where
    gr == hr = (getStrand gr) == (getStrand hr)
-
-data GeneRecord = GR { gene :: Genes, t :: Float } deriving Show
-
-instance Eq GeneRecord where
-   dr1 == dr2 = (t dr1) == t dr2
-
-instance Ord GeneRecord where
-   dr1 <= dr2 = (t dr1) <= t dr2
-
-createGeneRecords :: Genes -> Float -> GeneRecord
-createGeneRecords g t = GR g t
-
-{- Gene Dictionary for caching -}
-type GeneDict = [GeneRecord]
-
-emptyGeneDict :: GeneDict
-emptyGeneDict = []
-
-findTimeForGene :: GeneDict -> Genes -> Maybe Float
-findTimeForGene dict g = case findGene dict g of
-                              Nothing -> Nothing
-                              Just gr -> Just $ t gr
-
-addGeneRecord :: GeneDict -> GeneRecord -> GeneDict
-addGeneRecord dict gr = case findGene dict (gene gr) of
-                             Nothing -> (gr:dict)
-                             Just _ -> dict
-
-findGene :: GeneDict -> Genes -> Maybe GeneRecord
-findGene dict g = find (\gr -> (gene gr) == g) dict
-
-getTimes :: FilePath -> IO [Float]
-getTimes fp = do
-                contents <- readFile fp
-                return $ map read $ lines contents
-{-
-   Take a list of genes and create a new list of genes
-   Return: List of genes that include the following
-           - all genes given as input
-           - if more than one gene is given, a set of children born at random
-           - mutaions of all genes given and children (if applicable)
--}
-buildGeneration :: Gene d => [d] -> [d]
-buildGeneration dnas = gen'
-                       where
-                           gen = if (length dnas) > 1
-                                 then mergeRand dnas 5
-                                 else dnas
-                           gen' = concat $ map ((flip massMutate) 5) gen
-
-
-runGenerationG :: [Genes] -> Float -> Int -> Int -> GeneDict -> IO ([GeneRecord], GeneDict)
-runGenerationG (!genes) time repeats poolSize dict = do
-                                       trace (show genes) $ print "Running fitness on all programs"
-                                       times <- sequence $ map (fitnessWrap dict repeats time) genes
-                                       print "Cleaning executables"
-                                       paths <- return $ map (((++) "rm -f ") . path. head . getStrand) genes
-                                       sequence $ map system paths
-                                       print "Calculating scores"
-                                       records <- return $ sort $ map (uncurry createGeneRecords) $ zip genes times
-                                       dict' <- return $ foldl' (addGeneRecord) dict records
-                                       return $ (take poolSize records, dict')
-                                     where
-                                         dnas = map (head . getStrand) genes
-
-geneticAlgG :: [Genes] -> Int -> Float -> Int -> Int -> (GeneRecord, Int) -> GeneDict -> IO [Genes]
-geneticAlgG genes 0 _ _ _ _ _ = (print $ head genes) >> (return genes)
-geneticAlgG genes _ _ _ _ (gr, 10) _ = (print $ gene gr) >> (return $ [gene gr])
-geneticAlgG genes n time repeats poolSize (gr, failCount) dict = do
-                                                         print $ (show n) ++ " generations left"
-                                                         !genes' <- return $ buildGeneration genes
-                                                         (records', dict') <- runGenerationG (genes') time repeats poolSize dict
-                                                         records <- return $ filter (\gr -> (t gr) /= (-1.0)) records'
-                                                         print $ map t records
-                                                         diff' <- return $ t gr
-                                                         fast <- if ((length records) == 0) then return $ diff' else return $ t $ head records
-                                                         print $ "Fastest gene: " ++ (show $ gene $ head records)
-                                                         print $ "Fastest time so far: " ++ (show fast) ++ " sec"
-                                                         print $ (show $ diff' - fast) ++ " sec faster"
-                                                         if ((length records) == 0) then print ("All timeout" ) >> geneticAlgG genes (n-1) time repeats poolSize (gr, failCount + 1) dict'
-                                                         else if (diff' - fast < 0) then print ("Made all slower") >> geneticAlgG (map gene records) (n-1) time repeats poolSize (gr, failCount + 1) dict'
-                                                         else if (diff' - fast < 5.0) then print ("Not fast enough") >> geneticAlgG (map gene records) (n-1) time repeats poolSize (head records, failCount + 1) dict'
-                                                         else geneticAlgG (map gene records) (n-1) fast repeats poolSize (head records, 0) dict'
 
 createGene :: [(String, String)] -> Genes
 createGene progs = Genes $ map (uncurry createStrand) progs
@@ -315,13 +233,123 @@ writeGeneToDisk g = Genes ds'
                     where
                         ds = getStrand g
                         fp = unsafePerformIO $ createTempDirectory "files/" "tmp"
-                        ds' = map (writeStrandToDisk . addTemp fp) ds
-
-addTemp :: FilePath -> Strand -> Strand
-addTemp tempPath d@(Strand fp prog bits size) = Strand fp' prog bits size
+                        ds' = map (writeStrandToDisk . replacePath fp) ds
+                        
+{- Replace the file path of a strand with a new file path to a temporary directory -}
+replacePath :: FilePath -> Strand -> Strand
+replacePath tempPath (Strand fp prog bits size) = Strand fp' prog bits size
                                              where
                                                  fpList = splitPath fp
                                                  fp' = case ("files/" `elem` fpList) of
                                                             True  -> tempPath ++ "/" ++ (concat . tail $ tail fpList)
                                                             False -> tempPath ++ "/" ++ fp
+
+
+
+{------ Main algorithm ------}
+
+
+{-
+   Randomly choose 2 genes and merge them into a new gene and do so n times
+   Return: List of genes that are the given genes and all new children made
+-}
+mergeRand :: Gene d => [d] -> Int -> [d]
+mergeRand dnas 0 = dnas
+mergeRand dnas n = [merge (dnas !! i) (dnas !! j)] ++ mergeRand dnas (n-1)
+                   where
+                       range = (0, (length dnas) - 1)
+                       i = unsafePerformIO $ getStdRandom $ randomR range
+                       j = unsafePerformIO $ getStdRandom $ randomR range
+
+{-
+   Datatype use to hold genes and times together
+-}
+data GeneRecord = GR { gene :: Genes, time :: Float } deriving Show
+
+instance Eq GeneRecord where
+   dr1 == dr2 = (time dr1) == time dr2
+
+instance Ord GeneRecord where
+   dr1 <= dr2 = (time dr1) <= time dr2
+
+createGeneRecords :: Genes -> Float -> GeneRecord
+createGeneRecords g t = GR g t
+
+{- Gene Dictionary for caching -}
+type GeneDict = [GeneRecord]
+
+emptyGeneDict :: GeneDict
+emptyGeneDict = []
+
+findTimeForGene :: GeneDict -> Genes -> Maybe Float
+findTimeForGene dict g = case findGene dict g of
+                              Nothing -> Nothing
+                              Just gr -> Just $ time gr
+
+addGeneRecord :: GeneDict -> GeneRecord -> GeneDict
+addGeneRecord dict gr = case findGene dict (gene gr) of
+                             Nothing -> (gr:dict)
+                             Just _ -> dict
+
+findGene :: GeneDict -> Genes -> Maybe GeneRecord
+findGene dict g = find (\gr -> (gene gr) == g) dict
+
+{-
+   fitness wrapper for caching 
+-}
+fitnessWrap :: GeneDict -> Int -> Float -> Genes -> IO Float
+fitnessWrap dict reps base g = case findTimeForGene dict g of
+                                    Nothing -> fitness reps base g
+                                    Just time -> print ("Found in cache with time: " ++ (show time)) >> return time
+                
+{-
+   Take a list of genes and create a new list of genes
+   Return: List of genes that include the following
+           - all genes given as input
+           - if more than one gene is given, a set of children born at random
+           - mutaions of all genes given and children (if applicable)
+-}
+buildGeneration :: Gene d => [d] -> [d]
+buildGeneration dnas = gen'
+                       where
+                           gen = if (length dnas) > 1
+                                 then mergeRand dnas 5
+                                 else dnas
+                           gen' = concat $ map ((flip massMutate) 5) gen
+
+{-
+
+-}
+runGeneration :: [Genes] -> Float -> Int -> Int -> GeneDict -> IO ([GeneRecord], GeneDict)
+runGeneration (!genes) time repeats poolSize dict = do
+                                       trace (show genes) $ print "Running fitness on all programs"
+                                       times <- sequence $ map (fitnessWrap dict repeats time) genes
+                                       print "Cleaning executables"
+                                       paths <- return $ map (((++) "rm -f ") . path. head . getStrand) genes
+                                       _ <- sequence $ map system paths
+                                       print "Calculating scores"
+                                       records <- return $ sort $ map (uncurry createGeneRecords) $ zip genes times
+                                       dict' <- return $ foldl' (addGeneRecord) dict records
+                                       return $ (take poolSize records, dict')
+
+
+geneticAlg :: [Genes] -> Int -> Float -> Int -> Int -> (GeneRecord, Int) -> GeneDict -> IO [Genes]
+geneticAlg genes 0 _ _ _ _ _ = (print $ head genes) >> (return genes)
+geneticAlg _ _ _ _ _ (gr, 10) _ = (print $ gene gr) >> (return $ [gene gr])
+geneticAlg genes n base repeats poolSize (gr, failCount) dict = do
+                                                         print $ (show n) ++ " generations left"
+                                                         !genes' <- return $ buildGeneration genes
+                                                         (records', dict') <- runGeneration (genes') base repeats poolSize dict
+                                                         records <- return $ filter (\gr -> (time gr) /= (-1.0)) records'
+                                                         print $ map time records
+                                                         diff' <- return $ time gr
+                                                         fast <- if ((length records) == 0) then return $ diff' else return $ time $ head records
+                                                         print $ "Fastest gene: " ++ (show $ gene $ head records)
+                                                         print $ "Fastest time so far: " ++ (show fast) ++ " sec"
+                                                         print $ (show $ diff' - fast) ++ " sec faster"
+                                                         if ((length records) == 0) then print ("All timeout" ) >> geneticAlg genes (n-1) base repeats poolSize (gr, failCount + 1) dict'
+                                                         else if (diff' - fast < 0) then print ("Made all slower") >> geneticAlg (map gene records) (n-1) base repeats poolSize (gr, failCount + 1) dict'
+                                                         else if (diff' - fast < 5.0) then print ("Not fast enough") >> geneticAlg (map gene records) (n-1) fast repeats poolSize (head records, failCount + 1) dict'
+                                                         else geneticAlg (map gene records) (n-1) fast repeats poolSize (head records, 0) dict'
+
 
