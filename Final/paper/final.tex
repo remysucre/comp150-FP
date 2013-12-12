@@ -266,7 +266,7 @@ Figure~\ref{alg:overall} shows the genetic algorithm. We take a \lstinline!Genes
 \subsubsection{Converging}
 \begin{lstlisting}[float,frame=single,caption=Datatypes for improved genetic algorithm,label=lst:improved]
 data GeneRecord = GR {  gene :: Genes
-                      , t :: Float
+                      , time :: Float
                      }
 
 type GeneDict = [GeneRecord]
@@ -308,7 +308,7 @@ findTimeForGene :: GeneDict -> Genes ->
 \If {\lstinline!length! records $ == $ 0}
 \State\Return\Call{alg'}{g, reps, (runs - 1), base, (gr, failCount + 1), dict'}
 \EndIf
-\State fastest $\gets$ t gr
+\State fastest $\gets$ \lstinline!time! gr
 \State diff $\gets$ fastest $-$ fastTime
 \If {diff $< 0.0$} \State\Return\Call{alg'} {nextGen, reps, (runs - 1), base, (gr, failCount + 1), dict'}
 \ElsIf {diff $<$ threshold} \State\Return\Call{alg'} {nextGen, reps, (runs - 1), base, (gr, failCount + 1), dict'}
@@ -345,7 +345,7 @@ Program Name & Before & After & Before & After\\
 \hline
 binarytrees.ghc & 116.358 & 76.61 & 75.667 & 63.782\\
 \hline
-fannkuchredux.ghc-5 & 6084.93 & 5776.32 & 1550.801 & 1469.166\\
+fannkuchredux.ghc-5 & 6084.93 & 5776.32 & 1550.801 & 1469.17\\
 \hline
 gcGenSim & 20.228 & 19.556 & 20.383 & 19.637\\
 \hline
@@ -397,7 +397,7 @@ edited binarytrees & 67.426 & 55.853\\
 \caption{Times for orignal and edited \lstinline!binarytrees! in seconds}
 \end{figure}
 \subsection{fannkuchredux}
-In this experiment, we did not change the program at all. Since the algorithm only assumes the program terminates and has the ability to add and remove strictness, this required no changes. We compiled with the same options as the \lstinline!binarytrees! experiment and ran with the \lstinline!-N4! RTS option and $n = 12$. We see that we got a ??\% decrease both in terms of CPU seconds and clock seconds. The only change we see is two strictness annotations.
+In this experiment, we did not change the program at all. Since the algorithm only assumes the program terminates and has the ability to add and remove strictness, this required no changes. We compiled with the same options as the \lstinline!binarytrees! experiment and ran with the \lstinline!-N4! RTS option and $n = 12$. We see that we got a 5\% decrease both in terms of CPU seconds and clock seconds. The only change we see is two strictness annotations.
 \begin{lstlisting}
 fannkuch :: Int -> Int -> (Int, Int)
 fannkuch !n !i = ...
