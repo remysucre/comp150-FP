@@ -126,7 +126,7 @@ In this paper, we discuss a program that searches the space of strict programs u
 \section{Background}\label{sec:back}
 Strictness analysis looks at a function with $n$ arguments and asks whether the $i^{\text{th}}$ argument can be made strict. Programmers and compilers use the results of such an analysis to make their programs strict. The problem itself is hard. Part of strictness analysis is asking whether the program will terminate, also known as the halting problem. Work in the field focuses on approximating the analysis.
 
-Peyton Jones and Partain created a simple strictness analyzer that would run on GHC Core.\cite{pjones} The analysis was an approximation of finding fixpoints of functions. They used a ``widening'' operator on functions, removing some constraints and finding those fixpoints. As a static analysis, it will flag some functions as non-terminating when made strict on some arguments. Furthermore, they note their analyzer does not deal with non-flat structures and recursive functions. The work presented here does not ignore these two items. As long as the algorithm knows strictness can be annotated, it has a chance of doing so.
+Peyton Jones and Partain created a simple strictness analyzer that would run on GHC Core \cite{pjones}. The analysis was an approximation of finding fixpoints of functions. They used a ``widening'' operator on functions, removing some constraints and finding those fixpoints. As a static analysis, it will flag some functions as non-terminating when made strict on some arguments. Furthermore, they note their analyzer does not deal with non-flat structures and recursive functions. The work presented here does not ignore these two items. As long as the algorithm knows strictness can be annotated, it has a chance of doing so.
 
 Schrijvers and Mycroft worked on a type inference algorithm that kept track of the effects of functions, both deterministic and non-deterministic \cite{mycroft, wadler}. They use this to bring data flow to strictness analysis. Just like Peyton Jones and Partain, they consider flat data. Again, we do not ignore data so long as the algorithm knows it can make the data strict.
 
@@ -346,7 +346,7 @@ Program Name & Before & After & Before & After\\
 \hline
 binarytrees & 116.358 & 76.61 & 75.667 & 63.782\\
 \hline
-fannkuchredux & 35.015 & 33.601 & 10.514 & 10.155\\
+fannkuchredux & 6084.93 & 5776.32 & 1550.801 & 1469.166\\
 \hline
 gcGenSim & 20.228 & 19.556 & 20.383 & 19.637\\
 \hline
@@ -397,7 +397,7 @@ edited binarytrees & 67.426 & 55.853\\
 \caption{Times for orignal and edited \lstinline!binarytrees! in seconds}
 \end{table}
 \subsection{fannkuchredux}
-In this experiment, we did not change the program at all. Instead, we just gave it to the algorithm. Since the algorithm only assumes the program terminates and has the ability to add and remove strictness, this required no changes. We compiled with the same options as the \lstinline!binarytrees! experiment and ran with the \lstinline!-N4! RTS option. We see that we gained little time both in terms of CPU seconds and clock seconds. The only change we see is two strictness annotations
+In this experiment, we did not change the program at all. Instead, we just gave it to the algorithm. Since the algorithm only assumes the program terminates and has the ability to add and remove strictness, this required no changes. We compiled with the same options as the \lstinline!binarytrees! experiment and ran with the \lstinline!-N4! RTS option. We see that we got a 5\% decrease both in terms of CPU seconds and clock seconds. The only change we see is two strictness annotations.
 \begin{lstlisting}
 fannkuch :: Int -> Int -> (Int, Int)
 fannkuch !n !i = ...
