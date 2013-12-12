@@ -78,7 +78,7 @@
 \pagestyle{plain}
 %\cfoot{\thepage}
 \begin{abstract}
-Haskell is a lazy language which can cause slowdown due to the creation of thunks. Strictness can force evaluation of expressions and avoid the cost of thunks. However, programmers adding it into source code for performance may not know where to start. This case worsens if it is code they did not write. We introduce a genetic algorithm with the purpose of developing a faster program through adding strictness to the source code.
+Haskell is a lazy language which can cause slowdown due to the creation and evaluation of thunks. Strictness can force evaluation of expressions and avoid those costs. However, programmers adding it into source code for performance may not know where to start. This case worsens if it is code they did not write. We introduce a genetic algorithm with the purpose of developing a faster program through adding strictness to the source code.
 \end{abstract}
 
 %\category{CR-number}{subcategory}{third-level}
@@ -93,7 +93,7 @@ Haskell is a lazy language which can cause slowdown due to the creation of thunk
 
 \section{Introduction}\label{sec:intro}
 
-Haskell is lazy. Consider this function
+Haskell is lazy. Consider this program
 \begin{lstlisting}[label={lst:repl}]
 -- Create infinite list
 repeat :: a -> [a]
@@ -109,9 +109,9 @@ How does Haskell do this? To explain, consider this function
 f :: Int -> [Int]
 f n = replicate n n
 \end{lstlisting}
-Consider the application \lstinline!f (x+1)!. Haskell creates a closure on the heap that contains the unevaluated expression \lstinline!x+1!. This is a thunk. The function \lstinline!f! then gets a pointer to that. When the value within is needed, Haskell traverses to the thunk and evaluates it, potentially writing something back to the heap. Note that an eager language would not have written the thunk in the first place, avoiding both the additional write and the read.
+Consider the application \lstinline!f (x+1)!. Haskell creates a closure on the heap that contains the unevaluated expression \lstinline!x+1!. This is a thunk. The function \lstinline!f! then gets a pointer to that. When the value within is needed, Haskell traverses to the thunk and evaluates it, potentially writing something back to the heap. An eager language would not have written the thunk in the first place, avoiding both the additional write and the read.
 
-How well does this scale? Suppose we had a large group of thunks. The larger the group, the more memory pressure applied to the application. This leads to more frequent garbage collections and overall slowdown. In some cases, we may have programs that crash due to a lack of memory. We might save some overall time and space by evaluating some of those thunks early. Haskell has notation to force eager evaluation, the bang.
+How well does this scale? Suppose we had a large group of thunks. The larger the group, the more memory pressure applied to the application. We cannot even remove them since we do not know at when the program will need the thunk for evaluation. This leads to more frequent garbage collections and overall slowdown. In some cases, we may have programs that crash due to a lack of memory. We might save some overall time and space by evaluating some of those thunks early. Haskell has notation to force eager evaluation, the bang.
 \begin{lstlisting}[label={lst:fstrict}]
 f :: Int -> [Int]
 f !n = replicate n n
@@ -121,16 +121,16 @@ Now, we force Haskell to evaluate \lstinline!n! and pass that value on to \lstin
 
 Now consider a far more complicated program, spreading across multiple files. We must ask ourselves two questions. First, where do we start adding strictness? Here we only had one function, so the process was simple. With many functions, some recursive, adding strictness could cause problems, like nontermination. Second, when do we stop? Adding too much strictness can cause excess memory pressure. This would be no different, or worse, than the completely lazy version. We need to find a balance between lazy and eager in order to improve the program.
 
-In this paper, we discuss a program that searches the space of strict programs using a genetic algorithm to find a faster version of a given program. Section~\ref{sec:back} covers the background of strictness analysis and related work. Section~\ref{sec:arch} covers the program. Section~\ref{sec:expr} discusses some experiments. Section~\ref{sec:conc} concludes the paper.
+In this paper, we present a genetic algorithm that searches the space of strict programs to find a faster version of a given program. Section~\ref{sec:back} covers the background of strictness analysis and related work. Section~\ref{sec:arch} covers the program. Section~\ref{sec:expr} discusses some experiments. Section~\ref{sec:conc} concludes the paper.
 
 \section{Background}\label{sec:back}
-Strictness analysis looks at a function with $n$ arguments and asks whether the $i^{\text{th}}$ argument can be made strict. Programmers and compilers use the results of such an analysis to make their programs strict. The problem itself is hard. Part of strictness analysis is asking whether the program will terminate, also known as the halting problem. Work in the field focuses on approximating the analysis.
+Most of the previous work is in the field of strictness analysis. Strictness analysis looks at a function with $n$ arguments and asks whether the $i^{\text{th}}$ argument can be made strict. Programmers and compilers use the results of such an analysis to make their programs strict. The problem itself is hard. Part of strictness analysis is asking whether the program will terminate, also known as the halting problem. Work in the field focuses on approximating the analysis.
 
-Peyton Jones and Partain created a simple strictness analyzer that would run on GHC Core \cite{pjones}. The analysis was an approximation of finding fixpoints of functions. They used a ``widening'' operator on functions, removing some constraints and finding those fixpoints. As a static analysis, it will flag some functions as non-terminating when made strict on some arguments. Furthermore, they note their analyzer does not deal with non-flat structures and recursive functions. The work presented here does not ignore these two items. As long as the algorithm knows strictness can be annotated, it has a chance of doing so.
+Peyton Jones and Partain created a simple strictness analyzer that would run on GHC Core \cite{pjones}. The analysis was an approximation of finding fixpoints of functions. They used a ``widening'' operator on functions, removing some constraints and finding those fixpoints. As a static analysis, it will flag some functions as non-terminating when made strict on some arguments. Furthermore, their analyzer does not deal with non-flat structures and recursive functions. The work presented here does not ignore these two items. As long as the algorithm knows strictness can be annotated, it has a chance of doing so.
 
-Schrijvers and Mycroft worked on a type inference algorithm that kept track of the effects of functions, both deterministic and non-deterministic \cite{mycroft, wadler}. They use this to bring data flow to strictness analysis. Just like Peyton Jones and Partain, they consider flat data. Again, we do not ignore data so long as the algorithm knows it can make the data strict.
+Schrijvers and Mycroft worked on a type inference algorithm that kept track of the effects of functions, both deterministic and non-deterministic\cite{mycroft}. They use this to bring data flow to strictness analysis. Just like Peyton Jones and Partain, they consider flat data. Again, we do not ignore data so long as the algorithm knows it can make the data strict.
 
-Jensen et. al. moved to an analyzer on GHC Core that handled higher-order functions and polymorphism \cite{jensen}. They also approximate fixpoints. However, they make no note in their paper on using the results on functions. Their work incorporated the theoretic foundations from Wadler\cite{wadler} to do this. Our work differentiates itself from both Peyton Jones and Jensen by working closer to sugared source code than GHC Core. This allows us to output code for a Haskell user that they can learn from, rather than giving GHC Core back or just compiling straight to machine code.
+Jensen et. al. moved to an analyzer on GHC Core that handled higher-order functions and polymorphism \cite{jensen}. They also approximate fixpoints. However, they make no note in their paper on using the results on functions. Their work incorporated the theoretic foundations from Wadler\cite{wadler} to do this. Our work differentiates itself by working closer to sugared source code than GHC Core. This allows us to output code for a Haskell user that they can learn from, rather than giving GHC Core back or just compiling straight to machine code.
 
 \section{Architecture}\label{sec:arch}
 \begin{figure}[t]
@@ -138,15 +138,15 @@ Jensen et. al. moved to an analyzer on GHC Core that handled higher-order functi
 \caption{General architecture}
 \label{fig:arch}
 \end{figure}
-The program has three components, as shown in Figure~\ref{fig:arch}. The Rewrite module deals with adding strictness to the source code itself. The Genetic module is the core of the program, deciding when and where to add the strictness. It uses the Rewrite module to edit the source code. We give it the Haskell source code and we get back Haskell source code. The rest of this section discusses the modules in more detail.
+The program has three components, as shown in Figure~\ref{fig:arch}. The Rewrite module deals with adding strictness to the source code itself. The Genetic module is the core of the program, deciding when and where to add the strictness. It uses the Rewrite module to edit the source code. We give the Haskell source code and we get back Haskell source code. The rest of this section discusses the modules in more detail.
 \subsection{Rewrite}
 This module takes in sugared Haskell source code, creates an abstract syntax tree, transforms it, and prints it back as sugared Haskell code without comments. We use the \lstinline!haskell-src-exts! package to get the abstract syntax tree and print it back to readable source~\cite{hsrcext}. It exposes three functions, \lstinline!flipBang!, \lstinline!flipRandomBang!, \lstinline!placesToStrict!.
 
-\lstinline!flipBang! takes in a \lstinline!FilePath! to the file, a \lstinline!String! containing the whole program, and an \lstinline!Int! that denotes which declaration in the program to add or remove strictness. If the program was entered with strictness at that location, it will leave without it and vice-versa. \lstinline!flipRandomBang! does the same, but in at a random location in the program. Finally, \lstinline!placesToStrict! gets the file path and program as input and returns the number of places one can place strictness.
-
 All three functions perform the same steps and traversal. To begin, they retrieve the module the program given describes. We use \lstinline!parseFileContentsWithMode! to extract the abstract syntax tree of the module while enabling the compiler flag \lstinline!-XBangPatterns! and the Haskell 2010 language. 
 
-From there, we can get a list of declarations. This includes all functions declared in the file. The package labels them as \lstinline!FunBind!s. Each one contains a list of parameters, typed \lstinline!Match!. Each of those contains contains \lstinline!Pat!, or patterns. \lstinline!Pat! contains multiple datatypes, but two concern us in this implementation. One is \lstinline!PVar!, a parameter or variable declaration in a \lstinline!where! clause. The other is \lstinline!PBangPat!, something with strictness applied to it. \lstinline!flipBang! and \lstinline!flipRandomBang! will either replace a \lstinline!PVar! with a \lstinline!PBangPat! or vice-versa. \lstinline!placesToStrict! increments its counter.
+From there, we can get a list of declarations. This includes all functions declared in the file. The package labels them as \lstinline!FunBind!s. Each one contains a list of parameters, typed \lstinline!Match!. Each of those contains \lstinline!Pat!, or patterns. \lstinline!Pat! contains multiple datatypes, but two concern us in this implementation. One is \lstinline!PVar!, a parameter or variable declaration in a \lstinline!where! clause. The other is \lstinline!PBangPat!, a \lstinline!Pat! with strictness applied to it. \lstinline!flipBang! and \lstinline!flipRandomBang! will either replace a \lstinline!PVar! with a \lstinline!PBangPat! or vice-versa. \lstinline!placesToStrict! increments its counter.
+
+\lstinline!flipBang! takes in a \lstinline!FilePath! to the file, a \lstinline!String! containing the whole program, and an \lstinline!Int! that denotes which declaration in the program to add or remove strictness. If the program was entered with strictness at that location, it will leave without it and vice-versa. \lstinline!flipRandomBang! does the same, but in at a random location in the program. Finally, \lstinline!placesToStrict! gets the file path and program as input and returns the number of places one can place strictness.
 
 \subsection{Genetic Algorithm}
 This module is the driving force behind the program. Its purpose is to run the genetic algorithm, exploring the space of programs, choosing some, and running them to determine the best. The rest of this subsection describes the module.
@@ -171,7 +171,7 @@ replicate' !n x = take n xs
                   where xs = repeat x
 \end{lstlisting}
 
-Listing~\ref{lst:genetic} lists the important datatypes and operations used in the module. \lstinline!Strand! is used to describe a single file. It contains the path to the file, the program in a \lstinline!String!, a bit vector represented by an \lstinline!Integer!, and an \lstinline!Int! recording the size of that bit vector. Each bit in the vector, starting from the least significant, corresponds to a location in the program where the Rewrite module can place strictness. $0$ means there is no strictness. $1$ means there is. This allows us to keep track of the status of the file without digging into the program itself. For example the vector for the program in Listing~\ref{lst:example} is $001$. We record the size of the vector since \lstinline!bitSize! of an \lstinline!Integer! is undefined in \lstinline!Data.Bits!.
+Listing~\ref{lst:genetic} lists the important datatypes and operations used in the module. \lstinline!Strand! is used to describe a single file. It contains the path to the file, the program in a \lstinline!String!, a bit vector represented by an \lstinline!Integer!, and an \lstinline!Int! recording the size of that bit vector. We record the size of the vector since \lstinline!bitSize! of an \lstinline!Integer! is undefined in \lstinline!Data.Bits!. Each bit in the vector, starting from the least significant, corresponds to a location in the program where the Rewrite module can place strictness. $0$ means there is no strictness. $1$ means there is. This allows us to keep track of the status of the file without digging into the program itself. For example the vector for the program in Listing~\ref{lst:example} is $001$. 
 
 \begin{figure}[t]
 \begin{algorithmic}
@@ -184,15 +184,15 @@ Listing~\ref{lst:genetic} lists the important datatypes and operations used in t
     \State fp $\gets$ \lstinline{path} s
     \State prog $\gets$ \lstinline{program} s
     \State prog' $\gets$ \Call{flipBang} {fp prog index}
-    \State \Return \Call{mutateSet} {(\lstinline!Strand! fp prog' bits n) newBits (index + 1)}
+    \State \Return \Call{mutateSet} {(\lstinline!Strand! fp prog' bits n), newBits, (index + 1)}
 \Else 
-\State\Return\Call{mutateSet} {s newBits (index + 1)}
+\State\Return\Call{mutateSet} {s, newBits, (index + 1)}
 \EndIf
 \EndFunction\\
 \Function{mutateStrand}{\lstinline!Strand! s}
 \State n $\gets$ \lstinline!size! s
 \State bits $\gets$ \lstinline!random! $(0, 2^n)$
-\State\Return\Call{mutateSet} {s bits 0}
+\State\Return\Call{mutateSet} {s, bits, 0}
 \EndFunction\\
 \Function{mutate}{\lstinline!Genes! g}
 \State g' $\gets$ \lstinline!writeToDisk! g
@@ -262,7 +262,7 @@ The function \lstinline!fitness! takes in the number of times to time the progra
 \label{alg:overall}
 \end{figure}
 
-Figure~\ref{alg:overall} shows the genetic algorithm. We take a \lstinline!Genes! and build a new generation based off them. This involves merging those in the original set and mutating the entire group. Then we measure the fitness of every gene using the given base time for timeouts. We sort the genes based off the fitness scores and record the fastest time. Finally, we take the $n$ best and pass them through the algorithm again.
+Figure~\ref{alg:overall} shows the genetic algorithm. We take a \lstinline!Genes! and build a new generation based off them. This involves merging those in the original set and mutating the entire group. Then we measure the fitness of every gene using the given base time for timeouts. We sort the genes based off the fitness scores and record the best score. Finally, we take the $n$ best and pass them through the algorithm again.
 \subsubsection{Converging}
 \begin{lstlisting}[float,frame=single,caption=Datatypes for improved genetic algorithm,label=lst:improved]
 data GeneRecord = GR {  gene :: Genes
@@ -326,35 +326,35 @@ The base algorithm will run a specified number of times before terminating, rega
 \item Every program is made slower
 \item The decrease in speed is small
 \end{itemize}
-We need to keep track of how many times any of these events occured. After a certain threshold, we terminate the program sooner than the specified number of runs. To measure our progress, we must also keep track of the current fastest program and its time.
+We need to keep track of how many times any of these events occured. After encountering them a certain number of times, we terminate the program. To measure our progress, we must also keep track of the current fastest program and its time.
 
 Since \lstinline!mutate! and \lstinline!merge! are random, there are occasions we create programs that we previously encountered. Instead of running them again, we created a dictionary cache. Listings~\ref{lst:improved} shows the new datatypes for these changes. Figure~\ref{alg:converge} shows the improved algorithm.
 \section{Experiment}\label{sec:expr}
-We decided to run the algorithm on two programs from the benchmarks game~\cite{bgames} and an additional one created by Nathan Ricci. One is \lstinline!binarytrees.ghc-1!, which allocates one large binary tree for memory pressure and allocates many small ones as it runs. The other is \lstinline!fannkuchredux.ghc-5!, which takes in an integer $n$ and calculates the maximum number of flips needed for any permutation of size $n$ to get $1$ to the front. The third, \lstinline!gcGenSim!, simulates a generational garbage collector using a trace from a java program. We ran this one with a scaladoc trace, provided by Nathan.
+We decided to run the algorithm on two programs from the benchmarks game~\cite{bgames} and an additional one created by Nathan Ricci. One is \lstinline!binarytrees.ghc!, which allocates one large binary tree for memory pressure and allocates many small ones as it runs. The other is \lstinline!fannkuchredux.ghc-5!, which takes in an integer $n$ and calculates the maximum number of flips needed for any permutation of size $n$ to get $1$ to the front. The third, \lstinline!gcGenSim!, simulates a generational garbage collector using a trace from a java program. We ran this one with fifty thousand lines of a scaladoc trace, also provided by Nathan.
 
-These experiments were run on an Intel Xeon E31245, an 8 core CPU clocked at 3.30 GHz on 64-bit Ubuntu 12.04 LTS and 3.8 GB of memory. The code was compiled using the Glasgow Haskell Compiler version 7.4.1.
+These experiments were run on an Intel Xeon E3-1245, an 8 core CPU clocked at 3.30 GHz on 64-bit Ubuntu 12.04 LTS and 3.8 GB of memory. The code was compiled using the Glasgow Haskell Compiler version 7.4.1.
 
 %``Best found: [path: \"files/tmp12811/gcSim/gcGenSim\" vec: 0,path: \"files/tmp12811/gcSim/gcSimulator\" vec: 15,path: \"files/tmp12811/gcSim/gcReachSim\" vec: 4,path: \"files/tmp12811/gcSim/EtParser\" vec: 0,path: \"files/tmp12811/gcSim/EtParserNoFields\" vec: 1,path: \"files/tmp12811/gcSim/GenerationalGC\" vec: 0,path: \"files/tmp12811/gcSim/Graph\" vec: 2,path: \"files/tmp12811/gcSim/Machine\" vec: 0,path: \"files/tmp12811/gcSim/NurseryGC\" vec: 5,path: \"files/tmp12811/gcSim/ObjectModel\" vec: 0,path: \"files/tmp12811/gcSim/ReachGC\" vec: 3,path: \"files/tmp12811/gcSim/WholeHeapGC\" vec: 4,path: \"files/tmp12811/gcSim/lifeQuartie\" vec: 1,path: \"files/tmp12811/gcSim/pointerStabilityGraph\" vec: 6,path: \"files/tmp12811/gcSim/pointerStabilityGraph2\" vec: 3,path: \"files/tmp12811/gcSim/stableFields\" vec: 4,path: \"files/tmp12811/gcSim/testNurseryCollect\" vec: 0]''
 
-\begin{table}[t]
-\label{tab:expr}
-\begin{tabular}{| l | l | l | l | l |}
+\begin{figure}[t]
+\begin{tabular}{|l|l|l|l|l|}
 \hline
  & \multicolumn{2}{|c|}{User CPU Time} & \multicolumn{2}{|c|}{Clock Time}\\
 \hline
 Program Name & Before & After & Before & After\\
 \hline
-binarytrees & 116.358 & 76.61 & 75.667 & 63.782\\
+binarytrees.ghc & 116.358 & 76.61 & 75.667 & 63.782\\
 \hline
-fannkuchredux & 6084.93 & 5776.32 & 1550.801 & 1469.166\\
+fannkuchredux.ghc-5 & 6084.93 & 5776.32 & 1550.801 & 1469.166\\
 \hline
 gcGenSim & 20.228 & 19.556 & 20.383 & 19.637\\
 \hline
 \end{tabular}
+\label{tab:expr}
 \caption{Times for experiments in seconds, both before and after transformation}
-\end{table}
+\end{figure}
 \subsection{binarytrees}
-We removed all the strictness in the original program and sent it through the algorithm. We compiled all versions with \lstinline!-threaded!, \lstinline!-rtsopts!, \lstinline!-XBangPatterns! options enabled and ran with \lstinline!-N4! and \lstinline!-K128M! RTS options enabled. Table~\ref{tab:expr} shows us the program sped up. We cut the CPU time by about 40 seconds while reducing the clock time by 12 seconds. Looking at the resulting code in Listing~\ref{lst:btree}, we see that the algorithm added exactly one strictness annotation.
+We removed all the strictness in the original program and sent it through the algorithm. We compiled all versions with \lstinline!-threaded!, \lstinline!-rtsopts!, \lstinline!-XBangPatterns! options enabled and ran with \lstinline!-N4! and \lstinline!-K128M! RTS options enabled and depth of 20. Table~\ref{tab:expr} shows us the program sped up. We cut the CPU time by about 40 seconds while reducing the clock time by 12 seconds. Looking at the resulting code in Listing~\ref{lst:btree}, we see that the algorithm added exactly one strictness annotation.
 \begin{lstlisting}[float,frame=single,caption=Changes in \lstinline!binarytrees! after applying the genetic algorithm,label=lst:btree]
 sumT :: Int -> Int -> Int -> Int
 sumT d 0 t = t
@@ -380,10 +380,10 @@ Since \lstinline!sumT! is strict on \lstinline!t'! in the recursive call, we mus
 \begin{lstlisting}
 t' == (t + a + b)
 \end{lstlisting}
-This implies we must evaluate \lstinline!t!, \lstinline!a!, and \lstinline!b!. Note the definition of \lstinline!a! and \lstinline!b!. Both call \lstinline!make! which creates trees. In the lazy version, these trees will be created only when some other function needs the value of a call to \lstinline!sumT!. At that point, all trees in all recrusive calls will be created at once, leading to excess memory pressure and more thunks to evaluate. The strict version simply creates the trees, saving the operations for thunks and thusly time. Looking back at the original program, we found this annotation was not there. 
+This implies we must evaluate \lstinline!t!, \lstinline!a!, and \lstinline!b!. Note the definitions of \lstinline!a! and \lstinline!b!. Both call \lstinline!make! which creates trees. In the lazy version, these trees will be created only when some other function needs the value of a call to \lstinline!sumT!. At that point, all trees in all recursive calls will be created at once, leading to excess memory pressure and more thunks to evaluate. The strict version simply creates the trees, saving the operations for thunks and thusly time. Looking back at the original program, we found this annotation was not there. 
 
 We later realized that removing the strictness from the program removed the memory pressure needed for \lstinline!binarytrees! to run as intended. We timed two more versions of the program, the original program with the strictness for memory pressure, and another that also added the strictness in \lstinline!sumT!. The times are reported in Table~\ref{tab:btree}. We see that the additional strictness from the algorithm still gives us the decrease in runtime.
-\begin{table}[t]
+\begin{figure}[t]
 \label{tab:btree}
 \begin{tabular}{| l | l | l |}
 \hline
@@ -395,15 +395,15 @@ edited binarytrees & 67.426 & 55.853\\
 \hline
 \end{tabular}
 \caption{Times for orignal and edited \lstinline!binarytrees! in seconds}
-\end{table}
+\end{figure}
 \subsection{fannkuchredux}
-In this experiment, we did not change the program at all. Instead, we just gave it to the algorithm. Since the algorithm only assumes the program terminates and has the ability to add and remove strictness, this required no changes. We compiled with the same options as the \lstinline!binarytrees! experiment and ran with the \lstinline!-N4! RTS option. We see that we got a 5\% decrease both in terms of CPU seconds and clock seconds. The only change we see is two strictness annotations.
+In this experiment, we did not change the program at all. Since the algorithm only assumes the program terminates and has the ability to add and remove strictness, this required no changes. We compiled with the same options as the \lstinline!binarytrees! experiment and ran with the \lstinline!-N4! RTS option and $n = 12$. We see that we got a ??\% decrease both in terms of CPU seconds and clock seconds. The only change we see is two strictness annotations.
 \begin{lstlisting}
 fannkuch :: Int -> Int -> (Int, Int)
 fannkuch !n !i = ...
 \end{lstlisting}
 
-Now we must figure out where the program calls the function. The only call to the function is in \lstinline!main!.
+Now we must figure out where the program calls this function. The only call is in \lstinline!main!.
 \begin{lstlisting}
 n <- fmap (read . head) getArgs
 ...
@@ -417,7 +417,7 @@ Therefore, we save the writing and reading of $n+1$ thunks. This explains the de
 %% ------- 821min 28.264sec ~ 13 hrs 41 min 28.264 sec(CPU user)
 
 \section{Future Work}\label{sec:futr}
-Our algorithm does give us decreases in run time. However, there is much work to be done. The most glaring issue is speed. Currently, the fitness function is the bottleneck of the system because we run executables for timing. While we improved the run time with caching the run times of every mutation, \lstinline!gcGenSim! still finished 10 generations in 13 hours and 46 minutes. We are looking into attempting to run more of these executables in parallel while dealing with the variance that comes from scheduling multiple processes and threads. Another possibility is to allow the user to specify functions to enhance with strictness and improve those instead.
+Our algorithm does give us decreases in run time. However, there is much work to be done. The most glaring issue is speed. Currently, the fitness function is the bottleneck of the system because we run executables for timing. While we improved the run time by caching the run times of every mutation, \lstinline!gcGenSim! finished 10 generations in 13 hours and 46 minutes. We are looking into attempting to run more of these executables in parallel while dealing with the variance that comes from scheduling multiple processes and threads. Another possibility is to allow the user to specify functions to enhance with strictness and improve those instead.
 
 One suggestion we got was to use simulated annealing. Genetic algorithms are suited to breed a group of good options. Annealing can provide us with a singular best, or in our case fastest, program. We can also try changing the fitness function to measure maximum heap size rather than time to create more space-efficient programs.
 
