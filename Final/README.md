@@ -1,4 +1,4 @@
-Using Strictness on Source Code
+Using Automated Strictness on Source Code
 ==========
 
 To use, you will need
