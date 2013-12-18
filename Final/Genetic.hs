@@ -156,6 +156,7 @@ compile fp = do
 fitnessStrand :: Int -> Float -> Strand -> IO Float
 fitnessStrand reps base (Strand fp _ _ _) = do
                                          _ <- compile fp -- Compile all the programs
+                                         print $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show base) ++ "s " ++ "test.txt"
                                          exit <- system $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show base) ++ "s " ++ "test.txt"
                                          case exit of
                                               ExitSuccess ->  do {contents <- readFile "test.txt";
@@ -343,8 +344,8 @@ geneticAlg genes n base repeats poolSize (gr, failCount) dict = do
                                                          records <- return $ filter (\gr -> (time gr) /= (-1.0)) records'
                                                          print $ map time records
                                                          diff' <- return $ time gr
-                                                         fast <- if ((length records) == 0) then return $ diff' else return $ time $ head records
-                                                         print $ "Fastest gene: " ++ (show $ gene $ head records)
+                                                         fast <- if (null records) then return $ diff' else return $ time $ head records
+                                                         print $ "Fastest gene: " ++ (if (null records) then "" else show $ gene $ head records)
                                                          print $ "Fastest time so far: " ++ (show fast) ++ " sec"
                                                          print $ (show $ diff' - fast) ++ " sec faster"
                                                          if ((length records) == 0) then print ("All timeout" ) >> geneticAlg genes (n-1) base repeats poolSize (gr, failCount + 1) dict'
