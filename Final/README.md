@@ -9,7 +9,7 @@ To use, you will need
 All three can be obtained by using `cabal` (make sure to `cabal update`).
 
 To compile
-- ghc -XBangPatterns GMain.hs
+- ghc --make GMain.hs
 
 To run
 - Create a file `files.txt` in this directory.

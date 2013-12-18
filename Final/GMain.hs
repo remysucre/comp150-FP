@@ -1,4 +1,4 @@
-{-# OPTIONS -Wall -Werror -fno-warn-name-shadowing #-}
+{-# OPTIONS -Wall -Werror -fno-warn-name-shadowing -XBangPatterns #-}
 
 module Main
 where
