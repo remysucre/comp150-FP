@@ -10,7 +10,7 @@ rm -f ${FILE}
 for (( i=1; i<=$REPS; i++ ))
     do
     touch ${FILE}
-    timeout $TIME time -f "%e %U" -a -o ${FILE} ${PROG} > /dev/null
+    timeout $TIME time -f "%U" -a -o ${FILE} ${PROG} > /dev/null
     VAL=$?
     if [ "${VAL}" -eq "124" ]
     then echo "-1.0" >> ${FILE}
