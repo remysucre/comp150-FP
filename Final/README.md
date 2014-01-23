@@ -11,6 +11,9 @@ All three can be obtained by using `cabal` (make sure to `cabal update`).
 To compile
 - ghc --make GMain.hs
 
+BE WARNED: This will produce a LOT of temporary files and may eat up all your resources. Be mindful of where you attempt
+to run this.
+
 To run
 - Create a file `files.txt` in this directory.
 - Write down the paths for every file needed to compile your program, with the main module first.
