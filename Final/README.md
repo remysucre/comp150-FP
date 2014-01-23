@@ -1,6 +1,9 @@
 Using Automated Strictness on Source Code
 ==========
 
+BE WARNED: This will produce a LOT of temporary files and may eat up all your resources. Be mindful of where you attempt
+to run this.
+
 To use, you will need
 - happy-1.19.2
 - haskell-src-exts-1.14.0
@@ -10,9 +13,6 @@ All three can be obtained by using `cabal` (make sure to `cabal update`).
 
 To compile
 - ghc --make GMain.hs
-
-BE WARNED: This will produce a LOT of temporary files and may eat up all your resources. Be mindful of where you attempt
-to run this.
 
 To run
 - Create a file `files.txt` in this directory.
