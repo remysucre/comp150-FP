@@ -1,4 +1,4 @@
-{-# OPTIONS -Wall -Werror -fno-warn-name-shadowing -XBangPatterns #-}
+{-# OPTIONS -Wall -Werror -fno-warn-name-shadowing -XBangPatterns -XScopedTypeVariables #-}
 
 {--
     Genetic - Everything regarding the genetic algorithm
@@ -20,10 +20,11 @@ import System.Directory (createDirectoryIfMissing, getCurrentDirectory, setCurre
 import Data.Foldable(foldl', foldr')
 
 import Debug.Trace
+import Control.Monad.Random
 {------ General gene class for Genetic Algorithms ------}
 
 class Gene d where
-   mutate :: d -> d
+   mutate :: forall rand . (MonadRandom rand) => d -> rand d
    merge :: d -> d -> d
    fitness :: Int -> Float -> d -> IO Float
 
@@ -31,16 +32,18 @@ class Gene d where
    Mutate a gene a certain number of times
    Return: a gene mutated n times
 -}
-mutateRounds :: Gene d => d -> Int -> d
-mutateRounds gene 0 = gene
-mutateRounds gene n = mutateRounds (mutate gene) (n-1)
+mutateRounds :: (MonadRandom rand, Gene d) => d -> Int -> rand d
+mutateRounds gene 0 = return gene
+mutateRounds gene n = do
+                         gene' <- mutate gene
+                         mutateRounds gene' (n-1)
 
 {- 
    Mutate a single gene to multiple genes
    Return: a list of genes each mutated at least once
 -}
-massMutate :: Gene d => d -> Int -> [d]
-massMutate g i = [g] ++ (take i $ map mutate $ repeat g)
+massMutate :: (MonadRandom rand, Gene d) => d -> Int -> rand [d]
+massMutate g i = sequence $ [return g] ++ (take i $ map mutate $ repeat g)
 
 {------ Gene for this Genetic Algorithm ------}
 
@@ -83,12 +86,15 @@ instance Eq Strand where
    Return: new piece of Strand that has been mutated
 -}
 
-mutateStrand :: Strand -> Strand
-mutateStrand d@(Strand fp program _ _) = mutateStrandWithSet bits' size d
-                                             where
-                                                 size = placesToStrict fp program
-                                                 range = (0, toInteger size)
-                                                 bits' = unsafePerformIO $ getStdRandom (randomR range)
+mutateStrand :: (MonadRandom rand) => Strand -> rand Strand
+mutateStrand d@(Strand fp program _ _) = 
+  do
+    bits' <- getRandomR range
+    return $ mutateStrandWithSet bits' size d
+      where
+        size = placesToStrict fp program
+        range = (0, toInteger size)
+
 
 {- 
    Mutate Strand according to a set of bits of a given size
@@ -189,11 +195,12 @@ data Genes = Genes { getStrand :: [Strand] } deriving Show
 {-
    Mutate a program
 -}
-mutateG :: Genes -> Genes
-mutateG g = Genes ds''
-                      where 
-                          !ds' = getStrand $ writeGeneToDisk g
-                          ds'' = map mutate ds'
+mutateG :: (MonadRandom rand) => Genes -> rand Genes
+mutateG g = do
+  ds'' <- sequence $ map mutate ds'
+  return $ Genes ds''
+    where 
+      !ds' = getStrand $ writeGeneToDisk g
 
 {-
    Merge two programs together
@@ -254,13 +261,15 @@ replacePath tempPath (Strand fp prog bits size) = Strand fp' prog bits size
    Randomly choose 2 genes and merge them into a new gene and do so n times
    Return: List of genes that are the given genes and all new children made
 -}
-mergeRand :: Gene d => [d] -> Int -> [d]
-mergeRand dnas 0 = dnas
-mergeRand dnas n = [merge (dnas !! i) (dnas !! j)] ++ mergeRand dnas (n-1)
+mergeRand :: (MonadRandom rand, Gene d) => [d] -> Int -> rand [d]
+mergeRand dnas 0 = return dnas
+mergeRand dnas n = do
+                     i <- getRandomR range
+                     j <- getRandomR range    
+                     result <- mergeRand dnas (n-1)
+                     return $ merge (dnas !! i) (dnas !! j) : result
                    where
                        range = (0, (length dnas) - 1)
-                       i = unsafePerformIO $ getStdRandom $ randomR range
-                       j = unsafePerformIO $ getStdRandom $ randomR range
 
 {-
    Datatype use to hold genes and times together
@@ -310,14 +319,27 @@ fitnessWrap dict reps base g = case findTimeForGene dict g of
            - if more than one gene is given, a set of children born at random
            - mutaions of all genes given and children (if applicable)
 -}
-buildGeneration :: Gene d => [d] -> [d]
-buildGeneration dnas = gen'
+buildGeneration :: forall rand d . (MonadRandom rand, Gene d) => [d] -> rand [d]
+buildGeneration dnas = do
+                          gen <- if (length dnas) > 1 then mergeRand dnas 5
+                                                      else return dnas
+                          temp <- sequence $ map mut5 gen
+                          return $ concat temp
                        where
+                         mut5 :: d -> rand [d]
+                         mut5 = flip massMutate 5
+{-  gen'
+                       where
+                           gen :: rand [d]
                            gen = if (length dnas) > 1
                                  then mergeRand dnas 5
-                                 else dnas
-                           gen' = concat $ map ((flip massMutate) 5) gen
-
+                                 else return dnas
+                           mut5 :: d -> rand [d]
+                           mut5 = flip massMutate 5
+                           f :: [d] -> [rand [d]]
+                           gen >>= map mut5
+                           gen' = mapM concat $ mapM mut5 gen
+-}
 {-
 
 -}
