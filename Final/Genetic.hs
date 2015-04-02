@@ -14,13 +14,14 @@ import System.FilePath.Posix (splitPath, splitFileName, dropExtension)
 import System.IO.Unsafe (unsafePerformIO)
 import Data.Bits (testBit, (.|.))
 import Data.List (sort, find)
-import System.Random (getStdRandom, randomR)
+-- import System.Random (getStdRandom, randomR)
 import System.IO.Temp (createTempDirectory)
 import System.Directory (createDirectoryIfMissing, getCurrentDirectory, setCurrentDirectory)
 import Data.Foldable(foldl', foldr')
 
 import Debug.Trace
 import Control.Monad.Random
+
 {------ General gene class for Genetic Algorithms ------}
 
 class Gene d where
@@ -361,7 +362,7 @@ geneticAlg genes 0 _ _ _ _ _ = (print $ head genes) >> (return genes)
 geneticAlg _ _ _ _ _ (gr, 10) _ = (print $ gene gr) >> (return $ [gene gr])
 geneticAlg genes n base repeats poolSize (gr, failCount) dict = do
                                                          print $ (show n) ++ " generations left"
-                                                         !genes' <- return $ buildGeneration genes
+                                                         !genes' <- buildGeneration genes
                                                          (records', dict') <- runGeneration (genes') base repeats poolSize dict
                                                          records <- return $ filter (\gr -> (time gr) /= (-1.0)) records'
                                                          print $ map time records
