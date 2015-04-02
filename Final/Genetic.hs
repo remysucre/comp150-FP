@@ -11,7 +11,7 @@ import Rewrite (flipBang, placesToStrict)
 import System.Process (system)
 import System.Exit (ExitCode(..))
 import System.FilePath.Posix (splitPath, splitFileName, dropExtension)
-import System.IO.Unsafe (unsafePerformIO)
+-- import System.IO.Unsafe (unsafePerformIO)
 import Data.Bits (testBit, (.|.))
 import Data.List (sort, find)
 -- import System.Random (getStdRandom, randomR)
@@ -25,7 +25,7 @@ import Control.Monad.Random
 {------ General gene class for Genetic Algorithms ------}
 
 class Gene d where
-   mutate :: forall rand . (MonadRandom rand) => d -> rand d
+   mutate :: d -> IO d  -- mutation insists on writing to disk. why?
    merge :: d -> d -> d
    fitness :: Int -> Float -> d -> IO Float
 
@@ -87,11 +87,11 @@ instance Eq Strand where
    Return: new piece of Strand that has been mutated
 -}
 
-mutateStrand :: (MonadRandom rand) => Strand -> rand Strand
+mutateStrand :: Strand -> IO Strand
 mutateStrand d@(Strand fp program _ _) = 
   do
     bits' <- getRandomR range
-    return $ mutateStrandWithSet bits' size d
+    mutateStrandWithSet bits' size d
       where
         size = placesToStrict fp program
         range = (0, toInteger size)
@@ -101,13 +101,13 @@ mutateStrand d@(Strand fp program _ _) =
    Mutate Strand according to a set of bits of a given size
    Return: new piece of Strand mutated according to bits
 -}
-mutateStrandWithSet :: Integer -> Int -> Strand -> Strand
+mutateStrandWithSet :: Integer -> Int -> Strand -> IO Strand
 mutateStrandWithSet !bits size d = mutateStrandWithSetH d bits size 0
 
 {- 
    Helper function: Goes through the bits and mutates Strand accordingly
 -}
-mutateStrandWithSetH :: Strand -> Integer -> Int -> Int -> Strand
+mutateStrandWithSetH :: Strand -> Integer -> Int -> Int -> IO Strand
 mutateStrandWithSetH d@(Strand fp prog oldBits np) !bits numPlaces i = if i == (numPlaces)
                                                                then writeStrandToDisk $ Strand fp prog bits numPlaces
                                                                else mutateStrandWithSetH d' bits numPlaces (i+1)
@@ -131,15 +131,14 @@ mergeStrand (Strand fp program bits np) (Strand _ _ bits' np') = mutateStrandWit
    Helper function: Writes a program in Strand to a temp file and updates Strand
    Return: Strand updated to point to file just written on disk
 -}
-writeStrandToDisk :: Strand -> Strand
-writeStrandToDisk !(Strand fp program bits numPlaces) = Strand fp' program bits numPlaces
-                                                 where
-                                                     (dir, _) = splitFileName fp
-                                                     action = do
-                                                                createDirectoryIfMissing True dir
-                                                                writeFile (fp ++ ".hs") program
-                                                                return fp
-                                                     fp' = dropExtension $ unsafePerformIO action
+writeStrandToDisk :: Strand -> IO Strand
+writeStrandToDisk !(Strand fp program bits numPlaces) = do
+                                                       	  createDirectoryIfMissing True dir
+                                                          writeFile (fp ++ ".hs") program
+							  return $ Strand (dropExtension fp) program bits numPlaces
+                                                where
+							  (dir, _) = splitFileName fp	     
+                                                     
 
 {-
    Compile a program and return the exit code. Also deletes all temporary files.
@@ -224,7 +223,7 @@ instance Gene Genes where
     merge = mergeG
     fitness = fitnessG
 
-instance Eq Genes where
+instance Eq Genes where                      
    gr == hr = (getStrand gr) == (getStrand hr)
 
 createGene :: [(String, String)] -> Genes
@@ -237,12 +236,13 @@ createGeneFromFile fp = do
                           fileContents <- sequence $ map readFile filePaths
                           return $ createGene $ zip (map dropExtension filePaths) fileContents
 
-writeGeneToDisk :: Genes -> Genes
-writeGeneToDisk g = Genes ds'
+writeGeneToDisk :: Genes -> IO Genes
+writeGeneToDisk g = do 
+		       fp <- createTempDirectory "files/" "tmp"
+		       ds' <- mapM (writeStrandToDisk . replacePath fp) ds
+		       return $ Genes ds'
                     where
                         ds = getStrand g
-                        fp = unsafePerformIO $ createTempDirectory "files/" "tmp"
-                        ds' = map (writeStrandToDisk . replacePath fp) ds
                         
 {- Replace the file path of a strand with a new file path to a temporary directory -}
 replacePath :: FilePath -> Strand -> Strand
