@@ -25,7 +25,7 @@ import Control.Monad.Random
 {------ General gene class for Genetic Algorithms ------}
 
 class Gene d where
-   mutate :: d -> IO d  -- mutation insists on writing to disk. why?
+   mutate :: d -> IO d -- IO due to use of randomness 
    merge :: d -> d -> d
    fitness :: Int -> Float -> d -> IO Float
 
@@ -33,28 +33,28 @@ class Gene d where
    Mutate a gene a certain number of times
    Return: a gene mutated n times
 -}
-mutateRounds :: (MonadRandom rand, Gene d) => d -> Int -> rand d
+mutateRounds :: (Gene d) => d -> Int -> IO d
 mutateRounds gene 0 = return gene
 mutateRounds gene n = do
-                         gene' <- mutate gene
-                         mutateRounds gene' (n-1)
+                        gene' <- mutate gene
+                        mutateRounds gene' (n-1)
 
 {- 
    Mutate a single gene to multiple genes
    Return: a list of genes each mutated at least once
 -}
-massMutate :: (MonadRandom rand, Gene d) => d -> Int -> rand [d]
-massMutate g i = sequence $ [return g] ++ (take i $ map mutate $ repeat g)
+massMutate :: (Gene d) => d -> Int -> IO [d]
+massMutate g i = sequence $  (take i $ map mutate $ repeat g)
 
 {------ Gene for this Genetic Algorithm ------}
 
 {- Component of the main Gene for the algorithm  -}
 
 data Strand = Strand { path :: FilePath    -- filePath to program
-               , prog :: String      -- program itself
-               , vec  :: Integer     -- set of bits corresponding to places to insert strictness
-               , n    :: Int         -- upper limit on size of the set of bits
-               }
+                     , prog :: String      -- program itself
+                     , vec  :: Integer     -- set of bits corresponding to places to insert strictness
+                     , n    :: Int         -- upper limit on size of the set of bits
+                     }
 
 instance Show Strand where
    show d = "path: " ++ show (path d) ++ " vec: " ++ show (vec d)
@@ -91,7 +91,7 @@ mutateStrand :: Strand -> IO Strand
 mutateStrand d@(Strand fp program _ _) = 
   do
     bits' <- getRandomR range
-    mutateStrandWithSet bits' size d
+    return $ mutateStrandWithSet bits' size d
       where
         size = placesToStrict fp program
         range = (0, toInteger size)
@@ -101,20 +101,22 @@ mutateStrand d@(Strand fp program _ _) =
    Mutate Strand according to a set of bits of a given size
    Return: new piece of Strand mutated according to bits
 -}
-mutateStrandWithSet :: Integer -> Int -> Strand -> IO Strand
+mutateStrandWithSet :: Integer -> Int -> Strand -> Strand
 mutateStrandWithSet !bits size d = mutateStrandWithSetH d bits size 0
 
 {- 
    Helper function: Goes through the bits and mutates Strand accordingly
 -}
-mutateStrandWithSetH :: Strand -> Integer -> Int -> Int -> IO Strand
-mutateStrandWithSetH d@(Strand fp prog oldBits np) !bits numPlaces i = if i == (numPlaces)
-                                                               then writeStrandToDisk $ Strand fp prog bits numPlaces
-                                                               else mutateStrandWithSetH d' bits numPlaces (i+1)
+mutateStrandWithSetH :: Strand -> Integer -> Int -> Int -> Strand
+mutateStrandWithSetH d@(Strand fp prog oldBits np) !bits numPlaces i = if i == (numPlaces) then
+                                                                         Strand fp prog bits numPlaces
+                                                                       else
+                                                                         mutateStrandWithSetH d' bits numPlaces (i+1)
                                                                where
-                                                                  d' = if not $ (testBit bits i) == (testBit oldBits i)
-                                                                       then Strand fp (flipBang fp prog i) oldBits np
-                                                                       else d
+                                                                  d' = if not $ (testBit bits i) == (testBit oldBits i) then
+                                                                         Strand fp (flipBang fp prog i) oldBits np
+                                                                       else
+                                                                         d
 
 {- 
    Merge two parents to create a single child
@@ -195,12 +197,12 @@ data Genes = Genes { getStrand :: [Strand] } deriving Show
 {-
    Mutate a program
 -}
-mutateG :: (MonadRandom rand) => Genes -> rand Genes
+mutateG :: Genes -> IO Genes
 mutateG g = do
   ds'' <- sequence $ map mutate ds'
   return $ Genes ds''
     where 
-      !ds' = getStrand $ writeGeneToDisk g
+      !ds' = getStrand g
 
 {-
    Merge two programs together
@@ -208,8 +210,8 @@ mutateG g = do
 mergeG :: Genes -> Genes -> Genes
 mergeG g1 g2 = Genes $ map (uncurry merge) $ zip ds ds'
                where
-                   !g1' = writeGeneToDisk g1
-                   ds = getStrand g1'
+                   -- !g1' = writeGeneToDisk g1
+                   ds =  getStrand g1
                    ds' = getStrand g2
 
 {-
@@ -320,14 +322,15 @@ fitnessWrap dict reps base g = case findTimeForGene dict g of
            - if more than one gene is given, a set of children born at random
            - mutaions of all genes given and children (if applicable)
 -}
-buildGeneration :: forall rand d . (MonadRandom rand, Gene d) => [d] -> rand [d]
+buildGeneration :: (Gene d) => [d] -> IO [d]
 buildGeneration dnas = do
-                          gen <- if (length dnas) > 1 then mergeRand dnas 5
-                                                      else return dnas
+                          gen <- if (length dnas) > 1 then
+                                   mergeRand dnas 5
+                                 else
+                                   return dnas
                           temp <- sequence $ map mut5 gen
                           return $ concat temp
                        where
-                         mut5 :: d -> rand [d]
                          mut5 = flip massMutate 5
 {-  gen'
                        where
