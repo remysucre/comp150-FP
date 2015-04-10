@@ -133,11 +133,12 @@ mergeStrand (Strand fp program bits np) (Strand _ _ bits' np') = mutateStrandWit
    Helper function: Writes a program in Strand to a temp file and updates Strand
    Return: Strand updated to point to file just written on disk
 -}
-writeStrandToDisk :: Strand -> IO Strand
-writeStrandToDisk !(Strand fp program bits numPlaces) = do
+writeStrandToDisk :: Strand -> IO () 
+writeStrandToDisk !(Strand fp program _ _) = do
                                                        	  createDirectoryIfMissing True dir
                                                           writeFile (fp ++ ".hs") program
-							  return $ Strand (dropExtension fp) program bits numPlaces
+							  -- return $ Strand (dropExtension fp) program bits numPlaces
+							  return ()
                                                 where
 							  (dir, _) = splitFileName fp	     
                                                      
@@ -238,13 +239,14 @@ createGeneFromFile fp = do
                           fileContents <- sequence $ map readFile filePaths
                           return $ createGene $ zip (map dropExtension filePaths) fileContents
 
-writeGeneToDisk :: Genes -> IO Genes
+writeGeneToDisk :: Genes -> IO ()
 writeGeneToDisk g = do 
 		       fp <- createTempDirectory "files/" "tmp"
-		       ds' <- mapM (writeStrandToDisk . replacePath fp) ds
-		       return $ Genes ds'
+		       _ <- mapM (writeStrandToDisk . replacePath fp) ds
+		       -- return $ Genes ds'
+                       return ()
                     where
-                        ds = getStrand g
+                       ds = getStrand g
                         
 {- Replace the file path of a strand with a new file path to a temporary directory -}
 replacePath :: FilePath -> Strand -> Strand

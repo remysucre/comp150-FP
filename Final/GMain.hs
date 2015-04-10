@@ -11,6 +11,8 @@ main :: IO ()
 main = do 
           _ <- createDirectoryIfMissing True "files"
           def <- createGeneFromFile filePath
+	  writeGeneToDisk def
+	  
           _ <- compile $ path $ head $ getStrand def
           print "Obtaining base time of program"
           !time' <- fitness fitnessRuns (fromInteger . toInteger $ (maxBound :: Int)) def
