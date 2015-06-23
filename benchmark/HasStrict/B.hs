@@ -1,9 +1,7 @@
-import System.Environment
-
-clength !xs = length' xs 0
-  where length' []     n = n
-        length' (x:xs) n = length' xs (n + 1)
-
-main = do
-    l <- getArgs
-    putStrLn $ show (clength (take (read $ head l) [0..]))
+foldl' f z []     = z
+foldl' f z (x:xs) = let z' = z `f` x 
+                    in seq z' $ foldl' f z' xs
+ 
+sum3 = foldl' (+) 0
+  
+try3 = sum3 veryBigList
