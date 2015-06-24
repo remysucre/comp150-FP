@@ -1,8 +1,13 @@
 ~~Add how to compile and example call~~
+
 ~~Look up <$>~~
+
 ~~Parse .cabal file for .hs and useful files~~
+
 Log: time command names
+
 integrate AllHs and ShowLib
+
 finish monad practice
 
 Partition downloaded files: mk 2 dirs, one w/ strict the other w/o
