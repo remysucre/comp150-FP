@@ -15,21 +15,23 @@ Partition downloaded files: mk 2 dirs, one w/ strict the other w/o
 
 Issue: Cannot add issue because we are on the forked project
 
-       strange log when downloading
+strange log when downloading
 
-       how to make a directory and download to it
+how to make a directory and download to it
 
-       need to add full filepath to AllHs?
+need to add full filepath to AllHs?
 
-done:  AllHs.sh: shell script to search all .hs files in current dir and its sub
-       dirs. 
+done:  
 
-       Searching cabal file doesn't work too well, since only exposed modules
-       are exposed and other .hs files aren't always documented. e.g. 
-       http://code.haskell.org/~dons/code/stream-fusion/
+AllHs.sh: shell script to search all .hs files in current dir and its sub
+dirs. 
 
-       ~~Still need to parse cabal file for popular libs.~~
+Searching cabal file doesn't work too well, since only exposed modules
+are exposed and other .hs files aren't always documented. e.g. 
+http://code.haskell.org/~dons/code/stream-fusion/
+
+~~Still need to parse cabal file for popular libs.~~
 
 might be helpful: 
 
-    glob lib for shell cmd
+glob lib for shell cmd
