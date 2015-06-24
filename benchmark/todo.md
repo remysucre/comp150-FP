@@ -4,6 +4,8 @@
 
 ~~Parse .cabal file for .hs and useful files~~
 
+Try out github issue tracking
+
 Log: time command names
 
 integrate AllHs and ShowLib
@@ -13,7 +15,9 @@ finish monad practice
 Partition downloaded files: mk 2 dirs, one w/ strict the other w/o
                             also keep a record of popular libs
 
-Issue: Cannot add issue because we are on the forked project
+Issue: 
+
+~~Cannot add issue because we are on the forked project~~ Fixed!
 
 strange log when downloading
 
