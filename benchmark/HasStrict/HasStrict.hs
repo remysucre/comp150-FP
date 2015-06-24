@@ -2,6 +2,8 @@ import System.IO.Unsafe
 import Language.Haskell.Exts
 import System.Environment 
 import System.Process
+import Data.Functor
+import Control.Applicative
 import Data.List
 
 hasBang :: String -> String -> Bool
@@ -37,6 +39,12 @@ getModule filePath program = fromParseResult $ parseFileContentsWithMode mode pr
                                       mode = ParseMode filePath Haskell2010 [bangPatternsExt] True True Nothing
 
 main :: IO ()
+{-
 main = putStrLn $ show (hasBang filePath fileContents)
-       where filePath = "B.hs"
+       where filePath <- head <$> getArgs
              fileContents = unsafePerformIO $ readFile filePath
+             -}
+main = do
+    filePath <- head <$> getArgs
+    fileContents <- readFile filePath
+    putStrLn $ show (hasBang filePath fileContents)
