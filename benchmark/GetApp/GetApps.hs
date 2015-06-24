@@ -19,6 +19,6 @@ main = do
     let fn = head fp
     f <- readFile fn
     let names = words f
-    system $ noAmp $ unwords $ cmds names
+    system $ ("cd Apps & " ++ (noAmp $ unwords $ cmds names))
     --putStrLn $ show $ length names
     return ()
