@@ -1,1 +1,1 @@
-bash ghc --make ShowHs
+bash ghc --make UsedLibs

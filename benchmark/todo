@@ -3,6 +3,7 @@ Look up <$>
 Look up glob lib for shell cmd
 Parse .cabal file for .hs and useful files
 Log: time command names
+integrate AllHs and ShowLib
 finish monad practice
 
 Partition downloaded files: mk 2 dirs, one w/ strict the other w/o
@@ -11,6 +12,7 @@ Partition downloaded files: mk 2 dirs, one w/ strict the other w/o
 Issue: it is because we are on the forked project
        strange log when downloading
        how to make a directory and download to it
+       need to add full filepath to AllHs?
 
 done:  AllHs.sh: shell script to search all .hs files in current dir and its sub
        dirs. 

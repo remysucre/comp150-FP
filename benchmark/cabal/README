@@ -1,2 +1,6 @@
+UsedLib: lists all libraries imported
 compile: bash makef
-run: ./ShowHs *.cabal
+run: ./UsedLib *.cabal
+
+AllHs: lists all .hs files (including sub-dir)
+run: bash AllHs.sh
