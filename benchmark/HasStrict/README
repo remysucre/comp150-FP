@@ -1,0 +1,3 @@
+compile: bash makef
+run: ./HasStrict
+name the src to analysis as B.hs

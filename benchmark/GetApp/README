@@ -1,0 +1,4 @@
+main: GetApps.hs
+compile: bash makef 
+run: ./GetApps packageNames
+packageNames = names (list of hackage programs)

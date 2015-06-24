@@ -3,6 +3,8 @@ import System.Environment
 import System.Process
 import Data.List
 
+-- download packages listed in named file from cmd
+
 sortLines :: [String] -> [String]
 sortLines = sortBy compare
 
