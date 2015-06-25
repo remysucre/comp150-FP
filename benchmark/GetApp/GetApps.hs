@@ -5,15 +5,23 @@ import Data.List
 
 -- download packages listed in named file from cmd
 
-sortLines :: [String] -> [String]
-sortLines = sortBy compare
+getApps :: [String] -> [String]
+getApps = map ("cabal get " ++)
 
---getApp :: String -> IO ExitCode
-getApp name = system $ "cabal get " ++ name
+getCmd :: String -> [String] -> String
+getCmd mode = concat . (intersperse mode)   -- TODO: can this be pointfree?
 
-cmds = map (" & cabal get "++)
+getPara :: [String] -> String
+getPara = getCmd " & "
 
-noAmp (a:b:cs) = cs
+getSeq :: [String] -> String
+getSeq = getCmd " ; "
+
+groupsOf :: Int -> [a] -> [[a]]
+groupsOf n [] = []
+groupsOf n xs = take n xs : (groupsOf n $ drop n xs)
+
+cmds names = (++) "cd Apps; " $ getSeq $ map getPara $ groupsOf 100 $ getApps names -- TODO: how about this?
 
 main :: IO () 
 main = do 
@@ -21,6 +29,6 @@ main = do
     let fn = head fp
     f <- readFile fn
     let names = words f
-    system $ ("cd Apps & " ++ (noAmp $ unwords $ cmds names))
-    --putStrLn $ show $ length names
+    system $ cmds names 
+    --putStrLn $ cmds names
     return ()
