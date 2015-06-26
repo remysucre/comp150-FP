@@ -241,7 +241,10 @@ myParens = runParser (parseParens (parseLit '+')) "(+)"
    ACTION: Fill in the rest of the definition of (<|>).
  -}
 (<|>) :: Parser a -> Parser a -> Parser a
-(<|>) p1 p2 = P (\origInput -> undefined)
+(<|>) p1 p2 = P (\s -> let (v', s') = runParser p1 s
+                        in case v' of
+                           Ok x    -> (v', s')
+                           _       -> runParser p2 s)
 
 
 {- Test outputs -}
@@ -279,7 +282,11 @@ myOr3 = runParser (parseLit '+' <|> parseLit '-') "?123"
 -}
 
 many :: Parser a -> Parser [a]
-many p = undefined
+many p = do 
+    res <- p
+    case res 
+      of (Error _, _) -> return ()
+         (Ok    _, _) -> return res >> many p
 
 {- Test code -}
 myManyA = runParser (many parseDigit) "123"
