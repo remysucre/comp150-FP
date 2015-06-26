@@ -291,6 +291,16 @@ many p = do
       of (Error _, s) ->  []
          (Ok    _, _) -> return res >> many p
 
+
+many p = P (\s -> let (v', s') = runParser p s
+                   in case v' of
+                      Ok x    -> (v':))
+
+(<|>) p1 p2 = P (\s -> let (v', s') = runParser p1 s
+                        in case v' of
+                           Ok x    -> (v', s')
+                           _       -> runParser p2 s)
+
 {- Test code -}
 myManyA = runParser (many parseDigit) "123"
 -- (Ok "123","")
