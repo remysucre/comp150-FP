@@ -1,8 +1,8 @@
 ##todo: 
 - [x] fix GetApp
-- [ ] Look for create dir inside haskell
+- [x] Look for create dir inside haskell
 - [ ] finish partition
-- [ ] make a markdown template
+- [x] make a markdown template
 - [ ] Try out github issue tracking
 - [ ] Log: time command names
 - [ ] finish monad practice
@@ -14,6 +14,9 @@
 
 - can getCmd be pointfree?
 - is there a way to automaticall track issues from keywords in files (comments)?
+- not sure if we want to upload 2GB of source code to github, so git is ignoreing Apps/
+- concurrency in partition?
+- Monadic Bool in [Sys.FilePath](http://hackage.haskell.org/package/FileManip-0.1/docs/System-FilePath-Find.html#t%3AFilterPredicate)
 
 ##helpful resources:
 - glob lib for shell cmd
