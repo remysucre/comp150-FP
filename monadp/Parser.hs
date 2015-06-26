@@ -281,11 +281,14 @@ myOr3 = runParser (parseLit '+' <|> parseLit '-') "?123"
   open the monad to write this function. 
 -}
 
+{- Need to open up monad to access state before running p and to 
+   check the error condition on parsing p.
+   Need to return a list.  Look at example for or above.  -}
 many :: Parser a -> Parser [a]
 many p = do 
     res <- p
     case res 
-      of (Error _, _) -> return ()
+      of (Error _, s) ->  []
          (Ok    _, _) -> return res >> many p
 
 {- Test code -}
