@@ -37,14 +37,20 @@ getModule filePath program = fromParseResult $ parseFileContentsWithMode mode pr
                              where
                                       bangPatternsExt = parseExtension "BangPatterns"
                                       mode = ParseMode filePath Haskell2010 [bangPatternsExt] True True Nothing
+{-
+DirHasStrict dir
+-- call shell to get a list of paths
+-- run has strict on all paths
+
+cd dir; bash ../AllHs.sh > ../temp
+srcs <- read temp
+any (\f -> hasBang f $ )(`hasBang` fc)
+-}
+hasStrict filePath = do
+    fileContents <- readFile filePath
+    hasBang filePath fileContents
 
 main :: IO ()
-{-
-main = putStrLn $ show (hasBang filePath fileContents)
-       where filePath <- head <$> getArgs
-             fileContents = unsafePerformIO $ readFile filePath
-             -}
 main = do
     filePath <- head <$> getArgs
-    fileContents <- readFile filePath
-    putStrLn $ show (hasBang filePath fileContents)
+    putStrLn $ show $ hasStrict filePath

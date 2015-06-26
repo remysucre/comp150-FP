@@ -18,6 +18,7 @@
 - concurrency in partition?
 - Monadic Bool in [Sys.FilePath](http://hackage.haskell.org/package/FileManip-0.1/docs/System-FilePath-Find.html#t%3AFilterPredicate)
 - Monad practice: many p
+- Cannot separate IO from pure in hasStrict
 
 ##helpful resources:
 - glob lib for shell cmd
