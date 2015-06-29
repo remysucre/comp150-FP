@@ -1,6 +1,6 @@
 ##todo: 
 - [ ] finish partition
-- [ ] find large packages
+- [x] find large packages
 - [ ] get list of pop lib
 - [ ] see how unsafe affects type sys
 - [ ] automatic github issue tracking

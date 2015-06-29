@@ -6,6 +6,7 @@ import System.Process
 import Data.Functor
 import Control.Applicative
 import Data.List
+import FindHs
 
 hasBang :: String -> String -> Bool
 hasBang filePath program = hasBangDecl $ getDecl mod
@@ -54,5 +55,5 @@ hasStrict filePath = do
 main :: IO ()
 main = do
     filePath <- head <$> getArgs
-    srcs <- System.FilePath.Find.find always (extension ==? ".hs") "."
-    putStrLn $ unlines srcs
+    srcs <- findHs filePath
+    putStrLn $ unlines $filter hasBang srcs -- how to separate IO here
