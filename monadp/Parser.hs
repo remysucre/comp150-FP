@@ -285,21 +285,26 @@ myOr3 = runParser (parseLit '+' <|> parseLit '-') "?123"
    check the error condition on parsing p.
    Need to return a list.  Look at example for or above.  -}
 many :: Parser a -> Parser [a]
+{-
 many p = do 
     res <- p
     case res 
-      of (Error _, s) ->  []
+      of (Error _, s) -> many p
          (Ok    _, _) -> return res >> many p
-
+-}
 
 many p = P (\s -> let (v', s') = runParser p s
                    in case v' of
-                      Ok x    -> (v':))
-
+                      Ok x    -> 
+                            let (Ok vs'', s'') = runParser (many p) s'
+                             in (Ok (x: vs''), s'')
+                      _       -> (Ok [], s))
+{-
 (<|>) p1 p2 = P (\s -> let (v', s') = runParser p1 s
                         in case v' of
                            Ok x    -> (v', s')
                            _       -> runParser p2 s)
+-}
 
 {- Test code -}
 myManyA = runParser (many parseDigit) "123"
