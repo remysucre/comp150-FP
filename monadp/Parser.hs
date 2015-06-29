@@ -399,6 +399,16 @@ myWhiteSpace = runParser ws "   34"
 parseExp :: Parser Exp
 parseExp = do {
     (pmap Const parseInt) <|>
+    (parseArithExp parsePlus Plus) <|>
+    
+    do { parsePlus
+       ; ws
+       ; e1 <- parseExp
+       ; ws
+       ; e2 <- parseExp
+       ; ws 
+       ; return (Plus e1 e2)
+       }
     (parsePlus >>           -- TODO: use pmap or lift Plus?
     ws >>
     parseExp >>
