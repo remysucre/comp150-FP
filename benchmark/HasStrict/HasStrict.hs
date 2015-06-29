@@ -13,4 +13,4 @@ main = do
     filePath <- head <$> getArgs
     srcs <- findHs filePath
     srcsWBang <- filterM hasBang srcs 
-    putStrLn $ concat srcsWBang
+    putStrLn $ unlines srcsWBang
