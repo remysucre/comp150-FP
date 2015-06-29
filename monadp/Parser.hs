@@ -285,26 +285,12 @@ myOr3 = runParser (parseLit '+' <|> parseLit '-') "?123"
    check the error condition on parsing p.
    Need to return a list.  Look at example for or above.  -}
 many :: Parser a -> Parser [a]
-{-
-many p = do 
-    res <- p
-    case res 
-      of (Error _, s) -> many p
-         (Ok    _, _) -> return res >> many p
--}
-
 many p = P (\s -> let (v', s') = runParser p s
                    in case v' of
-                      Ok x    -> 
-                            let (Ok vs'', s'') = runParser (many p) s'
-                             in (Ok (x: vs''), s'')
-                      _       -> (Ok [], s))
-{-
-(<|>) p1 p2 = P (\s -> let (v', s') = runParser p1 s
-                        in case v' of
-                           Ok x    -> (v', s')
-                           _       -> runParser p2 s)
--}
+                      Ok x -> 
+                         let (Ok vs'', s'') = runParser (many p) s'
+                          in (Ok (x: vs''), s'')
+                      _    -> (Ok [], s))
 
 {- Test code -}
 myManyA = runParser (many parseDigit) "123"
@@ -370,7 +356,7 @@ pmap f pa = do
   define the function parseInt.
  -}
 parseInt :: Parser Int
-parseInt = undefined
+parseInt = pmap read $ many1 parseDigit
 
 myInt = runParser parseInt "123s"
 -- (Ok 123,"s")
@@ -398,7 +384,7 @@ myInt = runParser parseInt "123s"
 
 
 ws :: Parser String
-ws = undefined
+ws = many $ parseLit ' '
 
 {- Test code -}
 myWhiteSpace = runParser ws "   34"
@@ -411,11 +397,29 @@ myWhiteSpace = runParser ws "   34"
 -}
 
 parseExp :: Parser Exp
-parseExp = undefined
+parseExp = do {
+    (pmap Const parseInt) <|>
+    (parsePlus >>           -- TODO: use pmap or lift Plus?
+    ws >>
+    parseExp >>
+    ws >>
+    parseExp)
+     }
+
+{-
+data Exp = Plus  Exp Exp
+         | Minus Exp Exp
+         | Times Exp Exp
+         | Div   Exp Exp
+         | Const Int
+      deriving (Show)
+-}
+
 
 {- Test code -}
 (Ok myExp1, residual1) = runParser parseExp "23"
 -- (Ok (Const 23),"")
+(Ok myExp2', residual2') = runParser parseExp "+12"
 (Ok myExp2, residual2) = runParser parseExp "+ 1 2"
 -- (Ok (Plus (Const 1) (Const 2)),"")
 (Ok myExp3, residual3) = runParser parseExp "- (* 4 2) + 2 4"
