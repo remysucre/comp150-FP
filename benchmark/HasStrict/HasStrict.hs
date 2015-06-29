@@ -1,5 +1,6 @@
 import System.IO.Unsafe
 import Language.Haskell.Exts
+import System.FilePath.Find
 import System.Environment 
 import System.Process
 import Data.Functor
@@ -45,12 +46,13 @@ DirHasStrict dir
 cd dir; bash ../AllHs.sh > ../temp
 srcs <- read temp
 any (\f -> hasBang f $ )(`hasBang` fc)
--}
 hasStrict filePath = do
     fileContents <- readFile filePath
     hasBang filePath fileContents
+-}
 
 main :: IO ()
 main = do
     filePath <- head <$> getArgs
-    putStrLn $ show $ hasStrict filePath
+    srcs <- System.FilePath.Find.find always (extension ==? ".hs") "."
+    putStrLn $ unlines srcs
