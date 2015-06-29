@@ -1,3 +1,5 @@
+module HasStrict (hasStrict) where
+
 import System.FilePath.Find
 import System.Environment 
 import System.Process
@@ -8,9 +10,14 @@ import Data.List
 import FindHs
 import HasBang
 
-main :: IO ()
-main = do
-    filePath <- head <$> getArgs
-    srcs <- findHs filePath
+hasStrict :: FilePath -> IO Bool
+hasStrict fp = do
+    srcs <- findHs fp
     srcsWBang <- filterM hasBang srcs 
-    putStrLn $ unlines srcsWBang
+    return $ length srcsWBang > 0
+{-
+main = do
+    fp <- head <$> getArgs
+    result <- hasStrict fp
+    putStrLn $ show $ result
+    --}

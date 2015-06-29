@@ -5,14 +5,13 @@ import System.Environment
 import Data.Functor
 import Control.Applicative
 import System.FilePath.Find
-import DirHasStrict
-
-hasBang :: FilePath -> FindClause Bool
-hasBang _ = always
+import Control.Monad.IfElse
+import HasStrict
 
 moveTo :: FilePath -> FilePath -> IO()
 moveTo dir dir' = renameDirectory dir $ dir' ++ "/" ++ dir
 
 main = do 
     dir <- head <$> getArgs
-    if dirHasStrict dir then dir `moveTo` "strictapps" else return ()
+    --if hasStrict dir then dir `moveTo` "strictapps" else return ()
+    whenM (hasStrict dir) (dir `moveTo` "strictapps")
