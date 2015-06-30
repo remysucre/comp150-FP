@@ -9,11 +9,15 @@ import Data.Functor
 import Control.Applicative
 import Data.List
 import FindHs
+import GetExtns
+
+extns = ["ViewPatterns","TypeOperators","TypeFamilies","TupleSections","TemplateHaskell","StandaloneDeriving","ScopedTypeVariables","Safe","RecordWildCards","PackageImports","NPlusKPatterns","NamedFieldPuns","MultiWayIf","MultiParamTypeClasses","Malformed","LambdaCase","GADTs","FunctionalDependencies","ExplicitForAll","ExistentialQuantification","DataKinds"]
 
 hasBang :: String -> IO Bool
 hasBang filePath = do 
             program <- readFile filePath
-            return $ hasBangDecl $ getDecl (getModule filePath program)
+            return $ hasBangDecl $ getDecl (getModule extns filePath program)
+
 
 getDecl (Module _ _ _ _ _ _ d) = d
 
@@ -36,11 +40,11 @@ hasBangPat (p:ps) = case p of
                         PBangPat _ -> True
                         _          -> hasBangPat ps
 
-getModule :: String -> String -> Module
-getModule filePath program = fromParseResult $ parseFileContentsWithMode mode program
+--getModule :: String -> String -> Module
+getModule extns filePath program = fromParseResult $ parseFileContentsWithMode mode program
                              where
-                                      bangPatternsExt = parseExtension "BangPatterns"
-                                      mode = ParseMode filePath Haskell2010 [bangPatternsExt] True True Nothing
+                                      bangPatternsExt = map parseExtension extns
+                                      mode = ParseMode filePath Haskell2010 bangPatternsExt True True Nothing
 {-
 DirHasStrict dir
 -- call shell to get a list of paths

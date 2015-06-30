@@ -4,6 +4,10 @@
 
 ##issues: 
 
+- All kinds of errors when parsing
+- Idea: Assuming it is very straightforward to build packages, is it possible to
+        pause the build at parsing stage? Is the assumption true?
+
 ##questions we can ask about packages
 - how many bangs?
 - how big
@@ -13,7 +17,7 @@
 - glob lib for shell cmd
 
 ##todo: 
-- [ ] get extensions
+- [x] get extensions
 - [x] finish monad practice
 - [ ] finish partition
 - [ ] get list of pop lib
