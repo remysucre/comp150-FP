@@ -44,7 +44,7 @@ hasBangPat (p:ps) = case p of
 getModule extns filePath program = fromParseResult $ parseFileContentsWithMode mode program
                              where
                                       bangPatternsExt = map parseExtension extns
-                                      mode = ParseMode filePath Haskell2010 bangPatternsExt True True Nothing
+                                      mode = ParseMode filePath Haskell2010 bangPatternsExt False False Nothing
 {-
 DirHasStrict dir
 -- call shell to get a list of paths
