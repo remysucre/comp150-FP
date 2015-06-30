@@ -396,35 +396,25 @@ myWhiteSpace = runParser ws "   34"
     ACTION: Fill in the definition of parseExp.
 -}
 
-parseExp :: Parser Exp
-parseExp = do {
-    (pmap Const parseInt) <|>
-    (parseArithExp parsePlus Plus) <|>
-    
-    do { parsePlus
+parseArithExp :: Parser a -> (Exp -> Exp -> Exp) -> Parser Exp
+parseArithExp p e = do 
+       { p
        ; ws
        ; e1 <- parseExp
        ; ws
        ; e2 <- parseExp
        ; ws 
-       ; return (Plus e1 e2)
+       ; return (e e1 e2)
        }
-    (parsePlus >>           -- TODO: use pmap or lift Plus?
-    ws >>
-    parseExp >>
-    ws >>
-    parseExp)
-     }
 
-{-
-data Exp = Plus  Exp Exp
-         | Minus Exp Exp
-         | Times Exp Exp
-         | Div   Exp Exp
-         | Const Int
-      deriving (Show)
--}
-
+parseExp :: Parser Exp
+parseExp = do {
+    pmap Const parseInt <|>
+    parseParens parseExp <|> 
+    parseArithExp parsePlus Plus <|>
+    parseArithExp parseMinus Minus <|>
+    parseArithExp parseTimes Times <|> 
+    parseArithExp parseDiv Div }
 
 {- Test code -}
 (Ok myExp1, residual1) = runParser parseExp "23"
@@ -484,5 +474,3 @@ e `ifOKthen` k =
    case e of 
      Ok x -> k x
      Error s -> Error s
-
-
