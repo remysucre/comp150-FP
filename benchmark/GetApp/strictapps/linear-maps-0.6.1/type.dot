@@ -1,0 +1,14 @@
+digraph G {
+    f [label = "Con \"->\""]
+    l [label = "Con \"[]\""]
+    a [label = "Var"]
+    Node [label = "App"]
+    a1 -> f [label = "1."]
+    a1 -> a2 [label = "2."]
+    a2 -> a3 [label = "1."]
+    a2 -> a [label = "2."]
+    a3 -> l [label = "1."]
+    a3 -> a [label = "2."]
+}
+
+

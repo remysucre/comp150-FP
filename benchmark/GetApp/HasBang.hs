@@ -11,7 +11,12 @@ import Data.List
 import FindHs
 --import GetExtns
 
-extns = ["BangPatterns", "DefaultSignatures", "InstanceSigs", "FlexibleContexts", "ViewPatterns","TypeOperators","TypeFamilies","TupleSections","TemplateHaskell","StandaloneDeriving","ScopedTypeVariables","Safe","RecordWildCards","PackageImports","NPlusKPatterns","NamedFieldPuns","MultiWayIf","MultiParamTypeClasses","Malformed","LambdaCase","GADTs","FunctionalDependencies","ExplicitForAll","ExistentialQuantification","DataKinds"]
+main = do 
+    fp <- head <$> getArgs
+    result <- hasBang fp
+    putStrLn $ show $ result
+
+extns = ["CPP", "DefaultSignatures", "MagicHash", "BangPatterns", "TypeSynonymInstances", "FlexibleInstances", "InstanceSigs", "FlexibleContexts", "ViewPatterns","TypeOperators","TypeFamilies","TupleSections","TemplateHaskell","StandaloneDeriving","ScopedTypeVariables","Safe","RecordWildCards","PackageImports","NPlusKPatterns","NamedFieldPuns","MultiWayIf","MultiParamTypeClasses","Malformed","LambdaCase","GADTs","FunctionalDependencies","ExplicitForAll","ExistentialQuantification","DataKinds"]
 
 hasBang :: String -> IO Bool
 hasBang filePath = do 

@@ -1,0 +1,50 @@
+1.0.6 (2014/4/13)
+
+* minimal changes to build with feed 0.3.9.* and other libs in current Debian unstable (sid)
+
+1.0.5 (2014/2/27)
+
+* avoid feed 0.3.9.2 which has changed its API
+
+1.0.4
+
+* fix compilation with GHC 7.4 (Fabien Andre)
+
+1.0.3
+
+* fix http-conduit usage so the feed poller doesn't die within hours
+
+1.0.2
+
+* `--use-actions` works again
+
+1.0.1
+
+* fix release notes formatting on hackage
+
+1.0 (2013/2/15)
+
+New:
+
+* more robust item detection and duplicate announcement protection, with simpler options
+* easier irc address syntax, drop -p/--port option
+* can poll https feeds
+* can poll from stdin (-)
+* can poll a file containing multiple copies of a feed (eg for testing)
+* `--cache-control` option sets a HTTP Cache-Control header
+* `--use-actions` announces with CTCP ACTIONs (like the /me command)
+
+Fixed:
+
+* updated for GHC 7.6 & current libs
+* initialises http properly on microsoft windows
+* builds threaded and optimised by default
+* thread and error handling is more robust, eg don't ignore exceptions in the irc writer thread
+* can poll urls with semicolon parameter separator (eg darcsweb's)
+* can announce item urls containing percent
+* no longer adds stray "upload:" to IRC messages
+* renamed --dupe-descriptions to `--allow-duplicates`
+* dropped --debug flag
+* new item detection and announcing is more robust
+* announcements on console are clearer
+* a simulated irc connection is not logged unless --debug-irc is used

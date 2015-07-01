@@ -1,0 +1,362 @@
+% Implementing Pointer Algorithms in Haskell -- Exercises
+% Péter Diviánszky
+% CEFP, Budapest & Komárno, 25-30 May 2009
+
+
+# Legend
+
+E2: exercise  
+*E3: exercise, hard to solve  
+-E6: exercise, easy to solve
+
+
+# Programming Environment
+
+Newer `GHC` and `cabal-install` are needed (these are on computers in the lab; Linux is recommended).
+
+1. Run the following commands in a terminal:
+
+~~~~~~~~~~~~ {.bash}
+cabal update
+cabal install linear-maps -fcheck
+firefox `linear-maps-exercises` &
+~~~~~~~~~~~~
+
+2. Open an editor and save an empty file `Maps.hs` (do not quit).
+3. Run the command "`ghci Maps.hs`" in a terminal -- this is an interpreter.
+
+
+# First Steps
+
+- Enter `3*23` in the interpreter. The result should be `69`.
+- Write `x = 3*3` in the editor and save the file. Enter `:r` (reload) and enter `x` in the interpreter. The result should be `9`.
+- You can navigate between previous commands with up and down arrows.
+- `:t x` shows the type of `x`.
+
+- Get acquainted with Haskell (look at [haskell.org](http://haskell.org) if necessary).
+
+# E1: Depth-First Walk
+
+If we start from A then we get A, B, D, E, C, F, G, H.
+
+![graph](graph.png)
+
+# Instructions
+
+
+Define a function with the following type signature:
+
+~~~~~~~~ {.haskell}
+import Data.IdMap   -- at the beginning of the file
+import Data.Graph.IdMap.Tests
+
+type ChildrenFun k = Id k -> [Id k]
+
+depthFirstWalk :: 
+    I i =>            -- type level integer 
+    ChildrenFun k ->  -- children function
+    Set i k ->        -- set of already visited nodes 
+    [Id k] ->         -- nodes to be visited
+        [Id k]        -- visited nodes
+~~~~~~~~
+
+# Instructions (continued)
+
+Use the following primitives:
+
+~~~~~~~~ {.haskell}
+member    :: I i => Id k -> Set i k -> Bool
+setInsert :: I i => Id k -> Set i k -> Set i k
+~~~~~~~~
+
+Test your function in the interpreter:
+
+~~~~~~~~ {.haskell}
+*Main> testWalk depthFirstWalk "A"
+"ABDECFGH"
+~~~~~~~~
+
+# Help
+
+Make pattern matching on the identifier list. If it is not empty, test whether the first identifier is in the set.
+If it is not in the set, return it and make a recursive call with a modified set and an extended task list (the children of the first identifier has to be visited).
+
+You will probably need the functions `(++)` and `(:)`.
+
+
+
+# E2: Postorder Walk
+
+If we start from A then we get D, E, B, F, H, G, C, A.
+
+![graph](graph.png)
+
+
+# Instructions
+
+Define a postorder walk:
+
+~~~~~~~~ {.haskell}
+postOrderWalk :: I i => ChildrenFun k -> Set i k -> [Id k] -> [Id k]
+~~~~~~~~
+
+Use the following data structure inside in a "task list":
+
+~~~~~~~~ {.haskell}
+data Task a = Return a | Visit a
+~~~~~~~~
+
+Use the same primitives as in `depthFirstWalk`.
+Test your function in the interpreter:
+
+~~~~~~~~ {.haskell}
+*Main> testWalk postOrderWalk "A"
+"DEBFHGCA"
+~~~~~~~~
+
+# Help
+
+Define a local function which receives a set of already visited nodes and a list of tasks and returns the reachable nodes.
+Call the local function with the set and with `Visit` tasks.
+
+The local function is a recursive function.  
+Make pattern matching on the identifier list. If it is not empty, and the first identifier is a `Return` task then return it and make a recursive call.  
+If the first identifier is a `Visit` task then test whether it is in the set.  
+If it is not in the set, make a recursive call with a modified set and an extended task list.  
+The extended task list should contain the children of the first identifier (as `Visit` tasks) and
+the first identifier as `Return` task, and the old tasks.
+
+# E2': Postorder Walk Variant
+
+Define the function:
+
+~~~~~~~~ {.haskell}
+revPostOrderWalk ::
+    I i => 
+    Children k -> 
+    Set i k -> 
+    [Id k] -> 
+        ( Set i k   -- set of visited nodes
+        , [Id k])   -- visited nodes in reversed postorder
+~~~~~~~~
+
+Help: Use accumulation (define a local function with an additional list parameter which accumulates the values).
+
+
+# *E3: Mapped Walk
+
+If we start from B, G, A then we get E, D, B;  H, G;  F, C, A.
+
+![graph](graph.png)
+
+# Instructions
+
+Define the function:
+
+~~~~~~~~ {.haskell}
+mapWalk :: I i => ChildrenFun k -> Set i k -> [Id k] -> [[Id k]]
+~~~~~~~~
+
+`mapWalk` takes a list of nodes. It returns a list of lists with the same length. The first list contains the nodes reachable from the first node. The second contains the nodes reachable from the second node not touching nodes in the first list. ...
+
+~~~~~~~~ {.haskell}
+*Main> testMapWalk mapWalk "BGA"
+["EDB","HG","FCA"]
+~~~~~~~~
+
+# E3': Mapped Walk Variant
+
+Define a function similar to `mapWalk` but
+
+-   The result is reversed.
+-   Collect the nodes which are present in the set.
+
+~~~~~~~~ {.haskell}
+revMapWalk :: I i => 
+    ChildrenFun k -> Set i k -> [Id k] -> [[Id k]]
+~~~~~~~~
+
+Help: Use accumulation.
+
+# *E4: Strongly Connected Components
+
+If we start from A then we get  D;  E;  B;  I, H, G;  C, F, A.  
+(If these are modules then this is the compilation order.)
+
+![graph](graph.png)
+
+# Instructions
+
+Define the function:
+
+~~~~~~~~ {.haskell}
+scc :: I i => 
+    ChildrenFun k ->  -- children
+    ChildrenFun k ->  -- parents
+    Set i k ->        -- an empty set
+    [Id k] ->         -- initial nodes
+        ( Set i k     -- an empty set
+        , [[Id k]])   -- the scc of the reachable nodes
+~~~~~~~~
+
+Test case:
+
+~~~~~~~~ {.haskell}
+*Main> testSCC scc "A"
+["D","E","B","HG","CFA"]
+~~~~~~~~
+
+
+# -E5: `replaceLast`
+
+Define a function which replaces the last element of a list.
+
+~~~~~~~~ {.haskell}
+replaceLast :: [a] -> a -> [a]
+~~~~~~~~
+
+Test cases:
+
+~~~~~~~~ {.haskell}
+replaceLast [1,4,6] 7 == [1,4,7]
+replaceLast "take" 'x' == "takx"
+~~~~~~~~
+
+# -E6: `replaceAndShiftOne`
+
+Define a function which replaces a list's nth element and shift the old element
+one position to the right.
+
+~~~~~~~~ {.haskell}
+replaceAndShiftOne :: Int -> [a] -> a -> [a]
+~~~~~~~~
+
+Test cases:
+
+~~~~~~~~ {.haskell}
+replaceAndShiftOne 0 "abcd" 'e' == "eacd"
+replaceAndShiftOne 1 "abcd" 'e' == "aebd"
+replaceAndShiftOne 2 "abcd" 'e' == "abec"
+~~~~~~~~
+
+# *E7: Pointer Reversal Walk
+
+Define the pointer reversal algorithm.
+
+~~~~~~~~ {.haskell}
+prWalk :: 
+    (I i, I i') =>
+    Map i k [Id k] ->  -- a graph
+    Map i' k Int ->    -- an empty map
+    Id k ->            -- start node
+        [Id k]         -- reachable nodes in depth first order
+~~~~~~~~
+
+*next slide*
+
+# *E7: Pointer Reversal Walk (continued)
+
+Use the helper functions:
+
+~~~~~~~~ {.haskell}
+follow, back :: 
+    (I i, I i') =>
+    Map i k [Id k] ->  -- modified graph
+    Map i' k Int ->    -- index map
+    Id k ->            -- previous node
+    Id k ->            -- this node
+        [Id k]         -- reachable nodes in depth first order
+~~~~~~~~
+
+`follow` follows an edge, `back` goes back on an edge.  
+The index map contains already visited nodes. The index show how many
+children of the node was completely visited.  
+The graph is transformed in each step a little but at the end it will have its original shape.
+
+# *E7: Pointer Reversal Walk (continued)
+
+Use the following library functions:
+
+~~~~~~~~ {.haskell}
+lookUp :: I i => Id k -> Map i k a -> Maybe a
+
+insert :: I i => Id k -> a -> Map i k a -> Map i k a
+
+(!)    :: I i => Map i k a -> Id k -> a
+~~~~~~~~
+
+Test Cases:
+
+~~~~~~~~ {.haskell}
+*Main> testPrWalk prWalk "A"
+"ABDECFGH"
+~~~~~~~~
+
+
+# *E8: Linear Time Type Inference
+
+Begin a new file with the rows:
+
+~~~~~~~~ {.haskell}
+import Data.LinkMap
+
+type Link i k = LinkMap i k ()
+~~~~~~~~
+
+`Link` is a disjoint set data structure.  
+We will use the following primitives:
+
+~~~~~~~~ {.haskell}
+link   :: I i => Id k -> Id k -> Link i k -> Link i k
+        -- make a link from the first id to the second id
+follow :: I i => Link i k -> Id k -> Id k
+        -- follow the links until no link is found
+same   :: I i => Link i k -> Id k -> Id k -> Bool
+        -- True if follow id1 == follow id2
+~~~~~~~~
+
+# *E8 / Types
+
+~~~~~~~~ {.haskell}
+data TypeNode k
+	= Var               -- type variable
+	| Con String        -- type constructor
+	| App (Id k) (Id k) -- application
+
+type Types k = Id k -> TypeNode k
+    -- many types in one graph
+~~~~~~~~
+
+For example, "`[a]->a`" is first transformed to "`((->) ([] a)) a`".
+
+
+# *E8 / Types (continued)
+
+"`[a]->a`" has the graph:
+
+![type](type.png)
+
+
+# *E8 / Type Equations
+
+~~~~~~~~ {.haskell}
+type TEq k = (Id k, Id k)
+~~~~~~~~
+
+
+# *E8 / Instruction
+
+Define a function
+
+~~~~~~~~ {.haskell}
+solveEqs ::
+    I i => 
+    Link i k ->     -- fully separated map    
+    Types k ->      -- typing environment
+	[TEq k] ->      -- type equations
+	    ( [TEq k]   -- failed equations
+        , Link i k)	-- unifications
+~~~~~~~~
+
+The definition is just 13 rows..
+

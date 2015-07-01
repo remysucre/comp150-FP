@@ -1,0 +1,18 @@
+digraph G {
+    Node [shape = circle, style = filled, fillcolor = lightgray]
+    A [fillcolor = black, fontcolor = white]
+    A -> B [label = "1.", d]
+    A -> C [label = "2."]
+    B -> D [label = "1."]
+    B -> E [label = "2."]
+    C -> F [label = "1."]
+    C -> G [label = "2."]
+    F -> A
+    G -> H
+    H -> G
+    Node [fillcolor = white]
+    I -> H
+    J -> K
+}
+
+

@@ -1,0 +1,9 @@
+#
+# If a feed host is supplied on the command-line, it should override
+# the default list. Since htsn attempts to run forever, we sleep for a
+# second after starting it and then kill it ($! is its pid).
+#
+dist/build/htsn/htsn -u foo --password bar 127.0.0.1 & sleep 1; kill $!
+>>> /Connecting to 127.0.0.1./
+>>>2 /ERROR: connect: does not exist \(Connection refused\)/
+>>>=0

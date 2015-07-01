@@ -1,0 +1,509 @@
+propellor (2.5.0) unstable; urgency=medium
+
+  * cmdProperty' renamed to cmdPropertyEnv to make way for a new,
+    more generic cmdProperty' (API change)
+  * Add docker image related properties.
+    Thanks, Antoine Eiche.
+  * Export CommandParam, boolSystem, safeSystem, shellEscape, and
+  * createProcess from Propellor.Property.Cmd, so they are available
+    for use in constricting your own Properties when using propellor
+    as a library.
+  * Improve enter-machine scripts for systemd-nspawn containers to unset most
+    environment variables.
+  * Fix Postfix.satellite bug; the default relayhost was set to the
+    domain, not to smtp.domain as documented.
+  * Mount /proc inside a chroot before provisioning it, to work around #787227
+  * --spin now works when given a short hostname that only resolves to an
+    ipv6 address.
+  * Added publish property for systemd-spawn containers, for port publishing.
+    (Needs systemd version 220.)
+  * Added bind and bindRo properties for systemd-spawn containers.
+  * Firewall: Port was changed to a newtype, and the Port and PortRange
+    constructors of Rules were changed to DPort and DportRange, respectively.
+    (API change)
+  * Docker: volume and publish accept Bound FilePath and Bound Port,
+    respectively. They also continue to accept Strings, for backwards
+    compatibility.
+  * Docker: Added environment property.
+    Thanks Antoine Eiche.
+
+ -- Joey Hess <id@joeyh.name>  Tue, 09 Jun 2015 17:08:43 -0400
+
+propellor (2.4.0) unstable; urgency=medium
+
+  * Propellor no longer supports Debian wheezy (oldstable).
+  * Git.bareRepo: Fix bug in calls to userScriptProperty.
+    Thanks, Jelmer Vernooij.
+  * Removed Obnam.latestVersion which was only needed for Debian wheezy
+    backport.
+  * Merged Utility changes from git-annex.
+  * Switched from MonadCatchIO-transformers to the newer transformers and
+    exceptions libraries.
+  * Ensure build deps are installed before building propellor in --spin
+    and cron job, even if propellor was already built before, to deal with
+    upgrades that add new dependencies.
+
+ -- Joey Hess <id@joeyh.name>  Wed, 06 May 2015 14:28:59 -0400
+
+propellor (2.3.0) unstable; urgency=medium
+
+  * Make propellor resistent to changes to shared libraries, such as libffi,
+    which might render the propellor binary unable to run. This is dealt with
+    by checking the binary both when running propellor on a remote host,
+    and by Cron.runPropellor. If the binary doesn't work, it will be rebuilt.
+  * Note that since a new switch had to be added to allow testing the binary,
+    upgrading to this version will cause a rebuild from scratch of propellor.
+  * Added hasLoginShell and shellEnabled.
+  * debCdn changed to new httpredir.debian.org official replacement for
+    http.debian.net.
+  * API change: Added User and Group newtypes, and Properties that
+    used to use the type UserName = String were changed to use them.
+
+ -- Joey Hess <id@joeyh.name>  Wed, 22 Apr 2015 13:46:24 -0400
+
+propellor (2.2.1) unstable; urgency=medium
+
+  * userScriptProperty now passes --shell /bin/sh, so it can be used
+    even for users with nonstandard shells.
+  * Fix bug in docker propellor shim setup introduced in last release,
+    which broke provisioning of new docker containers.
+
+ -- Joey Hess <id@joeyh.name>  Thu, 12 Mar 2015 20:08:34 -0400
+
+propellor (2.2.0) unstable; urgency=medium
+
+  * When running shimmed (eg in a docker container),
+    improve process name visible in ps.
+  * Add shebang to cron.daily etc files. 
+  * Some changes to tor configuration, minor API change.
+  * Propellor now builds itself, and gets its build dependencies installed
+    when deploying to a new host, without needing the Makefile.
+
+ -- Joey Hess <id@joeyh.name>  Mon, 09 Mar 2015 12:02:31 -0400
+
+propellor (2.1.0) unstable; urgency=medium
+
+  * Additional tor properties, including support for making relays, 
+    and naming bridges, relays, etc.
+  * New Cron.Times data type, which allows Cron.job to install
+    daily/monthly/weekly jobs that anacron can run. (API change)
+  * Fix Git.daemonRunning to restart inetd after enabling the git server.
+  * Ssh.authorizedKey: Make the authorized_keys file and .ssh directory
+    be owned by the user, not root.
+  * Ssh.knownHost: Make the .ssh directory be owned by the user, not root.
+
+ -- Joey Hess <id@joeyh.name>  Thu, 12 Feb 2015 12:36:26 -0400
+
+propellor (2.0.0) unstable; urgency=medium
+
+  * Property has been converted to a GADT, and will be Property NoInfo
+    or Property HasInfo.
+    This was done to make sure that ensureProperty is only used on
+    properties that do not have Info.
+    Transition guide:
+    - Change all "Property" to "Property NoInfo" or "Property WithInfo"
+      (The compiler can tell you if you got it wrong!)
+    - To construct a RevertableProperty, it is useful to use the new
+      (<!>) operator
+    - Constructing a list of properties can be problimatic, since
+      Property NoInto and Property WithInfo are different types and cannot
+      appear in the same list. To deal with this, "props" has been added,
+      and can built up a list of properties of different types,
+      using the same (&) and (!) operators that are used to build
+      up a host's properties.
+  * Add descriptions of how to set missing fields to --list-fields output.
+  * Properties now form a tree, instead of the flat list used before.
+    This includes the properties used inside a container.
+  * Fix info propagation from fallback combinator's second Property.
+  * Added systemd configuration properties.
+  * Added journald configuration properties.
+  * Added more network interface configuration properties.
+  * Implemented OS.preserveNetwork.
+
+ -- Joey Hess <id@joeyh.name>  Sun, 25 Jan 2015 15:23:08 -0400
+
+propellor (1.3.2) unstable; urgency=medium
+
+  * SSHFP records are also generated for CNAMES of hosts.
+  * Merge Utiity modules from git-annex.
+  * Ignore bogus DNS when spinning the local host.
+
+ -- Joey Hess <id@joeyh.name>  Thu, 15 Jan 2015 14:02:07 -0400
+
+propellor (1.3.1) unstable; urgency=medium
+
+  * Fix bug that prevented deploying ssh host keys when the file for the
+    key didn't already exist.
+  * DNS records for hosts with known ssh public keys now automatically
+    include SSHFP records.
+
+ -- Joey Hess <id@joeyh.name>  Sun, 04 Jan 2015 19:51:34 -0400
+
+propellor (1.3.0) unstable; urgency=medium
+
+  * --spin checks if the DNS matches any configured IP address property
+    of the host, and if not, sshes to the host by IP address.
+  * Detect #774376 and refuse to use docker if the system is so broken
+    that docker exec doesn't enter a chroot.
+  * Update intermediary propellor in --spin --via
+  * Added support for DNSSEC.
+  * Ssh.hostKey and Ssh.hostKeys no longer install public keys from
+    the privdata. Instead, the public keys are included in the
+    configuration. (API change)
+  * Ssh.hostKeys now removes any host keys of types that the host is not
+    configured to have.
+  * sshPubKey is renamed to Ssh.pubKey, and has an added SshKeyType
+    parameter. (API change)
+  * CloudAtCost.deCruft no longer forces randomHostKeys.
+  * Fix build with process 1.2.1.0.
+
+ -- Joey Hess <id@joeyh.name>  Sun, 04 Jan 2015 17:17:44 -0400
+
+propellor (1.2.2) unstable; urgency=medium
+
+  * Revert ensureProperty warning message, too many false positives in places
+    where Info is correctly propigated. Better approach needed.
+
+ -- Joey Hess <id@joeyh.name>  Sun, 21 Dec 2014 21:41:11 -0400
+
+propellor (1.2.1) unstable; urgency=medium
+
+  * Added CryptPassword to PrivDataField, for password hashes as produced 
+    by crypt(3).
+  * User.hasPassword and User.hasSomePassword will now use either
+    a CryptPassword or a Password from privdata, depending on which is set.
+
+ -- Joey Hess <id@joeyh.name>  Wed, 17 Dec 2014 16:30:44 -0400
+
+propellor (1.2.0) unstable; urgency=medium
+
+  * Display a warning when ensureProperty is used on a property which has
+    Info and is so prevented from propigating it.
+  * Removed boolProperty; instead the new toResult can be used. (API change)
+  * Include Propellor.Property.OS, which was accidentially left out of the
+    cabal file in the last release.
+  * Fix Apache.siteEnabled to update the config file and reload apache when
+    configuration has changed.
+
+ -- Joey Hess <id@joeyh.name>  Tue, 09 Dec 2014 00:05:09 -0400
+
+propellor (1.1.0) unstable; urgency=medium
+
+  * --spin target --via relay causes propellor to bounce through an
+    intermediate relay host, which handles any necessary uploads
+    when provisioning the target host.
+  * --spin can be passed multiple hosts, and it will provision each host
+    in turn.
+  * Add --merge, to combine multiple --spin commits into a single, more useful
+    commit.
+  * Hostname parameters not containing dots are looked up in the DNS to
+    find the full hostname.
+  * propellor --spin can now deploy propellor to hosts that do not have 
+    git, ghc, or apt-get. This is accomplished by uploading a fairly
+    portable precompiled tarball of propellor.
+  * Propellor.Property.OS contains properties that can be used to do a clean
+    reinstall of the OS of an existing host. This can be used, for example,
+    to do an in-place conversion from Fedora to Debian.
+    This is experimental; use with caution!
+  * Added group-related properties. Thanks, Félix Sipma.
+  * Added Git.barerepo. Thanks, Félix Sipma.
+  * Added Grub.installed and Grub.boots properties.
+  * New HostContext can be specified when a PrivData value varies per host.
+  * hasSomePassword and hasPassword now default to using HostContext.
+    To specify a different context, use hasSomePassword' and
+    hasPassword' (API change)
+  * hasSomePassword and hasPassword now make sure shadow passwords are enabled.
+  * cron.runPropellor now runs propellor, rather than using its Makefile.
+    This is more robust.
+  * propellor.debug can be set in the git config to enable more persistent
+    debugging output.
+  * Run apt-cache policy with LANG=C so it works on other locales.
+  * endAction can be used to register an action to run once propellor
+    has successfully run on a host.
+
+ -- Joey Hess <id@joeyh.name>  Sun, 07 Dec 2014 15:23:59 -0400
+
+propellor (1.0.0) unstable; urgency=medium
+
+  * propellor --spin can now be used to update remote hosts, without
+    any central git repository needed. The central git repository is
+    still useful for running propellor from cron, but this simplifies
+    getting started with propellor, and allows for more ad-hoc usage.
+  * The git repo url, if any, is updated whenever propellor --spin is used.
+  * Added prosody module, contributed by Félix Sipma.
+  * Can be used to configure tor hidden services. Thanks, Félix Sipma.
+  * When multiple gpg keys are added, ensure that the privdata file
+    can be decrypted by all of them.
+  * Convert GpgKeyId to newtype. (API change)
+  * DigitalOcean.distroKernel property now reboots into the distribution
+    kernel when necessary.
+  * Avoid outputting color setting sequences when not run on a terminal.
+  * Docker code simplified by using `docker exec`; needs docker 1.3.1.
+  * Docker containers are now a separate data type, cannot be included
+    in the main host list, and are instead passed to
+    Docker.docked. (API change)
+  * Added support for using debootstrap from propellor.
+  * Propellor can now be used to provision chroots.
+  * systemd-nspawn containers can now be managed by propellor, very similar
+    to its handling of docker containers.
+  * Debian package will be maintained by Gergely Nagy.
+
+ -- Joey Hess <id@joeyh.name>  Fri, 21 Nov 2014 20:58:02 -0400
+
+propellor (0.9.2) unstable; urgency=medium
+
+  * Added nginx module, contributed by Félix Sipma.
+  * Added firewall module, contributed by Arnaud Bailly.
+  * Apache: Fix daemon reload when enabling a new module or site.
+  * Docker: Stop using docker.io; that was a compat symlink in
+    the Debian package which has been removed in docker.io 1.3.1~dfsg1-2.
+  * Orphaned the Debian package, as I am retiring from Debian.
+
+ -- Joey Hess <joeyh@debian.org>  Sat, 08 Nov 2014 15:57:36 -0400
+
+propellor (0.9.1) unstable; urgency=medium
+
+  * Docker: Add ability to control when containers restart.
+  * Docker: Default to always restarting containers, so they come back 
+    up after reboots and docker daemon upgrades. (API change)
+  * Fix loop when a docker host that does not exist was docked.
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 24 Oct 2014 09:57:31 -0400
+
+propellor (0.9.0) unstable; urgency=medium
+
+  * Avoid encoding the current stable suite in propellor's code,
+    since that poses a difficult transition around the release,
+    and can easily be wrong if an older version of propellor is used.
+    Instead, the os property for a stable system includes the suite name
+    to use, eg Stable "wheezy".
+  * stdSourcesList uses the stable suite name, to avoid unwanted
+    immediate upgrades to the next stable release. (API change)
+  * debCdn switched from cdn.debian.net to http.debian.net, which seems to be
+    better managed now.
+  * Docker: Avoid committing container every time it's started up.
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 10 Oct 2014 11:37:45 -0400
+
+propellor (0.8.3) unstable; urgency=medium
+
+  * The Debian package now includes a single-revision git repository in
+    /usr/src/propellor/, and ~/.propellor/ is set up to use this repository as
+    its origin remote. This avoids relying on the security of the github
+    repository when using the Debian package.
+  * The /usr/bin/propellor wrapper will warn when ~/.propellor/ is out of date
+    and a newer version is available, after which git merge upstream/master
+    can be run to merge it.
+  * Included the config.hs symlink to config-simple.hs in the cabal and Debian
+    packages.
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 22 Aug 2014 13:02:01 -0400
+
+propellor (0.8.2) unstable; urgency=medium
+
+  * Fix bug in File.containsLines that caused lines that were already in the
+    file to sometimes be appended to the end.
+  * Hostname.sane also configures /etc/mailname.
+  * Fixed Postfix.satellite to really configure relayhost = smtp.domain.
+  * Avoid reconfiguring postfix unncessarily when it already has a relayhost.
+  * Deal with apache 2.4's change in the name of site-available config files.
+  * Hostname aliases can now be used in several places, including --spin
+    and Ssh.knownHost.
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 04 Aug 2014 01:12:19 -0400
+
+propellor (0.8.1) unstable; urgency=medium
+
+  * Run apt-get update in initial bootstrap.
+  * --list-fields now includes a table of fields that are not currently set,
+    but would be used if they got set.
+  * Remove .gitignore from cabal file list, to avoid build failure on Debian.
+    Closes: #754334
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 09 Jul 2014 22:11:31 -0400
+
+propellor (0.8.0) unstable; urgency=medium
+
+  * Completely reworked privdata storage. There is now a single file,
+    and each host is sent only the privdata that its Properties actually use.
+
+    To transition existing privdata, run propellor against a host and
+    watch out for the red failure messages, and run the suggested commands
+    to store the privdata using the new storage scheme. You may find
+    it useful to run the old version of propellor to extract data from the old
+    privdata files during this migration.
+
+    Several properties that use privdata now require a context to be
+    specified. If in doubt, you can use anyContext, or
+    Context "hostname.example.com"
+
+  * Add --edit to edit a privdata value in $EDITOR.
+  * Add --list-fields to list all currently set privdata fields, along with
+    the hosts that use them.
+  * Fix randomHostKeys property to run openssh-server's postinst in a
+    non-failing way.
+  * Hostname.sane now cleans up the 127.0.0.1 localhost line in /etc/hosts,
+    to avoid eg, apache complaining "Could not reliably determine the
+    server's fully qualified domain name".
+
+ -- Joey Hess <joeyh@debian.org>  Sun, 06 Jul 2014 18:28:08 -0400
+
+propellor (0.7.0) unstable; urgency=medium
+
+  * combineProperties no longer stops when a property fails; now it continues
+    trying to satisfy all properties on the list before propigating the
+    failure.
+  * Attr is renamed to Info. (API change)
+  * Renamed wrapper to propellor to make cabal installation of propellor work.
+  * When git gpg signature of a fetched git branch cannot be verified,
+    propellor will now continue running, but without merging in that branch.
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 13 Jun 2014 10:06:40 -0400
+
+propellor (0.6.0) unstable; urgency=medium
+
+  * Docker containers now propagate DNS attributes out to the host they're
+    docked in. So if a docker container sets a DNS alias, every container
+    it's docked in will automatically be added to a DNS round-robin,
+    when propellor is used to manage DNS for the domain.
+  * Apt.stdSourcesList no longer needs a suite to be specified. (API change)
+  * Added --dump to dump out a field of a host's privdata. Useful for editing
+    it.
+  * Propellor's output now includes the hostname being provisioned, or
+    when provisioning a docker container, the container name.
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 05 Jun 2014 17:32:14 -0400
+
+propellor (0.5.3) unstable; urgency=medium
+
+  * Fix unattended-upgrades config for !stable.
+  * Ensure that kernel hostname is same as /etc/hostname when configuring
+    hostname.
+  * Added modules for some hosting providers (DigitalOcean, CloudAtCost).
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 29 May 2014 14:29:53 -0400
+
+propellor (0.5.2) unstable; urgency=medium
+
+  * A bug that caused propellor to hang when updating a running docker
+    container appears to have been fixed. Note that since it affects
+    the propellor process that serves as "init" of docker containers,
+    they have to be restarted for the fix to take effect.
+  * Licence changed from GPL to BSD.
+  * A few changes to allow building Propellor on OSX. One user reports
+    successfully using it there.
+
+ -- Joey Hess <joeyh@debian.org>  Sat, 17 May 2014 16:42:55 -0400
+
+propellor (0.5.1) unstable; urgency=medium
+
+  * Primary DNS servers now have allow-transfer automatically populated
+    with the IP addresses of secondary dns servers. So, it's important
+    that all secondary DNS servers have an ipv4 (and/or ipv6) property
+    configured.
+  * Deal with old ssh connection caching sockets.
+  * Add missing build deps and deps. Closes: #745459
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 24 Apr 2014 18:09:58 -0400
+
+propellor (0.5.0) unstable; urgency=medium
+
+  * Removed root domain records from SOA. Instead, use RootDomain
+    when calling Dns.primary. (API change)
+  * Dns primary and secondary properties are now revertable.
+  * When unattendedUpgrades is enabled on an Unstable or Testing system,
+    configure it to allow the upgrades.
+  * New website, https://propellor.branchable.com/
+
+ -- Joey Hess <joeyh@debian.org>  Sat, 19 Apr 2014 17:38:02 -0400
+
+propellor (0.4.0) unstable; urgency=medium
+
+  * Propellor can configure primary DNS servers, including generating
+    zone files, which is done by looking at the properties of hosts
+    in a domain.
+  * The `cname` property was renamed to `alias` as it does not always
+    generate CNAME in the DNS. (API change)
+  * Constructor of Property has changed (use `property` function instead).
+    (API change)
+  * All Property combinators now combine together their Attr settings.
+    So Attr settings can be made inside a propertyList, for example.
+  * Run all cron jobs under chronic from moreutils to avoid unnecessary
+    mails.
+
+ -- Joey Hess <joeyh@debian.org>  Sat, 19 Apr 2014 02:09:56 -0400
+
+propellor (0.3.1) unstable; urgency=medium
+
+  * Merge scheduler bug fix from git-annex.
+  * Support for provisioning hosts with ssh and gpg keys.
+  * Obnam support.
+  * Apache support.
+  * Postfix satellite system support.
+  * Properties can now be satisfied differently on different operating
+    systems.
+  * Standard apt configuration for stable now includes backports.
+  * Cron jobs generated by propellor use flock(1) to avoid multiple
+    instances running at a time.
+  * Add support for SSH ed25519 keys.
+    (Thanks, Franz Pletz.)
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 17 Apr 2014 20:07:33 -0400
+
+propellor (0.3.0) unstable; urgency=medium
+
+  * ipv6to4: Ensure interface is brought up automatically on boot.
+  * Enabling unattended upgrades now ensures that cron is installed and
+    running to perform them.
+  * Properties can be scheduled to only be checked after a given time period.
+  * Fix bootstrapping of dependencies.
+  * Fix compilation on Debian stable.
+  * Include security updates in sources.list for stable and testing.
+  * Use ssh connection caching, especially when bootstrapping.
+  * Properties now run in a Propellor monad, which provides access to
+    attributes of the host. (API change)
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 11 Apr 2014 01:19:05 -0400
+
+propellor (0.2.3) unstable; urgency=medium
+
+  * docker: Fix laziness bug that caused running containers to be
+    unnecessarily stopped and committed.
+  * Add locking so only one propellor can run at a time on a host.
+  * docker: When running as effective init inside container, wait on zombies.
+  * docker: Added support for configuring shared volumes and linked
+    containers.
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 08 Apr 2014 02:07:37 -0400
+
+propellor (0.2.2) unstable; urgency=medium
+
+  * Now supports provisioning docker containers with architecture/libraries
+    that do not match the host.
+  * Fixed a bug that caused file modes to be set to 600 when propellor
+    modified the file (did not affect newly created files).
+
+ -- Joey Hess <joeyh@debian.org>  Fri, 04 Apr 2014 01:07:32 -0400
+
+propellor (0.2.1) unstable; urgency=medium
+
+  * First release with Debian package.
+
+ -- Joey Hess <joeyh@debian.org>  Thu, 03 Apr 2014 01:43:14 -0400
+
+propellor (0.2.0) unstable; urgency=low
+
+  * Added support for provisioning Docker containers.
+  * Bootstrap deployment now pushes the git repo to the remote host
+    over ssh, securely.
+  * propellor --add-key configures a gpg key, and makes propellor refuse
+    to pull commits from git repositories not signed with that key.
+    This allows propellor to be securely used with public, non-encrypted
+    git repositories without the possibility of MITM.
+  * Added support for type-safe reversions. Only some properties can be
+    reverted; the type checker will tell you if you try something that won't
+    work.
+  * New syntactic sugar for building a list of properties, including
+    revertable properties.
+
+ -- Joey Hess <joeyh@debian.org>  Wed, 02 Apr 2014 13:57:42 -0400

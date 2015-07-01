@@ -1,0 +1,2 @@
+#!/bin/sh
+runhaskell -- -fobject-code Tests/UnitTests.hs

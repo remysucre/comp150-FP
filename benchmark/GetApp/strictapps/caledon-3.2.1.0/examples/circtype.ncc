@@ -1,0 +1,5 @@
+unsound a : b av -> prop
+   | av = a bv
+
+unsound b  : a bv -> prop
+   | bv = b av

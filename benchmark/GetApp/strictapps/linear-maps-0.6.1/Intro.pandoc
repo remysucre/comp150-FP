@@ -1,0 +1,588 @@
+% Implementing Pointer Algorithms in Haskell 
+% Péter Diviánszky
+% CEFP, Budapest & Komárno, 25-30 May 2009
+
+#
+
+The code and the slides can be found as  
+`linear-maps` on  
+[http://hackage.haskell.org](http://hackage.haskell.org/packages/archive/pkg-list.html).
+
+
+# Pointers
+
+-   Pointers are well known.
+    -   They are called mutable variables in functional languages.
+    -   Some algorithms use them heavily.
+
+-   Pointers can be modeled with a global store (heap).
+    -   Efficient implementation on CPU and memory.
+
+-   Hard to find a stateless / modular model for them.
+    -   This would be the functional way.
+
+
+# Pointers in C
+
+~~~~~~~~~~~~~~~~~ {.c}
+void swap(int *x, int *y) {
+    int xv = *x;    // read
+    int yv = *y;
+    *x = yv;        // write
+    *y = xv;
+}
+
+int main() {
+    int a = 13;
+    int b = 14;
+    swap(&a, &b);   // references
+    printf("%d, %d", a, b);
+    return 0;
+}
+~~~~~~~~~~~~~~~~~
+
+
+# Pointers in OCAML
+
+
+~~~~~~~~~~~~~~~~~ {.ocaml}
+let swap x y =
+    let vx = !x     (* read *)
+    and vy = !y in
+    x := vy;        (* write *)
+    y := vx;;
+
+let a = ref 13;;    (* reference *)
+let b = ref 14;;
+swap a b;;
+~~~~~~~~~~~~~~~~~
+
+Primitives:
+
+~~~~~~~~~~~~~~~~~ {.ocaml}
+ref   :  'a          -> 'a ref
+(!)   :  'a ref      -> 'a
+(:=)  :  'a ref -> a ->  unit
+~~~~~~~~~~~~~~~~~
+
+# Pointers in Haskell
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+swap :: IORef a -> IORef a -> IO ()
+swap x y = do
+    vx <- readIORef x
+    vy <- readIORef y
+    writeIORef x vy
+    writeIORef y vx
+~~~~~~~~~~~~~~~~~
+
+Primitives:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+newIORef   ::       a      -> IO (IORef a)
+readIORef  :: IORef a      -> IO  a
+writeIORef :: IORef a -> a -> IO ()
+~~~~~~~~~~~~~~~~~
+
+Side effects are properly indicated with `IO` in types.
+
+
+# ST Pointers in Haskell
+
+`STRef`s are more safe than `IORef`s because they need less privileges.
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+swap :: STRef s a -> STRef s a -> ST s ()
+swap x y = do
+    vx <- readSTRef x
+    vy <- readSTRef y
+    writeSTRef x vy
+    writeSTRef y vx
+~~~~~~~~~~~~~~~~~
+
+Primitives:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+newSTRef   ::         a      -> ST s (STRef s a)
+readSTRef  :: STRef s a      -> ST s  a
+writeSTRef :: STRef s a -> a -> ST s ()
+~~~~~~~~~~~~~~~~~
+
+# ST Pointers in Haskell (continued)
+
+Imperative style Fibonacci function:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+fib :: Integer -> ST s Integer
+fib n = do
+    a <- newSTRef 0
+    b <- newSTRef 1
+
+    replicateM_ n $ do
+        av <- readSTRef a
+        bv <- readSTRef b
+        writeSTRef a  bv
+        writeSTRef b (av + bv)
+
+    readSTRef a
+~~~~~~~~~~~~~~~~~
+
+# ST Pointers in Haskell (continued)
+
+Note that the return type of the `ST` computation does not depend on `s`:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+fib :: Integer -> ST s Integer
+~~~~~~~~~~~~~~~~~
+
+In this case the `ST` computation can be turned into a pure value:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+runST :: (forall s. ST s a) -> a
+~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+fib' :: Integer -> Integer
+fib' n = runST (fib n)
+~~~~~~~~~~~~~~~~~
+
+In that way pointers can be used in a pure function.  
+Still, we need a strictly scheduled computation inside.
+
+# Other Direction: Pointers in Clean 
+
+~~~~~~~~~~~~~~~~~ {.clean}
+swap :: (Ptr a) (Ptr a) *Heap -> *Heap
+swap x y h1 = h5
+where
+    (vx, h2) = readPtr x h1
+    (vy, h3) = readPtr y h2
+    h4       = writePtr x vy h3
+    h5       = writePtr y vx h4
+~~~~~~~~~~~~~~~~~
+
+Primitives:
+
+~~~~~~~~~~~~~~~~~ {.clean}
+newPtr     ::      a    *Heap -> (Ptr a, *Heap)
+readPtr    :: (Ptr a)   *Heap -> (a,     *Heap)
+writePtr   :: (Ptr a) a *Heap ->         *Heap
+~~~~~~~~~~~~~~~~~
+
+
+
+# Problems with Explicit Heap
+
+The previous pointer interface is
+
+- Typed.
+- Functional.
+
+However, an explicit heap value should be carried through the program
+which determines the evaluation order overly.  
+The result is an imperative program in a functional guise.
+
+
+# Improvement: Interchangeable Pointer Reads
+
+Reading a pointer does not alter the heap but it have to be done in time:
+
+~~~~~~~~~~~~~~~~~ {.clean}
+swap :: (Ptr a) (Ptr a) *Heap -> *Heap
+swap x y h 
+    #! vx = sreadPtr x h
+       vy = sreadPtr y h
+    = writePtr y vx (writePtr x vy h)
+~~~~~~~~~~~~~~~~~
+
+New primitive:
+
+~~~~~~~~~~~~~~~~~ {.clean}
+sreadPtr :: (Ptr a) Heap ->  a
+~~~~~~~~~~~~~~~~~
+
+Note that `Heap` is a subtype of `*Heap`.
+
+
+# Improvement: Typed Heaps
+
+An `Int`-pointer read and a `Char`-pointer write may be interchanged safely.  
+This is modeled with typed heaps.
+
+Primitives (as used in the Clean compiler sources):
+
+~~~~~~~~~~~~~~~~~ {.clean}
+newHeap     :: .(Heap a)
+newPtr      ::      a    *(Heap a) -> (Ptr a, *(Heap a))
+readPtr     :: (Ptr a)   *(Heap a) -> (a,     *(Heap a))
+sreadPtr    :: (Ptr a)    (Heap a) ->  a
+writePtr    :: (Ptr a) a *(Heap a) ->         *(Heap a)
+~~~~~~~~~~~~~~~~~
+
+Still a problem: Reading a `Ptr Char` in a `Heap Char` fails if the pointer was constructed in another `Heap Char`.
+
+# Improvement: Use the ST Pointer Trick
+
+We distinguish between different `Heap Char` values by adding a phantom type variable: `Heap k Char`.
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+newPtr      :: a          -> Heap k a -> (Ptr k, Heap k a)
+sreadPtr    :: Ptr k      -> Heap k a ->  a
+writePtr    :: Ptr k -> a -> Heap k a ->  Heap k a
+~~~~~~~~~~~~~~~~~
+
+Note that the interface use `Ptr k` instead of `Ptr k a` because `a` is not needed.
+
+If the result of a heap-consuming computation does not contain the phantom typevar then we get a heap for free:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+runHCC :: (forall k. Heap k a -> b) -> b
+~~~~~~~~~~~~~~~~~
+
+
+
+# Coming from Another Direction: Finite Maps
+
+Finite maps are functions with finite domain.  
+Related phrases: dictionary (Python), hash (Perl), association list.
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+empty    ::           Map k a
+lookup   :: Ord k =>  k ->      Map k a -> Maybe a
+insert   :: Ord k =>  k -> a -> Map k a -> Map k a
+delete   :: Ord k =>  k ->      Map k a -> Map k a
+~~~~~~~~~~~~~~~~~
+
+We will need an additional function:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+modify :: Ord k =>  k -> Maybe a -> Map k a -> Map k a
+modify k Nothing  m = delete k   m
+modify k (Just a) m = insert k a m
+~~~~~~~~~~~~~~~~~
+
+
+
+# Finite Maps vs Heaps
+
+`Heap k (Maybe a)` ~ `Map (Id k) a`
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+newtype Id k = Id Int   deriving (Eq, Ord)
+~~~~~~~~~~~~~~~~~
+
+We allow only `Maybe`-typed heaps, so we can use an interface similar to finite maps.
+
+# Pointers with Finite Map Interface
+
+`Map` here is the abstract heap (not a finite map):
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+lookup   :: Id k ->      Map k a ->  Maybe a
+insert   :: Id k -> a -> Map k a ->  Map k a
+delete   :: Id k ->      Map k a ->  Map k a
+~~~~~~~~~~~~~~~~~
+
+Instead of including `newPtr`, pointers are created with the map (this decison pays back later):
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+runICC  :: (forall k. Map k a -> [Id k] -> b) -> b
+~~~~~~~~~~~~~~~~~
+
+`runICC` runs an identifier consuming computation, which receives a map (heap) and an infinite list of identifiers (pointers)
+allowed to be used with that map.
+
+
+# Use Case: Doubly Linked Lists
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+data DList k a
+    = Empty
+    | NonEmpty
+        { first   :: Id k
+        , last    :: Id k
+        , nodes   :: Map k (DListNode k a)
+        }
+
+data DListNode k a =
+    { previous :: Maybe (Id k)
+    , next     :: Maybe (Id k)
+    , value    :: a
+    }
+
+(<|) :: a -> DList k a -> Id k ->  DList k a
+(|>) :: DList k a -> a -> Id k ->  DList k a
+~~~~~~~~~~~~~~~~~
+
+# Use Case: Doubly Linked Lists (v2)
+
+It is a problem that at insertions free `Id`s are needed.
+This new version solves that problem:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+data DList k a
+    = Empty
+    | NonEmpty
+        { first   :: Id k
+        , last    :: Id k
+        , nodes   :: Map k (DListNode k a)
+        , freeIds :: [Id k]     -- stored free Ids
+        }
+
+(<|) :: a -> DList k a ->  DList k a
+(|>) :: DList k a -> a ->  DList k a
+~~~~~~~~~~~~~~~~~
+
+# Use Case: Doubly Linked Lists (v3)
+
+This version simplifies the creation of `DList`s:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+data DList a
+    = Empty
+    | forall k . NonEmpty    -- encapsulated heap
+        { first   :: Id k
+        , last    :: Id k
+        , nodes   :: Map k (DListNode k a)
+        , freeIds :: [Id k]
+        }
+
+singleton :: a -> DList a
+
+(<|) :: a -> DList a ->  DList a
+(|>) :: DList a -> a ->  DList a
+~~~~~~~~~~~~~~~~~
+
+
+# Use Case: Doubly Linked Lists (v3, continued)
+
+Code for `singleton`:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+singleton :: a -> DList a
+singleton x = runICC $ \emptyMap (firstId: otherIds) ->
+    NonEmpty
+        { first   = firstId
+        , last    = firstId
+        , nodes   = insert firstId x emptyMap
+        , freeIds = otherIds
+        }
+~~~~~~~~~~~~~~~~~
+
+But `DList`s can not be joined because if we open two `NonEmpty` values, the phantom variables can not be unified by the type system (which is right).
+
+
+# Improvement: Identifier Subtyping
+
+If `k1` ≠ `k2` then `Id k1` can not be used instead of `Id k2`.
+This is right, because this type variables marks "different regions of memory".  
+But sometimes memory regions should be joined.
+
+`Id (k1 :|: k2)` is the joined set of `Id k1` and `Id k2`.
+
+`:|:` is an infix type constructor with kind `* -> * -> *`:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+data (a :|: b)
+    -- no constructors
+~~~~~~~~~~~~~~~~~
+
+# Identifier Subtyping (continued)
+
+`Id (k1 :|: k2)` is the joined set of `Id k1` and `Id k2`.
+
+A value with type `Id k1` is acceptable when a value with type `Id (k1 :|: k2)` is needed.  
+In other words, `Id k1` is a subtype of `Id (k1 :|: k2)`.  
+There is no subtyping in Haskell so we use explicit conversion functions:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+left  :: Id k1 -> Id (k1 :|: k2)
+right :: Id k2 -> Id (k1 :|: k2)
+~~~~~~~~~~~~~~~~~
+
+One can join two maps (two heaps or two "memory regions") with `union`:
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+union :: Map k1 a -> Map k2 a -> Map (k1 :|: k2) a
+~~~~~~~~~~~~~~~~~
+
+
+# Use Case: Doubly Linked Lists (v4)
+
+A simplification first: the `freeIds` field is not needed because any number of
+free `Id`s can be obtained by joining a new "memory region":
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+data DList a
+    = Empty
+    | forall k . NonEmpty
+        { first   :: Id k
+        , last    :: Id k
+        , nodes   :: Map k (DListNode k a)
+        -- , freeIds :: [Id k]    -- not needed
+        }
+~~~~~~~~~~~~~~~~~
+
+# Use Case: Doubly Linked Lists (v4, continued)
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+(><) :: DList a -> DList a -> DList a
+Empty >< y = y
+x >< Empty = x
+x >< y = NonEmpty
+    { first = left  (first x)
+    , last  = right (last  y)
+    , nodes = ... (fmap left (nodes x) 
+                   `union` fmap right (nodes y))
+    }
+~~~~~~~~~~~~~~~~~
+
+`...` contains code which redirects  
+`next (last x)` to `first y` and  
+`previous (first y)` to `(last x)`.
+
+# Improvement: Split Maps
+
+Redirecting `next (last x)` to `first y` is complicated because a `DListNode` record have to be updated.
+
+This could be improved if three different maps were used for `previous`, `next` and `value` values.
+But a pointer can only point to one object.
+
+Solution: Maps are tagged with type-level integers. 
+A pointer can be a key in several maps with different integers.
+
+We will use  `(Map I0 k a, Map I1 k b, Map I2 k c)`  
+instead of   `Map k (a, b, c)`.  
+
+# Improvement: Split Maps (continued)
+
+To understand the implementation:  
+The finite map `Map i k a` represents a scattered memory fragment with the following properties:
+
+-   The memory fragment contains an `a`-typed values.
+-   The pieces of the memory fragment are some record's `i`th field.
+    -   `i` is a type-level integer (`I0`, `I1`, `I2`, ... in the implementation).
+    -   The records need not have the same type.
+-   `k` is an additional tag (for example, to separate two doubly linked lists)
+
+
+# Use Case: Doubly Linked Lists (v5)
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+data DList a
+    = Empty
+    | forall k . NonEmpty
+        { first    :: Id k
+        , last     :: Id k
+        , previous :: Map I0 k (Id k)
+        , next     :: Map I1 k (Id k)
+        , value    :: Map I2 k  a
+        }
+~~~~~~~~~~~~~~~~~
+
+# Creation of Split Maps
+
+Basic solution: There are a family of functions
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+runICC1  :: (forall k. Map I0 k a -> [Id k] -> b) -> b
+runICC2  :: (forall k. Map I0 k a -> Map I1 k a -> [Id k] -> b) -> b
+runICC3  :: (forall k. Map I0 k a -> Map I1 k a -> Map I2 k a -> [Id k] -> b) -> b
+...
+~~~~~~~~~~~~~~~~~
+
+Instead of that, the current implementation use a variant of the function
+
+~~~~~~~~~~~~~~~~~ {.haskell}
+runICC :: (forall k. Maps i k -> [Id k] -> b) -> b
+~~~~~~~~~~~~~~~~~
+
+where `Maps` is a GADT which can be unfolded into `i` maps.
+
+
+# Conclusion / Efficiency 
+
+The implementation is as efficient as if mutable references were used:
+
+- `Map`s are not present in the generated code (for example, `NonEmpty` has two fields). 
+- `Id`s are replaced by pointers to records (arrays actually).
+
+TODOs:
+
+- The implementation has to be reviewed.
+- The `Maybe`s still cause some performance loss.
+
+
+# Conclusion / Safety
+
+Guarantees by the type system:
+
+-   Pointers are typed (by the type of the pointed value).
+-   Pointers can not escape their scope.
+    - Pointer in "different regions" can not be exchanged by accident.
+
+TODOs:
+
+-   Linear use is checked *only in runtime*.
+    - This is a big disadvantage.
+    - Should be checked statically, which needs at least annotated types and a strictness analyzer.
+
+
+# Conclusion / Usability
+
+Pros:
+
+-   Highly functional interface (similar to finite maps).
+    - Less strict evaluation order (more possibility to parallel execution).
+-   One can virtually join `i`th fields of different records (if the `i`th fields has the same type).
+
+Cons:
+
+-   Linear use should be obeyed.
+-   Creation of maps is a bit uncomfortable (maps has to be carried).
+
+
+# Conclusion / Semantics
+
+The library has a simple semantics.
+
+This is demonstrated by a small pure functional implementation of the interface functions.
+
+
+# Further Extensions 
+
+Sets can be modeled as maps to unit values. 
+
+-   The current implementation is more efficient than that: 32 sets are packed into 1 integer map.
+-   The interface of sets and maps are unified.
+
+Identifiers can refer to static data.  
+For example, if a sequence is implemented by a doubly linked map, 
+`previous` and `next` are mutable but `value` is static. So two maps are sufficient.
+
+
+# Related Work
+
+-   [DDC](http://www.haskell.org/haskellwiki/DDC), The Disciplined Disciple Compiler
+    -   An explicitly lazy dialect of Haskell.
+    -   Supports destructive update, computational effects, type directed field projections.
+-   [Monadic Regions](http://okmij.org/ftp/Haskell/regions.html)
+    -   A technique for managing resources (memory areas, file handles, database connections).
+
+
+# Forthcoming Use Cases
+
+- Graph walks.
+    - with tagging
+    - with pointer reversal
+- Strongly connected components computation.
+- Linear time type inference algorithm with pointers.
+
+
+
+# Thanks
+
+Thanks for your attention!
+
+
+

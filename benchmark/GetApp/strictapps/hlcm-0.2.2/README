@@ -1,0 +1,85 @@
+HLCM, the parallel closed frequent itemset miner in Haskell.
+(c) 2010, Alexandre Termier
+
+Introduction
+------------
+
+Discovering frequent itemsets consists in finding patterns that are 
+often repeated in data. 
+The data is a list of transactions, and each transaction is composed of items.
+It is easier to see with the "supermarket" analogy : 
+ - an item is a product that a customer buys
+ - a transaction is the list of products bought by a customer. 
+
+A transaction database will then be the list of purchases at a supermarket.
+The frequent itemsets will then be the products that are often bought together by customers.
+Finding those can lead to important insights about the data. 
+In the supermarket case, the goal is to better understand the buying habits of customers. 
+
+Closed frequent itemsets is a subset of frequent itemsets, without information loss.
+I.e., knowing the closed frequent itemsets is sufficient to recompute all the frequent itemsets. 
+Basically, there are lots of redundancies in frequent itemsets, and these redundancies are 
+eliminated in closed frequent itemsets.
+Algorithms for computing closed frequent itemsets are orders of magnitude faster than traditional
+algorithms to discover frequent itemsets such as Apriori, and are thus heavily recommanded.
+
+LCM is the fastest of those algorithms. It has been proposed in 2004 by Takeaki Uno and Hiroki Arimura.
+HLCM allows Haskell users to benefit from this excellent algorithm, either as a library
+or as a standalone program.
+
+Installation : 
+--------------
+
+runhaskell Setup configure --user
+runhaskell Setup build
+
+Recommanded but not mandatory: runhaskell Setup haddock --executable
+(builds the HTML documentation)
+
+runhaskell Setup install
+
+
+You can also use cabal with : cabal install hlcm  (XXX VERIFY THIS)
+
+Sample datasets :
+-----------------
+
+Several datasets are given in the Data directory.
+You first have to decompress them :
+
+cd Data
+tar xvzf datasets.tgz
+
+The toy datasets are : 
+
+ * simple.csv : a csv file with 3 transactions that could come from a grocery store
+ * simple.num : same as simple.csv, but items are represented by integers
+ * mushroom_expanded.csv : a dataset about mushrooms, where the items are long strings.
+   More infos here : http://archive.ics.uci.edu/ml/datasets/Mushroom
+
+See the haddock documentation of hlcm for examples on how to mine these datasets.
+
+
+Benchmarking parallel runtime :
+-------------------------------
+
+One of the purposes of HLCM is to be a real-world benchmark for the Haskell RTS when using only semi-implicit parallelism.
+
+The benchmark datasets provided are :
+ * mushroom.dat : a small size dataset, with around 8000 transactions. 
+   A support threshold of 6000 gives very few items, whereas a support 
+   thresold of 100 should give more work to the processors.
+ * connect.dat : a complex dataset, with around 60000 transactions.
+   A support threshold of 15000  will run in a few minutes and allow 
+   to have a good estimate of speedup. 
+
+
+More datasets can be found here : http://fimi.cs.helsinki.fi/data/
+These dataset can be directly used by HLCM with any preprocessing.
+
+Be warned that currently, HLCM is not very efficient at loading data files, and does so sequentially (no parallelism here).
+Huge datasets such as kosarak can be handled, but loading time only will take several minutes.
+
+You can tinker with parallel strategy and parameters by using benchHLCM. 
+See the haddock documentation for explanations on parameters.
+

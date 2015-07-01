@@ -1,0 +1,47 @@
+Source: propellor
+Section: admin
+Priority: optional
+Build-Depends: 
+	debhelper (>= 9),
+	git,
+	ghc (>= 7.4),
+	cabal-install,
+	libghc-async-dev,
+	libghc-missingh-dev,
+	libghc-hslogger-dev,
+	libghc-unix-compat-dev,
+	libghc-ansi-terminal-dev,
+	libghc-ifelse-dev,
+	libghc-network-dev,
+	libghc-quickcheck2-dev,
+	libghc-mtl-dev,
+	libghc-transformers-dev,
+	libghc-exceptions-dev,
+Maintainer: Gergely Nagy <algernon@madhouse-project.org>
+Standards-Version: 3.9.6
+Vcs-Git: git://git.joeyh.name/propellor
+Homepage: http://propellor.branchable.com/
+
+Package: propellor
+Architecture: any
+Section: admin
+Depends: ${misc:Depends}, ${shlibs:Depends},
+	ghc (>= 7.4),
+	cabal-install,
+	libghc-async-dev,
+	libghc-missingh-dev,
+	libghc-hslogger-dev,
+	libghc-unix-compat-dev,
+	libghc-ansi-terminal-dev,
+	libghc-ifelse-dev,
+	libghc-network-dev,
+	libghc-quickcheck2-dev,
+	libghc-mtl-dev,
+	libghc-transformers-dev,
+	libghc-exceptions-dev,
+	git,
+Description: property-based host configuration management in haskell
+ Propellor enures that the system it's run in satisfies a list of
+ properties, taking action as necessary when a property is not yet met.
+ .
+ It is configured using haskell.
