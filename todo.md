@@ -5,11 +5,11 @@
 ##issues: 
 
 - relevant files: 
-        - HasBang (getting cpp into here)
-        - Cpp (trying out cpp)
-        - strictapps (30+ strict files)
-        - HasStrict (too many open files)
-        - hash (files with hashes)
+  - HasBang (getting cpp into here)
+  - Cpp (trying out cpp)
+  - strictapps (30+ strict files)
+  - HasStrict (too many open files)
+  - hash (files with hashes)
 - new strategy: remove all lines with `#define` `#if` `#else`
 
 ##questions we can ask about packages
