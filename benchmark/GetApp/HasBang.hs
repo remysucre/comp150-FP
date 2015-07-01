@@ -46,7 +46,8 @@ hasBangPat (p:ps) = case p of
                         _          -> hasBangPat ps
 
 --getModule :: String -> String -> Module
-getModule extns filePath program = fromParseResult $ parseFileContentsWithMode mode program
+--getModule extns filePath program = fromParseResult $ parseFileContentsWithMode mode program
+getModule extns filePath program = fromParseResult $ parseFileContentsWithMode mode [if "#" `isPrefixOf` x then "" else x | x <- program]
                              where
                                       bangPatternsExt = map parseExtension extns
                                       mode = ParseMode filePath Haskell2010 bangPatternsExt False False Nothing

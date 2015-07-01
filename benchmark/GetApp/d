@@ -1,0 +1,122 @@
+1d0
+< #line 1 "Instances.hs"
+39a39
+> #if __GLASGOW_HASKELL__ >= 612
+40a41,42
+> instance Lift ModName where
+>   lift = lift . modString
+41a44,45
+> instance Lift PkgName where
+>   lift = lift . pkgString
+42a47
+> #if ! MIN_VERSION_template_haskell(2,10,0)
+43a49,51
+> instance Lift Pred where
+>   lift (ClassP n ts) = [|ClassP n ts|]
+>   lift (EqualP t t2) = [|EqualP t t2|]
+44a53
+> #endif
+45a55
+> #if MIN_VERSION_template_haskell(2,8,0)
+46a57,65
+> instance Lift Kind where
+>   lift StarT = [|StarT|]
+>   lift (ForallT n c t) = [|ForallT n c t|]
+>   lift (VarT n) = [|VarT n|]
+>   lift (ConT n) = [|ConT n|]
+>   lift (TupleT i) = [|TupleT i|]
+>   lift (ArrowT) = [|ArrowT|]
+>   lift (ListT) = [|ListT|]
+>   lift (AppT t1 t2) = [|AppT t1 t2|]
+47a67
+> #else
+48a69,71
+> instance Lift Kind where
+>   lift StarK = [|StarK|]
+>   lift (ArrowK k1 k2) = [|ArrowK k1 k2|]
+49a73
+> #endif
+50a75,77
+> instance Lift TyVarBndr where
+>   lift (PlainTV n) = [|PlainTV n|]
+>   lift (KindedTV n k) = [|KindedTV n k|]
+51a79
+> #endif
+52a81
+> #if MIN_VERSION_template_haskell(2,10,0)
+53a83,88
+> instance Lift NameFlavour where
+>   lift NameS = [|NameS|]
+>   lift (NameQ n) = [|NameQ n|]
+>   lift (NameU i) = [|NameU (fromInt i)|]
+>   lift (NameL i) = [|NameL (fromInt i)|]
+>   lift (NameG n p m) = [|NameG n p m|]
+55,91c90
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+< 
+---
+> #else
+100c99
+< 
+---
+> #endif
+118c117
+< 
+---
+> #if ! MIN_VERSION_template_haskell(2,8,0)
+129c128
+< 
+---
+> #endif
+150,152c149,151
+< 
+< 
+< 
+---
+> #if __GLASGOW_HASKELL__ >= 610
+>   lift (WordPrimL i) = [|WordPrimL i|]
+> #endif
+208c207
+< 
+---
+> #if ! MIN_VERSION_template_haskell(2,10,0)
+218,219c217
+< 
+< 
+---
+> #endif

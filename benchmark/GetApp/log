@@ -1,0 +1,51 @@
+Cpp: #error Unsupported Cabal version
+in new_folder/AddSource.hs  at line 37 col 1
+Warning: Can't find file "Utils.cpp" in directories
+	new_folder
+	.
+  Asked for by: new_folder/AppData.hs  at line 3 col 1
+Warning: Can't find file "config.h" in directories
+	new_folder
+	.
+  Asked for by: new_folder/Binary.hs  at line 56 col 1
+Cpp: #error "unsupported sizeof(HsInt)"
+in new_folder/Binary.hs  at line 408 col 1
+Warning: Can't find file "BerpDebug.h" in directories
+	new_folder
+	.
+  Asked for by: new_folder/Class.hs  at line 19 col 1
+Cpp: Cannot expand #if directive in file new_folder/ClientSession.hs  at line 124 col 1:
+    MIN_VERSION_cipher_aes(a,b,c) is not a defined macro
+Cpp: Cannot expand #if directive in file new_folder/Cond.hs  at line 270 col 1:
+    MIN_VERSION_monad_control(a,b,c) is not a defined macro
+Warning: Can't find file "config.h" in directories
+	new_folder
+	.
+  Asked for by: new_folder/Core.hs  at line 71 col 1
+Cpp: Cannot expand #if directive in file new_folder/CTypes.hs  at line 514 col 1:
+    MIN_VERSION_deepseq(a,b,c) is not a defined macro
+#warning __GLASGOW_HASKELL__
+in new_folder/EdenTvType.hs  at line 476 col 1
+Warning: Can't find file "EventLogFormat.h" in directories
+	new_folder
+	.
+  Asked for by: new_folder/EventParserUtils.hs  at line 38 col 1
+Warning: Can't find file "VERSION" in directories
+	new_folder
+	.
+  Asked for by: new_folder/Hunp.hs  at line 25 col 1
+Warning: Can't find file "LocalConfigs.txt" in directories
+	new_folder
+	.
+  Asked for by: new_folder/Local.hs  at line 10 col 1
+Warning: Can't find file "../../undefined.h" in directories
+	new_folder
+	.
+  Asked for by: new_folder/PandocHTML.hs  at line 51 col 1
+Cpp: #error Unknown GHC version
+in new_folder/Process.hs  at line 160 col 1
+Warning: Can't find file "Reference.bnf" in directories
+	new_folder
+	.
+  Asked for by: new_folder/Reference.hs  at line 1675 col 1
+Cpp: macro MIN_VERSION_time expected 3 arguments, but was given 0
