@@ -12,6 +12,8 @@
   - hash (files with hashes)
 - new strategy: remove all lines with `#define` `#if` `#else`
 
+http://trac.haskell.org/haskell-src-exts/ticket/27
+
 ##questions we can ask about packages
 - how many bangs?
 - how big
