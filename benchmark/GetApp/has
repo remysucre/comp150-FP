@@ -1,268 +1,268 @@
-MoveIfStrict: fromParseResult: Parse failed at [CCA-0.1.5.3/src/Language/Haskell/TH/Instances.hs] (39:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [Etage-Graph-0.1.8/lib/Data/Graph/Etage.hs] (20:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [GenI-0.24.3/src/NLP/GenI/Parser.hs] (80:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [BCMtools-0.1.1/src/BCM/Visualize/Internal/Types.hs] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [Ebnf2ps-1.0.12/dist/build/ebnf2ps/ebnf2ps-tmp/Ebnf2psParser.hs] (15:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [EtaMOO-0.2.0.0/src/MOO/Builtins.hs] (15:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [src/full/Agda/Syntax/Parser/Lexer.x] (27:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [QueryLexer.x] (6:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [DrIFT-2.4.2/code/GhcBinary.hs] (610:45): Parse error in pattern: # s
-MoveIfStrict: fromParseResult: Parse failed at [Blobs-0.3/lib/DData/IntMap.hs] (156:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [src/DPM/Core/Lexer.x] (5:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [Eq-1.1.3/Language/Eq/Algorithm/Eval/Complex.hs] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [src/lib/Dict/Lex.x] (9:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [CPL-0.0.7/src/CDT.hs] (62:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [BiobaseXNA-0.9.1.1/Biobase/Primary/Nuc/Conversion.hs] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [AndroidViewHierarchyImporter-0.1.0.1/Main.hs] (9:1): Parse error: {-# LANGUAGE
-MoveIfStrict: fromParseResult: Parse failed at [DrIFT-cabalized-2.3.0/code/GhcBinary.hs] (610:45): Parse error in pattern: # s
-MoveIfStrict: fromParseResult: Parse failed at [FComp-1.0.2/src/HarmTrace/Models/Simple/Model.hs] (36:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [HTF-0.13.0.0/HTFPP.hs] (21:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [HarmTrace-2.2.0/src/HarmTrace/Models/Jazz/Model.hs] (36:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [Hayoo-1.2.3/src/Hayoo/IndexTypes.hs] (7:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [Pugs-6.2.13.20130611/src/Pugs/AST/Internals/Instances.hs] (19:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [NoSlow-0.2/NoSlow/Backend/DPH/Prim/Seq.hs] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [Hach-0.1.2/nclient/NClient/Connect.hs] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [programs/C_Lexer.x] (21:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [HaRe-0.7.2.8/src/Language/Haskell/Refact/Refactoring/MoveDef.hs] (880:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [PandocAgda-2.3.3.0.2/src/full/Agda/Interaction/Highlighting/PandocHTML.hs] (51:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [KiCS-0.9.3/dist/build/Curry/Module/Prelude.hs] (24:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [HaXml-1.25.3/src/Text/XML/HaXml/Escape.hs] (62:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [PortFusion-1.2.1/src/Main.hs] (7:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [NXT-0.2.3/lib/Robotics/NXT/BluetoothUtils.hs] (14:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [LambdaHack-0.4.101.1/Game/LambdaHack/Client/AI.hs] (6:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [PTQ-0.0.7/src/IL.hs] (51:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [HaskellTorrent-0.1.1/src/Process.hs] (56:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [Raincat-1.1.1.3/src/Nxt/Graphics.hs] (93:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [SoccerFun-0.5.2/SoccerFun/Tape/Record/Template.hs] (16:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [Snusmumrik-0.0.1/Utils.hs] (83:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [WL500gPControl-0.3.4/src/Control/Main.hs] (14:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [SoccerFunGL-0.5.1/SoccerFun/UI/GL/RunMatch/Template.hs] (16:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [YamlReference-0.9.3/Text/Yaml/Reference.hs] (1308:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [VKHS-0.5.3/src/Data/Label/Derive.hs] (128:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [bidirectionalization-combined-0.1.0.1/BUtil.hs] (69:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [blaze-from-html-0.3.2.1/src/Util/GenerateHtmlCombinators.hs] (3:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [LexHOL.x] (9:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [bake-0.3/src/General/Extra.hs] (47:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cabal-bounds-0.9.4/lib/CabalBounds/Args.hs] (16:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [c2hs-0.25.2/src/C2HS/Gen/Bind.hs] (2766:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cabal-dev-0.9.2/src/Distribution/Dev/AddSource.hs] (15:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [barley-0.3.0.2/src/Barley/AltLoad.hs] (98:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [baskell-0.1.1/src/CmdLine.hs] (63:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cab-0.2.15/Distribution/Cab/PkgDB.hs] (36:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cabal-dependency-licenses-0.1.1.1/src/Main.hs] (40:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cabal-debian-4.30/Tests.hs] (120:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [berp-0.0.2/src/Berp/Base/Class.hs] (19:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cabal-db-0.1.12/Src/Main.hs] (41:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cabal-cargs-0.7.7/lib/CabalCargs/Args.hs] (12:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cabal-meta-0.4.1.3/CabalMeta.hs] (11:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [call-haskell-from-anything-0.1.0.2/src/FFI/Anything/TypeUncurry/Msgpack.hs] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cgrep-6.4.12/src/CGrep/Filter.hs] (36:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cabal-helper-0.3.5.0/CabalHelper/Main.hs] (63:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cabal-install-ghc74-0.10.4/Distribution/Client/HttpUtils.hs] (26:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [caldims-0.1.0/src/Language/CalDims/Action.hs] (26:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [src\Language\Clafer\Front\LexClafer.x] (14:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cap-1.0.1/dist/build/cap/cap-tmp/Language/Cap/Interpret/Parse.hs] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [casui-0.3/Casui/Draw.hs] (3:1): Parse error: {-# OPTIONS:GHC ...
-MoveIfStrict: fromParseResult: Parse failed at [clientsession-0.9.1.1/src/Web/ClientSession.hs] (66:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [calculator-0.3.1.1/src/Calculator/Evaluator/Cmd.hs] (22:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cabal2nix-1.73/src/Distribution/NixOS/Derivation/Cabal.hs] (33:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [clash-ghc-0.5.7/src-bin/GhciMonad.hs] (28:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [clifford-0.1.0.14/src/Numeric/Clifford/Internal.hs] (15:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [codex-0.3.0.8/codex/Main.hs] (3:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cheapskate-0.1.0.4/Cheapskate/Html.hs] (11:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [clevercss-0.2.4/Text/CSS/CleverCSS.hs] (32:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cognimeta-utils-0.1.2/src/Cgm/Data/Word.hs] (60:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cabal-src-0.3.0/mega-sdist.hs] (29:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [coinbase-exchange-0.2.0.0/src/Coinbase/Exchange/MarketData.hs] (33:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cabal-rpm-0.9.6/src/Commands/Spec.hs] (50:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [corebot-bliki-0.2.2.0/src/DefaultMain.hs] (2:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [darkplaces-rcon-util-0.1.1/src/DRcon/Polyfills.hs] (8:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [confsolve-0.5.4/ConfsolveArgs.hs] (6:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cryptol-2.2.4/cryptol/Main.hs] (37:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [darcs-cabalized-2.0.2.2/src/Darcs/Compat.hs] (9:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [crunghc-0.1.1.1/main.hs] (29:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [darcsden-1.1.1/src/DarcsDen/Darcs.hs] (7:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [derive-2.5.22/Language/Haskell/Convert.hs] (68:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [conjure-0.1/src/BEncode/BEncode.hs] (52:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [doctest-0.10.0/src/Extract.hs] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [cursedcsv-0.1.2/code/CursedCSV.hs] (33:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [debian-3.87.2/Debian/Control/ByteString.hs] (24:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [fdo-trash-0.0.0.2/Freedesktop/Trash.hs] (32:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [edentv-4.10.0/EdenTvType.hs] (475:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [fay-0.23.1.6/src/Fay/Compiler/Desugar/Types.hs] (17:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ert-0.0.2.1/Main.hs] (15:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [fibon-0.2.0/tools/fibon-run/Fibon/Run/Config/Local.hs] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [epic-0.9.3.3/dist/build/Epic/Parser.hs] (19:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [find-conduit-0.4.3/Data/Cond.hs] (248:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [flow2dot-0.9.0.3/Text/FlowDiagram.hs] (17:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [feed2lj-0.0.3.1/LjPost.hs] (12:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ewe-0.1.0.40/dist/build/ewe/ewe-tmp/Language/EWE/Parser.hs] (15:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ghci-ng-7.6.3.5/ghc/GhciMonad.hs] (27:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [github-backup-1.20150618/Common.hs] (18:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [git-repair-1.20150106/Common.hs] (18:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [gruff-examples-0.3.1/src/Number.hs] (6:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hLLVM-0.5.0.1/src/Llvm/Data/Conversion/AstIrConversion.hs] (7:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [gitit-0.10.7/Network/Gitit/Cache.hs] (32:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [gipeda-0.1.1/src/Data/Text/Binary.hs] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [git-vogue-0.2.0.1/src/git-vogue-hlint.hs] (31:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ghcid-0.5/src/Language/Haskell/Ghcid/Terminal.hs] (7:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [funsat-0.6.2/Main.hs] (38:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ghc-imported-from-0.2.0.6/Language/Haskell/GhcImportedFrom.hs] (103:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ghc-events-0.4.4.0/GHC/RTS/EventParserUtils.hs] (33:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [git-all-1.5.0/Main.hs] (24:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ghc-events-parallel-0.5.0.1/GHC/RTS/EventParserUtils.hs] (20:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ghc-mod-5.2.1.2/Language/Haskell/GhcMod/CabalConfig.hs] (23:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [gtk2hs-buildtools-0.13.0.4/c2hs/base/general/Binary.hs] (41:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [git-annex-5.20150617/Annex/Content/Direct.hs] (230:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [groundhog-inspector-0.7.1.2/Database/Groundhog/Inspector.hs] (49:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [fst-0.10.0.1/FST/NReg.hs] (15:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [gruff-0.3.4/src/Number.hs] (8:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ghci-haskeline-0.2/GhciHaskeline/GhciMonad.hs] (54:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [git-gpush-3.1.0.1/Main.hs] (22:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [greencard-3.0.4.2/dist/build/greencard/greencard-tmp/Parse.hs] (26:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [glambda-1.0/src/Language/Glambda/Check.hs] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [git-monitor-3.1.1.4/Main.hs] (38:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hakyll-4.7.1.0/src/Hakyll/Check.hs] (29:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hat-2.8.0.0/Hat/Hack.hs] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hans-2.5.0.0/example/test.hs] (17:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [haroonga-httpd-0.1.1.0/Web/Groonga/Server.hs] (13:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hackager-1.2.0.1/src/HackageMonad.hs] (28:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [haddock-2.16.0/haddock-api/src/Haddock/Interface/AttachInstances.hs] (47:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [haskell-docs-4.2.5/src/Haskell/Docs/Cabal.hs] (48:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [haskintex-0.5.0.3/Haskintex.hs] (29:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [halberd-0.1.2.9/src/Halberd/CollectNames.hs] (40:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [haskanoid-0.1.4/src/Input.hs] (38:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [haskell-cnc-0.1.3.200/Intel/Cnc.Header.hs] (44:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hackport-0.4.5/Portage/EBuild.hs] (21:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [haskelm-0.1.12.0/src/Language/Elm/TH/HToE.hs] (16:1): Parse error: {-# LANGUAGE
-MoveIfStrict: fromParseResult: Parse failed at [src/Haddock/Interface/Lex.x] (33:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [happy-1.19.5/dist/build/happy/happy-tmp/AttrGrammarParser.hs] (14:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hastache-0.6.1/Text/Hastache/Context.hs] (222:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hasktags-0.69.1/src/DebugShow.hs] (6:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hoodle-0.4.0/lib/Hoodle/StartUp.hs] (19:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hell-2.1/src/Hell/Types.hs] (63:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hgom-0.6/Gom/Config.hs] (36:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [src/Parser/Lexer.x] (28:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hledger-0.25.1/Hledger/Cli/Options.hs] (72:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hdevtools-0.1.0.9/src/Cabal.hs] (7:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hmp3-1.5.2.1/Core.hs] (71:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hoogle-4.2.41/src/General/Base.hs] (8:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hogg-0.4.1.2/tools/hogg.hs] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [HOpenPGP/Tools/Lexer.x] (23:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hlint-1.9.21/src/HsColour.hs] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hermit-1.0.0.0/dist/build/HERMIT/Parser.hs] (26:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [src/Syntax/Parser/Lexer.x] (18:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hsenv-0.5/src/Args.hs] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hprotoc-fork-2.0.16.1/Text/ProtocolBuffers/ProtoCompile/Parser.hs] (77:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hprotoc-2.0.17/Text/ProtocolBuffers/ProtoCompile/Parser.hs] (77:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hspec-meta-2.1.7/hspec-core/src/Test/Hspec/Compat.hs] (15:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hsx2hs-0.13.3.2/src/hsx2hs.hs] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [htar-0.4.0.1/htar.hs] (22:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hsntp-0.1/HSNTP/Util/UDP.hs] (28:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hsx-0.10.5/src/HSX/XMLGenerator.hs] (76:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hsc2hs-0.67.20120610/Common.hs] (95:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hws-1.1.0.1/src/AccessLogger.hs] (232:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hsimport-0.6.5/lib/HsImport/Args.hs] (12:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hscope-0.4.1/t/files/CPP.hs] (3:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hscolour-1.23/HsColour.hs] (18:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hsdev-0.1.3.4/src/HsDev/Server/Commands.hs] (58:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hunp-0.1/Hunp.hs] (25:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ide-backend-server-0.9.0/Break.hs] (91:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [jammittools-0.4.1.1/Main.hs] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [irc-core-1.1.0.1/driver/ClientState.hs] (31:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hydra-print-0.1.0.3/UI/HydraPrint.hs] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [kevin-0.11.0/src/Kevin/Base.hs] (27:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [keera-posture-0.1.4.4/src/Controller/Conditions/PopupMenu.hs] (20:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [keter-1.4.1/Data/Conduit/Process/Unix.hs] (64:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [infernu-0.0.0.1/src/Infernu/Log.hs] (13:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [hxournal-0.6.6.1/lib/Application/HXournal/ModelAction/File.hs] (31:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [imagepaste-0.2.0.1/src/Log.hs] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [inject-0.1.0/src/Text/Inject.hs] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ihaskell-0.6.3.0/Hspec.hs] (360:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [idris-0.9.18.1/Setup.hs] (29:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [lambdacube-samples-0.2.0/CubeMap.hs] (20:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [lgtk-0.8.0.4/src/Data/LensRef/Default.hs] (9:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [leksah-server-0.15.0.3/src/IDE/Core/CTypes.hs] (76:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [leaky-0.4.0.0/Types_explicit_SOP.hs] (68:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [leksah-0.15.0.5/main/Main.hs] (22:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [linear-algebra-cblas-0.1/lib/Numeric/LinearAlgebra/Internal.hs] (46:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [markdown-unlit-0.2.0.1/src/Text/Markdown/Unlit.hs] (9:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ls-usb-0.1.1/PrettyDevList.hs] (54:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [linx-gateway-0.1.0.2/examples/Ping.hs] (11:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [layers-game-0.5/src/AppData.hs] (3:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [markup-preview-0.2.2.1/Application/FileHandling.hs] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [llvm-pretty-bc-parser-0.1.3.1/src/Data/LLVM/BitCode/IR/Constants.hs] (23:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [mangopay-1.11.1/src/Web/MangoPay/Monad.hs] (43:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [mega-sdist-0.2.10.4/mega-sdist.hs] (28:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [module-management-0.20.3/Language/Haskell/Modules/Imports.hs] (21:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [mighttpd-0.4.3/Parsec.hs] (3:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [mathblog-0.5/src/MB/Startup.hs] (5:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [mighttpd2-3.2.8/src/Mighty.hs] (5:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [misfortune-0.1.1.2/src/Data/Fortune/FortuneFile.hs] (228:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [src/Language/TLT/TltLexer.x] (23:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [src/Morte/Lexer.x] (27:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [music-util-0.17/src/music-util.hs] (11:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [neil-0.9/src/Main.hs] (14:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [orc-1.2.1.4/src/Control/Concurrent/Hierarchical.hs] (85:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [pit-0.3.1/src/Pit.hs] (17:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [olwrapper-0.4.1/src/Main.hs] (15:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [pretty-show-1.6.8.2/Text/Show/PrettyVal.hs] (3:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [pandoc-1.14.0.4/man/make-pandoc-man-pages.hs] (15:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [packunused-0.1.1.4/packunused.hs] (13:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [pandoc-csv2table-1.0.1/src/Text/Table/Helper.hs] (148:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [parconc-examples-0.3.5/AccelerateCompat.hs] (3:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [peg-0.2/Peg.hs] (18:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [preSrc/Tokens.x] (33:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [pipeclip-0.1.0.1/pipeclip.hs] (17:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [phybin-0.3/Bio/Phylogeny/PhyBin/CoreTypes.hs] (44:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [piet-0.1/sources/Language/Piet/Types.hs] (166:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [pdf-toolbox-viewer-0.0.3.3/compat/Prelude.hs] (8:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [postgresql-orm-0.3.2/Data/GetField.hs] (8:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [src/Language/Java/Paragon/Lexer.x] (9:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [pandoc-citeproc-0.7.2/src/Text/CSL/Data.hs] (22:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [rehoo-0.3.1/Main.hs] (14:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [rasterific-svg-0.2.3.1/exec-src/svgrender.hs] (3:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [reactive-thread-0.3.2.1/Control/Concurrent/STM/TEvent.hs] (36:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [puzzle-draw-0.1.0.4/src/Diagrams/Puzzles/CmdLine.hs] (17:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [randfile-0.1.0.0/Stat.hs] (12:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [rws-0.1.1.2/src/Ethernet.hs] (16:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [puzzle-draw-cmdline-0.1.0.4/src/tools/drawpuzzle.hs] (7:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [pushme-1.5.0/Main.hs] (30:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [reserve-0.1.1/src/Interpreter.hs] (40:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [qudb-0.0.1/dist/build/qudb/qudb-tmp/Database/QUDB/Parser.hs] (14:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [puffytools-0.0.0.1/src/PuffyTools/Journal.hs] (139:29): Parse error: "use listJournalFiles instead"#
-MoveIfStrict: fromParseResult: Parse failed at [riot-1.20080618/Riot/Locale.hs] (22:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [rethinkdb-2.0.0.0/Database/RethinkDB/Datum.hs] (2:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [roshask-0.2.1/Tests/ServiceClientTests/ServiceClientTest.hs] (102:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [treeviz-1.0.0/src/Main.hs] (151:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [twidge-1.1.2/Commands/Update.hs] (33:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [tup-functor-0.3.0.0/Data/Tup/Concat.hs] (36:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [tttool-1.4.0.2/src/BakedVector.hs] (8:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [src/Tip/Parser/LexTIP.x] (13:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [taffybar-0.4.5/src/System/Taffybar/SimpleClock.hs] (81:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [tip-haskell-frontend-0.1.1/src/Tip/Compile.hs] (29:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [src/TigerScanner.x] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [todos-0.5.3.2/Todos/Default.hs] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [timberc-1.0.3/dist/build/timberc/timberc-tmp/Parser.hs] (10:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [toysolver-0.3.0/src/ToySolver/Arith/Simplex2.hs] (917:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [xml-to-json-2.0.1/src/Text/XML/JSON/XmlToJson.hs] (19:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [unlambda-0.1.4.1/Language/Unlambda.hs] (28:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [xmonad-0.11.1/Main.hs] (30:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [xmobar-0.23.1/src/Bitmap.hs] (30:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [uhttpc-0.1.0.0/Network/HTTP/MicroClient.hs] (82:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [wordsetdiff-0.0.3.1/Text/WordSetDiff/Main.hs] (54:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [xmonad-bluetilebranch-0.9.1.4/Main.hs] (30:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [wai-app-static-3.1.0/WaiAppStatic/CmdLine.hs] (40:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [vk-posix-pty-0.2.1/System/Posix/Pty.hs] (58:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [wai-handler-devel-2.0.0.2/Network/Wai/Handler/DevelServer/Compat.hs] (9:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [vado-0.0.5/src/System/Process/Vado.hs] (42:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [vcsgui-0.1.2.0/src/VCSGui/Git/Log.hs] (57:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [uuagc-0.9.52.1/Setup.hs] (21:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [src/ehc/Base/Common.chs] (1101:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [yi-0.12.0/src/library/System/CanonicalizePath.hs] (20:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [YesodDsl/Lexer.x] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [yeganesh-2.5/Catch.hs] (4:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [zeroth-2009.6.23.3/Language/Haskell/TH/ZeroTH/GetOpt.hs] (15:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [ztail-1.1/Main.hs] (13:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [yet-another-logger-0.2.3.1/src/System/Logger/Backend/ColorOption.hs] (47:1): Parse error: #
-MoveIfStrict: fromParseResult: Parse failed at [yst-0.5.0.3/Yst/Build.hs] (31:1): Parse error: #
+Apps/CCA-0.1.5.3/src/Language/Haskell/TH/Instances.hs
+Apps/Etage-Graph-0.1.8/lib/Data/Graph/Etage.hs
+Apps/GenI-0.24.3/src/NLP/GenI/Parser.hs
+Apps/BCMtools-0.1.1/src/BCM/Visualize/Internal/Types.hs
+Apps/Ebnf2ps-1.0.12/dist/build/ebnf2ps/ebnf2ps-tmp/Ebnf2psParser.hs
+Apps/EtaMOO-0.2.0.0/src/MOO/Builtins.hs
+Apps/src/full/Agda/Syntax/Parser/Lexer.x
+Apps/QueryLexer.x
+Apps/DrIFT-2.4.2/code/GhcBinary.hs
+Apps/Blobs-0.3/lib/DData/IntMap.hs
+Apps/src/DPM/Core/Lexer.x
+Apps/Eq-1.1.3/Language/Eq/Algorithm/Eval/Complex.hs
+Apps/src/lib/Dict/Lex.x
+Apps/CPL-0.0.7/src/CDT.hs
+Apps/BiobaseXNA-0.9.1.1/Biobase/Primary/Nuc/Conversion.hs
+Apps/AndroidViewHierarchyImporter-0.1.0.1/Main.hs
+Apps/DrIFT-cabalized-2.3.0/code/GhcBinary.hs
+Apps/FComp-1.0.2/src/HarmTrace/Models/Simple/Model.hs
+Apps/HTF-0.13.0.0/HTFPP.hs
+Apps/HarmTrace-2.2.0/src/HarmTrace/Models/Jazz/Model.hs
+Apps/Hayoo-1.2.3/src/Hayoo/IndexTypes.hs
+Apps/Pugs-6.2.13.20130611/src/Pugs/AST/Internals/Instances.hs
+Apps/NoSlow-0.2/NoSlow/Backend/DPH/Prim/Seq.hs
+Apps/Hach-0.1.2/nclient/NClient/Connect.hs
+Apps/programs/C_Lexer.x
+Apps/HaRe-0.7.2.8/src/Language/Haskell/Refact/Refactoring/MoveDef.hs
+Apps/PandocAgda-2.3.3.0.2/src/full/Agda/Interaction/Highlighting/PandocHTML.hs
+Apps/KiCS-0.9.3/dist/build/Curry/Module/Prelude.hs
+Apps/HaXml-1.25.3/src/Text/XML/HaXml/Escape.hs
+Apps/PortFusion-1.2.1/src/Main.hs
+Apps/NXT-0.2.3/lib/Robotics/NXT/BluetoothUtils.hs
+Apps/LambdaHack-0.4.101.1/Game/LambdaHack/Client/AI.hs
+Apps/PTQ-0.0.7/src/IL.hs
+Apps/HaskellTorrent-0.1.1/src/Process.hs
+Apps/Raincat-1.1.1.3/src/Nxt/Graphics.hs
+Apps/SoccerFun-0.5.2/SoccerFun/Tape/Record/Template.hs
+Apps/Snusmumrik-0.0.1/Utils.hs
+Apps/WL500gPControl-0.3.4/src/Control/Main.hs
+Apps/SoccerFunGL-0.5.1/SoccerFun/UI/GL/RunMatch/Template.hs
+Apps/YamlReference-0.9.3/Text/Yaml/Reference.hs
+Apps/VKHS-0.5.3/src/Data/Label/Derive.hs
+Apps/bidirectionalization-combined-0.1.0.1/BUtil.hs
+Apps/blaze-from-html-0.3.2.1/src/Util/GenerateHtmlCombinators.hs
+Apps/LexHOL.x
+Apps/bake-0.3/src/General/Extra.hs
+Apps/cabal-bounds-0.9.4/lib/CabalBounds/Args.hs
+Apps/c2hs-0.25.2/src/C2HS/Gen/Bind.hs
+Apps/cabal-dev-0.9.2/src/Distribution/Dev/AddSource.hs
+Apps/barley-0.3.0.2/src/Barley/AltLoad.hs
+Apps/baskell-0.1.1/src/CmdLine.hs
+Apps/cab-0.2.15/Distribution/Cab/PkgDB.hs
+Apps/cabal-dependency-licenses-0.1.1.1/src/Main.hs
+Apps/cabal-debian-4.30/Tests.hs
+Apps/berp-0.0.2/src/Berp/Base/Class.hs
+Apps/cabal-db-0.1.12/Src/Main.hs
+Apps/cabal-cargs-0.7.7/lib/CabalCargs/Args.hs
+Apps/cabal-meta-0.4.1.3/CabalMeta.hs
+Apps/call-haskell-from-anything-0.1.0.2/src/FFI/Anything/TypeUncurry/Msgpack.hs
+Apps/cgrep-6.4.12/src/CGrep/Filter.hs
+Apps/cabal-helper-0.3.5.0/CabalHelper/Main.hs
+Apps/cabal-install-ghc74-0.10.4/Distribution/Client/HttpUtils.hs
+Apps/caldims-0.1.0/src/Language/CalDims/Action.hs
+Apps/src\Language\Clafer\Front\LexClafer.x
+Apps/cap-1.0.1/dist/build/cap/cap-tmp/Language/Cap/Interpret/Parse.hs
+Apps/casui-0.3/Casui/Draw.hs
+Apps/clientsession-0.9.1.1/src/Web/ClientSession.hs
+Apps/calculator-0.3.1.1/src/Calculator/Evaluator/Cmd.hs
+Apps/cabal2nix-1.73/src/Distribution/NixOS/Derivation/Cabal.hs
+Apps/clash-ghc-0.5.7/src-bin/GhciMonad.hs
+Apps/clifford-0.1.0.14/src/Numeric/Clifford/Internal.hs
+Apps/codex-0.3.0.8/codex/Main.hs
+Apps/cheapskate-0.1.0.4/Cheapskate/Html.hs
+Apps/clevercss-0.2.4/Text/CSS/CleverCSS.hs
+Apps/cognimeta-utils-0.1.2/src/Cgm/Data/Word.hs
+Apps/cabal-src-0.3.0/mega-sdist.hs
+Apps/coinbase-exchange-0.2.0.0/src/Coinbase/Exchange/MarketData.hs
+Apps/cabal-rpm-0.9.6/src/Commands/Spec.hs
+Apps/corebot-bliki-0.2.2.0/src/DefaultMain.hs
+Apps/darkplaces-rcon-util-0.1.1/src/DRcon/Polyfills.hs
+Apps/confsolve-0.5.4/ConfsolveArgs.hs
+Apps/cryptol-2.2.4/cryptol/Main.hs
+Apps/darcs-cabalized-2.0.2.2/src/Darcs/Compat.hs
+Apps/crunghc-0.1.1.1/main.hs
+Apps/darcsden-1.1.1/src/DarcsDen/Darcs.hs
+Apps/derive-2.5.22/Language/Haskell/Convert.hs
+Apps/conjure-0.1/src/BEncode/BEncode.hs
+Apps/doctest-0.10.0/src/Extract.hs
+Apps/cursedcsv-0.1.2/code/CursedCSV.hs
+Apps/debian-3.87.2/Debian/Control/ByteString.hs
+Apps/fdo-trash-0.0.0.2/Freedesktop/Trash.hs
+Apps/edentv-4.10.0/EdenTvType.hs
+Apps/fay-0.23.1.6/src/Fay/Compiler/Desugar/Types.hs
+Apps/ert-0.0.2.1/Main.hs
+Apps/fibon-0.2.0/tools/fibon-run/Fibon/Run/Config/Local.hs
+Apps/epic-0.9.3.3/dist/build/Epic/Parser.hs
+Apps/find-conduit-0.4.3/Data/Cond.hs
+Apps/flow2dot-0.9.0.3/Text/FlowDiagram.hs
+Apps/feed2lj-0.0.3.1/LjPost.hs
+Apps/ewe-0.1.0.40/dist/build/ewe/ewe-tmp/Language/EWE/Parser.hs
+Apps/ghci-ng-7.6.3.5/ghc/GhciMonad.hs
+Apps/github-backup-1.20150618/Common.hs
+Apps/git-repair-1.20150106/Common.hs
+Apps/gruff-examples-0.3.1/src/Number.hs
+Apps/hLLVM-0.5.0.1/src/Llvm/Data/Conversion/AstIrConversion.hs
+Apps/gitit-0.10.7/Network/Gitit/Cache.hs
+Apps/gipeda-0.1.1/src/Data/Text/Binary.hs
+Apps/git-vogue-0.2.0.1/src/git-vogue-hlint.hs
+Apps/ghcid-0.5/src/Language/Haskell/Ghcid/Terminal.hs
+Apps/funsat-0.6.2/Main.hs
+Apps/ghc-imported-from-0.2.0.6/Language/Haskell/GhcImportedFrom.hs
+Apps/ghc-events-0.4.4.0/GHC/RTS/EventParserUtils.hs
+Apps/git-all-1.5.0/Main.hs
+Apps/ghc-events-parallel-0.5.0.1/GHC/RTS/EventParserUtils.hs
+Apps/ghc-mod-5.2.1.2/Language/Haskell/GhcMod/CabalConfig.hs
+Apps/gtk2hs-buildtools-0.13.0.4/c2hs/base/general/Binary.hs
+Apps/git-annex-5.20150617/Annex/Content/Direct.hs
+Apps/groundhog-inspector-0.7.1.2/Database/Groundhog/Inspector.hs
+Apps/fst-0.10.0.1/FST/NReg.hs
+Apps/gruff-0.3.4/src/Number.hs
+Apps/ghci-haskeline-0.2/GhciHaskeline/GhciMonad.hs
+Apps/git-gpush-3.1.0.1/Main.hs
+Apps/greencard-3.0.4.2/dist/build/greencard/greencard-tmp/Parse.hs
+Apps/glambda-1.0/src/Language/Glambda/Check.hs
+Apps/git-monitor-3.1.1.4/Main.hs
+Apps/hakyll-4.7.1.0/src/Hakyll/Check.hs
+Apps/hat-2.8.0.0/Hat/Hack.hs
+Apps/hans-2.5.0.0/example/test.hs
+Apps/haroonga-httpd-0.1.1.0/Web/Groonga/Server.hs
+Apps/hackager-1.2.0.1/src/HackageMonad.hs
+Apps/haddock-2.16.0/haddock-api/src/Haddock/Interface/AttachInstances.hs
+Apps/haskell-docs-4.2.5/src/Haskell/Docs/Cabal.hs
+Apps/haskintex-0.5.0.3/Haskintex.hs
+Apps/halberd-0.1.2.9/src/Halberd/CollectNames.hs
+Apps/haskanoid-0.1.4/src/Input.hs
+Apps/haskell-cnc-0.1.3.200/Intel/Cnc.Header.hs
+Apps/hackport-0.4.5/Portage/EBuild.hs
+Apps/haskelm-0.1.12.0/src/Language/Elm/TH/HToE.hs
+Apps/src/Haddock/Interface/Lex.x
+Apps/happy-1.19.5/dist/build/happy/happy-tmp/AttrGrammarParser.hs
+Apps/hastache-0.6.1/Text/Hastache/Context.hs
+Apps/hasktags-0.69.1/src/DebugShow.hs
+Apps/hoodle-0.4.0/lib/Hoodle/StartUp.hs
+Apps/hell-2.1/src/Hell/Types.hs
+Apps/hgom-0.6/Gom/Config.hs
+Apps/src/Parser/Lexer.x
+Apps/hledger-0.25.1/Hledger/Cli/Options.hs
+Apps/hdevtools-0.1.0.9/src/Cabal.hs
+Apps/hmp3-1.5.2.1/Core.hs
+Apps/hoogle-4.2.41/src/General/Base.hs
+Apps/hogg-0.4.1.2/tools/hogg.hs
+Apps/HOpenPGP/Tools/Lexer.x
+Apps/hlint-1.9.21/src/HsColour.hs
+Apps/hermit-1.0.0.0/dist/build/HERMIT/Parser.hs
+Apps/src/Syntax/Parser/Lexer.x
+Apps/hsenv-0.5/src/Args.hs
+Apps/hprotoc-fork-2.0.16.1/Text/ProtocolBuffers/ProtoCompile/Parser.hs
+Apps/hprotoc-2.0.17/Text/ProtocolBuffers/ProtoCompile/Parser.hs
+Apps/hspec-meta-2.1.7/hspec-core/src/Test/Hspec/Compat.hs
+Apps/hsx2hs-0.13.3.2/src/hsx2hs.hs
+Apps/htar-0.4.0.1/htar.hs
+Apps/hsntp-0.1/HSNTP/Util/UDP.hs
+Apps/hsx-0.10.5/src/HSX/XMLGenerator.hs
+Apps/hsc2hs-0.67.20120610/Common.hs
+Apps/hws-1.1.0.1/src/AccessLogger.hs
+Apps/hsimport-0.6.5/lib/HsImport/Args.hs
+Apps/hscope-0.4.1/t/files/CPP.hs
+Apps/hscolour-1.23/HsColour.hs
+Apps/hsdev-0.1.3.4/src/HsDev/Server/Commands.hs
+Apps/hunp-0.1/Hunp.hs
+Apps/ide-backend-server-0.9.0/Break.hs
+Apps/jammittools-0.4.1.1/Main.hs
+Apps/irc-core-1.1.0.1/driver/ClientState.hs
+Apps/hydra-print-0.1.0.3/UI/HydraPrint.hs
+Apps/kevin-0.11.0/src/Kevin/Base.hs
+Apps/keera-posture-0.1.4.4/src/Controller/Conditions/PopupMenu.hs
+Apps/keter-1.4.1/Data/Conduit/Process/Unix.hs
+Apps/infernu-0.0.0.1/src/Infernu/Log.hs
+Apps/hxournal-0.6.6.1/lib/Application/HXournal/ModelAction/File.hs
+Apps/imagepaste-0.2.0.1/src/Log.hs
+Apps/inject-0.1.0/src/Text/Inject.hs
+Apps/ihaskell-0.6.3.0/Hspec.hs
+Apps/idris-0.9.18.1/Setup.hs
+Apps/lambdacube-samples-0.2.0/CubeMap.hs
+Apps/lgtk-0.8.0.4/src/Data/LensRef/Default.hs
+Apps/leksah-server-0.15.0.3/src/IDE/Core/CTypes.hs
+Apps/leaky-0.4.0.0/Types_explicit_SOP.hs
+Apps/leksah-0.15.0.5/main/Main.hs
+Apps/linear-algebra-cblas-0.1/lib/Numeric/LinearAlgebra/Internal.hs
+Apps/markdown-unlit-0.2.0.1/src/Text/Markdown/Unlit.hs
+Apps/ls-usb-0.1.1/PrettyDevList.hs
+Apps/linx-gateway-0.1.0.2/examples/Ping.hs
+Apps/layers-game-0.5/src/AppData.hs
+Apps/markup-preview-0.2.2.1/Application/FileHandling.hs
+Apps/llvm-pretty-bc-parser-0.1.3.1/src/Data/LLVM/BitCode/IR/Constants.hs
+Apps/mangopay-1.11.1/src/Web/MangoPay/Monad.hs
+Apps/mega-sdist-0.2.10.4/mega-sdist.hs
+Apps/module-management-0.20.3/Language/Haskell/Modules/Imports.hs
+Apps/mighttpd-0.4.3/Parsec.hs
+Apps/mathblog-0.5/src/MB/Startup.hs
+Apps/mighttpd2-3.2.8/src/Mighty.hs
+Apps/misfortune-0.1.1.2/src/Data/Fortune/FortuneFile.hs
+Apps/src/Language/TLT/TltLexer.x
+Apps/src/Morte/Lexer.x
+Apps/music-util-0.17/src/music-util.hs
+Apps/neil-0.9/src/Main.hs
+Apps/orc-1.2.1.4/src/Control/Concurrent/Hierarchical.hs
+Apps/pit-0.3.1/src/Pit.hs
+Apps/olwrapper-0.4.1/src/Main.hs
+Apps/pretty-show-1.6.8.2/Text/Show/PrettyVal.hs
+Apps/pandoc-1.14.0.4/man/make-pandoc-man-pages.hs
+Apps/packunused-0.1.1.4/packunused.hs
+Apps/pandoc-csv2table-1.0.1/src/Text/Table/Helper.hs
+Apps/parconc-examples-0.3.5/AccelerateCompat.hs
+Apps/peg-0.2/Peg.hs
+Apps/preSrc/Tokens.x
+Apps/pipeclip-0.1.0.1/pipeclip.hs
+Apps/phybin-0.3/Bio/Phylogeny/PhyBin/CoreTypes.hs
+Apps/piet-0.1/sources/Language/Piet/Types.hs
+Apps/pdf-toolbox-viewer-0.0.3.3/compat/Prelude.hs
+Apps/postgresql-orm-0.3.2/Data/GetField.hs
+Apps/src/Language/Java/Paragon/Lexer.x
+Apps/pandoc-citeproc-0.7.2/src/Text/CSL/Data.hs
+Apps/rehoo-0.3.1/Main.hs
+Apps/rasterific-svg-0.2.3.1/exec-src/svgrender.hs
+Apps/reactive-thread-0.3.2.1/Control/Concurrent/STM/TEvent.hs
+Apps/puzzle-draw-0.1.0.4/src/Diagrams/Puzzles/CmdLine.hs
+Apps/randfile-0.1.0.0/Stat.hs
+Apps/rws-0.1.1.2/src/Ethernet.hs
+Apps/puzzle-draw-cmdline-0.1.0.4/src/tools/drawpuzzle.hs
+Apps/pushme-1.5.0/Main.hs
+Apps/reserve-0.1.1/src/Interpreter.hs
+Apps/qudb-0.0.1/dist/build/qudb/qudb-tmp/Database/QUDB/Parser.hs
+Apps/puffytools-0.0.0.1/src/PuffyTools/Journal.hs
+Apps/riot-1.20080618/Riot/Locale.hs
+Apps/rethinkdb-2.0.0.0/Database/RethinkDB/Datum.hs
+Apps/roshask-0.2.1/Tests/ServiceClientTests/ServiceClientTest.hs
+Apps/treeviz-1.0.0/src/Main.hs
+Apps/twidge-1.1.2/Commands/Update.hs
+Apps/tup-functor-0.3.0.0/Data/Tup/Concat.hs
+Apps/tttool-1.4.0.2/src/BakedVector.hs
+Apps/src/Tip/Parser/LexTIP.x
+Apps/taffybar-0.4.5/src/System/Taffybar/SimpleClock.hs
+Apps/tip-haskell-frontend-0.1.1/src/Tip/Compile.hs
+Apps/src/TigerScanner.x
+Apps/todos-0.5.3.2/Todos/Default.hs
+Apps/timberc-1.0.3/dist/build/timberc/timberc-tmp/Parser.hs
+Apps/toysolver-0.3.0/src/ToySolver/Arith/Simplex2.hs
+Apps/xml-to-json-2.0.1/src/Text/XML/JSON/XmlToJson.hs
+Apps/unlambda-0.1.4.1/Language/Unlambda.hs
+Apps/xmonad-0.11.1/Main.hs
+Apps/xmobar-0.23.1/src/Bitmap.hs
+Apps/uhttpc-0.1.0.0/Network/HTTP/MicroClient.hs
+Apps/wordsetdiff-0.0.3.1/Text/WordSetDiff/Main.hs
+Apps/xmonad-bluetilebranch-0.9.1.4/Main.hs
+Apps/wai-app-static-3.1.0/WaiAppStatic/CmdLine.hs
+Apps/vk-posix-pty-0.2.1/System/Posix/Pty.hs
+Apps/wai-handler-devel-2.0.0.2/Network/Wai/Handler/DevelServer/Compat.hs
+Apps/vado-0.0.5/src/System/Process/Vado.hs
+Apps/vcsgui-0.1.2.0/src/VCSGui/Git/Log.hs
+Apps/uuagc-0.9.52.1/Setup.hs
+Apps/src/ehc/Base/Common.chs
+Apps/yi-0.12.0/src/library/System/CanonicalizePath.hs
+Apps/YesodDsl/Lexer.x
+Apps/yeganesh-2.5/Catch.hs
+Apps/zeroth-2009.6.23.3/Language/Haskell/TH/ZeroTH/GetOpt.hs
+Apps/ztail-1.1/Main.hs
+Apps/yet-another-logger-0.2.3.1/src/System/Logger/Backend/ColorOption.hs
+Apps/yst-0.5.0.3/Yst/Build.hs
