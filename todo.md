@@ -23,10 +23,15 @@ http://trac.haskell.org/haskell-src-exts/ticket/27
 - glob lib for shell cmd
 
 ##todo: 
-- [x] get extensions
-- [x] finish monad practice
+- [ ] review & clean up
+  - [ ] organize & document repo
+  - [ ] cis 194
+  - [ ] generate log
+- [ ] plan monad practice
+  - [ ] papers
+  - [ ] books/tutorials
+  - [ ] exercises
 - [ ] finish partition
 - [ ] get list of pop lib
-- [ ] see how unsafe affects type sys
+- [ ] profile strict code vs non-strict
 - [ ] automatic github issue tracking
-- [ ] Log: time command names
