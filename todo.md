@@ -28,6 +28,8 @@ http://trac.haskell.org/haskell-src-exts/ticket/27
   - [ ] cis 194
   - [ ] generate log
 - [ ] plan monad practice
+  - [ ] pld reading
+  - [ ] start real world h
   - [ ] papers
   - [ ] books/tutorials
   - [ ] exercises
