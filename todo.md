@@ -32,6 +32,9 @@ http://trac.haskell.org/haskell-src-exts/ticket/27
   - [ ] books/tutorials
   - [ ] exercises
 - [ ] finish partition
+  - [ ] too many open files
+  - [ ] cpphs options
 - [ ] get list of pop lib
 - [ ] profile strict code vs non-strict
 - [ ] automatic github issue tracking
+- [ ] look @ paper
