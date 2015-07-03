@@ -27,9 +27,9 @@ http://trac.haskell.org/haskell-src-exts/ticket/27
   - [ ] organize & document repo
   - [ ] cis 194
   - [ ] generate log
-- [ ] plan monad practice
+- [ ] monad practice
   - [ ] pld reading
-  - [ ] start real world h
+  - [ ] start real world
   - [ ] papers
   - [ ] books/tutorials
   - [ ] exercises
@@ -39,4 +39,4 @@ http://trac.haskell.org/haskell-src-exts/ticket/27
 - [ ] get list of pop lib
 - [ ] profile strict code vs non-strict
 - [ ] automatic github issue tracking
-- [ ] look @ paper
+- [x] look @ paper
