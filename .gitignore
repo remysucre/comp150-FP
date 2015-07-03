@@ -8,4 +8,5 @@ cabal-dev
 *.swp
 bin/
 Final/files
-benchmark/GetApp/Apps/
+benchmark/Apps/
+benchmark/strictapps/

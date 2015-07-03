@@ -1,6 +1,0 @@
--------------
---- Maybe ---
--------------
-defn maybe : prop -> prop
-   | nothing = {a} maybe a
-   | just = {a} a -> maybe a

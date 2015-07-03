@@ -1,9 +1,0 @@
-#include <list.ncc>
-
----------------
--- builtins ---
----------------
-defn char : prop
-
-defn string : prop
-  as list char

@@ -1,3 +1,5 @@
+-- Search named directory for .hs source files
+
 import System.FilePath.Find
 import System.Environment 
 import Data.Functor

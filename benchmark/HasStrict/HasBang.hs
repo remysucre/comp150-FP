@@ -9,9 +9,14 @@ import Data.Functor
 import Control.Applicative
 import Data.List
 import FindHs
-import GetExtns
+--import GetExtns
 
-extns = ["ViewPatterns","TypeOperators","TypeFamilies","TupleSections","TemplateHaskell","StandaloneDeriving","ScopedTypeVariables","Safe","RecordWildCards","PackageImports","NPlusKPatterns","NamedFieldPuns","MultiWayIf","MultiParamTypeClasses","Malformed","LambdaCase","GADTs","FunctionalDependencies","ExplicitForAll","ExistentialQuantification","DataKinds"]
+main = do 
+    fp <- head <$> getArgs
+    result <- hasBang fp
+    putStrLn $ show $ result
+
+extns = ["CPP", "DefaultSignatures", "MagicHash", "BangPatterns", "TypeSynonymInstances", "FlexibleInstances", "InstanceSigs", "FlexibleContexts", "ViewPatterns","TypeOperators","TypeFamilies","TupleSections","TemplateHaskell","StandaloneDeriving","ScopedTypeVariables","Safe","RecordWildCards","PackageImports","NPlusKPatterns","NamedFieldPuns","MultiWayIf","MultiParamTypeClasses","Malformed","LambdaCase","GADTs","FunctionalDependencies","ExplicitForAll","ExistentialQuantification","DataKinds"]
 
 hasBang :: String -> IO Bool
 hasBang filePath = do 
@@ -41,10 +46,11 @@ hasBangPat (p:ps) = case p of
                         _          -> hasBangPat ps
 
 --getModule :: String -> String -> Module
-getModule extns filePath program = fromParseResult $ parseFileContentsWithMode mode program
+--getModule extns filePath program = fromParseResult $ parseFileContentsWithMode mode program
+getModule extns filePath program = fromParseResult $ parseFileContentsWithMode mode [if "#" `isPrefixOf` x then "" else x | x <- program]
                              where
                                       bangPatternsExt = map parseExtension extns
-                                      mode = ParseMode filePath Haskell2010 bangPatternsExt True True Nothing
+                                      mode = ParseMode filePath Haskell2010 bangPatternsExt False False Nothing
 {-
 DirHasStrict dir
 -- call shell to get a list of paths

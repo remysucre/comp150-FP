@@ -1,3 +1,5 @@
+-- Looks for .hs files
+
 module FindHs (findHs) where
 
 import System.FilePath.Find
