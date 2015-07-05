@@ -7,7 +7,7 @@ import Control.Monad
 import Data.Functor
 import Control.Applicative
 import Data.List
-import FindHs
+import System.FilePath.Find
 import HasBang
 
 anyM :: Monad m => (a -> m Bool) -> [a] -> m Bool
@@ -18,6 +18,10 @@ hasStrict :: FilePath -> IO Bool
 hasStrict fp = do
     srcs <- findHs fp
     anyM hasBang srcs
+
+findHs = System.FilePath.Find.find always (extension ==? ".hs") 
+
+-- test: comment out module declaration to test
 
 main = do
     fp <- head <$> getArgs
