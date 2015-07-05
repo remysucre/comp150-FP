@@ -1,4 +1,4 @@
-module HasBang (hasBang) where
+module HasStrict.HasBang (hasBang) where
 
 --import System.IO.Unsafe
 import Language.Haskell.Exts

@@ -1,4 +1,4 @@
-module HasStrict (hasStrict) where
+module HasStrict.HasStrict (hasStrict) where
 
 import System.FilePath.Find
 import System.Environment 
@@ -8,7 +8,7 @@ import Data.Functor
 import Control.Applicative
 import Data.List
 import System.FilePath.Find
-import HasBang
+import HasStrict.HasBang
 
 anyM :: Monad m => (a -> m Bool) -> [a] -> m Bool
 anyM p [] = return False

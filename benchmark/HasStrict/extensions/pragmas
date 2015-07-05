@@ -1,0 +1,509 @@
+[CarneadesIntoDung-1.0/src/Main.hs] (70:30): RecordWildCards is not enabled
+[Dung-1.1/src/Main.hs] (72:30): RecordWildCards is not enabled
+[GenI-0.24.3/src/NLP/GenI/Configuration.hs] (160:7): ExplicitForAll or TypeOperators is not enabled
+[BCMtools-0.1.1/src/BCM/DiskMatrix.hs] (45:52): MultiParamTypeClasses is not enabled
+[DynamicTimeWarp-0.1.0.0/src/Data/Vector/DynamicTimeWarping.hs] (13:31): MultiParamTypeClasses is not enabled
+[GlomeView-0.3/TestScene.hs] (73:21): ScopedTypeVariables is not enabled
+[BiobaseTrainingData-0.1.2.3/Biobase/TrainingData/Filter.hs] (21:51): RecordWildCards is not enabled
+[DSTM-0.1.2/Bomberman/Bomberman.hs] (150:25): ScopedTypeVariables is not enabled
+[GPipe-Examples-0.1/src/04_brass_sphere.hs] (58:9): TypeFamilies is not enabled
+[DnaProteinAlignment-0.0.0.1/DnaProteinAlignment.hs] (78:12): RecordWildCards is not enabled
+[DefendTheKing-0.3.1/src/GameLogic.hs] (26:29): MultiParamTypeClasses is not enabled
+[DSH-0.12.0.1/examples/Example01.hs] (33:29): ViewPatterns is not enabled
+[Combinatorrent-0.3.2/src/Process/ChokeMgr.hs] (308:13): TupleSections is not enabled
+[Adaptive-Blaisorblade-0.23/Control/Monad/Adaptive/CircularList.hs] (18:28): MultiParamTypeClasses is not enabled
+[CSPM-cspm-0.8.0.0/src/CSPM/Lua.hs] (86:22): RecordWildCards is not enabled
+[Dao-0.1.0.2/src/Dao/Binary.hs] (268:50): MultiParamTypeClasses is not enabled
+[AERN-Real-Double-2011.1.0.2/src/Numeric/AERN/DoubleBasis/Interval.hs] (476:42): MultiParamTypeClasses is not enabled
+[Adaptive-0.23/Control/Monad/Adaptive/CircularList.hs] (18:28): MultiParamTypeClasses is not enabled
+[BNFC-2.8/runtime/Data/Matrix/Quad.hs] (14:22): DataKinds is not enabled
+[Fungi-1.0.6/src/Data/Tuple/Map.hs] (11:37): MultiParamTypeClasses is not enabled
+[Encode-1.3.7/Encode/ExPlus.hs] (122:53): MultiParamTypeClasses is not enabled
+[AERN-Basics-2011.1.0.1/src/Numeric/AERN/Basics/Consistency.hs] (29:5): TypeFamilies is not enabled
+[DAG-Tournament-0.1/src/main.hs] (71:27): RecordWildCards is not enabled
+[GenSmsPdu-0.1/src/GenSmsPdu.hs] (122:42): MultiParamTypeClasses is not enabled
+[Crypto-4.2.5.1/WordListTest.hs] (20:35): ScopedTypeVariables is not enabled
+[CMCompare-0.0.1.5/CMCompare.hs] (110:11): RecordWildCards is not enabled
+[FComp-1.0.2/src/HarmTrace/HAnTree/HAnParser.hs] (19:36): MultiParamTypeClasses is not enabled
+[FTPLine-1.4.0.0/Main.hs] (61:11): MultiParamTypeClasses is not enabled
+[CurryDB-0.1.1.0/Database/Curry/Storage.hs] (43:32): RecordWildCards is not enabled
+[HTicTacToe-0.2/GameState.hs] (78:36): MultiParamTypeClasses is not enabled
+[Holumbus-MapReduce-0.1.1/Examples/MapReduce/Crawler/Crawl.hs] (88:6): MultiParamTypeClasses is not enabled
+[HarmTrace-2.2.0/src/HarmTrace/Audio/Annotate.hs] (82:34): ExplicitForAll or TypeOperators is not enabled
+[Hedi-0.1.1/Editor.hs] (48:35): MultiParamTypeClasses is not enabled
+[HackMail-0.0.1/HackMail/Data/Deliverable.hs] (69:1): GADTs is not enabled
+[Pugs-6.2.13.20130611/src/Pugs/AST/Eval.hs] (24:1): TypeOperators is not enabled
+[MuCheck-SmallCheck-0.3.0.4/src/Test/MuCheck/TestAdapter/SmallCheck.hs] (13:1): StandaloneDeriving is not enabled
+[Nomyx-0.7.6/src/Main.hs] (124:53): ScopedTypeVariables is not enabled
+[MuCheck-QuickCheck-0.3.0.4/src/Test/MuCheck/TestAdapter/QuickCheck.hs] (10:1): StandaloneDeriving is not enabled
+[HPath-0.0.2/HPath/Path.hs] (21:1): StandaloneDeriving is not enabled
+[Nussinov78-0.1.0.0/BioInf/GAPlike.hs] (25:25): PackageImports is not enabled
+[INblobs-0.1.1/src/CommonUI.hs] (40:51): MultiParamTypeClasses is not enabled
+[HNM-0.1.2/HNM/WLAN.hs] (19:1): TypeOperators is not enabled
+[GraphHammer-examples-0.3/src/GraphHammer/ClusteringCoefficient.hs] (38:1): TypeOperators is not enabled
+[HSFFIG-1.1.3/HSFFIG/FieldAccess.hs] (52:36): FunctionalDependencies is not enabled
+[HTab-1.6.3/src/HTab/Statistics.hs] (55:64): ExplicitForAll or TypeOperators is not enabled
+[PageIO-0.0.3/src/Text/PageIO/Extract.hs] (52:29): NamedFieldPuns is not enabled
+[HaRe-0.7.2.8/src/Language/Haskell/Refact/Refactoring/DupDef.hs] (88:9): ScopedTypeVariables is not enabled
+[MiniAgda-0.2014.9.12/Abstract.hs] (834:32): NamedFieldPuns is not enabled
+[HaVSA-0.1.0.2/src/AI/VersionSpaces.hs] (65:1): GADTs is not enabled
+[MazesOfMonad-1.0.9/src/MoresmauJP/Core/Screen.hs] (36:62): MultiParamTypeClasses is not enabled
+[MuCheck-Hspec-0.3.0.4/src/Test/MuCheck/TestAdapter/Hspec.hs] (10:1): StandaloneDeriving is not enabled
+[PropLogic-0.9.0.4/PropLogicCore.hs] (119:39): FunctionalDependencies is not enabled
+[MC-Fold-DP-0.1.1.0/BioInf/MCFoldDP.hs] (99:5): TupleSections is not enabled
+[Hs2lib-0.6.3/Tests/Exec/Default.hs] (43:1): Malformed context: FlexibleContexts is not enabled
+[L-seed-0.2/src/Lseed/Geometry.hs] (72:1): ExplicitForAll or TypeOperators is not enabled
+[Haschoo-0.1.2/Haschoo/Evaluator/Standard/Control.hs] (70:1): ExplicitForAll or TypeOperators is not enabled
+[MuCheck-HUnit-0.3.0.4/src/Test/MuCheck/TestAdapter/HUnit.hs] (10:1): StandaloneDeriving is not enabled
+[Ninjas-0.1.0.0/src/Anim.hs] (29:42): RecordWildCards is not enabled
+[LambdaHack-0.4.101.1/Game/LambdaHack/Atomic/BroadcastAtomicWrite.hs] (38:23): ExplicitForAll or TypeOperators is not enabled
+[PTQ-0.0.7/misc/Test.hs] (27:1): GADTs is not enabled
+[Holumbus-Distribution-0.1.1/source/Holumbus/Distribution/DNode/Base.hs] (867:31): ScopedTypeVariables is not enabled
+[NanoProlog-0.3/src/Language/Prolog/NanoProlog/Parser.hs] (23:15): MultiParamTypeClasses is not enabled
+[NXTDSL-0.4/NXT/Core.hs] (194:8): ExplicitForAll or TypeOperators is not enabled
+[Pollutocracy-1.0/ArrayUtils.hs] (7:51): MultiParamTypeClasses is not enabled
+[Network-NineP-0.3.0/Control/Monad/EmbedIO.hs] (27:9): TypeFamilies is not enabled
+[SGdemo-1.1/SGdemo.hs] (159:68): MultiParamTypeClasses is not enabled
+[RNAwolf-0.4.0.0/BioInf/Keys.hs] (201:62): TupleSections is not enabled
+[RNAdesign-0.1.2.2/BioInf/RNAdesign/Assignment.hs] (45:44): ScopedTypeVariables is not enabled
+[SableCC2Hs-0.0.1.0/src/SableCC/AstDefinition.hs] (62:46): RecordWildCards is not enabled
+[SuffixStructures-0.0.1.0/Data/SuffixStructure/ESA.hs] (59:10): RecordWildCards is not enabled
+[Snusmumrik-0.0.1/DB.hs] (123:47): MultiParamTypeClasses is not enabled
+[ShellCheck-0.3.8/ShellCheck/Analytics.hs] (3418:1): TemplateHaskell is not enabled
+[Webrexp-1.1.2/Text/Webrexp/DirectoryNode.hs] (115:28): ScopedTypeVariables is not enabled
+[Tablify-0.8.2/src/CSV.hs] (10:1): ExplicitForAll or TypeOperators is not enabled
+[SoccerFunGL-0.5.1/SoccerFun/UI/GL/PlayTape.hs] (12:1): TemplateHaskell is not enabled
+[YamlReference-0.9.3/Text/Yaml/Reference.hs] (629:52): FunctionalDependencies is not enabled
+[YACPong-0.1/Draw.hs] (102:56): MultiParamTypeClasses is not enabled
+[ScratchFs-0.1.0.2/src/HistoryDb.hs] (93:68): ScopedTypeVariables is not enabled
+[Saturnin-0.1.0.2/HLint.hs] (5:25): PackageImports is not enabled
+[ReadArgs-1.2.2/ReadArgs.hs] (115:1): Malformed context: FlexibleContexts is not enabled
+[Top-1.7/src/Top/Constraint/Equality.hs] (43:12): MultiParamTypeClasses is not enabled
+[RNAdraw-0.2.0.1/BioInf/Secondary/Draw/DotBracket.hs] (49:13): RecordWildCards is not enabled
+[TypeClass-0.2.1/src/Main.hs] (65:42): NamedFieldPuns is not enabled
+[WashNGo-2.12.0.1/WASH/CGI/SubmitXX.hs] (12:34): FunctionalDependencies is not enabled
+[SourceGraph-0.7.0.6/Parsing/Types.hs] (210:5): TypeFamilies is not enabled
+[bamboo-launcher-2010.2.25/src/Launcher.hs] (87:30): NamedFieldPuns is not enabled
+[bidirectionalization-combined-0.1.0.1/BUtil.hs] (39:1): ExplicitForAll or TypeOperators is not enabled
+[b9-0.5.7/src/lib/B9/Content/AST.hs] (80:14): MultiParamTypeClasses is not enabled
+[bustle-0.5.0/Bustle/Loader/Pcap.hs] (76:20): MultiParamTypeClasses is not enabled
+[bake-0.3/src/Development/Bake/Core/Args.hs] (80:81): ExplicitForAll or TypeOperators is not enabled
+[brillig-0.3.1/brillig/brillig.hs] (133:20): RecordWildCards is not enabled
+[c2hs-0.25.2/src/C2HS/CHS.hs] (141:1): StandaloneDeriving is not enabled
+[bkr-0.1.2/src/System/Bkr/BkrLocalFile.hs] (55:71): ScopedTypeVariables is not enabled
+[cabal-audit-0.3.0.0/src/Audit.hs] (24:9): TupleSections is not enabled
+[bein-0.3.3/Bein/Commands.hs] (46:45): MultiParamTypeClasses is not enabled
+[blip-0.2.1/src/Assemble.hs] (60:32): RecordWildCards is not enabled
+[bdo-1.0.1/src/Bdo.hs] (76:43): ViewPatterns is not enabled
+[bluetile-0.6/src/Config.hs] (136:103): ScopedTypeVariables is not enabled
+[blogination-0.5/library/Text/Blogination.hs] (80:13): RecordWildCards is not enabled
+[barchart-0.1.1.1/src/Graphics/BarChart/Parser/Criterion.hs] (42:41): RecordWildCards is not enabled
+[breve-0.3.0.0/src/Main.hs] (17:15): NamedFieldPuns is not enabled
+[buildbox-tools-1.5.3.1/results/Main.hs] (48:17): ScopedTypeVariables is not enabled
+[cabal-db-0.1.12/Src/Database.hs] (56:60): ViewPatterns is not enabled
+[buildwrapper-0.9.1/src/Language/Haskell/BuildWrapper/Base.hs] (596:42): NamedFieldPuns is not enabled
+[cabal-test-bin-0.1.5/Main.hs] (19:37): ScopedTypeVariables is not enabled
+[castle-0.1.0.1/Castle.hs] (74:15): RecordWildCards is not enabled
+[cake3-0.6.0/src/Development/Cake3/Ext/UrWeb.hs] (90:31): MultiParamTypeClasses is not enabled
+[cltw-1.1.4/src/Cltw/Opts.hs] (66:43): MultiParamTypeClasses is not enabled
+[casui-0.3/Casui/CAS.hs] (378:34): MultiParamTypeClasses is not enabled
+[cao-0.1.1/src/Language/CAO/Analysis/CFG.hs] (325:38): ViewPatterns is not enabled
+[cabal2nix-1.73/src/Cabal2Nix/Normalize.hs] (14:32): RecordWildCards is not enabled
+[claferIG-0.3.10/src/Language/Clafer/IG/AlloyIGInterface.hs] (48:1): StandaloneDeriving is not enabled
+[cairo-appbase-0.4/src/cairo-appbase.hs] (45:11): ExplicitForAll or TypeOperators is not enabled
+[cmathml3-0.1/Data/ContentMathML3/NSToS.hs] (105:28): ExplicitForAll or TypeOperators is not enabled
+[clippings-0.1.3/examples/clippings2tsv/Main.hs] (23:21): RecordWildCards is not enabled
+[cfipu-1.1.0.4/src/Cfipu.hs] (470:57): ExplicitForAll or TypeOperators is not enabled
+[cless-0.3.0.0/src/Main.hs] (152:17): RecordWildCards is not enabled
+[cmdargs-browser-0.1.3/Main.hs] (88:9): ScopedTypeVariables is not enabled
+[cfopu-1.0.0/Cfopu.hs] (459:57): ExplicitForAll or TypeOperators is not enabled
+[cnc-spec-compiler-0.2.0.1/Intel/Cnc/BenchSynth.hs] (181:86): ScopedTypeVariables is not enabled
+[cognimeta-utils-0.1.2/src/Cgm/Control/Concurrent/MVar.hs] (40:1): TupleSections is not enabled
+[cabal2ghci-0.0.1.1/cabal2ghci.hs] (33:10): RecordWildCards is not enabled
+[cg-0.0.9.0/CG/Parser.hs] (30:18): RecordWildCards is not enabled
+[cubical-0.2.0/CTT.hs] (684:1): TupleSections is not enabled
+[concraft-hr-0.1.0.2/src/NLP/Concraft/Croatian/Request.hs] (37:17): RecordWildCards is not enabled
+[dash-haskell-1.1.0.1/src/Haddock/Sqlite.hs] (61:28): ScopedTypeVariables is not enabled
+[concraft-pl-0.7.4/src/NLP/Concraft/Polish/Format/Plain.hs] (135:19): RecordWildCards is not enabled
+[dedukti-1.1.4/Dedukti/Analysis/Scope.hs] (63:33): ExplicitForAll or TypeOperators is not enabled
+[darcs-benchmark-0.1.9/source/Benchmark.hs] (57:60): ScopedTypeVariables is not enabled
+[darkplaces-rcon-util-0.1.1/src/DRcon/ConfigFile.hs] (37:48): MultiParamTypeClasses is not enabled
+[ddc-tools-0.4.1.3/src/ddci-core/DDCI/Core/Command/Eval.hs] (48:25): ScopedTypeVariables is not enabled
+[court-0.1.0.0/src/Court/PluginManager.hs] (66:37): ScopedTypeVariables is not enabled
+[cpuperf-0.1.1/Shell.hs] (83:43): MultiParamTypeClasses is not enabled
+[darcs2dot-0.1.0.1/darcs2dot.hs] (27:1): Malformed context: FlexibleContexts is not enabled
+[crackNum-1.3/Data/Numbers/CrackNum.hs] (94:20): NamedFieldPuns is not enabled
+[deeplearning-hs-0.1.0.2/DeepLearning/ConvNet.hs] (59:67): FunctionalDependencies is not enabled
+[dbmigrations-0.8.2/src/Database/Schema/Migrations/Filesystem.hs] (89:61): ScopedTypeVariables is not enabled
+[cpsa-2.5.0/src/CPSA/Annotations/Annotations.hs] (29:50): MultiParamTypeClasses is not enabled
+[daemons-0.2.1/examples/Name.hs] (40:30): FunctionalDependencies is not enabled
+[detrospector-0.3/Detrospector/Modes/Neolog.hs] (17:17): NamedFieldPuns is not enabled
+[cuda-0.6.6.2/examples/src/deviceQueryDrv/DeviceQuery.hs] (34:33): RecordWildCards is not enabled
+[derive-2.5.22/Data/Derive/DSL/Apply.hs] (46:34): ViewPatterns is not enabled
+[datalog-0.2.0.2/src/Database/Datalog/Evaluate.hs] (91:45): ExplicitForAll or TypeOperators is not enabled
+[darcs-monitor-0.4.2/Config.hs] (38:31): MultiParamTypeClasses is not enabled
+[dockercook-0.4.0.0/src/lib/Cook/Build.hs] (73:82): ViewPatterns is not enabled
+[doctest-0.10.0/ghci-wrapper/src/Language/Haskell/GhciWrapper.hs] (48:12): RecordWildCards is not enabled
+[dao-0.1.0.1/src/Dao/Binary.hs] (268:50): MultiParamTypeClasses is not enabled
+[ddci-core-0.2.1.2/DDCI/Core/Transform.hs] (46:1): Malformed context: FlexibleContexts is not enabled
+[dnscache-1.1.0/Network/DnsCache.hs] (115:1): GADTs is not enabled
+[debian-3.87.2/Debian/Apt/Dependencies.hs] (181:1): ExplicitForAll or TypeOperators is not enabled
+[dotfs-0.1.1.3/System/DotFS/Core/ExpressionParsers.hs] (46:1): ExplicitForAll or TypeOperators is not enabled
+[duplo-1.8.1/src/CLI.hs] (139:3): ScopedTypeVariables is not enabled
+[epubname-2.3.2/src/EpubName/Format/Anonymous.hs] (20:42): MultiParamTypeClasses is not enabled
+[eddie-1.0.0/eddie.hs] (59:1): GADTs is not enabled
+[editor-open-0.6.0.0/src/Text/Editor.hs] (272:1): LambdaCase is not enabled
+[elm-get-0.1.3/src/Utils/Commands.hs] (22:46): MultiParamTypeClasses is not enabled
+[fay-0.23.1.6/Setup.hs] (6:15): PackageImports is not enabled
+[free-theorems-counterexamples-0.3.1.0/Language/Haskell/FreeTheorems/Variations/CounterExamples/Parser/ParseType.hs] (63:40): MultiParamTypeClasses is not enabled
+[ecma262-0.0.0/src/Language/JavaScript/Interpret.hs] (59:32): FunctionalDependencies is not enabled
+[egison-3.5.6/hs-src/Language/Egison/Core.hs] (521:68): ViewPatterns is not enabled
+[edit-lenses-demo-0.1/Data/Module/String.hs] (21:9): TypeFamilies is not enabled
+[dropsolve-0.1.2.1/dropsolve.hs] (207:30): ScopedTypeVariables is not enabled
+[extractelf-0.1.0.0/extractelf.hs] (46:24): RecordWildCards is not enabled
+[frag-1.1.2/src/AFRP.hs] (818:1): NPlusKPatterns is not enabled
+[epub-tools-2.7/src/EpubTools/EpubMeta/Edit.hs] (30:39): ScopedTypeVariables is not enabled
+[fix-imports-1.0.4/src/FixImports.hs] (83:62): ScopedTypeVariables is not enabled
+[fixhs-0.1.4/src/Data/Coparser.hs] (37:44): FunctionalDependencies is not enabled
+[extemp-0.0.1/Extemp.hs] (41:1): StandaloneDeriving is not enabled
+[explore-0.0.7.2/Main.hs] (42:27): ScopedTypeVariables is not enabled
+[email-validator-0.0.3/src/Main.hs] (109:8): RecordWildCards is not enabled
+[falling-turnip-0.1.0.0/Main.hs] (53:3): TupleSections is not enabled
+[exherbo-cabal-0.1.0.3/src/ExRender.hs] (29:1): TemplateHaskell is not enabled
+[formal-0.1.0/src/hs/Formal/Javascript/Backend.hs] (45:39): FunctionalDependencies is not enabled
+[elm-package-0.5/src/Catalog.hs] (31:8): MultiParamTypeClasses is not enabled
+[elm-compiler-0.15/src/Elm/Compiler.hs] (39:8): MultiParamTypeClasses is not enabled
+[dsmc-tools-0.1.0.1/src/Caster.hs] (201:15): RecordWildCards is not enabled
+[elm-make-0.1.2/src/CrawlPackage.hs] (32:8): MultiParamTypeClasses is not enabled
+[flo-0.1/src/Development/Flo.hs] (145:18): RecordWildCards is not enabled
+[embroidery-0.1/Codec/Binary/Embroidery.hs] (45:39): ScopedTypeVariables is not enabled
+[fast-tags-1.1.0/src/FastTags.hs] (175:1): ExplicitForAll or TypeOperators is not enabled
+[flowdock-api-0.1.0.0/src/Flowdock/Push.hs] (87:22): RecordWildCards is not enabled
+[free-theorems-webui-0.2.1.1/default_config/Paths.hs] (15:33): ScopedTypeVariables is not enabled
+[factory-0.2.1.1/src/Factory/Test/Performance/Pi.hs] (75:1): ExplicitForAll is not enabled
+[ghc-gc-tune-0.3/ghc-gc-tune.hs] (215:40): ScopedTypeVariables is not enabled
+[github-backup-1.20150618/Common.hs] (8:14): PackageImports is not enabled
+[ggtsTC-0.5/src/ErrMsg.hs] (52:28): FunctionalDependencies is not enabled
+[git-repair-1.20150106/Common.hs] (8:14): PackageImports is not enabled
+[gist-0.1/gist.hs] (25:18): RecordWildCards is not enabled
+[garepinoh-0.9.9.2.1/code/Console/Garepinoh/Preludes.hs] (28:16): LambdaCase is not enabled
+[ghc-events-analyze-0.2.1/src/GHC/RTS/Events/Analyze/Analysis.hs] (48:22): RecordWildCards is not enabled
+[gitcache-0.2/src/gitcache.hs] (18:21): PackageImports is not enabled
+[gitit-0.10.7/Network/Gitit/Authentication.hs] (444:40): ScopedTypeVariables is not enabled
+[glome-hs-0.61/TestScene.hs] (66:21): ScopedTypeVariables is not enabled
+[git-vogue-0.2.0.1/lib/Git/Vogue/Types.hs] (70:17): RecordWildCards is not enabled
+[ghc-make-0.3.2/src/Arguments.hs] (71:22): RecordWildCards is not enabled
+[ghcid-0.5/src/Ghcid.hs] (86:23): RecordWildCards is not enabled
+[h-booru-0.3.0.0/src/HBooru/Network.hs] (41:1): TemplateHaskell is not enabled
+[ghclive-0.1.0.2/src/Network/Web/GHCLive/Display.hs] (86:1): TypeOperators is not enabled
+[git-checklist-1.0.0.0/src/Main.hs] (30:41): ScopedTypeVariables is not enabled
+[ghc-core-0.5.6/ghc-core.hs] (190:48): ScopedTypeVariables is not enabled
+[ghc-pkg-autofix-0.2.0.1/Main.hs] (50:28): NamedFieldPuns is not enabled
+[ginsu-0.8.1.1/Boolean/Algebra.hs] (206:1): Malformed context: FlexibleContexts is not enabled
+[ght-0.4.0.1/Git/Pack.hs] (151:33): RecordWildCards is not enabled
+[ghc-mod-5.2.1.2/Language/Haskell/GhcMod/CabalApi.hs] (46:23): MultiParamTypeClasses is not enabled
+[geniserver-0.24.1.1/src/NLP/GenI/Server.hs] (116:26): ViewPatterns is not enabled
+[gps2htmlReport-0.3.1/Data/GPS/Gps2HtmlReport/Main.hs] (54:30): RecordWildCards is not enabled
+[google-html5-slide-2011.0/HTML5Slide.hs] (41:9): NamedFieldPuns is not enabled
+[getemx-0.1/Emx/Emx.hs] (60:116): ViewPatterns is not enabled
+[ghc-parmake-0.1.8/src/GHC/ParMake/BuildPlan.hs] (98:37): NamedFieldPuns is not enabled
+[goatee-gtk-0.3.0/src/Game/Goatee/Ui/Gtk/Actions.hs] (126:26): MultiParamTypeClasses is not enabled
+[gloss-examples-1.9.4.1/picture/Occlusion/World.hs] (128:25): ScopedTypeVariables is not enabled
+[graph-rewriting-ski-0.6.4/Common/GL.hs] (9:1): TemplateHaskell is not enabled
+[geni-gui-0.24.1/src/NLP/GenI/BuilderGui.hs] (48:5): ExplicitForAll or TypeOperators is not enabled
+[glue-0.1.0.0/src/Glue/Batcher.hs] (43:64): MultiParamTypeClasses is not enabled
+[ghc-man-completion-0.0.0.3/Parser/Man/ManPage.hs] (14:34): MultiParamTypeClasses is not enabled
+[gmndl-0.4.0.2/Complex.hs] (110:37): MultiParamTypeClasses is not enabled
+[fst-0.10.0.1/FST/Complete.hs] (21:5): TupleSections is not enabled
+[gearbox-1.0.0.3/GearBox.hs] (39:1): TypeOperators is not enabled
+[geni-util-0.24.1.1/NLP/GenI/Report.hs] (90:3): TupleSections is not enabled
+[gact-0.2/src/GACT.hs] (5:17): PackageImports is not enabled
+[ghc-prof-flamegraph-0.1.2.1/ghc-prof-flamegraph.hs] (18:26): ScopedTypeVariables is not enabled
+[hackage-proxy-0.3.0.1/HackageProxy.hs] (39:39): RecordWildCards is not enabled
+[halfs-2.0/Halfs/BlockMap.hs] (115:16): MultiParamTypeClasses is not enabled
+[halive-0.1.0.3/exec/Halive.hs] (96:9): LambdaCase is not enabled
+[halma-0.2.0.0/halma.hs] (34:45): TypeFamilies or GADTs is not enabled
+[hPDB-examples-1.2.0.2/examples/CanonicalAxes.hs] (17:42): MultiParamTypeClasses is not enabled
+[haggis-0.1.2.1/src/Text/Haggis/Comments.hs] (68:42): MultiParamTypeClasses is not enabled
+[haskeem-0.7.16/Evaluator.hs] (38:3): MultiParamTypeClasses is not enabled
+[hackage-plot-0.2.1/Main.hs] (36:47): ScopedTypeVariables is not enabled
+[hackage-diff-0.1.0.0/Main.hs] (54:39): ScopedTypeVariables is not enabled
+[haddocset-0.3.2/Documentation/Haddocset.hs] (107:17): RecordWildCards is not enabled
+[haskell-awk-1.1/src/Control/Monad/Trans/OptionParser.hs] (8:14): PackageImports is not enabled
+[haskoin-wallet-0.0.1/Network/Haskoin/Wallet/Store/CoinStatus.hs] (26:1): TemplateHaskell is not enabled
+[haskdeep-0.2.0.1/src/HaskDeep/Computation.hs] (48:26): MultiParamTypeClasses is not enabled
+[hangman-1.0.3/src/main/haskell/Main.hs] (22:27): NamedFieldPuns is not enabled
+[haddock-2.16.0/haddock-api/src/Haddock/GhcUtils.hs] (255:45): ViewPatterns is not enabled
+[haskell-formatter-1.0.0/HLint.hs] (1:15): PackageImports is not enabled
+[handa-gdata-0.7.0.3/src/Network/Google/FusionTables.hs] (178:33): NamedFieldPuns is not enabled
+[haskelldb-flat-1.0.1/Database/HaskellDB/FlatDB.hs] (171:33): MultiParamTypeClasses is not enabled
+[haskell-pdf-presenter-0.2.5/HaskellPdfPresenter.hs] (106:1): TupleSections is not enabled
+[hask-home-2009.3.18/hask-home.hs] (310:47): ScopedTypeVariables is not enabled
+[haskanoid-0.1.4/src/Data/Extra/VectorSpace.hs] (5:42): MultiParamTypeClasses is not enabled
+[hackage-mirror-0.1.0.0/src/Hackage/Mirror.hs] (133:26): RecordWildCards is not enabled
+[haskell-brainfuck-0.1.0.1/src/HaskBF/Eval.hs] (136:1): TupleSections is not enabled
+[hadoop-tools-0.6/src/Main.hs] (175:16): RecordWildCards is not enabled
+[haste-0.1.1/src/Haste/Options.hs] (60:37): ViewPatterns is not enabled
+[hails-0.11.2.1/Hails/Data/Hson.hs] (228:20): MultiParamTypeClasses is not enabled
+[hakyll-convert-0.1.0.0/tools/hakyll-convert.hs] (112:51): ViewPatterns is not enabled
+[haxparse-0.3.1.0/src/HaxParse/AST/TH.hs] (14:61): ViewPatterns is not enabled
+[handa-geodata-0.2.0.1/src/Data/Geometry/LegacyVTK.hs] (121:19): RecordWildCards is not enabled
+[haskell-ftp-0.1.0.1/Ftp.hs] (10:18): ViewPatterns is not enabled
+[haverer-0.3.0.0/lib/Haverer/Action.hs] (61:63): MultiParamTypeClasses is not enabled
+[hastache-0.6.1/Text/Hastache/Context.hs] (50:43): ExplicitForAll or TypeOperators is not enabled
+[hosts-server-0.1.1/Main.hs] (44:19): RecordWildCards is not enabled
+[himg-0.1.0.0/src/Graphics/HImg.hs] (34:1): TemplateHaskell is not enabled
+[hemokit-0.6.5/apps/Dump.hs] (123:38): NamedFieldPuns is not enabled
+[hell-2.1/src/Hell/Shell.hs] (132:44): ScopedTypeVariables is not enabled
+[hnetcdf-0.3.0.0/Data/NetCDF/HMatrix.hs] (23:3): TypeFamilies is not enabled
+[hgithub-0.1.0/Network/GitHub.hs] (60:12): RecordWildCards is not enabled
+[hindent-4.5.4/src/HIndent/Comments.hs] (17:18): ExplicitForAll or TypeOperators is not enabled
+[hledger-0.25.1/Hledger/Cli/Add.hs] (91:65): ScopedTypeVariables is not enabled
+[hoe-1.0.1/src/HOE.hs] (115:3): TupleSections is not enabled
+[hi-1.2.0.0/src/Hi/Git.hs] (22:45): ScopedTypeVariables is not enabled
+[hoodle-publish-0.2.0/lib/Hoodle/Publish/PDF.hs] (168:18): RecordWildCards is not enabled
+[hist-pl-0.3.2/tools/hist-pl.hs] (105:13): RecordWildCards is not enabled
+[hoogle-4.2.41/src/Console/Log.hs] (28:16): RecordWildCards is not enabled
+[homplexity-0.4.3.0/Homplexity.hs] (34:1): TemplateHaskell is not enabled
+[hirt-0.0.1.1/Driver.hs] (66:18): RecordWildCards is not enabled
+[hob-0.0.1.0/src/lib/Hob/Context/Types.hs] (103:35): MultiParamTypeClasses is not enabled
+[heapsort-0.1.0/Data/Array/MArray/Heapsort.hs] (37:15): MultiParamTypeClasses is not enabled
+[hoobuddy-0.1.0.1/src/Main.hs] (25:1): StandaloneDeriving is not enabled
+[hlint-1.9.21/data/HLint.hs] (4:15): PackageImports is not enabled
+[himpy-0.5.0/System/Himpy/Output/Riemann.hs] (72:40): ScopedTypeVariables is not enabled
+[hog-0.1.1/src/Main.hs] (61:23): RecordWildCards is not enabled
+[hjs-0.2.1/src/HJS/Interpreter/Interp.hs] (103:55): ScopedTypeVariables is not enabled
+[hopfield-0.1.0.2/apps/Recognize.hs] (150:24): NamedFieldPuns is not enabled
+[hoodle-extra-0.1/exe/networkedit.hs] (61:32): ScopedTypeVariables is not enabled
+[hips-0.1/Hips.hs] (9:14): PackageImports is not enabled
+[hranker-0.1.1/Hranker/CommandLine.hs] (14:45): ExplicitForAll or TypeOperators is not enabled
+[hprotoc-fork-2.0.16.1/Text/ProtocolBuffers/ProtoCompile/Identifiers.hs] (158:35): MultiParamTypeClasses is not enabled
+[hprotoc-2.0.17/Text/ProtocolBuffers/ProtoCompile/Gen.hs] (209:24): RecordWildCards is not enabled
+[hsqml-demo-samples-0.3.3.0/src/OpenGL2.hs] (37:38): ScopedTypeVariables is not enabled
+[hpaste-1.2.0/src/Control/Monad/Catch.hs] (5:36): PackageImports is not enabled
+[hums-0.7.0/src/DirectoryUtils.hs] (50:32): ScopedTypeVariables is not enabled
+[hsqml-demo-morris-0.3.1.0/src/Morris/Main.hs] (73:5): TypeFamilies is not enabled
+[hsqml-morris-0.2.0.0/src/Morris/Main.hs] (94:5): TypeFamilies is not enabled
+[hsx-0.10.5/src/HSX/XMLGenerator.hs] (55:2): TypeFamilies is not enabled
+[hsilop-0.1.1.0/src/Main.hs] (33:46): ViewPatterns is not enabled
+[hulk-0.2.0/src/Hulk/Client.hs] (54:32): ViewPatterns is not enabled
+[htsn-import-0.2.4/src/OptionalConfiguration.hs] (47:1): StandaloneDeriving is not enabled
+[hpaco-0.28.0.5/CommandArgs.hs] (18:1): StandaloneDeriving is not enabled
+[hsbencher-fusion-0.3.15.2/CSVUploader/Main.hs] (241:37): NamedFieldPuns is not enabled
+[hpage-0.12.2/res/help/helpPage.hs] (7:1): TemplateHaskell is not enabled
+[hunt-server-0.3.0.2/src/Hunt/Server/Common.hs] (33:3): ExistentialQuantification is not enabled
+[htune-0.2/main.hs] (29:21): ScopedTypeVariables is not enabled
+[hsdev-0.1.3.4/src/Control/Concurrent/Task.hs] (116:90): MultiParamTypeClasses is not enabled
+[hpack-0.3.2/src/Config.hs] (34:75): ExplicitForAll or TypeOperators is not enabled
+[hubris-0.0.3/Language/Ruby/Hubris.hs] (29:64): ScopedTypeVariables is not enabled
+[hs-logo-0.5.1/src/Diagrams/TwoD/Path/Turtle/Internal.hs] (232:49): MultiParamTypeClasses is not enabled
+[hsprocess-0.3/src/System/Console/HSProcess/Representable.hs] (45:46): ScopedTypeVariables is not enabled
+[htsn-0.1.1/src/OptionalConfiguration.hs] (45:1): StandaloneDeriving is not enabled
+[hstorchat-0.1.1.0/src/Network/HSTorChat/GUI.hs] (55:5): TypeFamilies is not enabled
+[husk-scheme-3.19/hs-src/Language/Scheme/Compiler/Libraries.hs] (357:1): ExplicitForAll or TypeOperators is not enabled
+[json-tools-0.5.0/Utils.hs] (38:31): ScopedTypeVariables is not enabled
+[ideas-math-1.2/src/Domain/Logic/BuggyRules.hs] (39:28): MultiParamTypeClasses is not enabled
+[inch-0.2.0/examples/Cost.hs] (25:18): DataKinds is not enabled
+[kmeans-vector-0.3/bench/OldKmeans.hs] (65:1): ExplicitForAll or TypeOperators is not enabled
+[j2hs-0.99.1/src/Options.hs] (32:1): TemplateHaskell is not enabled
+[jmacro-0.6.13/Language/Javascript/JMacro/Base.hs] (243:1): GADTs is not enabled
+[io-manager-0.1.0.2/Training/MM/IOManager.hs] (73:22): RecordWildCards is not enabled
+[keystore-0.7.0.1/examples/deploy/Deploy/Deploy.hs] (40:12): RecordWildCards is not enabled
+[lambdacat-0.1.1/LambdaCat/Internal/Class.hs] (44:36): FunctionalDependencies is not enabled
+[ihttp-0.3.0/Network/IHttp/Header.hs] (50:36): ExplicitForAll or TypeOperators is not enabled
+[jukebox-0.1.3/Jukebox/Form.hs] (79:1): TypeOperators is not enabled
+[jsonsql-0.1.0.1/Main.hs] (118:39): RecordWildCards is not enabled
+[katt-0.2.0.3/katt-lib/src/Utils/Katt/Init.hs] (197:45): ScopedTypeVariables is not enabled
+[json-autotype-1.0.2/Data/Aeson/AutoType/Alternative.hs] (18:1): TypeOperators is not enabled
+[laborantin-hs-0.1.5.2/Laborantin/DSL.hs] (235:48): MultiParamTypeClasses is not enabled
+[keiretsu-0.4.4/src/Main.hs] (106:13): RecordWildCards is not enabled
+[json-b-0.0.4/Text/JSONb/Decode.hs] (119:29): ScopedTypeVariables is not enabled
+[imbib-1.0.0/Batch.hs] (33:1): TupleSections is not enabled
+[ironforge-0.1.0.35/Game/Antisplice/Dungeon/Ironforge/Cambridge.hs] (52:17): RecordWildCards is not enabled
+[ipatch-0.1.1/src/IPatch/Apply.hs] (87:118): ScopedTypeVariables is not enabled
+[hydrogen-cli-0.14/src/H/Common.hs] (26:1): LambdaCase is not enabled
+[hyperdrive-0.1/Response.hs] (18:25): RecordWildCards is not enabled
+[ivory-bitdata-0.2.0.0/examples/Example.hs] (24:29): DataKinds is not enabled
+[jdi-0.0.3/src/Language/Java/Jdi.hs] (84:1): StandaloneDeriving is not enabled
+[keter-1.4.1/Codec/Archive/TempTarball.hs] (52:28): RecordWildCards is not enabled
+[infernu-0.0.0.1/src/Infernu/Builtins/Array.hs] (66:14): TupleSections is not enabled
+[hxournal-0.6.6.1/Config.hs] (71:3): ScopedTypeVariables is not enabled
+[hybrid-2.0/Printer.hs] (25:1): Malformed context: FlexibleContexts is not enabled
+[knots-0.1.0.1/Knots/Free.hs] (199:88): ExplicitForAll or TypeOperators is not enabled
+[ide-backend-0.9.0.9/IdeSession/Cabal.hs] (145:5): NamedFieldPuns is not enabled
+[imm-0.6.0.3/Imm/Boot.hs] (75:5): TupleSections is not enabled
+[kdesrc-build-extra-0.1.0.2/src/Config.hs] (90:35): RecordWildCards is not enabled
+[implicit-0.0.3/Graphics/Implicit/Export/Util.hs] (39:1): Malformed context: FlexibleContexts is not enabled
+[lambdacube-samples-0.2.0/BulletExample.hs] (34:17): PackageImports is not enabled
+[lio-simple-0.0.2.2/LIO/Web/Simple/DCLabel.hs] (16:13): Safe or SafeImports or Trustworthy is not enabled
+[lgtk-0.8.0.4/lgtkdemo/Data/Equivalence/Persistent.hs] (42:36): MultiParamTypeClasses is not enabled
+[make-hard-links-0.2/MakeHardLinks.hs] (107:35): ScopedTypeVariables is not enabled
+[language-puppet-1.1.3.1/Erb/Compute.hs] (62:1): LambdaCase is not enabled
+[manatee-0.2.2/Manatee/Action/Basic.hs] (72:63): ExplicitForAll or TypeOperators is not enabled
+[mailgun-0.1.0.4/src/Rackspace/MailGun.hs] (51:23): RecordWildCards is not enabled
+[lhs2TeX-hl-0.1.4.5/src/Literate/Agda.hs] (43:32): NamedFieldPuns is not enabled
+[liquid-fixpoint-0.3.0.1/src/Language/Fixpoint/Errors.hs] (135:42): ScopedTypeVariables is not enabled
+[marxup-3.0.0.1/MarXup/DerivationTrees.hs] (50:1): TypeOperators is not enabled
+[lord-2.20150122/Web/Radio/Cmd.hs] (44:5): TypeFamilies is not enabled
+[markdown2svg-0.0.1.27/src/Image/JPG.hs] (7:20): PackageImports is not enabled
+[mailchimp-subscribe-1.0/Main.hs] (52:1): Malformed context: FlexibleContexts is not enabled
+[manatee-welcome-0.1.1/Manatee/Extension/Welcome/WelcomeBuffer.hs] (119:38): ScopedTypeVariables is not enabled
+[maclight-0.1.0.0/src/Apple/Maclight.hs] (23:44): ViewPatterns is not enabled
+[marquise-4.0.0/lib/Marquise/Classes.hs] (67:71): FunctionalDependencies is not enabled
+[lojysamban-0.0.8.1/src/LojysambanLib.hs] (127:1): TupleSections is not enabled
+[ls-usb-0.1.1/PrettyDevList.hs] (28:25): PackageImports is not enabled
+[marionetta-0.1.0.3/Controller.hs] (44:1): GADTs is not enabled
+[layers-game-0.5/Ressources/Levels.hs] (2:1): TemplateHaskell is not enabled
+[llvm-pretty-bc-parser-0.1.3.1/disasm-test/Main.hs] (125:27): RecordWildCards is not enabled
+[loopy-0.0.1/Main.hs] (45:20): RecordWildCards is not enabled
+[mangopay-1.11.1/src/Web/MangoPay/Cards.hs] (152:16): RecordWildCards is not enabled
+[manatee-anything-0.0.8/Manatee/Plugin/Anything/AnythingView.hs] (648:42): ScopedTypeVariables is not enabled
+[llvm-tools-0.2.0.1/src/LLVM/VisualizeGraph.hs] (104:24): MultiParamTypeClasses is not enabled
+[lhs2tex-1.19/Setup.hs] (25:23): PackageImports is not enabled
+[module-management-0.20.3/Language/Haskell/Modules/Common.hs] (43:63): MultiParamTypeClasses is not enabled
+[mustache-haskell-0.1.0.5/Text/Mustache/Parse.hs] (102:19): ScopedTypeVariables is not enabled
+[mysnapsession-example-0.4/animalgame/src/Application.hs] (39:5): TypeFamilies is not enabled
+[msi-kb-backlit-0.1.0.1/src/Main.hs] (101:1): TupleSections is not enabled
+[matsuri-0.0.4/Main.hs] (48:31): RecordWildCards is not enabled
+[mida-0.4.3/src/Mida/Language/Environment.hs] (143:1): TupleSections is not enabled
+[minions-0.2.0.0/minions.hs] (51:14): RecordWildCards is not enabled
+[mohws-0.2.1.3/src/Network/MoHWS/Server.hs] (152:1): ExplicitForAll or TypeOperators is not enabled
+[newsynth-0.3.0.1/Quantum/Synthesis/CliffordT.hs] (250:70): MultiParamTypeClasses is not enabled
+[mighttpd2-3.2.8/Program/Mighty/FileCache.hs] (28:24): RecordWildCards is not enabled
+[misfortune-0.1.1.2/src/Data/Fortune/FortuneFile.hs] (65:24): RecordWildCards is not enabled
+[mute-unmute-0.2.0.0/mute-unmute.hs] (32:1): TemplateHaskell is not enabled
+[nerf-0.5.3/src/NLP/Nerf/Schema.hs] (115:12): RecordWildCards is not enabled
+[network-bitcoin-1.8.1/src/Network/Bitcoin/RawTransaction.hs] (244:32): RecordWildCards is not enabled
+[mathgenealogy-1.3.0/Main.hs] (91:38): ScopedTypeVariables is not enabled
+[netlines-1.0.0/Data/Enumerator/NetLines/IO.hs] (37:49): ExplicitForAll or TypeOperators is not enabled
+[nkjp-0.4.0/Text/NKJP/Named.hs] (90:15): RecordWildCards is not enabled
+[minimung-0.1/Data/Image.hs] (137:28): ExplicitForAll or TypeOperators is not enabled
+[octohat-0.1.4.2/src/Network/Octohat/Internal.hs] (105:36): ViewPatterns is not enabled
+[maybench-0.2.4.1/Test/Maybench/Command.hs] (30:54): MultiParamTypeClasses is not enabled
+[nymphaea-0.3/src/MonadRandom.hs] (24:34): MultiParamTypeClasses is not enabled
+[music-preludes-1.8.1/examples/analysis.hs] (7:69): TypeFamilies or GADTs is not enabled
+[msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs] (27:18): RecordWildCards is not enabled
+[maxsharing-1.0.2/MaxSharing.hs] (41:1): TemplateHaskell is not enabled
+[nyan-0.2/src/Main.hs] (69:37): ViewPatterns is not enabled
+[ml-w-0.1.1/Language/ML/TypeCheck.hs] (132:55): MultiParamTypeClasses is not enabled
+[midisurface-0.1.0.0/surface.hs] (142:41): ScopedTypeVariables is not enabled
+[nc-indicators-0.3/nc-indicators.hs] (46:1): TemplateHaskell is not enabled
+[minesweeper-0.9.2.1/Core/Square.hs] (87:35): ViewPatterns is not enabled
+[multiplicity-0.1.0/src/main.hs] (47:37): MultiParamTypeClasses is not enabled
+[musicbrainz-email-1.0.0.0/mailer/Main.hs] (39:35): RecordWildCards is not enabled
+[nptools-0.6.0/cp-rescue.hs] (52:31): ScopedTypeVariables is not enabled
+[neil-0.9/src/Cabal.hs] (87:10): RecordWildCards is not enabled
+[noise-0.0.1/src-cli/Main.hs] (22:5): TupleSections is not enabled
+[pager-0.1.1.0/System/Pager.hs] (105:33): MultiWayIf is not enabled
+[pgdl-8.2/src/GenStat.hs] (40:1): LambdaCase is not enabled
+[pipes-p2p-examples-0.3/examples/addr/Main.hs] (98:1): LambdaCase is not enabled
+[ply-loader-0.4.1/src/PLY/Ascii.hs] (18:37): ExplicitForAll or TypeOperators is not enabled
+[patch-image-0.1.0.1/src/Accelerate.hs] (198:1): TypeOperators is not enabled
+[postgrest-0.2.10.0/src/PostgREST/App.hs] (147:35): ScopedTypeVariables is not enabled
+[postmaster-0.3/Postmaster/Base.hs] (68:43): ExplicitForAll or TypeOperators is not enabled
+[polh-lexicon-0.2.2/src/NLP/Polh/Binary.hs] (76:18): RecordWildCards is not enabled
+[osdkeys-0.0/src/OSDKeys/XInput.hs] (39:38): ViewPatterns is not enabled
+[pcd-loader-0.3.0.1/src/PCD/Data.hs] (30:50): ExplicitForAll or TypeOperators is not enabled
+[perdure-0.2.1/exe-src/Database/Perdure/TestPersistent.hs] (82:43): ExplicitForAll or TypeOperators is not enabled
+[pocket-dns-0.1.1/Network/DNS/Pocket/Server.hs] (41:22): RecordWildCards is not enabled
+[papillon-0.1.0.0/bin/Class.hs] (16:20): PackageImports is not enabled
+[ohloh-hs-0.0.2/tools/cmdoh.hs] (38:17): RecordWildCards is not enabled
+[pisigma-0.2.1/src/Language/PiSigma/Normalise.hs] (31:23): FunctionalDependencies is not enabled
+[photoname-3.0.1/src/Photoname/Exif.hs] (39:48): MultiParamTypeClasses is not enabled
+[pia-forward-0.1.0.1/src/Main.hs] (37:34): ScopedTypeVariables is not enabled
+[piki-0.5.2/src/Html.hs] (30:42): ViewPatterns is not enabled
+[pg-harness-0.2.1/src/Main.hs] (97:3): LambdaCase is not enabled
+[parsestar-1.5/Data/STAR/ChemShifts.hs] (125:41): ScopedTypeVariables is not enabled
+[pg-harness-server-0.3.1/src/Main.hs] (97:3): LambdaCase is not enabled
+[paypal-adaptive-hoops-0.11.0.2/src/PayPal/Adaptive/Core.hs] (303:1): MultiWayIf is not enabled
+[pdf2line-0.0.1/pdf2line.hs] (131:9): NPlusKPatterns is not enabled
+[pec-0.2.3/Pec/Base.hs] (440:1): ScopedTypeVariables is not enabled
+[porte-0.0.4/Porte/Ports.hs] (80:29): ScopedTypeVariables is not enabled
+[on-demand-ssh-tunnel-0.1.0.6/src/Network/OnDemandSSHTunnel.hs] (54:25): ScopedTypeVariables is not enabled
+[propellor-2.5.0/src/Propellor/Engine.hs] (19:14): PackageImports is not enabled
+[puzzle-draw-0.1.0.4/src/Data/Puzzles/Compose.hs] (40:1): ExplicitForAll or TypeOperators is not enabled
+[quoridor-hs-0.1.1.2/src/Quoridor/Cmdline/Network/Common.hs] (58:25): ScopedTypeVariables is not enabled
+[python-pickle-0.2.0/bin/pickle.hs] (61:13): RecordWildCards is not enabled
+[protobuf-native-1.0.0.1/benchmark/DataProtocolBuffers.hs] (13:29): DataKinds is not enabled
+[quantfin-0.2.0.0/src/Quant/ContingentClaim.hs] (52:43): ExplicitForAll or TypeOperators is not enabled
+[pwstore-cli-0.4/src/pwstore.hs] (141:19): RecordWildCards is not enabled
+[pure-priority-queue-tests-0.12/Tests.hs] (34:1): StandaloneDeriving is not enabled
+[recursive-line-count-0.1/CountLines.hs] (34:23): RecordWildCards is not enabled
+[rosa-0.2.0.0/src/Main.hs] (41:15): RecordWildCards is not enabled
+[regexchar-0.9.0.12/src/Grecce/Test/Assert/RegExOptsChar.hs] (65:65): MultiParamTypeClasses is not enabled
+[quicktest-0.1.3/src/Main.hs] (76:30): ViewPatterns is not enabled
+[rdf4h-1.3.0/examples/ParseURLs.hs] (12:31): ScopedTypeVariables is not enabled
+[rascal-1.1.6/src/Rascal/Conf.hs] (53:28): ScopedTypeVariables is not enabled
+[risc386-0.0.20130719/GenSym.hs] (54:29): MultiParamTypeClasses is not enabled
+[resolve-trivial-conflicts-0.2.0.2/resolve_trivial_conflicts.hs] (42:26): RecordWildCards is not enabled
+[regex-tdfa-unittest-1.1/Main.hs] (135:49): MultiParamTypeClasses is not enabled
+[pubnub-1.1.1/examples/Chat/Main.hs] (71:25): RecordWildCards is not enabled
+[redo-0.2.0/redo.hs] (83:24): ScopedTypeVariables is not enabled
+[repa-v4l2-0.2.0.0/src/Graphics/Webcam/Linux/Internal.hs] (137:43): MultiParamTypeClasses is not enabled
+[rpc-framework-2.0.0.2/src/Network/Remote/RPC/Internal/MultiServer.hs] (47:1): StandaloneDeriving is not enabled
+[resource-embed-0.1.0.0/src/Main.hs] (23:1): TupleSections is not enabled
+[radix-1.0.0.0/src/Radix.hs] (72:1): TupleSections is not enabled
+[rncryptor-0.0.2.1/src/Crypto/RNCryptor/Types.hs] (95:39): RecordWildCards is not enabled
+[regex-posix-unittest-1.1/Main.hs] (135:50): MultiParamTypeClasses is not enabled
+[pugs-DrIFT-2.2.3.20130611/src/DrIFT/Perl6Class.hs] (84:1): Malformed context: FlexibleContexts is not enabled
+[roguestar-engine-0.6.0.1/src/Behavior.hs] (58:50): ScopedTypeVariables is not enabled
+[pxsl-tools-1.0.1/src/PxsltFormat.hs] (76:29): NPlusKPatterns is not enabled
+[roshask-0.2.1/Examples/Turtle/src/AngleNum.hs] (48:3): TypeFamilies is not enabled
+[purescript-0.6.9.5/psc/Main.hs] (52:24): RecordWildCards is not enabled
+[rhythm-game-tutorial-0.1.1/src/tutorial-active.hs] (92:36): ViewPatterns is not enabled
+[tabloid-0.47/examples/example.hs] (4:1): TemplateHaskell is not enabled
+[treeviz-1.0.0/src/Data/Tree/LogTree.hs] (123:36): TypeFamilies or GADTs is not enabled
+[threads-supervisor-1.0.3.0/src/Control/Concurrent/Supervisor.hs] (178:32): RecordWildCards is not enabled
+[twhs-0.1.0.3/Web/Twitter/Twhs/Common.hs] (63:60): MultiParamTypeClasses is not enabled
+[tup-functor-0.3.0.0/Data/Tup/Concat.hs] (20:59): FunctionalDependencies is not enabled
+[treemap-html-tools-0.2/src/dirmap.hs] (97:1): NPlusKPatterns is not enabled
+[time-exts-2.1.0/src/Data/Time/Exts/Base.hs] (269:50): NamedFieldPuns is not enabled
+[tetris-0.27178/Util.hs] (28:1): NPlusKPatterns is not enabled
+[table-0.1.0.0/Main.hs] (49:12): RecordWildCards is not enabled
+[turni-2011.1.15/Shuffle.hs] (10:52): ExplicitForAll or TypeOperators is not enabled
+[tsp-viz-0.1.0.0/TSPViz.hs] (148:50): ViewPatterns is not enabled
+[tftp-0.2/src/Network/TFTP/Protocol.hs] (14:37): MultiParamTypeClasses is not enabled
+[tls-debug-0.4.0/src/SimpleClient.hs] (47:34): ScopedTypeVariables is not enabled
+[time-series-0.1.0.0/src/TimeSeries/Routing.hs] (222:13): RecordWildCards is not enabled
+[tersmu-0.2/Bindful.hs] (21:44): FunctionalDependencies is not enabled
+[touched-0.2.0.1/touched-cli/Main.hs] (28:1): MultiWayIf is not enabled
+[tn-1.0.2.1/src/Tn/Static.hs] (104:1): LambdaCase is not enabled
+[themplate-1.1/src/Main.hs] (112:120): ScopedTypeVariables is not enabled
+[todos-0.5.3.2/Todos/CommandParser.hs] (13:1): TemplateHaskell is not enabled
+[taggy-0.1.4/src/Text/Taggy/Combinators.hs] (46:1): LambdaCase is not enabled
+[toysolver-0.3.0/samples/programs/nqueens/nqueens.hs] (25:35): ScopedTypeVariables is not enabled
+[uacpid-1.0.3.0/src/Uacpid/Control/Monad/Error.hs] (26:35): MultiParamTypeClasses is not enabled
+[xcffib-0.3.2/generator/Data/XCB/Python/Parse.hs] (125:37): ViewPatterns is not enabled
+[vcswrapper-0.1.2/src/VCSWrapper/Common/TemporaryFiles.hs] (35:74): ScopedTypeVariables is not enabled
+[wordpass-1.0.0.3/Data/Random/Choice.hs] (12:91): MultiParamTypeClasses is not enabled
+[wyvern-0.1/Main.hs] (394:50): MultiParamTypeClasses is not enabled
+[wobsurv-0.1.0/library/Wobsurv/Interaction.hs] (84:15): LambdaCase is not enabled
+[webify-0.1.7.0/src/Font.hs] (169:25): RecordWildCards is not enabled
+[unlit-0.3.0.3/src/Unlit/String.hs] (23:1): GADTs is not enabled
+[wai-app-static-3.1.0/Network/Wai/Application/Static.hs] (76:32): RecordWildCards is not enabled
+[ureader-0.2.0.0/src/Main.hs] (77:26): RecordWildCards is not enabled
+[warp-static-2.0.1.1/warp.hs] (39:11): RecordWildCards is not enabled
+[warp-dynamic-0.1.0/Network/Wai/Application/Dynamic.hs] (43:18): RecordWildCards is not enabled
+[wikipedia4epub-0.0.12/src/Wiki4e/Commands/Articles.hs] (79:1): NPlusKPatterns is not enabled
+[urembed-0.5.0.1/src/Urembed.hs] (81:36): ScopedTypeVariables is not enabled
+[wolf-0.1.1/src/Network/AWS/Flow/Env.hs] (62:20): RecordWildCards is not enabled
+[vty-5.2.9/src/Data/Terminfo/Parse.hs] (270:19): ScopedTypeVariables is not enabled
+[waddle-0.1.0.5/Game/Waddle/ExportJS.hs] (100:14): RecordWildCards is not enabled
+[xml2x-0.4.2/src/Options.hs] (42:21): ExplicitForAll or TypeOperators is not enabled
+[vcsgui-0.1.2.0/src/VCSGui/Common/FilesInConflict.hs] (170:55): ScopedTypeVariables is not enabled
+[vintage-basic-1.0.1/src/Control/Monad/CPST/DurableTraps.hs] (41:1): ExplicitForAll or TypeOperators is not enabled
+[vimus-0.2.1/src/Content.hs] (38:3): TypeFamilies is not enabled
+[vision-0.0.5.0/src/Collection/Common.hs] (138:3): TypeFamilies is not enabled
+[typeof-0.1.2/Process.hs] (25:55): ScopedTypeVariables is not enabled
+[uhc-light-1.1.9.0/src/UHC/Light/Compiler/AbstractCore/Utils.hs] (61:79): MultiParamTypeClasses is not enabled
+[zoom-cache-sndfile-1.1.0.1/tools/zoom-cache-sndfile.hs] (146:22): RecordWildCards is not enabled
+[yesod-examples-0.9.0.1/src/chat.hs] (28:1): TemplateHaskell is not enabled
+[yi-0.12.0/src/library/Control/Exc.hs] (16:1): ScopedTypeVariables is not enabled
+[yesod-dsl-0.1.1.24/YesodDsl/ClassImplementer.hs] (37:9): TupleSections is not enabled
+[yesod-continuations-0.1/Yesod/Continuation.hs] (43:55): MultiParamTypeClasses is not enabled
+[yql-0.0.0/Main.hs] (40:35): RecordWildCards is not enabled
+[yuuko-2010.11.28/src/Text/HTML/TagSoup/Implementation.hs] (80:39): ExplicitForAll or TypeOperators is not enabled
+[zoom-cache-1.2.1.6/Blaze/ByteString/Builder/ZoomCache/Internal.hs] (51:19): RecordWildCards is not enabled
+[yet-another-logger-0.2.3.1/example/Example.hs] (23:1): TemplateHaskell is not enabled
+[zeno-0.2.0.1/Example.hs] (193:1): ScopedTypeVariables is not enabled
+[yampa-glfw-0.1.0.0/FRP/Yampa/GLFW/Adapter.hs] (20:27): PackageImports is not enabled

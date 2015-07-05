@@ -1,0 +1,972 @@
+mkdir: cannot create directory `strictapps': File exists
+MoveIfStrict: fromParseResult: Parse failed at [CCA-0.1.5.3/src/Language/Haskell/TH/Instances.hs] (10:25): Parse error: |
+MoveIfStrict: fromParseResult: Parse failed at [CarneadesIntoDung-1.0/src/Main.hs] (70:30): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Etage-Graph-0.1.8/lib/Data/Graph/Etage.hs] (20:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Dung-1.1/src/Main.hs] (72:30): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [GenI-0.24.3/src/NLP/GenI/Configuration.hs] (160:7): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [FormalGrammars-0.2.0.0/FormalLanguage/CFG/Grammar/Types.hs] (35:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [BCMtools-0.1.1/src/BCM/DiskMatrix.hs] (45:52): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Ebnf2ps-1.0.12/dist/build/ebnf2ps/ebnf2ps-tmp/Ebnf2psParser.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [DynamicTimeWarp-0.1.0.0/src/Data/Vector/DynamicTimeWarping.hs] (13:31): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [EtaMOO-0.2.0.0/src/MOO/Builtins.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [GlomeView-0.3/TestScene.hs] (73:21): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Agda-2.4.2.3/dist/build/Agda/Syntax/Parser/Lexer.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Allure-0.4.101.1/GameDefinition/Content/RuleKind.hs] (47:21): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [DAV-1.0.7/Network/Protocol/HTTP/DAV/TH.hs] (50:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [BiobaseTrainingData-0.1.2.3/Biobase/TrainingData/Filter.hs] (21:51): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [DisTract-0.2.5/src/DisTract/Config.hs] (38:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [Eternal10Seconds-0.2/Eternal.hs] (41:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [EditTimeReport-1.0/dist/build/report/report-tmp/QueryLexer.hs] (8:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [DSTM-0.1.2/Bomberman/Bomberman.hs] (150:25): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [DrIFT-2.4.2/code/GhcBinary.hs] (534:18): Parse error in pattern: 
+MoveIfStrict: fromParseResult: Parse failed at [GPipe-Examples-0.1/src/04_brass_sphere.hs] (58:9): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Blobs-0.3/lib/DData/IntMap.hs] (156:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [DPM-0.3.0.0/dist/build/DPM/Core/Lexer.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [DnaProteinAlignment-0.0.0.1/DnaProteinAlignment.hs] (78:12): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [DefendTheKing-0.3.1/src/GameLogic.hs] (26:29): MultiParamTypeClasses is not enabled
+MoveIfStrict: 3d-graphics-examples-0.0.0.1/src/Utilities.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [DSH-0.12.0.1/examples/Example01.hs] (33:29): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Eq-1.1.3/Language/Eq/Algorithm/EmptyMonad.hs] (14:49): Parse error: =>
+MoveIfStrict: fromParseResult: Parse failed at [FM-SBLEX-3.0.1/dist/build/dalin/dalin-tmp/Dict/Lex.hs] (9:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ActionKid-0.1.1.0/src/ActionKid/Core.hs] (129:8): Parse error: instance
+MoveIfStrict: fromParseResult: Parse failed at [Combinatorrent-0.3.2/src/Process/ChokeMgr.hs] (308:13): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Adaptive-Blaisorblade-0.23/Control/Monad/Adaptive/CircularList.hs] (18:28): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [CSPM-cspm-0.8.0.0/src/CSPM/Lua.hs] (86:22): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [CPL-0.0.7/src/CDT.hs] (62:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Barracuda-1.0.2/Barracuda/GUI/CertificateLoader.hs] (241:13): Parse error: <-
+MoveIfStrict: fromParseResult: Parse failed at [BiobaseXNA-0.9.1.1/Biobase/Primary/Hashed.hs] (26:34): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [Dao-0.1.0.2/src/Dao/Binary.hs] (268:50): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [AERN-Real-Double-2011.1.0.2/src/Numeric/AERN/DoubleBasis/Interval.hs] (476:42): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Adaptive-0.23/Control/Monad/Adaptive/CircularList.hs] (18:28): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [BlogLiterately-0.8.1/src/Text/BlogLiterately/Highlight.hs] (60:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [BNFC-2.8/runtime/Data/Matrix/Quad.hs] (14:22): DataKinds is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Fungi-1.0.6/src/Data/Tuple/Map.hs] (11:37): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Encode-1.3.7/Encode/ExPlus.hs] (122:53): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [AERN-Basics-2011.1.0.1/src/Numeric/AERN/Basics/Consistency.hs] (29:5): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [AndroidViewHierarchyImporter-0.1.0.1/Main.hs] (9:1): Parse error: {-# LANGUAGE
+MoveIfStrict: fromParseResult: Parse failed at [DrIFT-cabalized-2.3.0/code/GhcBinary.hs] (534:18): Parse error in pattern: 
+MoveIfStrict: fromParseResult: Parse failed at [DAG-Tournament-0.1/src/main.hs] (71:27): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [FermatsLastMargin-0.1/FLM/State.hs] (15:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [GenSmsPdu-0.1/src/GenSmsPdu.hs] (122:42): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [GeBoP-1.7.4.1/Game.hs] (47:28): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [Crypto-4.2.5.1/WordListTest.hs] (20:35): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [CMCompare-0.0.1.5/CMCompare.hs] (110:11): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [FComp-1.0.2/src/HarmTrace/HAnTree/HAnParser.hs] (19:36): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [FTPLine-1.4.0.0/Main.hs] (61:11): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [CurryDB-0.1.1.0/Database/Curry/Storage.hs] (43:32): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Aurochs-0.1/Gen.hs] (263:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [Deadpan-DDP-0.9.3.0/src/Data/EJson/EJson.hs] (94:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [HPong-0.1.2/HPong.hs] (15:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [HTicTacToe-0.2/GameState.hs] (78:36): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [HTF-0.13.0.0/HTFPP.hs] (21:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Holumbus-MapReduce-0.1.1/Examples/MapReduce/Crawler/Crawl.hs] (88:6): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [HarmTrace-2.2.0/src/HarmTrace/Audio/Annotate.hs] (82:34): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [LslPlus-0.4.3/src/Language/Lsl/Internal/AccessGenerator.hs] (52:21): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [Hayoo-1.2.3/src/Hayoo/IndexTypes.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Hedi-0.1.1/Editor.hs] (48:35): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [HackMail-0.0.1/HackMail/Data/Deliverable.hs] (69:1): GADTs is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Moe-0.1/FRP/Moe/Combinators.hs] (26:20): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [Pugs-6.2.13.20130611/src/Pugs/AST/Eval.hs] (24:1): TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [MuCheck-SmallCheck-0.3.0.4/src/Test/MuCheck/TestAdapter/SmallCheck.hs] (13:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Nomyx-0.7.6/src/Main.hs] (124:53): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Hsed-0.2.2/src/Hsed/SedState.hs] (40:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [MuCheck-QuickCheck-0.3.0.4/src/Test/MuCheck/TestAdapter/QuickCheck.hs] (10:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [HPath-0.0.2/HPath/Path.hs] (21:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [NoSlow-0.2/NoSlow/Backend/DPH/Prim/Seq.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Nussinov78-0.1.0.0/BioInf/GAPlike.hs] (25:25): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Monadius-0.99/src/Main.hs] (134:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [Mhailist-0.0/LTR/Transaction.hs] (12:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [HipmunkPlayground-5.2.1.1/Playground.hs] (565:3): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [INblobs-0.1.1/src/CommonUI.hs] (40:51): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [HNM-0.1.2/HNM/WLAN.hs] (19:1): TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [GraphHammer-examples-0.3/src/GraphHammer/ClusteringCoefficient.hs] (38:1): TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Hach-0.1.2/nclient/NClient/Connect.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [HSFFIG-1.1.3/HSFFIG/FieldAccess.hs] (52:36): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [KdTree-0.2.1/KdTreeTest.hs] (63:8): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [MonadLab-0.0.2/MLabCompileStub.hs] (14:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [HTab-1.6.3/src/HTab/Statistics.hs] (55:64): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [PageIO-0.0.3/src/Text/PageIO/Extract.hs] (52:29): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [HaRe-0.7.2.8/src/Language/Haskell/Refact/Refactoring/DupDef.hs] (88:9): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [PandocAgda-2.3.3.0.2/src/full/Agda/Interaction/Highlighting/PandocHTML.hs] (51:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Haskelloids-0.1.1/src/Haskelloids/Object/Asteroid.hs] (85:14): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [MiniAgda-0.2014.9.12/Abstract.hs] (834:32): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Monaris-0.1.8/Monaris.hs] (15:36): Parse error: ]
+MoveIfStrict: fromParseResult: Parse failed at [HaVSA-0.1.0.2/src/AI/VersionSpaces.hs] (65:1): GADTs is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [KiCS-0.9.3/dist/build/Curry/Module/Prelude.hs] (24:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [HaXml-1.25.3/src/Text/XML/HaXml/Escape.hs] (62:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [MazesOfMonad-1.0.9/src/MoresmauJP/Core/Screen.hs] (36:62): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [MuCheck-Hspec-0.3.0.4/src/Test/MuCheck/TestAdapter/Hspec.hs] (10:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [PlayHangmanGame-0.2/src/Types.hs] (33:32): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [Level0-1.0/src/Main.hs] (65:25): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [PortFusion-1.2.1/src/Main.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [PropLogic-0.9.0.4/PropLogicCore.hs] (119:39): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [OpenAFP-Utils-1.4.1.3/afp-olndump.hs] (83:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [RNAFold-1.99.3.4/BioInf/ViennaRNA/Energy.hs] (105:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [MC-Fold-DP-0.1.1.0/BioInf/MCFoldDP.hs] (99:5): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Hs2lib-0.6.3/Tests/Exec/Default.hs] (43:1): Malformed context: FlexibleContexts is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [L-seed-0.2/src/Lseed/Geometry.hs] (72:1): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [HListPP-0.2/HListPP.hs] (17:12): Parse error: <-
+MoveIfStrict: fromParseResult: Parse failed at [Haschoo-0.1.2/Haschoo/Evaluator/Standard/Control.hs] (70:1): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [MuCheck-HUnit-0.3.0.4/src/Test/MuCheck/TestAdapter/HUnit.hs] (10:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Ninjas-0.1.0.0/src/Anim.hs] (29:42): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [NXT-0.2.3/lib/Robotics/NXT/BluetoothUtils.hs] (14:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [LambdaHack-0.4.101.1/Game/LambdaHack/Atomic/BroadcastAtomicWrite.hs] (38:23): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [PTQ-0.0.7/misc/Test.hs] (27:1): GADTs is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [HaskellTorrent-0.1.1/src/Process.hs] (56:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Holumbus-Distribution-0.1.1/source/Holumbus/Distribution/DNode/Base.hs] (867:31): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [NanoProlog-0.3/src/Language/Prolog/NanoProlog/Parser.hs] (23:15): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [NXTDSL-0.4/NXT/Core.hs] (194:8): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: HaLeX-1.2.1/HaLeX_lib/Language/HaLex/Dfa.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [Holumbus-Storage-0.1.0/source/Holumbus/FileSystem/FileSystem.hs] (102:14): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [Pollutocracy-1.0/ArrayUtils.hs] (7:51): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Network-NineP-0.3.0/Control/Monad/EmbedIO.hs] (27:9): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [SGdemo-1.1/SGdemo.hs] (159:68): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [RNAwolf-0.4.0.0/BioInf/Keys.hs] (201:62): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [RNAdesign-0.1.2.2/BioInf/RNAdesign/Assignment.hs] (45:44): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Raincat-1.1.1.3/src/Nxt/Graphics.hs] (93:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Referees-0.0.0/src/Referees/Solver/Internal.hs] (194:1): Parse error in expression: handle fuse $
+MoveIfStrict: fromParseResult: Parse failed at [SpacePrivateers-0.1.0.0/GameDefinition/Content/RuleKind.hs] (37:21): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [Scurry-0.0.3/src/Network/Util.hs] (13:16): Parse error: CALLCONV
+MoveIfStrict: fromParseResult: Parse failed at [SpaceInvaders-0.4.2/src/Main.hs] (76:42): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [SableCC2Hs-0.0.1.0/src/SableCC/AstDefinition.hs] (62:46): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [SoccerFun-0.5.2/SoccerFun/Ball.hs] (12:27): Parse error: ∷
+MoveIfStrict: fromParseResult: Parse failed at [SuffixStructures-0.0.1.0/Data/SuffixStructure/ESA.hs] (59:10): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Snusmumrik-0.0.1/DB.hs] (123:47): MultiParamTypeClasses is not enabled
+MoveIfStrict: strictapps: rename: invalid argument (Invalid argument)
+MoveIfStrict: fromParseResult: Parse failed at [Rasenschach-0.1.3.1/AL.hs] (26:1): Parse error in pattern: (AL l)
+MoveIfStrict: fromParseResult: Parse failed at [ZMachine-0.0/ZMachine/IO/Gtk.hs] (66:5): Parse error: where
+MoveIfStrict: Strafunski-Sdf2Haskell-1.0.0.2/generator/CFG.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [WL500gPControl-0.3.4/src/Control/Main.hs] (14:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ShellCheck-0.3.8/ShellCheck/Analytics.hs] (3418:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Webrexp-1.1.2/Text/Webrexp/DirectoryNode.hs] (115:28): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Tablify-0.8.2/src/CSV.hs] (10:1): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [SoccerFunGL-0.5.1/SoccerFun/UI/GL/PlayTape.hs] (12:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Xec-0.1.6/Main.hs] (99:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [YamlReference-0.9.3/Text/Yaml/Reference.hs] (629:52): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [YACPong-0.1/Draw.hs] (102:56): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ScratchFs-0.1.0.2/src/HistoryDb.hs] (93:68): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [VKHS-0.5.3/src/Data/Label/Abstract.hs] (36:25): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [Saturnin-0.1.0.2/HLint.hs] (5:25): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ReadArgs-1.2.2/ReadArgs.hs] (115:1): Malformed context: FlexibleContexts is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [Top-1.7/src/Top/Constraint/Equality.hs] (43:12): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [RNAdraw-0.2.0.1/BioInf/Secondary/Draw/DotBracket.hs] (49:13): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [TypeClass-0.2.1/src/Main.hs] (65:42): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [WashNGo-2.12.0.1/WASH/CGI/SubmitXX.hs] (12:34): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [SourceGraph-0.7.0.6/Parsing/Types.hs] (210:5): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [bamboo-launcher-2010.2.25/src/Launcher.hs] (87:30): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [bidirectionalization-combined-0.1.0.1/BUtil.hs] (39:1): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [blaze-from-html-0.3.2.1/src/Util/GenerateHtmlCombinators.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [billboard-parser-1.0.0.1/Billboard/BillboardParser.hs] (1:1): Illegal character ''\65279''
+
+MoveIfStrict: fromParseResult: Parse failed at [boomslang-0.0.4/src/Game/Entity/Dot.hs] (34:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [b9-0.5.7/src/lib/B9/Content/AST.hs] (80:14): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [bustle-0.5.0/Bustle/Loader/Pcap.hs] (76:20): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [beautifHOL-0.11/LexHOL.hs] (9:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [bake-0.3/src/Development/Bake/Core/Args.hs] (80:81): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [brillig-0.3.1/brillig/brillig.hs] (133:20): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cabal-bounds-0.9.4/lib/CabalBounds/Args.hs] (16:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [c2hs-0.25.2/src/C2HS/CHS.hs] (141:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [bkr-0.1.2/src/System/Bkr/BkrLocalFile.hs] (55:71): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cabal-dev-0.9.2/src/Distribution/Dev/AddSource.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [barley-0.3.0.2/src/Barley/AltLoad.hs] (95:47): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [baskell-0.1.1/src/CmdLine.hs] (63:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cab-0.2.15/Distribution/Cab/PkgDB.hs] (36:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-audit-0.3.0.0/src/Audit.hs] (24:9): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [bein-0.3.3/Bein/Commands.hs] (46:45): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [bumper-0.6.0.3/src/Config.hs] (32:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [blip-0.2.1/src/Assemble.hs] (60:32): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [bdo-1.0.1/src/Bdo.hs] (76:43): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [bluetile-0.6/src/Config.hs] (136:103): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [blogination-0.5/library/Text/Blogination.hs] (80:13): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [barchart-0.1.1.1/src/Graphics/BarChart/Parser/Criterion.hs] (42:41): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [bitly-cli-0.1.2/bitly.hs] (73:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [breve-0.3.0.0/src/Main.hs] (17:15): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [blink1-0.4/System/Hardware/Blink1/Types.hs] (117:1): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [cabal-dependency-licenses-0.1.1.1/src/Main.hs] (40:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [blunt-1.0.2/library/Blunt/Script.hs] (14:17): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [bogre-banana-0.0.1/src/BB/Examples/Snake.hs] (83:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [buildbox-tools-1.5.3.1/results/Main.hs] (48:17): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cabal-debian-4.30/Tests.hs] (120:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [berp-0.0.2/src/Berp/Base/Class.hs] (19:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-db-0.1.12/Src/Database.hs] (56:60): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cabal-cargs-0.7.7/lib/CabalCargs/Args.hs] (12:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [buildwrapper-0.9.1/src/Language/Haskell/BuildWrapper/Base.hs] (596:42): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cabal-meta-0.4.1.3/CabalMeta.hs] (11:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-ghci-0.3/CabalGHCI.hs] (19:20): Parse error: →
+MoveIfStrict: fromParseResult: Parse failed at [call-haskell-from-anything-0.1.0.2/src/FFI/Anything/TypeUncurry/DataKinds.hs] (55:19): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [cabal-test-bin-0.1.5/Main.hs] (19:37): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [castle-0.1.0.1/Castle.hs] (74:15): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [calc-0.1/Compile.hs] (14:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [cgrep-6.4.12/src/CGrep/Filter.hs] (36:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cake-1.1.0.1/Cake/Core.hs] (56:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [cabal-helper-0.3.5.0/CabalHelper/Data.hs] (41:1): Parse error in expression: $ (LitE . StringL <$> runIO (readFile "CabalHelper/Main.hs"))
+MoveIfStrict: fromParseResult: Parse failed at [charade-0.1.1.2/src/Charade.hs] (25:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [cabal-install-1.22.6.0/Distribution/Client/BuildReports/Upload.hs] (54:1): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [citeproc-hs-pandoc-filter-0.1/src/Text/CSL/Pandoc.hs] (138:1): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [cake3-0.6.0/src/Development/Cake3/Ext/UrWeb.hs] (90:31): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cabal-install-ghc74-0.10.4/Distribution/Client/HttpUtils.hs] (26:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [caledon-3.2.1.0/AST.hs] (64:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [cltw-1.1.4/src/Cltw/Opts.hs] (66:43): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [caldims-0.1.0/src/Language/CalDims/Action.hs] (26:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [clafer-0.3.10/dist/build/Language/Clafer/Front/LexClafer.hs] (13:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [colada-0.8.4.0/Colada/WordClass.hs] (149:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [cap-1.0.1/dist/build/cap/cap-tmp/Language/Cap/Interpret/Parse.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-install-ghc72-0.10.4/._Main.hs] (1:1): Illegal character ''\NUL''
+
+MoveIfStrict: fromParseResult: Parse failed at [casui-0.3/Casui/CAS.hs] (378:34): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cao-0.1.1/src/Language/CAO/Analysis/CFG.hs] (325:38): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [clientsession-0.9.1.1/src/Web/ClientSession.hs] (66:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [calculator-0.3.1.1/src/Calculator/Evaluator/Cmd.hs] (22:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal2nix-1.73/src/Cabal2Nix/Normalize.hs] (14:32): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [clash-ghc-0.5.7/src-bin/GhciMonad.hs] (28:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [claferIG-0.3.10/src/Language/Clafer/IG/AlloyIGInterface.hs] (48:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cairo-appbase-0.4/src/cairo-appbase.hs] (45:11): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cblrepo-0.17.0/src/OldPkgDB.hs] (252:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [cmathml3-0.1/Data/ContentMathML3/NSToS.hs] (105:28): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [clifford-0.1.0.14/src/Numeric/Clifford/Internal.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [codex-0.3.0.8/codex/Main.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [clippings-0.1.3/examples/clippings2tsv/Main.hs] (23:21): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cheapskate-0.1.0.4/Cheapskate/Html.hs] (11:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cfipu-1.1.0.4/src/Cfipu.hs] (470:57): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [clac-0.5.0/src/Clac/CliParser.hs] (10:4): Parse error: module
+MoveIfStrict: fromParseResult: Parse failed at [cless-0.3.0.0/src/Main.hs] (152:17): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cmdargs-browser-0.1.3/Main.hs] (88:9): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cgen-0.0.5/src/GrGen.hs] (31:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [cfopu-1.0.0/Cfopu.hs] (459:57): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cnc-spec-compiler-0.2.0.1/Intel/Cnc/BenchSynth.hs] (181:86): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [clevercss-0.2.4/Text/CSS/CleverCSS.hs] (32:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cognimeta-utils-0.1.2/src/Cgm/Control/Concurrent/MVar.hs] (40:1): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cabal-src-0.3.0/mega-sdist.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal2ghci-0.0.1.1/cabal2ghci.hs] (33:10): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [coinbase-exchange-0.2.0.0/src/Coinbase/Exchange/MarketData.hs] (33:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-rpm-0.9.6/src/Commands/Spec.hs] (50:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-install-bundle-1.18.0.2.1/Codec/Compression/Zlib/Internal.hs] (238:1): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [cg-0.0.9.0/CG/Parser.hs] (30:18): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cubical-0.2.0/CTT.hs] (684:1): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cqrs-example-0.9.1/src/CQRSExample/Aggregates.hs] (74:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [dingo-example-0.2.0/src/TownWidget.hs] (54:20): Parse error: ]
+MoveIfStrict: fromParseResult: Parse failed at [containers-benchmark-1.1.0.0/src/Benchmark/Map-like.inc.hs] (13:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [concraft-hr-0.1.0.2/src/NLP/Concraft/Croatian/Request.hs] (37:17): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [dash-haskell-1.1.0.1/src/Haddock/Sqlite.hs] (61:28): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [concraft-pl-0.7.4/src/NLP/Concraft/Polish/Format/Plain.hs] (135:19): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [dedukti-1.1.4/Dedukti/Analysis/Scope.hs] (63:33): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [diffdump-0.7.5/DiffDump.hs] (218:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [corebot-bliki-0.2.2.0/src/DefaultMain.hs] (2:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [darcs-benchmark-0.1.9/source/Benchmark.hs] (57:60): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [darkplaces-rcon-util-0.1.1/src/DRcon/ConfigFile.hs] (37:48): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [confsolve-0.5.4/ConfsolveArgs.hs] (6:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cryptol-2.2.4/cryptol/Main.hs] (37:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cuboid-0.14.2/Input.hs] (22:21): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [ddc-tools-0.4.1.3/src/ddci-core/DDCI/Core/Command/Eval.hs] (48:25): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [darcs-cabalized-2.0.2.2/src/Darcs/Compat.hs] (9:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [court-0.1.0.0/src/Court/PluginManager.hs] (66:37): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cpuperf-0.1.1/Shell.hs] (83:43): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [crunghc-0.1.1.1/main.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [copilot-c99-2.1.2/src/Copilot/Compile/C99/C2A.hs] (44:23): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [darcs2dot-0.1.0.1/darcs2dot.hs] (27:1): Malformed context: FlexibleContexts is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [diagrams-haddock-0.3.0.4/src/Diagrams/Haddock.hs] (159:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [crackNum-1.3/Data/Numbers/CrackNum.hs] (94:20): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [darcswatch-0.4.4/src/CGI-Main.hs] (41:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [deeplearning-hs-0.1.0.2/DeepLearning/ConvNet.hs] (59:67): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [dbmigrations-0.8.2/src/Database/Schema/Migrations/Filesystem.hs] (89:61): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [darcsden-1.1.1/src/DarcsDen/Darcs.hs] (7:1): Parse error: #
+diversity-0.6.3.0: diversity-0.6.3.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [combinator-interactive-0.1.2/Data/Combinator.hs] (24:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [cpsa-2.5.0/src/CPSA/Annotations/Annotations.hs] (29:50): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [daemons-0.2.1/examples/Name.hs] (40:30): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ddc-war-0.4.1.3/DDC/War/Driver/Base.hs] (28:30): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [detrospector-0.3/Detrospector/Modes/Neolog.hs] (17:17): NamedFieldPuns is not enabled
+concurrent-dns-cache-0.0.1: concurrent-dns-cache-0.0.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [cuda-0.6.6.2/examples/src/deviceQueryDrv/DeviceQuery.hs] (34:33): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [crocodile-0.1.2/app/src/BoundingBox.hs] (63:1): Parse error in pattern: 
+MoveIfStrict: fromParseResult: Parse failed at [derive-2.5.22/Data/Derive/DSL/Apply.hs] (46:34): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [dominion-0.1.0.4/src/Dominion/Types.hs] (68:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [conjure-0.1/src/BEncode/BEncode.hs] (52:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [datalog-0.2.0.2/src/Database/Datalog/Evaluate.hs] (91:45): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [darcs-monitor-0.4.2/Config.hs] (38:31): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [dockercook-0.4.0.0/src/lib/Cook/Build.hs] (73:82): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [derive-gadt-0.1.1/lib/Language/Haskell/Derive/Gadt/Class/Eq.hs] (38:37): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [doctest-0.10.0/ghci-wrapper/src/Language/Haskell/GhciWrapper.hs] (48:12): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [cursedcsv-0.1.2/code/CursedCSV.hs] (33:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [delta-0.1.2.0/src/System/Delta/Callback.hs] (35:39): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [dao-0.1.0.1/src/Dao/Binary.hs] (268:50): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ddci-core-0.2.1.2/DDCI/Core/Transform.hs] (46:1): Malformed context: FlexibleContexts is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [dnscache-1.1.0/Network/DnsCache.hs] (115:1): GADTs is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [darcs-graph-1.0/Graph.hs] (104:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [debian-3.87.2/Debian/Apt/Dependencies.hs] (181:1): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [dotfs-0.1.1.3/System/DotFS/Core/ExpressionParsers.hs] (46:1): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [duplo-1.8.1/src/CLI.hs] (139:3): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [epubname-2.3.2/src/EpubName/Format/Anonymous.hs] (20:42): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [eddie-1.0.0/eddie.hs] (59:1): GADTs is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [editor-open-0.6.0.0/src/Text/Editor.hs] (272:1): LambdaCase is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [dph-examples-0.7.0.5/examples/imaginary/Words/Vectorised.hs] (20:20): Parse error: :
+MoveIfStrict: fromParseResult: Parse failed at [elm-get-0.1.3/src/Utils/Commands.hs] (22:46): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [dsh-sql-0.2.0.2/src/Database/DSH/Backend/Sql/Opt/OptimizeTA.hs] (29:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [fdo-trash-0.0.0.2/Freedesktop/Trash.hs] (32:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [edentv-4.10.0/EdenTvType.hs] (475:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [fay-0.23.1.6/Setup.hs] (6:15): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [esotericbot-0.0.6/Esotericbot/Chanop.hs] (23:15): Parse error in expression: liftIO $
+  unsafePackAddressLen 42
+    "You can't do that unless you're in a room." #
+MoveIfStrict: fromParseResult: Parse failed at [free-theorems-counterexamples-0.3.1.0/Language/Haskell/FreeTheorems/Variations/CounterExamples/Parser/ParseType.hs] (63:40): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ecma262-0.0.0/src/Language/JavaScript/Interpret.hs] (59:32): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ert-0.0.2.1/Main.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [egison-3.5.6/hs-src/Language/Egison/Core.hs] (521:68): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [dow-0.2.5/src/Game.hs] (73:3): Parse error: let
+MoveIfStrict: fromParseResult: Parse failed at [elocrypt-0.4.0/cli-test/Tests.hs] (29:14): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [executable-hash-0.2.0.0/System/Executable/Hash/Internal.hs] (22:6): Parse error: |
+MoveIfStrict: fromParseResult: Parse failed at [edit-lenses-demo-0.1/Data/Module/String.hs] (21:9): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [dropsolve-0.1.2.1/dropsolve.hs] (207:30): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [fibon-0.2.0/tools/fibon-analyse/Fibon/Analyse/Tables.hs] (33:12): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [extractelf-0.1.0.0/extractelf.hs] (46:24): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [frag-1.1.2/src/AFRP.hs] (818:1): NPlusKPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [epub-tools-2.7/src/EpubTools/EpubMeta/Edit.hs] (30:39): ScopedTypeVariables is not enabled
+MoveIfStrict: foo-1.0/Court.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [fltkhs-0.1.0.2/Setup.hs] (56:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [edge-0.9.0.2/AfterEffect.hs] (10:13): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [fix-imports-1.0.4/src/FixImports.hs] (83:62): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [fixhs-0.1.4/src/Data/Coparser.hs] (37:44): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [extemp-0.0.1/Extemp.hs] (41:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [explore-0.0.7.2/Main.hs] (42:27): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [dwarfadt-0.4/src/Data/Dwarf/Lens.hs] (24:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [elerea-examples-2.2.3/src/Bounce/Event.hs] (39:11): Parse error in pattern: rec
+MoveIfStrict: fromParseResult: Parse failed at [email-validator-0.0.3/src/Main.hs] (109:8): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [falling-turnip-0.1.0.0/Main.hs] (53:3): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [exherbo-cabal-0.1.0.3/src/ExRender.hs] (29:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ffeed-0.3.2/FriendFeed/Monad.hs] (220:36): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [formal-0.1.0/src/hs/Formal/Javascript/Backend.hs] (45:39): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [elm-package-0.5/src/Catalog.hs] (31:8): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [elm-compiler-0.15/src/Elm/Compiler.hs] (39:8): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [epic-0.9.3.3/dist/build/Epic/Parser.hs] (19:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [dsmc-tools-0.1.0.1/src/Caster.hs] (201:15): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [find-conduit-0.4.3/Data/Cond.hs] (248:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [elm-make-0.1.2/src/CrawlPackage.hs] (32:8): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [flickr-0.3.3/Flickr/Monad.hs] (322:36): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [flow2dot-0.9.0.3/Text/FlowDiagram.hs] (17:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [flo-0.1/src/Development/Flo.hs] (145:18): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [embroidery-0.1/Codec/Binary/Embroidery.hs] (45:39): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [feed2lj-0.0.3.1/LjPost.hs] (12:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [fast-tags-1.1.0/src/FastTags.hs] (175:1): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [flowdock-api-0.1.0.0/src/Flowdock/Push.hs] (87:22): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [fenfire-0.1/Cache.hs] (51:15): Parse error: let
+MoveIfStrict: fromParseResult: Parse failed at [free-theorems-webui-0.2.1.1/default_config/Paths.hs] (15:33): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [factory-0.2.1.1/src/Factory/Test/Performance/Pi.hs] (75:1): ExplicitForAll is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [flower-0.7.2/src/FlowSelect.hs] (49:32): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [forml-0.2/src/hs/Forml/Doc.hs] (32:39): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [ewe-0.1.0.40/dist/build/ewe/ewe-tmp/Language/EWE/Parser.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [freekick2-0.1.2/src/Drawing.hs] (50:26): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [ghci-ng-7.6.3.5/ghc/GhciMonad.hs] (27:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ghc-gc-tune-0.3/ghc-gc-tune.hs] (215:40): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [github-backup-1.20150618/Common.hs] (8:14): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [graphicstools-0.2.2/CVExample.hs] (2:1): Parse error: ,
+MoveIfStrict: fromParseResult: Parse failed at [ggtsTC-0.5/src/ErrMsg.hs] (52:28): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [git-repair-1.20150106/Common.hs] (8:14): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [gruff-examples-0.3.1/src/Number.hs] (6:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hLLVM-0.5.0.1/src/Llvm/Data/Conversion/AstIrConversion.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [gist-0.1/gist.hs] (25:18): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [garepinoh-0.9.9.2.1/code/Console/Garepinoh/Preludes.hs] (28:16): LambdaCase is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ghc-events-analyze-0.2.1/src/GHC/RTS/Events/Analyze/Analysis.hs] (48:22): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [gitcache-0.2/src/gitcache.hs] (18:21): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [graph-rewriting-cl-0.2.2/GL.hs] (13:17): Parse error in pattern: 
+MoveIfStrict: fromParseResult: Parse failed at [gitit-0.10.7/Network/Gitit/Authentication.hs] (444:40): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [graph-rewriting-ww-0.3.4/GL.hs] (13:17): Parse error in pattern: 
+MoveIfStrict: fromParseResult: Parse failed at [gipeda-0.1.1/src/Data/Text/Binary.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [glome-hs-0.61/TestScene.hs] (66:21): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [git-vogue-0.2.0.1/lib/Git/Vogue/Types.hs] (70:17): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ghc-make-0.3.2/src/Arguments.hs] (71:22): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ghcid-0.5/src/Ghcid.hs] (86:23): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [h-booru-0.3.0.0/src/HBooru/Network.hs] (41:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ghclive-0.1.0.2/src/Network/Web/GHCLive/Display.hs] (86:1): TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [funsat-0.6.2/Main.hs] (38:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [freesect-0.8/FilesAndParsing.hs] (15:3): Parse error: module
+MoveIfStrict: fromParseResult: Parse failed at [git-checklist-1.0.0.0/src/Main.hs] (30:41): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [graph-rewriting-trs-0.1.6/GL.hs] (13:17): Parse error in pattern: 
+MoveIfStrict: fromParseResult: Parse failed at [ghc-imported-from-0.2.0.6/Language/Haskell/GhcImportedFrom.hs] (103:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ghc-core-0.5.6/ghc-core.hs] (190:48): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ghc-events-0.4.4.0/GHC/RTS/EventParserUtils.hs] (33:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ghc-pkg-autofix-0.2.0.1/Main.hs] (50:28): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ginsu-0.8.1.1/Boolean/Algebra.hs] (206:1): Malformed context: FlexibleContexts is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [git-all-1.5.0/Main.hs] (24:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ght-0.4.0.1/Git/Pack.hs] (151:33): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [glapp-0.1.0.1/src/Data/Glapp/Internal.hs] (19:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [ghc-events-parallel-0.5.0.1/GHC/RTS/EventParserUtils.hs] (20:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ghc-mod-5.2.1.2/Language/Haskell/GhcMod/CabalApi.hs] (46:23): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [geniserver-0.24.1.1/src/NLP/GenI/Server.hs] (116:26): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [gps2htmlReport-0.3.1/Data/GPS/Gps2HtmlReport/Main.hs] (54:30): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [google-html5-slide-2011.0/HTML5Slide.hs] (41:9): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [gtk2hs-buildtools-0.13.0.4/c2hs/base/general/Binary.hs] (41:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [getemx-0.1/Emx/Emx.hs] (60:116): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ghc-parmake-0.1.8/src/GHC/ParMake/BuildPlan.hs] (98:37): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [goatee-gtk-0.3.0/src/Game/Goatee/Ui/Gtk/Actions.hs] (126:26): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [gloss-examples-1.9.4.1/picture/Occlusion/World.hs] (128:25): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [graph-rewriting-ski-0.6.4/Common/GL.hs] (9:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [git-annex-5.20150617/Annex/Content/Direct.hs] (230:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [groundhog-inspector-0.7.1.2/Database/Groundhog/Inspector.hs] (49:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [geni-gui-0.24.1/src/NLP/GenI/BuilderGui.hs] (48:5): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [glue-0.1.0.0/src/Glue/Batcher.hs] (43:64): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ghc-man-completion-0.0.0.3/Parser/Man/ManPage.hs] (14:34): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [freesound-0.1.0/freesound/Main.hs] (52:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [gmndl-0.4.0.2/Complex.hs] (110:37): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [fst-0.10.0.1/FST/Complete.hs] (21:5): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [gf-3.6/lib/src/experimental/transfer/Both.hs] (294:14): Parse error: *
+MoveIfStrict: fromParseResult: Parse failed at [gearbox-1.0.0.3/GearBox.hs] (39:1): TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [gruff-0.3.4/src/Number.hs] (8:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [geni-util-0.24.1.1/NLP/GenI/Report.hs] (90:3): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ghci-haskeline-0.2/GhciHaskeline/GhciMonad.hs] (54:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [graph-rewriting-lambdascope-0.5.6/GL.hs] (15:17): Parse error in pattern: 
+MoveIfStrict: fromParseResult: Parse failed at [gameclock-1.0.4/gameclock.hs] (255:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [git-gpush-3.1.0.1/Main.hs] (22:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [greencard-3.0.4.2/dist/build/greencard/greencard-tmp/Parse.hs] (26:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [glambda-1.0/src/Language/Glambda/Check.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [git-monitor-3.1.1.4/Main.hs] (38:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [gact-0.2/src/GACT.hs] (5:17): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ghc-prof-flamegraph-0.1.2.1/ghc-prof-flamegraph.hs] (18:26): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [happs-tutorial-0.9.5/src/AppStateGraphBased.hs] (53:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [hackage-proxy-0.3.0.1/HackageProxy.hs] (39:39): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hakyll-4.7.1.0/src/Hakyll/Check.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [halfs-2.0/Halfs/BlockMap.hs] (115:16): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hat-2.8.0.0/Hat/Hack.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [halive-0.1.0.3/exec/Halive.hs] (96:9): LambdaCase is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [halma-0.2.0.0/halma.hs] (34:45): TypeFamilies or GADTs is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hPDB-examples-1.2.0.2/examples/CanonicalAxes.hs] (17:42): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haggis-0.1.2.1/src/Text/Haggis/Comments.hs] (68:42): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haskeem-0.7.16/Evaluator.hs] (38:3): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hairy-0.1.3/library/Hairy/Models.hs] (17:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [hackage-plot-0.2.1/Main.hs] (36:47): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hans-2.5.0.0/example/test.hs] (17:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hackage-diff-0.1.0.0/Main.hs] (54:39): ScopedTypeVariables is not enabled
+MoveIfStrict: haslo-0.1.3/Haslo/CalcConfigurationType.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [haddocset-0.3.2/Documentation/Haddocset.hs] (107:17): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haskell-in-space-0.1.1/Asteroids-basic.hs] (259:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [haskell-awk-1.1/src/Control/Monad/Trans/OptionParser.hs] (8:14): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haroonga-httpd-0.1.1.0/Web/Groonga/Server.hs] (13:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haskoin-wallet-0.0.1/Network/Haskoin/Wallet/Store/CoinStatus.hs] (26:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haskdeep-0.2.0.1/src/HaskDeep/Computation.hs] (48:26): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hangman-1.0.3/src/main/haskell/Main.hs] (22:27): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hackager-1.2.0.1/src/HackageMonad.hs] (28:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haddock-2.16.0/haddock-api/src/Haddock/GhcUtils.hs] (255:45): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haskell-docs-4.2.5/src/Haskell/Docs/Cabal.hs] (48:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haskell-formatter-1.0.0/HLint.hs] (1:15): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haskintex-0.5.0.3/Haskintex.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [halberd-0.1.2.9/src/Halberd/CollectNames.hs] (40:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [handa-gdata-0.7.0.3/src/Network/Google/FusionTables.hs] (178:33): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haskelldb-flat-1.0.1/Database/HaskellDB/FlatDB.hs] (171:33): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haskell-pdf-presenter-0.2.5/HaskellPdfPresenter.hs] (106:1): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hask-home-2009.3.18/hask-home.hs] (310:47): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haskanoid-0.1.4/src/Data/Extra/VectorSpace.hs] (5:42): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hackage-mirror-0.1.0.0/src/Hackage/Mirror.hs] (133:26): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haskell-updater-1.2.9/Distribution/Gentoo/GHC.hs] (58:1): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [haskell-cnc-0.1.3.200/Intel/Cnc.Header.hs] (44:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haskell-brainfuck-0.1.0.1/src/HaskBF/Eval.hs] (136:1): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hadoop-tools-0.6/src/Main.hs] (175:16): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hayland-0.1.0.1/Graphics/Wayland/Internal/SpliceClient.hs] (15:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [haste-0.1.1/src/Haste/Options.hs] (60:37): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hails-0.11.2.1/Hails/Data/Hson.hs] (228:20): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hakyll-convert-0.1.0.0/tools/hakyll-convert.hs] (112:51): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hackport-0.4.5/Portage/EBuild.hs] (21:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haskelm-0.1.12.0/src/Language/Elm/TH/HToE.hs] (16:1): Parse error: {-# LANGUAGE
+MoveIfStrict: fromParseResult: Parse failed at [haddock-leksah-2.6.0/dist/build/haddock/haddock-tmp/Haddock/Interface/Lex.hs] (27:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haxparse-0.3.1.0/src/HaxParse/AST/TH.hs] (14:61): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [happy-1.19.5/dist/build/happy/happy-tmp/AttrGrammarParser.hs] (14:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [handa-geodata-0.2.0.1/src/Data/Geometry/LegacyVTK.hs] (121:19): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haskell-ftp-0.1.0.1/Ftp.hs] (10:18): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [haverer-0.3.0.0/lib/Haverer/Action.hs] (61:63): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hastache-0.6.1/Text/Hastache/Context.hs] (50:43): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hasktags-0.69.1/src/DebugShow.hs] (6:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hoodle-0.4.0/lib/Hoodle/StartUp.hs] (19:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hosts-server-0.1.1/Main.hs] (44:19): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [himg-0.1.0.0/src/Graphics/HImg.hs] (34:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hemokit-0.6.5/apps/Dump.hs] (123:38): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hell-2.1/src/Hell/Shell.hs] (132:44): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hgom-0.6/Gom/Config.hs] (36:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hdph-0.0.1/src/Control/Parallel/HdpH/Internal/Comm.hs] (194:1): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hnetcdf-0.3.0.0/Data/NetCDF/HMatrix.hs] (23:3): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hgithub-0.1.0/Network/GitHub.hs] (60:12): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hdirect-0.21.0/comlib/AutoPrim.hs] (76:1): Left-hand side of type signature is not a variable: primitive writeVarStablePtr "prim_AutoPrim_writeVarInt"
+MoveIfStrict: fromParseResult: Parse failed at [hindent-4.5.4/src/HIndent/Comments.hs] (17:18): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hburg-1.1.2/hburg/hburg-tmp/Parser/Lexer.hs] (30:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hledger-0.25.1/Hledger/Cli/Add.hs] (91:65): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hoe-1.0.1/src/HOE.hs] (115:3): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hi-1.2.0.0/src/Hi/Git.hs] (22:45): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hellnet-0.1.1/hell-get.hs] (63:41): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [hoodle-publish-0.2.0/lib/Hoodle/Publish/PDF.hs] (168:18): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [helium-1.8.1/lib/simple/Prelude.hs] (62:31): Parse error: -.
+MoveIfStrict: fromParseResult: Parse failed at [hist-pl-0.3.2/tools/hist-pl.hs] (105:13): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hdevtools-0.1.0.9/src/Cabal.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hbro-1.4.0.0/library/Control/Monad/Reader/Extended.hs] (39:30): Parse error: where
+MoveIfStrict: fromParseResult: Parse failed at [hoovie-0.1.1/src/Hoovie/Messages.hs] (26:1): Parse error in pattern: ""
+MoveIfStrict: fromParseResult: Parse failed at [hmp3-1.5.2.1/Core.hs] (71:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hoogle-4.2.41/src/Console/Log.hs] (28:16): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [homplexity-0.4.3.0/Homplexity.hs] (34:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hevolisa-dph-0.0.1/Hevolisa/Vector.hs] (17:11): Parse error: :
+MoveIfStrict: fromParseResult: Parse failed at [hirt-0.0.1.1/Driver.hs] (66:18): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hogg-0.4.1.2/tools/hogg.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hob-0.0.1.0/src/lib/Hob/Context/Types.hs] (103:35): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [heapsort-0.1.0/Data/Array/MArray/Heapsort.hs] (37:15): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hoobuddy-0.1.0.1/src/Main.hs] (25:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hopenpgp-tools-0.15/dist/build/hkt/hkt-tmp/HOpenPGP/Tools/Lexer.hs] (25:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hlint-1.9.21/data/HLint.hs] (4:15): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [himpy-0.5.0/System/Himpy/Output/Riemann.hs] (72:40): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hermit-1.0.0.0/dist/build/HERMIT/Parser.hs] (26:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hog-0.1.1/src/Main.hs] (61:23): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hjs-0.2.1/src/HJS/Interpreter/Interp.hs] (103:55): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hopfield-0.1.0.2/apps/Recognize.hs] (150:24): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hiccup-0.40/ExprParse.hs] (134:8): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hlcm-0.2.2/HLCM.hs] (303:44): Parse error in pattern: # s'
+MoveIfStrict: fromParseResult: Parse failed at [hoodle-extra-0.1/exe/networkedit.hs] (61:32): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hfractal-0.4.2.5/src/FracState.hs] (23:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [hips-0.1/Hips.hs] (9:14): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hircules-0.4.1/Hircules/IRC.hs] (158:28): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [hoq-0.3/dist/build/hoq/hoq-tmp/Syntax/Parser/Lexer.hs] (20:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hmumps-0.1.1/Data/MValue.hs] (227:32): Parse error: =>
+MoveIfStrict: fromParseResult: Parse failed at [hcube-0.1.1/HCube/Lib.hs] (118:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [holy-project-0.2.0.0/scaffold/src/ModuleName/Coconut.hs] (1:8): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [hranker-0.1.1/Hranker/CommandLine.hs] (14:45): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hsenv-0.5/src/Args.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hprotoc-fork-2.0.16.1/Text/ProtocolBuffers/ProtoCompile/Identifiers.hs] (158:35): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hprotoc-2.0.17/Text/ProtocolBuffers/ProtoCompile/Gen.hs] (209:24): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hpyrg-0.1.0.0/src/Hpyrg.hs] (19:16): Parse error: ∷
+MoveIfStrict: fromParseResult: Parse failed at [hsqml-demo-samples-0.3.3.0/src/OpenGL2.hs] (37:38): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hpaste-1.2.0/src/Control/Monad/Catch.hs] (5:36): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hspec-meta-2.1.7/hspec-core/src/Test/Hspec/Compat.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsx2hs-0.13.3.2/src/hsx2hs.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hums-0.7.0/src/DirectoryUtils.hs] (50:32): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hs-mesos-0.20.3.0/src/System/Mesos/Lens.hs] (12:12): Improper character constant or misplaced '
+MoveIfStrict: hpylos-1.0/source/PylosBoard.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [hsqml-demo-morris-0.3.1.0/src/Morris/Main.hs] (73:5): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hpc-tracer-0.3.1/src/Network/AjaxServer.hs] (41:25): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [hsqml-morris-0.2.0.0/src/Morris/Main.hs] (94:5): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [htar-0.4.0.1/htar.hs] (22:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsntp-0.1/HSNTP/Util/UDP.hs] (28:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsx-0.10.5/src/HSX/XMLGenerator.hs] (55:2): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hsc2hs-0.67.20120610/Common.hs] (95:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsilop-0.1.1.0/src/Main.hs] (33:46): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hulk-0.2.0/src/Hulk/Client.hs] (54:32): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hws-1.1.0.1/src/AccessLogger.hs] (232:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsimport-0.6.5/lib/HsImport/Args.hs] (12:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [htsn-import-0.2.4/src/OptionalConfiguration.hs] (47:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hsc3-graphs-0.15/Sound/SC3/Graph/ADC_adc_16_6_2.hs] (11:18): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [hpaco-0.28.0.5/CommandArgs.hs] (18:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hsbencher-fusion-0.3.15.2/CSVUploader/Main.hs] (241:37): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [htoml-0.1.0.2/test/BurntSushi.hs] (21:12): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [hpage-0.12.2/res/help/helpPage.hs] (7:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hunt-server-0.3.0.2/src/Hunt/Server/Common.hs] (33:3): ExistentialQuantification is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hscope-0.4.1/t/files/CPP.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [htune-0.2/main.hs] (29:21): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hsfcsh-0.0.1/hsfcsh.hs] (62:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hscolour-1.23/HsColour.hs] (18:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hs-pgms-0.1.0.1/src/GUI/Stats.hs] (109:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hsdev-0.1.3.4/src/Control/Concurrent/Task.hs] (116:90): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hpack-0.3.2/src/Config.hs] (34:75): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hsubconvert-0.0.2/Main.hs] (67:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [hstyle-0.2.0.3/src/HStyle/Rule.hs] (22:21): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [hplaylist-0.2/Applescript.hs] (30:7): Illegal character in string gap
+MoveIfStrict: fromParseResult: Parse failed at [hubris-0.0.3/Language/Ruby/Hubris.hs] (29:64): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hs-logo-0.5.1/src/Diagrams/TwoD/Path/Turtle/Internal.hs] (232:49): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hunp-0.1/Hunp.hs] (25:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsprocess-0.3/src/System/Console/HSProcess/Representable.hs] (45:46): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [htsn-0.1.1/src/OptionalConfiguration.hs] (45:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hstorchat-0.1.1.0/src/Network/HSTorChat/GUI.hs] (55:5): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [husk-scheme-3.19/hs-src/Language/Scheme/Compiler/Libraries.hs] (357:1): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [json-tools-0.5.0/Utils.hs] (38:31): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ideas-math-1.2/src/Domain/Logic/BuggyRules.hs] (39:28): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [inch-0.2.0/examples/Cost.hs] (25:18): DataKinds is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [kmeans-vector-0.3/bench/OldKmeans.hs] (65:1): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [j2hs-0.99.1/src/Options.hs] (32:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [lambda-devs-0.4.0/Data/DEVS/Devs.hs] (71:17): Parse error: *
+MoveIfStrict: fromParseResult: Parse failed at [ide-backend-server-0.9.0/Break.hs] (91:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [jmacro-0.6.13/Language/Javascript/JMacro/Base.hs] (243:1): GADTs is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [io-manager-0.1.0.2/Training/MM/IOManager.hs] (73:22): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [lambdaLit-0.1.1.0/Repl.hs] (25:34): Parse error: *
+MoveIfStrict: fromParseResult: Parse failed at [labyrinth-server-0.1.4.1/src/LabyrinthServer/Data.hs] (26:18): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [keystore-0.7.0.1/examples/deploy/Deploy/Deploy.hs] (40:12): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [jsontsv-0.1.5.0/Main.hs] (74:54): Parse error: of
+MoveIfStrict: fromParseResult: Parse failed at [jammittools-0.4.1.1/Main.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [lambdacat-0.1.1/LambdaCat/Internal/Class.hs] (44:36): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ihttp-0.3.0/Network/IHttp/Header.hs] (50:36): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [jukebox-0.1.3/Jukebox/Form.hs] (79:1): TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ivory-examples-0.1.0.2/examples/AddrOfRegression.hs] (13:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [io-reactive-0.1.1/Control/Concurrent/Reactive.hs] (40:23): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [lambdabot-5.0.2.2/src/Modules.hs] (17:15): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [irc-core-1.1.0.1/driver/ClientState.hs] (31:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [jespresso-1.0.2/src/Text/Html/Consolidate.hs] (295:10): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [jsonsql-0.1.0.1/Main.hs] (118:39): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hydra-print-0.1.0.3/UI/HydraPrint.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [katt-0.2.0.3/katt-lib/src/Utils/Katt/Init.hs] (197:45): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [lambdatwit-0.1.0.0/Main.hs] (112:18): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [json-autotype-1.0.2/Data/Aeson/AutoType/Alternative.hs] (18:1): TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [imapget-0.0.3/SSLWrap.hs] (27:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [laborantin-hs-0.1.5.2/Laborantin/DSL.hs] (235:48): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [keiretsu-0.4.4/src/Main.hs] (106:13): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [json-b-0.0.4/Text/JSONb/Decode.hs] (119:29): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [imbib-1.0.0/Batch.hs] (33:1): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ironforge-0.1.0.35/Game/Antisplice/Dungeon/Ironforge/Cambridge.hs] (52:17): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ipatch-0.1.1/src/IPatch/Apply.hs] (87:118): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hydrogen-cli-0.14/src/H/Common.hs] (26:1): LambdaCase is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [kevin-0.11.0/src/Kevin/Base.hs] (27:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hyperdrive-0.1/Response.hs] (18:25): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ivory-bitdata-0.2.0.0/examples/Example.hs] (24:29): DataKinds is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [iptadmin-1.3.4/src/IptAdmin/EditForm/Class.hs] (19:32): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [jdi-0.0.3/src/Language/Java/Jdi.hs] (84:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [keera-posture-0.1.4.4/src/Controller/Conditions/PopupMenu.hs] (20:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [kit-0.7.12/Kit/CmdArgs.hs] (8:16): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [informative-0.1.0.7/Web/Informative/Data.hs] (11:2): Parse error: /
+MoveIfStrict: fromParseResult: Parse failed at [keter-1.4.1/Codec/Archive/TempTarball.hs] (52:28): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [infernu-0.0.0.1/src/Infernu/Builtins/Array.hs] (66:14): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hxournal-0.6.6.1/Config.hs] (71:3): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [hybrid-2.0/Printer.hs] (25:1): Malformed context: FlexibleContexts is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [knots-0.1.0.1/Knots/Free.hs] (199:88): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ide-backend-0.9.0.9/IdeSession/Cabal.hs] (145:5): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [imm-0.6.0.3/Imm/Boot.hs] (75:5): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [imagepaste-0.2.0.1/src/Log.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hxmppc-0.2.3/hxmppc.hs] (24:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [inject-0.1.0/src/Text/Inject.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [kdesrc-build-extra-0.1.0.2/src/Config.hs] (90:35): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [implicit-0.0.3/Graphics/Implicit/Export/Util.hs] (39:1): Malformed context: FlexibleContexts is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ihaskell-0.6.3.0/Hspec.hs] (313:7): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [lambdacube-examples-0.2.2/src/Utils.hs] (68:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [idris-0.9.18.1/Setup.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [lambdacube-samples-0.2.0/BulletExample.hs] (34:17): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [launchpad-control-0.0.1.0/System/MIDI/Launchpad/Apps/DrumSeq.hs] (146:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [lio-simple-0.0.2.2/LIO/Web/Simple/DCLabel.hs] (16:13): Safe or SafeImports or Trustworthy is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [lgtk-0.8.0.4/lgtkdemo/Data/Equivalence/Persistent.hs] (42:36): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs] (15:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [make-hard-links-0.2/MakeHardLinks.hs] (107:35): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [leksah-server-0.15.0.3/src/IDE/Core/CTypes.hs] (76:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [leaky-0.4.0.0/Types_explicit_SOP.hs] (68:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [liquidhaskell-0.4.1.1/include/Language/Haskell/Liquid/Foreign.hs] (35:18): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [language-puppet-1.1.3.1/Erb/Compute.hs] (62:1): LambdaCase is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [manatee-0.2.2/Manatee/Action/Basic.hs] (72:63): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [leksah-0.15.0.5/main/Main.hs] (22:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [lit-0.1.0.5/src/Process.hs] (50:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [linear-algebra-cblas-0.1/lib/Numeric/LinearAlgebra/Internal.hs] (46:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [line2pdf-0.0.7/src/Text/LineToPDF/Internals.hs] (35:26): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [mailgun-0.1.0.4/src/Rackspace/MailGun.hs] (51:23): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [macosx-make-standalone-0.1.0.1/src/Cmds.hs] (86:10): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [linkchk-0.0.2/Linkchk.hs] (76:19): Parse error: opts
+MoveIfStrict: fromParseResult: Parse failed at [lhs2TeX-hl-0.1.4.5/src/Literate/Agda.hs] (43:32): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [liquid-fixpoint-0.3.0.1/src/Language/Fixpoint/Errors.hs] (135:42): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [maam-0.2.0.1/src/FP/Core.hs] (29:23): Parse error: Constraint
+MoveIfStrict: fromParseResult: Parse failed at [ltext-0.0.2.1/src/LText/Internal/Classes.hs] (14:21): Parse error: *
+MoveIfStrict: fromParseResult: Parse failed at [manatee-ircclient-0.1.1/Manatee/Extension/IrcClient/DBus.hs] (89:54): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [libhbb-0.4.1.0/Language/Haskell/HBB/Internal/GHCHighlevel.hs] (60:54): Parse error: =>
+MoveIfStrict: fromParseResult: Parse failed at [make-package-1.2.0/files/Package.hs] (3:8): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [marxup-3.0.0.1/MarXup/DerivationTrees.hs] (50:1): TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [llsd-0.2.0.0/Network/Format/LLSD/IEEE754.hs] (24:1): Parse error in pattern: 
+MoveIfStrict: fromParseResult: Parse failed at [lord-2.20150122/Web/Radio/Cmd.hs] (44:5): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [markdown2svg-0.0.1.27/src/Image/JPG.hs] (7:20): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mailchimp-subscribe-1.0/Main.hs] (52:1): Malformed context: FlexibleContexts is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [markdown-unlit-0.2.0.1/src/Text/Markdown/Unlit.hs] (9:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [manatee-welcome-0.1.1/Manatee/Extension/Welcome/WelcomeBuffer.hs] (119:38): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [live-sequencer-0.0.4/src/MPlayer.hs] (91:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [maclight-0.1.0.0/src/Apple/Maclight.hs] (23:44): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [marquise-4.0.0/lib/Marquise/Classes.hs] (67:71): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [lojysamban-0.0.8.1/src/LojysambanLib.hs] (127:1): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [manatee-template-0.1.1/Manatee/Extension/Template/TemplateBuffer.hs] (83:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [ls-usb-0.1.1/PrettyDevList.hs] (28:25): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [linx-gateway-0.1.0.2/examples/Ping.hs] (11:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [marionetta-0.1.0.3/Controller.hs] (44:1): GADTs is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [latest-npm-version-0.3.1/Main.hs] (20:30): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [layers-game-0.5/Ressources/Levels.hs] (2:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [markup-preview-0.2.2.1/Application/CommandLine.hs] (56:27): Parse error: startupOptions
+MoveIfStrict: fromParseResult: Parse failed at [llvm-pretty-bc-parser-0.1.3.1/disasm-test/Main.hs] (125:27): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [loopy-0.0.1/Main.hs] (45:20): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mangopay-1.11.1/src/Web/MangoPay/Cards.hs] (152:16): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [manatee-anything-0.0.8/Manatee/Plugin/Anything/AnythingView.hs] (648:42): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mahoro-0.1.2/DBState.hs] (26:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [manatee-curl-0.1.1/Manatee/Extension/Curl/CurlBuffer.hs] (855:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [manatee-terminal-0.1.1/Manatee/Extension/Terminal/TerminalBuffer.hs] (72:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [lvmrun-1.0/Fornothing.hs] (3:1): Parse error: main
+MoveIfStrict: fromParseResult: Parse failed at [manatee-filemanager-0.1.1/Manatee/Extension/FileManager/DiredBuffer.hs] (316:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [linear-maps-0.6.1/Control/Functor.hs] (11:22): Parse error: *
+MoveIfStrict: fromParseResult: Parse failed at [llvm-tools-0.2.0.1/src/LLVM/VisualizeGraph.hs] (104:24): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [manatee-editor-0.1.1/Manatee/Extension/Editor/SourceBuffer.hs] (88:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [manatee-processmanager-0.1.1/Manatee/Extension/ProcessManager/ProcessBuffer.hs] (253:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [manatee-reader-0.1.1/Manatee/Extension/Reader/ReaderBuffer.hs] (244:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [manatee-browser-0.1.1/Manatee/Extension/Browser/BrowserBuffer.hs] (103:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [lhs2tex-1.19/Setup.hs] (25:23): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [manatee-imageviewer-0.1.1/Manatee/Extension/ImageViewer/ImageBuffer.hs] (162:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [manatee-pdfviewer-0.1.1/Manatee/Extension/PdfViewer/PdfBuffer.hs] (99:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [manatee-mplayer-0.1.1/Manatee/Extension/Mplayer/DBus.hs] (50:58): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [mega-sdist-0.2.10.4/mega-sdist.hs] (28:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [module-management-0.20.3/Language/Haskell/Modules/Common.hs] (43:63): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [minirotate-0.1.2.2/src/Options.hs] (68:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [mighttpd-0.4.3/Parsec.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [mustache-haskell-0.1.0.5/Text/Mustache/Parse.hs] (102:19): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [network-builder-0.1.0/Network/Builder/Namespace.hs] (28:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [mysnapsession-example-0.4/animalgame/src/Application.hs] (39:5): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [msi-kb-backlit-0.1.0.1/src/Main.hs] (101:1): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [matsuri-0.0.4/Main.hs] (48:31): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mida-0.4.3/src/Mida/Language/Environment.hs] (143:1): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mediawiki2latex-7.9.0.1/src/Babel.hs] (4:1): Parse error: module
+MoveIfStrict: fromParseResult: Parse failed at [minions-0.2.0.0/minions.hs] (51:14): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mohws-0.2.1.3/src/Network/MoHWS/Server.hs] (152:1): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mathblog-0.5/src/MB/Startup.hs] (5:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [masakazu-bot-0.4.0.0/Main.hs] (35:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [newsynth-0.3.0.1/Quantum/Synthesis/CliffordT.hs] (250:70): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mighttpd2-3.2.8/Program/Mighty/FileCache.hs] (28:24): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mediawiki-0.2.6/MediaWiki/API.hs] (160:33): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [misfortune-0.1.1.2/src/Data/Fortune/FortuneFile.hs] (65:24): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mute-unmute-0.2.0.0/mute-unmute.hs] (32:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [nerf-0.5.3/src/NLP/Nerf/Schema.hs] (115:12): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [network-bitcoin-1.8.1/src/Network/Bitcoin/RawTransaction.hs] (244:32): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mathgenealogy-1.3.0/Main.hs] (91:38): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [nixfromnpm-0.1.0.4/src/Main.hs] (10:34): Parse error: ]
+MoveIfStrict: fromParseResult: Parse failed at [morfette-0.4.3/src/GramLab/Data/Assoc.hs] (2:1): Parse error: ,
+MoveIfStrict: fromParseResult: Parse failed at [netlines-1.0.0/Data/Enumerator/NetLines/IO.hs] (37:49): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [nkjp-0.4.0/Text/NKJP/Named.hs] (90:15): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [melody-0.2/src/Language/Melody/Interpret/Types.hs] (31:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [nofib-analyze-7.10.1/Main.hs] (90:18): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [network-topic-models-0.2.0.1/RunCI.hs] (180:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [minimung-0.1/Data/Image.hs] (137:28): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [miniforth-0.1.0.1/lib/MiniForth/Types.hs] (52:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [miniplex-0.3.4/lib/System/Miniplex/Sink.hs] (100:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [nikepub-1.1.2/Codemanic/NikeRuns.hs] (153:10): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [octohat-0.1.4.2/src/Network/Octohat/Internal.hs] (105:36): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [midimory-0.0.0.2/src/MIDI.hs] (54:4): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [maybench-0.2.4.1/Test/Maybench/Command.hs] (30:54): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [nymphaea-0.3/src/MonadRandom.hs] (24:34): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [music-preludes-1.8.1/examples/analysis.hs] (7:69): TypeFamilies or GADTs is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs] (27:18): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mbox-tools-0.2.0.4/Email.hs] (43:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [maxsharing-1.0.2/MaxSharing.hs] (41:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [nyan-0.2/src/Main.hs] (69:37): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ml-w-0.1.1/Language/ML/TypeCheck.hs] (132:55): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [midisurface-0.1.0.0/surface.hs] (142:41): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [nc-indicators-0.3/nc-indicators.hs] (46:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [minesweeper-0.9.2.1/Core/Square.hs] (87:35): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [mudbath-0.0.3/Main.hs] (111:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [mprover-0.0.0.0/MProver/Syntax.hs] (90:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [nanoAgda-1.0.0/Normal.hs] (18:16): Parse error: *
+MoveIfStrict: fromParseResult: Parse failed at [multifocal-0.0.1/dist/build/Language/TLT/TltLexer.hs] (25:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [mpvguihs-0.1.1/MpvPlayer/Frontend/GUITemplates.hs] (58:51): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [morte-1.2.0/dist/build/Morte/Lexer.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [multiplicity-0.1.0/src/main.hs] (47:37): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [musicbrainz-email-1.0.0.0/mailer/Main.hs] (39:35): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [nptools-0.6.0/cp-rescue.hs] (52:31): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [music-util-0.17/src/music-util.hs] (11:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [neil-0.9/src/Cabal.hs] (87:10): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [noise-0.0.1/src-cli/Main.hs] (22:5): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pager-0.1.1.0/System/Pager.hs] (105:33): MultiWayIf is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pgdl-8.2/src/GenStat.hs] (40:1): LambdaCase is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [open-union-0.1.0.1/Data/OpenUnion/Internal.hs] (29:22): Parse error: *
+MoveIfStrict: fromParseResult: Parse failed at [orc-1.2.1.4/src/Control/Concurrent/Hierarchical.hs] (85:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [polyseq-0.1.2.1/src/Tests.hs] (24:12): Illegal escape sequence
+MoveIfStrict: fromParseResult: Parse failed at [pipes-p2p-examples-0.3/examples/addr/Main.hs] (98:1): LambdaCase is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ply-loader-0.4.1/src/PLY/Ascii.hs] (18:37): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [patch-image-0.1.0.1/src/Accelerate.hs] (198:1): TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pit-0.3.1/src/Pit.hs] (17:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [postgrest-0.2.10.0/src/PostgREST/App.hs] (147:35): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pointful-1.0.6/Lambdabot/Parser.hs] (15:41): Parse error: =>
+MoveIfStrict: fromParseResult: Parse failed at [postmaster-0.3/Postmaster/Base.hs] (68:43): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [olwrapper-0.4.1/src/Application.hs] (16:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [polh-lexicon-0.2.2/src/NLP/Polh/Binary.hs] (76:18): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pretty-show-1.6.8.2/Text/Show/PrettyVal.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [omaketex-0.1.1.0/omaketex.hs] (19:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [osdkeys-0.0/src/OSDKeys/XInput.hs] (39:38): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pcd-loader-0.3.0.1/src/PCD/Data.hs] (30:50): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [perdure-0.2.1/exe-src/Database/Perdure/TestPersistent.hs] (82:43): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [omega-1.5.2/Auxillary.hs] (227:14): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [pandoc-1.14.0.4/man/make-pandoc-man-pages.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [pocket-dns-0.1.1/Network/DNS/Pocket/Server.hs] (41:22): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [papillon-0.1.0.0/bin/Class.hs] (16:20): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [packunused-0.1.1.4/packunused.hs] (13:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [primula-board-0.0.1/BoardState.hs] (25:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [opentheory-char-1.41/Setup.hs] (3:1): Parse error: import
+MoveIfStrict: fromParseResult: Parse failed at [ohloh-hs-0.0.2/tools/cmdoh.hs] (38:17): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pisigma-0.2.1/src/Language/PiSigma/Normalise.hs] (31:23): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [photoname-3.0.1/src/Photoname/Exif.hs] (39:48): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pandoc-csv2table-1.0.1/src/Text/Table/Helper.hs] (148:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [optimal-blocks-0.1.0/src/Algorithm/OptimalBlocks/BuzzHash.hs] (110:30): Parse error: hash_last
+MoveIfStrict: fromParseResult: Parse failed at [parconc-examples-0.3.5/AccelerateCompat.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [pointfree-1.1/Plugin/Pl/Optimize.hs] (54:19): Parse error: ?
+MoveIfStrict: fromParseResult: Parse failed at [pia-forward-0.1.0.1/src/Main.hs] (37:34): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [piki-0.5.2/src/Html.hs] (30:42): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [peg-0.2/Peg.hs] (18:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [pg-harness-0.2.1/src/Main.hs] (97:3): LambdaCase is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [parsestar-1.5/Data/STAR/ChemShifts.hs] (125:41): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [omnicodec-0.7/src/odec.hs] (96:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [pg-harness-server-0.3.1/src/Main.hs] (97:3): LambdaCase is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pipeclip-0.1.0.1/pipeclip.hs] (17:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [phybin-0.3/Bio/Phylogeny/PhyBin/CoreTypes.hs] (44:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [paypal-adaptive-hoops-0.11.0.2/src/PayPal/Adaptive/Core.hs] (303:1): MultiWayIf is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [persona-idp-0.1.0.2/src/Provision.hs] (49:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [pandoc-crossref-0.1.2.1/src/Util/Meta.hs] (27:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [parser-helper-0.1.0.0/src/Development/Main.hs] (18:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [pdf2line-0.0.1/pdf2line.hs] (131:9): NPlusKPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pec-0.2.3/Pec/Base.hs] (440:1): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [porte-0.0.4/Porte/Ports.hs] (80:29): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [piet-0.1/sources/Language/Piet/Types.hs] (166:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [priority-sync-0.2.1.1/PrioritySync/Internal/ClaimContext.hs] (12:27): Parse error: *
+MoveIfStrict: fromParseResult: Parse failed at [pdf-toolbox-viewer-0.0.3.3/compat/Prelude.hs] (8:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [postgresql-orm-0.3.2/Data/GetField.hs] (8:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [paragon-0.1.28/dist/build/Language/Java/Paragon/Lexer.hs] (11:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [on-demand-ssh-tunnel-0.1.0.6/src/Network/OnDemandSSHTunnel.hs] (54:25): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pandoc-citeproc-0.7.2/src/Text/CSL/Data.hs] (22:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [rehoo-0.3.1/Main.hs] (14:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [propellor-2.5.0/src/Propellor/Engine.hs] (19:14): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [rasterific-svg-0.2.3.1/exec-src/svgrender.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [repa-examples-3.4.0.1/examples/Blur/src-repa/Main.hs] (83:56): Parse error: ]
+MoveIfStrict: fromParseResult: Parse failed at [rss2irc-1.0.6/Base.hs] (28:23): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [reactive-thread-0.3.2.1/Control/Concurrent/STM/TEvent.hs] (36:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [puzzle-draw-0.1.0.4/src/Data/Puzzles/Compose.hs] (40:1): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [quoridor-hs-0.1.1.2/src/Quoridor/Cmdline/Network/Common.hs] (58:25): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [reheat-0.1.5/test/Tests.hs] (27:16): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [python-pickle-0.2.0/bin/pickle.hs] (61:13): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [protobuf-native-1.0.0.1/benchmark/DataProtocolBuffers.hs] (13:29): DataKinds is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [quantfin-0.2.0.0/src/Quant/ContingentClaim.hs] (52:43): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pwstore-cli-0.4/src/pwstore.hs] (141:19): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pure-priority-queue-tests-0.12/Tests.hs] (34:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [quickpull-0.4.2.2/lib/Quickpull/Runners.hs] (49:28): Parse error: =>
+MoveIfStrict: fromParseResult: Parse failed at [recursive-line-count-0.1/CountLines.hs] (34:23): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [rpf-0.2.5/Test.hs] (20:8): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [rosa-0.2.0.0/src/Main.hs] (41:15): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [repo-based-blog-0.0.1/library/Web/RBB/Crawler/MetaCombiner.hs] (30:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [regexchar-0.9.0.12/src/Grecce/Test/Assert/RegExOptsChar.hs] (65:65): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [quicktest-0.1.3/src/Main.hs] (76:30): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [randfile-0.1.0.0/Stat.hs] (12:1): Parse error: #
+MoveIfStrict: rbr-0.8.6/src/Lib/Stats.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [rdf4h-1.3.0/examples/ParseURLs.hs] (12:31): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [regex-genex-0.6.2/src/Regex/Genex/Normalize.hs] (15:32): Parse error: ?
+MoveIfStrict: fromParseResult: Parse failed at [rascal-1.1.6/src/Rascal/Conf.hs] (53:28): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [risc386-0.0.20130719/GenSym.hs] (54:29): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [resolve-trivial-conflicts-0.2.0.2/resolve_trivial_conflicts.hs] (42:26): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [rws-0.1.1.2/src/Ethernet.hs] (16:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [puzzle-draw-cmdline-0.1.0.4/src/tools/drawpuzzle.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [pushme-1.5.0/Main.hs] (30:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [regex-tdfa-unittest-1.1/Main.hs] (135:49): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pubnub-1.1.1/examples/Chat/Main.hs] (71:25): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [redo-0.2.0/redo.hs] (83:24): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [record-preprocessor-0.1.0.3/demo/Main.hs] (8:3): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [reaction-logic-2010.11.17/Data/Reactor/Reaction.hs] (36:31): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [reserve-0.1.1/src/Interpreter.hs] (40:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [remote-debugger-0.2.1/src/DebuggerMonad.hs] (113:38): Parse error: )
+MoveIfStrict: fromParseResult: Parse failed at [repa-v4l2-0.2.0.0/src/Graphics/Webcam/Linux/Internal.hs] (137:43): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [respond-1.1.0/src/Web/Respond/HListUtils.hs] (20:31): Parse error: *
+MoveIfStrict: fromParseResult: Parse failed at [rpc-framework-2.0.0.2/src/Network/Remote/RPC/Internal/MultiServer.hs] (47:1): StandaloneDeriving is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [resource-embed-0.1.0.0/src/Main.hs] (23:1): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [radix-1.0.0.0/src/Radix.hs] (72:1): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [rncryptor-0.0.2.1/src/Crypto/RNCryptor/Types.hs] (95:39): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [qudb-0.0.1/dist/build/qudb/qudb-tmp/Database/QUDB/Parser.hs] (14:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [regex-posix-unittest-1.1/Main.hs] (135:50): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pugs-DrIFT-2.2.3.20130611/src/DrIFT/Perl6Class.hs] (84:1): Malformed context: FlexibleContexts is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [riot-1.20080618/Riot/BootAPI.hs] (22:27): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [rethinkdb-2.0.0.0/Database/RethinkDB/Datum.hs] (2:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [roguestar-engine-0.6.0.1/src/Behavior.hs] (58:50): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [pxsl-tools-1.0.1/src/PxsltFormat.hs] (76:29): NPlusKPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [relational-record-examples-0.2.0.0/src/Account.hs] (7:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [roshask-0.2.1/Examples/Turtle/src/AngleNum.hs] (48:3): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [purescript-0.6.9.5/psc/Main.hs] (52:24): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ruler-core-1.0/dist/build/ruler-core/ruler-core-tmp/Scanner.hs] (12:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [rhythm-game-tutorial-0.1.1/src/tutorial-active.hs] (92:36): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [tabloid-0.47/examples/example.hs] (4:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [treeviz-1.0.0/src/Data/Tree/LogTree.hs] (123:36): TypeFamilies or GADTs is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [threads-supervisor-1.0.3.0/src/Control/Concurrent/Supervisor.hs] (178:32): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [twhs-0.1.0.3/Web/Twitter/Twhs/Common.hs] (63:60): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [twidge-1.1.2/Commands/Update.hs] (33:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [tup-functor-0.3.0.0/Data/Tup/Concat.hs] (20:59): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [tttool-1.4.0.2/src/BakedVector.hs] (8:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [treemap-html-tools-0.2/src/dirmap.hs] (97:1): NPlusKPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [time-exts-2.1.0/src/Data/Time/Exts/Base.hs] (269:50): NamedFieldPuns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [tetris-0.27178/Util.hs] (28:1): NPlusKPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [table-0.1.0.0/Main.hs] (49:12): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [turni-2011.1.15/Shuffle.hs] (10:52): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [tsp-viz-0.1.0.0/TSPViz.hs] (148:50): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [tftp-0.2/src/Network/TFTP/Protocol.hs] (14:37): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [tls-debug-0.4.0/src/SimpleClient.hs] (47:34): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [time-series-0.1.0.0/src/TimeSeries/Routing.hs] (222:13): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [test-sandbox-compose-0.1.3/Test/Sandbox/Compose/Server.hs] (118:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [tip-lib-0.1.2/dist/build/Tip/Parser/LexTIP.hs] (13:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [taffybar-0.4.5/src/System/Taffybar/SimpleClock.hs] (81:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [tersmu-0.2/Bindful.hs] (21:44): FunctionalDependencies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [timeplot-1.0.28/Graphics/Rendering/Chart/Event.hs] (55:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [touched-0.2.0.1/touched-cli/Main.hs] (28:1): MultiWayIf is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [transf-0.13.1/src/Text/Transf.hs] (383:11): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [tn-1.0.2.1/src/Tn/Static.hs] (104:1): LambdaCase is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [tip-haskell-frontend-0.1.1/src/Tip/Compile.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [tiger-1.1.1/dist/build/tiger/tiger-tmp/TigerScanner.hs] (12:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [themplate-1.1/src/Main.hs] (112:120): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [tamarin-prover-0.8.6.1/src/Main/Mode/Test.hs] (52:1): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [tempus-0.1.0/Tempus/Loc.hs] (1:1): Illegal character ''\65279''
+
+MoveIfStrict: fromParseResult: Parse failed at [todos-0.5.3.2/Todos/CommandParser.hs] (13:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [transformations-0.2.0.0/Generics/MultiRec/CountIs.hs] (17:22): Parse error: *
+MoveIfStrict: fromParseResult: Parse failed at [threadscope-0.2.7/Events/HECs.hs] (82:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [timberc-1.0.3/dist/build/timberc/timberc-tmp/Parser.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [taggy-0.1.4/src/Text/Taggy/Combinators.hs] (46:1): LambdaCase is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [toysolver-0.3.0/samples/programs/nqueens/nqueens.hs] (25:35): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [uacpid-1.0.3.0/src/Uacpid/Control/Monad/Error.hs] (26:35): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [xml-to-json-2.0.1/src/Text/XML/JSON/XmlToJson.hs] (19:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [xcffib-0.3.2/generator/Data/XCB/Python/Parse.hs] (125:37): ViewPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [unlambda-0.1.4.1/Language/Unlambda.hs] (28:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [vcswrapper-0.1.2/src/VCSWrapper/Common/TemporaryFiles.hs] (35:74): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [xmonad-0.11.1/Main.hs] (30:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [xmobar-0.23.1/src/Bitmap.hs] (30:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [wordpass-1.0.0.3/Data/Random/Choice.hs] (12:91): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [wyvern-0.1/Main.hs] (394:50): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [xilinx-lava-5.0.1.9/Lava/Col.hs] (22:15): Parse error: (
+MoveIfStrict: fromParseResult: Parse failed at [xlsx-0.1.0.4/src/Codec/Xlsx/Types.hs] (50:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [wobsurv-0.1.0/library/Wobsurv/Interaction.hs] (84:15): LambdaCase is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [uhttpc-0.1.0.0/Network/HTTP/MicroClient.hs] (82:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [wordsetdiff-0.0.3.1/Text/WordSetDiff/Main.hs] (54:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [wordsearch-1.0.1/Text/WordSearchSolver.hs] (109:1): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [wxFruit-0.1.2.1/WXFruit.hs] (86:32): Parse error in expression: _
+MoveIfStrict: fromParseResult: Parse failed at [webify-0.1.7.0/src/Font.hs] (169:25): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [xmonad-bluetilebranch-0.9.1.4/Main.hs] (30:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [unlit-0.3.0.3/src/Unlit/String.hs] (23:1): GADTs is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [uAgda-1.2.0.4/Normal.hs] (28:16): Parse error: *
+wedged-0: wedged-0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [wai-app-static-3.1.0/Network/Wai/Application/Static.hs] (76:32): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ureader-0.2.0.0/src/Main.hs] (77:26): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [warp-static-2.0.1.1/warp.hs] (39:11): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [warp-dynamic-0.1.0/Network/Wai/Application/Dynamic.hs] (43:18): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [wikipedia4epub-0.0.12/src/Wiki4e/Commands/Articles.hs] (79:1): NPlusKPatterns is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [wxturtle-0.0.1/src/Graphics/UI/WX/Turtle/Field.hs] (113:19): Parse error in pattern: rec
+MoveIfStrict: fromParseResult: Parse failed at [vk-posix-pty-0.2.1/System/Posix/Pty.hs] (58:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [urembed-0.5.0.1/src/Urembed.hs] (81:36): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [wolf-0.1.1/src/Network/AWS/Flow/Env.hs] (62:20): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [whim-0.1.1/Whim/Xlib.hs] (38:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [wai-handler-devel-2.0.0.2/Network/Wai/Handler/DevelServer/Compat.hs] (9:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [vty-examples-5.2.0/interactive_terminal_test.hs] (35:1): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [vado-0.0.5/src/System/Process/Vado.hs] (42:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [vty-5.2.9/src/Data/Terminfo/Parse.hs] (270:19): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [wai-middleware-crowd-0.1.1.2/app/SimpleOptions.hs] (14:6): Parse error: |
+MoveIfStrict: fromParseResult: Parse failed at [uuagc-bootstrap-0.9.40.2/src/Scanner.hs] (26:2): Parse error in expression: # s
+MoveIfStrict: fromParseResult: Parse failed at [waddle-0.1.0.5/Game/Waddle/ExportJS.hs] (100:14): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [xml2x-0.4.2/src/Options.hs] (42:21): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [vampire-0.1.3.0/Debug/Vampire/Analyze.hs] (20:39): Parse error: vCtx
+MoveIfStrict: fromParseResult: Parse failed at [vcsgui-0.1.2.0/src/VCSGui/Common/FilesInConflict.hs] (170:55): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [varan-0.5.1/src/Metrics.hs] (158:13): Illegal character ''\178''
+
+MoveIfStrict: fromParseResult: Parse failed at [txt-sushi-0.6.0/Database/TxtSushi/SQLExecution.hs] (357:27): Illegal data/newtype declaration
+MoveIfStrict: fromParseResult: Parse failed at [vintage-basic-1.0.1/src/Control/Monad/CPST/DurableTraps.hs] (41:1): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [vimus-0.2.1/src/Content.hs] (38:3): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [vision-0.0.5.0/src/Collection/Common.hs] (138:3): TypeFamilies is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [typeof-0.1.2/Process.hs] (25:55): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [uuagc-0.9.52.1/Setup.hs] (21:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [uhc-light-1.1.9.0/src/UHC/Light/Compiler/AbstractCore/Utils.hs] (61:79): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [zoom-cache-sndfile-1.1.0.1/tools/zoom-cache-sndfile.hs] (146:22): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [yampa2048-0.1.0.0/src/Game.hs] (22:21): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [yesod-examples-0.9.0.1/src/chat.hs] (28:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [yesod-bin-1.4.10/AddHandler.hs] (53:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [zoom-0.1.0.1/Zoom/Template/TH.hs] (20:12): Parse error: |
+MoveIfStrict: fromParseResult: Parse failed at [yi-0.12.0/src/library/Control/Exc.hs] (16:1): ScopedTypeVariables is not enabled
+MoveIfStrict: xsact-1.7.3/Stats.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [yackage-0.7.0.8/yackage.hs] (69:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [yesod-dsl-0.1.1.24/YesodDsl/ClassImplementer.hs] (37:9): TupleSections is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [yesod-continuations-0.1/Yesod/Continuation.hs] (43:55): MultiParamTypeClasses is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [yeganesh-2.5/Catch.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [yql-0.0.0/Main.hs] (40:35): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [zeroth-2009.6.23.3/Language/Haskell/TH/ZeroTH/GetOpt.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [yuuko-2010.11.28/src/Text/HTML/TagSoup/Implementation.hs] (80:39): ExplicitForAll or TypeOperators is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [ztail-1.1/Main.hs] (13:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [zoom-cache-1.2.1.6/Blaze/ByteString/Builder/ZoomCache/Internal.hs] (51:19): RecordWildCards is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [yet-another-logger-0.2.3.1/example/Example.hs] (23:1): TemplateHaskell is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [yesod-vend-0.3.0.0/examples/usersite.hs] (15:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [zeno-0.2.0.1/Example.hs] (193:1): ScopedTypeVariables is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [yst-0.5.0.3/Yst/Build.hs] (31:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [yxdb-utils-0.1.0.1/src/Codec/Compression/LZF/ByteString.hs] (58:16): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [yampa-glfw-0.1.0.0/FRP/Yampa/GLFW/Adapter.hs] (20:27): PackageImports is not enabled
+MoveIfStrict: fromParseResult: Parse failed at [yabi-muno-0.1.0.1/lib/Yabi/Types.hs] (40:12): Improper character constant or misplaced '
+MoveIfStrict: fromParseResult: Parse failed at [yavie-0.0.1/src/Yavie/MainTools.hs] (36:17): Parse error: *
+MoveIfStrict: fromParseResult: Parse failed at [y0l0bot-0.1.1/src-exec/y0l0bot.hs] (10:4): Parse error: module

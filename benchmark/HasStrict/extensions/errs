@@ -1,0 +1,460 @@
+mkdir: cannot create directory `strictapps': File exists
+MoveIfStrict: ./DSH-0.12.0.1/src/Database/DSH.hs: openFile: resource exhausted (Too many open files)
+MoveIfStrict: ../Apps/DSH-0.12.0.1/src/Database/DSH.hs: openFile: resource exhausted (Too many open files)
+MoveIfStrict: fromParseResult: Parse failed at [CCA-0.1.5.3/src/Language/Haskell/TH/Instances.hs] (39:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Etage-Graph-0.1.8/lib/Data/Graph/Etage.hs] (20:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [GenI-0.24.3/src/NLP/GenI/Parser.hs] (80:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [FormalGrammars-0.2.0.0/src/NeedlemanWunsch.hs] (30:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [BCMtools-0.1.1/src/BCM/Visualize/Internal/Types.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Ebnf2ps-1.0.12/dist/build/ebnf2ps/ebnf2ps-tmp/Ebnf2psParser.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [EtaMOO-0.2.0.0/src/MOO/Builtins.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [src/full/Agda/Syntax/Parser/Lexer.x] (27:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Eternal10Seconds-0.2/Eternal.hs] (41:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [QueryLexer.x] (6:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [DrIFT-2.4.2/code/GhcBinary.hs] (610:45): Parse error in pattern: # s
+MoveIfStrict: fromParseResult: Parse failed at [Blobs-0.3/lib/DData/IntMap.hs] (156:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [src/DPM/Core/Lexer.x] (5:1): Parse error: #
+MoveIfStrict: 3d-graphics-examples-0.0.0.1/src/Utilities.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [DSH-0.12.0.1/src/Database/DSH/CL/Opt/AntiJoin.hs] (30:17): Parse error: <-
+MoveIfStrict: fromParseResult: Parse failed at [Eq-1.1.3/Language/Eq/Algorithm/Eval/Complex.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [src/lib/Dict/Lex.x] (9:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Combinatorrent-0.3.2/src/Process/DirWatcher.hs] (43:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [Adaptive-Blaisorblade-0.23/Control/Monad/Adaptive.hs] (193:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [CPL-0.0.7/src/CDT.hs] (62:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [BiobaseXNA-0.9.1.1/Biobase/Primary/Nuc/Conversion.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Dao-0.1.0.2/src/Dao/Binary.hs] (556:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [Adaptive-0.23/Control/Monad/Adaptive.hs] (193:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [AndroidViewHierarchyImporter-0.1.0.1/Main.hs] (9:1): Parse error: {-# LANGUAGE
+MoveIfStrict: fromParseResult: Parse failed at [DrIFT-cabalized-2.3.0/code/GhcBinary.hs] (610:45): Parse error in pattern: # s
+MoveIfStrict: fromParseResult: Parse failed at [DAG-Tournament-0.1/src/main.hs] (79:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: GeBoP-1.7.4.1/Halma.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [FComp-1.0.2/src/HarmTrace/Models/Simple/Model.hs] (36:1): Parse error: #
+CurryDB-0.1.1.0: CurryDB-0.1.1.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [Aurochs-0.1/Gen.hs] (263:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [HTF-0.13.0.0/HTFPP.hs] (21:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [HarmTrace-2.2.0/src/HarmTrace/Models/Jazz/Model.hs] (36:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [LslPlus-0.4.3/src/Language/Lsl/Internal/BuiltInModules.hs] (8:25): Parse error: module
+MoveIfStrict: fromParseResult: Parse failed at [Hayoo-1.2.3/src/Hayoo/IndexTypes.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Pugs-6.2.13.20130611/src/Pugs/AST/Internals/Instances.hs] (19:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [NoSlow-0.2/NoSlow/Backend/DPH/Prim/Seq.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Monadius-0.99/src/Main.hs] (134:3): Parse error: Last statement in a do-block must be an expression
+Mhailist-0.0: Mhailist-0.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [HipmunkPlayground-5.2.1.1/Playground.hs] (565:3): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [INblobs-0.1.1/src/CommonUI.hs] (348:1): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [HNM-0.1.2/HNM/WLAN.hs] (26:5): Parse error in pattern: 
+MoveIfStrict: fromParseResult: Parse failed at [Hach-0.1.2/nclient/NClient/Connect.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [programs/C_Lexer.x] (21:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [HaRe-0.7.2.8/src/Language/Haskell/Refact/Refactoring/MoveDef.hs] (880:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [PandocAgda-2.3.3.0.2/src/full/Agda/Interaction/Highlighting/PandocHTML.hs] (51:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Haskelloids-0.1.1/src/Haskelloids/Object/Asteroid.hs] (85:14): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [MiniAgda-0.2014.9.12/Eval.hs] (210:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [KiCS-0.9.3/dist/build/Curry/Module/Prelude.hs] (24:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [HaXml-1.25.3/src/Text/XML/HaXml/Escape.hs] (62:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Level0-1.0/src/Main.hs] (65:25): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [PortFusion-1.2.1/src/Main.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [OpenAFP-Utils-1.4.1.3/afp-olndump.hs] (83:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [RNAFold-1.99.3.4/BioInf/ViennaRNA/Energy.hs] (105:1): Parse error: ;
+MoveIfStrict: Hs2lib-0.6.3/WinDll/COFF/Lib.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [NXT-0.2.3/lib/Robotics/NXT/BluetoothUtils.hs] (14:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [LambdaHack-0.4.101.1/Game/LambdaHack/Client/AI.hs] (6:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [PTQ-0.0.7/src/IL.hs] (51:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [HaskellTorrent-0.1.1/src/Process.hs] (56:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Holumbus-Distribution-0.1.1/source/Holumbus/Network/Messages.hs] (258:7): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: HaLeX-1.2.1/HaLeX_lib/Language/HaLex/Dfa.hs: hGetContents: invalid argument (invalid byte sequence)
+RNAwolf-0.4.0.0: RNAwolf-0.4.0.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [RNAdesign-0.1.2.2/RNAdesign.hs] (90:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [Raincat-1.1.1.3/src/Nxt/Graphics.hs] (93:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Referees-0.0.0/src/Referees/Solver/Internal.hs] (194:1): Parse error in expression: handle fuse $
+MoveIfStrict: fromParseResult: Parse failed at [Scurry-0.0.3/src/Network/Util.hs] (13:16): Parse error: CALLCONV
+MoveIfStrict: fromParseResult: Parse failed at [SpaceInvaders-0.4.2/src/ObjectBehavior.hs] (37:57): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [SableCC2Hs-0.0.1.0/src/SableCC/XML/XML2Parser.hs] (36:51): Parse error: $
+MoveIfStrict: fromParseResult: Parse failed at [SoccerFun-0.5.2/SoccerFun/Tape/Record/Template.hs] (16:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Snusmumrik-0.0.1/Utils.hs] (83:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Rasenschach-0.1.3.1/AL.hs] (26:1): Parse error in pattern: (AL l)
+MoveIfStrict: fromParseResult: Parse failed at [ZMachine-0.0/ZMachine/IO/Gtk.hs] (66:5): Parse error: where
+MoveIfStrict: Strafunski-Sdf2Haskell-1.0.0.2/generator/CFG.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [WL500gPControl-0.3.4/src/Control/Main.hs] (14:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ShellCheck-0.3.8/ShellCheck/Parser.hs] (1159:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [SoccerFunGL-0.5.1/SoccerFun/UI/GL/RunMatch/Template.hs] (16:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Xec-0.1.6/Main.hs] (99:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [YamlReference-0.9.3/Text/Yaml/Reference.hs] (1308:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [VKHS-0.5.3/src/Data/Label/Derive.hs] (128:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [bidirectionalization-combined-0.1.0.1/BUtil.hs] (69:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [blaze-from-html-0.3.2.1/src/Util/GenerateHtmlCombinators.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [billboard-parser-1.0.0.1/Billboard/BillboardParser.hs] (1:1): Illegal character ''\65279''
+
+MoveIfStrict: fromParseResult: Parse failed at [bustle-0.5.0/Bustle/UI/Recorder.hs] (112:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [LexHOL.x] (9:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [bake-0.3/src/General/Extra.hs] (47:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-bounds-0.9.4/lib/CabalBounds/Args.hs] (16:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [c2hs-0.25.2/src/C2HS/Gen/Bind.hs] (2766:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-dev-0.9.2/src/Distribution/Dev/AddSource.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [barley-0.3.0.2/src/Barley/AltLoad.hs] (98:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [baskell-0.1.1/src/CmdLine.hs] (63:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cab-0.2.15/Distribution/Cab/PkgDB.hs] (36:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [bitly-cli-0.1.2/bitly.hs] (73:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [blink1-0.4/System/Hardware/Blink1/Types.hs] (117:1): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [cabal-dependency-licenses-0.1.1.1/src/Main.hs] (40:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [bogre-banana-0.0.1/src/BB/Examples/Snake.hs] (83:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [cabal-debian-4.30/Tests.hs] (120:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [berp-0.0.2/src/Berp/Base/Class.hs] (19:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-db-0.1.12/Src/Main.hs] (41:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-cargs-0.7.7/lib/CabalCargs/Args.hs] (12:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [buildwrapper-0.9.1/src/Language/Haskell/BuildWrapper/Cabal.hs] (555:1): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [cabal-meta-0.4.1.3/CabalMeta.hs] (11:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-ghci-0.3/CabalGHCI.hs] (19:20): Parse error: →
+MoveIfStrict: fromParseResult: Parse failed at [call-haskell-from-anything-0.1.0.2/src/FFI/Anything/TypeUncurry/Msgpack.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cgrep-6.4.12/src/CGrep/Filter.hs] (36:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-helper-0.3.5.0/CabalHelper/Main.hs] (63:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-install-1.22.6.0/Distribution/Client/BuildReports/Upload.hs] (54:1): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [citeproc-hs-pandoc-filter-0.1/src/Text/CSL/Pandoc.hs] (138:1): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [cake3-0.6.0/src/Development/Cake3.hs] (201:3): Parse error: return
+MoveIfStrict: fromParseResult: Parse failed at [cabal-install-ghc74-0.10.4/Distribution/Client/HttpUtils.hs] (26:1): Parse error: #
+caledon-3.2.1.0: caledon-3.2.1.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [caldims-0.1.0/src/Language/CalDims/Action.hs] (26:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [src\Language\Clafer\Front\LexClafer.x] (14:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cap-1.0.1/dist/build/cap/cap-tmp/Language/Cap/Interpret/Parse.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-install-ghc72-0.10.4/._Main.hs] (1:1): Illegal character ''\NUL''
+
+MoveIfStrict: fromParseResult: Parse failed at [casui-0.3/Casui/Draw.hs] (3:1): Parse error: {-# OPTIONS:GHC ...
+MoveIfStrict: fromParseResult: Parse failed at [cao-0.1.1/src/Language/CAO/Analysis/CFG.hs] (358:57): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [clientsession-0.9.1.1/src/Web/ClientSession.hs] (66:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [calculator-0.3.1.1/src/Calculator/Evaluator/Cmd.hs] (22:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal2nix-1.73/src/Distribution/NixOS/Derivation/Cabal.hs] (33:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [clash-ghc-0.5.7/src-bin/GhciMonad.hs] (28:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [clifford-0.1.0.14/src/Numeric/Clifford/Internal.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [codex-0.3.0.8/codex/Main.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cheapskate-0.1.0.4/Cheapskate/Html.hs] (11:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [clac-0.5.0/src/Clac/CliParser.hs] (10:4): Parse error: module
+MoveIfStrict: fromParseResult: Parse failed at [cnc-spec-compiler-0.2.0.1/Intel/Cnc/Spec/Codegen/CppOld.hs] (725:1): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [clevercss-0.2.4/Text/CSS/CleverCSS.hs] (32:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cognimeta-utils-0.1.2/src/Cgm/Data/Word.hs] (60:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-src-0.3.0/mega-sdist.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [coinbase-exchange-0.2.0.0/src/Coinbase/Exchange/MarketData.hs] (33:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-rpm-0.9.6/src/Commands/Spec.hs] (50:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-install-bundle-1.18.0.2.1/Codec/Compression/Zlib/Internal.hs] (238:1): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [cubical-0.2.0/Main.hs] (121:11): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [dingo-example-0.2.0/src/TownWidget.hs] (54:19): Parse error: |]
+MoveIfStrict: fromParseResult: Parse failed at [containers-benchmark-1.1.0.0/src/Benchmark/Map-like.inc.hs] (13:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [dedukti-1.1.4/Dedukti/CodeGen/Exts.hs] (48:42): Parse error: =
+MoveIfStrict: fromParseResult: Parse failed at [diffdump-0.7.5/DiffDump.hs] (218:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [corebot-bliki-0.2.2.0/src/DefaultMain.hs] (2:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [darkplaces-rcon-util-0.1.1/src/DRcon/Polyfills.hs] (8:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [confsolve-0.5.4/ConfsolveArgs.hs] (6:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cryptol-2.2.4/cryptol/Main.hs] (37:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [darcs-cabalized-2.0.2.2/src/Darcs/Compat.hs] (9:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [crunghc-0.1.1.1/main.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [darcswatch-0.4.4/src/CGI-Main.hs] (41:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [darcsden-1.1.1/src/DarcsDen/Darcs.hs] (7:1): Parse error: #
+cuda-0.6.6.2: cuda-0.6.6.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+crocodile-0.1.2: crocodile-0.1.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [derive-2.5.22/Language/Haskell/Convert.hs] (68:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [conjure-0.1/src/BEncode/BEncode.hs] (52:1): Parse error: #
+derive-gadt-0.1.1: derive-gadt-0.1.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [doctest-0.10.0/src/Extract.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cursedcsv-0.1.2/code/CursedCSV.hs] (33:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [delta-0.1.2.0/src/System/Delta/Callback.hs] (35:39): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [dao-0.1.0.1/src/Dao/Binary.hs] (556:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [darcs-graph-1.0/Graph.hs] (104:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [debian-3.87.2/Debian/Control/ByteString.hs] (24:1): Parse error: #
+dph-examples-0.7.0.5: dph-examples-0.7.0.5: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [dsh-sql-0.2.0.2/src/Database/DSH/Backend/Sql/Opt/OptimizeTA.hs] (29:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [fdo-trash-0.0.0.2/Freedesktop/Trash.hs] (32:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [edentv-4.10.0/EdenTvType.hs] (475:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [fay-0.23.1.6/src/Fay/Compiler/Desugar/Types.hs] (17:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ecma262-0.0.0/src/Language/JavaScript/Interpret.hs] (4270:1): arity mismatch for 'pattern'
+MoveIfStrict: fromParseResult: Parse failed at [ert-0.0.2.1/Main.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [fibon-0.2.0/tools/fibon-run/Fibon/Run/Config/Local.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [frag-1.1.2/src/AFRP.hs] (1419:19): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: foo-1.0/Court.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [fltkhs-0.1.0.2/Setup.hs] (56:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [epic-0.9.3.3/dist/build/Epic/Parser.hs] (19:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [find-conduit-0.4.3/Data/Cond.hs] (248:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [flow2dot-0.9.0.3/Text/FlowDiagram.hs] (17:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [feed2lj-0.0.3.1/LjPost.hs] (12:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [flowdock-api-0.1.0.0/src/Main.hs] (60:25): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [fenfire-0.1/Cache.hs] (51:15): Parse error: let
+MoveIfStrict: fromParseResult: Parse failed at [ewe-0.1.0.40/dist/build/ewe/ewe-tmp/Language/EWE/Parser.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ghci-ng-7.6.3.5/ghc/GhciMonad.hs] (27:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [github-backup-1.20150618/Common.hs] (18:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [graphicstools-0.2.2/CVExample.hs] (2:1): Parse error: ,
+MoveIfStrict: fromParseResult: Parse failed at [git-repair-1.20150106/Common.hs] (18:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [gruff-examples-0.3.1/src/Number.hs] (6:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hLLVM-0.5.0.1/src/Llvm/Data/Conversion/AstIrConversion.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [gitit-0.10.7/Network/Gitit/Cache.hs] (32:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [gipeda-0.1.1/src/Data/Text/Binary.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [git-vogue-0.2.0.1/src/git-vogue-hlint.hs] (31:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ghcid-0.5/src/Language/Haskell/Ghcid/Terminal.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [h-booru-0.3.0.0/src/HBooru/Parsers/FieldParsers.hs] (48:44): Parse error: s
+MoveIfStrict: fromParseResult: Parse failed at [ghclive-0.1.0.2/src-main/Main.hs] (140:1): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [funsat-0.6.2/Main.hs] (38:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [freesect-0.8/FilesAndParsing.hs] (15:3): Parse error: module
+MoveIfStrict: fromParseResult: Parse failed at [ghc-imported-from-0.2.0.6/Language/Haskell/GhcImportedFrom.hs] (103:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ghc-events-0.4.4.0/GHC/RTS/EventParserUtils.hs] (33:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ginsu-0.8.1.1/CacheIO.hs] (50:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [git-all-1.5.0/Main.hs] (24:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ghc-events-parallel-0.5.0.1/GHC/RTS/EventParserUtils.hs] (20:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ghc-mod-5.2.1.2/Language/Haskell/GhcMod/CabalConfig.hs] (23:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [gtk2hs-buildtools-0.13.0.4/c2hs/base/general/Binary.hs] (41:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ghc-parmake-0.1.8/src/GHC/ParMake/Engine.hs] (111:33): Parse error: =
+gloss-examples-1.9.4.1: gloss-examples-1.9.4.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [graph-rewriting-ski-0.6.4/Common/Term.hs] (16:25): Parse error in pattern: 
+MoveIfStrict: fromParseResult: Parse failed at [git-annex-5.20150617/Annex/Content/Direct.hs] (230:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [groundhog-inspector-0.7.1.2/Database/Groundhog/Inspector.hs] (49:1): Parse error: #
+gmndl-0.4.0.2: gmndl-0.4.0.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [fst-0.10.0.1/FST/NReg.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [gf-3.6/lib/src/experimental/transfer/New2Old.hs] (1:38): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [gruff-0.3.4/src/Number.hs] (8:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ghci-haskeline-0.2/GhciHaskeline/GhciMonad.hs] (54:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [gameclock-1.0.4/gameclock.hs] (255:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [git-gpush-3.1.0.1/Main.hs] (22:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [greencard-3.0.4.2/dist/build/greencard/greencard-tmp/Parse.hs] (26:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [glambda-1.0/src/Language/Glambda/Check.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [git-monitor-3.1.1.4/Main.hs] (38:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [happs-tutorial-0.9.5/src/GetExample.hs] (38:16): Parse error: <
+MoveIfStrict: fromParseResult: Parse failed at [hakyll-4.7.1.0/src/Hakyll/Check.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [halfs-2.0/Halfs/BlockMap.hs] (246:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hat-2.8.0.0/Hat/Hack.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hans-2.5.0.0/example/test.hs] (17:1): Parse error: #
+MoveIfStrict: haslo-0.1.3/Haslo/CalcConfigurationType.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [haskell-in-space-0.1.1/Asteroids-basic.hs] (259:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [haroonga-httpd-0.1.1.0/Web/Groonga/Server.hs] (13:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hackager-1.2.0.1/src/HackageMonad.hs] (28:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haddock-2.16.0/haddock-api/src/Haddock/Interface/AttachInstances.hs] (47:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haskell-docs-4.2.5/src/Haskell/Docs/Cabal.hs] (48:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haskintex-0.5.0.3/Haskintex.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [halberd-0.1.2.9/src/Halberd/CollectNames.hs] (40:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [handa-gdata-0.7.0.3/src/Network/Google/FusionTables.hs] (288:4): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [haskanoid-0.1.4/src/Input.hs] (38:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haskell-updater-1.2.9/Distribution/Gentoo/GHC.hs] (58:1): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [haskell-cnc-0.1.3.200/Intel/Cnc.Header.hs] (44:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haskore-supercollider-0.3/src/Haskore/Interface/SuperCollider/Example/Air.hs] (124:30): Parse error: )
+MoveIfStrict: fromParseResult: Parse failed at [hails-0.11.2.1/Hails/HttpServer/Auth.hs] (172:11): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hackport-0.4.5/Portage/EBuild.hs] (21:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haskelm-0.1.12.0/src/Language/Elm/TH/HToE.hs] (16:1): Parse error: {-# LANGUAGE
+MoveIfStrict: fromParseResult: Parse failed at [src/Haddock/Interface/Lex.x] (33:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [happy-1.19.5/dist/build/happy/happy-tmp/AttrGrammarParser.hs] (14:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hastache-0.6.1/Text/Hastache/Context.hs] (222:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hasktags-0.69.1/src/DebugShow.hs] (6:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hoodle-0.4.0/lib/Hoodle/StartUp.hs] (19:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hell-2.1/src/Hell/Types.hs] (63:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hgom-0.6/Gom/Config.hs] (36:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hdph-0.0.1/src/Control/Parallel/HdpH/Internal/Comm.hs] (194:1): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hdirect-0.21.0/comlib/AutoPrim.hs] (76:1): Left-hand side of type signature is not a variable: primitive writeVarStablePtr "prim_AutoPrim_writeVarInt"
+MoveIfStrict: fromParseResult: Parse failed at [src/Parser/Lexer.x] (28:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hledger-0.25.1/Hledger/Cli/Options.hs] (72:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hellnet-0.1.1/hell-get.hs] (63:41): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [helium-1.8.1/lib/simple/Prelude.hs] (62:31): Parse error: -.
+MoveIfStrict: fromParseResult: Parse failed at [hdevtools-0.1.0.9/src/Cabal.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hoovie-0.1.1/src/Hoovie/Messages.hs] (26:1): Parse error in pattern: ""
+MoveIfStrict: fromParseResult: Parse failed at [hmp3-1.5.2.1/Core.hs] (71:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hoogle-4.2.41/src/General/Base.hs] (8:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hevolisa-dph-0.0.1/Hevolisa/Vector.hs] (17:11): Parse error: :
+MoveIfStrict: fromParseResult: Parse failed at [hirt-0.0.1.1/Driver.hs] (88:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hogg-0.4.1.2/tools/hogg.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [HOpenPGP/Tools/Lexer.x] (23:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hlint-1.9.21/src/HsColour.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hermit-1.0.0.0/dist/build/HERMIT/Parser.hs] (26:1): Parse error: #
+hiccup-0.40: hiccup-0.40: getSymbolicLinkStatus: does not exist (No such file or directory)
+hlcm-0.2.2: hlcm-0.2.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+hfractal-0.4.2.5: hfractal-0.4.2.5: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [src/Syntax/Parser/Lexer.x] (18:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hcube-0.1.1/HCube/Lib.hs] (118:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [holy-project-0.2.0.0/scaffold/src/ModuleName/Coconut.hs] (1:8): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [hsenv-0.5/src/Args.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hprotoc-fork-2.0.16.1/Text/ProtocolBuffers/ProtoCompile/Parser.hs] (77:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hprotoc-2.0.17/Text/ProtocolBuffers/ProtoCompile/Parser.hs] (77:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hspec-meta-2.1.7/hspec-core/src/Test/Hspec/Compat.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsx2hs-0.13.3.2/src/hsx2hs.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hums-0.7.0/src/Soap.hs] (59:18): Parse error: ->
+hpylos-1.0: hpylos-1.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [hpc-tracer-0.3.1/src/Reactive.hs] (38:8): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [htar-0.4.0.1/htar.hs] (22:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsntp-0.1/HSNTP/Util/UDP.hs] (28:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsx-0.10.5/src/HSX/XMLGenerator.hs] (76:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsc2hs-0.67.20120610/Common.hs] (95:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hws-1.1.0.1/src/AccessLogger.hs] (232:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsimport-0.6.5/lib/HsImport/Args.hs] (12:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [htsn-import-0.2.4/src/TSN/XML/JFile.hs] (638:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hsc3-graphs-0.15/Sound/SC3/Graph/ADC_adc_16_6_2.hs] (11:18): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [hunt-server-0.3.0.2/src/Hunt/Server/Template.hs] (27:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [hscope-0.4.1/t/files/CPP.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsfcsh-0.0.1/hsfcsh.hs] (62:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hscolour-1.23/HsColour.hs] (18:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hs-pgms-0.1.0.1/src/GUI/Stats.hs] (109:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hsdev-0.1.3.4/src/HsDev/Server/Commands.hs] (58:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hplaylist-0.2/Applescript.hs] (30:7): Illegal character in string gap
+MoveIfStrict: fromParseResult: Parse failed at [hunp-0.1/Hunp.hs] (25:1): Parse error: #
+htsn-0.1.1: htsn-0.1.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [husk-scheme-3.19/hs-src/Language/Scheme/Compiler/Types.hs] (129:1): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [ideas-math-1.2/src/Domain/Math/Polynomial/BalanceUtils.hs] (240:4): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [inch-0.2.0/examples/Cost.hs] (31:21): Parse error: n
+MoveIfStrict: fromParseResult: Parse failed at [kmeans-vector-0.3/bench/OldKmeans.hs] (57:27): Parse error: -
+MoveIfStrict: fromParseResult: Parse failed at [ide-backend-server-0.9.0/Break.hs] (91:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [jammittools-0.4.1.1/Main.hs] (4:1): Parse error: #
+jukebox-0.1.3: jukebox-0.1.3: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [ivory-examples-0.1.0.2/examples/Alloc.hs] (29:20): Parse error: s
+MoveIfStrict: fromParseResult: Parse failed at [irc-core-1.1.0.1/driver/ClientState.hs] (31:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hydra-print-0.1.0.3/UI/HydraPrint.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [imapget-0.0.3/SSLWrap.hs] (27:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [ipatch-0.1.1/src/IPatch/Split.hs] (133:17): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [kevin-0.11.0/src/Kevin/Base.hs] (27:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [keera-posture-0.1.4.4/src/Controller/Conditions/PopupMenu.hs] (20:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [keter-1.4.1/Data/Conduit/Process/Unix.hs] (64:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [infernu-0.0.0.1/src/Infernu/Log.hs] (13:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hxournal-0.6.6.1/lib/Application/HXournal/ModelAction/File.hs] (31:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [knots-0.1.0.1/Knots/Prelude.hs] (167:1): Parse error in pattern: 
+MoveIfStrict: fromParseResult: Parse failed at [ide-backend-0.9.0.9/IdeSession/RPC/Client.hs] (277:1): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [imagepaste-0.2.0.1/src/Log.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [inject-0.1.0/src/Text/Inject.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ihaskell-0.6.3.0/Hspec.hs] (360:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [lambdacube-examples-0.2.2/src/Utils.hs] (68:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [idris-0.9.18.1/Setup.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [lambdacube-samples-0.2.0/CubeMap.hs] (20:1): Parse error: #
+launchpad-control-0.0.1.0: launchpad-control-0.0.1.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [lgtk-0.8.0.4/src/Data/LensRef/Default.hs] (9:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [leksah-server-0.15.0.3/src/IDE/Core/CTypes.hs] (76:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [leaky-0.4.0.0/Types_explicit_SOP.hs] (68:1): Parse error: #
+liquidhaskell-0.4.1.1: liquidhaskell-0.4.1.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [language-puppet-1.1.3.1/Puppet/Parser.hs] (60:17): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [leksah-0.15.0.5/main/Main.hs] (22:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [lit-0.1.0.5/src/Process.hs] (50:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [linear-algebra-cblas-0.1/lib/Numeric/LinearAlgebra/Internal.hs] (46:1): Parse error: #
+liquid-fixpoint-0.3.0.1: liquid-fixpoint-0.3.0.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [maam-0.2.0.1/src/FP/Core.hs] (29:23): Parse error: Constraint
+MoveIfStrict: fromParseResult: Parse failed at [make-package-1.2.0/files/Package.hs] (3:8): Parse error: $exposed
+MoveIfStrict: fromParseResult: Parse failed at [marxup-3.0.0.1/examples/LaTeX.hs] (134:1): Parse error in expression: writeFile ("LaTeX.tex") =<< renderTex preamble «
+MoveIfStrict: fromParseResult: Parse failed at [markdown-unlit-0.2.0.1/src/Text/Markdown/Unlit.hs] (9:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [live-sequencer-0.0.4/src/MPlayer.hs] (91:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [ls-usb-0.1.1/PrettyDevList.hs] (54:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [linx-gateway-0.1.0.2/examples/Ping.hs] (11:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [layers-game-0.5/src/AppData.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [markup-preview-0.2.2.1/Application/FileHandling.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [llvm-pretty-bc-parser-0.1.3.1/src/Data/LLVM/BitCode/IR/Constants.hs] (23:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [mangopay-1.11.1/src/Web/MangoPay/Monad.hs] (43:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [lvmrun-1.0/Fornothing.hs] (3:1): Parse error: main
+linear-maps-0.6.1: linear-maps-0.6.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [mega-sdist-0.2.10.4/mega-sdist.hs] (28:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [module-management-0.20.3/Language/Haskell/Modules/Imports.hs] (21:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [mighttpd-0.4.3/Parsec.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [mediawiki2latex-7.9.0.1/src/Babel.hs] (4:1): Parse error: module
+MoveIfStrict: fromParseResult: Parse failed at [mathblog-0.5/src/MB/Startup.hs] (5:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [newsynth-0.3.0.1/Quantum/Synthesis/Ring.hs] (698:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [mighttpd2-3.2.8/src/Mighty.hs] (5:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [misfortune-0.1.1.2/src/Data/Fortune/FortuneFile.hs] (228:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [morfette-0.4.3/src/GramLab/Data/Assoc.hs] (2:1): Parse error: ,
+MoveIfStrict: fromParseResult: Parse failed at [network-topic-models-0.2.0.1/RunCI.hs] (180:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [miniplex-0.3.4/lib/System/Miniplex/Sink.hs] (100:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [midimory-0.0.0.2/src/MIDI.hs] (54:4): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [music-preludes-1.8.1/examples/note_voice_score.hs] (2:1): Parse error: >>>
+mbox-tools-0.2.0.4: mbox-tools-0.2.0.4: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [minesweeper-0.9.2.1/GTK/Square.hs] (60:17): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [mudbath-0.0.3/Main.hs] (111:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [mprover-0.0.0.0/examples/Test.hs] (20:18): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [src/Language/TLT/TltLexer.x] (23:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [src/Morte/Lexer.x] (27:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [music-util-0.17/src/music-util.hs] (11:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [neil-0.9/src/Main.hs] (14:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [open-union-0.1.0.1/Data/OpenUnion/Internal.hs] (45:22): Parse error: a
+MoveIfStrict: fromParseResult: Parse failed at [orc-1.2.1.4/src/Control/Concurrent/Hierarchical.hs] (85:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [polyseq-0.1.2.1/src/Tests.hs] (24:12): Illegal escape sequence
+MoveIfStrict: fromParseResult: Parse failed at [pit-0.3.1/src/Pit.hs] (17:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [postgrest-0.2.10.0/test/SpecHelper.hs] (71:37): Parse error: if
+MoveIfStrict: fromParseResult: Parse failed at [olwrapper-0.4.1/src/Main.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [pretty-show-1.6.8.2/Text/Show/PrettyVal.hs] (3:1): Parse error: #
+perdure-0.2.1: perdure-0.2.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [pandoc-1.14.0.4/man/make-pandoc-man-pages.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [packunused-0.1.1.4/packunused.hs] (13:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [primula-board-0.0.1/HTML.hs] (36:3): Parse error: <
+MoveIfStrict: fromParseResult: Parse failed at [opentheory-char-1.41/Setup.hs] (3:1): Parse error: import
+MoveIfStrict: fromParseResult: Parse failed at [pandoc-csv2table-1.0.1/src/Text/Table/Helper.hs] (148:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [optimal-blocks-0.1.0/src/Algorithm/OptimalBlocks/BuzzHash.hs] (110:30): Parse error: hash_last
+MoveIfStrict: fromParseResult: Parse failed at [parconc-examples-0.3.5/AccelerateCompat.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [peg-0.2/Peg.hs] (18:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [preSrc/Tokens.x] (33:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [omnicodec-0.7/src/odec.hs] (96:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [pipeclip-0.1.0.1/pipeclip.hs] (17:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [phybin-0.3/Bio/Phylogeny/PhyBin/CoreTypes.hs] (44:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [pandoc-crossref-0.1.2.1/src/Util/Meta.hs] (27:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [piet-0.1/sources/Language/Piet/Types.hs] (166:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [pdf-toolbox-viewer-0.0.3.3/compat/Prelude.hs] (8:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [postgresql-orm-0.3.2/Data/GetField.hs] (8:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [src/Language/Java/Paragon/Lexer.x] (9:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [pandoc-citeproc-0.7.2/src/Text/CSL/Data.hs] (22:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [rehoo-0.3.1/Main.hs] (14:1): Parse error: #
+propellor-2.5.0: propellor-2.5.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [rasterific-svg-0.2.3.1/exec-src/svgrender.hs] (3:1): Parse error: #
+repa-examples-3.4.0.1: repa-examples-3.4.0.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+rss2irc-1.0.6: rss2irc-1.0.6: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [reactive-thread-0.3.2.1/Control/Concurrent/STM/TEvent.hs] (36:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [puzzle-draw-0.1.0.4/src/Diagrams/Puzzles/CmdLine.hs] (17:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [randfile-0.1.0.0/Stat.hs] (12:1): Parse error: #
+MoveIfStrict: rbr-0.8.6/src/Lib/Stats.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [risc386-0.0.20130719/StateIntel.hs] (359:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [rws-0.1.1.2/src/Ethernet.hs] (16:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [puzzle-draw-cmdline-0.1.0.4/src/tools/drawpuzzle.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [pushme-1.5.0/Main.hs] (30:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [record-preprocessor-0.1.0.3/demo/Main.hs] (8:3): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [reserve-0.1.1/src/Interpreter.hs] (40:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [respond-1.1.0/src/Web/Respond/HListUtils.hs] (29:25): Parse error: a
+MoveIfStrict: fromParseResult: Parse failed at [qudb-0.0.1/dist/build/qudb/qudb-tmp/Database/QUDB/Parser.hs] (14:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [puffytools-0.0.0.1/src/PuffyTools/Journal.hs] (139:29): Parse error: "use listJournalFiles instead"#
+MoveIfStrict: fromParseResult: Parse failed at [pugs-DrIFT-2.2.3.20130611/src/DrIFT/YAML.hs] (325:19): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [riot-1.20080618/Riot/Locale.hs] (22:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [rethinkdb-2.0.0.0/Database/RethinkDB/Datum.hs] (2:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [roshask-0.2.1/Tests/ServiceClientTests/ServiceClientTest.hs] (102:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [purescript-0.6.9.5/src/Language/PureScript/Sugar/Names.hs] (311:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [src/Errs.hs] (148:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [treeviz-1.0.0/src/Main.hs] (151:1): Parse error: #
+threads-supervisor-1.0.3.0: threads-supervisor-1.0.3.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [twidge-1.1.2/Commands/Update.hs] (33:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [tup-functor-0.3.0.0/Data/Tup/Concat.hs] (36:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [tttool-1.4.0.2/src/BakedVector.hs] (8:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [src/Tip/Parser/LexTIP.x] (13:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [taffybar-0.4.5/src/System/Taffybar/SimpleClock.hs] (81:1): Parse error: #
+timeplot-1.0.28: timeplot-1.0.28: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [transf-0.13.1/src/Text/Transf.hs] (383:11): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [tip-haskell-frontend-0.1.1/src/Tip/Compile.hs] (29:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [src/TigerScanner.x] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [tamarin-prover-0.8.6.1/src/Main/Mode/Test.hs] (52:1): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [tempus-0.1.0/Tempus/Loc.hs] (1:1): Illegal character ''\65279''
+
+MoveIfStrict: fromParseResult: Parse failed at [todos-0.5.3.2/Todos/Default.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [transformations-0.2.0.0/Generics/MultiRec/Transformations/Main.hs] (106:40): Parse error: phi
+threadscope-0.2.7: threadscope-0.2.7: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [timberc-1.0.3/dist/build/timberc/timberc-tmp/Parser.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [toysolver-0.3.0/src/ToySolver/Arith/Simplex2.hs] (917:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [xml-to-json-2.0.1/src/Text/XML/JSON/XmlToJson.hs] (19:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [unlambda-0.1.4.1/Language/Unlambda.hs] (28:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [xmonad-0.11.1/Main.hs] (30:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [xmobar-0.23.1/src/Bitmap.hs] (30:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [uhttpc-0.1.0.0/Network/HTTP/MicroClient.hs] (82:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [wordsetdiff-0.0.3.1/Text/WordSetDiff/Main.hs] (54:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [xmonad-bluetilebranch-0.9.1.4/Main.hs] (30:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [wai-app-static-3.1.0/WaiAppStatic/CmdLine.hs] (40:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [vk-posix-pty-0.2.1/System/Posix/Pty.hs] (58:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [whim-0.1.1/Whim/Xlib.hs] (38:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [wai-handler-devel-2.0.0.2/Network/Wai/Handler/DevelServer/Compat.hs] (9:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [vado-0.0.5/src/System/Process/Vado.hs] (42:1): Parse error: #
+vty-5.2.9: vty-5.2.9: getSymbolicLinkStatus: does not exist (No such file or directory)
+uuagc-bootstrap-0.9.40.2: uuagc-bootstrap-0.9.40.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [vcsgui-0.1.2.0/src/VCSGui/Git/Log.hs] (57:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [varan-0.5.1/src/Metrics.hs] (158:13): Illegal character ''\178''
+
+MoveIfStrict: fromParseResult: Parse failed at [vision-0.0.5.0/src/Collection.hs] (54:16): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [uuagc-0.9.52.1/Setup.hs] (21:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [src/ehc/Base/Common.chs] (1101:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [yesod-bin-1.4.10/AddHandler.hs] (53:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [yi-0.12.0/src/library/System/CanonicalizePath.hs] (20:1): Parse error: #
+MoveIfStrict: xsact-1.7.3/Stats.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [YesodDsl/Lexer.x] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [yeganesh-2.5/Catch.hs] (4:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [yql-0.0.0/src/Data/YQL/Response.hs] (5:18): Parse error: ResponseJSON
+MoveIfStrict: fromParseResult: Parse failed at [zeroth-2009.6.23.3/Language/Haskell/TH/ZeroTH/GetOpt.hs] (15:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ztail-1.1/Main.hs] (13:1): Parse error: #
+zoom-cache-1.2.1.6: zoom-cache-1.2.1.6: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [yet-another-logger-0.2.3.1/src/System/Logger/Backend/ColorOption.hs] (47:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [yst-0.5.0.3/Yst/Build.hs] (31:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [yxdb-utils-0.1.0.1/src/Codec/Compression/LZF/ByteString.hs] (58:16): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [yavie-0.0.1/src/gtk/yavie-gtk.hs] (47:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [y0l0bot-0.1.1/src-exec/y0l0bot.hs] (10:4): Parse error: module
