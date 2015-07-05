@@ -1,0 +1,305 @@
+ (158:13): Illegal character ''\178''
+ (179:36): Unexpected end of input while lexing quasi-quoter
+ (1:1): Illegal character ''\65279''
+ (1:1): Illegal character ''\65279''
+ (1:1): Illegal character ''\NUL''
+ (1:1): Unterminated nested comment
+ (24:12): Illegal escape sequence
+ (30:7): Illegal character in string gap
+ (4270:1): arity mismatch for 'pattern'
+ (582:1): arity mismatch for 'withEnv'
+ (58:15): Illegal character in string gap
+ (797:53): Improperly formatted LINE pragma
+ (808:17): ConstraintKinds is not enabled
+-1.7.4.1/Halma.hs: hGetContents: invalid argument (invalid byte sequence)
+CurryDB-0.1.1.0: CurryDB-0.1.1.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+HTF-0.13.0.0: HTF-0.13.0.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+caledon-3.2.1.0: caledon-3.2.1.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+crocodile-0.1.2: crocodile-0.1.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+cuda-0.6.6.2: cuda-0.6.6.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+derive-gadt-0.1.1: derive-gadt-0.1.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+dph-examples-0.7.0.5: dph-examples-0.7.0.5: getSymbolicLinkStatus: does not exist (No such file or directory)
+git-repair-1.20150106: git-repair-1.20150106: getSymbolicLinkStatus: does not exist (No such file or directory)
+github-backup-1.20150618: github-backup-1.20150618: getSymbolicLinkStatus: does not exist (No such file or directory)
+gloss-examples-1.9.4.1: gloss-examples-1.9.4.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+gmndl-0.4.0.2: gmndl-0.4.0.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+haddock-2.16.0: haddock-2.16.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+hfractal-0.4.2.5: hfractal-0.4.2.5: getSymbolicLinkStatus: does not exist (No such file or directory)
+hiccup-0.40: hiccup-0.40: getSymbolicLinkStatus: does not exist (No such file or directory)
+hlcm-0.2.2: hlcm-0.2.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+hpylos-1.0: hpylos-1.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+htsn-0.1.1: htsn-0.1.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+infernu-0.0.0.1: infernu-0.0.0.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+irc-core-1.1.0.1: irc-core-1.1.0.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+jukebox-0.1.3: jukebox-0.1.3: getSymbolicLinkStatus: does not exist (No such file or directory)
+launchpad-control-0.0.1.0: launchpad-control-0.0.1.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+linear-maps-0.6.1: linear-maps-0.6.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+liquid-fixpoint-0.3.0.1: liquid-fixpoint-0.3.0.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+liquidhaskell-0.4.1.1: liquidhaskell-0.4.1.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+mbox-tools-0.2.0.4: mbox-tools-0.2.0.4: getSymbolicLinkStatus: does not exist (No such file or directory)
+mkdir: cannot create directory `strictapps': File exists
+perdure-0.2.1: perdure-0.2.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+propellor-2.5.0: propellor-2.5.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+repa-examples-3.4.0.1: repa-examples-3.4.0.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+rethinkdb-2.0.0.0: rethinkdb-2.0.0.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+rog.hs: hGetContents: invalid argument (invalid byte sequence)
+rss2irc-1.0.6: rss2irc-1.0.6: getSymbolicLinkStatus: does not exist (No such file or directory)
+threads-supervisor-1.0.3.0: threads-supervisor-1.0.3.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+threadscope-0.2.7: threadscope-0.2.7: getSymbolicLinkStatus: does not exist (No such file or directory)
+timeplot-1.0.28: timeplot-1.0.28: getSymbolicLinkStatus: does not exist (No such file or directory)
+tr "prim_AutoPrim_writeVarInt"
+uuagc-bootstrap-0.9.40.2: uuagc-bootstrap-0.9.40.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+vty-5.2.9: vty-5.2.9: getSymbolicLinkStatus: does not exist (No such file or directory)
+zoom-cache-1.2.1.6: zoom-cache-1.2.1.6: getSymbolicLinkStatus: does not exist (No such file or directory)
+Hach-0.1.2: Hach-0.1.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+LambdaHack-0.4.101.1: LambdaHack-0.4.101.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+Mhailist-0.0: Mhailist-0.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: 3d-graphics-examples-0.0.0.1/src/Utilities.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: Ebnf2ps-1.0.12/src/Color.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: HaLeX-1.2.1/HaLeX_lib/Language/HaLex/Dfa.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: Hs2lib-0.6.3/WinDll/COFF/Lib.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: Strafunski-Sdf2Haskell-1.0.0.2/generator/CFG.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: c2hs-0.25.2/src/Text/Lexers.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: foo-1.0/Court.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: haslo-0.1.3/Haslo/CalcConfigurationType.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: rbr-0.8.6/src/Lib/Stats.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: strictapps/liquidhaskell-0.4.1.1/tests/neg/concat.hs: openFile: resource exhausted (Too many open files)
+MoveIfStrict: xsact-1.7.3/Stats.hs: hGetContents: invalid argument (invalid byte sequence)
+RNAwolf-0.4.0.0: RNAwolf-0.4.0.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+YamlReference-0.9.3: YamlReference-0.9.3: getSymbolicLinkStatus: does not exist (No such file or directory)
+error in expression: $ __LOC__
+error in expression: $ __LOC__
+error in expression: writeFile ("LaTeX.tex") =<< renderTex preamble «
+error in pattern: 
+error in pattern: 
+error in pattern: 
+error in pattern: ""
+error in pattern: # s
+error in pattern: # s
+error in pattern: # s
+error in pattern: (AL l)
+error: "use listJournalFiles instead"#
+error: $
+error: $exposed
+error: (
+error: )
+error: )
+error: )
+error: ,
+error: ,
+error: ,
+error: -
+error: -.
+error: ->
+error: ->
+error: ->
+error: ->
+error: ->
+error: ->
+error: :
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: ;
+error: <
+error: <
+error: <-
+error: =
+error: =
+error: =
+error: =
+error: =
+error: =
+error: >>>
+error: CALLCONV
+error: Constraint
+error: Float#
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: Last statement in a do-block must be an expression
+error: ResponseJSON
+error: WINDOWS_CCONV
+error: WINDOWS_CCONV
+error: [
+error: [
+error: ]
+error: a
+error: a
+error: a
+error: case
+error: case
+error: case
+error: case
+error: case
+error: data
+error: debug
+error: do
+error: do
+error: do
+error: dynflags
+error: ensureLastIsNewline
+error: hash_last
+error: if
+error: import
+error: import
+error: import
+error: import
+error: import
+error: import
+error: import
+error: import
+error: import
+error: import
+error: import
+error: import
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: indexInt16OffAddr#
+error: let
+error: let
+error: let
+error: main
+error: module
+error: module
+error: module
+error: module
+error: module
+error: module
+error: module
+error: module
+error: module
+error: module
+error: module
+error: module
+error: module
+error: n
+error: phi
+error: return
+error: return
+error: return
+error: s
+error: s
+error: then
+error: virtual }
+error: virtual }
+error: where
+error: where
+error: where
+error: where
+error: {
+error: {
+error: {
+error: {
+error: {
+error: {
+error: {
+error: {
+error: {-# LANGUAGE
+error: {-# LANGUAGE
+error: {-# OPTIONS:GHC ...
+error: |]
+error: →

@@ -5,6 +5,7 @@ import Language.Haskell.Exts
 import Control.Applicative
 import Data.Functor
 import System.Environment
+import HasStrict.WashHash
 --import System.FilePath.Find
 --import System.Environment 
 --import System.Process
@@ -23,7 +24,7 @@ extns = ["CPP","DefaultSignatures","MagicHash","BangPatterns",
 
 hasBang :: String -> IO Bool
 hasBang filePath = do 
-            program <- readFile filePath
+            program <- washHash <$> readFile filePath
             return $ hasBangDecl $ getDecl (getModule extns filePath program)
 
 getDecl (Module _ _ _ _ _ _ d) = d

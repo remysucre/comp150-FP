@@ -23,9 +23,11 @@ http://trac.haskell.org/haskell-src-exts/ticket/27
 - glob lib for shell cmd
 
 ##todo: 
+- [ ] get list of pop lib
+- [ ] profile strict code vs non-strict
 - [ ] review & clean up
-  - [ ] organize & document repo
-  - [ ] cis 194
+  - [x] organize & document repo
+  - [x] cis 194
   - [ ] generate log
 - [ ] monad practice
   - [ ] pld reading
@@ -34,9 +36,6 @@ http://trac.haskell.org/haskell-src-exts/ticket/27
   - [ ] books/tutorials
   - [ ] exercises
 - [ ] finish partition
-  - [ ] too many open files
+  - [x] too many open files
   - [ ] cpphs options
-- [ ] get list of pop lib
-- [ ] profile strict code vs non-strict
-- [ ] automatic github issue tracking
 - [x] look @ paper
