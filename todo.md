@@ -35,3 +35,7 @@
   - [x] too many open files
   - [ ] cpphs options
 - [x] look @ paper
+
+##further problems:
+- better parser? (cpp support)
+- better cabal? (in resolving dependency)
