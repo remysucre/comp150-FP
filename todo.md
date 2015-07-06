@@ -26,12 +26,12 @@
 - glob lib for shell cmd
 
 ##todo: 
-- [ ] get list of pop lib
 - [ ] profile strict code vs non-strict
 - [ ] review & clean up
   - [x] organize & document repo
   - [x] cis 194
   - [ ] generate log
+- [x] get list of pop lib
 - [x] finish partition
   - [x] too many open files
   - [x] cpphs options
