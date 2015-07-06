@@ -10,7 +10,7 @@
 - Partition strict: 
   - to define macros require packages installed
     - tried to define all macros (MIN_VERSION) as TRUE, got 2k+ errors. abandon
-    - tried removing all macro lines, only 300 errors left :) but since macros introduce multiple modules/clauses, still don't quite work
+    - tried removing all macro lines, only 300 errors left :) but since macros introduce multiple modules/clauses, still doesnt quite work
   - 44 packages w/strcit!
 
 - Thoughts on parsing/building in scale: 
