@@ -32,16 +32,17 @@
   - [x] organize & document repo
   - [x] cis 194
   - [ ] generate log
-- [ ] monad practice
-  - [ ] pld reading
-  - [ ] start real world
-  - [ ] papers
-  - [ ] books/tutorials
-  - [ ] exercises
-- [ ] finish partition
+- [x] finish partition
   - [x] too many open files
-  - [ ] cpphs options
+  - [x] cpphs options
 - [x] look @ paper
+
+##practice
+- [ ] pld reading
+- [ ] start real world
+- [ ] papers
+- [ ] books/tutorials
+- [ ] exercises
 
 ##further problems:
 - better parser? (cpp support)
