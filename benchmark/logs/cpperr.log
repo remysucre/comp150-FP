@@ -1,0 +1,2191 @@
+mkdir: cannot create directory `strictapps': File exists
+MoveIfStrict: fromParseResult: Parse failed at [FormalGrammars-0.2.0.0/src/NeedlemanWunsch.hs] (30:1): Parse error: ;
+MoveIfStrict: Ebnf2ps-1.0.12/src/Ebnf2ps.hs: hGetContents: invalid argument (invalid byte sequence)
+Warning: Can't find file "undefined.h" in directories
+	Agda-2.4.2.3/src/full/Agda/Auto
+	.
+  Asked for by: Agda-2.4.2.3/src/full/Agda/Auto/Auto.hs  at line 62 col 1
+MoveIfStrict: fromParseResult: Parse failed at [Agda-2.4.2.3/src/full/Agda/Auto/Auto.hs] (62:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Eternal10Seconds-0.2/Eternal.hs] (41:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [DrIFT-2.4.2/code/GhcBinary.hs] (610:45): Parse error in pattern: # s
+Blobs-0.3: Blobs-0.3: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: 3d-graphics-examples-0.0.0.1/src/Utilities.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [DSH-0.12.0.1/src/Database/DSH/CL/Opt/AntiJoin.hs] (30:17): Parse error: <-
+Warning: unknown directive #########################################################
+in Craft3e-0.1.0.10/FirstScript.hs  at line 6 col 1
+MoveIfStrict: fromParseResult: Parse failed at [Combinatorrent-0.3.2/src/Process/DirWatcher.hs] (43:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [Adaptive-Blaisorblade-0.23/Control/Monad/Adaptive.hs] (193:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [Dao-0.1.0.2/src/Dao/Binary.hs] (556:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [Adaptive-0.23/Control/Monad/Adaptive.hs] (193:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [AndroidViewHierarchyImporter-0.1.0.1/Main.hs] (9:1): Parse error: {-# LANGUAGE
+MoveIfStrict: fromParseResult: Parse failed at [DrIFT-cabalized-2.3.0/code/GhcBinary.hs] (610:45): Parse error in pattern: # s
+MoveIfStrict: fromParseResult: Parse failed at [DAG-Tournament-0.1/src/main.hs] (79:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: GeBoP-1.7.4.1/Halma.hs: hGetContents: invalid argument (invalid byte sequence)
+CurryDB-0.1.1.0: CurryDB-0.1.1.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [Aurochs-0.1/Gen.hs] (263:1): Parse error: ;
+HTF-0.13.0.0: HTF-0.13.0.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [LslPlus-0.4.3/src/Language/Lsl/Internal/BuiltInModules.hs] (8:25): Parse error: module
+MoveIfStrict: fromParseResult: Parse failed at [Pugs-6.2.13.20130611/src/Pugs/AST/Internals/Instances.hs] (280:17): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [NoSlow-0.2/NoSlow/Backend/TH.hs] (363:34): Parse error: )
+MoveIfStrict: fromParseResult: Parse failed at [Monadius-0.99/src/Main.hs] (134:3): Parse error: Last statement in a do-block must be an expression
+Mhailist-0.0: Mhailist-0.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [HipmunkPlayground-5.2.1.1/Playground.hs] (565:3): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [HNM-0.1.2/HNM/WLAN.hs] (26:5): Parse error in pattern: 
+Hach-0.1.2: Hach-0.1.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [HSFFIG-1.1.3/programs/WriteHsc.hs] (682:1): Parse error: data
+MoveIfStrict: fromParseResult: Parse failed at [PandocAgda-2.3.3.0.2/src/full/Agda/Interaction/Highlighting/PandocHTML.hs] (51:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [Haskelloids-0.1.1/src/Haskelloids/Object/Asteroid.hs] (85:14): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [MiniAgda-0.2014.9.12/Eval.hs] (210:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: KiCS-0.9.3/src/Curry/Compiler/FunctionalProg.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [Level0-1.0/src/Main.hs] (65:25): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [OpenAFP-Utils-1.4.1.3/afp-olndump.hs] (83:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [RNAFold-1.99.3.4/BioInf/ViennaRNA/Energy.hs] (105:1): Parse error: ;
+MoveIfStrict: Hs2lib-0.6.3/WinDll/COFF/Lib.hs: hGetContents: invalid argument (invalid byte sequence)
+LambdaHack-0.4.101.1: LambdaHack-0.4.101.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: #error Unknown GHC version
+in HaskellTorrent-0.1.1/src/Process.hs  at line 160 col 1
+MoveIfStrict: fromParseResult: Parse failed at [Holumbus-Distribution-0.1.1/source/Holumbus/Network/Messages.hs] (258:7): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: HaLeX-1.2.1/HaLeX_lib/Language/HaLex/Dfa.hs: hGetContents: invalid argument (invalid byte sequence)
+RNAwolf-0.4.0.0: RNAwolf-0.4.0.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [RNAdesign-0.1.2.2/RNAdesign.hs] (90:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [Scurry-0.0.3/src/Network/Util.hs] (13:16): Parse error: CALLCONV
+MoveIfStrict: fromParseResult: Parse failed at [SpaceInvaders-0.4.2/src/ObjectBehavior.hs] (37:57): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [SableCC2Hs-0.0.1.0/src/SableCC/XML/XML2Parser.hs] (36:51): Parse error: $
+Warning: unknown directive #(ok,cf,env)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 324 col 1
+Warning: unknown directive #(ok,frs,fwest,cf)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 326 col 1
+Warning: unknown directive #(scores,cf)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 329 col 1
+Warning: unknown directive #(ok,env)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 330 col 1
+Warning: unknown directive #(ok,cf,env)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 351 col 1
+Warning: unknown directive #(pos,cf)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 353 col 1
+Warning: unknown directive #(ok,env)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 354 col 1
+Warning: unknown directive #(ok,cf,env)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 360 col 1
+Warning: unknown directive #(ok,cf)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 362 col 1
+Warning: unknown directive #(ok,env)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 364 col 1
+Warning: unknown directive #(ok,cf,env)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 374 col 1
+Warning: unknown directive #(ok,env)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 376 col 1
+Warning: unknown directive #(rsLine,
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 382 col 1
+Warning: unknown directive #(teamsLine,file)
+in SoccerFun-0.5.2/SoccerFun/MatchGame.hs  at line 383 col 1
+MoveIfStrict: fromParseResult: Parse failed at [SoccerFun-0.5.2/SoccerFun/Tape/Record/Template.hs] (22:36): Parse error: #
+MoveIfStrict: strictapps: rename: invalid argument (Invalid argument)
+MoveIfStrict: fromParseResult: Parse failed at [Rasenschach-0.1.3.1/AL.hs] (26:1): Parse error in pattern: (AL l)
+MoveIfStrict: fromParseResult: Parse failed at [ZMachine-0.0/ZMachine/IO/Gtk.hs] (66:5): Parse error: where
+MoveIfStrict: Strafunski-Sdf2Haskell-1.0.0.2/generator/CFG.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [ShellCheck-0.3.8/ShellCheck/Parser.hs] (1159:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [Xec-0.1.6/Main.hs] (99:9): Parse error: Last statement in a do-block must be an expression
+YamlReference-0.9.3: YamlReference-0.9.3: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [billboard-parser-1.0.0.1/Billboard/BillboardParser.hs] (1:1): Illegal character ''\65279''
+
+MoveIfStrict: fromParseResult: Parse failed at [bustle-0.5.0/Bustle/UI/Recorder.hs] (112:9): Parse error: Last statement in a do-block must be an expression
+Warning: unknown directive #ConfigHOL
+in beautifHOL-0.11/ConfigHOL.hs  at line 2 col 1
+Warning: unknown directive #Prettyprinter
+in beautifHOL-0.11/PrintHOL.hs  at line 2 col 1
+Warning: unknown directive #Main
+in beautifHOL-0.11/TestHOL.hs  at line 2 col 1
+Warning: unknown directive #Based
+in beautifHOL-0.11/ConfigHOL.hs  at line 3 col 1
+Warning: unknown directive #Lee
+in beautifHOL-0.11/ConfigHOL.hs  at line 4 col 1
+Warning: unknown directive #Jan
+in beautifHOL-0.11/ConfigHOL.hs  at line 5 col 1
+Warning: unknown directive #Copyright
+in beautifHOL-0.11/ConfigHOL.hs  at line 6 col 1
+Warning: unknown directive #This
+in beautifHOL-0.11/ConfigHOL.hs  at line 8 col 1
+Warning: unknown directive #BSD3.
+in beautifHOL-0.11/ConfigHOL.hs  at line 9 col 1
+Warning: unknown directive #Based
+in beautifHOL-0.11/PrintHOL.hs  at line 3 col 1
+Warning: unknown directive #Lee
+in beautifHOL-0.11/PrintHOL.hs  at line 4 col 1
+Warning: unknown directive #Copyright
+in beautifHOL-0.11/PrintHOL.hs  at line 5 col 1
+Warning: unknown directive #This
+in beautifHOL-0.11/PrintHOL.hs  at line 7 col 1
+Warning: unknown directive #BSD3.
+in beautifHOL-0.11/PrintHOL.hs  at line 8 col 1
+Warning: unknown directive #Based
+in beautifHOL-0.11/TestHOL.hs  at line 3 col 1
+Warning: unknown directive #Lee
+in beautifHOL-0.11/TestHOL.hs  at line 4 col 1
+Warning: unknown directive #Jan
+in beautifHOL-0.11/TestHOL.hs  at line 5 col 1
+Warning: unknown directive #Copyright
+in beautifHOL-0.11/TestHOL.hs  at line 6 col 1
+Warning: unknown directive #This
+in beautifHOL-0.11/TestHOL.hs  at line 8 col 1
+Warning: unknown directive #BSD3.
+in beautifHOL-0.11/TestHOL.hs  at line 9 col 1
+MoveIfStrict: fromParseResult: Parse failed at [cabal-bounds-0.9.4/tests/goldenFiles/Dump.hs] (2:1): Parse error: ;
+MoveIfStrict: c2hs-0.25.2/src/Text/Lexers.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: #error Unsupported Cabal version
+in cabal-dev-0.9.2/src/Distribution/Dev/AddSource.hs  at line 37 col 1
+MoveIfStrict: fromParseResult: Parse failed at [bitly-cli-0.1.2/bitly.hs] (73:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [bogre-banana-0.0.1/src/BB/Examples/Snake.hs] (83:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [cabal-debian-4.30/debian-haskell/Debian/Control/Policy.hs] (73:1): Parse error in expression: $ __LOC__
+Warning: Can't find file "BerpDebug.h" in directories
+	berp-0.0.2/src/Berp/Base
+	.
+  Asked for by: berp-0.0.2/src/Berp/Base/Class.hs  at line 19 col 1
+MoveIfStrict: fromParseResult: Parse failed at [berp-0.0.2/src/Berp/Base/Class.hs] (19:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [cabal-ghci-0.3/CabalGHCI.hs] (19:20): Parse error: →
+MoveIfStrict: fromParseResult: Parse failed at [cabal-helper-0.3.5.0/CabalHelper/Main.hs] (157:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [cabal-install-1.22.6.0/Distribution/Client/BuildReports/Upload.hs] (64:15): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: Cannot expand #if directive in file citeproc-hs-pandoc-filter-0.1/src/Text/CSL/Pandoc.hs  at line 138 col 1:
+    MIN_VERSION_tagsoup(a,b,c) is not a defined macro
+MoveIfStrict: fromParseResult: Parse failed at [cake3-0.6.0/src/Development/Cake3.hs] (201:3): Parse error: return
+caledon-3.2.1.0: caledon-3.2.1.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: cabal-install-ghc72-0.10.4/._Main.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [casui-0.3/Casui/Draw.hs] (3:1): Parse error: {-# OPTIONS:GHC ...
+MoveIfStrict: fromParseResult: Parse failed at [cao-0.1.1/src/Language/CAO/Analysis/CFG.hs] (358:57): Parse error: ->
+MoveIfStrict: Cannot expand #if directive in file clientsession-0.9.1.1/src/Web/ClientSession.hs  at line 124 col 1:
+    MIN_VERSION_cipher_aes(a,b,c) is not a defined macro
+MoveIfStrict: fromParseResult: Parse failed at [clash-ghc-0.5.7/src-bin/GhciMonad.hs] (28:1): Parse error: #
+Warning: unknown directive #:
+in cfipu-1.1.0.4/src/Cfipu.hs  at line 29 col 1
+MoveIfStrict: fromParseResult: Parse failed at [clac-0.5.0/src/Clac/CliParser.hs] (10:4): Parse error: module
+Warning: unknown directive #:
+in cfopu-1.0.0/Cfopu.hs  at line 21 col 1
+MoveIfStrict: fromParseResult: Parse failed at [cognimeta-utils-0.1.2/src/Cgm/Data/WordN.hs] (15:1): Parse error: ;
+MoveIfStrict: macro MIN_VERSION_time expected 3 arguments, but was given 0
+MoveIfStrict: fromParseResult: Parse failed at [cabal-install-bundle-1.18.0.2.1/Distribution/Client/Install.hs] (190:7): Illegal character in string gap
+MoveIfStrict: fromParseResult: Parse failed at [cubical-0.2.0/Main.hs] (121:11): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [dingo-example-0.2.0/src/TownWidget.hs] (54:19): Parse error: |]
+MoveIfStrict: fromParseResult: Parse failed at [containers-benchmark-1.1.0.0/src/Variants/IntMap_Int.hs] (7:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [dedukti-1.1.4/Dedukti/CodeGen/Exts.hs] (48:42): Parse error: =
+MoveIfStrict: fromParseResult: Parse failed at [diffdump-0.7.5/DiffDump.hs] (218:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [corebot-bliki-0.2.2.0/src/DefaultMain.hs] (49:1): Parse error: virtual }
+MoveIfStrict: #error unknown max width for gmp on this architecture
+in cryptol-2.2.4/src/Cryptol/Eval/Arch.hs  at line 25 col 1
+Warning: Can't find file "impossible.h" in directories
+	darcs-cabalized-2.0.2.2/src/Darcs
+	.
+  Asked for by: darcs-cabalized-2.0.2.2/src/Darcs/External.hs  at line 71 col 1
+MoveIfStrict: fromParseResult: Parse failed at [darcs-cabalized-2.0.2.2/src/Darcs/External.hs] (71:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [darcswatch-0.4.4/src/CGI-Main.hs] (41:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [darcsden-1.1.1/src/DarcsDen/Handler/Repository/Forks.hs] (116:25): Parse error: Last statement in a do-block must be an expression
+cuda-0.6.6.2: cuda-0.6.6.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+crocodile-0.1.2: crocodile-0.1.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [derive-2.5.22/Language/Haskell/TH/FixedPpr.hs] (118:10): Parse error: [
+MoveIfStrict: fromParseResult: Parse failed at [conjure-0.1/src/Conjure/Protocol/PWP/Parser.hs] (49:22): Parse error: Last statement in a do-block must be an expression
+derive-gadt-0.1.1: derive-gadt-0.1.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [delta-0.1.2.0/src/System/Delta/Callback.hs] (35:39): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [dao-0.1.0.1/src/Dao/Binary.hs] (556:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [darcs-graph-1.0/Graph.hs] (104:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [debian-3.87.2/Debian/Control/Policy.hs] (73:1): Parse error in expression: $ __LOC__
+dph-examples-0.7.0.5: dph-examples-0.7.0.5: getSymbolicLinkStatus: does not exist (No such file or directory)
+#warning __GLASGOW_HASKELL__
+in edentv-4.10.0/EdenTvType.hs  at line 476 col 1
+MoveIfStrict: fromParseResult: Parse failed at [fay-0.23.1.6/src/tests/Test/Compile.hs] (103:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [ecma262-0.0.0/src/Language/JavaScript/Interpret.hs] (4270:1): arity mismatch for 'pattern'
+MoveIfStrict: Cannot expand #if directive in file ert-0.0.2.1/library/Data/EasyTpl/Render.hs  at line 221 col 1:
+    MIN_VERSION_attoparsec(a,b,c) is not a defined macro
+Warning: Can't find file "LocalConfigs.txt" in directories
+	fibon-0.2.0/tools/fibon-run/Fibon/Run/Config
+	.
+  Asked for by: fibon-0.2.0/tools/fibon-run/Fibon/Run/Config/Local.hs  at line 10 col 1
+MoveIfStrict: fromParseResult: Parse failed at [fibon-0.2.0/tools/fibon-run/Fibon/Run/Config/Local.hs] (10:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [frag-1.1.2/src/AFRP.hs] (1419:19): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: foo-1.0/Court.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [fltkhs-0.1.0.2/Setup.hs] (56:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: Cannot expand #if directive in file find-conduit-0.4.3/Data/Cond.hs  at line 270 col 1:
+    MIN_VERSION_monad_control(a,b,c) is not a defined macro
+MoveIfStrict: fromParseResult: Parse failed at [flowdock-api-0.1.0.0/src/Main.hs] (60:25): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [fenfire-0.1/Cache.hs] (51:15): Parse error: let
+MoveIfStrict: fromParseResult: Parse failed at [ghci-ng-7.6.3.5/ghc/GhciMonad.hs] (27:1): Parse error: #
+github-backup-1.20150618: github-backup-1.20150618: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [graphicstools-0.2.2/CVExample.hs] (2:1): Parse error: ,
+git-repair-1.20150106: git-repair-1.20150106: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: Cannot expand #if directive in file gitit-0.10.7/Network/Gitit/ContentTransformer.hs  at line 96 col 1:
+    MIN_VERSION_blaze_html(a,b,c) is not a defined macro
+MoveIfStrict: Cannot expand #if directive in file gipeda-0.1.1/src/Data/Text/Binary.hs  at line 4 col 1:
+    MIN_VERSION_text(a,b,c) is not a defined macro
+MoveIfStrict: fromParseResult: Parse failed at [h-booru-0.3.0.0/src/HBooru/Parsers/FieldParsers.hs] (48:44): Parse error: s
+MoveIfStrict: fromParseResult: Parse failed at [freesect-0.8/FilesAndParsing.hs] (15:3): Parse error: module
+MoveIfStrict: fromParseResult: Parse failed at [ghc-events-0.4.4.0/GHC/RTS/EventParserUtils.hs] (34:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ginsu-0.8.1.1/CacheIO.hs] (50:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: Cannot expand #if directive in file git-all-1.5.0/Main.hs  at line 24 col 1:
+    MIN_VERSION_shelly(a,b,c) is not a defined macro
+MoveIfStrict: fromParseResult: Parse failed at [ghc-events-parallel-0.5.0.1/GHC/RTS/EventParserUtils.hs] (38:1): Parse error: #
+MoveIfStrict: Cannot expand #if directive in file ghc-mod-5.2.1.2/Language/Haskell/GhcMod/Monad.hs  at line 81 col 1:
+    MIN_VERSION_monad_control(a,b,c) is not a defined macro
+Warning: Can't find file "config.h" in directories
+	gtk2hs-buildtools-0.13.0.4/c2hs/base/general
+	.
+  Asked for by: gtk2hs-buildtools-0.13.0.4/c2hs/base/general/Binary.hs  at line 56 col 1
+MoveIfStrict: fromParseResult: Parse failed at [gtk2hs-buildtools-0.13.0.4/c2hs/base/general/Binary.hs] (56:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [ghc-parmake-0.1.8/src/GHC/ParMake/Engine.hs] (111:33): Parse error: =
+gloss-examples-1.9.4.1: gloss-examples-1.9.4.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [graph-rewriting-ski-0.6.4/Common/Term.hs] (16:25): Parse error in pattern: 
+#warning Building without dbus support; will use mtab polling
+in git-annex-5.20150617/Assistant/Threads/MountWatcher.hs  at line 35 col 1
+#warning Building without the assistant.
+in git-annex-5.20150617/BuildFlags.hs  at line 18 col 1
+#warning Building without the webapp. You probably need to install Yesod..
+in git-annex-5.20150617/BuildFlags.hs  at line 23 col 1
+#warning Building without local pairing.
+in git-annex-5.20150617/BuildFlags.hs  at line 31 col 1
+#warning Building without the testsuite.
+in git-annex-5.20150617/BuildFlags.hs  at line 36 col 1
+#warning Building without S3.
+in git-annex-5.20150617/BuildFlags.hs  at line 41 col 1
+#warning Building without WebDAV.
+in git-annex-5.20150617/BuildFlags.hs  at line 46 col 1
+#warning Building without XMPP.
+in git-annex-5.20150617/BuildFlags.hs  at line 66 col 1
+#warning Building without Feeds.
+in git-annex-5.20150617/BuildFlags.hs  at line 74 col 1
+#warning Building without quvi.
+in git-annex-5.20150617/BuildFlags.hs  at line 79 col 1
+MoveIfStrict: Cannot expand #if directive in file git-annex-5.20150617/Command/ImportFeed.hs  at line 279 col 1:
+    MIN_VERSION_feed(a,b,c) is not a defined macro
+MoveIfStrict: fromParseResult: Parse failed at [groundhog-inspector-0.7.1.2/Database/Groundhog/Inspector.hs] (207:7): Parse error: Last statement in a do-block must be an expression
+gmndl-0.4.0.2: gmndl-0.4.0.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [fst-0.10.0.1/FST/Parse.hs] (797:53): Improperly formatted LINE pragma
+MoveIfStrict: fromParseResult: Parse failed at [gf-3.6/lib/src/experimental/transfer/New2Old.hs] (1:38): Parse error: ->
+MoveIfStrict: fromParseResult: Parse failed at [ghci-haskeline-0.2/GhciHaskeline/GhciMonad.hs] (418:39): Parse error: )
+MoveIfStrict: fromParseResult: Parse failed at [gameclock-1.0.4/gameclock.hs] (255:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: Cannot expand #if directive in file git-gpush-3.1.0.1/Main.hs  at line 22 col 1:
+    MIN_VERSION_shelly(a,b,c) is not a defined macro
+MoveIfStrict: fromParseResult: Parse failed at [glambda-1.0/src/Language/Glambda/Exp.hs] (73:40): Parse error: a
+MoveIfStrict: fromParseResult: Parse failed at [happs-tutorial-0.9.5/src/GetExample.hs] (38:16): Parse error: <
+MoveIfStrict: fromParseResult: Parse failed at [halfs-2.0/Halfs/BlockMap.hs] (246:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hat-2.8.0.0/Hat/Hack.hs] (6:5): Parse error: [
+MoveIfStrict: haslo-0.1.3/Haslo/CalcConfigurationType.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [haskell-in-space-0.1.1/Asteroids-basic.hs] (259:1): Parse error: ;
+haddock-2.16.0: haddock-2.16.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: Cannot expand #if directive in file haskell-docs-4.2.5/src/haddock/Haskell/Docs/HaddockDoc.hs  at line 49 col 1:
+    MIN_VERSION_haddock(a,b,c) is not a defined macro
+MoveIfStrict: fromParseResult: Parse failed at [handa-gdata-0.7.0.3/src/Network/Google/FusionTables.hs] (288:4): Parse error: Last statement in a do-block must be an expression
+#warning  "Cnc.hs -- CNC_SCHEDULER unset, defaulting to scheduler 7 "
+in haskell-cnc-0.1.3.200/Intel/Cnc.hs  at line 21 col 1
+MoveIfStrict: fromParseResult: Parse failed at [haskell-cnc-0.1.3.200/Intel/Cnc.hs] (34:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [haskore-supercollider-0.3/src/Haskore/Interface/SuperCollider/Example/Air.hs] (124:30): Parse error: )
+MoveIfStrict: fromParseResult: Parse failed at [hails-0.11.2.1/Hails/HttpServer/Auth.hs] (172:11): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hackport-0.4.5/cabal/Cabal/Distribution/Simple/Program/Ar.hs] (51:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [haskelm-0.1.12.0/src/Language/Elm/TH/HToE.hs] (16:1): Parse error: {-# LANGUAGE
+MoveIfStrict: #error Unknown GHC version
+in haddock-leksah-2.6.0/src/Haddock/InterfaceFile.hs  at line 66 col 1
+MoveIfStrict: fromParseResult: Parse failed at [GLR_Lib.hs] (25:12): Parse error: ,
+MoveIfStrict: fromParseResult: Parse failed at [hasktags-0.69.1/testcases/expected_failures_testing_suite.hs] (12:1): Parse error: data
+MoveIfStrict: fromParseResult: Parse failed at [hdirect-0.21.0/comlib/AutoPrim.hs] (76:1): Left-hand side of type signature is not a variable: primitive writeVarStablePtr "prim_AutoPrim_writeVarInt"
+Warning: unknown directive #{balanceReportAsText
+in hledger-0.25.1/Hledger/Cli/Balancesheet.hs  at line 50 col 1
+Warning: unknown directive #{balanceReportAsText
+in hledger-0.25.1/Hledger/Cli/Balancesheet.hs  at line 52 col 1
+Warning: unknown directive #{padleft
+in hledger-0.25.1/Hledger/Cli/Balancesheet.hs  at line 55 col 1
+Warning: unknown directive #{balanceReportAsText
+in hledger-0.25.1/Hledger/Cli/Cashflow.hs  at line 54 col 1
+Warning: unknown directive #{padleft
+in hledger-0.25.1/Hledger/Cli/Cashflow.hs  at line 57 col 1
+Warning: unknown directive #{balanceReportAsText
+in hledger-0.25.1/Hledger/Cli/Incomestatement.hs  at line 49 col 1
+Warning: unknown directive #{balanceReportAsText
+in hledger-0.25.1/Hledger/Cli/Incomestatement.hs  at line 51 col 1
+Warning: unknown directive #{padleft
+in hledger-0.25.1/Hledger/Cli/Incomestatement.hs  at line 54 col 1
+MoveIfStrict: fromParseResult: Parse failed at [hellnet-0.1.1/hell-get.hs] (63:41): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [helium-1.8.1/lib/simple/Prelude.hs] (62:31): Parse error: -.
+MoveIfStrict: fromParseResult: Parse failed at [hoovie-0.1.1/src/Hoovie/Messages.hs] (26:1): Parse error in pattern: ""
+Warning: Can't find file "config.h" in directories
+	hmp3-1.5.2.1
+	.
+  Asked for by: hmp3-1.5.2.1/Core.hs  at line 71 col 1
+MoveIfStrict: fromParseResult: Parse failed at [hmp3-1.5.2.1/Core.hs] (71:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hevolisa-dph-0.0.1/Hevolisa/Vector.hs] (17:11): Parse error: :
+MoveIfStrict: fromParseResult: Parse failed at [hirt-0.0.1.1/Driver.hs] (88:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hermit-1.0.0.0/examples/new_reverse/HList.hs] (22:25): Parse error: ]
+hiccup-0.40: hiccup-0.40: getSymbolicLinkStatus: does not exist (No such file or directory)
+hlcm-0.2.2: hlcm-0.2.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+hfractal-0.4.2.5: hfractal-0.4.2.5: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [hcube-0.1.1/HCube/Lib.hs] (118:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [holy-project-0.2.0.0/scaffold/src/ModuleName/Coconut.hs] (1:8): Parse error: {
+MoveIfStrict: Cannot expand #if directive in file hprotoc-fork-2.0.16.1/Text/ProtocolBuffers/ProtoCompile/Parser.hs  at line 77 col 1:
+    MIN_VERSION_parsec(a,b,c) is not a defined macro
+MoveIfStrict: Cannot expand #if directive in file hprotoc-2.0.17/Text/ProtocolBuffers/ProtoCompile/Parser.hs  at line 77 col 1:
+    MIN_VERSION_parsec(a,b,c) is not a defined macro
+MoveIfStrict: Cannot expand #if directive in file hspec-meta-2.1.7/hspec-core/src/Test/Hspec/Core/Example.hs  at line 91 col 1:
+    MIN_VERSION_QuickCheck(a,b,c) is not a defined macro
+MoveIfStrict: fromParseResult: Parse failed at [hums-0.7.0/src/Soap.hs] (59:18): Parse error: ->
+hpylos-1.0: hpylos-1.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [hpc-tracer-0.3.1/src/Reactive.hs] (38:8): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hws-1.1.0.1/src/Main.hs] (186:20): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hsimport-0.6.5/tests/goldenFiles/ModuleTest21.hs] (16:4): Parse error: where
+MoveIfStrict: fromParseResult: Parse failed at [htsn-import-0.2.4/src/TSN/XML/JFile.hs] (638:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hsc3-graphs-0.15/Sound/SC3/Graph/ADC_adc_16_6_2.hs] (11:18): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [hunt-server-0.3.0.2/src/Hunt/Server/Template.hs] (27:1): Parse error: ;
+Warning: Can't find file "a.h" in directories
+	hscope-0.4.1/t/files
+	.
+  Asked for by: hscope-0.4.1/t/files/CPP2.hs  at line 3 col 1
+Warning: Can't find file "b.h" in directories
+	hscope-0.4.1/t/files
+	.
+  Asked for by: hscope-0.4.1/t/files/CPP2.hs  at line 4 col 1
+MoveIfStrict: fromParseResult: Parse failed at [hscope-0.4.1/t/files/CPP2.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [hsfcsh-0.0.1/hsfcsh.hs] (62:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hs-pgms-0.1.0.1/src/GUI/Stats.hs] (109:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [hplaylist-0.2/Applescript.hs] (30:7): Illegal character in string gap
+MoveIfStrict: fromParseResult: Parse failed at [hunp-0.1/Hunp.hs] (25:1): Parse error: #
+htsn-0.1.1: htsn-0.1.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [ideas-math-1.2/src/Domain/Math/Polynomial/BalanceUtils.hs] (240:4): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [inch-0.2.0/examples/Cost.hs] (31:21): Parse error: n
+MoveIfStrict: fromParseResult: Parse failed at [kmeans-vector-0.3/bench/OldKmeans.hs] (57:27): Parse error: -
+MoveIfStrict: #error "Unsupported GHC version"
+in ide-backend-server-0.9.0/GhcShim.hs  at line 53 col 1
+jukebox-0.1.3: jukebox-0.1.3: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [ivory-examples-0.1.0.2/examples/Alloc.hs] (29:20): Parse error: s
+irc-core-1.1.0.1: irc-core-1.1.0.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [imapget-0.0.3/SSLWrap.hs] (27:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [ipatch-0.1.1/src/IPatch/Split.hs] (133:17): Parse error: Last statement in a do-block must be an expression
+infernu-0.0.0.1: infernu-0.0.0.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [knots-0.1.0.1/Knots/Prelude.hs] (167:1): Parse error in pattern: 
+MoveIfStrict: fromParseResult: Parse failed at [lambdacube-examples-0.2.2/src/Utils.hs] (68:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [idris-0.9.18.1/src/Idris/ParseExpr.hs] (564:14): Parse error: ;
+launchpad-control-0.0.1.0: launchpad-control-0.0.1.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [lgtk-0.8.0.4/src/LGtk/Backend/GLFW.hs] (123:13): Parse error: Last statement in a do-block must be an expression
+Warning: unknown directive #This
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 15 col 1
+Warning: unknown directive #Although
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 16 col 1
+Warning: unknown directive #and
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 17 col 1
+Warning: unknown directive #
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 18 col 1
+Warning: unknown directive #The
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 19 col 1
+Warning: unknown directive #A
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 20 col 1
+Warning: unknown directive #here
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 21 col 1
+Warning: unknown directive #identify
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 22 col 1
+Warning: unknown directive #content
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 23 col 1
+Warning: unknown directive #
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 24 col 1
+Warning: unknown directive #Internet
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 25 col 1
+Warning: unknown directive #The
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 26 col 1
+Warning: unknown directive #
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 27 col 1
+Warning: unknown directive #MIME
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 28 col 1
+Warning: unknown directive #============================================
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 29 col 1
+Warning: unknown directive #application/1d-interleaved-parityfec
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 30 col 1
+Warning: unknown directive #application/3gpp-ims+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 31 col 1
+Warning: unknown directive #application/activemessage
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 32 col 1
+Warning: unknown directive #application/applefile
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 34 col 1
+Warning: unknown directive #application/atomicmail
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 38 col 1
+Warning: unknown directive #application/auth-policy+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 40 col 1
+Warning: unknown directive #application/batch-smtp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 41 col 1
+Warning: unknown directive #application/beep+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 42 col 1
+Warning: unknown directive #application/calendar+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 43 col 1
+Warning: unknown directive #application/cals-1840
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 44 col 1
+Warning: unknown directive #application/ccmp+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 45 col 1
+Warning: unknown directive #application/cea-2018+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 52 col 1
+Warning: unknown directive #application/cellml+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 53 col 1
+Warning: unknown directive #application/cfw
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 54 col 1
+Warning: unknown directive #application/cnrp+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 55 col 1
+Warning: unknown directive #application/commonground
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 56 col 1
+Warning: unknown directive #application/conference-info+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 57 col 1
+Warning: unknown directive #application/cpl+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 58 col 1
+Warning: unknown directive #application/csta+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 59 col 1
+Warning: unknown directive #application/cstadata+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 60 col 1
+Warning: unknown directive #application/cybercash
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 62 col 1
+Warning: unknown directive #application/dca-rft
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 64 col 1
+Warning: unknown directive #application/dec-dx
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 65 col 1
+Warning: unknown directive #application/dialog-info+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 66 col 1
+Warning: unknown directive #application/dicom
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 67 col 1
+Warning: unknown directive #application/dns
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 68 col 1
+Warning: unknown directive #application/dskpp+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 70 col 1
+Warning: unknown directive #application/dvcs
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 73 col 1
+Warning: unknown directive #application/edi-consent
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 75 col 1
+Warning: unknown directive #application/edi-x12
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 76 col 1
+Warning: unknown directive #application/edifact
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 77 col 1
+Warning: unknown directive #application/epp+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 79 col 1
+Warning: unknown directive #application/eshop
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 81 col 1
+Warning: unknown directive #application/example
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 82 col 1
+Warning: unknown directive #application/fastinfoset
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 84 col 1
+Warning: unknown directive #application/fastsoap
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 85 col 1
+Warning: unknown directive #application/fits
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 86 col 1
+Warning: unknown directive #application/framework-attributes+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 88 col 1
+Warning: unknown directive #application/h224
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 92 col 1
+Warning: unknown directive #application/held+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 93 col 1
+Warning: unknown directive #application/http
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 94 col 1
+Warning: unknown directive #application/ibe-key-request+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 96 col 1
+Warning: unknown directive #application/ibe-pkg-reply+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 97 col 1
+Warning: unknown directive #application/ibe-pp-data
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 98 col 1
+Warning: unknown directive #application/iges
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 99 col 1
+Warning: unknown directive #application/im-iscomposing+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 100 col 1
+Warning: unknown directive #application/index
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 101 col 1
+Warning: unknown directive #application/index.cmd
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 102 col 1
+Warning: unknown directive #application/index.obj
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 103 col 1
+Warning: unknown directive #application/index.response
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 104 col 1
+Warning: unknown directive #application/index.vnd
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 105 col 1
+Warning: unknown directive #application/iotp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 107 col 1
+Warning: unknown directive #application/ipp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 109 col 1
+Warning: unknown directive #application/isup
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 110 col 1
+Warning: unknown directive #application/kpml-request+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 117 col 1
+Warning: unknown directive #application/kpml-response+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 118 col 1
+Warning: unknown directive #application/macwriteii
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 122 col 1
+Warning: unknown directive #application/mathml-content+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 127 col 1
+Warning: unknown directive #application/mathml-presentation+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 128 col 1
+Warning: unknown directive #application/mbms-associated-procedure-description+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 130 col 1
+Warning: unknown directive #application/mbms-deregister+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 131 col 1
+Warning: unknown directive #application/mbms-envelope+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 132 col 1
+Warning: unknown directive #application/mbms-msk+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 133 col 1
+Warning: unknown directive #application/mbms-msk-response+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 134 col 1
+Warning: unknown directive #application/mbms-protection-description+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 135 col 1
+Warning: unknown directive #application/mbms-reception-report+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 136 col 1
+Warning: unknown directive #application/mbms-register+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 137 col 1
+Warning: unknown directive #application/mbms-register-response+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 138 col 1
+Warning: unknown directive #application/mbms-user-service-description+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 139 col 1
+Warning: unknown directive #application/media_control+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 141 col 1
+Warning: unknown directive #application/mikey
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 146 col 1
+Warning: unknown directive #application/moss-keys
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 148 col 1
+Warning: unknown directive #application/moss-signature
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 149 col 1
+Warning: unknown directive #application/mosskey-data
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 150 col 1
+Warning: unknown directive #application/mosskey-request
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 151 col 1
+Warning: unknown directive #application/mpeg4-generic
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 154 col 1
+Warning: unknown directive #application/mpeg4-iod
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 155 col 1
+Warning: unknown directive #application/mpeg4-iod-xmt
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 156 col 1
+Warning: unknown directive #application/msc-ivr+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 157 col 1
+Warning: unknown directive #application/msc-mixer+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 158 col 1
+Warning: unknown directive #application/nasdata
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 161 col 1
+Warning: unknown directive #application/news-checkgroups
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 162 col 1
+Warning: unknown directive #application/news-groupinfo
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 163 col 1
+Warning: unknown directive #application/news-transmission
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 164 col 1
+Warning: unknown directive #application/nss
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 165 col 1
+Warning: unknown directive #application/ocsp-request
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 166 col 1
+Warning: unknown directive #application/ocsp-response
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 167 col 1
+Warning: unknown directive #application/parityfec
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 175 col 1
+Warning: unknown directive #application/pgp-keys
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 179 col 1
+Warning: unknown directive #application/pidf+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 182 col 1
+Warning: unknown directive #application/pidf-diff+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 183 col 1
+Warning: unknown directive #application/poc-settings+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 194 col 1
+Warning: unknown directive #application/prs.alvestrand.titrax-sheet
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 196 col 1
+Warning: unknown directive #application/prs.nprend
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 198 col 1
+Warning: unknown directive #application/prs.plucker
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 199 col 1
+Warning: unknown directive #application/prs.rdf-xml-crypt
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 200 col 1
+Warning: unknown directive #application/prs.xsf+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 201 col 1
+Warning: unknown directive #application/qsig
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 203 col 1
+Warning: unknown directive #application/remote-printing
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 207 col 1
+Warning: unknown directive #application/riscos
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 210 col 1
+Warning: unknown directive #application/rlmi+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 211 col 1
+Warning: unknown directive #application/rpki-updown
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 216 col 1
+Warning: unknown directive #application/rtx
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 220 col 1
+Warning: unknown directive #application/samlassertion+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 221 col 1
+Warning: unknown directive #application/samlmetadata+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 222 col 1
+Warning: unknown directive #application/set-payment
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 229 col 1
+Warning: unknown directive #application/set-registration
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 231 col 1
+Warning: unknown directive #application/sgml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 233 col 1
+Warning: unknown directive #application/sgml-open-catalog
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 234 col 1
+Warning: unknown directive #application/sieve
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 236 col 1
+Warning: unknown directive #application/simple-filter+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 237 col 1
+Warning: unknown directive #application/simple-message-summary
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 238 col 1
+Warning: unknown directive #application/simplesymbolcontainer
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 239 col 1
+Warning: unknown directive #application/slate
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 240 col 1
+Warning: unknown directive #application/smil
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 241 col 1
+Warning: unknown directive #application/soap+fastinfoset
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 243 col 1
+Warning: unknown directive #application/soap+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 244 col 1
+Warning: unknown directive #application/spirits-event+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 247 col 1
+Warning: unknown directive #application/tamp-apex-update
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 253 col 1
+Warning: unknown directive #application/tamp-apex-update-confirm
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 254 col 1
+Warning: unknown directive #application/tamp-community-update
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 255 col 1
+Warning: unknown directive #application/tamp-community-update-confirm
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 256 col 1
+Warning: unknown directive #application/tamp-error
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 257 col 1
+Warning: unknown directive #application/tamp-sequence-adjust
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 258 col 1
+Warning: unknown directive #application/tamp-sequence-adjust-confirm
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 259 col 1
+Warning: unknown directive #application/tamp-status-query
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 260 col 1
+Warning: unknown directive #application/tamp-status-response
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 261 col 1
+Warning: unknown directive #application/tamp-update
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 262 col 1
+Warning: unknown directive #application/tamp-update-confirm
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 263 col 1
+Warning: unknown directive #application/timestamp-query
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 266 col 1
+Warning: unknown directive #application/timestamp-reply
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 267 col 1
+Warning: unknown directive #application/tve-trigger
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 269 col 1
+Warning: unknown directive #application/ulpfec
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 270 col 1
+Warning: unknown directive #application/vcard+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 271 col 1
+Warning: unknown directive #application/vemmi
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 272 col 1
+Warning: unknown directive #application/vividence.scriptfile
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 273 col 1
+Warning: unknown directive #application/vnd.3gpp.bsf+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 274 col 1
+Warning: unknown directive #application/vnd.3gpp.sms
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 278 col 1
+Warning: unknown directive #application/vnd.3gpp2.bcmcsinfo+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 279 col 1
+Warning: unknown directive #application/vnd.3gpp2.sms
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 280 col 1
+Warning: unknown directive #application/vnd.adobe.partial-upload
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 290 col 1
+Warning: unknown directive #application/vnd.aether.imp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 293 col 1
+Warning: unknown directive #application/vnd.ah-barcode
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 294 col 1
+Warning: unknown directive #application/vnd.amundsen.maze+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 301 col 1
+Warning: unknown directive #application/vnd.arastra.swi
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 308 col 1
+Warning: unknown directive #application/vnd.autopackage
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 312 col 1
+Warning: unknown directive #application/vnd.avistar+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 313 col 1
+Warning: unknown directive #application/vnd.bluetooth.ep.oob
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 315 col 1
+Warning: unknown directive #application/vnd.cab-jscript
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 318 col 1
+Warning: unknown directive #application/vnd.canon-cpdl
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 319 col 1
+Warning: unknown directive #application/vnd.canon-lips
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 320 col 1
+Warning: unknown directive #application/vnd.cendio.thinlinc.clientconf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 321 col 1
+Warning: unknown directive #application/vnd.cirpack.isdn-ext
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 325 col 1
+Warning: unknown directive #application/vnd.collection+json
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 331 col 1
+Warning: unknown directive #application/vnd.commerce-battelle
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 332 col 1
+Warning: unknown directive #application/vnd.ctct.ws+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 343 col 1
+Warning: unknown directive #application/vnd.cups-pdf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 344 col 1
+Warning: unknown directive #application/vnd.cups-postscript
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 345 col 1
+Warning: unknown directive #application/vnd.cups-raster
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 347 col 1
+Warning: unknown directive #application/vnd.cups-raw
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 348 col 1
+Warning: unknown directive #application/vnd.curl
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 349 col 1
+Warning: unknown directive #application/vnd.cybank
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 352 col 1
+Warning: unknown directive #application/vnd.dir-bi.plate-dl-nosuffix
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 360 col 1
+Warning: unknown directive #application/vnd.dolby.mobile.1
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 363 col 1
+Warning: unknown directive #application/vnd.dolby.mobile.2
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 364 col 1
+Warning: unknown directive #application/vnd.dvb.dvbj
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 369 col 1
+Warning: unknown directive #application/vnd.dvb.esgcontainer
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 370 col 1
+Warning: unknown directive #application/vnd.dvb.ipdcdftnotifaccess
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 371 col 1
+Warning: unknown directive #application/vnd.dvb.ipdcesgaccess
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 372 col 1
+Warning: unknown directive #application/vnd.dvb.ipdcesgaccess2
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 373 col 1
+Warning: unknown directive #application/vnd.dvb.ipdcesgpdd
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 374 col 1
+Warning: unknown directive #application/vnd.dvb.ipdcroaming
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 375 col 1
+Warning: unknown directive #application/vnd.dvb.iptv.alfec-base
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 376 col 1
+Warning: unknown directive #application/vnd.dvb.iptv.alfec-enhancement
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 377 col 1
+Warning: unknown directive #application/vnd.dvb.notif-aggregate-root+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 378 col 1
+Warning: unknown directive #application/vnd.dvb.notif-container+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 379 col 1
+Warning: unknown directive #application/vnd.dvb.notif-generic+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 380 col 1
+Warning: unknown directive #application/vnd.dvb.notif-ia-msglist+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 381 col 1
+Warning: unknown directive #application/vnd.dvb.notif-ia-registration-request+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 382 col 1
+Warning: unknown directive #application/vnd.dvb.notif-ia-registration-response+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 383 col 1
+Warning: unknown directive #application/vnd.dvb.notif-init+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 384 col 1
+Warning: unknown directive #application/vnd.dvb.pfr
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 385 col 1
+Warning: unknown directive #application/vnd.dxr
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 387 col 1
+Warning: unknown directive #application/vnd.easykaraoke.cdgdownload
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 389 col 1
+Warning: unknown directive #application/vnd.ecdis-update
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 390 col 1
+Warning: unknown directive #application/vnd.ecowin.filerequest
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 392 col 1
+Warning: unknown directive #application/vnd.ecowin.fileupdate
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 393 col 1
+Warning: unknown directive #application/vnd.ecowin.series
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 394 col 1
+Warning: unknown directive #application/vnd.ecowin.seriesrequest
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 395 col 1
+Warning: unknown directive #application/vnd.ecowin.seriesupdate
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 396 col 1
+Warning: unknown directive #application/vnd.emclient.accessrequest+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 397 col 1
+Warning: unknown directive #application/vnd.eprints.data+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 399 col 1
+Warning: unknown directive #application/vnd.ericsson.quickcall
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 405 col 1
+Warning: unknown directive #application/vnd.etsi.aoc+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 407 col 1
+Warning: unknown directive #application/vnd.etsi.cug+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 408 col 1
+Warning: unknown directive #application/vnd.etsi.iptvcommand+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 409 col 1
+Warning: unknown directive #application/vnd.etsi.iptvdiscovery+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 410 col 1
+Warning: unknown directive #application/vnd.etsi.iptvprofile+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 411 col 1
+Warning: unknown directive #application/vnd.etsi.iptvsad-bc+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 412 col 1
+Warning: unknown directive #application/vnd.etsi.iptvsad-cod+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 413 col 1
+Warning: unknown directive #application/vnd.etsi.iptvsad-npvr+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 414 col 1
+Warning: unknown directive #application/vnd.etsi.iptvservice+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 415 col 1
+Warning: unknown directive #application/vnd.etsi.iptvsync+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 416 col 1
+Warning: unknown directive #application/vnd.etsi.iptvueprofile+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 417 col 1
+Warning: unknown directive #application/vnd.etsi.mcid+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 418 col 1
+Warning: unknown directive #application/vnd.etsi.overload-control-policy-dataset+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 419 col 1
+Warning: unknown directive #application/vnd.etsi.sci+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 420 col 1
+Warning: unknown directive #application/vnd.etsi.simservs+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 421 col 1
+Warning: unknown directive #application/vnd.etsi.tsl+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 422 col 1
+Warning: unknown directive #application/vnd.etsi.tsl.der
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 423 col 1
+Warning: unknown directive #application/vnd.eudora.data
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 424 col 1
+Warning: unknown directive #application/vnd.f-secure.mobile
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 427 col 1
+Warning: unknown directive #application/vnd.ffsns
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 431 col 1
+Warning: unknown directive #application/vnd.fints
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 432 col 1
+Warning: unknown directive #application/vnd.font-fontforge-sfd
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 435 col 1
+Warning: unknown directive #application/vnd.fujixerox.art-ex
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 445 col 1
+Warning: unknown directive #application/vnd.fujixerox.art4
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 446 col 1
+Warning: unknown directive #application/vnd.fujixerox.hbpl
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 447 col 1
+Warning: unknown directive #application/vnd.fut-misnet
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 451 col 1
+Warning: unknown directive #application/vnd.geocube+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 454 col 1
+Warning: unknown directive #application/vnd.globalplatform.card-content-mgt
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 461 col 1
+Warning: unknown directive #application/vnd.globalplatform.card-content-mgt-response
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 462 col 1
+Warning: unknown directive #application/vnd.gridmp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 467 col 1
+Warning: unknown directive #application/vnd.hal+json
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 475 col 1
+Warning: unknown directive #application/vnd.hcl-bireports
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 479 col 1
+Warning: unknown directive #application/vnd.httphone
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 487 col 1
+Warning: unknown directive #application/vnd.hzn-3d-crossword
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 489 col 1
+Warning: unknown directive #application/vnd.ibm.afplinedata
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 490 col 1
+Warning: unknown directive #application/vnd.ibm.electronic-media
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 491 col 1
+Warning: unknown directive #application/vnd.informedcontrol.rms+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 500 col 1
+Warning: unknown directive #application/vnd.informix-visionary
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 501 col 1
+Warning: unknown directive #application/vnd.infotech.project
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 502 col 1
+Warning: unknown directive #application/vnd.infotech.project+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 503 col 1
+Warning: unknown directive #application/vnd.innopath.wamp.notification
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 504 col 1
+Warning: unknown directive #application/vnd.intertrust.digibox
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 508 col 1
+Warning: unknown directive #application/vnd.intertrust.nncp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 509 col 1
+Warning: unknown directive #application/vnd.iptc.g2.conceptitem+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 512 col 1
+Warning: unknown directive #application/vnd.iptc.g2.knowledgeitem+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 513 col 1
+Warning: unknown directive #application/vnd.iptc.g2.newsitem+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 514 col 1
+Warning: unknown directive #application/vnd.iptc.g2.newsmessage+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 515 col 1
+Warning: unknown directive #application/vnd.iptc.g2.packageitem+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 516 col 1
+Warning: unknown directive #application/vnd.iptc.g2.planningitem+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 517 col 1
+Warning: unknown directive #application/vnd.japannet-directory-service
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 523 col 1
+Warning: unknown directive #application/vnd.japannet-jpnstore-wakeup
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 524 col 1
+Warning: unknown directive #application/vnd.japannet-payment-wakeup
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 525 col 1
+Warning: unknown directive #application/vnd.japannet-registration
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 526 col 1
+Warning: unknown directive #application/vnd.japannet-registration-wakeup
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 527 col 1
+Warning: unknown directive #application/vnd.japannet-setstore-wakeup
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 528 col 1
+Warning: unknown directive #application/vnd.japannet-verification
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 529 col 1
+Warning: unknown directive #application/vnd.japannet-verification-wakeup
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 530 col 1
+Warning: unknown directive #application/vnd.liberty-request+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 549 col 1
+Warning: unknown directive #application/vnd.marlin.drm.actiontoken+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 560 col 1
+Warning: unknown directive #application/vnd.marlin.drm.conftoken+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 561 col 1
+Warning: unknown directive #application/vnd.marlin.drm.license+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 562 col 1
+Warning: unknown directive #application/vnd.marlin.drm.mdcf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 563 col 1
+Warning: unknown directive #application/vnd.meridian-slingshot
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 567 col 1
+Warning: unknown directive #application/vnd.minisoft-hp3000-save
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 573 col 1
+Warning: unknown directive #application/vnd.mitsubishi.misty-guard.trustweb
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 574 col 1
+Warning: unknown directive #application/vnd.motorola.flexsuite
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 584 col 1
+Warning: unknown directive #application/vnd.motorola.flexsuite.adsi
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 585 col 1
+Warning: unknown directive #application/vnd.motorola.flexsuite.fis
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 586 col 1
+Warning: unknown directive #application/vnd.motorola.flexsuite.gotap
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 587 col 1
+Warning: unknown directive #application/vnd.motorola.flexsuite.kmr
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 588 col 1
+Warning: unknown directive #application/vnd.motorola.flexsuite.ttc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 589 col 1
+Warning: unknown directive #application/vnd.motorola.flexsuite.wem
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 590 col 1
+Warning: unknown directive #application/vnd.motorola.iprm
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 591 col 1
+Warning: unknown directive #application/vnd.ms-asf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 594 col 1
+Warning: unknown directive #application/vnd.ms-color.iccprofile
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 596 col 1
+Warning: unknown directive #application/vnd.ms-office.activex+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 606 col 1
+Warning: unknown directive #application/vnd.ms-opentype
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 608 col 1
+Warning: unknown directive #application/vnd.ms-package.obfuscated-opentype
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 609 col 1
+Warning: unknown directive #application/vnd.ms-playready.initiator+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 612 col 1
+Warning: unknown directive #application/vnd.ms-printing.printticket+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 619 col 1
+Warning: unknown directive #application/vnd.ms-tnef
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 621 col 1
+Warning: unknown directive #application/vnd.ms-wmdrm.lic-chlg-req
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 622 col 1
+Warning: unknown directive #application/vnd.ms-wmdrm.lic-resp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 623 col 1
+Warning: unknown directive #application/vnd.ms-wmdrm.meter-chlg-req
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 624 col 1
+Warning: unknown directive #application/vnd.ms-wmdrm.meter-resp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 625 col 1
+Warning: unknown directive #application/vnd.msign
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 632 col 1
+Warning: unknown directive #application/vnd.multiad.creator
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 633 col 1
+Warning: unknown directive #application/vnd.multiad.creator.cif
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 634 col 1
+Warning: unknown directive #application/vnd.music-niff
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 635 col 1
+Warning: unknown directive #application/vnd.ncd.control
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 639 col 1
+Warning: unknown directive #application/vnd.ncd.reference
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 640 col 1
+Warning: unknown directive #application/vnd.nervana
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 641 col 1
+Warning: unknown directive #application/vnd.netfpx
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 642 col 1
+Warning: unknown directive #application/vnd.nokia.catalogs
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 648 col 1
+Warning: unknown directive #application/vnd.nokia.conml+wbxml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 649 col 1
+Warning: unknown directive #application/vnd.nokia.conml+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 650 col 1
+Warning: unknown directive #application/vnd.nokia.isds-radio-presets
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 651 col 1
+Warning: unknown directive #application/vnd.nokia.iptv.config+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 652 col 1
+Warning: unknown directive #application/vnd.nokia.landmark+wbxml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 653 col 1
+Warning: unknown directive #application/vnd.nokia.landmark+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 654 col 1
+Warning: unknown directive #application/vnd.nokia.landmarkcollection+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 655 col 1
+Warning: unknown directive #application/vnd.nokia.n-gage.ac+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 656 col 1
+Warning: unknown directive #application/vnd.nokia.ncd
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 659 col 1
+Warning: unknown directive #application/vnd.nokia.pcd+wbxml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 660 col 1
+Warning: unknown directive #application/vnd.nokia.pcd+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 661 col 1
+Warning: unknown directive #application/vnd.ntt-local.file-transfer
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 667 col 1
+Warning: unknown directive #application/vnd.ntt-local.sip-ta_remote
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 668 col 1
+Warning: unknown directive #application/vnd.ntt-local.sip-ta_tcp_stream
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 669 col 1
+Warning: unknown directive #application/vnd.obn
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 687 col 1
+Warning: unknown directive #application/vnd.oftn.l10n+json
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 688 col 1
+Warning: unknown directive #application/vnd.oipf.contentaccessdownload+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 689 col 1
+Warning: unknown directive #application/vnd.oipf.contentaccessstreaming+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 690 col 1
+Warning: unknown directive #application/vnd.oipf.cspg-hexbinary
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 691 col 1
+Warning: unknown directive #application/vnd.oipf.dae.svg+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 692 col 1
+Warning: unknown directive #application/vnd.oipf.dae.xhtml+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 693 col 1
+Warning: unknown directive #application/vnd.oipf.mippvcontrolmessage+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 694 col 1
+Warning: unknown directive #application/vnd.oipf.pae.gem
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 695 col 1
+Warning: unknown directive #application/vnd.oipf.spdiscovery+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 696 col 1
+Warning: unknown directive #application/vnd.oipf.spdlist+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 697 col 1
+Warning: unknown directive #application/vnd.oipf.ueprofile+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 698 col 1
+Warning: unknown directive #application/vnd.oipf.userprofile+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 699 col 1
+Warning: unknown directive #application/vnd.oma-scws-config
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 701 col 1
+Warning: unknown directive #application/vnd.oma-scws-http-request
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 702 col 1
+Warning: unknown directive #application/vnd.oma-scws-http-response
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 703 col 1
+Warning: unknown directive #application/vnd.oma.bcast.associated-procedure-parameter+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 704 col 1
+Warning: unknown directive #application/vnd.oma.bcast.drm-trigger+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 705 col 1
+Warning: unknown directive #application/vnd.oma.bcast.imd+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 706 col 1
+Warning: unknown directive #application/vnd.oma.bcast.ltkm
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 707 col 1
+Warning: unknown directive #application/vnd.oma.bcast.notification+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 708 col 1
+Warning: unknown directive #application/vnd.oma.bcast.provisioningtrigger
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 709 col 1
+Warning: unknown directive #application/vnd.oma.bcast.sgboot
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 710 col 1
+Warning: unknown directive #application/vnd.oma.bcast.sgdd+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 711 col 1
+Warning: unknown directive #application/vnd.oma.bcast.sgdu
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 712 col 1
+Warning: unknown directive #application/vnd.oma.bcast.simple-symbol-container
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 713 col 1
+Warning: unknown directive #application/vnd.oma.bcast.smartcard-trigger+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 714 col 1
+Warning: unknown directive #application/vnd.oma.bcast.sprov+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 715 col 1
+Warning: unknown directive #application/vnd.oma.bcast.stkm
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 716 col 1
+Warning: unknown directive #application/vnd.oma.cab-address-book+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 717 col 1
+Warning: unknown directive #application/vnd.oma.cab-feature-handler+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 718 col 1
+Warning: unknown directive #application/vnd.oma.cab-pcc+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 719 col 1
+Warning: unknown directive #application/vnd.oma.cab-user-prefs+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 720 col 1
+Warning: unknown directive #application/vnd.oma.dcd
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 721 col 1
+Warning: unknown directive #application/vnd.oma.dcdc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 722 col 1
+Warning: unknown directive #application/vnd.oma.drm.risd+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 724 col 1
+Warning: unknown directive #application/vnd.oma.group-usage-list+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 725 col 1
+Warning: unknown directive #application/vnd.oma.pal+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 726 col 1
+Warning: unknown directive #application/vnd.oma.poc.detailed-progress-report+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 727 col 1
+Warning: unknown directive #application/vnd.oma.poc.final-report+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 728 col 1
+Warning: unknown directive #application/vnd.oma.poc.groups+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 729 col 1
+Warning: unknown directive #application/vnd.oma.poc.invocation-descriptor+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 730 col 1
+Warning: unknown directive #application/vnd.oma.poc.optimized-progress-report+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 731 col 1
+Warning: unknown directive #application/vnd.oma.push
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 732 col 1
+Warning: unknown directive #application/vnd.oma.scidm.messages+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 733 col 1
+Warning: unknown directive #application/vnd.oma.xcap-directory+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 734 col 1
+Warning: unknown directive #application/vnd.omads-email+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 735 col 1
+Warning: unknown directive #application/vnd.omads-file+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 736 col 1
+Warning: unknown directive #application/vnd.omads-folder+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 737 col 1
+Warning: unknown directive #application/vnd.omaloc-supl-init
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 738 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.custom-properties+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 740 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.customxmlproperties+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 741 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.drawing+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 742 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.drawingml.chart+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 743 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.drawingml.chartshapes+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 744 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.drawingml.diagramcolors+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 745 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.drawingml.diagramdata+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 746 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.drawingml.diagramlayout+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 747 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.drawingml.diagramstyle+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 748 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.extended-properties+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 749 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.commentauthors+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 750 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.comments+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 751 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.handoutmaster+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 752 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.notesmaster+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 753 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.notesslide+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 754 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 756 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.presprops+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 757 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.slide+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 759 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.slidelayout+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 760 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.slidemaster+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 761 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 763 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.slideupdateinfo+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 764 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.tablestyles+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 765 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.tags+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 766 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.template.main+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 768 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.presentationml.viewprops+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 769 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.calcchain+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 770 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 771 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.comments+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 772 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 773 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 774 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.externallink+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 775 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcachedefinition+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 776 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcacherecords+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 777 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.pivottable+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 778 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.querytable+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 779 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.revisionheaders+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 780 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.revisionlog+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 781 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.sharedstrings+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 782 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 784 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.sheetmetadata+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 785 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 786 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.table+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 787 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.tablesinglecells+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 788 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 790 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.usernames+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 791 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.volatiledependencies+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 792 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 793 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.theme+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 794 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.themeoverride+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 795 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.vmldrawing
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 796 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 797 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 799 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 800 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 801 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.wordprocessingml.fonttable+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 802 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 803 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 804 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 805 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 806 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 807 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 809 col 1
+Warning: unknown directive #application/vnd.openxmlformats-officedocument.wordprocessingml.websettings+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 810 col 1
+Warning: unknown directive #application/vnd.openxmlformats-package.core-properties+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 811 col 1
+Warning: unknown directive #application/vnd.openxmlformats-package.digital-signature-xmlsignature+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 812 col 1
+Warning: unknown directive #application/vnd.openxmlformats-package.relationships+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 813 col 1
+Warning: unknown directive #application/vnd.quobject-quoxdocument
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 814 col 1
+Warning: unknown directive #application/vnd.osa.netdeploy
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 815 col 1
+Warning: unknown directive #application/vnd.osgi.bundle
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 817 col 1
+Warning: unknown directive #application/vnd.otps.ct-kip+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 820 col 1
+Warning: unknown directive #application/vnd.paos.xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 822 col 1
+Warning: unknown directive #application/vnd.piaccess.application-licence
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 826 col 1
+Warning: unknown directive #application/vnd.poc.group-advertisement+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 829 col 1
+Warning: unknown directive #application/vnd.powerbuilder6-s
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 832 col 1
+Warning: unknown directive #application/vnd.powerbuilder7
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 833 col 1
+Warning: unknown directive #application/vnd.powerbuilder7-s
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 834 col 1
+Warning: unknown directive #application/vnd.powerbuilder75
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 835 col 1
+Warning: unknown directive #application/vnd.powerbuilder75-s
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 836 col 1
+Warning: unknown directive #application/vnd.preminet
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 837 col 1
+Warning: unknown directive #application/vnd.pwg-multiplexed
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 842 col 1
+Warning: unknown directive #application/vnd.pwg-xhtml-print+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 843 col 1
+Warning: unknown directive #application/vnd.qualcomm.brew-app-res
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 844 col 1
+Warning: unknown directive #application/vnd.radisys.moml+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 846 col 1
+Warning: unknown directive #application/vnd.radisys.msml+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 847 col 1
+Warning: unknown directive #application/vnd.radisys.msml-audit+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 848 col 1
+Warning: unknown directive #application/vnd.radisys.msml-audit-conf+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 849 col 1
+Warning: unknown directive #application/vnd.radisys.msml-audit-conn+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 850 col 1
+Warning: unknown directive #application/vnd.radisys.msml-audit-dialog+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 851 col 1
+Warning: unknown directive #application/vnd.radisys.msml-audit-stream+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 852 col 1
+Warning: unknown directive #application/vnd.radisys.msml-conf+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 853 col 1
+Warning: unknown directive #application/vnd.radisys.msml-dialog+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 854 col 1
+Warning: unknown directive #application/vnd.radisys.msml-dialog-base+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 855 col 1
+Warning: unknown directive #application/vnd.radisys.msml-dialog-fax-detect+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 856 col 1
+Warning: unknown directive #application/vnd.radisys.msml-dialog-fax-sendrecv+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 857 col 1
+Warning: unknown directive #application/vnd.radisys.msml-dialog-group+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 858 col 1
+Warning: unknown directive #application/vnd.radisys.msml-dialog-speech+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 859 col 1
+Warning: unknown directive #application/vnd.radisys.msml-dialog-transform+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 860 col 1
+Warning: unknown directive #application/vnd.rainstor.data
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 861 col 1
+Warning: unknown directive #application/vnd.rapid
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 862 col 1
+Warning: unknown directive #application/vnd.renlearn.rlprint
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 866 col 1
+Warning: unknown directive #application/vnd.rs-274x
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 872 col 1
+Warning: unknown directive #application/vnd.ruckus.download
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 873 col 1
+Warning: unknown directive #application/vnd.s3sms
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 874 col 1
+Warning: unknown directive #application/vnd.sbm.cid
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 876 col 1
+Warning: unknown directive #application/vnd.sbm.mid2
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 877 col 1
+Warning: unknown directive #application/vnd.scribus
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 878 col 1
+Warning: unknown directive #application/vnd.sealed.3df
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 879 col 1
+Warning: unknown directive #application/vnd.sealed.csf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 880 col 1
+Warning: unknown directive #application/vnd.sealed.doc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 881 col 1
+Warning: unknown directive #application/vnd.sealed.eml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 882 col 1
+Warning: unknown directive #application/vnd.sealed.mht
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 883 col 1
+Warning: unknown directive #application/vnd.sealed.net
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 884 col 1
+Warning: unknown directive #application/vnd.sealed.ppt
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 885 col 1
+Warning: unknown directive #application/vnd.sealed.tiff
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 886 col 1
+Warning: unknown directive #application/vnd.sealed.xls
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 887 col 1
+Warning: unknown directive #application/vnd.sealedmedia.softseal.html
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 888 col 1
+Warning: unknown directive #application/vnd.sealedmedia.softseal.pdf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 889 col 1
+Warning: unknown directive #application/vnd.smart.notebook
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 900 col 1
+Warning: unknown directive #application/vnd.software602.filler.form+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 902 col 1
+Warning: unknown directive #application/vnd.software602.filler.form-xml-zip
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 903 col 1
+Warning: unknown directive #application/vnd.sss-cod
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 907 col 1
+Warning: unknown directive #application/vnd.sss-dtf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 908 col 1
+Warning: unknown directive #application/vnd.sss-ntf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 909 col 1
+Warning: unknown directive #application/vnd.street-stream
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 918 col 1
+Warning: unknown directive #application/vnd.sun.wadl+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 929 col 1
+Warning: unknown directive #application/vnd.swiftview-ics
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 932 col 1
+Warning: unknown directive #application/vnd.syncml.dm.notification
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 937 col 1
+Warning: unknown directive #application/vnd.syncml.ds.notification
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 938 col 1
+Warning: unknown directive #application/vnd.truedoc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 945 col 1
+Warning: unknown directive #application/vnd.ubisoft.webplayer
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 946 col 1
+Warning: unknown directive #application/vnd.uplanet.alert
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 952 col 1
+Warning: unknown directive #application/vnd.uplanet.alert-wbxml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 953 col 1
+Warning: unknown directive #application/vnd.uplanet.bearer-choice
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 954 col 1
+Warning: unknown directive #application/vnd.uplanet.bearer-choice-wbxml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 955 col 1
+Warning: unknown directive #application/vnd.uplanet.cacheop
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 956 col 1
+Warning: unknown directive #application/vnd.uplanet.cacheop-wbxml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 957 col 1
+Warning: unknown directive #application/vnd.uplanet.channel
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 958 col 1
+Warning: unknown directive #application/vnd.uplanet.channel-wbxml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 959 col 1
+Warning: unknown directive #application/vnd.uplanet.list
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 960 col 1
+Warning: unknown directive #application/vnd.uplanet.list-wbxml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 961 col 1
+Warning: unknown directive #application/vnd.uplanet.listcmd
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 962 col 1
+Warning: unknown directive #application/vnd.uplanet.listcmd-wbxml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 963 col 1
+Warning: unknown directive #application/vnd.uplanet.signal
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 964 col 1
+Warning: unknown directive #application/vnd.vd-study
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 966 col 1
+Warning: unknown directive #application/vnd.vectorworks
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 967 col 1
+Warning: unknown directive #application/vnd.verimatrix.vcas
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 968 col 1
+Warning: unknown directive #application/vnd.vidsoft.vidconference
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 969 col 1
+Warning: unknown directive #application/vnd.vividence.scriptfile
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 972 col 1
+Warning: unknown directive #application/vnd.wap.sic
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 974 col 1
+Warning: unknown directive #application/vnd.wap.slc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 975 col 1
+Warning: unknown directive #application/vnd.wfa.wsc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 980 col 1
+Warning: unknown directive #application/vnd.wmc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 981 col 1
+Warning: unknown directive #application/vnd.wmf.bootstrap
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 982 col 1
+Warning: unknown directive #application/vnd.wolfram.mathematica
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 983 col 1
+Warning: unknown directive #application/vnd.wolfram.mathematica.package
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 984 col 1
+Warning: unknown directive #application/vnd.wrq-hp3000-labelled
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 988 col 1
+Warning: unknown directive #application/vnd.wv.csp+wbxml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 990 col 1
+Warning: unknown directive #application/vnd.wv.csp+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 991 col 1
+Warning: unknown directive #application/vnd.wv.ssp+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 992 col 1
+Warning: unknown directive #application/vnd.xfdl.webform
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 995 col 1
+Warning: unknown directive #application/vnd.xmi+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 996 col 1
+Warning: unknown directive #application/vnd.xmpie.cpkg
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 997 col 1
+Warning: unknown directive #application/vnd.xmpie.dpkg
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 998 col 1
+Warning: unknown directive #application/vnd.xmpie.plan
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 999 col 1
+Warning: unknown directive #application/vnd.xmpie.ppkg
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1000 col 1
+Warning: unknown directive #application/vnd.xmpie.xlim
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1001 col 1
+Warning: unknown directive #application/vnd.yamaha.remote-setup
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1007 col 1
+Warning: unknown directive #application/vnd.yamaha.through-ngn
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1010 col 1
+Warning: unknown directive #application/vnd.yamaha.tunnel-udpencap
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1011 col 1
+Warning: unknown directive #application/vq-rtcpxr
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1016 col 1
+Warning: unknown directive #application/watcherinfo+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1017 col 1
+Warning: unknown directive #application/whoispp-query
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1018 col 1
+Warning: unknown directive #application/whoispp-response
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1019 col 1
+Warning: unknown directive #application/wita
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1022 col 1
+Warning: unknown directive #application/wordperfect5.1
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1023 col 1
+Warning: unknown directive #application/x-amf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1029 col 1
+Warning: unknown directive #application/x-compress
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1045 col 1
+Warning: unknown directive #application/x-font-dos
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1059 col 1
+Warning: unknown directive #application/x-font-framemaker
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1060 col 1
+Warning: unknown directive #application/x-font-libgrx
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1062 col 1
+Warning: unknown directive #application/x-font-speedo
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1067 col 1
+Warning: unknown directive #application/x-font-sunos-news
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1068 col 1
+Warning: unknown directive #application/x-font-vfont
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1072 col 1
+Warning: unknown directive #application/x-gzip
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1080 col 1
+Warning: unknown directive #application/x400-bp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1139 col 1
+Warning: unknown directive #application/xcap-att+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1141 col 1
+Warning: unknown directive #application/xcap-caps+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1142 col 1
+Warning: unknown directive #application/xcap-el+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1144 col 1
+Warning: unknown directive #application/xcap-error+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1145 col 1
+Warning: unknown directive #application/xcap-ns+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1146 col 1
+Warning: unknown directive #application/xcon-conference-info-diff+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1147 col 1
+Warning: unknown directive #application/xcon-conference-info+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1148 col 1
+Warning: unknown directive #application/xhtml-voice+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1151 col 1
+Warning: unknown directive #application/xml-external-parsed-entity
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1154 col 1
+Warning: unknown directive #application/xmpp+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1155 col 1
+Warning: unknown directive #audio/1d-interleaved-parityfec
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1164 col 1
+Warning: unknown directive #audio/32kadpcm
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1165 col 1
+Warning: unknown directive #audio/3gpp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1166 col 1
+Warning: unknown directive #audio/3gpp2
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1167 col 1
+Warning: unknown directive #audio/ac3
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1168 col 1
+Warning: unknown directive #audio/amr
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1170 col 1
+Warning: unknown directive #audio/amr-wb
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1171 col 1
+Warning: unknown directive #audio/amr-wb+
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1172 col 1
+Warning: unknown directive #audio/asc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1173 col 1
+Warning: unknown directive #audio/atrac-advanced-lossless
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1174 col 1
+Warning: unknown directive #audio/atrac-x
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1175 col 1
+Warning: unknown directive #audio/atrac3
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1176 col 1
+Warning: unknown directive #audio/bv16
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1178 col 1
+Warning: unknown directive #audio/bv32
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1179 col 1
+Warning: unknown directive #audio/clearmode
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1180 col 1
+Warning: unknown directive #audio/cn
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1181 col 1
+Warning: unknown directive #audio/dat12
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1182 col 1
+Warning: unknown directive #audio/dls
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1183 col 1
+Warning: unknown directive #audio/dsr-es201108
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1184 col 1
+Warning: unknown directive #audio/dsr-es202050
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1185 col 1
+Warning: unknown directive #audio/dsr-es202211
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1186 col 1
+Warning: unknown directive #audio/dsr-es202212
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1187 col 1
+Warning: unknown directive #audio/dv
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1188 col 1
+Warning: unknown directive #audio/dvi4
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1189 col 1
+Warning: unknown directive #audio/eac3
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1190 col 1
+Warning: unknown directive #audio/evrc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1191 col 1
+Warning: unknown directive #audio/evrc-qcp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1192 col 1
+Warning: unknown directive #audio/evrc0
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1193 col 1
+Warning: unknown directive #audio/evrc1
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1194 col 1
+Warning: unknown directive #audio/evrcb
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1195 col 1
+Warning: unknown directive #audio/evrcb0
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1196 col 1
+Warning: unknown directive #audio/evrcb1
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1197 col 1
+Warning: unknown directive #audio/evrcwb
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1198 col 1
+Warning: unknown directive #audio/evrcwb0
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1199 col 1
+Warning: unknown directive #audio/evrcwb1
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1200 col 1
+Warning: unknown directive #audio/example
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1201 col 1
+Warning: unknown directive #audio/fwdred
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1202 col 1
+Warning: unknown directive #audio/g719
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1203 col 1
+Warning: unknown directive #audio/g722
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1204 col 1
+Warning: unknown directive #audio/g7221
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1205 col 1
+Warning: unknown directive #audio/g723
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1206 col 1
+Warning: unknown directive #audio/g726-16
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1207 col 1
+Warning: unknown directive #audio/g726-24
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1208 col 1
+Warning: unknown directive #audio/g726-32
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1209 col 1
+Warning: unknown directive #audio/g726-40
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1210 col 1
+Warning: unknown directive #audio/g728
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1211 col 1
+Warning: unknown directive #audio/g729
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1212 col 1
+Warning: unknown directive #audio/g7291
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1213 col 1
+Warning: unknown directive #audio/g729d
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1214 col 1
+Warning: unknown directive #audio/g729e
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1215 col 1
+Warning: unknown directive #audio/gsm
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1216 col 1
+Warning: unknown directive #audio/gsm-efr
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1217 col 1
+Warning: unknown directive #audio/gsm-hr-08
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1218 col 1
+Warning: unknown directive #audio/ilbc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1219 col 1
+Warning: unknown directive #audio/ip-mr_v2.5
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1220 col 1
+Warning: unknown directive #audio/isac
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1221 col 1
+Warning: unknown directive #audio/l16
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1222 col 1
+Warning: unknown directive #audio/l20
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1223 col 1
+Warning: unknown directive #audio/l24
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1224 col 1
+Warning: unknown directive #audio/l8
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1225 col 1
+Warning: unknown directive #audio/lpc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1226 col 1
+Warning: unknown directive #audio/mobile-xmf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1228 col 1
+Warning: unknown directive #audio/mp4a-latm
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1230 col 1
+Warning: unknown directive #audio/mpa
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1231 col 1
+Warning: unknown directive #audio/mpa-robust
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1232 col 1
+Warning: unknown directive #audio/mpeg4-generic
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1234 col 1
+Warning: unknown directive #audio/musepack
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1235 col 1
+Warning: unknown directive #audio/opus
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1237 col 1
+Warning: unknown directive #audio/parityfec
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1238 col 1
+Warning: unknown directive #audio/pcma
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1239 col 1
+Warning: unknown directive #audio/pcma-wb
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1240 col 1
+Warning: unknown directive #audio/pcmu-wb
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1241 col 1
+Warning: unknown directive #audio/pcmu
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1242 col 1
+Warning: unknown directive #audio/prs.sid
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1243 col 1
+Warning: unknown directive #audio/qcelp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1244 col 1
+Warning: unknown directive #audio/red
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1245 col 1
+Warning: unknown directive #audio/rtp-enc-aescm128
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1246 col 1
+Warning: unknown directive #audio/rtp-midi
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1247 col 1
+Warning: unknown directive #audio/rtx
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1248 col 1
+Warning: unknown directive #audio/smv
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1251 col 1
+Warning: unknown directive #audio/smv0
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1252 col 1
+Warning: unknown directive #audio/smv-qcp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1253 col 1
+Warning: unknown directive #audio/sp-midi
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1254 col 1
+Warning: unknown directive #audio/speex
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1255 col 1
+Warning: unknown directive #audio/t140c
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1256 col 1
+Warning: unknown directive #audio/t38
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1257 col 1
+Warning: unknown directive #audio/telephone-event
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1258 col 1
+Warning: unknown directive #audio/tone
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1259 col 1
+Warning: unknown directive #audio/uemclip
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1260 col 1
+Warning: unknown directive #audio/ulpfec
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1261 col 1
+Warning: unknown directive #audio/vdvi
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1262 col 1
+Warning: unknown directive #audio/vmr-wb
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1263 col 1
+Warning: unknown directive #audio/vnd.3gpp.iufp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1264 col 1
+Warning: unknown directive #audio/vnd.4sb
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1265 col 1
+Warning: unknown directive #audio/vnd.audiokoz
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1266 col 1
+Warning: unknown directive #audio/vnd.celp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1267 col 1
+Warning: unknown directive #audio/vnd.cisco.nse
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1268 col 1
+Warning: unknown directive #audio/vnd.cmles.radio-events
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1269 col 1
+Warning: unknown directive #audio/vnd.cns.anp1
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1270 col 1
+Warning: unknown directive #audio/vnd.cns.inf1
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1271 col 1
+Warning: unknown directive #audio/vnd.dlna.adts
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1274 col 1
+Warning: unknown directive #audio/vnd.dolby.heaac.1
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1275 col 1
+Warning: unknown directive #audio/vnd.dolby.heaac.2
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1276 col 1
+Warning: unknown directive #audio/vnd.dolby.mlp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1277 col 1
+Warning: unknown directive #audio/vnd.dolby.mps
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1278 col 1
+Warning: unknown directive #audio/vnd.dolby.pl2
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1279 col 1
+Warning: unknown directive #audio/vnd.dolby.pl2x
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1280 col 1
+Warning: unknown directive #audio/vnd.dolby.pl2z
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1281 col 1
+Warning: unknown directive #audio/vnd.dolby.pulse.1
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1282 col 1
+Warning: unknown directive #audio/vnd.dvb.file
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1286 col 1
+Warning: unknown directive #audio/vnd.everad.plj
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1287 col 1
+Warning: unknown directive #audio/vnd.hns.audio
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1288 col 1
+Warning: unknown directive #audio/vnd.nokia.mobile-xmf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1291 col 1
+Warning: unknown directive #audio/vnd.nortel.vbk
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1292 col 1
+Warning: unknown directive #audio/vnd.octel.sbc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1296 col 1
+Warning: unknown directive #audio/vnd.qcelp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1297 col 1
+Warning: unknown directive #audio/vnd.rhetorex.32kadpcm
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1298 col 1
+Warning: unknown directive #audio/vnd.sealedmedia.softseal.mpeg
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1300 col 1
+Warning: unknown directive #audio/vnd.vmx.cvsd
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1301 col 1
+Warning: unknown directive #audio/vorbis
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1302 col 1
+Warning: unknown directive #audio/vorbis-config
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1303 col 1
+Warning: unknown directive #audio/x-tta
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1315 col 1
+Warning: unknown directive #chemical/x-pdb
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1323 col 1
+Warning: unknown directive #image/example
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1327 col 1
+Warning: unknown directive #image/fits
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1328 col 1
+Warning: unknown directive #image/jp2
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1332 col 1
+Warning: unknown directive #image/jpm
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1334 col 1
+Warning: unknown directive #image/jpx
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1335 col 1
+Warning: unknown directive #image/naplps
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1337 col 1
+Warning: unknown directive #image/prs.pti
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1340 col 1
+Warning: unknown directive #image/t38
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1343 col 1
+Warning: unknown directive #image/tiff-fx
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1345 col 1
+Warning: unknown directive #image/vnd.cns.inf2
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1347 col 1
+Warning: unknown directive #image/vnd.globalgraphics.pgb
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1358 col 1
+Warning: unknown directive #image/vnd.microsoft.icon
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1359 col 1
+Warning: unknown directive #image/vnd.mix
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1360 col 1
+Warning: unknown directive #image/vnd.radiance
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1364 col 1
+Warning: unknown directive #image/vnd.sealed.png
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1365 col 1
+Warning: unknown directive #image/vnd.sealedmedia.softseal.gif
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1366 col 1
+Warning: unknown directive #image/vnd.sealedmedia.softseal.jpg
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1367 col 1
+Warning: unknown directive #image/vnd.svf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1368 col 1
+Warning: unknown directive #message/cpim
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1389 col 1
+Warning: unknown directive #message/delivery-status
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1390 col 1
+Warning: unknown directive #message/disposition-notification
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1391 col 1
+Warning: unknown directive #message/example
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1392 col 1
+Warning: unknown directive #message/external-body
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1393 col 1
+Warning: unknown directive #message/feedback-report
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1394 col 1
+Warning: unknown directive #message/global
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1395 col 1
+Warning: unknown directive #message/global-delivery-status
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1396 col 1
+Warning: unknown directive #message/global-disposition-notification
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1397 col 1
+Warning: unknown directive #message/global-headers
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1398 col 1
+Warning: unknown directive #message/http
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1399 col 1
+Warning: unknown directive #message/imdn+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1400 col 1
+Warning: unknown directive #message/news
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1401 col 1
+Warning: unknown directive #message/partial
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1402 col 1
+Warning: unknown directive #message/s-http
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1404 col 1
+Warning: unknown directive #message/sip
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1405 col 1
+Warning: unknown directive #message/sipfrag
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1406 col 1
+Warning: unknown directive #message/tracking-status
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1407 col 1
+Warning: unknown directive #message/vnd.si.simp
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1408 col 1
+Warning: unknown directive #model/example
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1409 col 1
+Warning: unknown directive #model/vnd.flatland.3dml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1414 col 1
+Warning: unknown directive #model/vnd.gs-gdl
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1416 col 1
+Warning: unknown directive #model/vnd.gs.gdl
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1417 col 1
+Warning: unknown directive #model/vnd.moml+xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1419 col 1
+Warning: unknown directive #model/vnd.parasolid.transmit.binary
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1421 col 1
+Warning: unknown directive #model/vnd.parasolid.transmit.text
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1422 col 1
+Warning: unknown directive #multipart/alternative
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1428 col 1
+Warning: unknown directive #multipart/appledouble
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1429 col 1
+Warning: unknown directive #multipart/byteranges
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1430 col 1
+Warning: unknown directive #multipart/digest
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1431 col 1
+Warning: unknown directive #multipart/encrypted
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1432 col 1
+Warning: unknown directive #multipart/example
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1433 col 1
+Warning: unknown directive #multipart/form-data
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1434 col 1
+Warning: unknown directive #multipart/header-set
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1435 col 1
+Warning: unknown directive #multipart/mixed
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1436 col 1
+Warning: unknown directive #multipart/parallel
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1437 col 1
+Warning: unknown directive #multipart/related
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1438 col 1
+Warning: unknown directive #multipart/report
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1439 col 1
+Warning: unknown directive #multipart/signed
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1440 col 1
+Warning: unknown directive #multipart/voice-message
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1441 col 1
+Warning: unknown directive #text/1d-interleaved-parityfec
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1442 col 1
+Warning: unknown directive #text/directory
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1447 col 1
+Warning: unknown directive #text/dns
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1448 col 1
+Warning: unknown directive #text/ecmascript
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1449 col 1
+Warning: unknown directive #text/enriched
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1450 col 1
+Warning: unknown directive #text/example
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1451 col 1
+Warning: unknown directive #text/fwdred
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1452 col 1
+Warning: unknown directive #text/javascript
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1454 col 1
+Warning: unknown directive #text/parityfec
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1456 col 1
+Warning: unknown directive #text/prs.fallenstein.rst
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1458 col 1
+Warning: unknown directive #text/vnd.radisys.msml-basic-layout
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1460 col 1
+Warning: unknown directive #text/red
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1461 col 1
+Warning: unknown directive #text/rfc822-headers
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1462 col 1
+Warning: unknown directive #text/rtf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1464 col 1
+Warning: unknown directive #text/rtp-enc-aescm128
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1465 col 1
+Warning: unknown directive #text/rtx
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1466 col 1
+Warning: unknown directive #text/t140
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1468 col 1
+Warning: unknown directive #text/ulpfec
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1472 col 1
+Warning: unknown directive #text/vnd.abc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1475 col 1
+Warning: unknown directive #text/vnd.dmclientscript
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1480 col 1
+Warning: unknown directive #text/vnd.esmertec.theme-descriptor
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1482 col 1
+Warning: unknown directive #text/vnd.iptc.newsml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1488 col 1
+Warning: unknown directive #text/vnd.iptc.nitf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1489 col 1
+Warning: unknown directive #text/vnd.latex-z
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1490 col 1
+Warning: unknown directive #text/vnd.motorola.reflex
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1491 col 1
+Warning: unknown directive #text/vnd.ms-mediapackage
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1492 col 1
+Warning: unknown directive #text/vnd.net2phone.commcenter.command
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1493 col 1
+Warning: unknown directive #text/vnd.si.uricatalogue
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1494 col 1
+Warning: unknown directive #text/vnd.trolltech.linguist
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1496 col 1
+Warning: unknown directive #text/vnd.wap.si
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1497 col 1
+Warning: unknown directive #text/vnd.wap.sl
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1498 col 1
+Warning: unknown directive #text/xml
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1513 col 1
+Warning: unknown directive #text/xml-external-parsed-entity
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1514 col 1
+Warning: unknown directive #video/1d-interleaved-parityfec
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1515 col 1
+Warning: unknown directive #video/3gpp-tt
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1517 col 1
+Warning: unknown directive #video/bmpeg
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1519 col 1
+Warning: unknown directive #video/bt656
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1520 col 1
+Warning: unknown directive #video/celb
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1521 col 1
+Warning: unknown directive #video/dv
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1522 col 1
+Warning: unknown directive #video/example
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1523 col 1
+Warning: unknown directive #video/h263-1998
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1526 col 1
+Warning: unknown directive #video/h263-2000
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1527 col 1
+Warning: unknown directive #video/h264-rcdo
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1529 col 1
+Warning: unknown directive #video/h264-svc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1530 col 1
+Warning: unknown directive #video/jpeg2000
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1532 col 1
+Warning: unknown directive #video/mp1s
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1535 col 1
+Warning: unknown directive #video/mp2p
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1536 col 1
+Warning: unknown directive #video/mp2t
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1537 col 1
+Warning: unknown directive #video/mp4v-es
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1539 col 1
+Warning: unknown directive #video/mpeg4-generic
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1541 col 1
+Warning: unknown directive #video/mpv
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1542 col 1
+Warning: unknown directive #video/nv
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1543 col 1
+Warning: unknown directive #video/parityfec
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1545 col 1
+Warning: unknown directive #video/pointer
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1546 col 1
+Warning: unknown directive #video/raw
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1548 col 1
+Warning: unknown directive #video/rtp-enc-aescm128
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1549 col 1
+Warning: unknown directive #video/rtx
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1550 col 1
+Warning: unknown directive #video/smpte292m
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1551 col 1
+Warning: unknown directive #video/ulpfec
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1552 col 1
+Warning: unknown directive #video/vc1
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1553 col 1
+Warning: unknown directive #video/vnd.cctv
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1554 col 1
+Warning: unknown directive #video/vnd.dece.mp4
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1557 col 1
+Warning: unknown directive #video/vnd.directv.mpeg
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1561 col 1
+Warning: unknown directive #video/vnd.directv.mpeg-tts
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1562 col 1
+Warning: unknown directive #video/vnd.dlna.mpeg-tts
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1563 col 1
+Warning: unknown directive #video/vnd.hns.video
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1566 col 1
+Warning: unknown directive #video/vnd.iptvforum.1dparityfec-1010
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1567 col 1
+Warning: unknown directive #video/vnd.iptvforum.1dparityfec-2005
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1568 col 1
+Warning: unknown directive #video/vnd.iptvforum.2dparityfec-1010
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1569 col 1
+Warning: unknown directive #video/vnd.iptvforum.2dparityfec-2005
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1570 col 1
+Warning: unknown directive #video/vnd.iptvforum.ttsavc
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1571 col 1
+Warning: unknown directive #video/vnd.iptvforum.ttsmpeg2
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1572 col 1
+Warning: unknown directive #video/vnd.motorola.video
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1573 col 1
+Warning: unknown directive #video/vnd.motorola.videop
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1574 col 1
+Warning: unknown directive #video/vnd.nokia.interleaved-multimedia
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1577 col 1
+Warning: unknown directive #video/vnd.nokia.videovoip
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1578 col 1
+Warning: unknown directive #video/vnd.objectvideo
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1579 col 1
+Warning: unknown directive #video/vnd.sealed.mpeg1
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1580 col 1
+Warning: unknown directive #video/vnd.sealed.mpeg4
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1581 col 1
+Warning: unknown directive #video/vnd.sealed.swf
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1582 col 1
+Warning: unknown directive #video/vnd.sealedmedia.softseal.mov
+in maid-2014.10.14/src/Web/Maid/ApacheMimeTypes.hs  at line 1583 col 1
+MoveIfStrict: Cannot expand #if directive in file leksah-server-0.15.0.3/src/IDE/Core/CTypes.hs  at line 514 col 1:
+    MIN_VERSION_deepseq(a,b,c) is not a defined macro
+MoveIfStrict: fromParseResult: Parse failed at [leaky-0.4.0.0/Types_min.hs] (4:3): Parse error: module
+liquidhaskell-0.4.1.1: liquidhaskell-0.4.1.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [language-puppet-1.1.3.1/Puppet/Parser.hs] (60:17): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [leksah-0.15.0.5/src/IDE/Debug.hs] (149:17): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [lit-0.1.0.5/src/Process.hs] (50:5): Parse error: Last statement in a do-block must be an expression
+liquid-fixpoint-0.3.0.1: liquid-fixpoint-0.3.0.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [maam-0.2.0.1/src/FP/Core.hs] (29:23): Parse error: Constraint
+MoveIfStrict: fromParseResult: Parse failed at [make-package-1.2.0/files/Package.hs] (3:8): Parse error: $exposed
+MoveIfStrict: fromParseResult: Parse failed at [marxup-3.0.0.1/examples/LaTeX.hs] (134:1): Parse error in expression: writeFile ("LaTeX.tex") =<< renderTex preamble «
+MoveIfStrict: fromParseResult: Parse failed at [live-sequencer-0.0.4/src/MPlayer.hs] (91:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [layers-game-0.5/src/AppData.hs] (3:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [lvmrun-1.0/Fornothing.hs] (3:1): Parse error: main
+linear-maps-0.6.1: linear-maps-0.6.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [module-management-0.20.3/testdata/fold3b/Main.hs] (166:48): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [mediawiki2latex-7.9.0.1/src/Babel.hs] (4:1): Parse error: module
+MoveIfStrict: fromParseResult: Parse failed at [newsynth-0.3.0.1/Quantum/Synthesis/Ring.hs] (698:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [mighttpd2-3.2.8/utils/mkindex.hs] (75:10): Illegal character in string gap
+MoveIfStrict: fromParseResult: Parse failed at [morfette-0.4.3/src/GramLab/Data/Assoc.hs] (2:1): Parse error: ,
+MoveIfStrict: fromParseResult: Parse failed at [network-topic-models-0.2.0.1/RunCI.hs] (180:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [miniplex-0.3.4/lib/System/Miniplex/Sink.hs] (100:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [midimory-0.0.0.2/src/MIDI.hs] (54:4): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [music-preludes-1.8.1/examples/note_voice_score.hs] (2:1): Parse error: >>>
+Warning: Can't find file "pficommon/lang/bind.h>|" in directories
+	msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen
+	.
+  Asked for by: msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 40 col 1
+Warning: Can't find file "vector" in directories
+	msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen
+	.
+  Asked for by: msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 50 col 1
+Warning: Can't find file "map" in directories
+	msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen
+	.
+  Asked for by: msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 51 col 1
+Warning: Can't find file "string" in directories
+	msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen
+	.
+  Asked for by: msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 52 col 1
+Warning: Can't find file "stdexcept" in directories
+	msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen
+	.
+  Asked for by: msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 53 col 1
+Warning: Can't find file "stdint.h" in directories
+	msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen
+	.
+  Asked for by: msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 54 col 1
+Warning: unknown directive #{typeHeader}
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 55 col 1
+Warning: unknown directive #{genNameSpace
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 57 col 1
+Warning: Can't find file "#{name}_types.hpp" in directories
+	msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen
+	.
+  Asked for by: msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 61 col 1
+Warning: unknown directive #{serverHeader}
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 62 col 1
+Warning: unknown directive #{genNameSpace
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 64 col 1
+Warning: Can't find file "#{name}_types.hpp" in directories
+	msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen
+	.
+  Asked for by: msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 68 col 1
+Warning: unknown directive #{clientHeader}
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 69 col 1
+Warning: unknown directive #{genNameSpace
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 71 col 1
+Warning: unknown directive #{LT.concat
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 97 col 1
+Warning: unknown directive #{LT.concat
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 122 col 1
+Warning: unknown directive #{LT.concat
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 161 col 1
+Warning: unknown directive #{LT.concat
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 183 col 1
+Warning: unknown directive #{LT.concat
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 214 col 1
+Warning: unknown directive #{content}
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 281 col 1
+Warning: unknown directive #{f
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Cpp.hs  at line 294 col 1
+Warning: unknown directive #{LT.concat
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Erlang.hs  at line 37 col 1
+Warning: unknown directive #{LT.concat
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Erlang.hs  at line 49 col 1
+Warning: unknown directive #{LT.concat
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Erlang.hs  at line 60 col 1
+Warning: unknown directive #{LT.concat
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Erlang.hs  at line 103 col 1
+Warning: unknown directive #{methodName}(#{LT.intercalate
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Erlang.hs  at line 115 col 1
+Warning: unknown directive #{LT.concat
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Erlang.hs  at line 136 col 1
+Warning: unknown directive #{methodName}(Pid,
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Erlang.hs  at line 146 col 1
+Warning: unknown directive #{content}|]
+in msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Erlang.hs  at line 189 col 1
+MoveIfStrict: fromParseResult: Parse failed at [msgpack-idl-0.2.1/Language/MessagePack/IDL/CodeGen/Erlang.hs] (186:36): Unexpected end of input while lexing quasi-quoter
+mbox-tools-0.2.0.4: mbox-tools-0.2.0.4: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [minesweeper-0.9.2.1/GTK/Square.hs] (60:17): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [mudbath-0.0.3/Main.hs] (111:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [mprover-0.0.0.0/examples/Test.hs] (20:18): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [multifocal-0.0.1/src/Data/Transform/TwoLevel.hs] (72:5): Parse error: virtual }
+MoveIfStrict: fromParseResult: Parse failed at [morte-1.2.0/src/Morte/Import.hs] (206:21): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [open-union-0.1.0.1/Data/OpenUnion/Internal.hs] (45:22): Parse error: a
+MoveIfStrict: fromParseResult: Parse failed at [polyseq-0.1.2.1/src/Tests.hs] (24:12): Illegal escape sequence
+MoveIfStrict: fromParseResult: Parse failed at [postgrest-0.2.10.0/test/SpecHelper.hs] (71:37): Parse error: if
+Warning: unknown directive #{T.unlines
+in omaketex-0.1.1.0/omaketex.hs  at line 61 col 1
+Warning: unknown directive #{T.unlines
+in omaketex-0.1.1.0/omaketex.hs  at line 63 col 1
+Warning: unknown directive #.PCD
+in pcd-loader-0.3.0.1/tests/SampleData.hs  at line 9 col 1
+perdure-0.2.1: perdure-0.2.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: Cannot expand #if directive in file pandoc-1.14.0.4/src/Text/Pandoc/Compat/TagSoupEntity.hs  at line 8 col 1:
+    MIN_VERSION_tagsoup(a,b,c) is not a defined macro
+MoveIfStrict: fromParseResult: Parse failed at [primula-board-0.0.1/HTML.hs] (36:3): Parse error: <
+MoveIfStrict: fromParseResult: Parse failed at [opentheory-char-1.41/Setup.hs] (3:1): Parse error: import
+MoveIfStrict: fromParseResult: Parse failed at [optimal-blocks-0.1.0/src/Algorithm/OptimalBlocks/BuzzHash.hs] (110:30): Parse error: hash_last
+MoveIfStrict: fromParseResult: Parse failed at [omnicodec-0.7/src/odec.hs] (96:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [pdf-toolbox-viewer-0.0.3.3/viewer.hs] (44:3): Parse error: Last statement in a do-block must be an expression
+Warning: Can't find file "MachDeps.h" in directories
+	postgresql-orm-0.3.2/Database/PostgreSQL
+	.
+  Asked for by: postgresql-orm-0.3.2/Database/PostgreSQL/Escape.hs  at line 8 col 1
+MoveIfStrict: fromParseResult: Parse failed at [postgresql-orm-0.3.2/Database/PostgreSQL/Escape.hs] (8:1): Parse error: #
+MoveIfStrict: fromParseResult: Parse failed at [paragon-0.1.28/src/Language/Java/Paragon/TypeCheck/Monad/TcDeclM.hs] (100:3): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [pandoc-citeproc-0.7.2/src/Text/CSL/Input/Bibutils.hs] (68:1): Parse error in expression: error $ "citeproc: Bibliography format not supported.\n" ++
+MoveIfStrict: Cannot expand #if directive in file rehoo-0.3.1/Main.hs  at line 14 col 1:
+    MIN_VERSION_shelly(a,b,c) is not a defined macro
+propellor-2.5.0: propellor-2.5.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+repa-examples-3.4.0.1: repa-examples-3.4.0.1: getSymbolicLinkStatus: does not exist (No such file or directory)
+rss2irc-1.0.6: rss2irc-1.0.6: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: rbr-0.8.6/src/Lib/Stats.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: Cannot expand #if directive in file pushme-1.5.0/Main.hs  at line 30 col 1:
+    MIN_VERSION_shelly(a,b,c) is not a defined macro
+Warning: unknown directive #content
+in puppetresources-0.4.2/Main.hs  at line 77 col 1
+MoveIfStrict: fromParseResult: Parse failed at [record-preprocessor-0.1.0.3/demo/Main.hs] (8:3): Parse error: {
+MoveIfStrict: fromParseResult: Parse failed at [respond-1.1.0/src/Web/Respond/HListUtils.hs] (29:25): Parse error: a
+MoveIfStrict: fromParseResult: Parse failed at [puffytools-0.0.0.1/src/PuffyTools/Journal.hs] (139:29): Parse error: "use listJournalFiles instead"#
+MoveIfStrict: fromParseResult: Parse failed at [pugs-DrIFT-2.2.3.20130611/src/DrIFT/YAML.hs] (325:19): Parse error: Last statement in a do-block must be an expression
+rethinkdb-2.0.0.0: rethinkdb-2.0.0.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [purescript-0.6.9.5/src/Language/PureScript/Sugar/Names.hs] (311:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [src/Errs.hs] (148:1): Parse error: ;
+threads-supervisor-1.0.3.0: threads-supervisor-1.0.3.0: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [tup-functor-0.3.0.0/Data/Tup/Newtype.hs] (233:3): Parse error: {
+Warning: Can't find file "errors.h" in directories
+	tip-lib-0.1.2/src/Tip
+	.
+  Asked for by: tip-lib-0.1.2/src/Tip/CallGraph.hs  at line 6 col 1
+MoveIfStrict: fromParseResult: Parse failed at [tip-lib-0.1.2/src/Tip/CallGraph.hs] (6:1): Parse error: #
+MoveIfStrict: Cannot expand #if directive in file taffybar-0.4.5/src/System/Taffybar/XMonadLog.hs  at line 59 col 1:
+    MIN_VERSION_xmonad_contrib(a,b,c) is not a defined macro
+timeplot-1.0.28: timeplot-1.0.28: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [transf-0.13.1/src/Text/Transf.hs] (383:11): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [tempus-0.1.0/Tempus/Loc.hs] (1:1): Illegal character ''\65279''
+
+MoveIfStrict: fromParseResult: Parse failed at [transformations-0.2.0.0/Generics/MultiRec/Transformations/Main.hs] (106:40): Parse error: phi
+threadscope-0.2.7: threadscope-0.2.7: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: Cannot expand #if directive in file toysolver-0.3.0/src/ToySolver/Data/Polynomial/Base.hs  at line 871 col 1:
+    MIN_VERSION_hashable(a,b,c) is not a defined macro
+#warning "Using HashMap instead of Data.Map"
+in wordsetdiff-0.0.3.1/Text/WordSetDiff/Main.hs  at line 76 col 1
+MoveIfStrict: fromParseResult: Parse failed at [whim-0.1.1/Whim/Xlib.hs] (38:3): Parse error: Last statement in a do-block must be an expression
+vty-5.2.9: vty-5.2.9: getSymbolicLinkStatus: does not exist (No such file or directory)
+uuagc-bootstrap-0.9.40.2: uuagc-bootstrap-0.9.40.2: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: fromParseResult: Parse failed at [varan-0.5.1/src/Metrics.hs] (158:13): Illegal character ''\178''
+
+MoveIfStrict: fromParseResult: Parse failed at [vision-0.0.5.0/src/Collection.hs] (54:16): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [src/ehc/Module/ImportExport.chs] (174:1): Parse error: ;
+MoveIfStrict: fromParseResult: Parse failed at [yesod-bin-1.4.10/AddHandler.hs] (53:9): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [yi-0.12.0/src/library/Yi/Core.hs] (299:13): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: xsact-1.7.3/Stats.hs: hGetContents: invalid argument (invalid byte sequence)
+MoveIfStrict: fromParseResult: Parse failed at [yql-0.0.0/src/Data/YQL/Response.hs] (5:18): Parse error: ResponseJSON
+MoveIfStrict: fromParseResult: Parse failed at [zeroth-2009.6.23.3/Language/Haskell/TH/ZeroTH/GetOpt.hs] (75:22): Parse error: =
+MoveIfStrict: fromParseResult: Parse failed at [ztail-1.1/Main.hs] (62:15): Illegal character in string gap
+zoom-cache-1.2.1.6: zoom-cache-1.2.1.6: getSymbolicLinkStatus: does not exist (No such file or directory)
+MoveIfStrict: Cannot expand #if directive in file yet-another-logger-0.2.3.1/src/System/Logger/Backend/Handle.hs  at line 179 col 1:
+    MIN_VERSION_deepseq(a,b,c) is not a defined macro
+MoveIfStrict: fromParseResult: Parse failed at [yxdb-utils-0.1.0.1/src/Codec/Compression/LZF/ByteString.hs] (58:16): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [yavie-0.0.1/src/gtk/yavie-gtk.hs] (47:5): Parse error: Last statement in a do-block must be an expression
+MoveIfStrict: fromParseResult: Parse failed at [y0l0bot-0.1.1/src-exec/y0l0bot.hs] (10:4): Parse error: module
