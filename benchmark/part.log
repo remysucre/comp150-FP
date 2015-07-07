@@ -1,0 +1,1714 @@
+parsing 3d-graphics-examples-0.0.0.1 failed
+parsing Adaptive-0.23 failed
+parsing Adaptive-Blaisorblade-0.23 failed
+parsing Agda-2.4.2.3 failed
+parsing AndroidViewHierarchyImporter-0.1.0.1 failed
+parsing Aurochs-0.1 failed
+parsing BiobaseXNA-0.9.1.1 failed
+parsing Blobs-0.3 failed
+parsing Combinatorrent-0.3.2 failed
+parsing Craft3e-0.1.0.10 failed
+parsing DAG-Tournament-0.1 failed
+parsing DPM-0.3.0.0 failed
+parsing DSH-0.12.0.1 failed
+parsing Dao-0.1.0.2 failed
+parsing DrIFT-2.4.2 failed
+parsing DrIFT-cabalized-2.3.0 failed
+parsing Ebnf2ps-1.0.12 failed
+parsing EditTimeReport-1.0 failed
+parsing Eq-1.1.3 failed
+parsing EtaMOO-0.2.0.0 failed
+parsing Eternal10Seconds-0.2 failed
+parsing FM-SBLEX-3.0.1 failed
+parsing FormalGrammars-0.2.0.0 failed
+parsing GeBoP-1.7.4.1 failed
+parsing HNM-0.1.2 failed
+parsing HSFFIG-1.1.3 failed
+parsing HaLeX-1.2.1 failed
+parsing HaRe-0.7.2.8 failed
+parsing HaXml-1.25.3 failed
+parsing Haskelloids-0.1.1 failed
+parsing Hayoo-1.2.3 failed
+parsing HipmunkPlayground-5.2.1.1 failed
+parsing Holumbus-Distribution-0.1.1 failed
+parsing Hs2lib-0.6.3 failed
+parsing KiCS-0.9.3 failed
+parsing Level0-1.0 failed
+parsing LslPlus-0.4.3 failed
+parsing MiniAgda-0.2014.9.12 failed
+parsing Monadius-0.99 failed
+parsing NoSlow-0.2 failed
+parsing OpenAFP-Utils-1.4.1.3 failed
+parsing Pugs-6.2.13.20130611 failed
+parsing RNAFold-1.99.3.4 failed
+parsing RNAdesign-0.1.2.2 failed
+parsing Rasenschach-0.1.3.1 failed
+parsing SableCC2Hs-0.0.1.0 failed
+parsing Scurry-0.0.3 failed
+parsing ShellCheck-0.3.8 failed
+parsing SpaceInvaders-0.4.2 failed
+parsing Strafunski-Sdf2Haskell-1.0.0.2 failed
+parsing Xec-0.1.6 failed
+parsing ZMachine-0.0 failed
+parsing baskell-0.1.1 failed
+parsing beautifHOL-0.11 failed
+parsing billboard-parser-1.0.0.1 failed
+parsing bitly-cli-0.1.2 failed
+parsing bogre-banana-0.0.1 failed
+parsing buildwrapper-0.9.1 failed
+parsing bustle-0.5.0 failed
+parsing c2hs-0.25.2 failed
+parsing cabal-bounds-0.9.4 failed
+parsing cabal-debian-4.30 failed
+parsing cabal-dev-0.9.2 failed
+parsing cabal-ghci-0.3 failed
+parsing cabal-helper-0.3.5.0 failed
+parsing cabal-install-1.22.6.0 failed
+parsing cabal-install-bundle-1.18.0.2.1 failed
+parsing cabal-install-ghc72-0.10.4 failed
+parsing cabal-install-ghc74-0.10.4 failed
+parsing cabal-meta-0.4.1.3 failed
+parsing cabal-rpm-0.9.6 failed
+parsing cabal-src-0.3.0 failed
+parsing cake3-0.6.0 failed
+parsing call-haskell-from-anything-0.1.0.2 failed
+parsing cao-0.1.1 failed
+parsing casui-0.3 failed
+parsing clac-0.5.0 failed
+parsing clafer-0.3.10 failed
+parsing clash-ghc-0.5.7 failed
+parsing clientsession-0.9.1.1 failed
+parsing cnc-spec-compiler-0.2.0.1 failed
+parsing cognimeta-utils-0.1.2 failed
+parsing concurrent-dns-cache-0.0.1 failed
+parsing conjure-0.1 failed
+parsing corebot-bliki-0.2.2.0 failed
+parsing cryptol-2.2.4 failed
+parsing cubical-0.2.0 failed
+parsing dao-0.1.0.1 failed
+parsing darcs-cabalized-2.0.2.2 failed
+parsing darcs-graph-1.0 failed
+parsing darcsden-1.1.1 failed
+parsing darcswatch-0.4.4 failed
+parsing debian-3.87.2 failed
+parsing dedukti-1.1.4 failed
+parsing delta-0.1.2.0 failed
+parsing derive-2.5.22 failed
+parsing diffdump-0.7.5 failed
+parsing dingo-example-0.2.0 failed
+parsing diversity-0.6.3.0 failed
+parsing doctest-0.10.0 failed
+parsing dsh-sql-0.2.0.2 failed
+parsing ecma262-0.0.0 failed
+parsing ewe-0.1.0.40 failed
+parsing fay-0.23.1.6 failed
+parsing fdo-trash-0.0.0.2 failed
+parsing feed2lj-0.0.3.1 failed
+parsing fenfire-0.1 failed
+parsing flowdock-api-0.1.0.0 failed
+parsing fltkhs-0.1.0.2 failed
+parsing foo-1.0 failed
+parsing frag-1.1.2 failed
+parsing freesect-0.8 failed
+parsing fst-0.10.0.1 failed
+parsing gameclock-1.0.4 failed
+parsing gf-3.6 failed
+parsing ghc-events-0.4.4.0 failed
+parsing ghc-events-parallel-0.5.0.1 failed
+parsing ghc-imported-from-0.2.0.6 failed
+parsing ghc-mod-5.2.1.2 failed
+parsing ghc-parmake-0.1.8 failed
+parsing ghci-haskeline-0.2 failed
+parsing ghci-ng-7.6.3.5 failed
+parsing ginsu-0.8.1.1 failed
+parsing git-annex-5.20150617 failed
+parsing gitit-0.10.7 failed
+parsing glambda-1.0 failed
+parsing graph-rewriting-ski-0.6.4 failed
+parsing graphicstools-0.2.2 failed
+parsing groundhog-inspector-0.7.1.2 failed
+parsing gtk2hs-buildtools-0.13.0.4 failed
+parsing h-booru-0.3.0.0 failed
+parsing hackport-0.4.5 failed
+parsing haddock-leksah-2.6.0 failed
+parsing hails-0.11.2.1 failed
+parsing halfs-2.0 failed
+parsing handa-gdata-0.7.0.3 failed
+parsing hans-2.5.0.0 failed
+parsing happs-tutorial-0.9.5 failed
+parsing happy-1.19.5 failed
+parsing haskell-cnc-0.1.3.200 failed
+parsing haskell-in-space-0.1.1 failed
+parsing haskelm-0.1.12.0 failed
+parsing haskore-supercollider-0.3 failed
+parsing hasktags-0.69.1 failed
+parsing haslo-0.1.3 failed
+parsing hat-2.8.0.0 failed
+parsing hburg-1.1.2 failed
+parsing hcube-0.1.1 failed
+parsing hdevtools-0.1.0.9 failed
+parsing hdirect-0.21.0 failed
+parsing helium-1.8.1 failed
+parsing hellnet-0.1.1 failed
+parsing hermit-1.0.0.0 failed
+parsing hevolisa-dph-0.0.1 failed
+parsing hirt-0.0.1.1 failed
+parsing hlint-1.9.21 failed
+parsing hmp3-1.5.2.1 failed
+parsing holy-project-0.2.0.0 failed
+parsing hoogle-4.2.41 failed
+parsing hoovie-0.1.1 failed
+parsing hopenpgp-tools-0.15 failed
+parsing hoq-0.3 failed
+parsing hpc-tracer-0.3.1 failed
+parsing hplaylist-0.2 failed
+parsing hprotoc-fork-2.0.16.1 failed
+parsing hs-pgms-0.1.0.1 failed
+parsing hsc3-graphs-0.15 failed
+parsing hsfcsh-0.0.1 failed
+parsing hsimport-0.6.5 failed
+parsing htsn-import-0.2.4 failed
+parsing hums-0.7.0 failed
+parsing hunt-server-0.3.0.2 failed
+parsing hws-1.1.0.1 failed
+parsing ide-backend-server-0.9.0 failed
+parsing ideas-math-1.2 failed
+parsing idris-0.9.18.1 failed
+parsing imapget-0.0.3 failed
+parsing inch-0.2.0 failed
+parsing ipatch-0.1.1 failed
+parsing ivory-examples-0.1.0.2 failed
+parsing keera-posture-0.1.4.4 failed
+parsing kmeans-vector-0.3 failed
+parsing knots-0.1.0.1 failed
+parsing lambdacube-examples-0.2.2 failed
+parsing language-puppet-1.1.3.1 failed
+parsing leaky-0.4.0.0 failed
+parsing leksah-0.15.0.5 failed
+parsing leksah-server-0.15.0.3 failed
+parsing lgtk-0.8.0.4 failed
+parsing lit-0.1.0.5 failed
+parsing live-sequencer-0.0.4 failed
+parsing lvmrun-1.0 failed
+parsing maam-0.2.0.1 failed
+parsing make-package-1.2.0 failed
+parsing marxup-3.0.0.1 failed
+parsing mediawiki2latex-7.9.0.1 failed
+parsing mega-sdist-0.2.10.4 failed
+parsing midimory-0.0.0.2 failed
+parsing mighttpd-0.4.3 failed
+parsing mighttpd2-3.2.8 failed
+parsing minesweeper-0.9.2.1 failed
+parsing miniplex-0.3.4 failed
+parsing module-management-0.20.3 failed
+parsing morfette-0.4.3 failed
+parsing morte-1.2.0 failed
+parsing mprover-0.0.0.0 failed
+parsing msgpack-idl-0.2.1 failed
+parsing mudbath-0.0.3 failed
+parsing multifocal-0.0.1 failed
+parsing music-preludes-1.8.1 failed
+parsing music-util-0.17 failed
+parsing network-topic-models-0.2.0.1 failed
+parsing newsynth-0.3.0.1 failed
+parsing omnicodec-0.7 failed
+parsing open-union-0.1.0.1 failed
+parsing opentheory-char-1.41 failed
+parsing optimal-blocks-0.1.0 failed
+parsing pandoc-1.14.0.4 failed
+parsing pandoc-citeproc-0.7.2 failed
+parsing paragon-0.1.28 failed
+parsing parconc-examples-0.3.5 failed
+parsing parsestar-1.5 failed
+parsing pdf-toolbox-viewer-0.0.3.3 failed
+parsing peg-0.2 failed
+parsing polyseq-0.1.2.1 failed
+parsing postgresql-orm-0.3.2 failed
+parsing postgrest-0.2.10.0 failed
+parsing primula-board-0.0.1 failed
+parsing puffytools-0.0.0.1 failed
+parsing pugs-DrIFT-2.2.3.20130611 failed
+parsing purescript-0.6.9.5 failed
+parsing qudb-0.0.1 failed
+parsing rbr-0.8.6 failed
+parsing record-preprocessor-0.1.0.3 failed
+parsing reserve-0.1.1 failed
+parsing respond-1.1.0 failed
+parsing risc386-0.0.20130719 failed
+parsing ruler-core-1.0 failed
+parsing taffybar-0.4.5 failed
+parsing tempus-0.1.0 failed
+parsing tiger-1.1.1 failed
+parsing tip-lib-0.1.2 failed
+parsing todos-0.5.3.2 failed
+parsing toysolver-0.3.0 failed
+parsing transf-0.13.1 failed
+parsing transformations-0.2.0.0 failed
+parsing tup-functor-0.3.0.0 failed
+parsing uhc-light-1.1.9.0 failed
+parsing uuagc-0.9.52.1 failed
+parsing varan-0.5.1 failed
+parsing vision-0.0.5.0 failed
+parsing wai-handler-devel-2.0.0.2 failed
+parsing wedged-0 failed
+parsing whim-0.1.1 failed
+parsing wordsetdiff-0.0.3.1 failed
+parsing xmobar-0.23.1 failed
+parsing xsact-1.7.3 failed
+parsing y0l0bot-0.1.1 failed
+parsing yavie-0.0.1 failed
+parsing yesod-bin-1.4.10 failed
+parsing yesod-dsl-0.1.1.24 failed
+parsing yi-0.12.0 failed
+parsing yql-0.0.0 failed
+parsing yxdb-utils-0.1.0.1 failed
+parsing ztail-1.1 failed
+package Dish-0.0.0.5 has no bang
+package CCA-0.1.5.3 has no bang
+package CarneadesIntoDung-1.0 has no bang
+package Etage-Graph-0.1.8 has no bang
+package Dung-1.1 has no bang
+package GenI-0.24.3 has no bang
+package Genbank-1.0.3 has no bang
+package BCMtools-0.1.1 has no bang
+package Conscript-0.1.0.0 has no bang
+package DynamicTimeWarp-0.1.0.0 has no bang
+package GlomeView-0.3 has no bang
+package Bookshelf-0.4 has no bang
+package GLFW-b-demo-1.0.6 has no bang
+package Allure-0.4.101.1 has no bang
+package GGg-0.1.0.2 has no bang
+package DMuCheck-0.3.0.2 has no bang
+package Befunge93-0.1 has no bang
+package DAV-1.0.7 has no bang
+package FunGEn-0.4.6.1 has no bang
+package BiobaseTrainingData-0.1.2.3 has no bang
+package DisTract-0.2.5 has no bang
+package ClustalParser-1.0.3 has no bang
+package Frank-0.3 has no bang
+package Agda-executable-2.3.0.1 has no bang
+package Dust-tools-pcap-1.3.1 has no bang
+package Etherbunny-0.3 has no bang
+package Attrac-0.1.3 has no bang
+package DSTM-0.1.2 has no bang
+package GPipe-Examples-0.1 has no bang
+package DnaProteinAlignment-0.0.0.1 has no bang
+package DefendTheKing-0.3.1 has no bang
+package Elm-0.13 has no bang
+package BlogLiterately-diagrams-0.2 has no bang
+package CPBrainfuck-1.1 has no bang
+package Ganymede-0.0.0.5 has no bang
+package Advgame-0.1.2 has no bang
+package CabalSearch-0.0.2 has no bang
+package Foster-1.1.2 has no bang
+package DBlimited-0.1.1 has no bang
+package ActionKid-0.1.1.0 has no bang
+package Flippi-0.0.5 has no bang
+package Dust-tools-1.3.2 has no bang
+package Graph500-0.4.0 has no bang
+package Folly-0.1.3.0 has no bang
+package Emping-0.6 has no bang
+package DocTest-0.2.0.1 has no bang
+package Ansi2Html-0.9 has no bang
+package CSPM-cspm-0.8.0.0 has no bang
+package CPL-0.0.7 has no bang
+package Barracuda-1.0.2 has no bang
+package AERN-Real-Double-2011.1.0.2 has no bang
+package BlogLiterately-0.8.1 has no bang
+package AlgorithmW-0.1.1.0 has no bang
+package BNFC-2.8 has no bang
+package Fungi-1.0.6 has no bang
+package DrHylo-0.0.2 has no bang
+package Encode-1.3.7 has no bang
+package AERN-Basics-2011.1.0.1 has no bang
+package Buster-0.1.1 has no bang
+package Chitra-0.2.2 has no bang
+package ApplePush-0.1 has no bang
+package BigPixel-1.3.0 has no bang
+package 4Blocks-0.2 has no bang
+package BiobaseFasta-0.0.1.0 has no bang
+package Condor-0.3 has no bang
+package FermatsLastMargin-0.1 has no bang
+package GenSmsPdu-0.1 has no bang
+package Crypto-4.2.5.1 has no bang
+package CMCompare-0.0.1.5 has no bang
+package Commando-1.0.0.4 has no bang
+package FComp-1.0.2 has no bang
+package FTPLine-1.4.0.0 has no bang
+package CurryDB-0.1.1.0 has bang
+package CheatSheet-2.9 has no bang
+package Deadpan-DDP-0.9.3.0 has no bang
+package HPong-0.1.2 has no bang
+package HTicTacToe-0.2 has no bang
+package GuiHaskell-0.1.1 has no bang
+package HTF-0.13.0.0 has bang
+package Holumbus-MapReduce-0.1.1 has no bang
+package Hashell-1.0 has no bang
+package HarmTrace-2.2.0 has no bang
+package HPlot-0.3 has no bang
+package HSGEP-0.1.5 has no bang
+package KiCS-debugger-0.1.1 has no bang
+package Hedi-0.1.1 has no bang
+package HackMail-0.0.1 has no bang
+package Moe-0.1 has no bang
+package IFS-0.1.1 has no bang
+package Hmpf-0.1 has no bang
+package MuCheck-SmallCheck-0.3.0.4 has no bang
+package Nomyx-0.7.6 has no bang
+package LambdaINet-0.2.0.0 has no bang
+package Javasf-0.0.1 has no bang
+package Hsed-0.2.2 has no bang
+package RMP-0.0.2 has no bang
+package MuCheck-QuickCheck-0.3.0.4 has no bang
+package HPath-0.0.2 has no bang
+package Nussinov78-0.1.0.0 has no bang
+package LinkChecker-0.1 has no bang
+package Mhailist-0.0 has bang
+package INblobs-0.1.1 has no bang
+package GraphHammer-examples-0.3 has no bang
+package Hach-0.1.2 has bang
+package HLogger-0.0.1.0 has no bang
+package HXMPP-0.0.1.0 has no bang
+package HCL-1.4 has no bang
+package LambdaShell-0.9.3 has no bang
+package Hricket-0.1 has no bang
+package HARM-0.1.4 has no bang
+package KdTree-0.2.1 has no bang
+package HRay-1.2.3 has no bang
+package MonadLab-0.0.2 has no bang
+package Pup-Events-Demo-1.3 has no bang
+package HTab-1.6.3 has no bang
+package PageIO-0.0.3 has no bang
+package PandocAgda-2.3.3.0.2 has no bang
+package NGrams-1.1 has no bang
+package Monaris-0.1.8 has no bang
+package HaVSA-0.1.0.2 has no bang
+package KiCS-prophecy-0.1.1 has no bang
+package HaskellTutorials-0.0.0.1 has no bang
+package GrowlNotify-0.4 has no bang
+package MazesOfMonad-1.0.9 has no bang
+package Javav-0.0.4 has no bang
+package MuCheck-Hspec-0.3.0.4 has no bang
+package PlayHangmanGame-0.2 has no bang
+package RNAFoldProgs-0.0.0.3 has no bang
+package Neks-0.4.0.0 has no bang
+package JsContracts-0.5.3 has no bang
+package PortFusion-1.2.1 has no bang
+package PlslTools-0.0.2 has no bang
+package LambdaCalculator-0.1 has no bang
+package PropLogic-0.9.0.4 has no bang
+package LazyVault-0.0.1 has no bang
+package Pup-Events-1.0 has no bang
+package PastePipe-1.8 has no bang
+package MC-Fold-DP-0.1.1.0 has no bang
+package L-seed-0.2 has no bang
+package HListPP-0.2 has no bang
+package Haschoo-0.1.2 has no bang
+package MuCheck-HUnit-0.3.0.4 has no bang
+package HaTeX-meta-1.2.1 has no bang
+package Ninjas-0.1.0.0 has no bang
+package NXT-0.2.3 has no bang
+package LambdaHack-0.4.101.1 has bang
+package PTQ-0.0.7 has no bang
+package HaskellTorrent-0.1.1 has no bang
+package Proper-0.5.2.0 has no bang
+package NanoProlog-0.3 has no bang
+package NXTDSL-0.4 has no bang
+package QuickAnnotate-0.6 has no bang
+package Holumbus-Storage-0.1.0 has no bang
+package HOpenCV-0.1.2.4 has no bang
+package Pollutocracy-1.0 has no bang
+package Network-NineP-0.3.0 has no bang
+package SGdemo-1.1 has no bang
+package Randometer-0.1.0.1 has no bang
+package Ranka-0.1 has no bang
+package RNAwolf-0.4.0.0 has bang
+package Raincat-1.1.1.3 has no bang
+package Referees-0.0.0 has no bang
+package Semantique-0.3.0 has no bang
+package SpacePrivateers-0.1.0.0 has no bang
+package TBC-0.0.3 has no bang
+package SoccerFun-0.5.2 has no bang
+package SuffixStructures-0.0.1.0 has no bang
+package Snusmumrik-0.0.1 has no bang
+package TransformersStepByStep-0.1.1.0 has no bang
+package Stasis-0.0.1 has no bang
+package Titim-0.2.3 has no bang
+package TernaryTrees-0.2.0.2 has no bang
+package extns has no bang
+package ReviewBoard-0.2.2 has no bang
+package UMM-0.3.1 has no bang
+package Tables-0.1.0.2 has no bang
+package WL500gPControl-0.3.4 has no bang
+package Webrexp-1.1.2 has no bang
+package Tablify-0.8.2 has no bang
+package WL500gPLib-0.3.1 has no bang
+package WAVE-0.1.3 has no bang
+package RollingDirectory-0.1 has no bang
+package WeberLogic-0.1.2 has no bang
+package SoccerFunGL-0.5.1 has no bang
+package TypeIlluminator-0.0 has no bang
+package XSaiga-1.0.0.0 has no bang
+package YamlReference-0.9.3 has bang
+package YACPong-0.1 has no bang
+package ScratchFs-0.1.0.2 has no bang
+package TypingTester-0.2.0.0 has no bang
+package TimePiece-0.0.5 has no bang
+package Yogurt-Standalone-0.4 has no bang
+package Wordlint-0.2.0.4 has no bang
+package VKHS-0.5.3 has no bang
+package SVG2Q-0.3 has no bang
+package Saturnin-0.1.0.2 has no bang
+package ReadArgs-1.2.2 has no bang
+package Top-1.7 has no bang
+package RNAdraw-0.2.0.1 has no bang
+package TypeClass-0.2.1 has no bang
+package WashNGo-2.12.0.1 has no bang
+package Shu-thing-1.1.3 has no bang
+package SourceGraph-0.7.0.6 has no bang
+package bacteria-1.1 has no bang
+package cabal-constraints-0.0.0.1 has no bang
+package bamboo-launcher-2010.2.25 has no bang
+package bidirectionalization-combined-0.1.0.1 has no bang
+package c2hsc-0.6.5 has no bang
+package blaze-from-html-0.3.2.1 has no bang
+package boomslang-0.0.4 has no bang
+package binembed-0.1.0.3 has no bang
+package bird-0.0.19 has no bang
+package biopsl-0.4 has no bang
+package b9-0.5.7 has no bang
+package blakesum-demo-0.5 has no bang
+package bake-0.3 has no bang
+package bamstats-0.4 has no bang
+package botpp-0.1 has no bang
+package brillig-0.3.1 has no bang
+package babylon-0.3 has no bang
+package bindings-sipc-1.1 has no bang
+package brainfuck-0.1.0.2 has no bang
+package bkr-0.1.2 has no bang
+package binembed-example-0.1.0.3 has no bang
+package barley-0.3.0.2 has no bang
+package bindings-saga-cmd-0.1.1.1 has no bang
+package brainfuck-tut-0.7.0.0 has no bang
+package cab-0.2.15 has no bang
+package cabal-audit-0.3.0.0 has no bang
+package billeksah-main-1.0.0 has no bang
+package bein-0.3.3 has no bang
+package bumper-0.6.0.3 has no bang
+package blip-0.2.1 has no bang
+package bdo-1.0.1 has no bang
+package bluetile-0.6 has no bang
+package blogination-0.5 has no bang
+package barchart-0.1.1.1 has no bang
+package breakout-0.0.2 has no bang
+package bindings-hamlib-0.1.0.0 has no bang
+package bindings-codec2-0.1.1.0 has no bang
+package bloxorz-0.1.2 has no bang
+package breve-0.3.0.0 has no bang
+package blink1-0.4 has no bang
+package boomange-0.1.3.1 has no bang
+package cabal-dependency-licenses-0.1.1.1 has no bang
+package blunt-1.0.2 has no bang
+package bluetileutils-0.2 has no bang
+package c0check-0.2 has no bang
+package brians-brain-0.0.1 has no bang
+package buildbox-tools-1.5.3.1 has no bang
+package bitspeak-0.0.3 has no bang
+package berp-0.0.2 has no bang
+package black-jewel-0.0.0.1 has no bang
+package bla-2009.10.20 has no bang
+package cabal-db-0.1.12 has no bang
+package billeksah-main-static-1.0.0 has no bang
+package cabal-cargs-0.7.7 has no bang
+package backdropper-1.2 has no bang
+package cabal-graphdeps-0.1.2 has no bang
+package cabal-dir-0.1.0.4 has no bang
+package cabal-upload-0.4 has no bang
+package cabal2arch-1.1 has no bang
+package cabal-sign-0.4.1.0 has no bang
+package cabal2doap-0.2 has no bang
+package cabal2spec-1.0 has no bang
+package cabal-progdeps-1.0 has no bang
+package cabalg-0.2.9 has no bang
+package cabal-test-bin-0.1.5 has no bang
+package castle-0.1.0.1 has no bang
+package calc-0.1 has no bang
+package cgrep-6.4.12 has no bang
+package cake-1.1.0.1 has no bang
+package charade-0.1.1.2 has no bang
+package cantor-0.4 has no bang
+package citeproc-hs-pandoc-filter-0.1 has no bang
+package cabal-setup-1.2.1 has no bang
+package cakyrespa-0.0.29 has no bang
+package caledon-3.2.1.0 has bang
+package click-clack-1.0.1 has no bang
+package cltw-1.1.4 has no bang
+package caldims-0.1.0 has no bang
+package cabal-uninstall-0.1.6 has no bang
+package colada-0.8.4.0 has no bang
+package cap-1.0.1 has no bang
+package cabal-sort-0.0.5.1 has no bang
+package cabal-macosx-0.2.3 has no bang
+package cabal2ebuild-0.0.15.9 has no bang
+package cedict-0.2.5 has no bang
+package carettah-0.3.0 has no bang
+package capri-0.1 has no bang
+package cabalQuery-0.1.0.1 has no bang
+package cabalgraph-0.1 has no bang
+package calculator-0.3.1.1 has no bang
+package cabal-nirvana-0.2.2.1 has no bang
+package cabal2nix-1.73 has no bang
+package claferIG-0.3.10 has no bang
+package cabin-0.1.0.3 has no bang
+package cairo-appbase-0.4 has no bang
+package codec-libevent-0.1.2 has no bang
+package cblrepo-0.17.0 has no bang
+package cmathml3-0.1 has no bang
+package clifford-0.1.0.14 has no bang
+package carboncopy-0.1.2 has no bang
+package camh-0.0.2 has no bang
+package codex-0.3.0.8 has no bang
+package cabalrpmdeps-0.0.4 has no bang
+package clippings-0.1.3 has no bang
+package cheapskate-0.1.0.4 has no bang
+package collapse-util-0.1.0.1 has no bang
+package clanki-1.2.5 has no bang
+package clone-all-0.1.0.0 has no bang
+package cfipu-1.1.0.4 has no bang
+package check-pvp-0.0.1 has no bang
+package cmu-1.10 has no bang
+package change-monger-0.0 has no bang
+package cloudyfs-0.0.2 has no bang
+package cabal-test-0.1 has no bang
+package cless-0.3.0.0 has no bang
+package chatter-0.5.1.0 has no bang
+package cmdargs-browser-0.1.3 has no bang
+package chunky-0.1.0.0 has no bang
+package cal3d-examples-0.1 has no bang
+package cgen-0.0.5 has no bang
+package cabalvchk-0.3 has no bang
+package cfopu-1.0.0 has no bang
+package collada-output-0.6 has no bang
+package clckwrks-cli-0.2.14 has no bang
+package cabalmdvrpm-0.0.1 has no bang
+package clua-0.3 has no bang
+package clean-home-0.0.4 has no bang
+package codemonitor-0.2 has no bang
+package clevercss-0.2.4 has no bang
+package clustertools-0.1.5 has no bang
+package codecov-haskell-0.3.0 has no bang
+package clckwrks-dot-com-0.3.11 has no bang
+package cabal2ghci-0.0.1.1 has no bang
+package coinbase-exchange-0.2.0.0 has no bang
+package cabal-mon-1.0.1 has no bang
+package cg-0.0.9.0 has no bang
+package concrete-relaxng-parser-0.1.1 has no bang
+package csv-to-qif-0.3.2 has no bang
+package cqrs-example-0.9.1 has no bang
+package cpphs-1.19 has no bang
+package config-select-0.0.1 has no bang
+package conlogger-0.1.0.1 has no bang
+package condor-0.3 has no bang
+package containers-benchmark-1.1.0.0 has no bang
+package concraft-hr-0.1.0.2 has no bang
+package dash-haskell-1.1.0.1 has no bang
+package csv-nptools-0.4.1 has no bang
+package cv-combinators-0.1.2.3 has no bang
+package deka-tests-0.6.0.2 has no bang
+package dapi-0.2.0.0 has no bang
+package dataflow-0.6.1.0 has no bang
+package concraft-pl-0.7.4 has no bang
+package darcs-benchmark-0.1.9 has no bang
+package darkplaces-rcon-util-0.1.1 has no bang
+package couch-hs-0.1.6 has no bang
+package docidx-1.1.0 has no bang
+package confsolve-0.5.4 has no bang
+package cuboid-0.14.2 has no bang
+package debian-build-0.7.1.1 has no bang
+package decode-utf8-1.2 has no bang
+package ddc-tools-0.4.1.3 has no bang
+package devil-0.1.1.0 has no bang
+package darcs-buildpackage-0.5.12 has no bang
+package court-0.1.0.0 has no bang
+package doccheck-0.1.0.0 has no bang
+package curry-frontend-0.2.12 has no bang
+package cpuperf-0.1.1 has no bang
+package crunghc-0.1.1.1 has no bang
+package copilot-c99-2.1.2 has no bang
+package darcs2dot-0.1.0.1 has no bang
+package diagrams-haddock-0.3.0.4 has no bang
+package crackNum-1.3 has no bang
+package dotenv-0.1.0.8 has no bang
+package cspmchecker-1.0.0 has no bang
+package delta-h-0.0.3 has no bang
+package dbjava-1.7 has no bang
+package deeplearning-hs-0.1.0.2 has no bang
+package dbmigrations-0.8.2 has no bang
+package combinator-interactive-0.1.2 has no bang
+package cpsa-2.5.0 has no bang
+package dictparser-0.3.0.0 has no bang
+package cr-1.2 has no bang
+package colorize-haskell-1.0.1 has no bang
+package daemons-0.2.1 has no bang
+package dot2graphml-0.1.0.2 has no bang
+package ddc-war-0.4.1.3 has no bang
+package detrospector-0.3 has no bang
+package deunicode-0.1 has no bang
+package cuda-0.6.6.2 has bang
+package copilot-2.1.2 has no bang
+package dephd-0.1.6 has no bang
+package crocodile-0.1.2 has bang
+package dfsbuild-1.0.2 has no bang
+package diffcabal-0.1.1 has no bang
+package djinn-2014.9.7 has no bang
+package dominion-0.1.0.4 has no bang
+package darkplaces-demo-0.1 has no bang
+package datalog-0.2.0.2 has no bang
+package data-structure-inferrer-1.0 has no bang
+package darcs-monitor-0.4.2 has no bang
+package core-haskell-0.6.4 has no bang
+package datapacker-1.0.1 has no bang
+package dockercook-0.4.0.0 has no bang
+package doc-review-0.7.1 has no bang
+package doctest-discover-configurator-0.1.0.6 has no bang
+package derive-gadt-0.1.1 has bang
+package depends-0.0.1 has no bang
+package cursedcsv-0.1.2 has no bang
+package denominate-0.5.0 has no bang
+package criterion-to-html-0.0.0.3 has no bang
+package darcs-fastconvert-0.2.1 has no bang
+package debian-binary-0.0.1 has no bang
+package doctest-discover-0.1.0.6 has no bang
+package ddci-core-0.2.1.2 has no bang
+package dnscache-1.1.0 has no bang
+package dist-upload-0.0.4 has no bang
+package dice-0.1 has no bang
+package dotfs-0.1.1.3 has no bang
+package duplo-1.8.1 has no bang
+package epubname-2.3.2 has no bang
+package eddie-1.0.0 has no bang
+package editor-open-0.6.0.0 has no bang
+package dph-examples-0.7.0.5 has bang
+package elm-get-0.1.3 has no bang
+package elm-init-0.1.2.1 has no bang
+package elm-repl-0.4.1 has no bang
+package edentv-4.10.0 has no bang
+package free-theorems-seq-webui-1.0.0.2 has no bang
+package fptest-0.2.1.0 has no bang
+package esotericbot-0.0.6 has no bang
+package free-theorems-counterexamples-0.3.1.0 has no bang
+package erd-0.1.3.0 has no bang
+package epub-0.0.7 has no bang
+package ert-0.0.2.1 has no bang
+package egison-3.5.6 has no bang
+package font-opengl-basic4x6-0.0.3 has no bang
+package dow-0.2.5 has no bang
+package eros-client-0.5.0.1 has no bang
+package elocrypt-0.4.0 has no bang
+package dtab-1.0 has no bang
+package executable-hash-0.2.0.0 has no bang
+package estreps-0.3.1 has no bang
+package edit-lenses-demo-0.1 has no bang
+package dropsolve-0.1.2.1 has no bang
+package fibon-0.2.0 has no bang
+package extractelf-0.1.0.0 has no bang
+package fcd-1.0.0.0 has no bang
+package ety-0.1 has no bang
+package download-media-content-0.0.0.1 has no bang
+package epub-tools-2.7 has no bang
+package edge-0.9.0.2 has no bang
+package fix-imports-1.0.4 has no bang
+package fixhs-0.1.4 has no bang
+package fquery-0.2.1.5 has no bang
+package extemp-0.0.1 has no bang
+package explore-0.0.7.2 has no bang
+package dwarfadt-0.4 has no bang
+package elerea-examples-2.2.3 has no bang
+package elm-server-0.11.0.1 has no bang
+package email-validator-0.0.3 has no bang
+package follower-0.0.1 has no bang
+package falling-turnip-0.1.0.0 has no bang
+package exherbo-cabal-0.1.0.3 has no bang
+package ehaskell-0.7 has no bang
+package feed-cli-2009.7.5 has no bang
+package flexible-unlit-0.2013.314.0 has no bang
+package elm-reactor-0.3.1 has no bang
+package ecu-0.0.8 has no bang
+package equal-files-0.0.5.1 has no bang
+package ffeed-0.3.2 has no bang
+package egison-tutorial-3.5.1 has no bang
+package ethereum-client-haskell-0.0.4 has no bang
+package formal-0.1.0 has no bang
+package eros-http-0.6.0.1 has no bang
+package flaccuraterip-0.3.4 has no bang
+package flowsim-0.3.5 has no bang
+package fishfood-0.0.1.3 has no bang
+package embeddock-0.3.0.1 has no bang
+package fallingblocks-0.1.4 has no bang
+package elm-package-0.5 has no bang
+package elm-compiler-0.15 has no bang
+package fixedwidth-hs-0.4.0.1 has no bang
+package fractal-0.0.1 has no bang
+package epic-0.9.3.3 has no bang
+package feed2twitter-0.2.0 has no bang
+package frame-0.1 has no bang
+package fordo-0.1 has no bang
+package fmark-0.1.1 has no bang
+package dsmc-tools-0.1.0.1 has no bang
+package find-conduit-0.4.3 has no bang
+package firstify-0.1 has no bang
+package elm-make-0.1.2 has no bang
+package flickr-0.3.3 has no bang
+package format-status-0.2.0.0 has no bang
+package flow2dot-0.9.0.3 has no bang
+package flo-0.1 has no bang
+package embroidery-0.1 has no bang
+package flamingra-0.1.1.1 has no bang
+package fast-tags-1.1.0 has no bang
+package free-theorems-webui-0.2.1.1 has no bang
+package factory-0.2.1.1 has no bang
+package forger-0.0.0.0 has no bang
+package fen2s-1.2 has no bang
+package flower-0.7.2 has no bang
+package forml-0.2 has no bang
+package ffmpeg-tutorials-0.3.3 has no bang
+package explain-0.1.0.1 has no bang
+package freekick2-0.1.2 has no bang
+package funion-0.0.2 has no bang
+package gitdo-0.1.0.0 has no bang
+package fullstop-0.1.4 has no bang
+package frquotes-0.2.1 has no bang
+package ghc-gc-tune-0.3 has no bang
+package github-backup-1.20150618 has bang
+package ggtsTC-0.5 has no bang
+package git-repair-1.20150106 has bang
+package graphtype-0.2.0 has no bang
+package gruff-examples-0.3.1 has no bang
+package hLLVM-0.5.0.1 has no bang
+package gist-0.1 has no bang
+package glintcollider-0.0.2 has no bang
+package genetics-0.0.2 has no bang
+package garepinoh-0.9.9.2.1 has no bang
+package git-freq-0.0.2 has no bang
+package ghc-events-analyze-0.2.1 has no bang
+package gitcache-0.2 has no bang
+package graph-rewriting-cl-0.2.2 has no bang
+package graphmod-1.2.6 has no bang
+package ftshell-0.3.0.1 has no bang
+package gopherbot-0.1.0 has no bang
+package graph-rewriting-ww-0.3.4 has no bang
+package gipeda-0.1.1 has no bang
+package glome-hs-0.61 has no bang
+package git-vogue-0.2.0.1 has no bang
+package fswatcher-0.1.2 has no bang
+package ghc-make-0.3.2 has no bang
+package ghcid-0.5 has no bang
+package geek-server-1.1 has no bang
+package ghclive-0.1.0.2 has no bang
+package geniconvert-0.20 has no bang
+package funsat-0.6.2 has no bang
+package gitignore-1.0.1 has no bang
+package gulcii-0.2.0.3 has no bang
+package git-checklist-1.0.0.0 has no bang
+package graph-rewriting-trs-0.1.6 has no bang
+package ghc-core-0.5.6 has no bang
+package ghc-pkg-autofix-0.2.0.1 has no bang
+package git-all-1.5.0 has no bang
+package gloss-juicy-0.2 has no bang
+package ght-0.4.0.1 has no bang
+package glapp-0.1.0.1 has no bang
+package geniserver-0.24.1.1 has no bang
+package gps2htmlReport-0.3.1 has no bang
+package google-html5-slide-2011.0 has no bang
+package getemx-0.1 has no bang
+package gpah-0.0.2 has no bang
+package gtk2hs-hello-1.1.0.0 has no bang
+package goatee-gtk-0.3.0 has no bang
+package gloss-examples-1.9.4.1 has bang
+package gsmenu-3.0 has no bang
+package fuzzytime-0.7.7 has no bang
+package gnome-desktop-1.0.0.0 has no bang
+package futun-0.1.0.2 has no bang
+package geni-gui-0.24.1 has no bang
+package gyah-bin-0.2.2.0 has no bang
+package glue-0.1.0.0 has no bang
+package ghc-man-completion-0.0.0.3 has no bang
+package freesound-0.1.0 has no bang
+package grm-0.1.1 has no bang
+package gmndl-0.4.0.2 has bang
+package gt-tools-0.2.1 has no bang
+package git-sanity-0.1.0.0 has no bang
+package gearbox-1.0.0.3 has no bang
+package gruff-0.3.4 has no bang
+package gender-0.1.1.0 has no bang
+package geni-util-0.24.1.1 has no bang
+package ghcjs-dom-hello-1.2.0.0 has no bang
+package ghc-core-html-0.1.2 has no bang
+package g-npm-0.1.0 has no bang
+package graph-rewriting-lambdascope-0.5.6 has no bang
+package ghczdecode-0.1.0.1 has no bang
+package git-gpush-3.1.0.1 has no bang
+package greencard-3.0.4.2 has no bang
+package gtkrsync-1.0.4 has no bang
+package git-monitor-3.1.1.4 has no bang
+package gact-0.2 has no bang
+package ghc-prof-flamegraph-0.1.2.1 has no bang
+package hackage-sparks-0.5.1 has no bang
+package hackage-proxy-0.3.0.1 has no bang
+package hakyll-4.7.1.0 has no bang
+package hS3-0.5.9 has no bang
+package hannahci-0.1.4.2 has no bang
+package halive-0.1.0.3 has no bang
+package halma-0.2.0.0 has no bang
+package hark-0.2 has no bang
+package hPDB-examples-1.2.0.2 has no bang
+package haskelldb-hdbc-mysql-0.1.1 has no bang
+package hampp-0.2.1 has no bang
+package haggis-0.1.2.1 has no bang
+package haskelldb-hdbc-odbc-2.1.2 has no bang
+package haskeem-0.7.16 has no bang
+package haskdogs-0.3.2 has no bang
+package hairy-0.1.3 has no bang
+package hackage-plot-0.2.1 has no bang
+package hamusic-0.1.2.1 has no bang
+package hackage-diff-0.1.0.0 has no bang
+package haskore-0.2.0.5 has no bang
+package harchive-0.2 has no bang
+package hayoo-cli-0.1.0.4 has no bang
+package haskellscript-0.2.3 has no bang
+package hascat-setup-0.2 has no bang
+package haddocset-0.3.2 has no bang
+package haskelldb-hsql-sqlite-1.0.0 has no bang
+package hascat-0.2 has no bang
+package hawitter-0.4 has no bang
+package haskell-awk-1.1 has no bang
+package haroonga-httpd-0.1.1.0 has no bang
+package haskoin-wallet-0.0.1 has no bang
+package haskdeep-0.2.0.1 has no bang
+package hackage2hwn-0.5.1 has no bang
+package hangman-1.0.3 has no bang
+package hackager-1.2.0.1 has no bang
+package haskelldb-hsql-sqlite3-1.0.0 has no bang
+package hasloGUI-0.1 has no bang
+package haddock-2.16.0 has bang
+package haskell-docs-4.2.5 has no bang
+package haskell-formatter-1.0.0 has no bang
+package haskintex-0.5.0.3 has no bang
+package halberd-0.1.2.9 has no bang
+package hails-bin-0.1.1.1 has no bang
+package haha-0.3.1.1 has no bang
+package haskelldb-flat-1.0.1 has no bang
+package hath-0.2.3 has no bang
+package haskell-compression-0.1.1 has no bang
+package haskell-pdf-presenter-0.2.5 has no bang
+package hask-home-2009.3.18 has no bang
+package haltavista-0.1.0.1 has no bang
+package haskades-0.2.1 has no bang
+package haskanoid-0.1.4 has no bang
+package hackage-mirror-0.1.0.0 has no bang
+package haskell-updater-1.2.9 has no bang
+package hVOIDP-1.0.2 has no bang
+package hackage2twitter-0.2.1 has no bang
+package haeredes-0.4.3 has no bang
+package haskell-brainfuck-0.1.0.1 has no bang
+package hapistrano-0.2.0.2 has no bang
+package haskelldb-hsql-mysql-1.0.0 has no bang
+package hadoop-tools-0.6 has no bang
+package haskell-platform-test-2010.2.0.0 has no bang
+package haskelldb-hsql-postgresql-1.0.0 has no bang
+package hayland-0.1.0.1 has no bang
+package hascal-2.0.0.1 has no bang
+package hakyll-contrib-0.1.0.1 has no bang
+package hackertyper-0.1.0.1 has no bang
+package haskarrow-0.0 has no bang
+package hXmixer-0.3.0.0 has no bang
+package haste-0.1.1 has no bang
+package hakyll-convert-0.1.0.0 has no bang
+package haskelldb-hdbc-postgresql-2.1.2 has no bang
+package haskelldb-hsql-oracle-1.0.0 has no bang
+package haxparse-0.3.1.0 has no bang
+package haskelldb-hsql-odbc-1.0.0 has no bang
+package hatt-1.5.0.3 has no bang
+package hailgun-send-0.1.1.1 has no bang
+package handa-geodata-0.2.0.1 has no bang
+package haskelldb-hdbc-sqlite3-2.1.2 has no bang
+package haskell-ftp-0.1.0.1 has no bang
+package hake-1.3.8.1 has no bang
+package haverer-0.3.0.0 has no bang
+package haskelldb-dynamic-1.0.0 has no bang
+package happraise-0.1 has no bang
+package hastache-0.6.1 has no bang
+package hjsmin-0.1.4.7 has no bang
+package herbalizer-0.4.9 has no bang
+package hoodle-0.4.0 has no bang
+package hosts-server-0.1.1 has no bang
+package hlongurl-0.9.3 has no bang
+package himg-0.1.0.0 has no bang
+package hemokit-0.6.5 has no bang
+package hell-2.1 has no bang
+package hoodie-0.1.0.0 has no bang
+package highWaterMark-0.1.1 has no bang
+package hgom-0.6 has no bang
+package hdph-0.0.1 has no bang
+package hledger-irr-0.1.1.6 has no bang
+package hnetcdf-0.3.0.0 has no bang
+package hein-0.1.0.5 has no bang
+package hmeap-utils-0.14 has no bang
+package hevolisa-0.0.1 has no bang
+package hp2html-0.2 has no bang
+package hois-0.1.0.0 has no bang
+package hgithub-0.1.0 has no bang
+package hledger-diff-0.2.0.3 has no bang
+package hindent-4.5.4 has no bang
+package hledger-0.25.1 has no bang
+package hoe-1.0.1 has no bang
+package hi-1.2.0.0 has no bang
+package hoodle-publish-0.2.0 has no bang
+package hills-0.1.1.0 has no bang
+package hellage-0.1.1 has no bang
+package hg-buildpackage-1.0.4 has no bang
+package hist-pl-0.3.2 has no bang
+package hbro-1.4.0.0 has no bang
+package hdm-0.0.1 has no bang
+package hosc-utils-0.15 has no bang
+package hesql-0.8 has no bang
+package hogre-examples-0.1.4 has no bang
+package himerge-0.20 has no bang
+package homplexity-0.4.3.0 has no bang
+package hbeat-0.1.2 has no bang
+package hledger-interest-1.4.4 has no bang
+package hemkay-0.2.0 has no bang
+package historian-0.0.1 has no bang
+package hogg-0.4.1.2 has no bang
+package hob-0.0.1.0 has no bang
+package hledger-vty-0.16.1 has no bang
+package hp2pretty-0.6 has no bang
+package heapsort-0.1.0 has no bang
+package hback-0.0.3 has no bang
+package hfd-0.0.2 has no bang
+package helisp-0.1 has no bang
+package hledger-chart-0.16.1 has no bang
+package hoogle-index-0.4.2 has no bang
+package hoobuddy-0.1.0.1 has no bang
+package hmark-1.2 has no bang
+package hfiar-2.1.1 has no bang
+package hp2any-graph-0.5.4.2 has no bang
+package hetris-0.2 has no bang
+package hmatrix-svdlibc-0.3.1 has no bang
+package hdocs-0.4.2.1 has no bang
+package himpy-0.5.0 has no bang
+package hichi-0.0.1 has no bang
+package hp2any-manager-0.4.6 has no bang
+package hog-0.1.1 has no bang
+package hjs-0.2.1 has no bang
+package hopfield-0.1.0.2 has no bang
+package highlight-versions-0.1.3.5 has no bang
+package hiccup-0.40 has bang
+package hlcm-0.2.2 has bang
+package hobbes-0.2.2 has no bang
+package hgettext-0.1.30 has no bang
+package hoodle-extra-0.1 has no bang
+package hello-1.0.0.2 has no bang
+package hfractal-0.4.2.5 has bang
+package hopfield-networks-0.1.0.0 has no bang
+package hips-0.1 has no bang
+package hircules-0.4.1 has no bang
+package hgen-1.4.0 has no bang
+package hgl-example-0.0.2 has no bang
+package hmumps-0.1.1 has no bang
+package hbb-0.4.0.2 has no bang
+package hcc-0.0.0 has no bang
+package hothasktags-0.3.3 has no bang
+package hnop-0.1 has no bang
+package hmk-0.9.7.3 has no bang
+package hinvaders-0.1 has no bang
+package hpc-coveralls-0.9.0 has no bang
+package hssourceinfo-0.0.2 has no bang
+package hserv-0.1.0.3 has no bang
+package hranker-0.1.1 has no bang
+package hs2048-0.1.0 has no bang
+package hscd-0.0.3 has no bang
+package hsenv-0.5 has no bang
+package hsoptions-1.0.0.0 has no bang
+package hsb2hs-0.3 has no bang
+package hprotoc-2.0.17 has no bang
+package hwall-auth-iitk-0.1.0.1 has no bang
+package hsclock-1.0 has no bang
+package http-test-0.2.4 has no bang
+package hpyrg-0.1.0.0 has no bang
+package hsqml-demo-samples-0.3.3.0 has no bang
+package hslinks-0.6.1 has no bang
+package htodo-0.0.4 has no bang
+package hpaste-1.2.0 has no bang
+package hspec-meta-2.1.7 has no bang
+package hs-twitterarchiver-0.2 has no bang
+package hutton-1.0.0 has no bang
+package hsx2hs-0.13.3.2 has no bang
+package hs-mesos-0.20.3.0 has no bang
+package husky-0.4 has no bang
+package hspresent-0.2.2 has no bang
+package hpylos-1.0 has bang
+package hsqml-demo-morris-0.3.1.0 has no bang
+package hs-nombre-generator-0.2.1.0 has no bang
+package hs-carbon-examples-0.0.0.1 has no bang
+package hsqml-morris-0.2.0.0 has no bang
+package htar-0.4.0.1 has no bang
+package hsntp-0.1 has no bang
+package hslackbuilder-0.0.2 has no bang
+package hps-cairo-0.11 has no bang
+package hs-gen-iface-0.5.0 has no bang
+package htags-1.0.1 has no bang
+package hsx-0.10.5 has no bang
+package html2hamlet-0.1.0 has no bang
+package hunt-server-cli-0.2.0.0 has no bang
+package huttons-razor-0.1.1.0 has no bang
+package hsc2hs-0.67.20120610 has no bang
+package hsay-1.1.0 has no bang
+package hsnock-0.5.1 has no bang
+package hsilop-0.1.1.0 has no bang
+package hulk-0.2.0 has no bang
+package hs2dot-0.1.4 has no bang
+package hricket-0.5 has no bang
+package hpodder-1.1.6 has no bang
+package hs2bf-0.6.2 has no bang
+package htzaar-0.0.2 has no bang
+package hsgtd-0.2 has no bang
+package hsdip-0.1 has no bang
+package hstradeking-0.1.0 has no bang
+package hpaco-0.28.0.5 has no bang
+package hsbackup-0.1.1 has no bang
+package hsbencher-fusion-0.3.15.2 has no bang
+package htoml-0.1.0.2 has no bang
+package hpage-0.12.2 has no bang
+package hpasteit-0.3.3 has no bang
+package hsfilt-0.1.0.0 has no bang
+package hub-1.9.0.1 has no bang
+package hscope-0.4.1 has no bang
+package hsc3-lisp-0.15 has no bang
+package htune-0.2 has no bang
+package hspec-discover-2.1.7 has no bang
+package hstzaar-0.9.3 has no bang
+package hsc3-forth-0.15 has no bang
+package hscolour-1.23 has no bang
+package htime-0.3.1 has no bang
+package hsc3-utils-0.15 has no bang
+package hsns-0.5.3 has no bang
+package hunit-gui-0.1.4 has no bang
+package hscurses-fish-ex-1.3.1 has no bang
+package hsdev-0.1.3.4 has no bang
+package hscrtmpl-1.2 has no bang
+package hstest-0.0.1 has no bang
+package hpack-0.3.2 has no bang
+package hsubconvert-0.0.2 has no bang
+package hstyle-0.2.0.3 has no bang
+package hubris-0.0.3 has no bang
+package hurdle-0.4.0 has no bang
+package hs-logo-0.5.1 has no bang
+package hunp-0.1 has no bang
+package hsprocess-0.3 has no bang
+package htsn-0.1.1 has bang
+package hstorchat-0.1.1.0 has no bang
+package hsqml-demo-notes-0.3.3.0 has no bang
+package hstidy-0.2 has no bang
+package husk-scheme-3.19 has no bang
+package json-tools-0.5.0 has no bang
+package hylotab-1.2.1 has no bang
+package keyword-args-0.2.0.2 has no bang
+package lambda-bridge-0.1 has no bang
+package j2hs-0.99.1 has no bang
+package language-mixal-0.1 has no bang
+package lambda-devs-0.4.0 has no bang
+package isiz-0.0.1 has no bang
+package jort-1.0.0 has no bang
+package kif-parser-0.0.3 has no bang
+package json2yaml-0.3.2.3 has no bang
+package jmacro-0.6.13 has no bang
+package imgurder-1.2 has no bang
+package io-manager-0.1.0.2 has no bang
+package lambdaLit-0.1.1.0 has no bang
+package labyrinth-server-0.1.4.1 has no bang
+package ip6addr-0.5.0.1 has no bang
+package keystore-0.7.0.1 has no bang
+package jsontsv-0.1.5.0 has no bang
+package interpol-0.2.3 has no bang
+package ixdopp-0.1.3 has no bang
+package kbq-gu-0.2 has no bang
+package jammittools-0.4.1.1 has no bang
+package lambdacat-0.1.1 has no bang
+package ihttp-0.3.0 has no bang
+package jukebox-0.1.3 has bang
+package jailbreak-cabal-1.3 has no bang
+package iptables-helpers-0.5.0 has no bang
+package interleavableGen-0.0.1 has no bang
+package jumpthefive-0.0.1 has no bang
+package lambdiff-0.1 has no bang
+package language-glsl-0.2.0 has no bang
+package io-reactive-0.1.1 has no bang
+package lambdabot-5.0.2.2 has no bang
+package irc-core-1.1.0.1 has bang
+package jespresso-1.0.2 has no bang
+package lambdaFeed-0.3.1 has no bang
+package language-openscad-0.1.6 has no bang
+package iyql-0.0.7 has no bang
+package jsonsql-0.1.0.1 has no bang
+package hyloutils-1.0 has no bang
+package lambda-toolbox-1.0.1 has no bang
+package javav-0.1.1 has no bang
+package hydra-print-0.1.0.3 has no bang
+package korfu-0.2 has no bang
+package katt-0.2.0.3 has no bang
+package lambdatwit-0.1.0.0 has no bang
+package json-autotype-1.0.2 has no bang
+package javasf-0.1.0 has no bang
+package laborantin-hs-0.1.5.2 has no bang
+package keiretsu-0.4.4 has no bang
+package imparse-0.0.0.3 has no bang
+package json-b-0.0.4 has no bang
+package imbib-1.0.0 has no bang
+package ironforge-0.1.0.35 has no bang
+package hydrogen-cli-0.14 has no bang
+package kevin-0.11.0 has no bang
+package internetmarke-0.0.3 has no bang
+package inquire-0.1 has no bang
+package lambdacube-2008.12.25 has no bang
+package hyperdrive-0.1 has no bang
+package lambda2js-0.1 has no bang
+package infinity-0.3 has no bang
+package ivory-bitdata-0.2.0.0 has no bang
+package idiii-0.1.3.3 has no bang
+package iptadmin-1.3.4 has no bang
+package jdi-0.0.3 has no bang
+package kit-0.7.12 has no bang
+package informative-0.1.0.7 has no bang
+package keter-1.4.1 has no bang
+package infernu-0.0.0.1 has bang
+package hxournal-0.6.6.1 has no bang
+package hybrid-2.0 has no bang
+package ide-backend-0.9.0.9 has no bang
+package hyakko-0.6.7 has no bang
+package infer-upstream-0.1.1.0 has no bang
+package isdicom-0.0.2 has no bang
+package imm-0.6.0.3 has no bang
+package imagepaste-0.2.0.1 has no bang
+package hxmppc-0.2.3 has no bang
+package hyahtzee-0.2 has no bang
+package inject-0.1.0 has no bang
+package inspection-proxy-0.1.0.3 has no bang
+package jsaddle-hello-1.0.0.0 has no bang
+package kdesrc-build-extra-0.1.0.2 has no bang
+package jarfind-0.1.0.3 has no bang
+package implicit-0.0.3 has no bang
+package ihaskell-0.6.3.0 has no bang
+package lambdacube-samples-0.2.0 has no bang
+package life-0.1 has no bang
+package lat-0.6 has no bang
+package learn-physics-examples-0.5.0.1 has no bang
+package launchpad-control-0.0.1.0 has bang
+package lio-simple-0.0.2.2 has no bang
+package linux-perf-0.3 has no bang
+package language-python-test-0.5.0 has no bang
+package lojban-0.3 has no bang
+package language-python-colour-0.1 has no bang
+package maid-2014.10.14 has no bang
+package make-hard-links-0.2 has no bang
+package lscabal-0.1.1 has no bang
+package liquidhaskell-0.4.1.1 has bang
+package lifter-0.1 has no bang
+package manatee-0.2.2 has no bang
+package list-remote-forwards-0.0.1 has no bang
+package lhae-0.0.3 has no bang
+package linear-algebra-cblas-0.1 has no bang
+package manatee-all-0.2.2 has no bang
+package line2pdf-0.0.7 has no bang
+package loshadka-0.2 has no bang
+package lentil-0.1.1.3 has no bang
+package mailbox-count-0.0.2 has no bang
+package mailgun-0.1.0.4 has no bang
+package lsystem-1.2 has no bang
+package log2json-0.1 has no bang
+package lhs2html-0.999999 has no bang
+package marmalade-upload-0.10 has no bang
+package macosx-make-standalone-0.1.0.1 has no bang
+package linkchk-0.0.2 has no bang
+package mage-1.1.0 has no bang
+package lhs2TeX-hl-0.1.4.5 has no bang
+package liquid-fixpoint-0.3.0.1 has bang
+package lorem-0.0.0.0 has no bang
+package lostcities-0.2 has no bang
+package mandulia-0.7 has no bang
+package lushtags-0.0.1 has no bang
+package ltext-0.0.2.1 has no bang
+package manatee-ircclient-0.1.1 has no bang
+package libhbb-0.4.1.0 has no bang
+package line-break-0.1.0.0 has no bang
+package majordomo-0.1.6 has no bang
+package llsd-0.2.0.0 has no bang
+package lord-2.20150122 has no bang
+package markdown2svg-0.0.1.27 has no bang
+package mailchimp-subscribe-1.0 has no bang
+package markdown-unlit-0.2.0.1 has no bang
+package manatee-welcome-0.1.1 has no bang
+package linkcore-0.4.1 has no bang
+package llvm-pkg-config-0.0 has no bang
+package lhslatex-0.1.0.0 has no bang
+package maclight-0.1.0.0 has no bang
+package marquise-4.0.0 has no bang
+package lojysamban-0.0.8.1 has no bang
+package manatee-template-0.1.1 has no bang
+package lye-0.1.0.0 has no bang
+package leaf-1.0.1.1 has no bang
+package ls-usb-0.1.1 has no bang
+package linx-gateway-0.1.0.2 has no bang
+package marionetta-0.1.0.3 has no bang
+package latest-npm-version-0.3.1 has no bang
+package loch-0.2 has no bang
+package layers-game-0.5 has no bang
+package markup-preview-0.2.2.1 has no bang
+package lucienne-0.0.2 has no bang
+package lojbanXiragan-0.3 has no bang
+package llvm-pretty-bc-parser-0.1.3.1 has no bang
+package loopy-0.0.1 has no bang
+package leetify-0.1.0.1 has no bang
+package mangopay-1.11.1 has no bang
+package lazy-csv-0.5 has no bang
+package manatee-anything-0.0.8 has no bang
+package mahoro-0.1.2 has no bang
+package lvmlib-1.1 has no bang
+package lojbanParser-0.1.9.2 has no bang
+package manatee-curl-0.1.1 has no bang
+package manatee-terminal-0.1.1 has no bang
+package manatee-filemanager-0.1.1 has no bang
+package linear-maps-0.6.1 has bang
+package llvm-tools-0.2.0.1 has no bang
+package manatee-editor-0.1.1 has no bang
+package manatee-processmanager-0.1.1 has no bang
+package manatee-reader-0.1.1 has no bang
+package mancala-0.1 has no bang
+package manatee-browser-0.1.1 has no bang
+package lhs2tex-1.19 has no bang
+package manatee-imageviewer-0.1.1 has no bang
+package manatee-pdfviewer-0.1.1 has no bang
+package manatee-mplayer-0.1.1 has no bang
+package ministg-0.3 has no bang
+package network-anonymous-tor-0.9.2 has no bang
+package minirotate-0.1.2.2 has no bang
+package mdcat-0.1.0.4 has no bang
+package mdo-0.0.1 has no bang
+package mustache-haskell-0.1.0.5 has no bang
+package network-builder-0.1.0 has no bang
+package nm-1.0.1 has no bang
+package mysnapsession-example-0.4 has no bang
+package msi-kb-backlit-0.1.0.1 has no bang
+package matsuri-0.0.4 has no bang
+package mastermind-2010.7.25.1 has no bang
+package memscript-0.0.2.0 has no bang
+package nth-prime-1.2 has no bang
+package mida-0.4.3 has no bang
+package modsplit-0.2.1 has no bang
+package mp3decoder-0.0.1 has no bang
+package minions-0.2.0.0 has no bang
+package mueval-0.9.1.1 has no bang
+package mohws-0.2.1.3 has no bang
+package mustache2hs-0.3 has no bang
+package monadloc-pp-0.3.1 has no bang
+package midi-music-box-0.0 has no bang
+package network-server-0.2.0 has no bang
+package monitor-0.1.1 has no bang
+package mathblog-0.5 has no bang
+package masakazu-bot-0.4.0.0 has no bang
+package mediawiki-0.2.6 has no bang
+package nehe-tuts-0.2.4 has no bang
+package mpdmate-0.1 has no bang
+package muon-0.1.0.8 has no bang
+package misfortune-0.1.1.2 has no bang
+package msu-0.0.2 has no bang
+package mute-unmute-0.2.0.0 has no bang
+package nerf-0.5.3 has no bang
+package network-bitcoin-1.8.1 has no bang
+package modulo-1.9.1 has no bang
+package mines-0.1 has no bang
+package mathgenealogy-1.3.0 has no bang
+package newt-0.0.3.1 has no bang
+package n-m-0.0.1 has no bang
+package nixfromnpm-0.1.0.4 has no bang
+package mecha-0.1.1 has no bang
+package nicify-1.2.1 has no bang
+package not-gloss-examples-0.5.0 has no bang
+package netlines-1.0.0 has no bang
+package nkjp-0.4.0 has no bang
+package melody-0.2 has no bang
+package nlp-scores-scripts-0.2.0.0 has no bang
+package nofib-analyze-7.10.1 has no bang
+package minimung-0.1 has no bang
+package miniforth-0.1.0.1 has no bang
+package newports-1.1 has no bang
+package noodle-0.0.19 has no bang
+package nikepub-1.1.2 has no bang
+package octohat-0.1.4.2 has no bang
+package maybench-0.2.4.1 has no bang
+package mcmaster-gloss-examples-2013 has no bang
+package nymphaea-0.3 has no bang
+package ngrams-loader-0.1.0.1 has no bang
+package mbox-tools-0.2.0.4 has bang
+package multihash-0.1.1 has no bang
+package maxsharing-1.0.2 has no bang
+package nyan-0.2 has no bang
+package ml-w-0.1.1 has no bang
+package midisurface-0.1.0.0 has no bang
+package mirror-tweet-0.1.0.0 has no bang
+package mp-0.2.2 has no bang
+package nc-indicators-0.3 has no bang
+package mixed-strategies-0.1.0.0 has no bang
+package mkbndl-0.2.1 has no bang
+package mkcabal-1.0.0 has no bang
+package nanoAgda-1.0.0 has no bang
+package notmuch-haskell-1.0.0.3 has no bang
+package mpvguihs-0.1.1 has no bang
+package multiplicity-0.1.0 has no bang
+package musicbrainz-email-1.0.0.0 has no bang
+package nptools-0.6.0 has no bang
+package neat-0.1.0 has no bang
+package neil-0.9 has no bang
+package noise-0.0.1 has no bang
+package nicovideo-translator-0.1.0.0 has no bang
+package pager-0.1.1.0 has no bang
+package pgdl-8.2 has no bang
+package orc-1.2.1.4 has no bang
+package playlists-0.3.0.0 has no bang
+package pipes-p2p-examples-0.3 has no bang
+package printxosd-0.1 has no bang
+package ply-loader-0.4.1 has no bang
+package patch-image-0.1.0.1 has no bang
+package proctest-0.1.3.0 has no bang
+package pit-0.3.1 has no bang
+package pasty-0.1 has no bang
+package prolog-graph-0.1.0.2 has no bang
+package pointful-1.0.6 has no bang
+package pkggraph-0.1 has no bang
+package postmaster-0.3 has no bang
+package pb-0.1.0 has no bang
+package prednote-test-0.26.0.4 has no bang
+package olwrapper-0.4.1 has no bang
+package polh-lexicon-0.2.2 has no bang
+package pretty-show-1.6.8.2 has no bang
+package only-0.0.6.0 has no bang
+package omaketex-0.1.1.0 has no bang
+package plot-lab-0.0.1.9 has no bang
+package osdkeys-0.0 has no bang
+package pcd-loader-0.3.0.1 has no bang
+package perdure-0.2.1 has bang
+package omega-1.5.2 has no bang
+package prof2pretty-0.1.0.0 has no bang
+package pagarme-0.1.0.0 has no bang
+package profiteur-0.2.0.1 has no bang
+package pocket-dns-0.1.1 has no bang
+package papillon-0.1.0.0 has no bang
+package packunused-0.1.1.4 has no bang
+package package-vt-0.1.3.3 has no bang
+package optimusprime-0.0.1.20091117 has no bang
+package partly-1.0.0.2 has no bang
+package pipes-attoparsec-streaming-0.1.0.0 has no bang
+package ohloh-hs-0.0.2 has no bang
+package pisigma-0.2.1 has no bang
+package photoname-3.0.1 has no bang
+package pandoc-csv2table-1.0.1 has no bang
+package pointfree-1.1 has no bang
+package pacman-memcache-0.1.0.3 has no bang
+package pia-forward-0.1.0.1 has no bang
+package postgresql-simple-migration-0.1.3.0 has no bang
+package orchid-demo-0.0.6 has no bang
+package opn-0.1.2 has no bang
+package piki-0.5.2 has no bang
+package pontarius-mediaserver-0.0.2.0 has no bang
+package pg-harness-0.2.1 has no bang
+package pipes-rt-0.5.0 has no bang
+package pg-harness-server-0.3.1 has no bang
+package pipeclip-0.1.0.1 has no bang
+package pi-calculus-0.0.5 has no bang
+package patronscraper-0.0.0.1 has no bang
+package pappy-0.1.0.2 has no bang
+package primula-bot-0.0.2 has no bang
+package phybin-0.3 has no bang
+package paypal-adaptive-hoops-0.11.0.2 has no bang
+package persona-idp-0.1.0.2 has no bang
+package progressive-0.1.0.1 has no bang
+package pandoc-crossref-0.1.2.1 has no bang
+package parser-helper-0.1.0.0 has no bang
+package pdf2line-0.0.1 has no bang
+package practice-room-0.0.2 has no bang
+package pec-0.2.3 has no bang
+package porte-0.0.4 has no bang
+package piet-0.1 has no bang
+package prof2dot-0.4.1 has no bang
+package priority-sync-0.2.1.1 has no bang
+package pdfsplit-0.0.1 has no bang
+package parseargs-0.1.5.2 has no bang
+package palindromes-0.4 has no bang
+package packdeps-0.4.0.3 has no bang
+package phraskell-0.1.4 has no bang
+package package-o-tron-0.1.0.0 has no bang
+package organize-imports-0.3.0.0 has no bang
+package pony-1.0 has no bang
+package openssh-github-keys-0.1.1.0 has no bang
+package pesca-4.0.1 has no bang
+package pandoc-unlit-0.1.0 has no bang
+package octopus-0.0.2.1 has no bang
+package ottparse-pretty-0.1.2.5 has no bang
+package on-demand-ssh-tunnel-0.1.0.6 has no bang
+package precis-0.5.0 has no bang
+package rehoo-0.3.1 has no bang
+package pub-2.0.2 has no bang
+package propellor-2.5.0 has bang
+package rasterific-svg-0.2.3.1 has no bang
+package repa-examples-3.4.0.1 has bang
+package reversi-0.1.1 has no bang
+package rss2irc-1.0.6 has bang
+package reactive-thread-0.3.2.1 has no bang
+package rabocsv2qif-1.1.5 has no bang
+package randomgen-0.1 has no bang
+package puzzle-draw-0.1.0.4 has no bang
+package quoridor-hs-0.1.1.2 has no bang
+package reheat-0.1.5 has no bang
+package python-pickle-0.2.0 has no bang
+package restyle-0.1.0 has no bang
+package refh-0.1.1 has no bang
+package rewrite-0.10 has no bang
+package protobuf-native-1.0.0.1 has no bang
+package quantfin-0.2.0.0 has no bang
+package pwstore-cli-0.4 has no bang
+package pure-priority-queue-tests-0.12 has no bang
+package quickpull-0.4.2.2 has no bang
+package recursive-line-count-0.1 has no bang
+package rpf-0.2.5 has no bang
+package ruler-0.4.0.1 has no bang
+package roguestar-glut-0.6.0.1 has no bang
+package reify-0.1.1 has no bang
+package rosa-0.2.0.0 has no bang
+package repo-based-blog-0.0.1 has no bang
+package regexchar-0.9.0.12 has no bang
+package quicktest-0.1.3 has no bang
+package prove-everywhere-server-0.1.1 has no bang
+package rivet-0.1.0.0 has no bang
+package rezoom-0.0.4 has no bang
+package randfile-0.1.0.0 has no bang
+package randsolid-0.3 has no bang
+package rdf4h-1.3.0 has no bang
+package rail-compiler-editor-0.3.0.0 has no bang
+package regex-genex-0.6.2 has no bang
+package rascal-1.1.6 has no bang
+package resolve-trivial-conflicts-0.2.0.2 has no bang
+package rws-0.1.1.2 has no bang
+package revdectime-0.1.1 has no bang
+package roguestar-0.6.0.1 has no bang
+package quickcheck-script-0.1.1.1 has no bang
+package pubsub-0.11 has no bang
+package roller-0.1.3 has no bang
+package puzzle-draw-cmdline-0.1.0.4 has no bang
+package pushme-1.5.0 has no bang
+package puppetresources-0.4.2 has no bang
+package route-generator-0.6.1 has no bang
+package riff-0.3.0.1 has no bang
+package regex-tdfa-unittest-1.1 has no bang
+package pvd-1.1.1 has no bang
+package pubnub-1.1.1 has no bang
+package redo-0.2.0 has no bang
+package reaction-logic-2010.11.17 has no bang
+package remote-debugger-0.2.1 has no bang
+package repa-v4l2-0.2.0.0 has no bang
+package retryer-0.1.0.1 has no bang
+package rpc-framework-2.0.0.2 has no bang
+package resource-embed-0.1.0.0 has no bang
+package radix-1.0.0.0 has no bang
+package rncryptor-0.0.2.1 has no bang
+package readpyc-0.2.1 has no bang
+package regex-posix-unittest-1.1 has no bang
+package rdioh-0.2.1 has no bang
+package riot-1.20080618 has no bang
+package rethinkdb-2.0.0.0 has bang
+package roguestar-engine-0.6.0.1 has no bang
+package pxsl-tools-1.0.1 has no bang
+package relational-record-examples-0.2.0.0 has no bang
+package runghc-0.1.0.3 has no bang
+package roshask-0.2.1 has no bang
+package quenya-verb-0.0.1 has no bang
+package rhythm-game-tutorial-0.1.1 has no bang
+package tabloid-0.47 has no bang
+package tccli-0.0.1 has no bang
+package treeviz-1.0.0 has no bang
+package tex2txt-0.1.0.0 has no bang
+package threads-supervisor-1.0.3.0 has bang
+package trajectory-0.1.0.0 has no bang
+package twhs-0.1.0.3 has no bang
+package trimpolya-0 has no bang
+package twidge-1.1.2 has no bang
+package tellbot-0.5.1.4 has no bang
+package topkata-0.2.4 has no bang
+package timecalc-0.1.1 has no bang
+package tttool-1.4.0.2 has no bang
+package traypoweroff-1.0.0 has no bang
+package treemap-html-tools-0.2 has no bang
+package time-exts-2.1.0 has no bang
+package tetris-0.27178 has no bang
+package timestamper-1.0 has no bang
+package tmpl-0.0.0.1 has no bang
+package task-0.0.1 has no bang
+package table-0.1.0.0 has no bang
+package toolshed-0.15.0.1 has no bang
+package text-ldap-0.1.1.6 has no bang
+package thimk-0.3.1 has no bang
+package testPkg-0.0 has no bang
+package turni-2011.1.15 has no bang
+package tsp-viz-0.1.0.0 has no bang
+package tftp-0.2 has no bang
+package tls-debug-0.4.0 has no bang
+package time-series-0.1.0.0 has no bang
+package tagsoup-ht-0.3 has no bang
+package toktok-0.5 has no bang
+package test-sandbox-compose-0.1.3 has no bang
+package themoviedb-1.1.0.0 has no bang
+package tianbar-0.4.6.3 has no bang
+package tasty-integrate-0.0.1 has no bang
+package timestamp-subprocess-lines-0.1.0.3 has no bang
+package turing-music-0.1.1 has no bang
+package timeconsole-0.1.0.0 has no bang
+package textmatetags-0.0.1.2 has no bang
+package tersmu-0.2 has no bang
+package toilet-0.0.1 has no bang
+package trurl-0.3.1.0 has no bang
+package timeplot-1.0.28 has bang
+package touched-0.2.0.1 has no bang
+package tableaux-0.2 has no bang
+package tn-1.0.2.1 has no bang
+package threadPool-0.3.1 has no bang
+package theoremquest-client-0.0.0 has no bang
+package termbox-bindings-0.1.0.5 has no bang
+package tip-haskell-frontend-0.1.1 has no bang
+package themplate-1.1 has no bang
+package tamarin-prover-0.8.6.1 has no bang
+package truelevel-0.1.3.1 has no bang
+package tic-tac-toe-0.1 has no bang
+package threadscope-0.2.7 has bang
+package timberc-1.0.3 has no bang
+package testpattern-0.1 has no bang
+package thih-1.0 has no bang
+package taggy-0.1.4 has no bang
+package txt2rtf-1.0.1 has no bang
+package uhexdump-0.3 has no bang
+package unusable-pkg-0.1 has no bang
+package uacpid-1.0.3.0 has no bang
+package xml-to-json-2.0.1 has no bang
+package ui-command-0.5.4 has no bang
+package xcffib-0.3.2 has no bang
+package unlambda-0.1.4.1 has no bang
+package vty-menu-0.0.3 has no bang
+package uri-template-0.2 has no bang
+package vcswrapper-0.1.2 has no bang
+package xml-prettify-0.1.0.1 has no bang
+package xmonad-0.11.1 has no bang
+package wp-archivebot-0.1 has no bang
+package x509-util-1.5.2 has no bang
+package xml-to-json-fast-2.0.0 has no bang
+package wol-0.1.2 has no bang
+package wordpass-1.0.0.3 has no bang
+package xkcd-0.1.1 has no bang
+package wyvern-0.1 has no bang
+package xilinx-lava-5.0.1.9 has no bang
+package xdot-0.2.4.7 has no bang
+package xlsx-0.1.0.4 has no bang
+package wobsurv-0.1.0 has no bang
+package urldecode-1.0.0.2 has no bang
+package uhttpc-0.1.0.0 has no bang
+package xml2json-0.2.0.0 has no bang
+package visual-prof-0.5 has no bang
+package virthualenv-0.2.2 has no bang
+package wordsearch-1.0.1 has no bang
+package wxFruit-0.1.2.1 has no bang
+package webify-0.1.7.0 has no bang
+package xbattbar-0.2 has no bang
+package woffex-0.1 has no bang
+package wsedit-0.1.0.0 has no bang
+package xlsx-templater-0.0.1 has no bang
+package xmonad-bluetilebranch-0.9.1.4 has no bang
+package unicoder-0.4.1 has no bang
+package typescript-docs-0.0.3 has no bang
+package una-2.1.0 has no bang
+package twitter-0.1.1 has no bang
+package up-1.0.0.3 has no bang
+package unlit-0.3.0.3 has no bang
+package typalyze-0.1.1 has no bang
+package urxml-0.2.0.0 has no bang
+package uAgda-1.2.0.4 has no bang
+package wai-app-static-3.1.0 has no bang
+package ureader-0.2.0.0 has no bang
+package warp-static-2.0.1.1 has no bang
+package warp-dynamic-0.1.0 has no bang
+package wikipedia4epub-0.0.12 has no bang
+package uu-cco-examples-0.1.0.1 has no bang
+package wxturtle-0.0.1 has no bang
+package win-hp-path-0.1.2 has no bang
+package vk-posix-pty-0.2.1 has no bang
+package utf8-prelude-0.1.6 has no bang
+package urembed-0.5.0.1 has no bang
+package witty-0.0.4 has no bang
+package wedding-announcement-1.1 has no bang
+package wolf-0.1.1 has no bang
+package wavy-0.1.0.0 has no bang
+package watchit-0.1.0.0 has no bang
+package xchat-plugin-0.0.3 has no bang
+package visual-graphrewrite-0.4.0.1 has no bang
+package wavconvert-0.1.1 has no bang
+package websnap-0.1.0.1 has no bang
+package vty-examples-5.2.0 has no bang
+package v4l2-examples-0.1.0.2 has no bang
+package urlcheck-0.1.1 has no bang
+package xmltv-0.0.1 has no bang
+package vacuum-opengl-0.0.3 has no bang
+package vado-0.0.5 has no bang
+package vty-5.2.9 has bang
+package wai-middleware-crowd-0.1.1.2 has no bang
+package up-grade-0.0.2 has no bang
+package uuagc-bootstrap-0.9.40.2 has bang
+package waddle-0.1.0.5 has no bang
+package whitespace-0.4 has no bang
+package xml2x-0.4.2 has no bang
+package vampire-0.1.3.0 has no bang
+package vcsgui-0.1.2.0 has no bang
+package wxdirect-0.91.0.0 has no bang
+package webidl-0.1.1 has no bang
+package wxAsteroids-1.0 has no bang
+package txt-sushi-0.6.0 has no bang
+package vintage-basic-1.0.1 has no bang
+package vimus-0.2.1 has no bang
+package wxhnotepad-1.2.0 has no bang
+package typeof-0.1.2 has no bang
+package uuagd-0.1.0.2 has no bang
+package unscramble-1.0 has no bang
+package zoom-cache-sndfile-1.1.0.1 has no bang
+package yampa2048-0.1.0.0 has no bang
+package yesod-examples-0.9.0.1 has no bang
+package yjftp-0.3.6.5 has no bang
+package xournal-convert-0.1.1 has no bang
+package xmonad-utils-0.1.3.3 has no bang
+package zoom-0.1.0.1 has no bang
+package youtube-0.2.0.1 has no bang
+package yackage-0.7.0.8 has no bang
+package zsh-battery-0.2 has no bang
+package yabi-0.1.1.0 has no bang
+package yesod-continuations-0.1 has no bang
+package yeganesh-2.5 has no bang
+package zeroth-2009.6.23.3 has no bang
+package zot-0.0.2 has no bang
+package yuuko-2010.11.28 has no bang
+package zoom-cache-1.2.1.6 has bang
+package yet-another-logger-0.2.3.1 has no bang
+package yesod-vend-0.3.0.0 has no bang
+package zeno-0.2.0.1 has no bang
+package yst-0.5.0.3 has no bang
+package zampolit-0.3 has no bang
+package zmqat-0.2.0.0 has no bang
+package zmcat-0.3 has no bang
+package yes-precure5-command-5.5.1 has no bang
+package yjftp-libs-0.0.2 has no bang
+package yampa-glfw-0.1.0.0 has no bang
+package yabi-muno-0.1.0.1 has no bang
+package yaml2owl-0.0.1 has no bang

@@ -1,0 +1,491 @@
+1d0
+< 3d-graphics-examples-0.0.0.1
+6,7d4
+< Adaptive-0.23
+< Adaptive-Blaisorblade-0.23
+9d5
+< Agda-2.4.2.3
+13d8
+< AndroidViewHierarchyImporter-0.1.0.1
+17d11
+< Aurochs-0.1
+25,26d18
+< BiobaseXNA-0.9.1.1
+< Blobs-0.3
+41d32
+< Combinatorrent-0.3.2
+45d35
+< Craft3e-0.1.0.10
+48d37
+< DAG-Tournament-0.1
+52,53d40
+< DPM-0.3.0.0
+< DSH-0.12.0.1
+55d41
+< Dao-0.1.0.2
+63,64d48
+< DrIFT-2.4.2
+< DrIFT-cabalized-2.3.0
+69,70d52
+< Ebnf2ps-1.0.12
+< EditTimeReport-1.0
+74,75d55
+< Eq-1.1.3
+< EtaMOO-0.2.0.0
+77d56
+< Eternal10Seconds-0.2
+80d58
+< FM-SBLEX-3.0.1
+85d62
+< FormalGrammars-0.2.0.0
+94d70
+< GeBoP-1.7.4.1
+107d82
+< HNM-0.1.2
+113d87
+< HSFFIG-1.1.3
+119,120d92
+< HaLeX-1.2.1
+< HaRe-0.7.2.8
+123d94
+< HaXml-1.25.3
+131,132d101
+< Haskelloids-0.1.1
+< Hayoo-1.2.3
+134d102
+< HipmunkPlayground-5.2.1.1
+136d103
+< Holumbus-Distribution-0.1.1
+140d106
+< Hs2lib-0.6.3
+148d113
+< KiCS-0.9.3
+157d121
+< Level0-1.0
+159d122
+< LslPlus-0.4.3
+163d125
+< MiniAgda-0.2014.9.12
+166d127
+< Monadius-0.99
+179d139
+< NoSlow-0.2
+182d141
+< OpenAFP-Utils-1.4.1.3
+193d151
+< Pugs-6.2.13.20130611
+198d155
+< RNAFold-1.99.3.4
+200d156
+< RNAdesign-0.1.2.2
+206d161
+< Rasenschach-0.1.3.1
+213d167
+< SableCC2Hs-0.0.1.0
+216d169
+< Scurry-0.0.3
+218d170
+< ShellCheck-0.3.8
+224d175
+< SpaceInvaders-0.4.2
+227d177
+< Strafunski-Sdf2Haskell-1.0.0.2
+250d199
+< Xec-0.1.6
+254d202
+< ZMachine-0.0
+264d211
+< baskell-0.1.1
+266d212
+< beautifHOL-0.11
+270d215
+< billboard-parser-1.0.0.1
+281d225
+< bitly-cli-0.1.2
+295d238
+< bogre-banana-0.0.1
+306d248
+< buildwrapper-0.9.1
+308d249
+< bustle-0.5.0
+310d250
+< c2hs-0.25.2
+314d253
+< cabal-bounds-0.9.4
+318d256
+< cabal-debian-4.30
+320d257
+< cabal-dev-0.9.2
+322d258
+< cabal-ghci-0.3
+324,328d259
+< cabal-helper-0.3.5.0
+< cabal-install-1.22.6.0
+< cabal-install-bundle-1.18.0.2.1
+< cabal-install-ghc72-0.10.4
+< cabal-install-ghc74-0.10.4
+330d260
+< cabal-meta-0.4.1.3
+334d263
+< cabal-rpm-0.9.6
+338d266
+< cabal-src-0.3.0
+358d285
+< cake3-0.6.0
+365d291
+< call-haskell-from-anything-0.1.0.2
+368d293
+< cao-0.1.1
+374d298
+< casui-0.3
+389,390d312
+< clac-0.5.0
+< clafer-0.3.10
+393d314
+< clash-ghc-0.5.7
+400d320
+< clientsession-0.9.1.1
+411d330
+< cnc-spec-compiler-0.2.0.1
+416d334
+< cognimeta-utils-0.1.2
+426d343
+< concurrent-dns-cache-0.0.1
+430d346
+< conjure-0.1
+436d351
+< corebot-bliki-0.2.2.0
+448d362
+< cryptol-2.2.4
+452d365
+< cubical-0.2.0
+459d371
+< dao-0.1.0.1
+463d374
+< darcs-cabalized-2.0.2.2
+465d375
+< darcs-graph-1.0
+468,469d377
+< darcsden-1.1.1
+< darcswatch-0.4.4
+482d389
+< debian-3.87.2
+486d392
+< dedukti-1.1.4
+489d394
+< delta-0.1.2.0
+494d398
+< derive-2.5.22
+504,505d407
+< diffdump-0.7.5
+< dingo-example-0.2.0
+507d408
+< diversity-0.6.3.0
+514d414
+< doctest-0.10.0
+525d424
+< dsh-sql-0.2.0.2
+530d428
+< ecma262-0.0.0
+566d463
+< ewe-0.1.0.40
+578d474
+< fay-0.23.1.6
+580d475
+< fdo-trash-0.0.0.2
+582d476
+< feed2lj-0.0.3.1
+585d478
+< fenfire-0.1
+601d493
+< flowdock-api-0.1.0.0
+604d495
+< fltkhs-0.1.0.2
+608d498
+< foo-1.0
+617d506
+< frag-1.1.2
+623d511
+< freesect-0.8
+626d513
+< fst-0.10.0.1
+636d522
+< gameclock-1.0.4
+647d532
+< gf-3.6
+651d535
+< ghc-events-0.4.4.0
+653d536
+< ghc-events-parallel-0.5.0.1
+655d537
+< ghc-imported-from-0.2.0.6
+658,659d539
+< ghc-mod-5.2.1.2
+< ghc-parmake-0.1.8
+662,663d541
+< ghci-haskeline-0.2
+< ghci-ng-7.6.3.5
+669d546
+< ginsu-0.8.1.1
+673d549
+< git-annex-5.20150617
+685,686d560
+< gitit-0.10.7
+< glambda-1.0
+702d575
+< graph-rewriting-ski-0.6.4
+705d577
+< graphicstools-0.2.2
+710d581
+< groundhog-inspector-0.7.1.2
+715d585
+< gtk2hs-buildtools-0.13.0.4
+720d589
+< h-booru-0.3.0.0
+735d603
+< hackport-0.4.5
+737d604
+< haddock-leksah-2.6.0
+744d610
+< hails-0.11.2.1
+752d617
+< halfs-2.0
+758d622
+< handa-gdata-0.7.0.3
+762d625
+< hans-2.5.0.0
+765,766d627
+< happs-tutorial-0.9.5
+< happy-1.19.5
+782d642
+< haskell-cnc-0.1.3.200
+787d646
+< haskell-in-space-0.1.1
+804d662
+< haskelm-0.1.12.0
+808,810d665
+< haskore-supercollider-0.3
+< hasktags-0.69.1
+< haslo-0.1.3
+814d668
+< hat-2.8.0.0
+826d679
+< hburg-1.1.2
+828,830d680
+< hcube-0.1.1
+< hdevtools-0.1.0.9
+< hdirect-0.21.0
+837d686
+< helium-1.8.1
+840d688
+< hellnet-0.1.1
+845d692
+< hermit-1.0.0.0
+849d695
+< hevolisa-dph-0.0.1
+872d717
+< hirt-0.0.1.1
+884d728
+< hlint-1.9.21
+890d733
+< hmp3-1.5.2.1
+901d743
+< holy-project-0.2.0.0
+908d749
+< hoogle-4.2.41
+910,911d750
+< hoovie-0.1.1
+< hopenpgp-tools-0.15
+914d752
+< hoq-0.3
+928,929d765
+< hpc-tracer-0.3.1
+< hplaylist-0.2
+932d767
+< hprotoc-fork-2.0.16.1
+943d777
+< hs-pgms-0.1.0.1
+954d787
+< hsc3-graphs-0.15
+967d799
+< hsfcsh-0.0.1
+971d802
+< hsimport-0.6.5
+1003d833
+< htsn-import-0.2.4
+1010d839
+< hums-0.7.0
+1013d841
+< hunt-server-0.3.0.2
+1021d848
+< hws-1.1.0.1
+1033,1034d859
+< ide-backend-server-0.9.0
+< ideas-math-1.2
+1036d860
+< idris-0.9.18.1
+1040d863
+< imapget-0.0.3
+1046d868
+< inch-0.2.0
+1060d881
+< ipatch-0.1.1
+1068d888
+< ivory-examples-0.1.0.2
+1093d912
+< keera-posture-0.1.4.4
+1101,1102d919
+< kmeans-vector-0.3
+< knots-0.1.0.1
+1115d931
+< lambdacube-examples-0.2.2
+1122d937
+< language-puppet-1.1.3.1
+1131d945
+< leaky-0.4.0.0
+1134,1135d947
+< leksah-0.15.0.5
+< leksah-server-0.15.0.3
+1137d948
+< lgtk-0.8.0.4
+1158,1159d968
+< lit-0.1.0.5
+< live-sequencer-0.0.4
+1182d990
+< lvmrun-1.0
+1184d991
+< maam-0.2.0.1
+1195d1001
+< make-package-1.2.0
+1221d1026
+< marxup-3.0.0.1
+1235,1236d1039
+< mediawiki2latex-7.9.0.1
+< mega-sdist-0.2.10.4
+1241d1043
+< midimory-0.0.0.2
+1243,1244d1044
+< mighttpd-0.4.3
+< mighttpd2-3.2.8
+1246d1045
+< minesweeper-0.9.2.1
+1250d1048
+< miniplex-0.3.4
+1260d1057
+< module-management-0.20.3
+1265,1266d1061
+< morfette-0.4.3
+< morte-1.2.0
+1270d1064
+< mprover-0.0.0.0
+1272d1065
+< msgpack-idl-0.2.1
+1275d1067
+< mudbath-0.0.3
+1277d1068
+< multifocal-0.0.1
+1281,1282d1071
+< music-preludes-1.8.1
+< music-util-0.17
+1300d1088
+< network-topic-models-0.2.0.1
+1302d1089
+< newsynth-0.3.0.1
+1327d1113
+< omnicodec-0.7
+1330d1115
+< open-union-0.1.0.1
+1332d1116
+< opentheory-char-1.41
+1334d1117
+< optimal-blocks-0.1.0
+1349,1350d1131
+< pandoc-1.14.0.4
+< pandoc-citeproc-0.7.2
+1356,1357d1136
+< paragon-0.1.28
+< parconc-examples-0.3.5
+1360d1138
+< parsestar-1.5
+1368d1145
+< pdf-toolbox-viewer-0.0.3.3
+1372d1148
+< peg-0.2
+1400d1175
+< polyseq-0.1.2.1
+1404d1178
+< postgresql-orm-0.3.2
+1406d1179
+< postgrest-0.2.10.0
+1412d1184
+< primula-board-0.0.1
+1428,1429d1199
+< puffytools-0.0.0.1
+< pugs-DrIFT-2.2.3.20130611
+1432d1201
+< purescript-0.6.9.5
+1441d1209
+< qudb-0.0.1
+1455d1222
+< rbr-0.8.6
+1461d1227
+< record-preprocessor-0.1.0.3
+1477d1242
+< reserve-0.1.1
+1480d1244
+< respond-1.1.0
+1491d1254
+< risc386-0.0.20130719
+1505d1267
+< ruler-core-1.0
+1511d1272
+< taffybar-0.4.5
+1519d1279
+< tempus-0.1.0
+1540d1299
+< tiger-1.1.1
+1550d1308
+< tip-lib-0.1.2
+1554d1311
+< todos-0.5.3.2
+1560d1316
+< toysolver-0.3.0
+1562,1563d1317
+< transf-0.13.1
+< transformations-0.2.0.0
+1572d1325
+< tup-functor-0.3.0.0
+1585d1337
+< uhc-light-1.1.9.0
+1605d1356
+< uuagc-0.9.52.1
+1612d1362
+< varan-0.5.1
+1618d1367
+< vision-0.0.5.0
+1627d1375
+< wai-handler-devel-2.0.0.2
+1638,1639d1385
+< wedged-0
+< whim-0.1.1
+1650d1395
+< wordsetdiff-0.0.3.1
+1674d1418
+< xmobar-0.23.1
+1679,1680d1422
+< xsact-1.7.3
+< y0l0bot-0.1.1
+1687d1428
+< yavie-0.0.1
+1690d1430
+< yesod-bin-1.4.10
+1692d1431
+< yesod-dsl-0.1.1.24
+1696d1434
+< yi-0.12.0
+1700d1437
+< yql-0.0.0
+1703d1439
+< yxdb-utils-0.1.0.1
+1714d1449
+< ztail-1.1
