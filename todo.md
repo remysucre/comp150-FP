@@ -7,6 +7,8 @@
 - Profiling: 
   - building requires huge amount of packages (sandbox?)
 
+- quick check
+
 - Partition strict: 
   - to define macros require packages installed
     - tried to define all macros (MIN_VERSION) as TRUE, got 2k+ errors. abandon
