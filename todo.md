@@ -13,6 +13,8 @@
     - tried removing all macro lines, only 300 errors left :) but since macros introduce multiple modules/clauses, still doesnt quite work
   - 44 packages w/strcit!
 
+- Bottom: [Newtype wiki] (https://wiki.haskell.org/Newtype#The_messy_bits)
+
 - Thoughts on parsing/building in scale: 
   - difficult because people like to introduce accents to the language
     - learning all the accents/dialects might well be a separate project. machine learning?
