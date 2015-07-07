@@ -29,10 +29,10 @@
 
 ##todo: 
 - [ ] profile strict code vs non-strict
-- [ ] review & clean up
+- [x] review & clean up
   - [x] organize & document repo
   - [x] cis 194
-  - [ ] generate log
+  - [x] generate log
 - [x] get list of pop lib
 - [x] finish partition
   - [x] too many open files
