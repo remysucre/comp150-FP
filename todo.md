@@ -9,6 +9,8 @@
 
 - quick check
 
+- modeling non-determinism with list monad
+
 - Partition strict: 
   - to define macros require packages installed
     - tried to define all macros (MIN_VERSION) as TRUE, got 2k+ errors. abandon
