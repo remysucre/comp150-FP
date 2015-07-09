@@ -1,0 +1,30 @@
+	Thu Jul  9 11:56 2015 Time and Allocation Profiling Report  (Final)
+
+	   lattice0 +RTS -h -p -K100M -RTS 1e6
+
+	total time  =        0.10 secs   (104 ticks @ 1000 us, 1 processor)
+	total alloc = 388,497,312 bytes  (excludes profiling overheads)
+
+COST CENTRE MODULE  %time %alloc
+
+paths0      Main     57.7   55.4
+nextsteps   Main     41.3   44.5
+
+
+                                                        individual     inherited
+COST CENTRE   MODULE                  no.     entries  %time %alloc   %time %alloc
+
+MAIN          MAIN                     46           0    0.0    0.0   100.0  100.0
+ main         Main                     93           0    0.0    0.0     0.0    0.0
+ CAF          GHC.IO.Encoding.Iconv    79           0    0.0    0.0     0.0    0.0
+ CAF          GHC.IO.Handle.FD         72           0    0.0    0.0     0.0    0.0
+ CAF          GHC.IO.Encoding          70           0    0.0    0.0     0.0    0.0
+ CAF          GHC.Conc.Signal          63           0    0.0    0.0     0.0    0.0
+ CAF:main1    Main                     56           0    0.0    0.0     0.0    0.0
+  main        Main                     92           1    0.0    0.0     0.0    0.0
+ CAF:ans0     Main                     55           0    0.0    0.0     1.0    0.0
+  ans0        Main                     94           1    1.0    0.0     1.0    0.0
+ CAF:main2    Main                     54           0    0.0    0.0    99.0  100.0
+  ans0        Main                     95           0    0.0    0.0    99.0  100.0
+   paths0     Main                     96          23   57.7   55.4    99.0  100.0
+    nextsteps Main                     97     1998723   41.3   44.5    41.3   44.5
