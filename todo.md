@@ -7,7 +7,9 @@
 - Profiling: 
   - building requires huge amount of packages (sandbox?)
 
-- quick check
+- lattice2.hs: deepseq breaks tail recursion?
+
+- quickcheck?
 
 - modeling non-determinism with list monad
 
