@@ -24,6 +24,8 @@
   - difficult because people like to introduce accents to the language
     - learning all the accents/dialects might well be a separate project. machine learning?
 
+- tried running GMain on length -- not working?
+
 ##questions we can ask about packages
 - how many bangs?
 - how big
