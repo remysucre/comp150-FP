@@ -4,8 +4,9 @@
   - building requires huge amount of packages (how to use sandbox to organize?)
   - hard to figure out what input to feed in
   - will quickcheck be helpful in generating legal inputs?
+  - alternative benchmark: [nofib](https://github.com/ghc/nofib)
 
-- lattice2.hs: deepseq breaks tail recursion? TODO: add file link
+- [lattice2.hs](https://github.com/remysucre/comp150-FP/blob/master/profile/euler/lattice/lattice2.hs): deepseq breaks tail recursion? 
 
 - Category theory - everyone talks about it, worth the time to look at?
 
@@ -14,9 +15,10 @@
     - tried to define all macros (MIN_VERSION) as TRUE, got 2k+ errors. abandon
     - tried removing all macro lines, only 300 errors left :) but since macros introduce multiple modules/clauses, still doesnt quite work
   - 49 packages w/strcit!
-  - TODO: add log file link
+  - [log file](https://github.com/remysucre/comp150-FP/blob/master/benchmark/partition.log)
+  - [error log](https://github.com/remysucre/comp150-FP/blob/master/benchmark/parse.log)
 
- - pop libs: TODO add link here
+ - [pop libs](https://github.com/remysucre/comp150-FP/blob/master/benchmark/Cabal/libwfreq)
 
 - Bottom: [Newtype wiki] (https://wiki.haskell.org/Newtype#The_messy_bits)
 
@@ -38,6 +40,8 @@
 - glob lib for shell cmd
 
 ##todo: 
+- profile project euler
+
 - [ ] profile strict code vs non-strict
 - [x] review & clean up
   - [x] organize & document repo
