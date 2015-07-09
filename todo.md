@@ -26,6 +26,9 @@
 
 - tried running GMain on length -- not working?
 
+##ideas: 
+- don't run until finish, stop when heap grows too big
+
 ##questions we can ask about packages
 - how many bangs?
 - how big
