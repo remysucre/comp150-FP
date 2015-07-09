@@ -1,27 +1,33 @@
-##notes: 
-- Partition downloaded files: mk 2 dirs, one w/ strict the other w/o also keep a record of popular libs
-- To Partition strict packages: cd to GetApps, then bash < shellcmd strict packs are in Apps/strictapps
-
 ##issues: 
 
 - Profiling: 
-  - building requires huge amount of packages (sandbox?)
+  - building requires huge amount of packages (how to use sandbox to organize?)
+  - hard to figure out what input to feed in
+  - will quickcheck be helpful in generating legal inputs?
 
-- quick check
+- lattice2.hs: deepseq breaks tail recursion? TODO: add file link
 
-- modeling non-determinism with list monad
+- Category theory - everyone talks about it, worth the time to look at?
 
 - Partition strict: 
   - to define macros require packages installed
     - tried to define all macros (MIN_VERSION) as TRUE, got 2k+ errors. abandon
     - tried removing all macro lines, only 300 errors left :) but since macros introduce multiple modules/clauses, still doesnt quite work
-  - 44 packages w/strcit!
+  - 49 packages w/strcit!
+  - TODO: add log file link
+
+ - pop libs: TODO add link here
 
 - Bottom: [Newtype wiki] (https://wiki.haskell.org/Newtype#The_messy_bits)
 
 - Thoughts on parsing/building in scale: 
   - difficult because people like to introduce accents to the language
     - learning all the accents/dialects might well be a separate project. machine learning?
+
+- tried running GMain on length -- not working?
+
+##ideas: 
+- don't run until finish, stop when heap grows too big
 
 ##questions we can ask about packages
 - how many bangs?
