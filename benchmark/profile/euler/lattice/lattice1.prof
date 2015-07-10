@@ -1,31 +1,31 @@
-	Thu Jul  9 11:56 2015 Time and Allocation Profiling Report  (Final)
+	Fri Jul 10 14:53 2015 Time and Allocation Profiling Report  (Final)
 
 	   lattice1 +RTS -h -p -K100M -RTS 1e6
 
-	total time  =        0.11 secs   (107 ticks @ 1000 us, 1 processor)
-	total alloc = 388,497,312 bytes  (excludes profiling overheads)
+	total time  =        0.99 secs   (992 ticks @ 1000 us, 1 processor)
+	total alloc = 746,369,992 bytes  (excludes profiling overheads)
 
 COST CENTRE MODULE  %time %alloc
 
-paths1      Main     58.9   55.4
-nextsteps   Main     36.4   44.5
-ans1        Main      4.7    0.0
+main        Main     83.1   47.9
+paths1      Main     10.2   28.9
+nextsteps   Main      6.8   23.2
 
 
                                                         individual     inherited
 COST CENTRE   MODULE                  no.     entries  %time %alloc   %time %alloc
 
-MAIN          MAIN                     46           0    0.0    0.0   100.0  100.0
- main         Main                     93           0    0.0    0.0     0.0    0.0
- CAF          GHC.IO.Encoding.Iconv    79           0    0.0    0.0     0.0    0.0
- CAF          GHC.IO.Handle.FD         72           0    0.0    0.0     0.0    0.0
- CAF          GHC.IO.Encoding          70           0    0.0    0.0     0.0    0.0
- CAF          GHC.Conc.Signal          63           0    0.0    0.0     0.0    0.0
- CAF:main1    Main                     56           0    0.0    0.0     0.0    0.0
-  main        Main                     92           1    0.0    0.0     0.0    0.0
- CAF:ans1     Main                     55           0    0.0    0.0     4.7    0.0
-  ans1        Main                     94           1    4.7    0.0     4.7    0.0
- CAF:main2    Main                     54           0    0.0    0.0    95.3  100.0
-  ans1        Main                     95           0    0.0    0.0    95.3  100.0
-   paths1     Main                     96          23   58.9   55.4    95.3  100.0
-    nextsteps Main                     97     1998723   36.4   44.5    36.4   44.5
+MAIN          MAIN                     47           0    0.0    0.0   100.0  100.0
+ main         Main                     95           0   70.9    0.3    70.9    0.3
+ CAF          GHC.IO.Encoding.Iconv    81           0    0.0    0.0     0.0    0.0
+ CAF          GHC.IO.Encoding          74           0    0.0    0.0     0.0    0.0
+ CAF          GHC.IO.Handle.FD         66           0    0.0    0.0     0.0    0.0
+ CAF          GHC.Conc.Signal          64           0    0.0    0.0     0.0    0.0
+ CAF:main1    Main                     57           0    0.0    0.0     0.0    0.0
+  main        Main                     94           1    0.0    0.0     0.0    0.0
+ CAF:main2    Main                     56           0    0.0    0.0    12.2   47.6
+  main        Main                     96           0   12.2   47.6    12.2   47.6
+ CAF:ans1     Main                     55           0    0.0    0.0    16.9   52.0
+  ans1        Main                     97           1    0.0    0.0    16.9   52.0
+   paths1     Main                     98          23   10.2   28.9    16.9   52.0
+    nextsteps Main                     99     1998723    6.8   23.2     6.8   23.2

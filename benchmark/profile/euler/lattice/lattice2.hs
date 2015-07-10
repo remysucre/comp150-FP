@@ -11,7 +11,7 @@ nextsteps n (x, y)
 paths2 0 _ ps = ps
 paths2 n e ps = paths2 (n - 1) e $!! (ps >>= nextsteps e)
 
-ans2 = length $ paths2 22 11 [(0, 0)]
+ans2 = paths2 22 11 [(0, 0)]
 
 main = do 
-    evaluate ans2
+    putStr $ show ans2

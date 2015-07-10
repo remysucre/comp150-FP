@@ -23,8 +23,8 @@ paths0 0 _ ps = ps
 paths0 n e ps = paths0 (n - 1) e $ (ps >>= nextsteps e)
 
 ans0 = length $ paths0 22 11 [(0, 0)]
-ans1 = length $ paths1 22 11 [(0, 0)]
+ans1 = paths1 22 11 [(0, 0)]
 ans2 = length $ paths2 22 11 [(0, 0)]
 
 main = do 
-    evaluate ans1
+    putStr $ show ans1
