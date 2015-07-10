@@ -1,0 +1,15 @@
+JOB "lattice0 1e6 +RTS -h -p -K100M"
+DATE "Thu Jul  9 11:56 2015"
+SAMPLE_UNIT "seconds"
+VALUE_UNIT "bytes"
+BEGIN_SAMPLE 0.00
+END_SAMPLE 0.00
+BEGIN_SAMPLE 0.10
+(55)CAF:ans0	16
+(63)GHC.Conc.Signal.CAF	640
+MAIN	160
+(97)nextsteps/paths0/ans0...	504
+(96)paths0/ans0/CAF:main2	1744
+END_SAMPLE 0.10
+BEGIN_SAMPLE 0.10
+END_SAMPLE 0.10

@@ -1,0 +1,146 @@
+commit fa6eeb086fb5330fed17d5d87626bb5f3ab5c0d8
+Author: Paul H. Liu <paul@thev.net>
+Date:   Thu May 7 20:05:34 2015 -0700
+
+    Bump version to 0.1.5.3
+
+commit 4c2a396a4f7e1589c37049e03bedc414ce7a745c
+Merge: 31801f2 633e991
+Author: Paul H. Liu <paul@thev.net>
+Date:   Mon May 4 11:42:41 2015 -0700
+
+    Merge branch 'alex-segura-master'
+
+commit 633e99109df45083de835a2a95bff9f64b50b600
+Author: Paul H. Liu <paul@thev.net>
+Date:   Mon May 4 11:42:19 2015 -0700
+
+    Import Control.Applicative just in case
+
+commit 11d39c28d510b7385c08f260da9dc0c5e0199ef4
+Author: Alex Segura <alex.segura@droitfintech.com>
+Date:   Sun May 3 13:37:58 2015 -0400
+
+    Conditionals for TH version 2.10.0.0 compatibility
+
+commit fd94207ca583d5dc0cbc34ebd71d6a24525660c6
+Author: Alex Segura <alex.segura@droitfintech.com>
+Date:   Sun May 3 13:37:39 2015 -0400
+
+    Functor and applicative instances for State
+
+commit 31801f274b1ad1d568ff6d0c6c3f31bd38e4210d
+Author: Paul H. Liu <paul@thev.net>
+Date:   Sat Jan 31 20:54:45 2015 -0800
+
+    Bump version to 0.1.5.2 to repack for hackage
+
+commit be97a355398da2972d48e35a58277b7bc2e81ad3
+Author: Paul H. Liu <paul@thev.net>
+Date:   Wed Jan 14 14:30:00 2015 -0800
+
+    Bump version to 0.1.5.1
+
+commit 1f378c1bedb1775e68a150e0e8eea54ef24a1a4d
+Author: Paul H. Liu <paul@thev.net>
+Date:   Wed Jan 14 14:29:28 2015 -0800
+
+    Add happy in build-tools
+
+commit 720b4d1c753837d30c968e4ae885905da4ebc702
+Author: Paul H. Liu <paul@thev.net>
+Date:   Tue Sep 16 21:06:35 2014 -0700
+
+    Bump version to 0.1.5
+
+commit b8e02e9541dc7792eb10faed41fc5a8abebb6992
+Author: Paul H. Liu <paul@thev.net>
+Date:   Mon May 12 13:32:56 2014 -0700
+
+    Minor updates after importing from darcs repo
+
+commit 7f60b7942d22b85c09162d18a43e89ddd6942e0f
+Author: Paul Liu <paul@thev.net>
+Date:   Thu May 30 00:38:10 2013 -0700
+
+    Bump version to 0.1.4
+    
+    Ignore-this: db43c3ab8aa7ac71aa760aec41c111de
+    
+    darcs-hash:20130530073810-21fc0-36c5a463b1581dd05d42791e7cede095d24ea31a.gz
+
+commit 99d812076e9a99a05936ca9108058802170f1116
+Author: Paul Liu <paul@thev.net>
+Date:   Tue May 14 20:09:56 2013 -0700
+
+    Remove obsolete GHC options from Makefile
+    
+    Ignore-this: 646e5aafb5e22e348f89d549d9999c2a
+    
+    darcs-hash:20130515030956-21fc0-5bad573c83e73ab936a627ae0c34ae4199c91ad3.gz
+
+commit 6ac9aee8b3383410df74b74ccbdda31e384a0021
+Author: svenkeidel <svenkeidel@gmail.com>
+Date:   Tue May 14 07:22:04 2013 -0700
+
+    fixes for compilation with ghc 7.6.3
+    
+    Ignore-this: 892f3664fb5b6838bf8eaea00f68fbac
+    
+    Problem 1 Template Haskell:
+    In template-haskell <= 2.7.0.0, "Kind" is a own data type (see [1]).
+    In template-haskell == 2.8.0.0, they made "Kind" a type alias of "Type" to
+    avoid duplication (see [2]).
+    
+    Problem 2 Catch:
+    Prelude in base == 4.6.0.0 discards the "catch" function. See [3] and [4]
+    
+    [1] http://hackage.haskell.org/packages/archive/template-haskell/2.7.0.0/doc/html/Language-Haskell-TH-Syntax.html#t:Kind
+    [2] http://hackage.haskell.org/packages/archive/template-haskell/2.8.0.0/doc/html/Language-Haskell-TH-Syntax.html#t:Kind
+    [3] http://hackage.haskell.org/packages/archive/base/4.5.0.0/doc/html/Prelude.html#v:catch
+    [4] http://hackage.haskell.org/packages/archive/base/4.6.0.0/doc/html/Prelude.html
+    
+    darcs-hash:20130514142204-ed0c8-2f42878bb90002ddf2dab4443130a21e8d8a141b.gz
+
+commit 4418c6e99cfb959fddeaf6ba8d6ed258091c5ffa
+Author: jwlato <jwlato@gmail.com>
+Date:   Sun Jan 16 04:04:50 2011 -0800
+
+    add some type signatures to CCNF.lhs
+    
+    Ignore-this: 398ad2e31a3a5b946b22e7c19fd5c9a7
+    
+    darcs-hash:20110116120450-2a6de-65ada54dfbac99bc90a83d37eb331335846ccaa9.gz
+
+commit d2329a5999e4c6cbd280273e4cbb67be450379fd
+Author: jwlato <jwlato@gmail.com>
+Date:   Sun Dec 5 11:59:35 2010 -0800
+
+    add "normOpt" result for "Arr" constructor (pure function arrows)
+    
+    Ignore-this: cb14152c16918dd7073f0e2bc79b7ee6
+    
+    darcs-hash:20101205195935-2a6de-5e369dae27fee09f65d44decb1320a15ec1007cb.gz
+
+commit e640e5a3701cff5d348cdae511a0bbd7e36aa817
+Author: paul <paul@thev.net>
+Date:   Mon Apr 12 21:01:06 2010 -0700
+
+    Normalize to loopD instead of loopB
+    
+    Ignore-this: 104960eb5f2f07ba6871b4417fbe578c
+    add more test cases
+    add support for GHC 6.12.1
+    bump version to 0.1.3.
+    
+    darcs-hash:20100413040106-da8e5-faa3202650da21b0a5ffe59de89d77034fa897da.gz
+
+commit 6fee434ae8366b4e766c085d613fd863a01bd54c
+Author: paul <paul@thev.net>
+Date:   Thu Sep 10 04:48:37 2009 -0700
+
+    initial code import from CCA-0.1.1
+    
+    Ignore-this: 881e07e5163079af2723890e4d84a005
+    
+    darcs-hash:20090910114837-da8e5-391db8611a4682f6f5f49002af22f95fe6e7265d.gz

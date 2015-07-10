@@ -1,0 +1,10 @@
+{-# LINE 1 "foo.hs" #-}
+#define __ASSEMBLER__ 1
+#define linux_HOST_OS 1
+#define __GLASGOW_HASKELL__ 708
+#define __STDC_HOSTED__ 1
+#define linux_BUILD_OS 1
+#define x86_64_HOST_ARCH 1
+#define x86_64_BUILD_ARCH 1
+#define __SSE2__ 1
+#define __SSE__ 1

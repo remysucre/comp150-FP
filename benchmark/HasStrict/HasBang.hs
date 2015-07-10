@@ -6,7 +6,7 @@ import Language.Preprocessor.Cpphs
 import Control.Applicative
 import Data.Functor
 import System.Environment
-import HasStrict.WashHash
+--import HasStrict.WashHash
 --import System.FilePath.Find
 --import System.Environment 
 --import System.Process
@@ -27,7 +27,6 @@ opts = CpphsOptions { infiles = [], outfiles = []
                     , defines = map asTrue oplist, includes = []
                     , preInclude = []
                     , boolopts = defaultBoolOptions }
-
 asTrue x = (x, "True")
 
 oplist = ["MIN_VERSION_Cabal(a,b,c)"
@@ -53,9 +52,10 @@ oplist = ["MIN_VERSION_Cabal(a,b,c)"
 
 hasBang :: String -> IO Bool
 hasBang filePath = do 
-            program <- washHash <$> readFile filePath
---            fc <- readFile filePath
---            program <- runCpphs opts filePath fc
+--            program <- washHash <$> readFile filePath
+--            program <- readFile filePath
+            fc <- readFile filePath
+            program <- runCpphs opts filePath fc
             return $ hasBangDecl $ getDecl (getModule extns filePath program)
 
 getDecl (Module _ _ _ _ _ _ d) = d
