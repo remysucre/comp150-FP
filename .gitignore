@@ -10,3 +10,4 @@ bin/
 Final/files
 benchmark/Apps/
 benchmark/strictapps/
+benchmark/nonstrict/

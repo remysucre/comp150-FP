@@ -20,6 +20,7 @@ main = do {
             putStrLn $ "package " ++ dir ++ " has bang"
         })
         (do {
+            dir `moveTo` "nonstrict";
             putStrLn $ "package " ++ dir ++ " has no bang"
         })
     }
