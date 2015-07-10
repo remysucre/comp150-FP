@@ -9,6 +9,16 @@
   - [ ] euler
 
 ##issues: 
+- partition
+  - setting all macros to true actually works
+  - but when compiling we still want the actual pack info
+    - from [SO](http://stackoverflow.com/questions/31343246/get-package-version-to-cpp/31343829#31343829)
+  - cannot expand #if
+  - #include macro
+  - last in do block must be exp
+- compile
+  - tons of packs in .cabal/hackage...
+- profile
 
 ##ICFP wishlist
 
