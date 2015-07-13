@@ -90,14 +90,14 @@ instance Monoid Buffer where
 
     mappend (Buf _ _ _ 0 _) b        = b
     mappend a (Buf _ _ _ 0 _)        = a
-    mappend buf (Buf fp off len _ _) = append buf fp off len
+    Mappend buf (Buf fp off len _ _) = {-# SCC append_buf #-} append buf fp off len
 
     mconcat [] = mempty
     mconcat xs = foldl1' mappend xs
 
 pappend :: Buffer -> ByteString -> Buffer
 pappend (Buf _ _ _ 0 _) (PS fp off len) = Buf fp off len 0 0
-pappend buf (PS fp off len) = append buf fp off len
+pappend buf (PS fp off len) = {} {-# SCC append_buf #-} append buf fp off len
 
 append :: Buffer -> ForeignPtr a -> Int -> Int -> Buffer
 append (Buf fp0 off0 len0 cap0 gen0) fp1 off1 len1 =
