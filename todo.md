@@ -5,6 +5,7 @@
   - [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) is only for 1 func but works fine for now
   - cabal build cannot resolve profile dependency: [rebuild the world?](http://stackoverflow.com/questions/1704421/cabal-not-installing-dependencies-when-needing-profiling-libraries/10397592#10397592)
   - code coverage: tried making inf. loops, but not sure about rebuilding
+  - when running latex test/html test does print out code coverage, maybe some library? 
 
 ##todo
 - compile
