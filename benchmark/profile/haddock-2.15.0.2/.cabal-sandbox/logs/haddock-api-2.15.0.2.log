@@ -1,0 +1,38 @@
+Configuring haddock-api-2.15.0.2...
+Building haddock-api-2.15.0.2...
+Preprocessing library haddock-api-2.15.0.2...
+[ 1 of 30] Compiling Haddock.Backends.HaddockDB ( src/Haddock/Backends/HaddockDB.hs, dist/dist-sandbox-6a202380/build/Haddock/Backends/HaddockDB.o )
+[ 2 of 30] Compiling Haddock.Backends.Xhtml.Types ( src/Haddock/Backends/Xhtml/Types.hs, dist/dist-sandbox-6a202380/build/Haddock/Backends/Xhtml/Types.o )
+[ 3 of 30] Compiling Paths_haddock_api ( dist/dist-sandbox-6a202380/build/autogen/Paths_haddock_api.hs, dist/dist-sandbox-6a202380/build/Paths_haddock_api.o )
+[ 4 of 30] Compiling Haddock.GhcUtils ( src/Haddock/GhcUtils.hs, dist/dist-sandbox-6a202380/build/Haddock/GhcUtils.o )
+[ 5 of 30] Compiling Haddock.Version  ( src/Haddock/Version.hs, dist/dist-sandbox-6a202380/build/Haddock/Version.o )
+[ 6 of 30] Compiling Haddock.Parser   ( src/Haddock/Parser.hs, dist/dist-sandbox-6a202380/build/Haddock/Parser.o )
+[ 7 of 30] Compiling Haddock.Types    ( src/Haddock/Types.hs, dist/dist-sandbox-6a202380/build/Haddock/Types.o )
+[ 8 of 30] Compiling Haddock.Utils    ( src/Haddock/Utils.hs, dist/dist-sandbox-6a202380/build/Haddock/Utils.o )
+[ 9 of 30] Compiling Haddock.Options  ( src/Haddock/Options.hs, dist/dist-sandbox-6a202380/build/Haddock/Options.o )
+[10 of 30] Compiling Haddock.Backends.Xhtml.Themes ( src/Haddock/Backends/Xhtml/Themes.hs, dist/dist-sandbox-6a202380/build/Haddock/Backends/Xhtml/Themes.o )
+[11 of 30] Compiling Haddock.Backends.Xhtml.Utils ( src/Haddock/Backends/Xhtml/Utils.hs, dist/dist-sandbox-6a202380/build/Haddock/Backends/Xhtml/Utils.o )
+[12 of 30] Compiling Haddock.Backends.Hoogle ( src/Haddock/Backends/Hoogle.hs, dist/dist-sandbox-6a202380/build/Haddock/Backends/Hoogle.o )
+[13 of 30] Compiling Haddock.Interface.Rename ( src/Haddock/Interface/Rename.hs, dist/dist-sandbox-6a202380/build/Haddock/Interface/Rename.o )
+[14 of 30] Compiling Haddock.Convert  ( src/Haddock/Convert.hs, dist/dist-sandbox-6a202380/build/Haddock/Convert.o )
+[15 of 30] Compiling Haddock.Interface.AttachInstances ( src/Haddock/Interface/AttachInstances.hs, dist/dist-sandbox-6a202380/build/Haddock/Interface/AttachInstances.o )
+[16 of 30] Compiling Haddock.Interface.ParseModuleHeader ( src/Haddock/Interface/ParseModuleHeader.hs, dist/dist-sandbox-6a202380/build/Haddock/Interface/ParseModuleHeader.o )
+[17 of 30] Compiling Haddock.Interface.LexParseRn ( src/Haddock/Interface/LexParseRn.hs, dist/dist-sandbox-6a202380/build/Haddock/Interface/LexParseRn.o )
+[18 of 30] Compiling Haddock.Interface.Create ( src/Haddock/Interface/Create.hs, dist/dist-sandbox-6a202380/build/Haddock/Interface/Create.o )
+[19 of 30] Compiling Haddock.Backends.Xhtml.Names ( src/Haddock/Backends/Xhtml/Names.hs, dist/dist-sandbox-6a202380/build/Haddock/Backends/Xhtml/Names.o )
+[20 of 30] Compiling Haddock.ModuleTree ( src/Haddock/ModuleTree.hs, dist/dist-sandbox-6a202380/build/Haddock/ModuleTree.o )
+[21 of 30] Compiling Haddock.Doc      ( src/Haddock/Doc.hs, dist/dist-sandbox-6a202380/build/Haddock/Doc.o )
+[22 of 30] Compiling Haddock.Backends.LaTeX ( src/Haddock/Backends/LaTeX.hs, dist/dist-sandbox-6a202380/build/Haddock/Backends/LaTeX.o )
+[23 of 30] Compiling Haddock.Backends.Xhtml.DocMarkup ( src/Haddock/Backends/Xhtml/DocMarkup.hs, dist/dist-sandbox-6a202380/build/Haddock/Backends/Xhtml/DocMarkup.o )
+[24 of 30] Compiling Haddock.Backends.Xhtml.Layout ( src/Haddock/Backends/Xhtml/Layout.hs, dist/dist-sandbox-6a202380/build/Haddock/Backends/Xhtml/Layout.o )
+[25 of 30] Compiling Haddock.Backends.Xhtml.Decl ( src/Haddock/Backends/Xhtml/Decl.hs, dist/dist-sandbox-6a202380/build/Haddock/Backends/Xhtml/Decl.o )
+[26 of 30] Compiling Haddock.Backends.Xhtml ( src/Haddock/Backends/Xhtml.hs, dist/dist-sandbox-6a202380/build/Haddock/Backends/Xhtml.o )
+[27 of 30] Compiling Haddock.InterfaceFile ( src/Haddock/InterfaceFile.hs, dist/dist-sandbox-6a202380/build/Haddock/InterfaceFile.o )
+[28 of 30] Compiling Haddock.Interface ( src/Haddock/Interface.hs, dist/dist-sandbox-6a202380/build/Haddock/Interface.o )
+[29 of 30] Compiling Haddock          ( src/Haddock.hs, dist/dist-sandbox-6a202380/build/Haddock.o )
+[30 of 30] Compiling Documentation.Haddock ( src/Documentation/Haddock.hs, dist/dist-sandbox-6a202380/build/Documentation/Haddock.o )
+In-place registering haddock-api-2.15.0.2...
+Creating package registration file: /tmp/pkgConf-haddock-api-2.15.015533.2
+Installing library in
+/h/ywang30/hsk/comp150-FP/benchmark/profile/haddock-2.15.0.2/.cabal-sandbox/lib/x86_64-linux-ghc-7.8.3/haddock-api-2.15.0.2
+Registering haddock-api-2.15.0.2...

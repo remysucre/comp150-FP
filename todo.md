@@ -3,8 +3,8 @@
 - Looking at code coverage now: 
   - [GPC](http://book.realworldhaskell.org/read/testing-and-quality-assurance.html) has pretty rendering, but no call tree
   - [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) is only for 1 func but works fine for now
-  - counter-optimization: figure out how to put more cost into certain functions TODO: add link to files
-  - cabal build cannot resolve profile dependency
+  - cabal build cannot resolve profile dependency: [rebuild the world?](http://stackoverflow.com/questions/1704421/cabal-not-installing-dependencies-when-needing-profiling-libraries/10397592#10397592)
+  - code coverage: tried making inf. loops, but not sure about rebuilding
 
 ##todo
 - compile
