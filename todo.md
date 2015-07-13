@@ -1,24 +1,28 @@
+##issues
+- Got 1 package w/strict up running! (haddock)
+- Looking at code coverage now: 
+  - [GPC](http://book.realworldhaskell.org/read/testing-and-quality-assurance.html) has pretty rendering, but no call tree
+  - [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) is only for 1 func but works fine for now
+  - counter-optimization: figure out how to put more cost into certain functions
+
 ##todo
+- compile
+  - [x] build success info 
+  - [x] sandbox
+  - [x] get 1 pack compile & running
+  - [ ] profile
 - partition
   - [ ] ghc/cabal pkg to get package info
   - [ ] add seq...
-- compile
-  - [ ] build success info 
-  - [ ] sandbox
 - profile
   - [ ] euler
 
-##issues: 
+##notes: 
 - partition
-  - setting all macros to true actually works
-  - but when compiling we still want the actual pack info
+  - when compiling we still want the actual pack info
     - from [SO](http://stackoverflow.com/questions/31343246/get-package-version-to-cpp/31343829#31343829)
-  - cannot expand #if
   - #include macro
   - last in do block must be exp
-- compile
-  - tons of packs in .cabal/hackage...
-- profile
 
 ##ICFP wishlist
 
