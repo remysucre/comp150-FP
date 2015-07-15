@@ -4,7 +4,8 @@
   - trying to get benchmark to work, but got [typing error](http://stackoverflow.com/questions/31431798/cabal-benchmark-bytestring-package-has-no-benchmark): [`BenchAll.hs`](https://github.com/remysucre/comp150-FP/blob/master/benchmark/profile/bytestring/bench/BenchAll.hs)
   - building with `test` involves lots of deoended packages, which depend on other packages...
 - genectic: 
-  - will run genetic on collected examples
+  - selection based on time: change to space
+  - abandon once runs loger than base: simulate anealing?
 - profiling: 
   - how does the call to `rnf` work here?
   - why doesnt fixb work
