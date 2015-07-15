@@ -1,7 +1,11 @@
 ##issues
-- strictness of haddock turns out to be from attoparsec, which is imported from bytestring
-- failed to profile bytestring too :( this is a serious problem for cabal/ghc
-- [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) is only for 1 func but works fine for now
+- haddock: compiled and running, revealed that the strictness is from attoparsec (bytestring)
+- bytestring: there is a benchmark suit and a test suit
+  - trying to get benchmark to work, but got [typing error](http://stackoverflow.com/questions/31431798/cabal-benchmark-bytestring-package-has-no-benchmark): [`BenchAll.hs`](https://github.com/remysucre/comp150-FP/blob/master/benchmark/profile/bytestring/bench/BenchAll.hs)
+  - building with `test` involves lots of dependency, will try later
+- genectic: 
+- profiling: 
+- [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) 
 
 ##todo
 - compile
