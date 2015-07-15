@@ -12,7 +12,6 @@
   - what does manually tick mean
 - partition: 
   - will try searching for `BangPatterns`, `seq` etc. 
-- [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) 
 
 ##todo
 - compile
@@ -29,6 +28,7 @@
   - [ ] euler
 
 ##notes: 
+- [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) 
 - partition
   - when compiling we still want the actual pack info
     - from [SO](http://stackoverflow.com/questions/31343246/get-package-version-to-cpp/31343829#31343829)
