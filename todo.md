@@ -4,8 +4,11 @@
   - trying to get benchmark to work, but got [typing error](http://stackoverflow.com/questions/31431798/cabal-benchmark-bytestring-package-has-no-benchmark): [`BenchAll.hs`](https://github.com/remysucre/comp150-FP/blob/master/benchmark/profile/bytestring/bench/BenchAll.hs)
   - building with `test` involves lots of deoended packages, which depend on other packages...
 - genectic: 
+  - will run genetic on collected examples
 - profiling: 
+  - how does the call to `rnf` work here?
 - partition: 
+  - will try searching for `BangPatterns`, `seq` etc. 
 - [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) 
 
 ##todo
