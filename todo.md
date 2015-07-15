@@ -7,7 +7,7 @@
   - selection based on time: change to space
   - abandon once runs loger than base: simulate anealing?
 - profiling: 
-  - how does the call to `rnf` work here?
+  - how does the call to `rnf` work [here](https://github.com/remysucre/comp150-FP/tree/master/gentest/hsleak/t1)?
   - why doesnt fixb work
   - what does manually tick mean
 - partition: 
