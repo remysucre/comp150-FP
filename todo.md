@@ -2,7 +2,7 @@
 - haddock: compiled and running, revealed that the strictness is from attoparsec (bytestring)
 - bytestring: there is a benchmark suit and a test suit
   - trying to get benchmark to work, but got [typing error](http://stackoverflow.com/questions/31431798/cabal-benchmark-bytestring-package-has-no-benchmark): [`BenchAll.hs`](https://github.com/remysucre/comp150-FP/blob/master/benchmark/profile/bytestring/bench/BenchAll.hs)
-  - building with `test` involves lots of dependency, will try later
+  - building with `test` involves lots of deoended packages, which depend on other packages...
 - genectic: 
 - profiling: 
 - partition: 
