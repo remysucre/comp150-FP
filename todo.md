@@ -5,18 +5,21 @@
   - building with `test` involves lots of dependency, will try later
 - genectic: 
 - profiling: 
+- partition: 
 - [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) 
 
 ##todo
 - compile
-  - [x] build success info 
-  - [x] sandbox
-  - [x] get 1 pack compile & running
-  - [ ] profile
+  - [ ] bench bytestring
+  - [ ] put in SCC
+  - [ ] flip bangs and try
 - partition
+  - [ ] search for `BangPatterns`
   - [ ] ghc/cabal pkg to get package info
   - [ ] add seq...
 - profile
+  - [ ] run genetic
+  - [ ] profile small examples
   - [ ] euler
 
 ##notes: 
