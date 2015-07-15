@@ -1,0 +1,32 @@
+
+package: cpphs-1.19
+os: linux
+arch: x86_64
+compiler: ghc-7.8.3
+client: cabal-install-1.20.0.3
+dependencies: polyparse-1.11 old-time-1.1.0.2 old-locale-1.0.0.6
+              directory-1.2.1.0 base-4.7.0.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: haskell-src-exts-1.16.0.1
+os: linux
+arch: x86_64
+compiler: ghc-7.8.3
+client: cabal-install-1.20.0.3
+dependencies: pretty-1.1.1.1 ghc-prim-0.3.1.0 cpphs-1.19
+              base-4.7.0.1 array-0.5.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: polyparse-1.11
+os: linux
+arch: x86_64
+compiler: ghc-7.8.3
+client: cabal-install-1.20.0.3
+dependencies: text-1.2.0.0 bytestring-0.10.4.0 base-4.7.0.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
