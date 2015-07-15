@@ -7,6 +7,8 @@
   - will run genetic on collected examples
 - profiling: 
   - how does the call to `rnf` work here?
+  - why doesnt fixb work
+  - what does manually tick mean
 - partition: 
   - will try searching for `BangPatterns`, `seq` etc. 
 - [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) 
