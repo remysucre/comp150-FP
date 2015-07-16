@@ -1,4 +1,10 @@
 ##issues
+- greping with 'BangPatterns' and '$!' had great result! 200+ packs w/ bang & 300+ w/ $!/. We can easily search for `seq`, rnf etc. similarly. 
+- working on bytestring: where to start
+  - quickcheck on certain functions
+  - resolve dependency and get test to work
+  - write own benchmark
+- genetic
 
 ##todo
 - compile
@@ -6,8 +12,8 @@
   - [ ] put in SCC
   - [ ] flip bangs and try
 - partition
-  - [ ] search for `BangPatterns`
-  - [ ] add seq...
+  - [x] search for `BangPatterns`
+  - [x] add seq...
 - profile
   - [ ] run genetic, print out gene and map gene to time/space
   - [ ] try to profile only one function w/ quickcheck

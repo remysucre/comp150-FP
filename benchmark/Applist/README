@@ -1,0 +1,7 @@
+To get a list of packages/files with strictness annotation, run grep as follows:
+
+grep -r -F -l '$!' . > strictapfiles
+or
+grep -r -F -l 'BangPatterns' . > bangfiles
+
+edit in %norm mode in vim, then run IO1.hs with mkUniq function. 
