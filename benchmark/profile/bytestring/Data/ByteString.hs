@@ -487,8 +487,9 @@ map f (PS fp s len) = unsafeDupablePerformIO $ withForeignPtr fp $ \a ->
     map_ n p1 p2
        | n >= len = return ()
        | otherwise = do
-            x <- peekByteOff p1 n
-            pokeByteOff p2 n (f x)
+            --x <- peekByteOff p1 n
+            --pokeByteOff p2 n (f x)
+            pokeByteOff p2 n (0 :: Word8)
             map_ (n+1) p1 p2
 {-# INLINE map #-}
 
