@@ -1,7 +1,7 @@
 ##issues
 - greping with `BangPatterns` and `$!` worked very well! 200+ packs w/ bang & 300+ w/ `$!`. We can easily search for `seq`, `rnf` etc. similarly. 
 - bytestring
-  - profiling on map now: source test
+  - profiling on map now: [source](https://github.com/remysucre/comp150-FP/blob/master/benchmark/profile/bytestring/Data/ByteString.hs) [test](https://github.com/remysucre/comp150-FP/tree/master/benchmark/profile/bytestring/remtests)
 - genetic
 
 ##todo
