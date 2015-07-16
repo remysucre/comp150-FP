@@ -1,0 +1,59 @@
+
+
+
+
+
+
+
+
+--  readFile :: FilePath -> IO String     
+--  getArgs :: IO [String]    
+--  unlines :: [String] -> String   
+main :: IO () 
+main = do 
+import System.Environment 
+--  writeFile :: FilePath -> String -> IO ()
+-- C++
+-- C++
+--  Write a main program that takes as a command line argument the name of a file (e.g., myfile), reads the file,
+--  sorts the lines of the file alphabetically, and then writes the result to a file 'myfile.result'.
+--     When performing writeFile f s, writes the value s to the file f.
+--     unlines is an inverse operation to lines. It joins lines, after appending a terminating newline to each.
+--     takes a comparison function and a list and returns a new list sorted by the supplied comparison function.
+--     lines breaks a string up into a list of strings at newline characters. The resulting strings do not contain newlines.
+-- > myfile:
+-- The following functions might be helpful:
+-- > myfile.result:
+-- ML
+-- ML
+--  sortBy :: (a -> a -> Ordering) -> [a] -> [a]
+sortLines :: [String] -> [String]
+--  lines :: String -> [String]
+-- Miranda
+-- Miranda
+-- Java
+-- Java
+--     compare indicates whether the first argument is LT, EQ, or GT the second
+    writeFile "myfile.result" sortedFile
+-- > ./IO1 myfile
+sortLines = sortBy compare
+module Main where
+    let sortedFile = (unlines . (map reverse) . sortLines . (map reverse) . lines) f
+--  compare :: String -> String -> Ordering
+--     Type FilePath is synonymous with String
+--     When performing readFile f, get contents of file f as a string
+-- Haskell
+-- Haskell
+-- Perl
+-- Perl
+--     When performed, get command-line arguments supplied when invoking compiled program
+-- Python
+-- Python
+    f <- readFile $ head fp
+    fp <- getArgs
+-- > ghc --make IO1.hs            // creates an executable IO1.hs
+-- Javascript
+-- Javascript
+import Data.List
+-- Ruby
+-- Ruby

@@ -1,0 +1,51 @@
+Blobs-0.3                       f3
+caledon-3.2.1.0                 f2
+concurrent-dns-cache-0.0.1      na
+crocodile-0.1.2                 f2
+cuda-0.6.6.2                    na
+CurryDB-0.1.1.0                 na
+derive-gadt-0.1.1               na
+diversity-0.6.3.0               1s
+dph-examples-0.7.0.5            2f
+git-annex-5.20150617            1f 
+github-backup-1.20150618        1f
+git-repair-1.20150106           2f
+gloss-examples-1.9.4.1          2f
+gmndl-0.4.0.2                   1f
+Hach-0.1.2                      1s
+haddock-2.16.0
+hans-2.5.0.0
+hfractal-0.4.2.5
+hiccup-0.40
+hlcm-0.2.2
+hpylos-1.0
+HTF-0.13.0.0
+htsn-0.1.1
+infernu-0.0.0.1
+irc-core-1.1.0.1
+jukebox-0.1.3
+LambdaHack-0.4.101.1
+launchpad-control-0.0.1.0
+linear-maps-0.6.1
+liquid-fixpoint-0.3.0.1
+liquidhaskell-0.4.1.1
+mbox-tools-0.2.0.4
+Mhailist-0.0
+parconc-examples-0.3.5
+parsestar-1.5
+perdure-0.2.1
+propellor-2.5.0
+repa-examples-3.4.0.1
+rethinkdb-2.0.0.0
+RNAwolf-0.4.0.0
+rss2irc-1.0.6
+threadscope-0.2.7
+threads-supervisor-1.0.3.0
+timeplot-1.0.28
+toysolver-0.3.0
+uuagc-0.9.52.1
+uuagc-bootstrap-0.9.40.2
+vty-5.2.9
+wedged-0
+YamlReference-0.9.3
+zoom-cache-1.2.1.6
