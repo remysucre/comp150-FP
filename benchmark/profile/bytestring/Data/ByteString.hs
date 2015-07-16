@@ -483,7 +483,8 @@ map f (PS fp s len) = unsafeDupablePerformIO $ withForeignPtr fp $ \a ->
     create len $ map_ 0 (a `plusPtr` s)
   where
     map_ :: Int -> Ptr Word8 -> Ptr Word8 -> IO ()
-    map_ !n !p1 !p2
+    --map_ !n !p1 !p2
+    map_ n p1 p2
        | n >= len = return ()
        | otherwise = do
             x <- peekByteOff p1 n
