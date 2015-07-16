@@ -1,5 +1,5 @@
 ##issues
-- greping with 'BangPatterns' and '$!' had great result! 200+ packs w/ bang & 300+ w/ $!/. We can easily search for `seq`, rnf etc. similarly. 
+- greping with `BangPatterns` and `$!` had great result! 200+ packs w/ bang & 300+ w/ `$!`. We can easily search for `seq`, `rnf` etc. similarly. 
 - working on bytestring: where to start
   - quickcheck on certain functions
   - resolve dependency and get test to work
