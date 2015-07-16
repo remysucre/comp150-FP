@@ -1,17 +1,4 @@
 ##issues
-- haddock: compiled and running, revealed that the strictness is from attoparsec (bytestring)
-- bytestring: there is a benchmark suit and a test suit
-  - trying to get benchmark to work, but got [typing error](http://stackoverflow.com/questions/31431798/cabal-benchmark-bytestring-package-has-no-benchmark): [`BenchAll.hs`](https://github.com/remysucre/comp150-FP/blob/master/benchmark/profile/bytestring/bench/BenchAll.hs)
-  - building with `test` involves lots of deoended packages, which depend on other packages...
-- genectic: 
-  - selection based on time: change to space
-  - abandon once runs loger than base: simulate anealing?
-- profiling: 
-  - how does the call to `rnf` work [here](https://github.com/remysucre/comp150-FP/tree/master/gentest/hsleak/t1)?
-  - why doesnt fixb work
-  - what does manually tick mean
-- partition: 
-  - will try searching for `BangPatterns`, `seq` etc. 
 
 ##todo
 - compile
@@ -20,12 +7,10 @@
   - [ ] flip bangs and try
 - partition
   - [ ] search for `BangPatterns`
-  - [ ] ghc/cabal pkg to get package info
   - [ ] add seq...
 - profile
-  - [ ] run genetic
-  - [ ] profile small examples
-  - [ ] euler
+  - [ ] run genetic, print out gene and map gene to time/space
+  - [ ] try to profile only one function w/ quickcheck
 
 ##notes: 
 - [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) 
@@ -47,6 +32,12 @@
   - timeout space instead of time
   - ensure code coverage, optimize wider range of input
 
+##strategies: 
+- use profile/analysis to break down code (prevent premature opt.)
+- use genetic etc. for machine learning
+- potentially improve each function/module independently according to call graph/profile
+- TODO: add a picture here?
+
 ##ideas: 
 - dont run until finish, stop when heap grows too big
 - simulated anealing
@@ -63,6 +54,7 @@
 ##helpful resources:
 - glob lib for shell cmd
 - [GPC](http://book.realworldhaskell.org/read/testing-and-quality-assurance.html) has pretty rendering, but no call tree
+- simulated annealing
 
 ##further project
 - better parser: support CPP
