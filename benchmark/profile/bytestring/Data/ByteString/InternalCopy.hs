@@ -366,7 +366,7 @@ unpackAppendCharsStrict (PS fp off len) xs =
     accursedUnutterablePerformIO $ withForeignPtr fp $ \base ->
       loop (base `plusPtr` (off-1)) (base `plusPtr` (off-1+len)) xs
   where
-    loop sentinal p acc
+    loop !sentinal !p acc
       | p == sentinal = return acc
       | otherwise     = do x <- peek p
                            loop sentinal (p `plusPtr` (-1)) (w2c x:acc)

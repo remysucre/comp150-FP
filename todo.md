@@ -3,6 +3,7 @@
 - bytestring
   - profiling on map now: [source](https://github.com/remysucre/comp150-FP/blob/master/benchmark/profile/bytestring/Data/ByteString.hs) [test](https://github.com/remysucre/comp150-FP/tree/master/benchmark/profile/bytestring/remtests)
   - not using the local version of bytestring?
+  - mapAccum in Instance
 - genetic
 
 ##todo

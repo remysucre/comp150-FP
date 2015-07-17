@@ -8,7 +8,7 @@ Data/ByteString.hs:482:5: Warning: Defined but not used: ‘f’
 [12 of 23] Compiling Data.ByteString.Lazy ( Data/ByteString/Lazy.hs, dist/dist-sandbox-17cc851a/build/Data/ByteString/Lazy.o ) [Data.ByteString changed]
 [13 of 23] Compiling Data.ByteString.Lazy.Char8 ( Data/ByteString/Lazy/Char8.hs, dist/dist-sandbox-17cc851a/build/Data/ByteString/Lazy/Char8.o ) [Data.ByteString.Lazy changed]
 In-place registering bytestring-0.10.6.0...
-Creating package registration file: /tmp/pkgConf-bytestring-0.10.622482.0
+Creating package registration file: /tmp/pkgConf-bytestring-0.10.618946.0
 Installing library in
 /h/ywang30/hsk/comp150-FP/benchmark/profile/bytestring/.cabal-sandbox/lib/x86_64-linux-ghc-7.8.3/bytestring-0.10.6.0
 Registering bytestring-0.10.6.0...

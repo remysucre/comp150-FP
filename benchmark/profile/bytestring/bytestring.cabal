@@ -142,6 +142,29 @@ library
     cpp-options: -DINTEGER_GMP
     build-depends: integer >= 0.1 && < 0.2
 
+executable             rembench
+  hs-source-dirs:      .
+  main-is:             benchmap.hs
+  build-depends:       base,
+                       deepseq,
+                       ghc-prim
+  c-sources:        cbits/fpstring.c
+  include-dirs:     include
+  ghc-options:      -fwarn-unused-binds
+                    -fno-enable-rewrite-rules
+                    -threaded -rtsopts
+                    -prof 
+                    -auto-all 
+                    -caf-all
+                    -O0
+  cpp-options:      -DHAVE_TEST_FRAMEWORK=1
+  default-language: Haskell98
+  -- older ghc had issues with language pragmas guarded by cpp
+  if impl(ghc < 7)
+    default-extensions: CPP, MagicHash, UnboxedTuples,
+                        DeriveDataTypeable, BangPatterns,
+                        NamedFieldPuns
+
 
 -- QC properties, with GHC RULES disabled
 test-suite prop-compiled
