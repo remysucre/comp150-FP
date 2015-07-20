@@ -250,10 +250,10 @@ unsafePackLenBytes :: Int -> [Word8] -> ByteString
 unsafePackLenBytes len xs0 =
     unsafeCreate len $ \p -> go p xs0
   where
-    go _ []     = return ()
-    go p (x:xs) = poke p x >> go (p `plusPtr` 1) xs
-    --go !_ []     = return ()
-    --go !p (x:xs) = poke p x >> go (p `plusPtr` 1) xs
+    --go _ []     = return ()
+    --go p (x:xs) = poke p x >> go (p `plusPtr` 1) xs
+    go !_ []     = return ()
+    go !p (x:xs) = poke p x >> go (p `plusPtr` 1) xs
 
 unsafePackLenChars :: Int -> [Char] -> ByteString
 unsafePackLenChars len cs0 =

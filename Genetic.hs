@@ -158,8 +158,9 @@ compile fp = do
 fitnessStrand :: Int -> Float -> Strand -> IO Float
 fitnessStrand reps base (Strand fp _ _ _) = do
                                          _ <- compile fp -- Compile all the programs
-                                         print $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show $ round base) ++ "s " ++ "test.txt"
-                                         exit <- system $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show $ round base) ++ "s " ++ "test.txt"
+                                         let interv = round base :: Int 
+                                         print $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show interv) ++ "s " ++ "test.txt"
+                                         exit <- system $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show interv) ++ "s " ++ "test.txt"
                                          case exit of
                                               ExitSuccess ->  do {contents <- readFile "test.txt";
                                                                   times <- return $ map (read) $ lines contents;
