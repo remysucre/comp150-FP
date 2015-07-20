@@ -685,7 +685,8 @@ mapAccumL f acc (PS fp o len) = unsafeDupablePerformIO $ withForeignPtr fp $ \a 
     acc' <- withForeignPtr gp $ \p -> mapAccumL_ acc 0 (a `plusPtr` o) p
     return $! (acc', PS gp 0 len)
   where
-    mapAccumL_ !s !n !p1 !p2
+    --mapAccumL_ !s !n !p1 !p2
+    mapAccumL_ s n p1 p2
        | n >= len = return s
        | otherwise = do
             x <- peekByteOff p1 n

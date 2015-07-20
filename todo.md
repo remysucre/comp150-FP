@@ -1,10 +1,9 @@
 ##issues
-- greping with `BangPatterns` and `$!` worked very well! 200+ packs w/ bang & 300+ w/ `$!`. We can easily search for `seq`, `rnf` etc. similarly. 
 - bytestring
-  - profiling on map now: [source](https://github.com/remysucre/comp150-FP/blob/master/benchmark/profile/bytestring/Data/ByteString.hs) [test](https://github.com/remysucre/comp150-FP/tree/master/benchmark/profile/bytestring/remtests)
-  - not using the local version of bytestring?
-  - mapAccum in Instance
+  - bottleneck is in `pack`, strictness in map/accummap shows no effect
 - genetic
+  - cannot install temp, but GMain compiled anyway
+  - timeout: invalid time interval
 
 ##todo
 - compile

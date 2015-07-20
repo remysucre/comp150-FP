@@ -142,7 +142,7 @@ compile fp = do
                oldDir <- getCurrentDirectory
                (dir, name) <- return $ splitFileName fp
                setCurrentDirectory dir
-               exit <- system $ "ghc --make -XBangPatterns -funbox-strict-fields -outputdir temp/ -o " ++ name ++ " " ++ name ++ ".hs > /dev/null"
+               exit <- system $ "ghc --make -XBangPatterns -funbox-strict-fields -outputdir temp/ -O0 " ++ name ++ " " ++ name ++ ".hs > /dev/null"
                _ <- system $ "rm -rf temp"
                setCurrentDirectory oldDir
                return exit

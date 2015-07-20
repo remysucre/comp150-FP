@@ -1,5 +1,6 @@
 {-# LANGUAGE BangPatterns #-}
-import Harness
+--import Harness
+import Control.Exception
 
 main = do
     evaluate (fst (f [1..4000000] (0 :: Int, 1 :: Int)))
