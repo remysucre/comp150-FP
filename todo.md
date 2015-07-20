@@ -1,28 +1,10 @@
-##issues
-- bytestring
-  - bottleneck is in `pack`, strictness in map/accummap shows no effect
-    - [Bytestring.hs](https://github.com/remysucre/comp150-FP/blob/master/benchmark/profile/bytestring/Data/ByteString/Internal.hs)
-    - [Benchmap.hs](https://github.com/remysucre/comp150-FP/blob/master/benchmark/profile/bytestring/benchmap.hs)
-- genetic
-  - cannot install temp, but GMain compiled anyway
-  - timeout: invalid time interval
-    - [timeout](https://github.com/remysucre/comp150-FP/blob/master/timer.sh)
-    - [Genetics](https://github.com/remysucre/comp150-FP/blob/master/Genetic.hs)
-
 ##todo
-- compile
-  - [ ] bench bytestring
-  - [ ] put in SCC
-  - [ ] flip bangs and try
-  - quickcheck on certain functions
-  - resolve dependency and get test to work
-  - write own benchmark
-- partition
-  - [x] search for `BangPatterns`
-  - [x] add seq...
-- profile
-  - [ ] run genetic, print out gene and map gene to time/space
-  - [ ] try to profile only one function w/ quickcheck
+- [ ] write 10 small programs
+- genetics
+  - [ ] generate gene-time map
+  - [ ] hinder ghc optimization by using pairs
+- bytestring
+  - [ ] linear bytestring test
 
 ##notes: 
 - [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) 
