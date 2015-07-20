@@ -142,10 +142,12 @@ compile fp = do
                oldDir <- getCurrentDirectory
                (dir, name) <- return $ splitFileName fp
                setCurrentDirectory dir
-               exit <- system $ "ghc --make -XBangPatterns -funbox-strict-fields -outputdir temp/ -O0 " ++ name ++ " " ++ name ++ ".hs > /dev/null"
+               --exit <- system $ "ghc --make -XBangPatterns -funbox-strict-fields -outputdir temp/ -O0 " ++ name ++ " " ++ name ++ ".hs > /dev/null"
+               exit <- system $ "ghc --make -XBangPatterns -funbox-strict-fields -outputdir temp/ -O0 " ++ name ++ ".hs > /dev/null"
                _ <- system $ "rm -rf temp"
                setCurrentDirectory oldDir
                return exit
+               -- TODO: compile with cabal instead of ghc
 
 {-
    Test fitness of Strand 
@@ -156,8 +158,8 @@ compile fp = do
 fitnessStrand :: Int -> Float -> Strand -> IO Float
 fitnessStrand reps base (Strand fp _ _ _) = do
                                          _ <- compile fp -- Compile all the programs
-                                         print $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show base) ++ "s " ++ "test.txt"
-                                         exit <- system $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show base) ++ "s " ++ "test.txt"
+                                         print $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show $ round base) ++ "s " ++ "test.txt"
+                                         exit <- system $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show $ round base) ++ "s " ++ "test.txt"
                                          case exit of
                                               ExitSuccess ->  do {contents <- readFile "test.txt";
                                                                   times <- return $ map (read) $ lines contents;
