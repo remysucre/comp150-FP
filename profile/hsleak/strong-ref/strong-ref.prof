@@ -1,15 +1,15 @@
-	Tue Jul 21 12:43 2015 Time and Allocation Profiling Report  (Final)
+	Tue Jul 21 17:36 2015 Time and Allocation Profiling Report  (Final)
 
 	   strong-ref +RTS -h -p -K400M -RTS 1e6
 
-	total time  =        0.80 secs   (798 ticks @ 1000 us, 1 processor)
-	total alloc = 1,629,487,824 bytes  (excludes profiling overheads)
+	total time  =        0.94 secs   (945 ticks @ 1000 us, 1 processor)
+	total alloc = 1,889,959,624 bytes  (excludes profiling overheads)
 
 COST CENTRE MODULE  %time %alloc
 
-busy        Harness  87.7   75.4
-main.x      Main     10.2   24.5
-main        Main      2.1    0.0
+busy        Harness  90.6   78.8
+main.x      Main      7.2   21.2
+main        Main      2.0    0.0
 
 
                                                                      individual     inherited
@@ -22,18 +22,18 @@ MAIN                       MAIN                     51           0    0.0    0.0
  CAF:calculateWaitTime_rGo Harness                 100           0    0.0    0.0     0.0    0.0
   calculateWaitTime        Harness                 110           1    0.0    0.0     0.0    0.0
    timed                   Harness                 112           1    0.0    0.0     0.0    0.0
- CAF:main                  :Main                    99           0    0.0    0.0    87.7   75.4
-  main                     Main                    104           0    0.0    0.0    87.7   75.4
-   busy                    Harness                 107           0   87.7   75.4    87.7   75.4
-    calculateWaitTime      Harness                 111           0    0.0    0.0     0.0    0.0
-     timed                 Harness                 113           0    0.0    0.0     0.0    0.0
+ CAF:main                  :Main                    99           0    0.0    0.0    90.7   78.8
+  main                     Main                    104           0    0.0    0.0    90.7   78.8
+   busy                    Harness                 107           0   90.6   78.8    90.7   78.8
+    calculateWaitTime      Harness                 111           0    0.0    0.0     0.1    0.0
+     timed                 Harness                 113           0    0.1    0.0     0.1    0.0
     timed                  Harness                 109           0    0.0    0.0     0.0    0.0
    initialize              Harness                 105           0    0.0    0.0     0.0    0.0
- CAF:main                  Main                     98           0    0.0    0.0    12.3   24.5
-  main                     Main                    102           1    2.1    0.0    12.3   24.5
-   main.x                  Main                    114           1   10.2   24.5    10.2   24.5
+ CAF:main                  Main                     98           0    0.0    0.0     9.2   21.2
+  main                     Main                    102           1    2.0    0.0     9.2   21.2
+   main.x                  Main                    114           1    7.2   21.2     7.2   21.2
    initialize              Harness                 103           1    0.0    0.0     0.0    0.0
  CAF                       GHC.IO.Encoding          94           0    0.0    0.0     0.0    0.0
- CAF                       GHC.IO.Handle.FD         92           0    0.0    0.0     0.0    0.0
+ CAF                       GHC.IO.Handle.FD         92           0    0.1    0.0     0.1    0.0
  CAF                       GHC.Conc.Signal          90           0    0.0    0.0     0.0    0.0
  CAF                       GHC.IO.Encoding.Iconv    79           0    0.0    0.0     0.0    0.0
