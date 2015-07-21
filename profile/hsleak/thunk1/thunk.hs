@@ -1,15 +1,14 @@
 {-# LANGUAGE BangPatterns #-}
---import Harness
-import Control.Exception
+import Harness
 
 main = do
     evaluate (fst (f [1..4000000] (0 :: Int, 1 :: Int)))
 
-f []     !c = c
-f (x:xs) !c = f xs (tick x c)
+f []     c = c
+f (x:xs) c = f xs (tick x c)
 
-tick x (!c0, !c1) | even x    = (c0, c1 + 1)
-                  | otherwise = (c0 + 1, c1)
+tick x (c0, c1) | even x    = (c0, c1 + 1)
+                | otherwise = (c0 + 1, c1)
 
 -- Fixes:
 --  * rnf c `seq` f xs (tick x c)

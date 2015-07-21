@@ -1,6 +1,5 @@
 #!/bin/sh
-set -e
-ghc --make $1.hs -O2 -fforce-recomp $2 -rtsopts
-./$1 +RTS -hT -i0.05 || true
+ghc -O0 --make $1.hs -prof -auto-all -caf-all -fforce-recomp -rtsopts
+time ./$1 1e6 +RTS -h -p -K100M
 hp2ps -e8in -c $1.hp
 display $1.ps
