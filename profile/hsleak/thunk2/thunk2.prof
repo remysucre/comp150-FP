@@ -1,28 +1,28 @@
-	Tue Jul 21 15:53 2015 Time and Allocation Profiling Report  (Final)
+	Tue Jul 21 12:14 2015 Time and Allocation Profiling Report  (Final)
 
 	   thunk2 +RTS -h -p -K100M -RTS 1e6
 
-	total time  =        0.23 secs   (232 ticks @ 1000 us, 1 processor)
+	total time  =        0.19 secs   (194 ticks @ 1000 us, 1 processor)
 	total alloc = 459,580,832 bytes  (excludes profiling overheads)
 
 COST CENTRE MODULE  %time %alloc
 
-ssMap       Main     91.4   97.5
-loop        Main      8.2    2.5
+ssMap       Main     95.9   97.5
+loop        Main      3.6    2.5
 
 
                                                          individual     inherited
 COST CENTRE    MODULE                  no.     entries  %time %alloc   %time %alloc
 
 MAIN           MAIN                     51           0    0.0    0.0   100.0  100.0
- CAF           GHC.Conc.Signal          78           0    0.0    0.0     0.0    0.0
- CAF           GHC.IO.Handle.FD         73           0    0.0    0.0     0.0    0.0
- CAF           GHC.IO.Encoding.Iconv    70           0    0.0    0.0     0.0    0.0
- CAF           GHC.IO.Encoding          66           0    0.0    0.0     0.0    0.0
- CAF:main      :Main                    61           0    0.0    0.0     0.0    0.0
- CAF:main      Main                     60           0    0.0    0.0   100.0  100.0
-  main         Main                    102           1    0.4    0.0   100.0  100.0
+ CAF:main      :Main                    99           0    0.0    0.0     0.0    0.0
+ CAF:main      Main                     98           0    0.0    0.0   100.0  100.0
+  main         Main                    102           1    0.5    0.0   100.0  100.0
    main.x      Main                    106           1    0.0    0.0     0.0    0.0
     ssFromList Main                    107         101    0.0    0.0     0.0    0.0
-   loop        Main                    104       80001    8.2    2.5    99.6  100.0
-    ssMap      Main                    105     8080000   91.4   97.5    91.4   97.5
+   loop        Main                    104       80001    3.6    2.5    99.5  100.0
+    ssMap      Main                    105     8080000   95.9   97.5    95.9   97.5
+ CAF           GHC.IO.Encoding          94           0    0.0    0.0     0.0    0.0
+ CAF           GHC.IO.Handle.FD         92           0    0.0    0.0     0.0    0.0
+ CAF           GHC.Conc.Signal          90           0    0.0    0.0     0.0    0.0
+ CAF           GHC.IO.Encoding.Iconv    80           0    0.0    0.0     0.0    0.0

@@ -1,40 +1,37 @@
-	Tue Jul 21 15:48 2015 Time and Allocation Profiling Report  (Final)
+	Tue Jul 21 12:14 2015 Time and Allocation Profiling Report  (Final)
 
 	   strong-ref +RTS -h -p -K100M -RTS 1e6
 
-	total time  =        0.71 secs   (712 ticks @ 1000 us, 1 processor)
-	total alloc = 872,116,728 bytes  (excludes profiling overheads)
+	total time  =        0.30 secs   (301 ticks @ 1000 us, 1 processor)
+	total alloc = 842,158,480 bytes  (excludes profiling overheads)
 
 COST CENTRE MODULE  %time %alloc
 
-busy        Harness  75.8   54.1
-main.x      Main     18.0   45.9
-main        Main      6.2    0.0
+busy        Harness 100.0  100.0
 
 
                                                                      individual     inherited
 COST CENTRE                MODULE                  no.     entries  %time %alloc   %time %alloc
 
 MAIN                       MAIN                     51           0    0.0    0.0   100.0  100.0
- CAF                       GHC.Conc.Signal          79           0    0.0    0.0     0.0    0.0
- CAF                       GHC.IO.Handle.FD         74           0    0.0    0.0     0.0    0.0
- CAF                       GHC.IO.Exception         72           0    0.0    0.0     0.0    0.0
- CAF                       GHC.IO.Encoding.Iconv    71           0    0.0    0.0     0.0    0.0
- CAF                       GHC.IO.Encoding          67           0    0.0    0.0     0.0    0.0
- CAF:main                  :Main                    61           0    0.0    0.0    75.8   54.1
-  main                     Main                    104           0    0.0    0.0    75.8   54.1
-   busy                    Harness                 107           0   75.8   54.1    75.8   54.1
+ CAF:busy                  Harness                 101           0    0.0    0.0     0.0    0.0
+  busy                     Harness                 106           1    0.0    0.0     0.0    0.0
+   timed                   Harness                 108           1    0.0    0.0     0.0    0.0
+ CAF:calculateWaitTime_rGo Harness                 100           0    0.0    0.0     0.0    0.0
+  calculateWaitTime        Harness                 110           1    0.0    0.0     0.0    0.0
+   timed                   Harness                 112           1    0.0    0.0     0.0    0.0
+ CAF:main                  :Main                    99           0    0.0    0.0   100.0  100.0
+  main                     Main                    104           0    0.0    0.0   100.0  100.0
+   busy                    Harness                 107           0  100.0  100.0   100.0  100.0
     calculateWaitTime      Harness                 111           0    0.0    0.0     0.0    0.0
      timed                 Harness                 113           0    0.0    0.0     0.0    0.0
     timed                  Harness                 109           0    0.0    0.0     0.0    0.0
    initialize              Harness                 105           0    0.0    0.0     0.0    0.0
- CAF:main                  Main                     60           0    0.0    0.0    24.2   45.9
-  main                     Main                    102           1    6.2    0.0    24.2   45.9
-   main.x                  Main                    114           1   18.0   45.9    18.0   45.9
+ CAF:main                  Main                     98           0    0.0    0.0     0.0    0.0
+  main                     Main                    102           1    0.0    0.0     0.0    0.0
    initialize              Harness                 103           1    0.0    0.0     0.0    0.0
- CAF:busy                  Harness                  59           0    0.0    0.0     0.0    0.0
-  busy                     Harness                 106           1    0.0    0.0     0.0    0.0
-   timed                   Harness                 108           1    0.0    0.0     0.0    0.0
- CAF:calculateWaitTime_rFo Harness                  58           0    0.0    0.0     0.0    0.0
-  calculateWaitTime        Harness                 110           1    0.0    0.0     0.0    0.0
-   timed                   Harness                 112           1    0.0    0.0     0.0    0.0
+ CAF                       GHC.IO.Encoding          94           0    0.0    0.0     0.0    0.0
+ CAF                       GHC.IO.Exception         93           0    0.0    0.0     0.0    0.0
+ CAF                       GHC.IO.Handle.FD         92           0    0.0    0.0     0.0    0.0
+ CAF                       GHC.Conc.Signal          90           0    0.0    0.0     0.0    0.0
+ CAF                       GHC.IO.Encoding.Iconv    79           0    0.0    0.0     0.0    0.0
