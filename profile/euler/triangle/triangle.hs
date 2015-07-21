@@ -12,7 +12,7 @@ factors :: Int -> Int
 factors n = 2 * length facs
     where facs = [x | x <- [1..intSqrt n], n `mod` x == 0]
 
-ans = head $ [x | x <- triangles, factors x >= 500]
+ans = head $ [x | x <- triangles, factors x >= 5]
 
 main = do 
     putStrLn $ show ans

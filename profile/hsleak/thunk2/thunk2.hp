@@ -1,16 +1,16 @@
-JOB "thunk2 1e6 +RTS -h -p -K100M"
-DATE "Tue Jul 21 12:14 2015"
+JOB "thunk2 1e6 +RTS -h -p -K400M"
+DATE "Tue Jul 21 12:47 2015"
 SAMPLE_UNIT "seconds"
 VALUE_UNIT "bytes"
 BEGIN_SAMPLE 0.00
 END_SAMPLE 0.00
-BEGIN_SAMPLE 0.11
+BEGIN_SAMPLE 0.08
 (90)GHC.Conc.Signal.CAF	640
-(99)CAF:main	160
 (102)main/CAF:main	16
-(104)loop/main/CAF:main	1923344
+(99)CAF:main	160
+(104)loop/main/CAF:main	1943248
 (106)main.x/main/CAF:main	4016
-(105)ssMap/loop/main/CAF:main	127333440
-END_SAMPLE 0.11
-BEGIN_SAMPLE 0.20
-END_SAMPLE 0.20
+(105)ssMap/loop/main/CAF:main	123353984
+END_SAMPLE 0.08
+BEGIN_SAMPLE 0.17
+END_SAMPLE 0.17

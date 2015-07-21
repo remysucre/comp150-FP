@@ -1,43 +1,39 @@
-	Thu Jul  9 12:11 2015 Time and Allocation Profiling Report  (Final)
+	Tue Jul 21 12:49 2015 Time and Allocation Profiling Report  (Final)
 
-	   triangle +RTS -h -p -K100M -RTS 1e6
+	   triangle +RTS -h -p -K400M -RTS 1e6
 
-	total time  =        0.72 secs   (725 ticks @ 1000 us, 1 processor)
-	total alloc =  26,412,744 bytes  (excludes profiling overheads)
+	total time  =        0.00 secs   (0 ticks @ 1000 us, 1 processor)
+	total alloc =      59,080 bytes  (excludes profiling overheads)
 
-COST CENTRE  MODULE  %time %alloc
+COST CENTRE  MODULE           %time %alloc
 
-factors.facs Main     99.7   87.1
-triangles    Main      0.1    7.9
-intSqrt      Main      0.0    4.9
+CAF          GHC.IO.Handle.FD   0.0   58.4
+CAF          GHC.IO.Encoding    0.0    4.7
+CAF          GHC.Conc.Signal    0.0    1.1
+main         Main               0.0   17.5
+triangles    Main               0.0    3.1
+factors.facs Main               0.0    6.3
+intSqrt      Main               0.0    5.8
 
 
-                                                           individual     inherited
-COST CENTRE      MODULE                  no.     entries  %time %alloc   %time %alloc
+                                                             individual     inherited
+COST CENTRE        MODULE                  no.     entries  %time %alloc   %time %alloc
 
-MAIN             MAIN                     52           0    0.0    0.0   100.0  100.0
- main            Main                    105           0    0.1    0.0     0.1    0.0
- CAF             GHC.IO.Encoding.Iconv    92           0    0.0    0.0     0.0    0.0
- CAF             GHC.IO.Encoding          85           0    0.0    0.0     0.0    0.0
- CAF             GHC.IO.Handle.FD         77           0    0.0    0.1     0.0    0.1
- CAF             GHC.Conc.Signal          74           0    0.0    0.0     0.0    0.0
- CAF:main1       Main                     65           0    0.0    0.0     0.0    0.0
-  main           Main                    104           1    0.0    0.0     0.0    0.0
- CAF:main2       Main                     64           0    0.0    0.0     0.0    0.0
-  main           Main                    106           0    0.0    0.0     0.0    0.0
- CAF:ans         Main                     63           0    0.0    0.0     0.0    0.0
-  ans            Main                    107           1    0.0    0.0     0.0    0.0
- CAF:main3       Main                     62           0    0.0    0.0    99.7   91.9
-  ans            Main                    108           0    0.0    0.0    99.7   91.9
-   factors       Main                    114       12375    0.0    0.0    99.7   91.9
-    factors.facs Main                    115       12375   99.7   87.1    99.7   91.9
-     intSqrt     Main                    117           0    0.0    4.9     0.0    4.9
-   triangles     Main                    109           1    0.0    0.0     0.0    0.0
- CAF:main4       Main                     61           0    0.0    0.0     0.1    4.1
-  ans            Main                    110           0    0.0    0.0     0.1    4.1
-   triangles     Main                    111           0    0.1    4.1     0.1    4.1
- CAF:main5       Main                     60           0    0.0    0.0     0.0    3.7
-  ans            Main                    112           0    0.0    0.0     0.0    3.7
-   triangles     Main                    113           0    0.0    3.7     0.0    3.7
- CAF:intSqrt_rxi Main                     59           0    0.0    0.0     0.0    0.0
-  intSqrt        Main                    116           1    0.0    0.0     0.0    0.0
+MAIN               MAIN                     53           0    0.0    0.8     0.0  100.0
+ CAF:main          :Main                   105           0    0.0    0.6     0.0   17.8
+  main             Main                    107           0    0.0   17.2     0.0   17.2
+ CAF:main          Main                    104           0    0.0    0.0     0.0    0.2
+  main             Main                    106           1    0.0    0.2     0.0    0.2
+ CAF:ans_ruC       Main                    103           0    0.0    0.0     0.0   13.1
+  ans              Main                    108           1    0.0    0.5     0.0   13.1
+   factors         Main                    110           7    0.0    0.9     0.0   12.7
+    factors.facs   Main                    111           7    0.0    6.3     0.0   11.7
+     intSqrt       Main                    113           0    0.0    5.4     0.0    5.4
+ CAF:intSqrt_ruA   Main                    102           0    0.0    0.0     0.0    0.4
+  intSqrt          Main                    112           1    0.0    0.4     0.0    0.4
+ CAF:triangles_rty Main                    101           0    0.0    0.0     0.0    3.1
+  triangles        Main                    109           1    0.0    3.1     0.0    3.1
+ CAF               GHC.Conc.Signal          98           0    0.0    1.1     0.0    1.1
+ CAF               GHC.IO.Encoding          94           0    0.0    4.7     0.0    4.7
+ CAF               GHC.IO.Handle.FD         93           0    0.0   58.4     0.0   58.4
+ CAF               GHC.IO.Encoding.Iconv    77           0    0.0    0.4     0.0    0.4
