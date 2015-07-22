@@ -4,7 +4,7 @@ import Harness
 -- The details are not important, just that:
 --  1. It's spine strict, but
 --  2. It's lazy in its values.
-data SpineStrictList a = Nil | Cons a (SpineStrictList a) deriving Show
+data SpineStrictList a = Nil | Cons a !(SpineStrictList a) 
 ssFromList [] l = l
 ssFromList (x:xs) l = ssFromList xs (Cons x l)
 -- Can stack overflow: more usual spine strict structures will
@@ -14,7 +14,7 @@ ssMap f (Cons x xs) = Cons (f x) (ssMap f xs)
 
 main = do
     let x = ssFromList (zip [1..100] (repeat 1)) Nil
-    print (loop 80000 x)
+    evaluate (loop 80000 x)
 
 loop 0 x = x
 loop n x = loop (n-1) (ssMap permute x)
