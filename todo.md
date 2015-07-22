@@ -4,6 +4,8 @@
   - only flips bangs in the [first level](https://github.com/remysucre/comp150-FP/blob/master/genemap.log)
   - lots of repetitions, caused by not recognizing the same program text
   - however, statistics shows second bang matters!
+- [spine strict](https://github.com/remysucre/comp150-FP/blob/master/profile/hsleak/thunk2/thunk2.hs): 
+  - [evaluation semantics](http://hackage.haskell.org/package/base-4.8.1.0/docs/Control-Exception-Base.html#v:evaluate)
 - Is it possible to prove that: 
   - If a Bang improves space efficiency in a certain context, it will improve space efficiency in any context
 
