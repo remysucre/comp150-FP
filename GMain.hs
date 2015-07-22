@@ -16,7 +16,7 @@ main = do
           -- !time' <- fitness fitnessRuns (fromInteger . toInteger $ (maxBound :: Int)) def
           !time' <- fitness fitnessRuns 100 def
           --time <- return $ if time' < 0.0 then (fromInteger . toInteger $ (maxBound :: Int)) else time'
-          time <- return $ if time' < 0.0 then 100 else time'
+          let time = if time' < 0.0 then 100 else time'
           print $ "Base time is " ++ (show time)
           dnas <- trace (show time) $ geneticAlg [def] runs time fitnessRuns poolSize ((GR def time), 0) emptyGeneDict
           print $ "Best found: " ++ (show $ getStrand $ head dnas)

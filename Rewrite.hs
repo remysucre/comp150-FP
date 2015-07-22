@@ -8,6 +8,7 @@ module Rewrite (
     flipBang
     , flipRandomBang
     , placesToStrict
+    , bangVector
 ) where
 
 import System.Random
@@ -40,9 +41,20 @@ countBangVar (p:ps) = case p of
                          PVar _     -> 1 + countBangVar ps
                          _  ->     countBangVar ps
 
+bangVarVec :: [Pat] -> [Int]
+bangVarVec [] = []
+bangVarVec (p:ps) = case p of
+                         PBangPat _ -> 1:bangVarVec ps
+                         PVar _     -> 0:bangVarVec ps
+                         _  ->     bangVarVec ps
+
 countBangMatch :: [Match] -> Int
 countBangMatch [] = 0
 countBangMatch (m:ms) = (countBangVar $ getPat m) + countBangMatch ms
+
+bangMatchVec :: [Match] -> [Int]
+bangMatchVec [] = []
+bangMatchVec (m:ms) = (bangVarVec $ getPat m) ++ bangMatchVec ms
 
 countBangDecl :: [Decl] -> Int
 countBangDecl [] = 0
@@ -50,8 +62,11 @@ countBangDecl (d:ds) = case d of
                             FunBind ms -> countBangMatch ms + countBangDecl ds
                             _  -> countBangDecl ds
 
-
-
+bangDeclVec :: [Decl] -> [Int]
+bangDeclVec [] = []
+bangDeclVec (d:ds) = case d of
+                          FunBind ms -> bangMatchVec ms ++ bangDeclVec ds
+                          _  -> bangDeclVec ds
 
 {- 
    Set of functions that given an integer i, either adds strictness at 
@@ -111,6 +126,11 @@ placesToStrict filePath program = num
                                   where
                                       mod = getModule filePath program
                                       num = countBangDecl $ getDecl mod
+bangVector :: FilePath -> String -> [Int]
+bangVector fp prog = vec
+                     where
+                        mod = getModule fp prog
+                        vec = bangDeclVec $ getDecl mod
 
 {- Get the module from a program -}
 getModule :: String -> String -> Module

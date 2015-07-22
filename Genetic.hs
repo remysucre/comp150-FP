@@ -7,7 +7,7 @@
 module Genetic
 where
 
-import Rewrite (flipBang, placesToStrict)
+import Rewrite (flipBang, placesToStrict, bangVector)
 import System.Process (system)
 import System.Exit (ExitCode(..))
 import System.FilePath.Posix (splitPath, splitFileName, dropExtension)
@@ -156,7 +156,7 @@ compile fp = do
 -}
 
 fitnessStrand :: Int -> Float -> Strand -> IO Float
-fitnessStrand reps base (Strand fp _ _ _) = do
+fitnessStrand reps base (Strand fp prog vec _) = do
                                          _ <- compile fp -- Compile all the programs
                                          let interv = round base :: Int 
                                          print $ "bash timer.sh " ++ "./" ++ fp ++ " " ++ (show reps) ++ " " ++ (show interv) ++ "s " ++ "test.txt"
@@ -164,7 +164,10 @@ fitnessStrand reps base (Strand fp _ _ _) = do
                                          case exit of
                                               ExitSuccess ->  do {contents <- readFile "test.txt";
                                                                   times <- return $ map (read) $ lines contents;
-                                                                  return $ avg times}
+                                                                  let meanTime = avg times;
+                                                                      geneTimeMap = show (bangVector fp prog) ++ " takes " ++ show meanTime ++ " vec: " ++ show vec ++ "\n";
+                                                                  in do {appendFile "geneTimeMap.txt" geneTimeMap; 
+                                                                         return meanTime}}
                                               ExitFailure _ -> error $ "Failed to run" ++ fp
                                               
 avg :: [Float] -> Float

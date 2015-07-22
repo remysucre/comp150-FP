@@ -2,6 +2,9 @@
 - Is it possible to prove that: 
   - If a Bang improves space efficiency in a certain context, it will improve space efficiency in any context
 - created cabal file: a lot of dependencies, are they all necessary?
+- gene-time map: 
+  - only flips bangs in the first level
+  - lots of repetitions, caused by not recognizing the same program text
 
 ##todo
 - [ ] write 10 small programs
