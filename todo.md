@@ -1,3 +1,6 @@
+##issus
+- Is it possible to prove that: 
+  - If a Bang improves space efficiency in a certain context, it will improve space efficiency in any context
 ##todo
 - [ ] write 10 small programs
 - genetics
