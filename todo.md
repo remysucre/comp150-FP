@@ -5,6 +5,7 @@
 - gene-time map: 
   - only flips bangs in the first level
   - lots of repetitions, caused by not recognizing the same program text
+  - however, statistics shows second bang matters!
 
 ##todo
 - [ ] write 10 small programs
