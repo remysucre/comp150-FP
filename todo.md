@@ -7,6 +7,19 @@
   - lots of repetitions, caused by not recognizing the same program text
   - however, statistics shows second bang matters!
 
+##space leak examples
+- [sum](https://github.com/remysucre/comp150-FP/blob/master/profile/sumacc/3x51.hs)
+- [fib](https://github.com/remysucre/comp150-FP/blob/master/profile/fib/fibsum.hs)
+- [hsleak](https://github.com/remysucre/comp150-FP/tree/master/profile/hsleak)
+- [strictlist](http://stackoverflow.com/questions/6630782/thunk-memory-leak-as-a-result-of-map-function/6667023#6667023)
+- [zip](http://stackoverflow.com/questions/29958541/space-leak-with-recursive-list-zipwith)
+- [hash table](http://stackoverflow.com/questions/7855323/fixing-a-particularly-obscure-haskell-space-leak)
+- [hash 2](http://stackoverflow.com/questions/23163125/haskell-space-leak-in-hash-table-insertion)
+- [string](http://stackoverflow.com/questions/19355344/space-leak-in-simple-string-generation-why)
+- [space leak zoo](http://blog.ezyang.com/2011/05/space-leak-zoo/)
+- [multi threading](http://stackoverflow.com/questions/7768536/space-leaks-in-haskell)
+- [lazy tree](http://stackoverflow.com/questions/6638126/lazy-tree-with-a-space-leak)
+
 ##todo
 - [ ] write 10 small programs
 - genetics
