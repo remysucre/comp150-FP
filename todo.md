@@ -29,7 +29,7 @@ fix git
   - relevant: [sequence](http://stackoverflow.com/questions/3190098/space-leak-in-list-program), [zip](http://stackoverflow.com/questions/29958541/space-leak-with-recursive-list-zipwith)
 - [ ] [hash table](http://stackoverflow.com/questions/7855323/fixing-a-particularly-obscure-haskell-space-leak)
 - [ ] [hash 2](http://stackoverflow.com/questions/23163125/haskell-space-leak-in-hash-table-insertion)
-- [ ] [string](http://stackoverflow.com/questions/19355344/space-leak-in-simple-string-generation-why)
+- [x] [string](http://stackoverflow.com/questions/19355344/space-leak-in-simple-string-generation-why)
 - [ ] [multi threading](http://stackoverflow.com/questions/7768536/space-leaks-in-haskell)
 - [ ] [lazy tree](http://stackoverflow.com/questions/6638126/lazy-tree-with-a-space-leak)
 
