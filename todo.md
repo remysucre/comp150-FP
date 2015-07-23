@@ -1,6 +1,6 @@
 fix git
 ##todo
-- [ ] understand the small examples
+- [x] understand the small examples
 - genetics
   - [ ] where does first gene come from
   - [ ] how does regeneration happen
