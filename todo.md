@@ -8,6 +8,7 @@ fix git
 - [ ] think about proving strict independency
 
 ##issues
+- mind-blowing: sequence on list
 - [gene-time map](https://github.com/remysucre/comp150-FP/blob/master/myfile.result): 
   - only flips bangs in the [first level](https://github.com/remysucre/comp150-FP/blob/master/genemap.log)
   - lots of repetitions, caused by not recognizing the same program text
