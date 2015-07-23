@@ -19,17 +19,18 @@ fix git
   - If a Bang improves space efficiency in a certain context, it will improve space efficiency in any context
 
 ##space leak examples
-- [sum](https://github.com/remysucre/comp150-FP/blob/master/profile/sumacc/3x51.hs)
-- [fib](https://github.com/remysucre/comp150-FP/blob/master/profile/fib/fibsum.hs)
-- [hsleak](https://github.com/remysucre/comp150-FP/tree/master/profile/hsleak)
-- [strictlist](http://stackoverflow.com/questions/6630782/thunk-memory-leak-as-a-result-of-map-function/6667023#6667023)
-- [zip](http://stackoverflow.com/questions/29958541/space-leak-with-recursive-list-zipwith)
-- [hash table](http://stackoverflow.com/questions/7855323/fixing-a-particularly-obscure-haskell-space-leak)
-- [hash 2](http://stackoverflow.com/questions/23163125/haskell-space-leak-in-hash-table-insertion)
-- [string](http://stackoverflow.com/questions/19355344/space-leak-in-simple-string-generation-why)
-- [space leak zoo](http://blog.ezyang.com/2011/05/space-leak-zoo/)
-- [multi threading](http://stackoverflow.com/questions/7768536/space-leaks-in-haskell)
-- [lazy tree](http://stackoverflow.com/questions/6638126/lazy-tree-with-a-space-leak)
+- [ ] [space leak zoo](http://blog.ezyang.com/2011/05/space-leak-zoo/)
+- [x] [sum](https://github.com/remysucre/comp150-FP/blob/master/profile/sumacc/3x51.hs)
+- [x] [fib](https://github.com/remysucre/comp150-FP/blob/master/profile/fib/fibsum.hs)
+- [x] [hsleak](https://github.com/remysucre/comp150-FP/tree/master/profile/hsleak)
+- [ ] [strictlist](http://stackoverflow.com/questions/6630782/thunk-memory-leak-as-a-result-of-map-function/6667023#6667023)
+- [x] [zip](http://stackoverflow.com/questions/29958541/space-leak-with-recursive-list-zipwith)
+  - relevant: sequence, fib
+- [ ] [hash table](http://stackoverflow.com/questions/7855323/fixing-a-particularly-obscure-haskell-space-leak)
+- [ ] [hash 2](http://stackoverflow.com/questions/23163125/haskell-space-leak-in-hash-table-insertion)
+- [ ] [string](http://stackoverflow.com/questions/19355344/space-leak-in-simple-string-generation-why)
+- [ ] [multi threading](http://stackoverflow.com/questions/7768536/space-leaks-in-haskell)
+- [ ] [lazy tree](http://stackoverflow.com/questions/6638126/lazy-tree-with-a-space-leak)
 
 ##notes: 
 - [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) 
