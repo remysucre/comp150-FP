@@ -1,3 +1,11 @@
+##todo
+- [ ] understand the small examples
+- genetics
+  - [ ] where does first gene come from
+  - [ ] how does regeneration happen
+  - [ ] where does repetition come from: accumulation or bad randomization
+- [ ] think about proving strict independency
+
 ##issues
 - [gene-time map](https://github.com/remysucre/comp150-FP/blob/master/myfile.result): 
   - only flips bangs in the [first level](https://github.com/remysucre/comp150-FP/blob/master/genemap.log)
@@ -21,14 +29,6 @@
 - [space leak zoo](http://blog.ezyang.com/2011/05/space-leak-zoo/)
 - [multi threading](http://stackoverflow.com/questions/7768536/space-leaks-in-haskell)
 - [lazy tree](http://stackoverflow.com/questions/6638126/lazy-tree-with-a-space-leak)
-
-##todo
-- [ ] write 10 small programs
-- genetics
-  - [ ] generate gene-time map
-  - [ ] hinder ghc optimization by using pairs
-- bytestring
-  - [ ] linear bytestring test
 
 ##notes: 
 - [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) 
