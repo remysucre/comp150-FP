@@ -1,3 +1,4 @@
+fix git
 ##todo
 - [ ] understand the small examples
 - genetics
