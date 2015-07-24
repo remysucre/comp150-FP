@@ -93,6 +93,7 @@
 - use what lib
 
 ##helpful resources:
+- Cyrus random gen
 - glob lib for shell cmd
 - [GPC](http://book.realworldhaskell.org/read/testing-and-quality-assurance.html) has pretty rendering, but no call tree
 - simulated annealing
