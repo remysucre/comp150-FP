@@ -87,8 +87,9 @@ mutateStrand :: Strand -> Strand
 mutateStrand d@(Strand fp program _ _) = mutateStrandWithSet bits' size d
                                              where
                                                  size = placesToStrict fp program
-                                                 range = (0, toInteger size)
+                                                 range = (0, 2 ^ (toInteger size + 1) - 1)
                                                  bits' = unsafePerformIO $ getStdRandom (randomR range)
+                                                 {- TODO range should be 2 ^ (size + 1) - 1 -}
 
 {- 
    Mutate Strand according to a set of bits of a given size
@@ -316,6 +317,9 @@ fitnessWrap dict reps base g = case findTimeForGene dict g of
            - if more than one gene is given, a set of children born at random
            - mutaions of all genes given and children (if applicable)
 -}
+
+{- TODO should keep regeneration in one place. selection happens in 'main' geneticAlg function -}
+
 buildGeneration :: Gene d => [d] -> [d]
 buildGeneration dnas = gen'
                        where
