@@ -12,6 +12,7 @@
       - [simplified](https://github.com/remysucre/comp150-FP/blob/master/profile/zipw3/zipw3.hs)
     - multiple threading 
     - list comprehension
+
 ##todo
 - [x] understand the small examples
 - genetics
