@@ -263,6 +263,7 @@ replacePath tempPath (Strand fp prog bits size) = Strand fp' prog bits size
 -}
 mergeRand :: Gene d => [d] -> Int -> [d]
 mergeRand dnas 0 = dnas
+mergeRand [dna] _ = [dna]
 mergeRand dnas n = [merge (dnas !! i) (dnas !! j)] ++ mergeRand dnas (n-1)
                    where
                        range = (0, (length dnas) - 1)
@@ -347,8 +348,8 @@ runGeneration (!genes) time repeats poolSize dict = do
 geneticAlg :: [Genes] -> Int -> Float -> Int -> Int -> (GeneRecord, Int) -> GeneDict -> IO [Genes]
 geneticAlg genes 0 _ _ _ _ _ = (print $ head genes) >> (return genes)
 geneticAlg _ _ _ _ _ (gr, 10) _ = (print $ gene gr) >> (return $ [gene gr])
-geneticAlg genes n base repeats poolSize (gr, failCount) dict = do
-                                                         print $ (show n) ++ " generations left"
+geneticAlg genes runs base repeats poolSize (gr, failCount) dict = do
+                                                         print $ (show runs) ++ " generations left"
                                                          !genes' <- return $ buildGeneration genes
                                                          (records', dict') <- runGeneration (genes') base repeats poolSize dict
                                                          records <- return $ filter (\gr -> (time gr) /= (-1.0)) records'
@@ -358,9 +359,7 @@ geneticAlg genes n base repeats poolSize (gr, failCount) dict = do
                                                          print $ "Fastest gene: " ++ (if (null records) then "" else show $ gene $ head records)
                                                          print $ "Fastest time so far: " ++ (show fast) ++ " sec"
                                                          print $ (show $ diff' - fast) ++ " sec faster"
-                                                         if ((length records) == 0) then print ("All timeout" ) >> geneticAlg genes (n-1) base repeats poolSize (gr, failCount + 1) dict'
-                                                         else if (diff' - fast < 0) then print ("Made all slower") >> geneticAlg (map gene records) (n-1) base repeats poolSize (gr, failCount + 1) dict'
-                                                         else if (diff' - fast < 5.0) then print ("Not fast enough") >> geneticAlg (map gene records) (n-1) fast repeats poolSize (head records, failCount + 1) dict'
-                                                         else geneticAlg (map gene records) (n-1) fast repeats poolSize (head records, 0) dict'
-
-
+                                                         if ((length records) == 0) then print ("All timeout" ) >> geneticAlg genes (runs-1) base repeats poolSize (gr, failCount + 1) dict'
+                                                         else if (diff' - fast < 0) then print ("Made all slower") >> geneticAlg (map gene records) (runs-1) base repeats poolSize (gr, failCount + 1) dict'
+                                                         else if (diff' - fast < 5.0) then print ("Not fast enough") >> geneticAlg (map gene records) (runs-1) fast repeats poolSize (head records, failCount + 1) dict'
+                                                         else geneticAlg (map gene records) (runs-1) fast repeats poolSize (head records, 0) dict'
