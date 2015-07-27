@@ -1,20 +1,10 @@
-##issues
-- Genetic:
-    - [Main](https://github.com/remysucre/Genesis/blob/master/Main.hs)
-    - [GA](https://hackage.haskell.org/package/GA-1.0/docs/GA.html)
-    - [criterion](http://www.serpentine.com/criterion/tutorial.html)
-    - [lazy IO](http://hackage.haskell.org/package/process-1.2.3.0/docs/System-Process.html#v:system) [nfIO](http://hackage.haskell.org/package/criterion-1.1.0.0/docs/Criterion-Main.html#v:nf)
-    - list comprehension
-- Tour of the Space Leak Zoo:
-    - multiple threading: [MVar](https://github.com/remysucre/comp150-FP/blob/master/profile/thread/thread.hs)
-
 ##todo
-- [x] understand the small examples
-- genetics
-  - [ ] where does first gene come from
-  - [ ] how does regeneration happen
-  - [ ] where does repetition come from: accumulation or bad randomization
-- [ ] think about proving strict independency
+- Genetic
+  - run on hsleak to see code coverage
+  - pass time as exit code
+  - haskell compile api:dont write to disk
+- space leak zoo
+  - make your own zoo
 
 ##issues
 - mind-blowing: sequence on list
