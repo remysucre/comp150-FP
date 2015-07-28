@@ -1,1 +1,1 @@
-gentest/thunk.hs
+gentest/fibsum0.hs
