@@ -1,8 +1,9 @@
+##issues
+- Genetic Main
+- Thoughts on semantic proof
+
 ##todo
 - Genetic
-  - run on hsleak to see code coverage
-  - pass time as exit code
-  - haskell compile api:dont write to disk
 - space leak zoo
   - make your own zoo
 
