@@ -1,6 +1,6 @@
 ##issues
-- Genetic Main
-- Thoughts on semantic proof
+- [Genetic Main](https://github.com/remysucre/Genesis/blob/master/Main.hs)
+- [Thoughts on semantic proof](https://github.com/remysucre/comp150-FP/blob/master/Independency.md)
 
 ##todo
 - Genetic
