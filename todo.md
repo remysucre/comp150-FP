@@ -1,6 +1,6 @@
 ##issues
 - [Genetic Main](https://github.com/remysucre/Genesis/blob/master/Main.hs)
-- [Thoughts on semantic proof](https://github.com/remysucre/comp150-FP/blob/master/Independency.md)
+- [paper](http://www.ccs.neu.edu/racket/pubs/esop12-cf.pdf)
 
 ##todo
 - Genetic
