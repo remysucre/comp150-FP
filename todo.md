@@ -1,6 +1,8 @@
 ##issues
 - [Genetic Main](https://github.com/remysucre/Genesis/blob/master/Main.hs)
 - [paper](http://www.ccs.neu.edu/racket/pubs/esop12-cf.pdf)
+- [acovea](https://donsbot.wordpress.com/2009/03/09/evolving-faster-haskell-programs/)
+- [strictify](http://hackage.haskell.org/package/strictify)
 
 ##todo
 - Genetic
