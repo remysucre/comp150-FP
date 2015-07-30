@@ -8,6 +8,8 @@
 - Genetic
 - space leak zoo
   - make your own zoo
+- collect paper & relevant works
+- read paper
 
 ##issues
 - mind-blowing: sequence on list
