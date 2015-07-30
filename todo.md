@@ -1,3 +1,7 @@
+[log](https://github.com/remysucre/Genesis/blob/master/thunk/Main.hs)
+[source](https://github.com/remysucre/comp150-FP/blob/master/genetic.log)
+[paper](http://www.ccs.neu.edu/racket/pubs/popl14-cf.pdf)
+
 ##issues
 - [Genetic Main](https://github.com/remysucre/Genesis/blob/master/Main.hs)
 - [paper](http://www.ccs.neu.edu/racket/pubs/esop12-cf.pdf)
