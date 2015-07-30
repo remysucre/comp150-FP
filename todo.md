@@ -11,25 +11,13 @@
 - collect paper & relevant works
 - read paper
 
-##issues
-- mind-blowing: sequence on list
-- [gene-time map](https://github.com/remysucre/comp150-FP/blob/master/myfile.result): 
-  - only flips bangs in the [first level](https://github.com/remysucre/comp150-FP/blob/master/genemap.log)
-  - lots of repetitions, caused by not recognizing the same program text
-  - however, statistics shows second bang matters!
-- [spine strict](https://github.com/remysucre/comp150-FP/blob/master/profile/hsleak/thunk2/thunk2.hs): 
-  - [evaluation semantics](http://hackage.haskell.org/package/base-4.8.1.0/docs/Control-Exception-Base.html#v:evaluate)
-- created [cabal file](https://github.com/remysucre/comp150-FP/blob/master/GeneticStrictness.cabal): a lot of dependencies, are they all necessary?
-- Is it possible to prove that: 
-  - If a Bang improves space efficiency in a certain context, it will improve space efficiency in any context
-
 ##species in the thunk leak zoo
 - accumulating parameter
 - spine strict (evaluate)
 - recursive data
 - multi-threading
 
-##space leak examples
+##space leaks
 - [ ] [space leak zoo](http://blog.ezyang.com/2011/05/space-leak-zoo/)
 - [x] [sum](https://github.com/remysucre/comp150-FP/blob/master/profile/sumacc/3x51.hs)
 - [x] [fib](https://github.com/remysucre/comp150-FP/blob/master/profile/fib/fibsum.hs)
@@ -42,16 +30,6 @@
 - [x] [string](http://stackoverflow.com/questions/19355344/space-leak-in-simple-string-generation-why)
 - [ ] [multi threading](http://stackoverflow.com/questions/7768536/space-leaks-in-haskell)
 - [ ] [lazy tree](http://stackoverflow.com/questions/6638126/lazy-tree-with-a-space-leak)
-
-##notes: 
-- [SCC pragma](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#scc-pragma) 
-- partition
-  - when compiling we still want the actual pack info
-    - from [SO](http://stackoverflow.com/questions/31343246/get-package-version-to-cpp/31343829#31343829)
-  - #include macro
-  - last in do block must be exp
-
-##ICFP wishlist
 
 ##goal: 
 - get 10 profilable packages
@@ -67,12 +45,10 @@
 - use profile/analysis to break down code (prevent premature opt.)
 - use genetic etc. for machine learning
 - potentially improve each function/module independently according to call graph/profile
-- TODO: add a picture here?
 
 ##ideas: 
-- dont run until finish, stop when heap grows too big
 - simulated anealing
-- simulated quantum state collaps?
+- simulated quantum state collapse?
 - thoughts on parsing/building in scale: 
   - difficult because people like to introduce accents to the language
   - learning all the accents/dialects might well be a separate project. machine learning?
@@ -88,7 +64,10 @@
 - [GPC](http://book.realworldhaskell.org/read/testing-and-quality-assurance.html) has pretty rendering, but no call tree
 - simulated annealing
 
+##people
+- philip wadler, benjamin pierce, cyrus cousins, imalsogreg@gmail.com, brent yorgy, facebook haskell guy, matthias f
+
 ##further project
 - better parser: support CPP
-- better cabal profiling
+- better criterion: benchmark cabal project
 - machine learning language 
