@@ -1,7 +1,16 @@
 ##issues
-- possible to extend program to detect more places to strict, looking for formal spec (where to put bang)
-- wanted to chane Int to BV, but `random` only generates Ints. 
-- modularize: 
+- BangPatterns not well-defined
+- wrapper & filter & hill-climbing
+- wanted to chane Int to BV, but `random` only generates Ints. float?
+- experiments
+  * [fib&inf]
+  * thunk1
+  * thunk3
+  * sumacc
+  * recursive data: <<loop>>
+- ICFP
+
+#modularize: 
   - Main
   - GeneAlg
     * rep. gene as bit vec (/AST)
@@ -9,7 +18,7 @@
     * compile, profile project
   - Rewrite
     * rewrite proj. according to some data (gene?)
-- repr. of gene: 
+#repr. of gene: 
   - bit vec: easier to mutate/merge
   - AST: easier to work with other modules, Cyrus says not too hard to do merge/mutate but how to generate random? 
 
