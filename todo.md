@@ -1,15 +1,19 @@
+##todo
+- Genetic
+  - extend to detect deep bangvars
+  - modularize
+  - experiment on small examples
+  - Wrapper & filter alg
+- space leak zoo
+  - make your own zoo
+- collect paper & relevant works
+- read paper
+
 ##issues
 - [Genetic Main](https://github.com/remysucre/Genesis/blob/master/Main.hs)
 - [paper](http://www.ccs.neu.edu/racket/pubs/esop12-cf.pdf)
 - [acovea](https://donsbot.wordpress.com/2009/03/09/evolving-faster-haskell-programs/)
 - [strictify](http://hackage.haskell.org/package/strictify)
-
-##todo
-- Genetic
-- space leak zoo
-  - make your own zoo
-- collect paper & relevant works
-- read paper
 
 ##species in the thunk leak zoo
 - accumulating parameter
