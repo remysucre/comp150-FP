@@ -69,7 +69,7 @@
 - simulated annealing
 
 ##people
-- philip wadler, benjamin pierce, cyrus cousins, imalsogreg@gmail.com, brent yorgy, facebook haskell guy, matthias f
+- philip wadler, benjamin pierce, cyrus cousins, imalsogreg ta gmail.com, brent yorgy, facebook haskell guy, matthias f
 
 ##further project
 - better parser: support CPP
