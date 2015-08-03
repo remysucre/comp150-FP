@@ -3,7 +3,7 @@
 - wrapper & filter & hill-climbing
 - wanted to chane Int to BV, but `random` only generates Ints. float?
 - experiments
-  * [fib&inf]
+  * [fib&inf](https://github.com/remysucre/Genesis/blob/master/fibinf.log)
   * thunk1
   * thunk3
   * sumacc
