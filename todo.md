@@ -1,9 +1,24 @@
+##issues
+- possible to extend program to detect more places to strict, looking for formal spec (where to put bang)
+- wanted to chane Int to BV, but `random` only generates Ints. 
+- modularize: 
+  - Main
+  - GeneAlg
+    * rep. gene as bit vec (/AST)
+  - Profiling
+    * compile, profile project
+  - Rewrite
+    * rewrite proj. according to some data (gene?)
+- repr. of gene: 
+  - bit vec: easier to mutate/merge
+  - AST: easier to work with other modules, Cyrus says not too hard to do merge/mutate but how to generate random? 
+
 ##todo
 - Genetic
-  - extend to detect deep bangvars
-  - modularize
   - experiment on small examples
   - Wrapper & filter alg
+  - extend to detect deep bangvars
+  - modularize
 - space leak zoo
   - make your own zoo
 - collect paper & relevant works
