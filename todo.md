@@ -1,12 +1,12 @@
 ##issues
 - genetics: 
-  - fitness & profiling
+  - [fitness & profiling](https://github.com/remysucre/Genesis/tree/master/src)
   - better log
     * link to github hash
   - random seed: file hash
   - algorithms: wrapper-filter, hill-climbing, neuro networks
   - heap profile
-- shrink search space: [run result](add link)
+- shrink search space
 - space leak zoo
 - papers
 - ICFP Matt Aahlad how to prepare
