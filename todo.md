@@ -1,14 +1,15 @@
 ##issues
-- BangPatterns not well-defined
-- wrapper & filter & hill-climbing
-- wanted to chane Int to BV, but `random` only generates Ints. float?
-- experiments
-  * [fib&inf](https://github.com/remysucre/Genesis/blob/master/fibinf.log)
-  * thunk1
-  * thunk3
-  * sumacc
-  * recursive data: <<loop>>
-- ICFP
+- genetics: 
+  - fitness & profiling
+  - better log
+    * link to github hash
+  - random seed: file hash
+  - algorithms: wrapper-filter, hill-climbing, neuro networks
+  - heap profile
+- shrink search space: [run result](add link)
+- space leak zoo
+- papers
+- ICFP Matt Aahlad how to prepare
 
 #modularize: 
   - Main
