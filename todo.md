@@ -1,40 +1,50 @@
-##issues
-- genetics: 
-  - [fitness & profiling](https://github.com/remysucre/Genesis/tree/master/src)
-  - better log
-    * link to github hash
-  - random seed: file hash
-  - algorithms: wrapper-filter, hill-climbing, neuro networks
-  - heap profile
-- shrink search space
+#todo
+- add config module
+  * Main.hs:    newTime <- benchmark projDir 4 -- TODO change 4 to runs
+  * Main.hs:    baseTime <- benchmark projDir 4 -- TODO change 4 to runs
+- better log
+  * link to git hash
 - space leak zoo
 - papers
-- ICFP Matt Aahlad how to prepare
 
-#modularize: 
-  - Main
-  - GeneAlg
-    * rep. gene as bit vec (/AST)
-  - Profiling
-    * compile, profile project
-  - Rewrite
-    * rewrite proj. according to some data (gene?)
-#repr. of gene: 
-  - bit vec: easier to mutate/merge
-  - AST: easier to work with other modules, Cyrus says not too hard to do merge/mutate but how to generate random? 
+#issues
+- GeneAlg.hs:instance Read BangVec -- TODO is this ok?
+- ICFP
 
-##todo
-- Genetic
-  - experiment on small examples
-  - Wrapper & filter alg
-  - extend to detect deep bangvars
-  - modularize
-- space leak zoo
-  - make your own zoo
-- collect paper & relevant works
-- read paper
+#on-file
+- Randomness 
+  * Main.hs:  -- TODO parse CLI arguments here.  Need to determine runs and cliSeed.  
+  * random seed: file hash
+- Better profiling Main.hs:  -- TODO for the future, check out criterion `measure`
+- Accept diverse input program: assuming only one file w/o input
+- algorithms: wrapper-filter, hill-climbing, neuro networks
+- shrink search space
 
-##issues
+#goal: 
+- get 10 profilable packages
+  - small examples
+  - hackage
+  - nofib
+- make genetic faster & better
+  - limit code coverage: only one bang, strictness annotation
+  - timeout space instead of time
+  - ensure code coverage, optimize wider range of input
+
+#strategies: 
+- use profile/analysis to break down code (prevent premature opt.)
+- use genetic etc. for machine learning
+- potentially improve each function/module independently according to call graph/profile
+
+#ideas: 
+- simulated anealing
+- simulated quantum state collapse?
+- artificial neuro network
+- thoughts on parsing/building in scale: 
+  - difficult because people like to introduce accents to the language
+  - learning all the accents/dialects might well be a separate project. machine learning?
+
+
+#inbox
 - [Genetic Main](https://github.com/remysucre/Genesis/blob/master/Main.hs)
 - [paper](http://www.ccs.neu.edu/racket/pubs/esop12-cf.pdf)
 - [acovea](https://donsbot.wordpress.com/2009/03/09/evolving-faster-haskell-programs/)
@@ -59,28 +69,6 @@
 - [x] [string](http://stackoverflow.com/questions/19355344/space-leak-in-simple-string-generation-why)
 - [ ] [multi threading](http://stackoverflow.com/questions/7768536/space-leaks-in-haskell)
 - [ ] [lazy tree](http://stackoverflow.com/questions/6638126/lazy-tree-with-a-space-leak)
-
-##goal: 
-- get 10 profilable packages
-  - small examples
-  - hackage
-  - nofib
-- make genetic faster & better
-  - limit code coverage: only one bang, strictness annotation
-  - timeout space instead of time
-  - ensure code coverage, optimize wider range of input
-
-##strategies: 
-- use profile/analysis to break down code (prevent premature opt.)
-- use genetic etc. for machine learning
-- potentially improve each function/module independently according to call graph/profile
-
-##ideas: 
-- simulated anealing
-- simulated quantum state collapse?
-- thoughts on parsing/building in scale: 
-  - difficult because people like to introduce accents to the language
-  - learning all the accents/dialects might well be a separate project. machine learning?
 
 ##questions we can ask about packages
 - how many bangs?

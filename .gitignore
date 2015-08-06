@@ -1,6 +1,9 @@
 dist
 cabal-dev
 test.txt
+files.txt
+*.cabal
+*.config
 *.o
 *.hi
 *.chi
