@@ -1,9 +1,16 @@
 #todo
+- how to generate next gen
 - add config module
   * Main.hs:    newTime <- benchmark projDir 4 -- TODO change 4 to runs
   * Main.hs:    baseTime <- benchmark projDir 4 -- TODO change 4 to runs
-- better log
-  * link to git hash
+- experiment
+  * add hint manually
+  * log: 
+    - link to git hash
+    - generation #
+    - population
+    - search space(out)
+    - score(out)
 - space leak zoo
 - papers
 
@@ -15,10 +22,12 @@
 - Accept diverse input program: assuming only one file w/o input
 - algorithms: wrapper-filter, hill-climbing, neuro networks
 - shrink search space
+- concurrency
 
 #issues
 - GeneAlg.hs:instance Read BangVec -- TODO is this ok?
 - ICFP
+- concurrency
 
 #goal: 
 - get 10 profilable packages
