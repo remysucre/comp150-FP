@@ -7,11 +7,7 @@
 - space leak zoo
 - papers
 
-#issues
-- GeneAlg.hs:instance Read BangVec -- TODO is this ok?
-- ICFP
-
-#on-file
+##on-file
 - Randomness 
   * Main.hs:  -- TODO parse CLI arguments here.  Need to determine runs and cliSeed.  
   * random seed: file hash
@@ -19,6 +15,10 @@
 - Accept diverse input program: assuming only one file w/o input
 - algorithms: wrapper-filter, hill-climbing, neuro networks
 - shrink search space
+
+#issues
+- GeneAlg.hs:instance Read BangVec -- TODO is this ok?
+- ICFP
 
 #goal: 
 - get 10 profilable packages
