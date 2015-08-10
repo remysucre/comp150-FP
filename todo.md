@@ -1,6 +1,6 @@
 #todo
 - now: overnight run, log file, how to trace coverage/avg score
-- [ ] how to generate next gen
+- [x] how to generate next gen
 - [x] add config module
 - experiment
   - [x] add hint manually
