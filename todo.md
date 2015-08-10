@@ -1,11 +1,10 @@
 #todo
-- how to generate next gen
-- add config module
-  * Main.hs:    newTime <- benchmark projDir 4 -- TODO change 4 to runs
-  * Main.hs:    baseTime <- benchmark projDir 4 -- TODO change 4 to runs
+- now: overnight run, log file, how to trace coverage/avg score
+- [ ] how to generate next gen
+- [x] add config module
 - experiment
-  * add hint manually
-  * log: 
+  - [x] add hint manually
+  - [ ] log: 
     - link to git hash
     - generation #
     - population
