@@ -1,3 +1,10 @@
+#issues
+- ported to Stack
+- new thunk: monad thunk
+- experiment result
+- GeneAlg.hs:instance Read BangVec -- TODO is this ok?
+- ICFP
+
 #todo
 - now: overnight run, log file, how to trace coverage/avg score
 - [x] how to generate next gen
@@ -21,11 +28,6 @@
 - Accept diverse input program: assuming only one file w/o input
 - algorithms: wrapper-filter, hill-climbing, neuro networks
 - shrink search space
-- concurrency
-
-#issues
-- GeneAlg.hs:instance Read BangVec -- TODO is this ok?
-- ICFP
 - concurrency
 
 #goal: 
