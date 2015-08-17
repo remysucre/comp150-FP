@@ -1,9 +1,10 @@
 #issues
-- ported to Stack
-- new thunk: monad thunk
+- ported to [Stack](https://www.stackage.org/)
+- new thunk: [monad thunk](https://github.com/remysucre/Genesis/blob/master/leakZoo/MonadThunk.hs)
 - experiment result
-- GeneAlg.hs:instance Read BangVec -- TODO is this ok?
-- ICFP
+- [GeneAlg.hs](https://github.com/remysucre/Genesis/blob/master/src/GeneAlg.hs#L24):instance Read BangVec -- TODO is this ok? 
+- Parallel: [forkIO](http://hackage.haskell.org/package/base-4.8.1.0/docs/Control-Concurrent.html#v:forkIO)
+- real program: sorting algorithms? 
 
 #todo
 - now: overnight run, log file, how to trace coverage/avg score
