@@ -1,10 +1,6 @@
 #issues
-- ported to [Stack](https://www.stackage.org/)
-- new thunk: [monad thunk](https://github.com/remysucre/Genesis/blob/master/leakZoo/MonadThunk.hs)
-- experiment result
-- [GeneAlg.hs](https://github.com/remysucre/Genesis/blob/master/src/GeneAlg.hs#L24):instance Read BangVec -- TODO is this ok? 
-- Parallel: [forkIO](http://hackage.haskell.org/package/base-4.8.1.0/docs/Control-Concurrent.html#v:forkIO)
-- real program: sorting algorithms? 
+- [leaky](https://github.com/remysucre/comp150-FP/tree/master/exp)
+- [Equivalence of patterns](https://hackage.haskell.org/package/haskell-src-exts-1.16.0.1/docs/Language-Haskell-Exts-Syntax.html#t:Pat)
 
 #todo
 - now: overnight run, log file, how to trace coverage/avg score
