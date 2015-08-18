@@ -1,0 +1,44 @@
+	Tue Aug 18 14:40 2015 Time and Allocation Profiling Report  (Final)
+
+	   Main +RTS -hc -p -K100M -RTS
+
+	total time  =       11.81 secs   (11806 ticks @ 1000 us, 1 processor)
+	total alloc = 10,588,624,528 bytes  (excludes profiling overheads)
+
+COST CENTRE MODULE  %time %alloc
+
+main10      Main     59.2    2.9
+showsPrec   Main     33.1   85.8
+build       Main      4.2   11.3
+build.spill Main      1.5    0.0
+
+
+                                                             individual     inherited
+COST CENTRE        MODULE                  no.     entries  %time %alloc   %time %alloc
+
+MAIN               MAIN                     53           0    0.0    0.0   100.0  100.0
+ CAF:main          :Main                   105           0    0.0    0.0    92.8   86.0
+  main10           Main                    108           0   58.7    0.3    92.8   86.0
+   showList        Main                    110           0    0.9    0.0    34.1   85.8
+    showsPrec      Main                    112     5000001   33.1   85.8    33.1   85.8
+ CAF:main          Main                    102           0    0.0    0.0     0.0    0.0
+  main             Main                    106           1    0.0    0.0     0.0    0.0
+ CAF:main10_ru0    Main                    101           0    0.0    0.0     7.2   14.0
+  main10           Main                    107           1    0.5    2.6     7.2   14.0
+   build           Main                    111     5000003    4.2   11.3     6.7   11.3
+    build.spill    Main                    120     5000000    1.5    0.0     1.5    0.0
+    build.es'      Main                    119           1    0.0    0.0     0.0    0.0
+    build.(...)    Main                    118           1    0.0    0.0     0.0    0.0
+    build.siblings Main                    117           1    0.0    0.0     0.0    0.0
+    build.(...)    Main                    116     5000000    0.3    0.0     0.3    0.0
+    build.siblings Main                    115     5000000    0.7    0.0     0.7    0.0
+    build.(...)    Main                    114           1    0.0    0.0     0.0    0.0
+    build.subnodes Main                    113           1    0.0    0.0     0.0    0.0
+ CAF:$dShow3_r1CO  Main                    100           0    0.0    0.0     0.0    0.0
+ CAF:$dShow2_r1CN  Main                     99           0    0.0    0.0     0.0    0.0
+  showList         Main                    109           3    0.0    0.0     0.0    0.0
+ CAF:$dShow1_r1CM  Main                     98           0    0.0    0.0     0.0    0.0
+ CAF               GHC.Conc.Signal          94           0    0.0    0.0     0.0    0.0
+ CAF               GHC.IO.Encoding          92           0    0.0    0.0     0.0    0.0
+ CAF               GHC.IO.Handle.FD         91           0    0.0    0.0     0.0    0.0
+ CAF               GHC.IO.Encoding.Iconv    79           0    0.0    0.0     0.0    0.0
