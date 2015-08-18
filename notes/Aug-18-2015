@@ -5,9 +5,7 @@
   - parallelism
   - document leak zoo
   - better gnuplot graph
-
-
-- later: 
+  - write wiki
 
 - data to collect from experiments: 
   - Independecy of bangs
