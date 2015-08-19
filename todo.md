@@ -1,6 +1,4 @@
-#issues
-- [leaky](https://github.com/remysucre/comp150-FP/tree/master/exp)
-- [Equivalence of patterns](https://hackage.haskell.org/package/haskell-src-exts-1.16.0.1/docs/Language-Haskell-Exts-Syntax.html#t:Pat)
+- [thunk leak zoo](https://github.com/remysucre/haskell-thunk-leak-zoo/wiki)
 
 #todo
 - now: overnight run, log file, how to trace coverage/avg score
