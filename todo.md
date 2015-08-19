@@ -1,5 +1,5 @@
-- thunk leak zoo add jpg
 - genesis readme
+- get criterion working
 - milestone
 - experiment
   * full coverage, avg score sorted by genes
