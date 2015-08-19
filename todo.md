@@ -1,4 +1,10 @@
-- [thunk leak zoo](https://github.com/remysucre/haskell-thunk-leak-zoo/wiki)
+- thunk leak zoo add jpg
+- genesis readme
+- milestone
+- experiment
+  * full coverage, avg score sorted by genes
+  * genetic, avg score & generation #
+- run genetic, also turn on opt on exp
 
 #todo
 - now: overnight run, log file, how to trace coverage/avg score
