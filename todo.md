@@ -1,10 +1,10 @@
-- genesis readme
-- get criterion working
+- [x] genesis readme
+- [x] get criterion working
+- [x] run genetic, also turn on opt on exp
 - milestone
 - experiment
   * full coverage, avg score sorted by genes
   * genetic, avg score & generation #
-- run genetic, also turn on opt on exp
 
 #todo
 - now: overnight run, log file, how to trace coverage/avg score
