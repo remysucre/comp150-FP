@@ -1,8 +1,0 @@
-FindHs: exports a function that looks for .hs files in named directory
-AllHs: Stand-alone executable of FindHs
-
-
-
-tells if named file has Bang
-compile: bash makef
-run: ./HasStrict *.hs
